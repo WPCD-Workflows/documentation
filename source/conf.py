@@ -348,7 +348,14 @@ texinfo_documents = [
 
 
 # Example configuration for intersphinx: refer to the Python standard library.
-intersphinx_mapping = {'https://docs.python.org/': None}
+#intersphinx_mapping = {'https://docs.python.org/': None}
+# Check with python -m sphinx.ext.intersphinx 'https://wpcd-workflows.github.io/IMASviz/objects.inv'
+# See https://stackoverflow.com/questions/30939867/how-to-properly-write-cross-references-to-external-documentation-with-intersphin
+intersphinx_mapping = {
+    'viz': ('https://wpcd-workflows.github.io/IMASviz/', None),
+    'solps': ('https://static.iter.org/imas/assets/solps-iter/html/', None),
+    'np': ('http://docs.scipy.org/doc/numpy/', None)
+}
 
 
 # Number the Figures, Tables and Listings
