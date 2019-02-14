@@ -1,4 +1,10 @@
-## Welcome to GitHub Pages
+## Welcome to WPCD documentation transition Pages
+
+See tutorial at https://daler.github.io/sphinxdoc-test for tutorial how ReSTructured text can be created.
+
+For large documentation is important that generated docs serverd by separate repository.
+
+Published documents 
 
 You can use the [editor on GitHub](https://github.com/WPCD-Workflows/documentation/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
