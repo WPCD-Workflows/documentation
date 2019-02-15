@@ -13,7 +13,7 @@ WS-CC March 2011, Cadarache
    ,
    SOLPS ELM Movie (Zoom)
    ), by D. P. Coster
--  The ITM general grid description: A tutorial
+-  The EU-IM general grid description: A tutorial
    (
    pdf
    ) by H.-J. Klingshirn

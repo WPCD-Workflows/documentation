@@ -48,9 +48,9 @@
 
           -  generalized output of subgrids
 
-       -  ITM-CARRE
+       -  EU-IM-CARRE
 
-          -  Refactor in preparation for ITM-CARRE actor
+          -  Refactor in preparation for EU-IM-CARRE actor
 
           -  Remove user interaction parts
 
@@ -64,16 +64,16 @@
 
 3.  Xavier Bonnin
 
-    -  Continued development of ITM_CARRE: I/O with CPOs, translation
+    -  Continued development of EU-IM_CARRE: I/O with CPOs, translation
        routines from CPO to CARRE internal data structures, removed
        screen output for preparation of Kepler CARRE actor, Fortran
-       wrapper for CARRE_ITM module produced.
+       wrapper for CARRE_EU-IM module produced.
 
     -  Proposed a data structure for wall CPO (including hydrogen
        inventory and surface chemical composition)
 
     -  Ongoing development of a hydrogen inventory model for use as an
-       ITM module.
+       EU-IM module.
 
 4.  David Tskhakaya
 
@@ -157,7 +157,7 @@
 
 14. Simppa Äkäslompolo
 
-    -  WP11-ITM-AMNS-ACT1-01/TEKES: "Fusion cross sections, also
+    -  WP11-EU-IM-AMNS-ACT1-01/TEKES: "Fusion cross sections, also
        converted to v_par and v_per"
 
        -  Received introduction from D.Coster, workplan exists.
@@ -186,7 +186,7 @@
     -  In March we had a very fruitful meeting with David Coster at IPP
        Garching. In this meeting we agreed that our data will be
        supplied in ADAS data format. This will simplify the input of our
-       data into ITM structures. Data for fully stripped Be, C, N, and
+       data into EU-IM structures. Data for fully stripped Be, C, N, and
        Ne ions are already prepared and will be entered in due time. We
        are currently working on the data sets for Li and on calculations
        of collision systems involving highly charged Ar ions.

@@ -124,7 +124,7 @@ Search
 ======
 
 <form method="post" action="/cgi-bin/htsearch"> Select: <select
-name="restrict"> <option value="https://www.efda-itm.eu/EU-IM">All EU-IM
+name="restrict"> <option value="https://www.eufus.eu/EU-IM">All EU-IM
 </select> Match: <select name="method"> <option value="and">All <option
 value="or">Any <option value="boolean">Boolean </select> Format: <select
 name="format"> <option value="builtin-long">Long <option

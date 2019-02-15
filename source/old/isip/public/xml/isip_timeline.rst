@@ -15,13 +15,13 @@ GRID & HPC We propose the following timeline :
 
 -  March:
 
-   -  Deliver the second version of Kepler (in ITM numbering) : new
+   -  Deliver the second version of Kepler (in EU-IM numbering) : new
       features : improved « expression » actors, semantic type checking,
       Matlab actor
       ->DONE
    -  Debugging procedure in Kepler
       ->DONE
-   -  Batch and MPI modes for ITM Kepler actors (
+   -  Batch and MPI modes for EU-IM Kepler actors (
       FC2K
       )
       ->DONE
@@ -42,7 +42,7 @@ GRID & HPC We propose the following timeline :
 
    -  Add Visit Kepler Actor (composite version) to the public Kepler
       distribution
-   -  Finalised release of the ITM control toolbox (link between Scicos
+   -  Finalised release of the EU-IM control toolbox (link between Scicos
       and Kepler)
    -  Evaluate strategy for parallel I/O for the
       UAL
@@ -60,7 +60,7 @@ GRID & HPC We propose the following timeline :
 
    -  Add automated generation of "remote" UAL to the UAL distribution
    -  New data structure version with Visit representation tags
-   -  Deliver "newcomer ITM platform User Guide"
+   -  Deliver "newcomer EU-IM platform User Guide"
    -  Implement full link with database through the UAL in workflows :
       UALinit, UALcollector communicate with the simulation catalogue
       (technically : change CPO definition for Kepler, change in FC2K)
@@ -73,7 +73,7 @@ GRID & HPC We propose the following timeline :
 
 -  October:
 
-   -  ITM control toolbox : deliver link between Simulink and Kepler
+   -  EU-IM control toolbox : deliver link between Simulink and Kepler
    -  Memory caching in Kepler workflows (memory shared by multiple
       nodes on the
       Gateway
@@ -81,7 +81,7 @@ GRID & HPC We propose the following timeline :
 
 -  November:
 
-   -  Launch a full ITM workflow on GRID
+   -  Launch a full EU-IM workflow on GRID
    -  Deliver simulation catalogue querying tool
    -  Merge HPC2K, WS2K and FC2K into a unified tool
    -  Visit for visualisation of time dependence

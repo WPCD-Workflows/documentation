@@ -178,7 +178,7 @@ Code parameter tree
 | THANTW                    | float    | THETA OF SADDLE COILS         |
 |                           |          | TOROIDAL SECTIONS             |
 +---------------------------+----------+-------------------------------+
-| TIME_ITM                  | FloatLis | Time for slicing ITM CPO data |
+| TIME_EU-IM                  | FloatLis | Time for slicing EU-IM CPO data |
 |                           | t        | (s).                          |
 +---------------------------+----------+-------------------------------+
 | VBIRTH                    | float    | THE BIRTH VELOCITY OF FAST    |
@@ -319,7 +319,7 @@ Code parameter tree
 |                           |          | DECAYING TO ZERO NEAR         |
 |                           |          | THANT(J).                     |
 +---------------------------+----------+-------------------------------+
-| NANT_ITM                  | integer  | 0 (default), 1 if uses        |
+| NANT_EU-IM                  | integer  | 0 (default), 1 if uses        |
 |                           |          | antennas_in and               |
 |                           |          | antennas_tools to define the  |
 |                           |          | antenna geometry              |
@@ -733,16 +733,16 @@ Code parameter tree
 |                           |          | B_parallel to 0 in DKE power  |
 |                           |          | expressions.                  |
 +---------------------------+----------+-------------------------------+
-| NITMOPT                   | integer  | Uses ITM database: 0          |
+| NEU-IMOPT                   | integer  | Uses EU-IM database: 0          |
 |                           |          | (default) = no, 1 =reads from |
-|                           |          | ITM, 10=writes on ITM,        |
+|                           |          | EU-IM, 10=writes on EU-IM,        |
 |                           |          | 11=reads and writes, 22=LION  |
 |                           |          | run as module within Kepler   |
 +---------------------------+----------+-------------------------------+
-| NITMRUN                   | IntegerL | ITM run number                |
+| NEU-IMRUN                   | IntegerL | EU-IM run number                |
 |                           | ist      |                               |
 +---------------------------+----------+-------------------------------+
-| NITMSHOT                  | IntegerL | ITM shot number               |
+| NEU-IMSHOT                  | IntegerL | EU-IM shot number               |
 |                           | ist      |                               |
 +---------------------------+----------+-------------------------------+
 

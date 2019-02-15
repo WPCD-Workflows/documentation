@@ -1,9 +1,9 @@
 .. _itm_database:
 
-ITM Database
+EU-IM Database
 ============
 
-The tools below allow you to directly access the ITM data base without
+The tools below allow you to directly access the EU-IM data base without
 using the Universal Access Layer (UAL). This may prove useful when the
 UAL is not available.
 

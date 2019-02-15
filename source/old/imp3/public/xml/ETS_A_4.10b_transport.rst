@@ -37,7 +37,7 @@ Individual multipliers for all channels shall be specified on the lower
 level through the code parameters of Transport Combiner
 
 The list of available transport models can be found
-`here <https://www.eufus.eu/documentation/ITM/html/ets_status.html>`__.
+`here <https://www.eufus.eu/documentation/EU-IM/html/ets_status.html>`__.
 
 Background transport
 --------------------

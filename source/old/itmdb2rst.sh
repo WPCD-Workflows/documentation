@@ -31,3 +31,5 @@ END{print ""}
                                        > $DST/${f%.xml}.rst.tmp
         mv $DST/${f%.xml}.rst.tmp $DST/${f%.xml}.rst
 done
+
+find $DST -name \*.rst -exec sed -i -e 's/ITM/EU-IM/g' -e "s/.efda-itm.eu/.eufus.eu/" {} \;

@@ -1,6 +1,6 @@
 .. _itm_dbtools:
 
-ITM Database tools
+EU-IM Database tools
 ==================
 
 ISIP supported tools

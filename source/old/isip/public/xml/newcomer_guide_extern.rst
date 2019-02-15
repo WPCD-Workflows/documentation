@@ -1,14 +1,14 @@
 .. _isip_newcomer_guide_extern:
 
-The Welcome ITM platform User Guide
+The Welcome EU-IM platform User Guide
 ===================================
 
 Welcome!
 --------
 
-Welcome to the Newcomer's guide to EFDA-ITM platform!
+Welcome to the Newcomer's guide to EFDA-EU-IM platform!
 
-The `Integrated Tokamak Modeling <https://portal.efda-itm.eu/portal/>`__
+The `Integrated Tokamak Modeling <https://portal.eufus.eu/portal/>`__
 is a project of `European Fusion Development
 Agreement <http://www.efda.org/>`__ with the aim to providing software
 instruments to forecast and interpret discharges from
@@ -22,33 +22,33 @@ To this purpose it is organised in 4 Integrated Modeling Projects
 Current Drive), one Infrastructure and Software Integration Project
 (ISIP, with the purpose of providing developing and data analysis tools
 specific for fusion, together with the connective tissue among different
-codes and with the support to ITM members) and 2 interdisciplinary
+codes and with the support to EU-IM members) and 2 interdisciplinary
 projects: the Experimentalist and Diagnostician Resource Group (EDRG)
 and the Atomic, Molecular Nuclear and Surface (AMNS).
 
 Moreover, it disposes of a Linux cluster of 128 cores with a peak
-performance of 1 teraflops: `Gateway <http://www.efda-itm.eu/>`__, which
+performance of 1 teraflops: `Gateway <http://www.eufus.eu/>`__, which
 can be used for the developing and testing of the codes, and which is
 provided with ad hoc tools of pre- and post- processing and of
-interconnection between codes. Gateway also hosts the ITM data base
-storage (100TB), the ITM web site and the ITM cooperative work
-`portal <https://portal.efda-itm.eu/portal/>`__. For massive production
+interconnection between codes. Gateway also hosts the EU-IM data base
+storage (100TB), the EU-IM web site and the EU-IM cooperative work
+`portal <https://portal.eufus.eu/portal/>`__. For massive production
 it is possible to use part of the supercomputer with 8640 cores and a
 peak performance of 0.1 petaflop called
 `HPC-FF <http://www.fz-juelich.de/jsc/juropa/configuration/>`__.
 
-Every year at the beginning of September the ITM members meet for the
-ITM General Meeting to make the point on the advance status of the
+Every year at the beginning of September the EU-IM members meet for the
+EU-IM General Meeting to make the point on the advance status of the
 projects, update about the projects different from their own and learn
 how to use the new ISIP tools.
-`Here <http://itm2010.efda-itm.eu/index.php>`__ it is possible to have a
-look to previous year meetings to gather an idea about ITM activities
+`Here <http://itm2010.eufus.eu/index.php>`__ it is possible to have a
+look to previous year meetings to gather an idea about EU-IM activities
 
-As regards organisation, ITM presents a Task Force Leader with 2 deputy
+As regards organisation, EU-IM presents a Task Force Leader with 2 deputy
 leaders, and a Project Leader with one or more deputy leader for every
 IMP and for ISIP. Moreover the Gateway User Board, composed with the TFL
 and the leader of every IMP as a representative of the IMP users,
-determines the policy of Gateway administration. The EFDA-ITM project is
+determines the policy of Gateway administration. The EFDA-EU-IM project is
 accountable to the EFDA steering committee and its CSU is Denis Kalupin.
 
 Every researcher of a country associated to

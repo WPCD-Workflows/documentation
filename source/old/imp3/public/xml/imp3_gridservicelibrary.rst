@@ -9,7 +9,7 @@ Using the grid service library
 Setting up the environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The grid service library requires the ITM data structure version 4.09a
+The grid service library requires the EU-IM data structure version 4.09a
 (or later). Before using it you have to make sure your environment is
 set up properly. The following section assumes you are using csh or tcsh
 on the Gateway.
@@ -44,7 +44,7 @@ different, run
 
 ::
 
-   source $ITMSCRIPTDIR/ITMv1 kepler test 4.09a > /dev/null
+   source $EU-IMSCRIPTDIR/EU-IMv1 kepler test 4.09a > /dev/null
 
 and check the variables again.
 
@@ -59,7 +59,7 @@ up the tree first by running
 
 ::
 
-   $ITMSCRIPTDIR/create_user_itm_dir $TOKAMAKNAME $DATAVERSION
+   $EU-IMSCRIPTDIR/create_user_itm_dir $TOKAMAKNAME $DATAVERSION
 
 and then do the previous check again.
 
@@ -67,7 +67,7 @@ Checking out and testing the grid service library
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To be able to get the code of the grid service library, you have to be a
-member of the ITM General Grid description (itmggd) project (you can
+member of the EU-IM General Grid description (itmggd) project (you can
 apply for this `here <https://gforge6.eufus.eu/project/itmggd/>`__).
 
 Once you are a member, you can check out the code by

@@ -12,7 +12,7 @@ machines and used for JT-60SA, ITER and DEMO predictions:
 
 -  build on the existing modelling codes developed by the EUROfusion
    Consortium members including the Integrated Modelling (EU-IM)
-   infrastructure, toolset and codes developed under the former EFDA ITM
+   infrastructure, toolset and codes developed under the former EFDA EU-IM
    Task Force,
 -  add new physics to the existing models
 -  couple codes into integrated workflows

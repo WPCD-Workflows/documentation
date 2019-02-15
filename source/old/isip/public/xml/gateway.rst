@@ -9,7 +9,7 @@ Gateway
 =======
 
 `ENEA Gateway
-Documentation: <http://www.efda-itm.eu/docs/documentation.php>`__ Read
+Documentation: <http://www.eufus.eu/docs/documentation.php>`__ Read
 this first!
 
 `OpenAFS Home: <http://www.openafs.org>`__ Everything you want to know
@@ -26,7 +26,7 @@ You can login to the Gateway directly with SSH:
 
 .. code-block:: console
 
-   ssh -X <user>@gateway.efda-itm.eu
+   ssh -X <user>@gateway.eufus.eu
 
 -X is required if you want to run X applications over the connection.
 
@@ -37,7 +37,7 @@ Use SFTP to transfer files to/from the Gateway:
 
 .. code-block:: console
 
-   sftp <user>@gateway.efda-itm.eu
+   sftp <user>@gateway.eufus.eu
 
 If sftp fails with 'Connection closed', or you get an error message like
 'Received message too long (or "Bad packet length") 1416586337', your
@@ -73,7 +73,7 @@ name, a configuration dialogue appears. Set the following values:
 
 .. code-block:: console
 
-   Host:    gateway.efda-itm.eu
+   Host:    gateway.eufus.eu
    Port:    22
    Key:     default
    Network: WAN

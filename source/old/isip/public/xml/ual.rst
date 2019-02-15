@@ -63,7 +63,7 @@ e.g.:
 
    source $EU-IMSCRIPTDIR/set_itm_env 4.08a
 
-UAL libraries are installed in /afs/efda-itm.eu/isip/project/switm/ual.
+UAL libraries are installed in /afs.eufus.eu/isip/project/switm/ual.
 The source code is stored in a subversion repository in
 /afs/edfa-itm.eu/isip/project/portal/gforge/storage/svnroot/ual. To
 check out a subversion working copy of the repository, storing it in

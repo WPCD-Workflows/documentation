@@ -76,7 +76,7 @@ Core transport actors
 |       | lence |         |                                            |
 +-------+-------+---------+--------------------------------------------+
 | TCI/R | Trans | -       |                                            |
-| ITM   | port  |         |                                            |
+| EU-IM   | port  |         |                                            |
 |       | coeff |         |                                            |
 |       | icien |         |                                            |
 |       | t     |         |                                            |

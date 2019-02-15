@@ -5,12 +5,12 @@ How to work with Subversion under Gforge
 Introduction
 ------------
 
-The ITM-TF uses the Gforge system as its Collaborative Development
+The EU-IM-TF uses the Gforge system as its Collaborative Development
 Environment (CDE). The system features a variety of tools like trackers,
 bug reports, newsfeeds, a content management system (CMS), Wikis,
 Forums, and documentation systems to facilitate the development of
 projects. Above all it hosts the repositories of the projects under
-development and features various version control systems. The ITM-TF has
+development and features various version control systems. The EU-IM-TF has
 opted for Subversion as its tool for version control. The following
 material is supposed to serve as an introduction to the use of
 subversion under Gforge.
@@ -19,14 +19,14 @@ Projects in Gforge
 ------------------
 
 Subversion repositories are projects in Gforge. After logging in to the
-ITM Portal you should be seeing the ITM-TF front page. Click on the
+EU-IM Portal you should be seeing the EU-IM-TF front page. Click on the
 register called Gforge on the top of the page (marked by a red circle)
 to access Gforge. You are then taken to the front page of Gforge which
 shows recent news, a list of recently registered projects, and a diagram
-of the recent commit activity of all ITM projects under Gforge. Click on
+of the recent commit activity of all EU-IM projects under Gforge. Click on
 the register labelled Projects to access the list of projects. The list
 shows you full names, the account names, and short descriptions of all
-the ITM projects under Gforge. The account names are simultaneously the
+the EU-IM projects under Gforge. The account names are simultaneously the
 names of the corresponding repositories under subversion. At the bottom
 of the page, you will find a button labelled Add new Project (marked by
 a red circle). By clicking this button you will be taken to the
@@ -54,7 +54,7 @@ members of the project and their roles, define and modify roles, honor
 and Roles. In this section, you can manage each member's access
 permissions to the subversion repository. This can be done for a single
 user or for an entire group. A predefined group for instance, which has
-read access to the repository, is ITM Members. Every ITM member is
+read access to the repository, is EU-IM Members. Every EU-IM member is
 automatically granted read access to your repository. If you like to
 change this, you need to got to the Edit Roles section. Here you can set
 access permissions in a granular way. If you like to change the access

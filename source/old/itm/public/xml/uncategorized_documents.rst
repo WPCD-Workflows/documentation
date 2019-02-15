@@ -71,7 +71,7 @@ List of uncategorized documents
    (3.2M)
 -  (Download)
    (2.8M)
--  2004 ITM Code Catalog
+-  2004 EU-IM Code Catalog
    (32K)
 -  C++
    (640K)
@@ -113,13 +113,13 @@ List of uncategorized documents
    (2.4M)
 -  II
    (2.3M)
--  ITM Publications
+-  EU-IM Publications
    (64K)
--  ITM Visualization overview document here
+-  EU-IM Visualization overview document here
    (128K)
--  ITM standard directory layout
+-  EU-IM standard directory layout
    (96K)
--  ITM-Serpens-Garching2011
+-  EU-IM-Serpens-Garching2011
    (6.5M)
 -  Links to IMP3 old pages (before 2008)
    (32K)

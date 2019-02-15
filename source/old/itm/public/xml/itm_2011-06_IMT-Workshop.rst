@@ -66,7 +66,7 @@ This workshop is organized jointly by ITER Organization and CEA/IRFM.
 
 -  Comparison of scientific workflow engines, reported by B.
    Guillerminet (CEA) (20+10)
--  EU ITM-TF experience with Kepler, G. Falchetto (CEA) (20+10)
+-  EU EU-IM-TF experience with Kepler, G. Falchetto (CEA) (20+10)
 -  Discussion (30)
 
 **Thursday 9 June morning: Data Structures, Data Descriptions, &
@@ -85,7 +85,7 @@ Code/Component Interfaces**
 11h00-12h30
 
 -  Coupling CAD data to Simulations, J. Courquet (CS) (10 + 10)
--  EU ITM-TF experience with CPOs, D. Coster (20+10)
+-  EU EU-IM-TF experience with CPOs, D. Coster (20+10)
 -  Discussion (30)
 
 12h30-14h00 : Lunch

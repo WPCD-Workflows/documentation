@@ -1,10 +1,10 @@
 .. _world_eps2011expo_posters:
 
-Posters prepared for the 2011 EPS ITM Expo
+Posters prepared for the 2011 EPS EU-IM Expo
 ==========================================
 
--  ITM
--  ITM Code Camps
+-  EU-IM
+-  EU-IM Code Camps
 -  ISIP
 -  ISIP + IMP12: Control
 -  EDRG

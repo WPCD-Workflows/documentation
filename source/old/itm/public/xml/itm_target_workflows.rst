@@ -30,7 +30,7 @@ Target Workflows
 +------------------+------------------------------------------+--------+
 | NBI              | -  Import previous benchmarks between    | end    |
 |                  |    ASCOT/TRANSP/PENCIL from JET          | 2011   |
-|                  |    (exp2ITM)                             |        |
+|                  |    (exp2EU-IM)                             |        |
 +------------------+------------------------------------------+--------+
 | Fokker-Planck    |                                          | 2012   |
 |                  |                                          | --     |

@@ -14,7 +14,7 @@ IMP3 General Grid Description and Grid Service Library - Tutorial
 should give "4.09a" and "test". If not, run
 ::
 
-   source $ITMSCRIPTDIR/ITMv1 kepler test 4.09a > /dev/null
+   source $EU-IMSCRIPTDIR/EU-IMv1 kepler test 4.09a > /dev/null
 
 To copy the tutorial files:
 ::

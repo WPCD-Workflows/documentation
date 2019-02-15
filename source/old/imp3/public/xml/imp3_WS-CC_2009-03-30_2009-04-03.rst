@@ -19,7 +19,7 @@ Kick-Off Meeting, 2009-02-06
    (
    doc
    ), by D. P. Coster
--  ITM gateway users's guide
+-  EU-IM gateway users's guide
    (
    pdf
    ), by B. Guillerminet, F. Iannone, F. Imbeaux, G. Manduchi and L.
@@ -30,7 +30,7 @@ Kick-Off Meeting, 2009-02-06
    ), by D. P. Coster, D. Kalupin, V. Basiuk, R. Stankiewicz, R.
    Zagorski, J.F. Artaud, S. Gowacz, Ph. Huynh, S. Moradi, G.
    Pereverzev, G. Ramogida, P. Strand M. Tokar and J. Weiland
--  ITM plans with respect to Integrated Modelling, in particular with
+-  EU-IM plans with respect to Integrated Modelling, in particular with
    respect to “Burn and Particle Control” (presented at EFDA meeting on
    Fuelling and Particle Control, Session: Burn and Particle Control,
    March 2009)

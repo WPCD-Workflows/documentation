@@ -29,7 +29,7 @@ July
 | -07- |                                                               |
 | 09   |                                                               |
 +------+---------------------------------------------------------------+
-| 2010 | Material on ITM infrastructure added                          |
+| 2010 | Material on EU-IM infrastructure added                          |
 | -07- |                                                               |
 | 12   |                                                               |
 +------+---------------------------------------------------------------+
@@ -55,13 +55,13 @@ July
 +------+---------------------------------------------------------------+
 | 2010 | automatically generated pdf's of the web page now available   |
 | -07- | at `this                                                      |
-| 20   | location <https://www.eufus.eu/documentation/ITM/pdf/>`__     |
+| 20   | location <https://www.eufus.eu/documentation/EU-IM/pdf/>`__     |
 +------+---------------------------------------------------------------+
-| 2010 | added public shots at `ITM Shots <#itm_shots>`__              |
+| 2010 | added public shots at `EU-IM Shots <#itm_shots>`__              |
 | -07- |                                                               |
 | 22   |                                                               |
 +------+---------------------------------------------------------------+
-| 2010 | created ITM front page                                        |
+| 2010 | created EU-IM front page                                        |
 | -07- |                                                               |
 | 23   |                                                               |
 +------+---------------------------------------------------------------+
@@ -100,7 +100,7 @@ August
 | -08- | now online                                                    |
 | 07   |                                                               |
 +------+---------------------------------------------------------------+
-| 2010 | Added a link to the `old ITM Code                             |
+| 2010 | Added a link to the `old EU-IM Code                             |
 | -08- | Catalog <../imports/codcat/index.html>`__ off the main page   |
 | 08   |                                                               |
 +------+---------------------------------------------------------------+
@@ -187,11 +187,11 @@ September
 | -09- |                                                               |
 | 15   |                                                               |
 +------+---------------------------------------------------------------+
-| 2010 | `ITM Document Catalog <#itm_document_catalog>`__ now          |
+| 2010 | `EU-IM Document Catalog <#itm_document_catalog>`__ now          |
 | -09- | available                                                     |
 | 22   |                                                               |
 +------+---------------------------------------------------------------+
-| 2010 | `ITM Workflows <#itm_workflows>`__ now available              |
+| 2010 | `EU-IM Workflows <#itm_workflows>`__ now available              |
 | -09- |                                                               |
 | 22   |                                                               |
 +------+---------------------------------------------------------------+
@@ -207,7 +207,7 @@ September
 | -09- |                                                               |
 | 28   |                                                               |
 +------+---------------------------------------------------------------+
-| 2010 | download size added to imported documents in `ITM document    |
+| 2010 | download size added to imported documents in `EU-IM document    |
 | -09- | catalog <#itm_document_catalog>`__                            |
 | 28   |                                                               |
 +------+---------------------------------------------------------------+
@@ -234,7 +234,7 @@ October
 | -10- |                                                               |
 | 20   |                                                               |
 +------+---------------------------------------------------------------+
-| 2010 | updated `ITM general meeting                                  |
+| 2010 | updated `EU-IM general meeting                                  |
 | -10- | material <#itm_general_meetings>`__                           |
 | 21   |                                                               |
 +------+---------------------------------------------------------------+
@@ -280,11 +280,11 @@ December
 | -12- | Integrated Modelling <#euforia_eu_us_workshop_2010>`__ added  |
 | 03   | under EUFORIA                                                 |
 +------+---------------------------------------------------------------+
-| 2010 | added a list of ITM publications (additional entries are      |
+| 2010 | added a list of EU-IM publications (additional entries are      |
 | -12- | requested in BibTeX format) [DPC]                             |
 | 11   |                                                               |
 +------+---------------------------------------------------------------+
-| 2010 | material for ITM General Meeting added for                    |
+| 2010 | material for EU-IM General Meeting added for                    |
 | -12- | `ISM <#ism_itm_gm_2010>`__                                    |
 | 13   |                                                               |
 +------+---------------------------------------------------------------+
@@ -292,7 +292,7 @@ December
 | -12- | available (Thanks to W. Zwingmann!)                           |
 | 17   |                                                               |
 +------+---------------------------------------------------------------+
-| 2010 | new guidelines for the `ITM Test Bed <#itm_testbed>`__ added  |
+| 2010 | new guidelines for the `EU-IM Test Bed <#itm_testbed>`__ added  |
 | -12- |                                                               |
 | 17   |                                                               |
 +------+---------------------------------------------------------------+

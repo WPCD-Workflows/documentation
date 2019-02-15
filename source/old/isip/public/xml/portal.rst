@@ -10,5 +10,5 @@ Portal
 
 WORK IN PROGRESS
 
-`https://portal.efda-itm.eu/portal <https://portal.efda-itm.eu>`__
+`https://portal.eufus.eu/portal <https://portal.efda-itm.eu>`__
 

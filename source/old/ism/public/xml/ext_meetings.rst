@@ -3,7 +3,7 @@
 2011
 ----
 
--  ITER SCENARIO MODELLING activities within ITM-TF (IOS-ITPA)
+-  ITER SCENARIO MODELLING activities within EU-IM-TF (IOS-ITPA)
    (
    pdf
    ), by X.Litaudon

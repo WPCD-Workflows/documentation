@@ -35,7 +35,7 @@ the EU-IM-TF, ranging from 0D modelling for fast routine assessments of
 various scenarios to 2D-3D models that integrate all the relevant
 regions of a fusion plasma.
 
-`Links to IMP3 private pages <https://www.efda-itm.eu/IMP3/html/index.html>`__
+`Links to IMP3 private pages <https://www.eufus.eu/IMP3/html/index.html>`__
 ------------------------------------------------------------------------------
 
 `Links to IMP3 old pages (before 2008) <../imports/index.html>`__

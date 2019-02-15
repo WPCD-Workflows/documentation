@@ -44,7 +44,7 @@ WS-CC March 2010, Garching
    (
    ppt
    ), by F. Imbeaux
--  Exp2ITM : populate ITM database with experimental data
+-  Exp2EU-IM : populate EU-IM database with experimental data
    (
    ppt
    ), by J. Signoret and F. Imbeaux (presented by Rui Coelho)

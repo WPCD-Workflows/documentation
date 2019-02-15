@@ -4,14 +4,14 @@ How to handle code specific parameters
 ======================================
 
 This section explains how to treat code specific parameters in the
-framework of the ITM-TF.
+framework of the EU-IM-TF.
 
 Code specific parameters are all parameters which are specific to the
 code (like switches, scaling parameters, and parameters for built-in
 analytical models) as well as parameters to explicitly overrule fields
-in the ITM data structures. Generally no data (should go into CPOs).
+in the EU-IM data structures. Generally no data (should go into CPOs).
 
-ITM Convention: As the rest of the data structures, all code specific
+EU-IM Convention: As the rest of the data structures, all code specific
 parameters should be given in XML format, i.e., in form of an XML
 string.
 
@@ -89,9 +89,9 @@ i.e. enclosing container tags, matters.
 W3C XML Schemas
 ---------------
 
-Among the many possibilities the ITM-TF has opted for the use of W3C XML
+Among the many possibilities the EU-IM-TF has opted for the use of W3C XML
 schemas to describe which elements are allowed in the XML code parameter
-string for an ITM-TF module. The definition of a schema allows for the
+string for an EU-IM-TF module. The definition of a schema allows for the
 design of generic tools through the seperation of the specific structure
 of the code parameters of a specific module from the development of
 those tools. By defining a W3C XML schema, all code specific information
@@ -106,7 +106,7 @@ How to convert Code Parameters into XML
 
 To convert the code parameters of an existing physics code into XML, you
 will have to carry out 3 major steps. A variety of tools have been
-developed by the ITM-TF to assist you in this process.
+developed by the EU-IM-TF to assist you in this process.
 Step 1: Extraction - XML Schema
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -184,13 +184,13 @@ Advantages:
 -  users do not need to know about XML at all
 -  developers need to know only very little about XML
 
-ITM XML Parser
+EU-IM XML Parser
 --------------
 
 A large variety of parsers for XML are available in the XML community.
-However, to be able to quickly adapt the parsers, the ITM-TF has
+However, to be able to quickly adapt the parsers, the EU-IM-TF has
 developed its own simple XML parsers in Fortran90 and C/C++. These
-parsers were specifically designed to fulfill the needs of the ITM-TF
+parsers were specifically designed to fulfill the needs of the EU-IM-TF
 and to work smoothly with its infrastructure.
 .. _f90_parser:
 
@@ -395,7 +395,7 @@ type_param
 which holds both the XML schema as well as the actual XML string (see
 above
 ).
-It calls the ITM-TF Fortran90 Parser
+It calls the EU-IM-TF Fortran90 Parser
 euitm_xml_parse
 on the structure
 code_parameters
@@ -422,7 +422,7 @@ your module.
 Make sure that the assignment subroutine can access the required
 internal variables through use statements or other ways.
 assign_code_parameters
-uses the ITM standard
+uses the EU-IM standard
 itm_types
 for its variable declarations.
 C/C++
@@ -433,7 +433,7 @@ Validating your XML
 ~~~~~~~~~~~~~~~~~~~
 
 To validate your XML and XSD files, you may use xmlstar ( path:
-$SWITMDIR/xmlstar/bin/ ):
+$SWEU-IMDIR/xmlstar/bin/ ):
 usage:
 ::
 
@@ -526,7 +526,7 @@ Online
    MathML, XLinks, XML, XPath, XPointer, XSL, and other web
    technologies.
 
-ITM-TF
+EU-IM-TF
 ~~~~~~
 
 Join

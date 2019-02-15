@@ -3,7 +3,7 @@
 Handling CPOs
 =============
 
-The tools below allow you to perform useful operations on the ITM
+The tools below allow you to perform useful operations on the EU-IM
 datastructures including entire CPOs in your Fortran90 workflows. They
 are not meant as a replacement of the Universal Access Layer (UAL) but
 rather as a complement especially in situations where the UAL is not
@@ -13,7 +13,7 @@ Module deallocate_stuctures
 ---------------------------
 
 This Fortran90 module allows you to deallocate in a very simple way any
-ITM data structure which is defined in euitm_schemas.f90.
+EU-IM data structure which is defined in euitm_schemas.f90.
 Add the following use statement to your code:
 ::
 
@@ -25,7 +25,7 @@ The Fortran syntax for deallocating a cpo is then:
      call deallocate_cpo(cpo)
 
 where cpo is a single time slice or a pointer array of a CPO (or other
-ITM data structure).
+EU-IM data structure).
 With
 ::
 
@@ -53,12 +53,12 @@ libdeallocate_pgi.a
 and
 libdeallocate_g95.a
 have been prebuilt on the
-ITM Gateway
+EU-IM Gateway
 .
 Module copy_structures
 ----------------------
 
-This Fortran90 module allows you to copy in a very simple way any ITM
+This Fortran90 module allows you to copy in a very simple way any EU-IM
 data structure which is defined in euitm_schemas.f90.
 Add the following use statement to your code:
 ::
@@ -71,7 +71,7 @@ The Fortran syntax for copying a cpo is then:
      call copy_cpo(cpo_source, cpo_target)
 
 where cpo_source and cpo_target are single time slices or arrays of a
-CPO (or other ITM data structure) of the same derived type, real
+CPO (or other EU-IM data structure) of the same derived type, real
 scalars, or real arrays (1D - 7D).
 The allocation of the elements of the target structure is done
 automatically.
@@ -102,12 +102,12 @@ libcopy_pgi.a
 and
 libcopy_g95.a
 have been prebuilt on the
-ITM Gateway
+EU-IM Gateway
 .
 Module euitm_copy
 -----------------
 
-This Fortran90 module allows you to copy in a very simple way any ITM
+This Fortran90 module allows you to copy in a very simple way any EU-IM
 data structure which is defined in euitm_schemas.f90 including entire
 trim traces.
 Add the following use statement to your code:
@@ -121,7 +121,7 @@ The Fortran syntax for copying a cpo via assignment is then:
      cpo_target = cpo_source
 
 where cpo_source and cpo_target are single time slices or arrays of a
-CPO (or other ITM data structure) of the same derived type.
+CPO (or other EU-IM data structure) of the same derived type.
 The allocation of the elements of the target structure is done
 automatically.
 The program files are hosted by the Gforge project
@@ -148,7 +148,7 @@ Or supply the file from a given directory
 Module is_set_structures
 ------------------------
 
-This Fortran90 module can be used to check whether ITM data structures
+This Fortran90 module can be used to check whether EU-IM data structures
 including entire CPOs have been set. The subroutines in
 is_set_structures.f90
 write out the name of each element in the data structure together with
@@ -166,7 +166,7 @@ The Fortran syntax for checking a cpo is then:
 
      call is_set_cpo(cpo, "name of cpo")
 
-where cpo is a single time slice or an array of a CPO (or other ITM data
+where cpo is a single time slice or an array of a CPO (or other EU-IM data
 structure) and "name of cpo" is a string containing the name of the CPO.
 The module
 is_set_structures.f90
@@ -185,7 +185,7 @@ libis_set_pgi.a
 and
 libis_set_g95.a
 have been prebuilt on the
-ITM Gateway
+EU-IM Gateway
 .
 Module size_of_structures
 -------------------------
@@ -216,7 +216,7 @@ The Fortran syntax for calculating the size of a cpo is then:
 
      call size_of_cpo(cpo, total_size, human_readable, "name of cpo")
 
-where cpo is a single time slice or an array of a CPO (or other ITM data
+where cpo is a single time slice or an array of a CPO (or other EU-IM data
 structure) and "name of cpo" is a string containing the name of the CPO.
 total_size is an integer and should be set to zero before the call.
 human_readable is a flag (true => human friendly format).
@@ -250,12 +250,12 @@ libsize_of_pgi.a
 and
 libsize_of_g95.a
 have been prebuilt on the
-ITM Gateway
+EU-IM Gateway
 .
 Module write_structures
 -----------------------
 
-This Fortran90 module can be used to write ITM data structures including
+This Fortran90 module can be used to write EU-IM data structures including
 entire CPOs to disk.
 The corresponding file is opened with
 ::
@@ -279,7 +279,7 @@ The Fortran syntax for writing a cpo to disk is then:
 
      call write_cpo(cpo, "name of cpo")
 
-where cpo is a single time slice or an array of a CPO (or other ITM data
+where cpo is a single time slice or an array of a CPO (or other EU-IM data
 structure) and "name of cpo" is a string containing the name of the CPO.
 With
 ::
@@ -305,12 +305,12 @@ libwrite_pgi.a
 and
 libwrite_g95.a
 have been prebuilt on the
-ITM Gateway
+EU-IM Gateway
 .
 Module read_structures
 ----------------------
 
-This Fortran90 module can be used to read ITM data structures including
+This Fortran90 module can be used to read EU-IM data structures including
 entire CPOs from disk.
 The corresponding file is opened with
 ::
@@ -334,7 +334,7 @@ The Fortran syntax for reading a cpo from disk is then:
 
      call read_cpo(cpo, "name of cpo")
 
-where cpo is a single time slice or an array of a CPO (or other ITM data
+where cpo is a single time slice or an array of a CPO (or other EU-IM data
 structure) and "name of cpo" is a string containing the name of the CPO.
 The module automatically deallocates any fields already allocated in cpo
 and allocates all required fields automatically. It is absolutely
@@ -364,12 +364,12 @@ libread_pgi.a
 and
 libread_g95.a
 have been prebuilt on the
-ITM Gateway
+EU-IM Gateway
 .
 Module diff_structures
 ----------------------
 
-This Fortran90 module can be used to compare two CPOs or other ITM data
+This Fortran90 module can be used to compare two CPOs or other EU-IM data
 structures. It was developed to facilitate benchmarks and automated test
 suites for the code development. It was kept flexible through the use of
 function arguments in the argument list of the subroutines of
@@ -389,8 +389,8 @@ then:
 
      call diff_cpo(reference_cpo, test_cpo, name_root, func)
 
-where reference_cpo is the reference CPO or other ITM data structure and
-test_cpo is the test CPO or other ITM data structure.
+where reference_cpo is the reference CPO or other EU-IM data structure and
+test_cpo is the test CPO or other EU-IM data structure.
 name_root is a string which defines the root of the field names to be
 displayed, e.g. 'equilibrium'.
 func is a function argument to the subroutine diff_cpo. It can be any
@@ -467,5 +467,5 @@ libdiff_pgi.a
 and
 libdiff_g95.a
 have been prebuilt on the
-ITM Gateway
+EU-IM Gateway
 .

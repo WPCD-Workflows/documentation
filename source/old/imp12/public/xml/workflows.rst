@@ -122,7 +122,7 @@ Free Boundary Equilibrium Reconstruction
 EQUAL slice
 ~~~~~~~~~~~
 
-The workflow equalslice.xml reads JET magnetics data from the ITM
+The workflow equalslice.xml reads JET magnetics data from the EU-IM
 database and runs the EQUAL free boundary equilibrium reconstruction
 code to calculate the equilibrium. A Python actor is included to
 visualize the resulting separatrix curve (see figure below).
@@ -145,7 +145,7 @@ High Resolution Fixed Boundary Equilibrium Reconstruction
 HELENA
 ~~~~~~
 
-The workflow helena_aug.xml reads an equilibrium CPO from the ITM
+The workflow helena_aug.xml reads an equilibrium CPO from the EU-IM
 database (which may contain as little as the input profiles and boundary
 curve) and calculates the high resolution fixed boundary equilibrium
 inside the specified boundary curve using the HELENA actor. A Python
@@ -164,7 +164,7 @@ actor is included to visualize the resulting equilibrium.
 EQUAL-HELENA
 ~~~~~~~~~~~~
 
-The workflow equal_helena.xml reads JET magnetics data from the ITM
+The workflow equal_helena.xml reads JET magnetics data from the EU-IM
 database and runs the EQUAL free boundary equilibrium reconstruction
 code to calculate the equilibrium. The resulting equilibrium is then
 reconstructed within the separatrix with the high resolution equilibrium
@@ -271,7 +271,7 @@ Linear MHD Stability Analysis
 ILSA
 ~~~~
 
-The workflow ilsa_aug.xml reads an equilibrium CPO from the ITM database
+The workflow ilsa_aug.xml reads an equilibrium CPO from the EU-IM database
 containing a high resolution fixed boundary equilibrium. It then
 analyzes the equilibrium for linear MHD stability and calculates a
 spectrum of growthrates and frequencies vs. toroidal mode numbers using
@@ -291,7 +291,7 @@ visualize the resulting spectrum (see figure below).
 EQUAL-HELENA-ILSA
 ~~~~~~~~~~~~~~~~~
 
-The workflow equal_helena_ilsa.xml reads JET magnetics data from the ITM
+The workflow equal_helena_ilsa.xml reads JET magnetics data from the EU-IM
 database and runs the EQUAL free boundary equilibrium reconstruction
 code to calculate the equilibrium. The resulting equilibrium is then
 reconstructed within the separatrix with the high resolution equilibrium

@@ -25,11 +25,11 @@ Progress reports during IMP5 session
    ,
    pdf
    ), by G. Vlad
--  ARENA+ in ITM
+-  ARENA+ in EU-IM
    (
    pdf
    ), by G. Pokol
--  TORBEAM for ITM
+-  TORBEAM for EU-IM
    (
    ppt
    ,

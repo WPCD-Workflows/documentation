@@ -71,7 +71,7 @@ You also need to configure initial IMP5HCD settings. Therefore please:
 -  Commit
 
 The detailed information on initial IMP5HCD settings can be found
-`here <https://www.eufus.eu/documentation/ITM/html/imp5_imp5hcd.html>`__.
+`here <https://www.eufus.eu/documentation/EU-IM/html/imp5_imp5hcd.html>`__.
 Please note that settings for NBI are done independent for each PINI.
 Therefore, for NBI settings, please insert the values separated by
 commas. The number of the element in the array corresponds to the number

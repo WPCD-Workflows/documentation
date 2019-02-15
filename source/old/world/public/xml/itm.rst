@@ -1,9 +1,9 @@
-ITM
+EU-IM
 ===
 
-Public ITM pages
+Public EU-IM pages
 ----------------
 
 To access the
-public ITM pages
-, an ITM password is needed.
+public EU-IM pages
+, an EU-IM password is needed.

@@ -4,7 +4,7 @@ How to turn a C++ code into a Kepler actor
 ==========================================
 
 This document is based on material provided by Yann Frauel and describes
-how to make your C++ code ITM compliant and how to turn it into a Kepler
+how to make your C++ code EU-IM compliant and how to turn it into a Kepler
 actor.
 
 Adapt your C++ function
@@ -109,12 +109,12 @@ mycppfunction.cpp:
 
    void mycppfunction(
          ItmNs::Itm::summary  SUM,
-         ITMNS::ITM::ANTENNAS & ANT,
-         ITMNS::ITM::EQUILIBRIUMARRAY & EQ,
+         EU-IMNS::EU-IM::ANTENNAS & ANT,
+         EU-IMNS::EU-IM::EQUILIBRIUMARRAY & EQ,
          INT & X,
-         ITMNS::ITM::LIMITER & LIM,
-         ITMNS::ITM::COREIMPUR & COR,
-         ITMNS::ITM::IRONMODELARRAY & IRON,
+         EU-IMNS::EU-IM::LIMITER & LIM,
+         EU-IMNS::EU-IM::COREIMPUR & COR,
+         EU-IMNS::EU-IM::IRONMODELARRAY & IRON,
          DOUBLE * Y,
          CHAR * STR,
    PARAM & CODEPARAM)
@@ -174,7 +174,7 @@ Content of Makefile:
 ::
 
    CXXFLAGS=-g -fPIC -I$(UAL)/include -I$(UAL)/lowlevel -I$(UAL)/cppinterface/
-   -I$SWITMDIR/blitz/blitz-0.9/include/
+   -I$SWEU-IMDIR/blitz/blitz-0.9/include/
    LDFLAGS=-L$(UAL)/lib -lUALCPPInterface -lUALLowLevel -L/afs/efda-
    itm.eu/project/switm/blitz/blitz-0.9/lib -lblitz
    libmycppfunction.a: mycppfunction.o
@@ -197,7 +197,7 @@ First tab (Argument):
 -  tick if argument is output argument (multiple ticks possible)
 
 The fields Kepler, Ptolemy, and UAL are automatically filled with the
-values which you set by running the ``ITMv1 script``.
+values which you set by running the ``EU-IMv1 script``.
 
 Second tab (HasReturn):
 

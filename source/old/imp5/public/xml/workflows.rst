@@ -34,7 +34,7 @@ in the directory
 
 .. code-block:: console
 
-   /afs/efda-itm.eu/imp5/user/wwwimp5/public/EU-IM_test/workflows/
+   /afs.eufus.eu/imp5/user/wwwimp5/public/EU-IM_test/workflows/
 
 .. _imp5_workflow__imp5hcd:
 

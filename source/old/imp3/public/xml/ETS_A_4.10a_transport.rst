@@ -29,7 +29,7 @@ You should choose from the list of evailable models in each cathegory or
 switch it OFF
 
 The list of available transport models can be found
-`here <https://www.eufus.eu/documentation/ITM/html/ets_status.html>`__.
+`here <https://www.eufus.eu/documentation/EU-IM/html/ets_status.html>`__.
 
 Main plasma transport
 ---------------------

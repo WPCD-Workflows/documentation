@@ -15,7 +15,7 @@ Install a private version of KEPLER for 4.10a on your account:
 
    cd ~
    rm -rf kepler .kepler
-   tar xvf $SWITMDIR/kepler/4.10a/kepler.tar
+   tar xvf $SWEU-IMDIR/kepler/4.10a/kepler.tar
 
 Set the Kepler, UAL and database environment variables. Kepler will work
 in your private database, under the machine TokamakName
@@ -23,7 +23,7 @@ in your private database, under the machine TokamakName
 
 ::
 
-   source $ITMSCRIPTDIR/ITMv1 KeplerFolder TokamakName DataVersion
+   source $EU-IMSCRIPTDIR/EU-IMv1 KeplerFolder TokamakName DataVersion
 
 KeplerFolder should be your private Kepler path relative to your home
 directory. Simply "kepler" is recommended, unless you want to have
@@ -31,7 +31,7 @@ several private versions of Kepler in your directory. Example:
 
 ::
 
-   source $ITMSCRIPTDIR/ITMv1 kepler test 4.10a
+   source $EU-IMSCRIPTDIR/EU-IMv1 kepler test 4.10a
 
 If this is not run on restart, kepler will open in the default
 environment which is not what you want!
@@ -40,15 +40,15 @@ To have your environment set by default (
 mandatory for new features such as debugging, use of batch jobs, ...
 ), it is recommended to set default envinronment variables by adding
 this command in you .cshrc file as follows:
-source $ITMSCRIPTDIR/ITMv1 KeplerFolder TokamakName DataVersion
+source $EU-IMSCRIPTDIR/EU-IMv1 KeplerFolder TokamakName DataVersion
 >/dev/null
 Prepare the input data (see `Databases <#isip_databases>`__ for
-details). Create a "test" zone in your private ITM data tree if you
+details). Create a "test" zone in your private EU-IM data tree if you
 haven't already done it.
 
 ::
 
-   $ITMSCRIPTDIR/create_user_itm_dir test 4.10a
+   $EU-IMSCRIPTDIR/create_user_itm_dir test 4.10a
 
 This version of Kepler is provided with a few workflow examples, located
 in the kepler/demos directory. To use them, you need to copy the example
@@ -87,7 +87,7 @@ Issues
    gateway
    node. Delete .kepler and try again!
 3. If Kepler dies, the core dump can be enormous - 1.6GB seen with an
-   ITM test workflow. To find core files in your home directory tree do
+   EU-IM test workflow. To find core files in your home directory tree do
    ::
 
       find ~/ -name 'core.*'
@@ -112,7 +112,7 @@ Issues
    or
    UAL
    ) will be reset to the values defined in these files (if you included
-   for instance a source of the ITMv1 script). This may result in Kepler
+   for instance a source of the EU-IMv1 script). This may result in Kepler
    not being able to access the
    runwork
    data file anymore since this was stored at the original location in

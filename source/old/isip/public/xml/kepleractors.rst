@@ -4,7 +4,7 @@ KeplerActors
 ============
 
 The kepleractors project under GForge is used for exchanging Kepler
-actors among ITM users. This project and its associated SVN repository
+actors among EU-IM users. This project and its associated SVN repository
 have been created related to the GForge project
 `Keplerworkflows <#isip_keplerworkflows>`__ for enhancing traceability
 and reproducibility of simulations.
@@ -64,7 +64,7 @@ UAL release versions
 
 Each
 UAL
-release version hosts the following subdirectories for the ITM projects:
+release version hosts the following subdirectories for the EU-IM projects:
 ::
 
    - amns
@@ -139,7 +139,7 @@ Pre-requisites
 
 -  Have a copy of Kepler installed in your environment
 -  Run the script
-   ITMv1
+   EU-IMv1
    to specify the working kepler directory (private) and set the
    environment variables (for FC2K and the
    UAL
@@ -207,7 +207,7 @@ Pre-requisites
 
 -  Have a copy of Kepler installed in your environment
 -  Run the script
-   ITMv1
+   EU-IMv1
    to specify the working kepler directory (private) and set the
    environment variables (for the UAL)
 -  Go into a directory in which you have write permission

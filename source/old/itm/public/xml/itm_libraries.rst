@@ -3,24 +3,24 @@
 Libraries
 =========
 
-The ITM provides a number of libraries specific to ITM-related concepts
+The EU-IM provides a number of libraries specific to EU-IM-related concepts
 and tasks. Furthermore a number of standard libraries are available for
 code development. This page gives an overview of what's available and
 how to use it.
 
-ITM Libraries
+EU-IM Libraries
 -------------
 
-Libraries developed by the ITM are made available on the ITM platform in
+Libraries developed by the EU-IM are made available on the EU-IM platform in
 standardized directory layout. The root for this directory hierarchy is
-currently placed at $ITMLIBDIR. However, please do not hard-code this
+currently placed at $EU-IMLIBDIR. However, please do not hard-code this
 path into your Makefiles and build systems. An environment variable
-ITMLIBDIR holding this value is automatically defined in the user
+EU-IMLIBDIR holding this value is automatically defined in the user
 environment.
 
 The library files are organized as follows:
 
--  $ITMLIBDIR ($ITMLIBDIR)
+-  $EU-IMLIBDIR ($EU-IMLIBDIR)
 
    -  Library name (e.g. itmconstants)
 
@@ -53,7 +53,7 @@ values are used:
 -  amd64_gfortran_4.7
    - gfortran compiler, version 4.7
 
-The full draft for the ITM standard directory layout is described in
-this document: `ITM standard directory
-layout <../../../isip/public/imports/ITM_Library_Directory_Layout.pdf>`__.
+The full draft for the EU-IM standard directory layout is described in
+this document: `EU-IM standard directory
+layout <../../../isip/public/imports/EU-IM_Library_Directory_Layout.pdf>`__.
 

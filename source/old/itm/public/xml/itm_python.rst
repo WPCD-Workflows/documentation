@@ -1,17 +1,17 @@
 .. _itm_python:
 
-Python on the ITM platform
+Python on the EU-IM platform
 ==========================
 
 Python installation: overview
 -----------------------------
 
-The ITM platform includes a Python installation, with
+The EU-IM platform includes a Python installation, with
 
 -  a number of standard libraries for scientific computing (NumPy,
    SciPy, matplotlib, ...)
--  a UAL interface for reading and writing CPOs from/to the ITM database
--  ITM-specific libraries for handling CPOs, the general grid
+-  a UAL interface for reading and writing CPOs from/to the EU-IM database
+-  EU-IM-specific libraries for handling CPOs, the general grid
    description and CPO-specific visualization tools
 
 The following Python versions are available: 2.5.1, 2.6.7.
@@ -34,9 +34,9 @@ Usage:
 
 ::
 
-   source $ITMSCRIPTDIR/select_python [PYTHONVERSION] 
+   source $EU-IMSCRIPTDIR/select_python [PYTHONVERSION] 
 
-or, using an alias provided in the default ITM environment
+or, using an alias provided in the default EU-IM environment
 
 ::
 
@@ -47,14 +47,14 @@ the following is recommended:
 
 ::
 
-   source $ITMSCRIPTDIR/select_python [PYTHONVERSION]  > /dev/null
+   source $EU-IMSCRIPTDIR/select_python [PYTHONVERSION]  > /dev/null
 
 -  PYTHONVERSION can be one of "2.5", "2.6" or "default" (the current
    default is 2.5).
 -  If it is ommitted, any previously selected Python version is kept. If
    no Python version was previously selected, the default version is
    selected.
--  If an ITM data version was selected (by running the ITMv1 script),
+-  If an EU-IM data version was selected (by running the EU-IMv1 script),
    the Python environment is set up to include UAL-specific components.
    If no data version is currently selected, the UAL-specific components
    are not included in the environment.
@@ -64,7 +64,7 @@ following line in your ~/.cshrc file:
 
 ::
 
-   source $ITMSCRIPTDIR/select_python 2.6 > /dev/null
+   source $EU-IMSCRIPTDIR/select_python 2.6 > /dev/null
 
 Known issues when switching between Python versions
 
@@ -138,22 +138,22 @@ Installation details
 Directory layout
 
 -  select_python script
-   $ITMSCRIPTDIR/select_python
+   $EU-IMSCRIPTDIR/select_python
 
 -  Python installations
-   $SWITMDIR/python/python2.5.1 $SWITMDIR/python/python2.6.7
+   $SWEU-IMDIR/python/python2.5.1 $SWEU-IMDIR/python/python2.6.7
 
 -  Standard packages
    (NumPy, SciPy, matplotlib, ...)
-   /afs/.efda-itm.eu/project/switm/python/python_pk.2.5.1
-   $SWITMDIR/python/python_pk.2.6/lib/python2.6/site-packages
+   /afs/.eufus.eu/project/switm/python/python_pk.2.5.1
+   $SWEU-IMDIR/python/python_pk.2.6/lib/python2.6/site-packages
 
--  ITM-specific packages
+-  EU-IM-specific packages
    (UAL, ...)
 
    -  Python UAL interface
-      $SWITMDIR/ual/$DATAVERSION/python_pk.$PYTHONVERSION
+      $SWEU-IMDIR/ual/$DATAVERSION/python_pk.$PYTHONVERSION
 
-   -  ITM Visualization Library
-      $SWITMDIR/itmvis/$DATAVERSION/python_pk.$PYTHONVERSION
+   -  EU-IM Visualization Library
+      $SWEU-IMDIR/itmvis/$DATAVERSION/python_pk.$PYTHONVERSION
 

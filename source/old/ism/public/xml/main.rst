@@ -33,6 +33,6 @@ Private ISM pages
 -----------------
 
 To access the `private ISM
-pages <https://www.efda-itm.eu/ISM/html/index.html>`__, an ISM password
+pages <https://www.eufus.eu/ISM/html/index.html>`__, an ISM password
 is needed.
 

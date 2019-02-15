@@ -12,7 +12,7 @@ GForge Projects
 
 `Gateway User Board <https://gforge6.eufus.eu/project/gub>`__ >
 `Wiki: <https://gforge6.eufus.eu/project/gub/wiki>`__ Gateway management
-`ITM Portal <https://gforge6.eufus.eu/project/itmportal>`__ >
+`EU-IM Portal <https://gforge6.eufus.eu/project/itmportal>`__ >
 `SVN <https://gforge6.eufus.eu/project/itmportal/scmsvn>`__
 documentation and code `Data
 Structure <https://gforge6.eufus.eu/project/datastructure>`__ >

@@ -6,7 +6,7 @@ ETS Status
 +-----------------------+-----------------------+-----------------------+
 | *Package Name /       | `ETS-A <https://www.e | `ETS-C <https://www.e |
 | Physics Module*       | ufus.eu/documentation | ufus.eu/documentation |
-|                       | /ITM/html/ETS_A_KEPLE | /ITM/html/ETS_C_KEPLE |
+|                       | /EU-IM/html/ETS_A_KEPLE | /EU-IM/html/ETS_C_KEPLE |
 |                       | R_4.10a.html>`__      | R.html>`__            |
 +=======================+=======================+=======================+
 | *EQILIBRIUM*          |                       |                       |
@@ -91,7 +91,7 @@ ETS Status
 |                       | lease                 |                       |
 |                       | date:Nov.2014         |                       |
 +-----------------------+-----------------------+-----------------------+
-| RITM                  | Implemented/Tested/re |                       |
+| REU-IM                  | Implemented/Tested/re |                       |
 |                       | lease                 |                       |
 |                       | date:Nov.2014         |                       |
 +-----------------------+-----------------------+-----------------------+

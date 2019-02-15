@@ -2,7 +2,7 @@ ISIP
 ====
 
 ISIP (Infrastructure Support Project) is in charge of the infrastructure
-(soft + hard) for the ITM:
+(soft + hard) for the EU-IM:
 
 -  Code platform: framework, simulation editor, ...
 -  Data handling: data structure, data storage & access, ...
@@ -19,4 +19,4 @@ Public ISIP pages
 
 To access the
 public ISIP pages
-, an ITM password is needed.
+, an EU-IM password is needed.

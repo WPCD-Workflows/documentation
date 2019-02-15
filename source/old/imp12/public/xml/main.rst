@@ -89,6 +89,6 @@ Private IMP12 pages
 -------------------
 
 To access the `private IMP12
-pages <https://www.efda-itm.eu/IMP12/html/index.html>`__, an IMP12
+pages <https://www.eufus.eu/IMP12/html/index.html>`__, an IMP12
 password is needed.
 

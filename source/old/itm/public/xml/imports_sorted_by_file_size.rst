@@ -7,13 +7,13 @@ Documents (sorted by file size)
 | title                     | link                      | file size   |
 +===========================+===========================+=============+
 | Potential 3D codes for    | `Potential 3D codes for   | 32K         |
-| ITM (Konz)                | the ITM                   |             |
+| EU-IM (Konz)                | the EU-IM                   |             |
 |                           | (C.Konz) <../../../edrg/p |             |
 |                           | ublic/imports/meetings/20 |             |
-|                           | 09/3Dwall/edrg_ITM_3D_Cod |             |
+|                           | 09/3Dwall/edrg_EU-IM_3D_Cod |             |
 |                           | es.doc>`__                |             |
 +---------------------------+---------------------------+-------------+
-| Contents of the ITM       | `ITM                      | 32K         |
+| Contents of the EU-IM       | `EU-IM                      | 32K         |
 | public database (Imbeaux) | PublicDatabase <../../../ |             |
 |                           | isip/public/imports/isip_ |             |
 |                           | PublicContent.pdf>`__     |             |
@@ -22,10 +22,10 @@ Documents (sorted by file size)
 | invite (Strand)           | ic/imports/gateway/GUA_in |             |
 |                           | vite.pdf>`__              |             |
 +---------------------------+---------------------------+-------------+
-| ITM Software License and  | `model                    | 32K         |
+| EU-IM Software License and  | `model                    | 32K         |
 | rights (Coelho)           | licence <../../../itm/pub |             |
 |                           | lic/imports/gateway/Model |             |
-|                           | _licence_for_the_ITM.pdf> |             |
+|                           | _licence_for_the_EU-IM.pdf> |             |
 |                           | `__                       |             |
 +---------------------------+---------------------------+-------------+
 | UAL Tutorial (Imbeaux)    | `UAL                      | 32K         |
@@ -77,11 +77,11 @@ Documents (sorted by file size)
 |                           | ing.ppt>`__               |             |
 +---------------------------+---------------------------+-------------+
 | Visualization Tools in    | `ppt <../../../itm/public | 32K         |
-| the ITM (Coster)          | /imports/generalmeet/2011 |             |
+| the EU-IM (Coster)          | /imports/generalmeet/2011 |             |
 |                           | /Visualization_Tools_in_t |             |
-|                           | he_ITM.ppt>`__            |             |
+|                           | he_EU-IM.ppt>`__            |             |
 +---------------------------+---------------------------+-------------+
-| Minutes of the first ITM  | `Minutes of the working   | 64K         |
+| Minutes of the first EU-IM  | `Minutes of the working   | 64K         |
 | working session on        | session                   |             |
 | control issues (Coelho)   | (R.Coelho/T.Bolzonella) < |             |
 |                           | ../../../edrg/public/impo |             |
@@ -175,7 +175,7 @@ Documents (sorted by file size)
 |                           | IEW_2010/Presentations/SA |             |
 |                           | 3.pdf>`__                 |             |
 +---------------------------+---------------------------+-------------+
-| MARS-F on ITM (Yadykin)   | `MARS-F on ITM (D.        | 96K         |
+| MARS-F on EU-IM (Yadykin)   | `MARS-F on EU-IM (D.        | 96K         |
 |                           | Yadykin) <../../../edrg/p |             |
 |                           | ublic/imports/WS/2010/WS_ |             |
 |                           | CEA_June/yadykin_100629.p |             |
@@ -187,16 +187,16 @@ Documents (sorted by file size)
 |                           | D_WS_5July/Summary discus |             |
 |                           | sion.pdf>`__              |             |
 +---------------------------+---------------------------+-------------+
-| ITM software policies and | `(doc) <../../../itm/publ | 96K         |
+| EU-IM software policies and | `(doc) <../../../itm/publ | 96K         |
 | gateway user agreement    | ic/imports/gateway/Gatewa |             |
-| (Strand)                  | yUserAgreement_ITM.doc>`_ |             |
+| (Strand)                  | yUserAgreement_EU-IM.doc>`_ |             |
 |                           | _                         |             |
 +---------------------------+---------------------------+-------------+
-| Minutes of the ITM        | `Minutes ofthe meeting on | 96K         |
+| Minutes of the EU-IM        | `Minutes ofthe meeting on | 96K         |
 | meeting on the            | control in March          |             |
 | implementation of         | 2010 <../../../imp12/publ |             |
-| controllers within the    | ic/imports/imp12_ITM_meet |             |
-| ITM simulation platform   | ing_on_control_23_03_2010 |             |
+| controllers within the    | ic/imports/imp12_EU-IM_meet |             |
+| EU-IM simulation platform   | ing_on_control_23_03_2010 |             |
 | (Konz)                    | .pdf>`__                  |             |
 +---------------------------+---------------------------+-------------+
 | Minutes of the meeting on | `pdf <../../../imp12/publ | 96K         |
@@ -280,9 +280,9 @@ Documents (sorted by file size)
 | (Coelho)                  | rg_Convention_angles_inte |             |
 |                           | rfdiag.pdf>`__            |             |
 +---------------------------+---------------------------+-------------+
-| ITM software policies and | `(pdf) <../../../itm/publ | 128K        |
+| EU-IM software policies and | `(pdf) <../../../itm/publ | 128K        |
 | gateway user agreement    | ic/imports/gateway/Gatewa |             |
-| (Strand)                  | yUserAgreement_ITM.pdf>`_ |             |
+| (Strand)                  | yUserAgreement_EU-IM.pdf>`_ |             |
 |                           | _                         |             |
 +---------------------------+---------------------------+-------------+
 | Standardized equations    | `Form of the              | 128K        |
@@ -307,13 +307,13 @@ Documents (sorted by file size)
 | Numerical Codes for       | `pdf <../../../imp5/publi | 128K        |
 | Electron Cyclotron        | c/imports/meetings/201009 |             |
 | heating and Current Drive | 13-17_Lisbon/Poster_Weste |             |
-| (Westerhof)               | rhof_TORAY-RELAX_ITM-IMP5 |             |
+| (Westerhof)               | rhof_TORAY-RELAX_EU-IM-IMP5 |             |
 |                           | -GM2010.pdf>`__           |             |
 +---------------------------+---------------------------+-------------+
 | Numerical Stability       | `pdf <../../../imp5/publi | 128K        |
 | Analysis in the           | c/imports/meetings/201009 |             |
 | Accelerated Orbit         | 13-17_Lisbon/Talk_Steinbr |             |
-| Following Monte-Carlo     | echer_ITM-GM2010.pdf>`__  |             |
+| Following Monte-Carlo     | echer_EU-IM-GM2010.pdf>`__  |             |
 | Method (Steinbrecher)     |                           |             |
 +---------------------------+---------------------------+-------------+
 | Residual fuelling by LFS  | `doc <../../../ism/public | 128K        |
@@ -455,7 +455,7 @@ Documents (sorted by file size)
 | Numerical Stability       | `pdf <../../../imp5/publi | 192K        |
 | Analysis in the           | c/imports/meetings/201009 |             |
 | Accelerated Orbit         | 13-17_Lisbon/Poster_Stein |             |
-| Following Monte-Carlo     | brecher_ITM-GM2010.pdf>`_ |             |
+| Following Monte-Carlo     | brecher_EU-IM-GM2010.pdf>`_ |             |
 | Method (Steinbrecher)     | _                         |             |
 +---------------------------+---------------------------+-------------+
 | Report on 2014 WPCD       | `EC benchmarking in       | 192K        |
@@ -538,7 +538,7 @@ Documents (sorted by file size)
 |                           | IEW_2010/Presentations/Cl |             |
 |                           | oud_presentation.pdf>`__  |             |
 +---------------------------+---------------------------+-------------+
-| Summary of the ITM-TF     | `Minutes (R.              | 224K        |
+| Summary of the EU-IM-TF     | `Minutes (R.              | 224K        |
 | kick-off meeting of the   | Coelho) <../../../edrg/pu |             |
 | EDRG group (Coelho)       | blic/imports/meetings/200 |             |
 |                           | 9/EDRG_kickoff/edrg_Kick_ |             |
@@ -548,11 +548,11 @@ Documents (sorted by file size)
 | 2010 Work programme       | Participation <../../../e |             |
 | (Coelho)                  | drg/public/imports/cfp_an |             |
 |                           | d_report/2010/edrg_CfP_WP |             |
-|                           | 10_ITM_EDRG.pdf>`__       |             |
+|                           | 10_EU-IM_EDRG.pdf>`__       |             |
 +---------------------------+---------------------------+-------------+
 | The IMP4 wrapper for      | `pdf <../../../imp4/publi | 224K        |
 | running IMP4 codes in UAL | c/imports/meetings/201009 |             |
-| framework (Reiser)        | 13-17_Lisbon/Poster_ITM_L |             |
+| framework (Reiser)        | 13-17_Lisbon/Poster_EU-IM_L |             |
 |                           | isbon_2010.pdf>`__        |             |
 +---------------------------+---------------------------+-------------+
 | IMP5 Summary (Farina)     | `pdf <../../../imp5/publi | 224K        |
@@ -682,7 +682,7 @@ Documents (sorted by file size)
 +---------------------------+---------------------------+-------------+
 | Overview of IMP4          | `pdf <../../../itm/public | 224K        |
 | activities during 2010    | /imports/generalmeet/2010 |             |
-| (Scott)                   | /Plenary_ITM_2010_IMP4.pd |             |
+| (Scott)                   | /Plenary_EU-IM_2010_IMP4.pd |             |
 |                           | f>`__                     |             |
 +---------------------------+---------------------------+-------------+
 | Annual Report 2009        | `Annual                   | 256K        |
@@ -751,8 +751,8 @@ Documents (sorted by file size)
 |                           | ISM_2013_05_23/DEMO_model |             |
 |                           | ling_23_5_2013.ppt>`__    |             |
 +---------------------------+---------------------------+-------------+
-| ITM AMNS Interface        | `pdf <../../../amns/publi | 288K        |
-| (Coster)                  | c/imports/ITM_AMNS_Interf |             |
+| EU-IM AMNS Interface        | `pdf <../../../amns/publi | 288K        |
+| (Coster)                  | c/imports/EU-IM_AMNS_Interf |             |
 |                           | ace_2008-09.pdf>`__       |             |
 +---------------------------+---------------------------+-------------+
 | Summary of existing or    | `Controller schemes from  | 288K        |
@@ -770,13 +770,13 @@ Documents (sorted by file size)
 | Numerical codes for       | `pdf <../../../imp5/publi | 288K        |
 | electron cyclotron        | c/imports/meetings/201009 |             |
 | heating and current drive | 13-17_Lisbon/Talk_Bertell |             |
-| (Bertelli)                | i_ECcodes_ITM-IMP5-GM2010 |             |
+| (Bertelli)                | i_ECcodes_EU-IM-IMP5-GM2010 |             |
 |                           | .pdf>`__                  |             |
 +---------------------------+---------------------------+-------------+
 | TORBEAM: Physical Model   | `pdf <../../../imp5/publi | 288K        |
 | (Bertelli)                | c/imports/meetings/201009 |             |
 |                           | 13-17_Lisbon/Talk_Bertell |             |
-|                           | i_TORBEAM_ITM-IMP5-GM2010 |             |
+|                           | i_TORBEAM_EU-IM-IMP5-GM2010 |             |
 |                           | .pdf>`__                  |             |
 +---------------------------+---------------------------+-------------+
 | GRAY code status (Figini) | `pdf <../../../imp5/publi | 288K        |
@@ -840,14 +840,14 @@ Documents (sorted by file size)
 +---------------------------+---------------------------+-------------+
 | IMP4 (Scott)              | `pdf <../../../itm/public | 288K        |
 |                           | /imports/generalmeet/2011 |             |
-|                           | /ITMGM_IMP4.pdf>`__       |             |
+|                           | /EU-IMGM_IMP4.pdf>`__       |             |
 +---------------------------+---------------------------+-------------+
 | Brief overview of         | `Experimental data        | 320K        |
 | experimental data in the  | retrieval                 |             |
-| ITM framework (Imbeaux)   | (F.Imbeaux) <../../../edr |             |
+| EU-IM framework (Imbeaux)   | (F.Imbeaux) <../../../edr |             |
 |                           | g/public/imports/meetings |             |
 |                           | /2009/EDRG_kickoff/edrg_E |             |
-|                           | xperimentalDataITM_v2.pdf |             |
+|                           | xperimentalDataEU-IM_v2.pdf |             |
 |                           | >`__                      |             |
 +---------------------------+---------------------------+-------------+
 | Kepler actor generation   | `KEPLER Actor Generation  | 320K        |
@@ -860,8 +860,8 @@ Documents (sorted by file size)
 +---------------------------+---------------------------+-------------+
 | Brief overview of         | `Experimental Data        | 320K        |
 | experimental data in the  | Overview <../../../isip/p |             |
-| ITM framework (Imbeaux)   | ublic/imports/isip_Experi |             |
-|                           | mentalDataITM_v3.pdf>`__  |             |
+| EU-IM framework (Imbeaux)   | ublic/imports/isip_Experi |             |
+|                           | mentalDataEU-IM_v3.pdf>`__  |             |
 +---------------------------+---------------------------+-------------+
 | Exercises (Imbeaux)       | `Exercises: <../../../isi | 320K        |
 |                           | p/public/imports/isip_ISI |             |
@@ -881,19 +881,19 @@ Documents (sorted by file size)
 | Ray-Tracing Code TRAVIS   | `pdf <../../../imp5/publi | 320K        |
 | (Marushchenko)            | c/imports/meetings/201107 |             |
 |                           | 11-15_Prague_Code_Camp/Ta |             |
-|                           | lk_Nicolai--TRAVIS_ITM_pr |             |
+|                           | lk_Nicolai--TRAVIS_EU-IM_pr |             |
 |                           | ague_cc2011.pdf>`__       |             |
 +---------------------------+---------------------------+-------------+
-| TORBEAM for ITM (Poli)    | `ppt <../../../imp5/publi | 320K        |
+| TORBEAM for EU-IM (Poli)    | `ppt <../../../imp5/publi | 320K        |
 |                           | c/imports/meetings/201109 |             |
 |                           | 12-16_GM_Garching/GM2011_ |             |
-|                           | talk_TORBEAM_ITM-2011.ppt |             |
+|                           | talk_TORBEAM_EU-IM-2011.ppt |             |
 |                           | >`__                      |             |
 +---------------------------+---------------------------+-------------+
 | Ray-Tracing Code TRAVIS   | `ppt <../../../imp5/publi | 320K        |
 | (Marushchenko)            | c/imports/meetings/201109 |             |
 |                           | 12-16_GM_Garching/GM2011_ |             |
-|                           | talk_TRAVIS_ITM_Garching_ |             |
+|                           | talk_TRAVIS_EU-IM_Garching_ |             |
 |                           | Sept2011_1.ppt>`__        |             |
 +---------------------------+---------------------------+-------------+
 | ITER integrated           | `ppt <../../../ism/public | 320K        |
@@ -917,18 +917,18 @@ Documents (sorted by file size)
 | extrapolation to D-T      | ISM_2010_09_29/Garcia.pdf |             |
 | (Garcia)                  | >`__                      |             |
 +---------------------------+---------------------------+-------------+
-| Report from ITM/IMP3 Code | `pdf <../../../ism/public | 320K        |
+| Report from EU-IM/IMP3 Code | `pdf <../../../ism/public | 320K        |
 | Camp: ETS V&V             | /imports/Remote_meetings/ |             |
 | (Voitsekhovitch)          | ISM_2011_02_09/Voitsekhov |             |
 |                           | itch_ETS_report.pdf>`__   |             |
 +---------------------------+---------------------------+-------------+
 | Atomic, Molecular,        | `pdf <../../../amns/publi | 352K        |
 | Surface and Nuclear       | c/imports/AMNS_ADAS_2008. |             |
-| (AMSN) data for theITM-TF | pdf>`__                   |             |
+| (AMSN) data for theEU-IM-TF | pdf>`__                   |             |
 | (Coster)                  |                           |             |
 +---------------------------+---------------------------+-------------+
 | Summary of the first      | `Minutes of the Meeting   | 352K        |
-| ITM-TF meeting on 3D      | (R.Coelho) <../../../edrg |             |
+| EU-IM-TF meeting on 3D      | (R.Coelho) <../../../edrg |             |
 | machine descriptions      | /public/imports/meetings/ |             |
 | (Coelho)                  | 2009/3Dwall/edrg_minutes_ |             |
 |                           | 3Dmeeting_04_06_09_v2.pdf |             |
@@ -988,7 +988,7 @@ Documents (sorted by file size)
 +---------------------------+---------------------------+-------------+
 | IMP4 (Scott)              | `pdf <../../../itm/public | 352K        |
 |                           | /imports/generalmeet/2012 |             |
-|                           | /ITMGM_IMP4.pdf>`__       |             |
+|                           | /EU-IMGM_IMP4.pdf>`__       |             |
 +---------------------------+---------------------------+-------------+
 | MHD workflows (Christian) | `pdf <../../../euforia/pu | 352K        |
 | (Konz)                    | blic/imports/meetings/REV |             |
@@ -1088,7 +1088,7 @@ Documents (sorted by file size)
 |                           | ISIP_Training_May2009.pdf |             |
 |                           | >`__                      |             |
 +---------------------------+---------------------------+-------------+
-| ARENA+ in ITM (Pokol)     | `pdf <../../../imp5/publi | 416K        |
+| ARENA+ in EU-IM (Pokol)     | `pdf <../../../imp5/publi | 416K        |
 |                           | c/imports/meetings/201109 |             |
 |                           | 12-16_GM_Garching/GM2011_ |             |
 |                           | talk_Pokol_ARENA.pdf>`__  |             |
@@ -1153,21 +1153,21 @@ Documents (sorted by file size)
 |                           | alKepler.pdf>`__          |             |
 +---------------------------+---------------------------+-------------+
 | Neutral Beam Injection in | `pdf <../../../imp5/publi | 480K        |
-| ITM (Schneider)           | c/imports/meetings/201009 |             |
+| EU-IM (Schneider)           | c/imports/meetings/201009 |             |
 |                           | 13-17_Lisbon/Poster_Schne |             |
-|                           | ider_NBIstatus_ITM-IMP5-G |             |
+|                           | ider_NBIstatus_EU-IM-IMP5-G |             |
 |                           | M2010.pdf>`__             |             |
 +---------------------------+---------------------------+-------------+
-| Modelling NBI in ITM      | `pdf <../../../imp5/publi | 480K        |
+| Modelling NBI in EU-IM      | `pdf <../../../imp5/publi | 480K        |
 | environment with ASCOT    | c/imports/meetings/201009 |             |
 | (Asunta)                  | 13-17_Lisbon/Talk+Poster_ |             |
-|                           | Asunta_ASCOT_ITM-GM2010.p |             |
+|                           | Asunta_ASCOT_EU-IM-GM2010.p |             |
 |                           | df>`__                    |             |
 +---------------------------+---------------------------+-------------+
 | Present status of NBI     | `pdf <../../../imp5/publi | 480K        |
-| codes for ITM (Schneider) | c/imports/meetings/201009 |             |
+| codes for EU-IM (Schneider) | c/imports/meetings/201009 |             |
 |                           | 13-17_Lisbon/Talk_Schneid |             |
-|                           | er_NBIstatus_ITM-IMP5-GM2 |             |
+|                           | er_NBIstatus_EU-IM-IMP5-GM2 |             |
 |                           | 010.pdf>`__               |             |
 +---------------------------+---------------------------+-------------+
 | GRAY: quasi-optical       | `pdf <../../../imp5/publi | 480K        |
@@ -1213,7 +1213,7 @@ Documents (sorted by file size)
 |                           | 13.pdf>`__                |             |
 +---------------------------+---------------------------+-------------+
 | Tightly-coupled workflows | `pdf <../../../itm/public | 480K        |
-| using MUSCLE2 (Hoenen)    | /imports/ITM_WorkFlow_201 |             |
+| using MUSCLE2 (Hoenen)    | /imports/EU-IM_WorkFlow_201 |             |
 |                           | 3/muscle2-lisbon2013.pdf> |             |
 |                           | `__                       |             |
 +---------------------------+---------------------------+-------------+
@@ -1356,7 +1356,7 @@ Documents (sorted by file size)
 |                           | ulink_Huynh.pdf>`__       |             |
 +---------------------------+---------------------------+-------------+
 | Definition of flux loops  | `Flux loop                | 576K        |
-| in EU-ITM datastructure   | position <../../../edrg/p |             |
+| in EU-EU-IM datastructure   | position <../../../edrg/p |             |
 | (Coelho)                  | ublic/imports/md_and_dm/e |             |
 |                           | drg_FLUXLOOPposition.pdf> |             |
 |                           | `__                       |             |
@@ -1454,7 +1454,7 @@ Documents (sorted by file size)
 +---------------------------+---------------------------+-------------+
 | Euro-Fusion “Code         | `pdf <../../../itm/public | 608K        |
 | Development for           | /imports/generalmeet/2013 |             |
-| Integrated Modelling”     | /WP-CD_info_to_ITM.pdf>`_ |             |
+| Integrated Modelling”     | /WP-CD_info_to_EU-IM.pdf>`_ |             |
 | Work Package (Falchetto)  | _                         |             |
 +---------------------------+---------------------------+-------------+
 | A Brief Introduction to   | `pdf <../../../euforia/pu | 608K        |
@@ -1464,8 +1464,8 @@ Documents (sorted by file size)
 |                           | 203.pdf>`__               |             |
 +---------------------------+---------------------------+-------------+
 | Feedback control          | `pdf <../../../isip/publi | 640K        |
-| Simulation under the ITM  | c/imports/meetings/201009 |             |
-| platform (Barana)         | 13-17_Lisbon/ITM_Poster_B |             |
+| Simulation under the EU-IM  | c/imports/meetings/201009 |             |
+| platform (Barana)         | 13-17_Lisbon/EU-IM_Poster_B |             |
 |                           | arana.pdf>`__             |             |
 +---------------------------+---------------------------+-------------+
 | IMP3 2009 Kick-Off        | `pdf <../../../imp3/publi | 640K        |
@@ -1564,9 +1564,9 @@ Documents (sorted by file size)
 |                           | 13-17_Lisbon/poster_WS2K_ |             |
 |                           | v1.ppt>`__                |             |
 +---------------------------+---------------------------+-------------+
-| Exp2ITM - a generic       | `ppt <../../../isip/publi | 704K        |
+| Exp2EU-IM - a generic       | `ppt <../../../isip/publi | 704K        |
 | access to shot based data | c/imports/meetings/201009 |             |
-| for European Tokamaks     | 13-17_Lisbon/Exp2ITM-GM20 |             |
+| for European Tokamaks     | 13-17_Lisbon/Exp2EU-IM-GM20 |             |
 | (Signoret)                | 10.ppt>`__                |             |
 +---------------------------+---------------------------+-------------+
 | Update on hybrid scenario | `ppt <../../../ism/public | 704K        |
@@ -1592,23 +1592,23 @@ Documents (sorted by file size)
 | Free boundary equilibrium | `Free boundary            | 736K        |
 | feedback control          | equilibrium feedback      |             |
 | simulations under         | control simulations under |             |
-| Kepler/ITM (Brémond)      | Kepler/ITM (S.            |             |
+| Kepler/EU-IM (Brémond)      | Kepler/EU-IM (S.            |             |
 |                           | Brémond) <../../../edrg/p |             |
 |                           | ublic/imports/WS/2010/WS_ |             |
-|                           | CEA_June/ITMcontrol_WSCCj |             |
+|                           | CEA_June/EU-IMcontrol_WSCCj |             |
 |                           | une2010_SB.ppt>`__        |             |
 +---------------------------+---------------------------+-------------+
 | CREATE-NL adaptation to   | `CREATE-NL adaptation to  | 736K        |
-| ITM needs (Mattei)        | ITM need (M.              |             |
+| EU-IM needs (Mattei)        | EU-IM need (M.              |             |
 |                           | Mattei) <../../../edrg/pu |             |
 |                           | blic/imports/WS/2010/WS_C |             |
-|                           | EA_June/Mattei_ITM_ws_Cad |             |
+|                           | EA_June/Mattei_EU-IM_ws_Cad |             |
 |                           | arache.ppt>`__            |             |
 +---------------------------+---------------------------+-------------+
 | Fast ICRH code for        | `pdf <../../../imp5/publi | 736K        |
 | routine analysis          | c/imports/meetings/201009 |             |
 | (Hellsten)                | 13-17_Lisbon/Talk_Hellste |             |
-|                           | n_SELFO-light_ITM-IMP5-GM |             |
+|                           | n_SELFO-light_EU-IM-IMP5-GM |             |
 |                           | 2010.pdf>`__              |             |
 +---------------------------+---------------------------+-------------+
 | Update on hybrid scenario | `ppt <../../../ism/public | 736K        |
@@ -1927,7 +1927,7 @@ Documents (sorted by file size)
 | Full-wave modelling of    | `pdf <../../../imp5/publi | 992K        |
 | electromagnetic wave      | c/imports/meetings/201009 |             |
 | propagation with the code | 13-17_Lisbon/Talk_Tsironi |             |
-| FWTOR (Tsironis)          | s_FWTOR_ITM-IMP5-GM2010.p |             |
+| FWTOR (Tsironis)          | s_FWTOR_EU-IM-IMP5-GM2010.p |             |
 |                           | df>`__                    |             |
 +---------------------------+---------------------------+-------------+
 | Update on AUG/JET         | `ppt <../../../ism/public | 992K        |
@@ -1953,7 +1953,7 @@ Documents (sorted by file size)
 +---------------------------+---------------------------+-------------+
 | Data structures in        | `Data Structures          | 1.0M        |
 | practice (Imbeaux)        | inPractice <../../../isip |             |
-|                           | /public/imports/isip_ITMD |             |
+|                           | /public/imports/isip_EU-IMD |             |
 |                           | ataStructures-1.pdf>`__   |             |
 +---------------------------+---------------------------+-------------+
 | Predictive simulations of | `ppt <../../../ism/public | 1.0M        |
@@ -2023,7 +2023,7 @@ Documents (sorted by file size)
 | IMP5: Energetic Particles | `pdf <../../../imp5/publi | 1.1M        |
 | (Vlad)                    | c/imports/meetings/201009 |             |
 |                           | 13-17_Lisbon/Talk_Vlad_En |             |
-|                           | ergetic_Particles_ITM_GM2 |             |
+|                           | ergetic_Particles_EU-IM_GM2 |             |
 |                           | 010.pdf>`__               |             |
 +---------------------------+---------------------------+-------------+
 | Update on                 | `ppt <../../../ism/public | 1.1M        |
@@ -2037,10 +2037,10 @@ Documents (sorted by file size)
 |                           | delling_with_JETTO.ppt>`_ |             |
 |                           | _                         |             |
 +---------------------------+---------------------------+-------------+
-| The EU ITM-TF effort -    | `pdf <../../../ism/public | 1.1M        |
+| The EU EU-IM-TF effort -    | `pdf <../../../ism/public | 1.1M        |
 | Achievements and First    | /imports/Remote_meetings/ |             |
 | Physics Results           | ISM_2012_09_26/Falchetto_ |             |
-| (Falchetto)               | ITM_IAEA.pdf>`__          |             |
+| (Falchetto)               | EU-IM_IAEA.pdf>`__          |             |
 +---------------------------+---------------------------+-------------+
 | Turbulent transport       | `pdf <../../../ism/public | 1.1M        |
 | analysis of JET H-mode    | /imports/Remote_meetings/ |             |
@@ -2049,7 +2049,7 @@ Documents (sorted by file size)
 | (Baiocchi)                |                           |             |
 +---------------------------+---------------------------+-------------+
 | Status of MARS-F and      | `ppt <../../../imp12/publ | 1.1M        |
-| CarMa codes on ITM        | ic/imports/meetings/20100 |             |
+| CarMa codes on EU-IM        | ic/imports/meetings/20100 |             |
 | (Yadykin)                 | 913-17_Lisbon/Poster_Yady |             |
 |                           | kin.ppt>`__               |             |
 +---------------------------+---------------------------+-------------+
@@ -2098,7 +2098,7 @@ Documents (sorted by file size)
 | (Arter)                   | 009/3Dwall/edrg_CADtophys |             |
 |                           | .pdf>`__                  |             |
 +---------------------------+---------------------------+-------------+
-| The ITM-TF Simulation     | `ppt <../../../isip/publi | 1.2M        |
+| The EU-IM-TF Simulation     | `ppt <../../../isip/publi | 1.2M        |
 | Catalogue (Imbeaux)       | c/imports/meetings/201009 |             |
 |                           | 13-17_Lisbon/SimulationCa |             |
 |                           | taloguePoster.ppt>`__     |             |
@@ -2158,19 +2158,19 @@ Documents (sorted by file size)
 +---------------------------+---------------------------+-------------+
 | Overview of ISM           | `ppt <../../../itm/public | 1.2M        |
 | activities during 2010    | /imports/generalmeet/2010 |             |
-| (Litaudon)                | /Plenary_ITM_2010_ISM.ppt |             |
+| (Litaudon)                | /Plenary_EU-IM_2010_ISM.ppt |             |
 |                           | >`__                      |             |
 +---------------------------+---------------------------+-------------+
-| EU ITM-TF experience with | `EU ITM-TF experience     | 1.2M        |
+| EU EU-IM-TF experience with | `EU EU-IM-TF experience     | 1.2M        |
 | Kepler (Falchetto)        | with Kepler, G. Falchetto |             |
 |                           | (CEA)                     |             |
 |                           | (20+10) <../../../itm/pub |             |
 |                           | lic/imports/2011-06_IMT-W |             |
 |                           | orkshop/IMT-Workshop-Wedn |             |
-|                           | esday/ITER_IMT_Kepler_ITM |             |
+|                           | esday/ITER_IMT_Kepler_EU-IM |             |
 |                           | .ppt>`__                  |             |
 +---------------------------+---------------------------+-------------+
-| ITM control workflow      | `ITM control workflow     | 1.2M        |
+| EU-IM control workflow      | `EU-IM control workflow     | 1.2M        |
 | concepts (Imbeaux)        | concepts                  |             |
 |                           | (F.Imbeaux) <../../../edr |             |
 |                           | g/public/imports/WS/2009/ |             |
@@ -2194,7 +2194,7 @@ Documents (sorted by file size)
 |                           | amakSolvers_20101108_v2.p |             |
 |                           | df>`__                    |             |
 +---------------------------+---------------------------+-------------+
-| The ITM general grid      | `pdf <../../../imp3/publi | 1.3M        |
+| The EU-IM general grid      | `pdf <../../../imp3/publi | 1.3M        |
 | description: A tutorial   | c/imports/meetings/2011-0 |             |
 | (Klingshirn)              | 3_WS-CC/griddescription.p |             |
 |                           | df>`__                    |             |
@@ -2315,7 +2315,7 @@ Documents (sorted by file size)
 | Data Mapping User Guide   | `User                     | 1.4M        |
 | (Signoret)                | Guide <../../../edrg/publ |             |
 |                           | ic/imports/md_and_dm/edrg |             |
-|                           | _exp2ITM_MappingFileDescr |             |
+|                           | _exp2EU-IM_MappingFileDescr |             |
 |                           | iption_v6.ppt>`__         |             |
 +---------------------------+---------------------------+-------------+
 | ASDEX Upgrade hybrid      | `pdf <../../../ism/public | 1.4M        |
@@ -2335,12 +2335,12 @@ Documents (sorted by file size)
 |                           | ppt>`__                   |             |
 +---------------------------+---------------------------+-------------+
 | ISIP + IMP12: Control     | `ISIP + IMP12:            | 1.5M        |
-| (ITM)                     | Control <../../../itm/pub |             |
-|                           | lic/imports/ITM_EXPO_EPS2 |             |
+| (EU-IM)                     | Control <../../../itm/pub |             |
+|                           | lic/imports/EU-IM_EXPO_EPS2 |             |
 |                           | 011/ISIP_IMP12_Control_po |             |
 |                           | ster_EPS2011_n.ppt>`__    |             |
 +---------------------------+---------------------------+-------------+
-| The New ITM Website       | `pdf <../../../imp12/publ | 1.5M        |
+| The New EU-IM Website       | `pdf <../../../imp12/publ | 1.5M        |
 | (Konz)                    | ic/imports/meetings/20100 |             |
 |                           | 913-17_Lisbon/Poster_Konz |             |
 |                           | _website.pdf>`__          |             |
@@ -2424,9 +2424,9 @@ Documents (sorted by file size)
 |                           | ISM_2011_04_27/Litaudon_i |             |
 |                           | ntroduction_v2.pdf>`__    |             |
 +---------------------------+---------------------------+-------------+
-| Exp2ITM : populate ITM    | `ppt <../../../imp3/publi | 1.6M        |
+| Exp2EU-IM : populate EU-IM    | `ppt <../../../imp3/publi | 1.6M        |
 | database with             | c/imports/meetings/2010-0 |             |
-| experimental data         | 3_WS-CC/Basics_on_exp2ITM |             |
+| experimental data         | 3_WS-CC/Basics_on_exp2EU-IM |             |
 | (Signoret)                | _v2.ppt>`__               |             |
 +---------------------------+---------------------------+-------------+
 | Transport analysis of JET | `pptx <../../../ism/publi | 1.6M        |
@@ -2512,13 +2512,13 @@ Documents (sorted by file size)
 |                           | (C.                       |             |
 |                           | Konz) <../../../edrg/publ |             |
 |                           | ic/imports/WS/2010/WS_CEA |             |
-|                           | _June/ITM_WS_on_Control_J |             |
+|                           | _June/EU-IM_WS_on_Control_J |             |
 |                           | une_2010.ppt>`__          |             |
 +---------------------------+---------------------------+-------------+
-| IMP5: ITM tools – a quick | `pdf <../../../imp5/publi | 1.8M        |
+| IMP5: EU-IM tools – a quick | `pdf <../../../imp5/publi | 1.8M        |
 | start (Johnson)           | c/imports/meetings/201009 |             |
 |                           | 13-17_Lisbon/Talk_Johnson |             |
-|                           | _ITMtools_ITM-GM2010.pdf> |             |
+|                           | _EU-IMtools_EU-IM-GM2010.pdf> |             |
 |                           | `__                       |             |
 +---------------------------+---------------------------+-------------+
 | Current ramp up in ITER:  | `pdf <../../../ism/public | 1.8M        |
@@ -2564,7 +2564,7 @@ Documents (sorted by file size)
 +---------------------------+---------------------------+-------------+
 | Overview of AMNS          | `ppt <../../../itm/public | 1.8M        |
 | activities during 2010    | /imports/generalmeet/2010 |             |
-| (Eriksson)                | /Plenary_ITM_2010_AMNS.pp |             |
+| (Eriksson)                | /Plenary_EU-IM_2010_AMNS.pp |             |
 |                           | t>`__                     |             |
 +---------------------------+---------------------------+-------------+
 | Modeling development for  | `pdf <../../../ism/public | 1.8M        |
@@ -2572,8 +2572,8 @@ Documents (sorted by file size)
 | scenarios (Casper)        | ednesday/CasperISMtalkUtr |             |
 |                           | echtJuly2011.pdf>`__      |             |
 +---------------------------+---------------------------+-------------+
-| ITM scenarios using IPS   | `ppt <../../../itm/public | 1.8M        |
-| (Petruczynik)             | /imports/ITM_WorkFlow_201 |             |
+| EU-IM scenarios using IPS   | `ppt <../../../itm/public | 1.8M        |
+| (Petruczynik)             | /imports/EU-IM_WorkFlow_201 |             |
 |                           | 3/HLST_IPS.ppt>`__        |             |
 +---------------------------+---------------------------+-------------+
 | Very preliminary JT-60SA  | `ppt <../../../ism/public | 1.9M        |
@@ -2637,13 +2637,13 @@ Documents (sorted by file size)
 |                           | ntroduction_summaryITPA.p |             |
 |                           | df>`__                    |             |
 +---------------------------+---------------------------+-------------+
-| ITM-IMP4 Status &         | `ppt <../../../itm/public | 2.1M        |
+| EU-IM-IMP4 Status &         | `ppt <../../../itm/public | 2.1M        |
 | Achievements (Nielsen)    | /imports/generalmeet/2013 |             |
 |                           | /IMP4_Annual_meeting_2013 |             |
 |                           | _Lisbon.pptx>`__          |             |
 +---------------------------+---------------------------+-------------+
-| IMP4 (ITM)                | `IMP4 <../../../itm/publi | 2.1M        |
-|                           | c/imports/ITM_EXPO_EPS201 |             |
+| IMP4 (EU-IM)                | `IMP4 <../../../itm/publi | 2.1M        |
+|                           | c/imports/EU-IM_EXPO_EPS201 |             |
 |                           | 1/IMP4_poster_EPS2011_n6. |             |
 |                           | pptx>`__                  |             |
 +---------------------------+---------------------------+-------------+
@@ -2661,10 +2661,10 @@ Documents (sorted by file size)
 | Overview of the European  | `pdf <../../../euforia/pu | 2.1M        |
 | Integrated Tokamak        | blic/imports/meetings/eu_ |             |
 | Modelling Task Force      | us_workshop_goeteborg_201 |             |
-| (Falchetto)               | 0/ITM_Overview_GF.pdf>`__ |             |
+| (Falchetto)               | 0/EU-IM_Overview_GF.pdf>`__ |             |
 +---------------------------+---------------------------+-------------+
-| AMNS (ITM)                | `AMNS <../../../itm/publi | 2.1M        |
-|                           | c/imports/ITM_EXPO_EPS201 |             |
+| AMNS (EU-IM)                | `AMNS <../../../itm/publi | 2.1M        |
+|                           | c/imports/EU-IM_EXPO_EPS201 |             |
 |                           | 1/AMNS_EPS2011__n13.ppt>` |             |
 |                           | __                        |             |
 +---------------------------+---------------------------+-------------+
@@ -2684,7 +2684,7 @@ Documents (sorted by file size)
 | Hybrid MHD-Gyrokinetic    | `pdf <../../../imp5/publi | 2.1M        |
 | codes for studying the    | c/imports/meetings/201009 |             |
 | mutual nonlinear          | 13-17_Lisbon/Talk_Vlad_HM |             |
-| interaction of shear      | GC_HYMAGYC_ITM_GM2010.pdf |             |
+| interaction of shear      | GC_HYMAGYC_EU-IM_GM2010.pdf |             |
 | Alfvén modes and          | >`__                      |             |
 | energetic particles       |                           |             |
 | (Vlad)                    |                           |             |
@@ -2735,13 +2735,13 @@ Documents (sorted by file size)
 | for momentum: present     | riday/Voitsekhovitch_mome |             |
 | status (Voitsekhovitch)   | ntum.ppt>`__              |             |
 +---------------------------+---------------------------+-------------+
-| ISIP (ITM)                | `ISIP <../../../itm/publi | 2.2M        |
-|                           | c/imports/ITM_EXPO_EPS201 |             |
+| ISIP (EU-IM)                | `ISIP <../../../itm/publi | 2.2M        |
+|                           | c/imports/EU-IM_EXPO_EPS201 |             |
 |                           | 1/ISIP_poster_EPS2011_n3. |             |
 |                           | ppt>`__                   |             |
 +---------------------------+---------------------------+-------------+
-| ISM (ITM)                 | `ISM <../../../itm/public | 2.2M        |
-|                           | /imports/ITM_EXPO_EPS2011 |             |
+| ISM (EU-IM)                 | `ISM <../../../itm/public | 2.2M        |
+|                           | /imports/EU-IM_EXPO_EPS2011 |             |
 |                           | /ISM_poster_EPS2011_n12.p |             |
 |                           | pt>`__                    |             |
 +---------------------------+---------------------------+-------------+
@@ -2767,9 +2767,9 @@ Documents (sorted by file size)
 | (Strand)                  | IEW_2010/Presentations/In |             |
 |                           | troduction.pdf>`__        |             |
 +---------------------------+---------------------------+-------------+
-| ITM (ITM)                 | `ITM <../../../itm/public | 2.3M        |
-|                           | /imports/ITM_EXPO_EPS2011 |             |
-|                           | /ITM_poster_EPS2011_n1.pp |             |
+| EU-IM (EU-IM)                 | `EU-IM <../../../itm/public | 2.3M        |
+|                           | /imports/EU-IM_EXPO_EPS2011 |             |
+|                           | /EU-IM_poster_EPS2011_n1.pp |             |
 |                           | t>`__                     |             |
 +---------------------------+---------------------------+-------------+
 | EFDA Feedback control -   | `Feedback Control WG      | 2.3M        |
@@ -2779,7 +2779,7 @@ Documents (sorted by file size)
 |                           | A_June/Cadarache20100628_ |             |
 |                           | 02_Mazon_control.ppt>`__  |             |
 +---------------------------+---------------------------+-------------+
-| Basics on exp2ITM usage.  | `presentation <../../../e | 2.3M        |
+| Basics on exp2EU-IM usage.  | `presentation <../../../e | 2.3M        |
 | (Signoret)                | drg/public/imports/md_and |             |
 |                           | _dm/edrg_Basics_on_exp2IT |             |
 |                           | M_v2.pdf>`__              |             |
@@ -2796,12 +2796,12 @@ Documents (sorted by file size)
 +---------------------------+---------------------------+-------------+
 | Welcome and Agenda of 3rd | `ppt <../../../ism/public | 2.3M        |
 | ISM working session, news | /imports/WS_2013_12/1.Mon |             |
-| from 5th ITM code camp    | day/Welcome_Agenda_3rdISM |             |
+| from 5th EU-IM code camp    | day/Welcome_Agenda_3rdISM |             |
 | (Voitsekhovitch)          | _WS.ppt>`__               |             |
 +---------------------------+---------------------------+-------------+
 | Integrated Modelling in   | `ppt <../../../itm/public | 2.3M        |
 | ITER (Houlberg)           | /imports/generalmeet/2010 |             |
-|                           | /Plenary_Houlberg_ITM-ITE |             |
+|                           | /Plenary_Houlberg_EU-IM-ITE |             |
 |                           | R.ppt>`__                 |             |
 +---------------------------+---------------------------+-------------+
 | Influence of a            | `ppt <../../../imp12/publ | 2.3M        |
@@ -2813,7 +2813,7 @@ Documents (sorted by file size)
 | GRAY - EC quasi-optical   | `pdf <../../../imp5/publi | 2.3M        |
 | ray-tracing code for ECRH | c/imports/meetings/201009 |             |
 | and ECCD calculations in  | 13-17_Lisbon/Talk+Poster_ |             |
-| tokamaks (Figini)         | FiginiFarina_Grey_ITM-GM2 |             |
+| tokamaks (Figini)         | FiginiFarina_Grey_EU-IM-GM2 |             |
 |                           | 010.pdf>`__               |             |
 +---------------------------+---------------------------+-------------+
 | Validation ETS JET hybrid | `ppt <../../../ism/public | 2.3M        |
@@ -2858,9 +2858,9 @@ Documents (sorted by file size)
 |                           | 12-16_GM_Garching/GM2011_ |             |
 |                           | talk_HMGC-HYMAGYC.ppt>`__ |             |
 +---------------------------+---------------------------+-------------+
-| ITM Overview (Falchetto)  | `ppt <../../../itm/public | 2.4M        |
+| EU-IM Overview (Falchetto)  | `ppt <../../../itm/public | 2.4M        |
 |                           | /imports/generalmeet/2011 |             |
-|                           | /ITM_overview.ppt>`__     |             |
+|                           | /EU-IM_overview.ppt>`__     |             |
 +---------------------------+---------------------------+-------------+
 | ISIP tools training       | `Kepler                   | 2.5M        |
 | (Guillerminet)            | Tutorial: <../../../isip/ |             |
@@ -2870,7 +2870,7 @@ Documents (sorted by file size)
 | IMP5 CPOs (Johnson)       | `pdf <../../../imp5/publi | 2.5M        |
 |                           | c/imports/meetings/201009 |             |
 |                           | 13-17_Lisbon/Talk_Johnson |             |
-|                           | _CPOs_ITM-GM2010.pdf>`__  |             |
+|                           | _CPOs_EU-IM-GM2010.pdf>`__  |             |
 +---------------------------+---------------------------+-------------+
 | Modelling of JET hybrid   | `ppt <../../../ism/public | 2.5M        |
 | scenarios with GLF23      | /imports/WS_2013_12/5.Fri |             |
@@ -2910,7 +2910,7 @@ Documents (sorted by file size)
 +---------------------------+---------------------------+-------------+
 | Equilibrium and MHD       | `ppt <../../../itm/public | 2.6M        |
 | stability chain (IMP12)   | /imports/generalmeet/2011 |             |
-| (Zwingmann)               | /WZ_equistab_ITMGM_2011_V |             |
+| (Zwingmann)               | /WZ_equistab_EU-IMGM_2011_V |             |
 |                           | 2.6.ppt>`__               |             |
 +---------------------------+---------------------------+-------------+
 | Role of impurities in     | `pdf <../../../ism/public | 2.6M        |
@@ -2933,7 +2933,7 @@ Documents (sorted by file size)
 |                           | /2.Tuesday/ModellingResou |             |
 |                           | rces_Nov11_v1.ppt>`__     |             |
 +---------------------------+---------------------------+-------------+
-| The ITM General Grid      | `ppt <../../../itm/public | 2.7M        |
+| The EU-IM General Grid      | `ppt <../../../itm/public | 2.7M        |
 | Description (Klingshirn)  | /imports/generalmeet/2011 |             |
 |                           | /IMP3-GeneralGridDescript |             |
 |                           | ion-long.ppt>`__          |             |
@@ -2961,15 +2961,15 @@ Documents (sorted by file size)
 | the ETS (IMP5) (Jonsson)  | t>`__                     |             |
 +---------------------------+---------------------------+-------------+
 | IMP12 Equilibrium and     | `IMP12 Equilibrium and    | 2.9M        |
-| Stability (ITM)           | Stability <../../../itm/p |             |
-|                           | ublic/imports/ITM_EXPO_EP |             |
+| Stability (EU-IM)           | Stability <../../../itm/p |             |
+|                           | ublic/imports/EU-IM_EXPO_EP |             |
 |                           | S2011/IMP12_EPS2011_equil |             |
 |                           | +stab_n5.ppt>`__          |             |
 +---------------------------+---------------------------+-------------+
 | Quick introduction to     | `pdf <../../../imp5/publi | 2.9M        |
 | documentation with        | c/imports/meetings/201009 |             |
 | Doxygen (Johnson)         | 13-17_Lisbon/Talk_Johnson |             |
-|                           | _Documentation_ITM-GM2010 |             |
+|                           | _Documentation_EU-IM-GM2010 |             |
 |                           | .pdf>`__                  |             |
 +---------------------------+---------------------------+-------------+
 | ACT1: status of impurity  | `ppt <../../../ism/public | 2.9M        |
@@ -2992,7 +2992,7 @@ Documents (sorted by file size)
 |                           | /5.Friday/Litaudon-JT-60S |             |
 |                           | A.ppt>`__                 |             |
 +---------------------------+---------------------------+-------------+
-| Present ITM capabilities  | `ppt <../../../itm/public | 3.0M        |
+| Present EU-IM capabilities  | `ppt <../../../itm/public | 3.0M        |
 | (Coster)                  | /imports/generalmeet/2011 |             |
 |                           | /Present_IM_capabilities_ |             |
 |                           | v1.ppt>`__                |             |
@@ -3002,13 +3002,13 @@ Documents (sorted by file size)
 |                           | /2.Tuesday/Ex2.2.2+2.2.1. |             |
 |                           | Modeling_needs.pdf>`__    |             |
 +---------------------------+---------------------------+-------------+
-| EU ITM-TF experience with | `EU ITM-TF experience     | 3.1M        |
+| EU EU-IM-TF experience with | `EU EU-IM-TF experience     | 3.1M        |
 | CPOs (Coster)             | with CPOs, D. Coster      |             |
 |                           | (20+10) <../../../itm/pub |             |
 |                           | lic/imports/2011-06_IMT-W |             |
 |                           | orkshop/IMT-Workshop-Thur |             |
 |                           | sdayMorning/ITER_IMT_CPOs |             |
-|                           | _ITM.ppt>`__              |             |
+|                           | _EU-IM.ppt>`__              |             |
 +---------------------------+---------------------------+-------------+
 | Computational efficiently | `Computational            | 3.1M        |
 | and simulation            | efficiently and           |             |
@@ -3059,18 +3059,18 @@ Documents (sorted by file size)
 |                           | 2009/EDRG_kickoff/edrg_ki |             |
 |                           | ck-off.ppt>`__            |             |
 +---------------------------+---------------------------+-------------+
-| ITM-TF plasma control     | `General ITM overview     | 3.3M        |
+| EU-IM-TF plasma control     | `General EU-IM overview     | 3.3M        |
 | working session - Control | (R.Coelho) <../../../edrg |             |
 | related activities in     | /public/imports/WS/2009/c |             |
 | WP-2009 (Coelho)          | ontrol/edrg_20090622_Coel |             |
-|                           | ho_ITMactivities.ppt>`__  |             |
+|                           | ho_EU-IMactivities.ppt>`__  |             |
 +---------------------------+---------------------------+-------------+
 | First modelling of        | `ppt <../../../ism/public | 3.3M        |
 | JT-60SA (Giruzzi)         | /imports/WS_March_2011/5. |             |
 |                           | Friday/Giruzzi JT-60SA_IS |             |
 |                           | M_report.ppt>`__          |             |
 +---------------------------+---------------------------+-------------+
-| ITM-TF Plasma control     | `EDRG Control related     | 3.3M        |
+| EU-IM-TF Plasma control     | `EDRG Control related     | 3.3M        |
 | working session - EDRG    | activities in the WP-2010 |             |
 | control related           | (R.                       |             |
 | activities in WP-2010     | Coelho) <../../../edrg/pu |             |
@@ -3084,21 +3084,21 @@ Documents (sorted by file size)
 |                           | ion/ETS_User_Guide.pdf>`_ |             |
 |                           | _                         |             |
 +---------------------------+---------------------------+-------------+
-| ITM-TF Status and 2013    | `ppt <../../../itm/public | 3.3M        |
+| EU-IM-TF Status and 2013    | `ppt <../../../itm/public | 3.3M        |
 | WorkPlan (Falchetto)      | /imports/generalmeet/2012 |             |
-|                           | /ITM-TF_GM2012.ppt>`__    |             |
+|                           | /EU-IM-TF_GM2012.ppt>`__    |             |
 +---------------------------+---------------------------+-------------+
 | Overview of IMP5          | `ppt <../../../itm/public | 3.4M        |
 | activities during 2010    | /imports/generalmeet/2010 |             |
-| (Farina)                  | /Plenary_ITM_2010_IMP5.pp |             |
+| (Farina)                  | /Plenary_EU-IM_2010_IMP5.pp |             |
 |                           | t>`__                     |             |
 +---------------------------+---------------------------+-------------+
 | European Reflectometer    | `ppt <../../../edrg/publi | 3.5M        |
 | Code Consortium (ERCC)    | c/imports/meetings/201009 |             |
-| activities (Blanco)       | 13-17_Lisbon/posterITM201 |             |
+| activities (Blanco)       | 13-17_Lisbon/posterEU-IM201 |             |
 |                           | 0_final.ppt>`__           |             |
 +---------------------------+---------------------------+-------------+
-| ITM-TF plasma control     | `Welcome                  | 3.5M        |
+| EU-IM-TF plasma control     | `Welcome                  | 3.5M        |
 | working session (Coelho)  | (R.Coelho) <../../../edrg |             |
 |                           | /public/imports/WS/2009/c |             |
 |                           | ontrol/edrg_20090622_Coel |             |
@@ -3130,9 +3130,9 @@ Documents (sorted by file size)
 | (Coelho)                  | /imports/generalmeet/2013 |             |
 |                           | /EDRG_overview_v2.ppt>`__ |             |
 +---------------------------+---------------------------+-------------+
-| IMP3 Edge (ITM)           | `IMP3                     | 3.6M        |
+| IMP3 Edge (EU-IM)           | `IMP3                     | 3.6M        |
 |                           | Edge <../../../itm/public |             |
-|                           | /imports/ITM_EXPO_EPS2011 |             |
+|                           | /imports/EU-IM_EXPO_EPS2011 |             |
 |                           | /IMP3-Edge_EPS2011_n8.ppt |             |
 |                           | >`__                      |             |
 +---------------------------+---------------------------+-------------+
@@ -3177,7 +3177,7 @@ Documents (sorted by file size)
 +---------------------------+---------------------------+-------------+
 | RAPTOR: a lightweight     | `pdf <../../../ism/public | 3.8M        |
 | transport model for       | /imports/WS_July_2011/2.T |             |
-| open-loop optimization    | uesday/ffelici_ITM_ISM_WG |             |
+| open-loop optimization    | uesday/ffelici_EU-IM_ISM_WG |             |
 | and real-time simulation  |  meeting 05.07.pdf>`__    |             |
 | (Felici)                  |                           |             |
 +---------------------------+---------------------------+-------------+
@@ -3189,31 +3189,31 @@ Documents (sorted by file size)
 +---------------------------+---------------------------+-------------+
 | Overview of ISIP          | `ppt <../../../itm/public | 3.9M        |
 | activities during 2010    | /imports/generalmeet/2010 |             |
-| (Imbeaux)                 | /Plenary_ITM_2010_ISIP.pp |             |
+| (Imbeaux)                 | /Plenary_EU-IM_2010_ISIP.pp |             |
 |                           | t>`__                     |             |
 +---------------------------+---------------------------+-------------+
-| IMP3 Core (ITM)           | `IMP3                     | 3.9M        |
+| IMP3 Core (EU-IM)           | `IMP3                     | 3.9M        |
 |                           | Core <../../../itm/public |             |
-|                           | /imports/ITM_EXPO_EPS2011 |             |
+|                           | /imports/EU-IM_EXPO_EPS2011 |             |
 |                           | /IMP3-Core_EPS2011_n7.ppt |             |
 |                           | >`__                      |             |
 +---------------------------+---------------------------+-------------+
-| ITM gateway user's guide  | `Gateway                  | 3.9M        |
+| EU-IM gateway user's guide  | `Gateway                  | 3.9M        |
 | (Guillerminet)            | User'sGuide: <../../../is |             |
 |                           | ip/public/imports/isip_IT |             |
 |                           | M_gateway_users_guide_v3- |             |
 |                           | 1.pdf>`__                 |             |
 +---------------------------+---------------------------+-------------+
-| ITM gateway users's guid  | `pdf <../../../imp3/publi | 3.9M        |
+| EU-IM gateway users's guid  | `pdf <../../../imp3/publi | 3.9M        |
 | (Guillerminet)            | c/imports/meetings/2009-0 |             |
-|                           | 3-30_-_2009-04-03_ETS/ITM |             |
+|                           | 3-30_-_2009-04-03_ETS/EU-IM |             |
 |                           | _gateway_users_guide_v3.p |             |
 |                           | df>`__                    |             |
 +---------------------------+---------------------------+-------------+
 | Fast Particles activities | `pdf <../../../imp5/publi | 4.0M        |
 | during WP10 (Vlad)        | c/imports/meetings/201009 |             |
 |                           | 13-17_Lisbon/Poster_Vlad_ |             |
-|                           | Fast_Particles_ITM-GM2010 |             |
+|                           | Fast_Particles_EU-IM-GM2010 |             |
 |                           | .pdf>`__                  |             |
 +---------------------------+---------------------------+-------------+
 | Free-boundary equilibrium | `pdf <../../../ism/public | 4.0M        |
@@ -3246,7 +3246,7 @@ Documents (sorted by file size)
 | 3D Machine Description of | `pdf <../../../edrg/publi | 4.1M        |
 | Fusion Devices (Lunt)     | c/imports/meetings/201009 |             |
 |                           | 13-17_Lisbon/poster_lunt_ |             |
-|                           | ITM_2010.pdf>`__          |             |
+|                           | EU-IM_2010.pdf>`__          |             |
 +---------------------------+---------------------------+-------------+
 | Simulations of the H to L | `ppt <../../../ism/public | 4.1M        |
 | transition in JET plasmas | /imports/WS_March_2011/2. |             |
@@ -3300,11 +3300,11 @@ Documents (sorted by file size)
 | (Koechl)                  | _modelling_of_ELM_mitigat |             |
 |                           | ion_at_JET.ppt>`__        |             |
 +---------------------------+---------------------------+-------------+
-| ITM datastructure and     | `ITM datastructure and    | 4.3M        |
+| EU-IM datastructure and     | `EU-IM datastructure and    | 4.3M        |
 | tools (Coelho)            | tools (R.                 |             |
 |                           | Coelho) <../../../edrg/pu |             |
 |                           | blic/imports/WS/2010/ERC3 |             |
-|                           | D_WS_5July/ITM datastruct |             |
+|                           | D_WS_5July/EU-IM datastruct |             |
 |                           | ure-ERCC WS.ppt>`__       |             |
 +---------------------------+---------------------------+-------------+
 | AMNS (Coster)             | `ppt <../../../itm/public | 4.3M        |
@@ -3328,13 +3328,13 @@ Documents (sorted by file size)
 | like wall (Belo)          | /imports/WS_2012_11/5.Fri |             |
 |                           | day/ILW_paula.ppt>`__     |             |
 +---------------------------+---------------------------+-------------+
-| ITM-TF plasma control     | `Welcome and Agenda (T.   | 4.5M        |
+| EU-IM-TF plasma control     | `Welcome and Agenda (T.   | 4.5M        |
 | working session and code  | Bolzonella) <../../../edr |             |
 | camp (Bolzonella)         | g/public/imports/WS/2010/ |             |
 |                           | WS_CEA_June/20100628_Bolz |             |
 |                           | onella_Welcoming.ppt>`__  |             |
 +---------------------------+---------------------------+-------------+
-| Report from ITM General   | `pdf <../../../ism/public | 4.5M        |
+| Report from EU-IM General   | `pdf <../../../ism/public | 4.5M        |
 | Meeting and discussion on | /imports/Remote_meetings/ |             |
 | 2012 activities           | ISM_2011_09_28/Voitsekhov |             |
 | (Voitsekhovitch)          | itch_GMinfo_plans.pdf>`__ |             |
@@ -3344,12 +3344,12 @@ Documents (sorted by file size)
 | discharges (Barbato)      | ISM_2012_10_24/Barbato_IS |             |
 |                           | M_24Oct2012.pdf>`__       |             |
 +---------------------------+---------------------------+-------------+
-| Overview of ITM-TF        | `Overview of ITM          | 4.5M        |
+| Overview of EU-IM-TF        | `Overview of EU-IM          | 4.5M        |
 | datastructure, machine    | datastructure heading to  |             |
 | description, and 3D       | 3D (R.                    |             |
 | related activities        | Coelho) <../../../edrg/pu |             |
 | (Coelho)                  | blic/imports/WS/2010/3Dwa |             |
-|                           | ll_WS_18March/edrg_ITM_da |             |
+|                           | ll_WS_18March/edrg_EU-IM_da |             |
 |                           | tastructure.ppt>`__       |             |
 +---------------------------+---------------------------+-------------+
 | ITER Needs and            | `ppt <../../../euforia/pu | 4.5M        |
@@ -3363,7 +3363,7 @@ Documents (sorted by file size)
 +---------------------------+---------------------------+-------------+
 | Overview of IMP12         | `pps <../../../itm/public | 4.6M        |
 | activities during 2010    | /imports/generalmeet/2010 |             |
-| (Ottaviani)               | /Plenary_ITM_2010_IMP12.p |             |
+| (Ottaviani)               | /Plenary_EU-IM_2010_IMP12.p |             |
 |                           | ps>`__                    |             |
 +---------------------------+---------------------------+-------------+
 | FACETS - A                | `pdf <../../../euforia/pu | 4.7M        |
@@ -3380,9 +3380,9 @@ Documents (sorted by file size)
 |                           | sdayAfternoon/mapper_ELor |             |
 |                           | enz.pdf>`__               |             |
 +---------------------------+---------------------------+-------------+
-| ITM plans with respect to | `pdf <../../../imp3/publi | 4.8M        |
+| EU-IM plans with respect to | `pdf <../../../imp3/publi | 4.8M        |
 | Integrated Modelling, in  | c/imports/meetings/2009-0 |             |
-| particular with respect   | 3-30_-_2009-04-03_ETS/ITM |             |
+| particular with respect   | 3-30_-_2009-04-03_ETS/EU-IM |             |
 | to “Burn and Particle     | _Fuelling.ppt>`__         |             |
 | Control” (presented at    |                           |             |
 | EFDA meeting on Fuelling  |                           |             |
@@ -3391,9 +3391,9 @@ Documents (sorted by file size)
 | Particle Control, March   |                           |             |
 | 2009) (Coster)            |                           |             |
 +---------------------------+---------------------------+-------------+
-| ITM-TF Status and         | `ppt <../../../itm/public | 4.8M        |
+| EU-IM-TF Status and         | `ppt <../../../itm/public | 4.8M        |
 | Achievements (Falchetto)  | /imports/generalmeet/2013 |             |
-|                           | /Falchetto_ITMStatus.pptx |             |
+|                           | /Falchetto_EU-IMStatus.pptx |             |
 |                           | >`__                      |             |
 +---------------------------+---------------------------+-------------+
 | Parallel I/O in           | `ppt <../../../isip/publi | 4.8M        |
@@ -3402,7 +3402,7 @@ Documents (sorted by file size)
 |                           | lel_UAL.ppt>`__           |             |
 +---------------------------+---------------------------+-------------+
 | The Integrated Plasma     | `pdf <../../../itm/public | 5.0M        |
-| Simulator: A flexible     | /imports/ITM_WorkFlow_201 |             |
+| Simulator: A flexible     | /imports/EU-IM_WorkFlow_201 |             |
 | framework for coupled     | 3/IPS_overview_JET_Lisbon |             |
 | fusion simulations        | _2013.pdf>`__             |             |
 | (Batchelor)               |                           |             |
@@ -3430,8 +3430,8 @@ Documents (sorted by file size)
 |                           | er v2.pdf>`__             |             |
 +---------------------------+---------------------------+-------------+
 | EUFORIA (EUFORIA)         | `EUFORIA <../../../itm/pu | 5.3M        |
-|                           | blic/imports/ITM_EXPO_EPS |             |
-|                           | 2011/EUFORIA_ITMEXPO_n14. |             |
+|                           | blic/imports/EU-IM_EXPO_EPS |             |
+|                           | 2011/EUFORIA_EU-IMEXPO_n14. |             |
 |                           | ppt>`__                   |             |
 +---------------------------+---------------------------+-------------+
 | Modelling requirements    | `ppt <../../../ism/public | 5.3M        |
@@ -3461,8 +3461,8 @@ Documents (sorted by file size)
 | transport code (Fable)    | day/ASTRA7_AUG_seminar_20 |             |
 |                           | 12_EF.pdf>`__             |             |
 +---------------------------+---------------------------+-------------+
-| IMP5-I (ITM)              | `IMP5-I <../../../itm/pub | 5.6M        |
-|                           | lic/imports/ITM_EXPO_EPS2 |             |
+| IMP5-I (EU-IM)              | `IMP5-I <../../../itm/pub | 5.6M        |
+|                           | lic/imports/EU-IM_EXPO_EPS2 |             |
 |                           | 011/IMP5_poster1_EPS2011_ |             |
 |                           | n9.ppt>`__                |             |
 +---------------------------+---------------------------+-------------+
@@ -3494,7 +3494,7 @@ Documents (sorted by file size)
 |                           | Admin_Manual_5.4.pdf>`__  |             |
 +---------------------------+---------------------------+-------------+
 | 3D wall description of    | `3D defeaturing tool      | 6.1M        |
-| fusion devices (Lunt)     | effort under the ITM      |             |
+| fusion devices (Lunt)     | effort under the EU-IM      |             |
 |                           | (T.Lunt/S.Jämsä) <../../. |             |
 |                           | ./edrg/public/imports/WS/ |             |
 |                           | 2010/3Dwall_WS_18March/ed |             |
@@ -3505,7 +3505,7 @@ Documents (sorted by file size)
 | (Konz)                    | IMP12 (C.                 |             |
 |                           | Konz) <../../../edrg/publ |             |
 |                           | ic/imports/WS/2010/ERC3D_ |             |
-|                           | WS_5July/ITM_IMP12_ERCC_J |             |
+|                           | WS_5July/EU-IM_IMP12_ERCC_J |             |
 |                           | uly_2010.ppt>`__          |             |
 +---------------------------+---------------------------+-------------+
 | Modelling of JET current  | `doc <../../../ism/public | 6.1M        |
@@ -3520,7 +3520,7 @@ Documents (sorted by file size)
 | control (Hogeweij)        |                           |             |
 +---------------------------+---------------------------+-------------+
 | Demo on ETS workflow      | `ppt <../../../itm/public | 6.1M        |
-| capabilities (Kalupin)    | /imports/ITM_WorkFlow_201 |             |
+| capabilities (Kalupin)    | /imports/EU-IM_WorkFlow_201 |             |
 |                           | 3/ETS_status_Kalupin.ppt> |             |
 |                           | `__                       |             |
 +---------------------------+---------------------------+-------------+
@@ -3547,7 +3547,7 @@ Documents (sorted by file size)
 | IMP5 / ACT4: RF Monte     | `pdf <../../../imp5/publi | 6.7M        |
 | Carlo library for orbit   | c/imports/meetings/201009 |             |
 | following codes (Johnson) | 13-17_Lisbon/Poster_Johns |             |
-|                           | on_RFOF_ITM-GM2010.pdf>`_ |             |
+|                           | on_RFOF_EU-IM-GM2010.pdf>`_ |             |
 |                           | _                         |             |
 +---------------------------+---------------------------+-------------+
 | Coupling CAD data to      | `Coupling CAD data to     | 6.7M        |
@@ -3564,7 +3564,7 @@ Documents (sorted by file size)
 | IMP5 / ACT4: RF Monte     | `pdf <../../../imp5/publi | 6.7M        |
 | Carlo library for orbit   | c/imports/meetings/201009 |             |
 | following codes (Johnson) | 13-17_Lisbon/Talk_Johnson |             |
-|                           | _RFOF_ITM-GM2010.pdf>`__  |             |
+|                           | _RFOF_EU-IM-GM2010.pdf>`__  |             |
 +---------------------------+---------------------------+-------------+
 | JT-60SA: operational      | `ppt <../../../ism/public | 6.8M        |
 | scenarios and assessment  | /imports/WS_March_2011/4. |             |
@@ -3615,8 +3615,8 @@ Documents (sorted by file size)
 | activities (Angioni)      | 3_WS-CC/TTG_JET_2010_ISM. |             |
 |                           | ppt>`__                   |             |
 +---------------------------+---------------------------+-------------+
-| ITM Workflows (Coster)    | `ppt <../../../itm/public | 7.9M        |
-|                           | /imports/ITM_WorkFlow_201 |             |
+| EU-IM Workflows (Coster)    | `ppt <../../../itm/public | 7.9M        |
+|                           | /imports/EU-IM_WorkFlow_201 |             |
 |                           | 3/DPC_Workflows_2012.ppt> |             |
 |                           | `__                       |             |
 +---------------------------+---------------------------+-------------+
@@ -3639,7 +3639,7 @@ Documents (sorted by file size)
 +---------------------------+---------------------------+-------------+
 | Integrated Modelling for  | `ppt <../../../itm/public | 8.3M        |
 | ITER (Pinches)            | /imports/generalmeet/2012 |             |
-|                           | /Pinches_ITM_Code_Camp_De |             |
+|                           | /Pinches_EU-IM_Code_Camp_De |             |
 |                           | cember_2012.pptx>`__      |             |
 +---------------------------+---------------------------+-------------+
 | EDRG (Coelho)             | `ppt <../../../itm/public | 8.6M        |
@@ -3653,7 +3653,7 @@ Documents (sorted by file size)
 +---------------------------+---------------------------+-------------+
 | Overview of IMP3          | `ppt <../../../itm/public | 8.6M        |
 | activities during 2010    | /imports/generalmeet/2010 |             |
-| (Coster)                  | /Plenary_ITM_2010_IMP3.pp |             |
+| (Coster)                  | /Plenary_EU-IM_2010_IMP3.pp |             |
 |                           | t>`__                     |             |
 +---------------------------+---------------------------+-------------+
 | GForge AS User Manual     | `GForge AS User           | 8.9M        |
@@ -3671,8 +3671,8 @@ Documents (sorted by file size)
 | (Lonnroth)                | riday/Lonnroth_ISM_workin |             |
 |                           | g_session_2011.ppt>`__    |             |
 +---------------------------+---------------------------+-------------+
-| EDRG (ITM)                | `EDRG <../../../itm/publi | 9.3M        |
-|                           | c/imports/ITM_EXPO_EPS201 |             |
+| EDRG (EU-IM)                | `EDRG <../../../itm/publi | 9.3M        |
+|                           | c/imports/EU-IM_EXPO_EPS201 |             |
 |                           | 1/EDRG_poster_EPS2011_n4. |             |
 |                           | ppt>`__                   |             |
 +---------------------------+---------------------------+-------------+
@@ -3699,7 +3699,7 @@ Documents (sorted by file size)
 +---------------------------+---------------------------+-------------+
 | EUFORIA-Grid and HPC      | `ppt <../../../itm/public | 12M         |
 | access for Fusion         | /imports/generalmeet/2010 |             |
-| (Plociennik)              | /Plenary_EUFORIA_ITM_2010 |             |
+| (Plociennik)              | /Plenary_EUFORIA_EU-IM_2010 |             |
 |                           | .ppt>`__                  |             |
 +---------------------------+---------------------------+-------------+
 | Magnetohydrodynamic       | `pdf <../../../imp12/publ | 12M         |
@@ -3710,7 +3710,7 @@ Documents (sorted by file size)
 | Magnetohydrodynamic       | `pdf <../../../imp5/publi | 12M         |
 | Properties of Nominally   | c/imports/meetings/201009 |             |
 | Axisymmetric Systems with | 13-17_Lisbon/Talk_Cooper_ |             |
-| 3D Helical Core (Cooper)  | icpp2010_ITM-IMP5-GM2010. |             |
+| 3D Helical Core (Cooper)  | icpp2010_EU-IM-IMP5-GM2010. |             |
 |                           | pdf>`__                   |             |
 +---------------------------+---------------------------+-------------+
 | ETS - Free Boundary       | `ppt <../../../imp12/publ | 13M         |
@@ -3738,7 +3738,7 @@ Documents (sorted by file size)
 | (Sipilä)                  | (S.Sipilä) <../../../edrg |             |
 |                           | /public/imports/meetings/ |             |
 |                           | 2009/3Dwall/edrg_ASCOT_3D |             |
-|                           | _wall_ITM.ppt>`__         |             |
+|                           | _wall_EU-IM.ppt>`__         |             |
 +---------------------------+---------------------------+-------------+
 | Core-Edge Transport       | `this                     | 15M         |
 | Coupling Via Manual       | document <../../../imp3/p |             |
@@ -3751,13 +3751,13 @@ Documents (sorted by file size)
 | impurities, radiation,    | ISM_2013_02_06/Baranov_Hy |             |
 | confinement (Baranov)     | brid_database.pdf>`__     |             |
 +---------------------------+---------------------------+-------------+
-| IMP5-II (ITM)             | `IMP5-II <../../../itm/pu | 16M         |
-|                           | blic/imports/ITM_EXPO_EPS |             |
+| IMP5-II (EU-IM)             | `IMP5-II <../../../itm/pu | 16M         |
+|                           | blic/imports/EU-IM_EXPO_EPS |             |
 |                           | 2011/IMP5_poster2_EPS2011 |             |
 |                           | _n10.ppt>`__              |             |
 +---------------------------+---------------------------+-------------+
 | Overview of the OMFIT     | `pdf <../../../itm/public | 17M         |
-| framework (Meneghini)     | /imports/ITM_WorkFlow_201 |             |
+| framework (Meneghini)     | /imports/EU-IM_WorkFlow_201 |             |
 |                           | 3/Meneghini_itm2013.pdf>` |             |
 |                           | __                        |             |
 +---------------------------+---------------------------+-------------+
@@ -3768,7 +3768,7 @@ Documents (sorted by file size)
 +---------------------------+---------------------------+-------------+
 | Overview of EDRG          | `ppt <../../../itm/public | 18M         |
 | activities during 2010    | /imports/generalmeet/2010 |             |
-| (Coelho)                  | /Plenary_ITM_2010_EDRG.pp |             |
+| (Coelho)                  | /Plenary_EU-IM_2010_EDRG.pp |             |
 |                           | t>`__                     |             |
 +---------------------------+---------------------------+-------------+
 | ETS: European Transport   | `ETS                      | 19M         |
@@ -3782,7 +3782,7 @@ Documents (sorted by file size)
 |                           | t1.avi>`__                |             |
 +---------------------------+---------------------------+-------------+
 | MAPPER (MAPPER)           | `MAPPER <../../../itm/pub | 19M         |
-|                           | lic/imports/ITM_EXPO_EPS2 |             |
+|                           | lic/imports/EU-IM_EXPO_EPS2 |             |
 |                           | 011/MAPPER-Combined2_n15. |             |
 |                           | pdf>`__                   |             |
 +---------------------------+---------------------------+-------------+
@@ -3796,10 +3796,10 @@ Documents (sorted by file size)
 | with ILW in JET (Baranov) | day/Baranov_Report.ppt>`_ |             |
 |                           | _                         |             |
 +---------------------------+---------------------------+-------------+
-| ITM Code Camps (ITM)      | `ITM Code                 | 25M         |
+| EU-IM Code Camps (EU-IM)      | `EU-IM Code                 | 25M         |
 |                           | Camps <../../../itm/publi |             |
-|                           | c/imports/ITM_EXPO_EPS201 |             |
-|                           | 1/ITM_poster_CCs_n2.ppt>` |             |
+|                           | c/imports/EU-IM_EXPO_EPS201 |             |
+|                           | 1/EU-IM_poster_CCs_n2.ppt>` |             |
 |                           | __                        |             |
 +---------------------------+---------------------------+-------------+
 | The European Transport    | `Presentation at          | 25M         |
@@ -3811,7 +3811,7 @@ Documents (sorted by file size)
 +---------------------------+---------------------------+-------------+
 | ITER Integrated Modelling | `ppt <../../../itm/public | 28M         |
 | Programme (Pinches)       | /imports/generalmeet/2013 |             |
-|                           | /Pinches_EU_ITM_2013.pptx |             |
+|                           | /Pinches_EU_EU-IM_2013.pptx |             |
 |                           | >`__                      |             |
 +---------------------------+---------------------------+-------------+
 | The q-profile formation   | `ppt <../../../ism/public | 29M         |

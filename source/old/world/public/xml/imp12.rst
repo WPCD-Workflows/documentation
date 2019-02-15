@@ -7,7 +7,7 @@ IMP12 - Equilibrium, MHD, and Disruptions
 Scientific Rationale and Main Objectives of the Task
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The goal of the IMP12 activity is to provide the ITM-TF with a
+The goal of the IMP12 activity is to provide the EU-IM-TF with a
 comprehensive set of
 equilibrium, linear stability, and non-linear MHD modelling tools
 as well as the tools for a consistent free boundary equilibrium
@@ -49,7 +49,7 @@ and
 integration with the ETS
 , mediated by
 feedback control schemes
-, will enhance the whole device modelling capabilities of ITM tools.
+, will enhance the whole device modelling capabilities of EU-IM tools.
 Interfacing with
 non-linear stability modules
 dedicated to
@@ -71,4 +71,4 @@ Public IMP12 pages
 
 To access the
 public IMP12 pages
-, an ITM password is needed.
+, an EU-IM password is needed.

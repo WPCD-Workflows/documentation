@@ -1,9 +1,9 @@
 .. _world_itm_structure:
 
-ITM-TF Structure
+EU-IM-TF Structure
 ================
 
-The EFDA ITM-TF was structured into four Integrated Modelling Projects
+The EFDA EU-IM-TF was structured into four Integrated Modelling Projects
 (IMPs) focusing on the following physics areas:
 
 -  IMP12
@@ -18,7 +18,7 @@ The EFDA ITM-TF was structured into four Integrated Modelling Projects
 The "Infrastructure and Software Integration Project" (
 ISIP
 ) was in charge of developing, maintaining and operating the code
-platform structure and implementing the ITM data-structure. A key
+platform structure and implementing the EU-IM data-structure. A key
 function of ISIP was to provide infrastructure support to the IMPs. At
 present, under EUROfusion, this expertise and tasks are ensured by the
 Core Programming Team
@@ -33,9 +33,9 @@ the provision of the experimental databases:
    "Experimentalists and Diagnosticians Resource Group"
 
 The "ITER Scenario Modelling Working Group" (ISM) was established in
-2007 as part of ITM-TF with the aim to assist in systematic predictive
+2007 as part of EU-IM-TF with the aim to assist in systematic predictive
 modelling of all ITER reference scenarios by using the major existing
-integrated modelling tools, whilst the ITM code platform was in
+integrated modelling tools, whilst the EU-IM code platform was in
 development. ISM also supported the verification and validation of the
 ETS, which aims to become the main tool for EU modelling activity.
 

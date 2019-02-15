@@ -1,6 +1,6 @@
 .. _itm_gateway:
 
-ITM Gateway
+EU-IM Gateway
 ===========
 
 under construction

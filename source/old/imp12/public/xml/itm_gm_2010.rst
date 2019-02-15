@@ -8,7 +8,7 @@ Posters
    (
    pdf
    ), by G. Calabrò et al.
--  The New ITM Website
+-  The New EU-IM Website
    (
    pdf
    ), by C. Konz et al.
@@ -25,7 +25,7 @@ Posters
    (
    pdf
    ), by J. Blum et al.
--  Status of MARS-F and CarMa codes on ITM
+-  Status of MARS-F and CarMa codes on EU-IM
    (
    ppt
    ), by D. Yadykin et al.

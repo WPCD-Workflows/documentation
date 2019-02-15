@@ -6,9 +6,9 @@ How to write documents for Practical XML
 Introduction
 ------------
 
-This is the ITM-TF version of a public domain xml processing package
+This is the EU-IM-TF version of a public domain xml processing package
 written by John Storrs. It aims to promote the wider use of xml for
-information capture and documentation. The ITM-TF has adopted this
+information capture and documentation. The EU-IM-TF has adopted this
 package for the publication of its websites. The package contains an xml
 parser, documentation generator, dtd generator, xml validator, with
 sample applications and associated xml documents. The applications
@@ -32,9 +32,9 @@ the parser libraries, *app* containing system and demo applications.
 Use
 ---
 
-To use the Practical XML parser or applications on the ITM Gateway you
+To use the Practical XML parser or applications on the EU-IM Gateway you
 need to set an environment variable PXML_HOME to point to
-${SWITMDIR}/pracxml/app/publishxml. You also need to add
+${SWEU-IMDIR}/pracxml/app/publishxml. You also need to add
 konz/public/tex2im-1.8 to your path, for tex2im. Perl 5.8 or later is
 required. The pdf generator uses Latex as its output engine, so one of
 the current Tex/Latex packages is needed. The ImageMagick convert-6.0.0
@@ -48,7 +48,7 @@ subdirectories.
 Alternatively, you may set up your own personal testbed for PracticalXML
 (see `PracticalXML Testbed <#itm_testbed>`__). This allows you to
 develop and process xml based web pages and pdf documents on most Linux
-and Unix system. For more information see `How to contribute to the ITM
+and Unix system. For more information see `How to contribute to the EU-IM
 documentation websites <#itm_contribute>`__.
 
 Parser
@@ -429,11 +429,11 @@ Here is the `style sheet <../imports/style.css>`__ for this document.
 
 Links are always relative to the file location!
 
-Links within the ITM website
+Links within the EU-IM website
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The automatic html/pdf generator engine allows for a sophisticated
-system of links within the ITM website. Targets for links within the ITM
+system of links within the EU-IM website. Targets for links within the EU-IM
 website may be any ``<section>``, ``<para>``, or ``<anchor>`` tags which
 have an "id" attribute. Examples:
 
@@ -462,7 +462,7 @@ generate the appropriate links in the html and pdf versions of the
 website. If a link target lies outside a pdf document (for instance
 because only a part of the website was converted into pdf), the engine
 automatically creates an external link to the correct web address on the
-ITM server. By this, even for the pdf of a part of the website all links
+EU-IM server. By this, even for the pdf of a part of the website all links
 are fully functional. The web addresses of external links appear in full
 as footnotes in the pdf.
 

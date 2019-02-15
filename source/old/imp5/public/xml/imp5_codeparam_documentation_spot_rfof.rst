@@ -267,7 +267,7 @@ Code parameter tree
 |                           |          | wave generated from the data  |
 |                           |          | in parametric_wave 1 : wave   |
 |                           |          | read from ascii version of    |
-|                           |          | ITM cpos, written using       |
+|                           |          | EU-IM cpos, written using       |
 |                           |          | write_cpo in the              |
 |                           |          | write_structures module.      |
 |                           |          | Filename is specified in      |
@@ -322,7 +322,7 @@ Code parameter tree
 |                           |          |                               |
 +---------------------------+----------+-------------------------------+
 | filename_ascii_itm_wave   | string   | Name of input file containing |
-|                           |          | the ITM cpo waves in ascii    |
+|                           |          | the EU-IM cpo waves in ascii    |
 |                           |          | format written using          |
 |                           |          | write_cpo in the              |
 |                           |          | write_structures module       |

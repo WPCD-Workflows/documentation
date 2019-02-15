@@ -5,7 +5,7 @@ The machine description shot database
 
 This section describes a solution for how to automate the reading of
 machine description CPOs in Kepler. At some point ISIP will come with an
-elegant solution, but the ITM needs something right now (written
+elegant solution, but the EU-IM needs something right now (written
 20130315!). Here one proposal is presented that has been implemented in
 Kepler.
 

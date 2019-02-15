@@ -52,6 +52,6 @@ Private EDRG pages
 ------------------
 
 To access the `private EDRG
-pages <https://www.efda-itm.eu/EDRG/html/index.html>`__, an EDRG
+pages <https://www.eufus.eu/EDRG/html/index.html>`__, an EDRG
 password is needed.
 

@@ -53,6 +53,6 @@ Private AMNS pages
 ------------------
 
 For access to the `private AMNS
-pages <https://www.efda-itm.eu/AMNS/html/index.html>`__, an AMNS
+pages <https://www.eufus.eu/AMNS/html/index.html>`__, an AMNS
 password is needed.
 

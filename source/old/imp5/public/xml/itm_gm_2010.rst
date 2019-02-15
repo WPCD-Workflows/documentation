@@ -14,13 +14,13 @@ Posters
    (
    pdf
    ), by Egbert Westerhof and Nicola Bertelli
--  Neutral Beam Injection in ITM
+-  Neutral Beam Injection in EU-IM
    (
    pdf
    ) (
    ppt
    ), by Mireille Schneider and Lars-Göran Eriksson
--  Modelling NBI in ITM environment with ASCOT
+-  Modelling NBI in EU-IM environment with ASCOT
    (
    pdf
    ), by Otto Asunta and Seppo Sipilä;
@@ -73,11 +73,11 @@ Code overview talks
    ) (
    ppt
    ), by Torbjörn Hellsten
--  Modelling NBI in ITM environment with ASCOT
+-  Modelling NBI in EU-IM environment with ASCOT
    (
    pdf
    ), by Otto Asunta and Seppo Sipilä;
--  Present status of NBI codes for ITM
+-  Present status of NBI codes for EU-IM
    (
    pdf
    ) (
@@ -124,7 +124,7 @@ Talks on infrastructure and tools
    ) (
    ppt
    ), by Thomas Johnson
--  IMP5: ITM tools – a quick start
+-  IMP5: EU-IM tools – a quick start
    (
    pdf
    ) (

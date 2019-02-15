@@ -15,7 +15,7 @@
    -  HPC-FF:
 
       -  created HPC-FF actor for ILSA using HPC2K
-      -  tested mixed ITM Gateway/HPC-FF workflow (HELENA on Gateway,
+      -  tested mixed EU-IM Gateway/HPC-FF workflow (HELENA on Gateway,
          ILSA on HPC-FF) using Yann Frauel's HPC2K
 
 2. Fréderic Imbeaux
@@ -74,7 +74,7 @@
 
    -  replaced IMSL and NAG routines by open source routines
 
-   -  started implementation on the ITM Gateway
+   -  started implementation on the EU-IM Gateway
 
 8. Cédric Boulbe
 

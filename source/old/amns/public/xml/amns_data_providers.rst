@@ -13,7 +13,7 @@ Doxygen generated documentation
 
 So far the only documentation is the `doxygen documentation for the AMNS
 Data Provider
-routines <https://portal.eufus.eu/documentation/ITM/doxygen/amns/amnsproto/Provider/4.10b/>`__
+routines <https://portal.eufus.eu/documentation/EU-IM/doxygen/amns/amnsproto/Provider/4.10b/>`__
 (follow the links to Files|File List|src/amns_driver.f90).
 
 Tips/Comments
@@ -81,7 +81,7 @@ For New AMNS Data Providers
 -  You will need to create your private user database
    ::
 
-      $ITMSCRIPTDIR/create_user_itm_dir amns 4.10b
+      $EU-IMSCRIPTDIR/create_user_itm_dir amns 4.10b
 
    replacing the
    4.10b

@@ -207,7 +207,7 @@ The EU-IM datastructure is coded as xml schemas. This unique source is
 used to derive all EU-IM applications related to CPOs : UAL, CPO
 documentation, ... The data structure XML schemas are stored in a
 subversion repository in
-/afs/efda-itm.eu/isip/project/portal/gforge/storage/svnroot/datastructure.
+/afs.eufus.eu/isip/project/portal/gforge/storage/svnroot/datastructure.
 
 To export version 4.08b from the repository, storing it in subdirectory
 *xml*, do

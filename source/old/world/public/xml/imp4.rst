@@ -15,6 +15,6 @@ Public IMP4 pages
 -----------------
 
 To access the `public IMP4
-pages <https://www.eufus.eu/documentation/ITM/html/imp4_public.html>`__,
-an ITM password is needed.
+pages <https://www.eufus.eu/documentation/EU-IM/html/imp4_public.html>`__,
+an EU-IM password is needed.
 

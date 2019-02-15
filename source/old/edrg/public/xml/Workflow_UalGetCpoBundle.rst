@@ -10,7 +10,7 @@ experimental database and information about the machine hardware and
 settings. The purpose of the UalGetCpoBundle is to provide a workflow
 that reads both input CPOs related to the plasma state and the once that
 are related to the hardware. The workflow then bundles these CPOs into
-the CPOS-branch of the `EU-ITM
+the CPOS-branch of the `EU-EU-IM
 bundle <#itm_conventions_plasma_bundle>`__. The target applications of
 this workflow is as an initialisation actor in workflows like the HCD
 workflow and the ETS.

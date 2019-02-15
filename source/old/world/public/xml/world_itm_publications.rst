@@ -1,16 +1,16 @@
 .. _world_itm_publications:
 
-ITM Publications
+EU-IM Publications
 ================
 
 Journals
 --------
 
-1.  G.L. Falchetto et al., ITM-TF contributors and JET-EFDA
-    Contributors, The European Integrated Tokamak Modelling (ITM)
+1.  G.L. Falchetto et al., EU-IM-TF contributors and JET-EFDA
+    Contributors, The European Integrated Tokamak Modelling (EU-IM)
     Effort: Achievements and First Physics Results. Nuclear Fusion
     54,043018, 2014.
-2.  Coelho, R., et al.,Synthetic diagnostics in the EU-ITM simulation
+2.  Coelho, R., et al.,Synthetic diagnostics in the EU-EU-IM simulation
     platform, 7th Workshop on Fusion Data Processing Validation and
     Analysis, Frascati (IT), March 2012; Fusion Science and Technology
     63(1), 1-8, 2013.
@@ -70,21 +70,21 @@ Journals
 Conference Papers
 -----------------
 
-1.  G.L. Falchetto, D. Coster , R. Coelho, et al. ITM-TF contributors
+1.  G.L. Falchetto, D. Coster , R. Coelho, et al. EU-IM-TF contributors
     and JET-EFDA Contributors,
-    The European Integrated Tokamak Modelling (ITM) Effort: Achievements
+    The European Integrated Tokamak Modelling (EU-IM) Effort: Achievements
     and First Physics Results
     439-TH/P2-25, to appear in Proceedings of the 24th IAEA Fusion
     Energy Conference (FEC 2012), San Diego, US.
     poster
-2.  D. Kalupin, V. Basiuk, D. Coster, et al. ITM-TF contributors and
+2.  D. Kalupin, V. Basiuk, D. Coster, et al. EU-IM-TF contributors and
     JET-EFDA Contributors,
     The European Transport Solver: an integrated approach for transport
     simulations in the plasma core
     4-TH/P2-01, to appear in Proceedings of the 24th IAEA Fusion Energy
     Conference (FEC 2012), San Diego, US.
     poster
-3.  X. Litaudon, I. Voitsekhovitch et al. and the EU-ITM ITER Scenario
+3.  X. Litaudon, I. Voitsekhovitch et al. and the EU-EU-IM ITER Scenario
     Modelling group,
     Modelling of Hybrid Scenario: from present-day experiments towards
     ITER
@@ -105,7 +105,7 @@ Conference Papers
     Cyclotron Emission and Electron Cyclotron Resonance Heating (Deurne,
     The Netherlands, 7 - 11 May 2012).
 7.  KONZ, C., et al, First physics applications of the Integrated
-    Tokamak Modelling (ITM-TF) tools to the MHD stability analysis of
+    Tokamak Modelling (EU-IM-TF) tools to the MHD stability analysis of
     experimental data and ITER scenarios, O2.103, 38th EPS Conference on
     Plasma Physics, Strasbourg 2011. In Europhysics Conference Abstracts
     Vol. 35G, ISBN 2-914771-68-1.
@@ -200,7 +200,7 @@ Conference Papers
     Proceedings of the The 18th Euromicro International Conference on
     Parallel, Distributed and Network-Based Computing
 32. P. Strand, R. Coelho, D. Coster, L-G,.Eriksson, F. Imbeaux, B.
-    Guillerminet, F. Iannone, and contributors to the EFDA ITM-TF work
+    Guillerminet, F. Iannone, and contributors to the EFDA EU-IM-TF work
     programme and the EUFORIA project, Simulation high performance
     computing– building a predictive capability for Fusion, IAEA TM 2009
     on Control, Data Acquisition and Remote Participation,

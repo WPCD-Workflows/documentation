@@ -27,9 +27,9 @@ ETS input shots
 ---------------
 
 These are copies of shots, generated originaly with other codes or
-containing the experimental data, which were migrated to the ITM-Gateway
+containing the experimental data, which were migrated to the EU-IM-Gateway
 machine with the tools like
-`Exp2ITM <https://www.eufus.eu/documentation/ITM/html/isip_databases.html#isip_databases_2>`__
+`Exp2EU-IM <https://www.eufus.eu/documentation/EU-IM/html/isip_databases.html#isip_databases_2>`__
 These are used to start the ETS run and, therefore, might not provide
 the comlete set of consistent data.
 

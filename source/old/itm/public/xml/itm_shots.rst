@@ -1,9 +1,9 @@
 .. _itm_shots:
 
-ITM Shots
+EU-IM Shots
 =========
 
-Shots stored in the public data base of the ITM are generally validated.
+Shots stored in the public data base of the EU-IM are generally validated.
 
 JET shots
 ---------

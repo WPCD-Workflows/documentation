@@ -4,10 +4,10 @@ Tasks in the 2010 Work Programme
 ================================
 
 The list of IMP5 related tasks for 2010.
-WP10-ITM-IMP5-ACT1
+WP10-EU-IM-IMP5-ACT1
 ------------------
 
-Topic: Adaptation of IMP5 codes for use with ITM tools
+Topic: Adaptation of IMP5 codes for use with EU-IM tools
 
 Priority Support Deliverables:
 - The codes that will part of the IMP5 set during 2010 should be
@@ -16,14 +16,14 @@ identified.
 - For each code a schedule for release and other milestones associated
 with it should specified.
 
-- A code under the ITM svn server adapted to ITM standards, i.e.
+- A code under the EU-IM svn server adapted to EU-IM standards, i.e.
 communicating data via CPOs.
 
 - Documentation of the code including information on verification or
 references to work where verification has been demonstrated.
 
 - The codes participating in the benchmarking task will be adapted to
-the ITM data structures and ported on the ITM code platform.
+the EU-IM data structures and ported on the EU-IM code platform.
 
 .. table:: Participants
 
@@ -94,7 +94,7 @@ the ITM data structures and ported on the ITM code platform.
    | Yavorskij       |                        | at                        |
    +-----------------+------------------------+---------------------------+
 
-WP10-ITM-IMP5-ACT2
+WP10-EU-IM-IMP5-ACT2
 ------------------
 
 Topic: IMP5 data structure
@@ -128,7 +128,7 @@ Topic: IMP5 data structure
    | Yavorskij       |                        | at                        |
    +-----------------+------------------------+---------------------------+
 
-WP10-ITM-IMP5-ACT3
+WP10-EU-IM-IMP5-ACT3
 ------------------
 
 Topic: Benchmarking and validation of codes
@@ -165,7 +165,7 @@ Topic: Benchmarking and validation of codes
    | Roberto Bilato  | IPP                    | rbb@ipp.mpg.de            |
    +-----------------+------------------------+---------------------------+
 
-WP10-ITM-IMP5-ACT4
+WP10-EU-IM-IMP5-ACT4
 ------------------
 
 Topic: Development of an advanced 3D ion Fokker-Planck solver for ions
@@ -216,7 +216,7 @@ which also sets out the options to be discussed.
    | Thomas Gassner  | ÖAW                    | Thomas.Gassner@uibk.ac.at |
    +-----------------+------------------------+---------------------------+
 
-WP10-ITM-IMP5-ACT5
+WP10-EU-IM-IMP5-ACT5
 ------------------
 
 Topic: Code for Alfvén Modes
@@ -242,13 +242,13 @@ Topic: Code for Alfvén Modes
    | Marczynski      |                        |                           |
    +-----------------+------------------------+---------------------------+
 
-WP10-ITM-IMP5-ACT6
+WP10-EU-IM-IMP5-ACT6
 ------------------
 
 Topic: Data joiners
 
 Priority Support Deliverables:
-- A code under the ITM svn server adapted to ITM standards and running
+- A code under the EU-IM svn server adapted to EU-IM standards and running
 in Kepler, joining data from wave deposition codes for input to
 Fokker-Planck codes. The module should be documented.
 

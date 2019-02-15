@@ -77,7 +77,7 @@ February 9, 2011
    (
    pdf
    ), by X.Litaudon
--  Report from ITM/IMP3 Code Camp: ETS V&V
+-  Report from EU-IM/IMP3 Code Camp: ETS V&V
    (
    pdf
    ), by I.Voitsekhovitch
@@ -252,7 +252,7 @@ September 28, 2011
    (
    pdf
    ), by X.Litaudon
--  Report from ITM General Meeting and discussion on 2012 activities
+-  Report from EU-IM General Meeting and discussion on 2012 activities
    (
    pdf
    ), by I.Voitsekhovitch
@@ -438,7 +438,7 @@ September 26, 2012
    (
    pdf
    ), by X.Litaudon
--  The EU ITM-TF effort - Achievements and First Physics Results
+-  The EU EU-IM-TF effort - Achievements and First Physics Results
    (
    pdf
    ), by G.Falchetto

@@ -1,11 +1,11 @@
 .. _isip_newcomer_guide_intern:
 
-The Newcomer's ITM platform User Guide
+The Newcomer's EU-IM platform User Guide
 ======================================
 
-Welcome to the EFDA-ITM Project and thank you for choosing to cooperate!
+Welcome to the EFDA-EU-IM Project and thank you for choosing to cooperate!
 
-This guide is intended for a new user to his/her first access to ITM
+This guide is intended for a new user to his/her first access to EU-IM
 platform and therefore provides the basic instructions for a code
 developer, which might also serve as reference for everyday use to the
 expert user. Special cases or instructions for curious users or for
@@ -15,26 +15,26 @@ documents linked.
 Getting Started
 ---------------
 
-If you have not yet done it, please contact the `ITM Contact Person at
+If you have not yet done it, please contact the `EU-IM Contact Person at
 your Research Unit <#itm_contact_list_2010>`__.
 
-To get an access to the ITM web Site Intranet
-`(Portal) <https://portal.efda-itm.eu/portal/>`__, with news about every
+To get an access to the EU-IM web Site Intranet
+`(Portal) <https://portal.eufus.eu/portal/>`__, with news about every
 project, tool and code documentation, specific mail lists and the
 collaborative work instruments, ask a login and a password to your
 `Project Leader <#itm_contact_list_2010>`__.
 
-To get an access to `Gateway <http://www.efda-itm.eu/>`__, EFDA-ITM
+To get an access to `Gateway <http://www.eufus.eu/>`__, EFDA-EU-IM
 dedicated Linux cluster for code developing, download, fill and sign the
 `Gateway User
-Agreement <../../../itm/public/imports/gateway/GatewayUserAgreement_ITM.pdf>`__
+Agreement <../../../itm/public/imports/gateway/GatewayUserAgreement_EU-IM.pdf>`__
 and send it by fax to the `Task Force
-Leader. <http://www.efda-itm.eu>`__ The GUA was written as a cooperation
-among the `Gateway User Board <http://www.efda-itm.eu>`__ (composed by a
+Leader. <http://www.eufus.eu>`__ The GUA was written as a cooperation
+among the `Gateway User Board <http://www.eufus.eu>`__ (composed by a
 leader from every project representing his/her users, determines the
 policy for Gateway administration), EURATOM legal office and the HRU's
 and protect the intellectual property of your work as well as it allows
-you to use software under license installed in Gateway (ITM policy still
+you to use software under license installed in Gateway (EU-IM policy still
 remains completely toward `open
 source <http://opensource.org/docs/osd>`__). Without signing the GUA it
 is not possible to have access to Gateway and to most of information on
@@ -47,9 +47,9 @@ Let's work!
 -----------
 
 Having a look to the
-`iter <http://solps-mdsplus.aug.ipp.mpg.de:8080/ITM>`__ a code must
+`iter <http://solps-mdsplus.aug.ipp.mpg.de:8080/EU-IM>`__ a code must
 follow to finally become a part of the integrated tokamak modeling we
-can summarise the simplest activities you can do in ITM platform as:
+can summarise the simplest activities you can do in EU-IM platform as:
 
 -  code porting and developing: for this you need to know the `Gateway
    Development Environment <#gate>`__
@@ -79,8 +79,8 @@ How to use Gateway
 ~~~~~~~~~~~~~~~~~~
 
 Information about Gateway can be gather at the `Gateway web
-site <http://www.efda-itm.eu/>`__ where you can also download the
-`Gateway User Guide <http://www.efda-itm.eu/docs/docs5.php>`__.
+site <http://www.eufus.eu/>`__ where you can also download the
+`Gateway User Guide <http://www.eufus.eu/docs/docs5.php>`__.
 
 You can access Gateway via ssh and sftp in the standard way.
 

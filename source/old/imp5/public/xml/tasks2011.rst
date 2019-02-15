@@ -3,11 +3,11 @@
 Tasks in the 2011 Work Programme
 ================================
 
-WP11-ITM-IMP5-ACT1
+WP11-EU-IM-IMP5-ACT1
 ------------------
 
 Topic: Adaptation of codes for Heating, Current Drive and Fast Particle
-Physics for use with ITM tools
+Physics for use with EU-IM tools
 
 Subtask 1 - Priority Support Deliverables:
 - Code adaptation up to creation of a Kepler actor (for new codes)
@@ -141,7 +141,7 @@ within 3 months from the release of version 4.08c of the data structures
    |                 |                        | enko@ipp.mpg.de>`__       |
    +-----------------+------------------------+---------------------------+
 
-WP11-ITM-IMP5-ACT2
+WP11-EU-IM-IMP5-ACT2
 ------------------
 
 Topic: Integration of IMP5 modules with the European transport Solver
@@ -171,7 +171,7 @@ when they cannot be replaced by a simple KEPLER composite actor.
 for integrated workflows suitable to cross-project integration efforts,
 e.g. coupling equilibrium reconstruction (from remote data via exp2itm)
 and HCD chain. -- Develop composite actors and workflows for integration
-of ITM codes and testing. -- Reports on testing of the composite actors
+of EU-IM codes and testing. -- Reports on testing of the composite actors
 and workflows.
 
 .. table:: Participants
@@ -205,7 +205,7 @@ and workflows.
    |                 |                        | e>`__                     |
    +-----------------+------------------------+---------------------------+
 
-WP11-ITM-IMP5-ACT3
+WP11-EU-IM-IMP5-ACT3
 ------------------
 
 Topic: Benchmarking and validation of codes
@@ -280,7 +280,7 @@ validation procedure and results.
    |                 |                        | .asunta@tkk.fi>`__        |
    +-----------------+------------------------+---------------------------+
 
-WP11-ITM-IMP5-ACT4
+WP11-EU-IM-IMP5-ACT4
 ------------------
 
 Topic: Development and integration of models for synergies between
@@ -304,7 +304,7 @@ to use this response.
 Priority Support Deliverables:
 - Actors and source code with documentation; all stored under
 Gforge-svn. Documentation of tests verifying the functionality of the
-source. Source code should follow good ITM practice.
+source. Source code should follow good EU-IM practice.
 
 - Workflows for performing modelling of synergies and self-consistent
 coupling between codes.
@@ -339,7 +339,7 @@ coupling between codes.
    | Hellsten        |                        | >`__                      |
    +-----------------+------------------------+---------------------------+
 
-WP11-ITM-IMP5-ACT5
+WP11-EU-IM-IMP5-ACT5
 ------------------
 
 Topic: Code development and datastructure evaluation for global
@@ -373,7 +373,7 @@ after nonlinear saturation
    |                 |                        | lvio.zonca@enea.it>`__    |
    +-----------------+------------------------+---------------------------+
 
-WP11-ITM-IMP5-ACT6
+WP11-EU-IM-IMP5-ACT6
 ------------------
 
 Topic: Development of codes calculating nuclear reaction rates
@@ -381,7 +381,7 @@ Topic: Development of codes calculating nuclear reaction rates
 Baseline Support Deliverables:
 - Source code with documentation; all stored under Gforge. Documentation
 of tests verifying the functionality of the source. Source code should
-follow good ITM practice.
+follow good EU-IM practice.
 
 .. table:: Participants
 

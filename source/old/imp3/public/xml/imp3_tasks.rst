@@ -6,7 +6,7 @@ IMP3 formal tasks
 The list of IMP3 tasks for 2011
 -------------------------------
 
-WP11-ITM-IMP3-ACT1: Maintenance, continuing development, verification and validation of the ETS
+WP11-EU-IM-IMP3-ACT1: Maintenance, continuing development, verification and validation of the ETS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following tasks are grouped under this activity:
@@ -38,13 +38,13 @@ The deliverables for 2011 are:
 -  Integration of 0-D codes: Functioning 0D codes with documentation
    integrated into the Kepler environment and using the UAL
 
-WP11-ITM-IMP3-ACT2: Implementation, integration, verification and validation of edge codes
+WP11-EU-IM-IMP3-ACT2: Implementation, integration, verification and validation of edge codes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following tasks are grouped under this activity:
 
 1. Implementation and release (including verification and validation) of
-   a number of edge codes using CPOs (See appendix A, Phase V of "ITM
+   a number of edge codes using CPOs (See appendix A, Phase V of "EU-IM
    modules release cycle")
 
 2. Definition, implementation, verification and the start of validation
@@ -71,85 +71,85 @@ Work Breakdown
 |                       |        |           |           | Support     |
 |                       |        |           |           | (kEuros)*   |
 +=======================+========+===========+===========+=============+
-| WP11-ITM-IMP3-ACT1-01 | CCFE   | 0.10      | 0.00      | 0.00        |
+| WP11-EU-IM-IMP3-ACT1-01 | CCFE   | 0.10      | 0.00      | 0.00        |
 | /CCFE/BS              |        |           |           |             |
 +-----------------------+--------+-----------+-----------+-------------+
-| WP11-ITM-IMP3-ACT1-01 | CEA    | 0.00      | 1.10      | 0.00        |
+| WP11-EU-IM-IMP3-ACT1-01 | CEA    | 0.00      | 1.10      | 0.00        |
 | /CEA                  |        |           |           |             |
 +-----------------------+--------+-----------+-----------+-------------+
-| WP11-ITM-IMP3-ACT1-01 | HAS    | 0.00      | 0.30      | 0.00        |
+| WP11-EU-IM-IMP3-ACT1-01 | HAS    | 0.00      | 0.30      | 0.00        |
 | /HAS                  |        |           |           |             |
 +-----------------------+--------+-----------+-----------+-------------+
-| WP11-ITM-IMP3-ACT1-01 | Hellen | 0.50      | 0.00      | 0.00        |
+| WP11-EU-IM-IMP3-ACT1-01 | Hellen | 0.50      | 0.00      | 0.00        |
 | /Hellenic             | ic     |           |           |             |
 | Republic              | Republ |           |           |             |
 |                       | ic     |           |           |             |
 +-----------------------+--------+-----------+-----------+-------------+
-| WP11-ITM-IMP3-ACT1-01 | IPP    | 0.00      | 0.20      | 0.00        |
+| WP11-EU-IM-IMP3-ACT1-01 | IPP    | 0.00      | 0.20      | 0.00        |
 | /IPP                  |        |           |           |             |
 +-----------------------+--------+-----------+-----------+-------------+
-| WP11-ITM-IMP3-ACT1-01 | IPPLM  | 0.00      | 1.00      | 0.00        |
+| WP11-EU-IM-IMP3-ACT1-01 | IPPLM  | 0.00      | 1.00      | 0.00        |
 | /IPPLM                |        |           |           |             |
 +-----------------------+--------+-----------+-----------+-------------+
-| WP11-ITM-IMP3-ACT1-01 | IST    | 0.00      | 0.35      | 0.00        |
+| WP11-EU-IM-IMP3-ACT1-01 | IST    | 0.00      | 0.35      | 0.00        |
 | /IST                  |        |           |           |             |
 +-----------------------+--------+-----------+-----------+-------------+
-| WP11-ITM-IMP3-ACT1-01 | VR     | 0.30      | 0.00      | 0.00        |
+| WP11-EU-IM-IMP3-ACT1-01 | VR     | 0.30      | 0.00      | 0.00        |
 | /VR                   |        |           |           |             |
 +-----------------------+--------+-----------+-----------+-------------+
-| WP11-ITM-IMP3-ACT1-02 | CCFE   | 0.00      | 0.10      | 0.00        |
+| WP11-EU-IM-IMP3-ACT1-02 | CCFE   | 0.00      | 0.10      | 0.00        |
 | /CCFE                 |        |           |           |             |
 +-----------------------+--------+-----------+-----------+-------------+
-| WP11-ITM-IMP3-ACT1-02 | CEA    | 0.70      | 0.00      | 0.00        |
+| WP11-EU-IM-IMP3-ACT1-02 | CEA    | 0.70      | 0.00      | 0.00        |
 | /CEA                  |        |           |           |             |
 +-----------------------+--------+-----------+-----------+-------------+
-| WP11-ITM-IMP3-ACT1-02 | HAS    | 0.20      | 0.00      | 0.00        |
+| WP11-EU-IM-IMP3-ACT1-02 | HAS    | 0.20      | 0.00      | 0.00        |
 | /HAS                  |        |           |           |             |
 +-----------------------+--------+-----------+-----------+-------------+
-| WP11-ITM-IMP3-ACT1-02 | IST    | 0.00      | 0.50      | 0.00        |
+| WP11-EU-IM-IMP3-ACT1-02 | IST    | 0.00      | 0.50      | 0.00        |
 | /IST                  |        |           |           |             |
 +-----------------------+--------+-----------+-----------+-------------+
-| WP11-ITM-IMP3-ACT1-02 | VR     | 0.00      | 0.08      | 0.00        |
+| WP11-EU-IM-IMP3-ACT1-02 | VR     | 0.00      | 0.08      | 0.00        |
 | /VR                   |        |           |           |             |
 +-----------------------+--------+-----------+-----------+-------------+
-| WP11-ITM-IMP3-ACT1-03 | IST    | 0.00      | 0.45      | 0.00        |
+| WP11-EU-IM-IMP3-ACT1-03 | IST    | 0.00      | 0.45      | 0.00        |
 | /IST                  |        |           |           |             |
 +-----------------------+--------+-----------+-----------+-------------+
-| WP11-ITM-IMP3-ACT1-03 | IST    | 0.10      | 0.00      | 0.00        |
+| WP11-EU-IM-IMP3-ACT1-03 | IST    | 0.10      | 0.00      | 0.00        |
 | /IST/BS               |        |           |           |             |
 +-----------------------+--------+-----------+-----------+-------------+
-| WP11-ITM-IMP3-ACT2-01 | CEA    | 0.20      | 0.00      | 0.00        |
+| WP11-EU-IM-IMP3-ACT2-01 | CEA    | 0.20      | 0.00      | 0.00        |
 | /CEA                  |        |           |           |             |
 +-----------------------+--------+-----------+-----------+-------------+
-| WP11-ITM-IMP3-ACT2-01 | FOM_Ri | 0.20      | 0.00      | 0.00        |
+| WP11-EU-IM-IMP3-ACT2-01 | FOM_Ri | 0.20      | 0.00      | 0.00        |
 | /FOM_Rijnhuizen       | jnhuiz |           |           |             |
 |                       | en     |           |           |             |
 +-----------------------+--------+-----------+-----------+-------------+
-| WP11-ITM-IMP3-ACT2-01 | FZJ    | 0.20      | 0.00      | 0.00        |
+| WP11-EU-IM-IMP3-ACT2-01 | FZJ    | 0.20      | 0.00      | 0.00        |
 | /FZJ                  |        |           |           |             |
 +-----------------------+--------+-----------+-----------+-------------+
-| WP11-ITM-IMP3-ACT2-01 | IPP    | 0.25      | 0.00      | 0.00        |
+| WP11-EU-IM-IMP3-ACT2-01 | IPP    | 0.25      | 0.00      | 0.00        |
 | /IPP/BS               |        |           |           |             |
 +-----------------------+--------+-----------+-----------+-------------+
-| WP11-ITM-IMP3-ACT2-01 | IPPLM  | 0.00      | 0.10      | 0.00        |
+| WP11-EU-IM-IMP3-ACT2-01 | IPPLM  | 0.00      | 0.10      | 0.00        |
 | /IPPLM                |        |           |           |             |
 +-----------------------+--------+-----------+-----------+-------------+
-| WP11-ITM-IMP3-ACT2-01 | TEKES  | 0.00      | 0.17      | 0.00        |
+| WP11-EU-IM-IMP3-ACT2-01 | TEKES  | 0.00      | 0.17      | 0.00        |
 | /TEKES                |        |           |           |             |
 +-----------------------+--------+-----------+-----------+-------------+
-| WP11-ITM-IMP3-ACT2-02 | IPP    | 0.00      | 0.05      | 0.00        |
+| WP11-EU-IM-IMP3-ACT2-02 | IPP    | 0.00      | 0.05      | 0.00        |
 | /IPP                  |        |           |           |             |
 +-----------------------+--------+-----------+-----------+-------------+
-| WP11-ITM-IMP3-ACT2-02 | IPP    | 0.20      | 0.00      | 0.00        |
+| WP11-EU-IM-IMP3-ACT2-02 | IPP    | 0.20      | 0.00      | 0.00        |
 | /IPP/BS               |        |           |           |             |
 +-----------------------+--------+-----------+-----------+-------------+
-| WP11-ITM-IMP3-ACT2-02 | TEKES  | 0.10      | 0.00      | 0.00        |
+| WP11-EU-IM-IMP3-ACT2-02 | TEKES  | 0.10      | 0.00      | 0.00        |
 | /TEKES/BS             |        |           |           |             |
 +-----------------------+--------+-----------+-----------+-------------+
-| WP11-ITM-IMP3-ACT2-03 | IPP    | 0.00      | 0.30      | 0.00        |
+| WP11-EU-IM-IMP3-ACT2-03 | IPP    | 0.00      | 0.30      | 0.00        |
 | /IPP                  |        |           |           |             |
 +-----------------------+--------+-----------+-----------+-------------+
-| WP11-ITM-IMP3-ACT2-03 | IPP    | 0.15      | 0.00      | 0.00        |
+| WP11-EU-IM-IMP3-ACT2-03 | IPP    | 0.15      | 0.00      | 0.00        |
 | /IPP/BS               |        |           |           |             |
 +-----------------------+--------+-----------+-----------+-------------+
 | Total                 |        | 3.20      | 4.70      | 0.00        |
@@ -173,9 +173,9 @@ The list of IMP3 tasks for 2010
 |           |      |       | r |    |    |                            |
 |           |      |       | t |    |    |                            |
 +===========+======+=======+===+====+====+============================+
-| WP10-ITM- | CEA  | Phili | P | 0. | 0. | Continued with extended    |
+| WP10-EU-IM- | CEA  | Phili | P | 0. | 0. | Continued with extended    |
 | IMP3-ACT1 |      | ppe   | S | 17 | 17 | scope including            |
-| -T1:      |      | Huynh |   |    |    | WP09-ITM-IMP3-T2           |
+| -T1:      |      | Huynh |   |    |    | WP09-EU-IM-IMP3-T2           |
 |           |      |       |   |    |    | "Maintenance, continuing   |
 | ETS       |      |       |   |    |    | development, verification  |
 | maintenan |      |       |   |    |    | and validation of the      |
@@ -446,11 +446,11 @@ The list of IMP3 tasks for 2010
 | o         |      |       | 3 |    |    |                            |
 |           |      |       | 5 |    |    |                            |
 +-----------+------+-------+---+----+----+----------------------------+
-| WP10-ITM- | VR   | Pär   | B | 0. | 0. | Introduce and maintain the |
+| WP10-EU-IM- | VR   | Pär   | B | 0. | 0. | Introduce and maintain the |
 | IMP3-ACT1 |      | Stran | S | 08 | 08 | TCI module covering        |
 | -T2:      |      | d     |   |    |    | different anomalous        |
 |           |      |       |   |    |    | transport modules          |
-| Finalizat |      |       |   |    |    | (Weiland, GLF23, RITM and  |
+| Finalizat |      |       |   |    |    | (Weiland, GLF23, REU-IM and  |
 | ion       |      |       |   |    |    | EDWM) into the ETS         |
 | of IMP3   |      |       |   |    |    | framework. Focus on work   |
 | core      |      |       |   |    |    | here is on the code        |
@@ -579,7 +579,7 @@ The list of IMP3 tasks for 2010
 |           |      |       |   |    | ar |                            |
 |           |      |       |   |    | .  |                            |
 +-----------+------+-------+---+----+----+----------------------------+
-| WP10-ITM- | No   | BS    | - | -  | -  |                            |
+| WP10-EU-IM- | No   | BS    | - | -  | -  |                            |
 | IMP3-ACT1 | prop |       |   |    |    |                            |
 | -T3:      | osal |       |   |    |    |                            |
 |           | s    |       |   |    |    |                            |
@@ -588,7 +588,7 @@ The list of IMP3 tasks for 2010
 | ETS       | rece |       |   |    |    |                            |
 |           | ived |       |   |    |    |                            |
 +-----------+------+-------+---+----+----+----------------------------+
-| WP10-ITM- | CCFE | Irina | P | 0, | 0, | Verification of the ETS    |
+| WP10-EU-IM- | CCFE | Irina | P | 0, | 0, | Verification of the ETS    |
 | IMP3-ACT1 |      | Voits | S | 1  | 1  | transport solver and       |
 | -T4:      |      | ekhov |   |    |    | models implemented in ETS  |
 |           |      | itch  |   |    |    | by comparing them with the |
@@ -1817,7 +1817,7 @@ The list of IMP3 tasks for 2010
 | PISOKAS   |      |       | . |    |    |                            |
 |           |      |       | 2 |    |    |                            |
 +-----------+------+-------+---+----+----+----------------------------+
-| WP10-ITM- | No   | BS    | - | -  | -  |                            |
+| WP10-EU-IM- | No   | BS    | - | -  | -  |                            |
 | IMP3-ACT1 | prop |       |   |    |    |                            |
 | -T5:      | osal |       |   |    |    |                            |
 |           | s    |       |   |    |    |                            |
@@ -1826,7 +1826,7 @@ The list of IMP3 tasks for 2010
 |           | rece |       |   |    |    |                            |
 |           | ived |       |   |    |    |                            |
 +-----------+------+-------+---+----+----+----------------------------+
-| WP10-ITM- | CCFE | Luca  | B | 0. | 0. | The activity will focus on |
+| WP10-EU-IM- | CCFE | Luca  | B | 0. | 0. | The activity will focus on |
 | IMP3-ACT2 |      | Garzo | S | 9  | 9  | the modelling of particle  |
 | -T1:      |      | tti   |   |    |    | transport and density      |
 |           |      |       |   |    |    | control in ITER plasma.    |
@@ -2830,7 +2830,7 @@ The list of IMP3 tasks for 2010
 |           |      |       | 0 |    |    |                            |
 |           |      |       | 5 |    |    |                            |
 +-----------+------+-------+---+----+----+----------------------------+
-| WP10-ITM- | CEA  | Xavie | P | 0. | 0. | Continuation of the        |
+| WP10-EU-IM- | CEA  | Xavie | P | 0. | 0. | Continuation of the        |
 | IMP3-ACT3 |      | r     | S | 17 | 17 | development and            |
 | -T1:      |      | Bonni |   |    |    | implementation of edge     |
 |           |      | n     |   |    |    | CPOs (including core-edge  |
@@ -2843,9 +2843,9 @@ The list of IMP3 tasks for 2010
 | codes     |      |       |   |    |    | implementation of the edge |
 |           |      |       |   |    |    | CPO data structures into   |
 |           |      |       |   |    |    | SOLPS- Delivery of an      |
-|           |      |       |   |    |    | ITM-compatible 2-D         |
+|           |      |       |   |    |    | EU-IM-compatible 2-D         |
 |           |      |       |   |    |    | field-aligned quadrangular |
-|           |      |       |   |    |    | grid generator (CARRE_ITM) |
+|           |      |       |   |    |    | grid generator (CARRE_EU-IM) |
 |           |      |       |   |    |    | for use with SOLPS and     |
 |           |      |       |   |    |    | other edge codes (work     |
 |           |      |       |   |    |    | within Kepler and with CPO |
@@ -6294,8 +6294,8 @@ The list of IMP3 tasks for 2010
 |           |      |       |   | on |    |                            |
 |           |      |       |   | )  |    |                            |
 +-----------+------+-------+---+----+----+----------------------------+
-| WP10-ITM- | ENEA | Fabio | B | 0. | 0. | Contribution to the        |
-| IMP3-ACT4 | -    | Subba | S | 04 | 04 | verification of the ITM    |
+| WP10-EU-IM- | ENEA | Fabio | B | 0. | 0. | Contribution to the        |
+| IMP3-ACT4 | -    | Subba | S | 04 | 04 | verification of the EU-IM    |
 | -T1:      | Fras |       |   |    |    | edge codes and validation  |
 |           | cati |       |   |    |    | of related edge plasma     |
 | Verificat |      |       |   |    |    | models.                    |
@@ -6976,7 +6976,7 @@ The list of IMP3 tasks for 2010
 |           |      |       |   |    | .  |                            |
 +-----------+------+-------+---+----+----+----------------------------+
 | Total for |      | Manpo |   | BS | PS |                            |
-| WP10-ITM- |      | wer   |   | (p | (p |                            |
+| WP10-EU-IM- |      | wer   |   | (p | (p |                            |
 | IMP3      |      |       |   | py | py |                            |
 |           |      |       |   | )  | )  |                            |
 +-----------+------+-------+---+----+----+----------------------------+

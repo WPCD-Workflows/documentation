@@ -15,7 +15,7 @@ Posters
    (
    ppt
    ), by A. Galonska et al.
--  Exp2ITM - a generic access to shot based data for European Tokamaks
+-  Exp2EU-IM - a generic access to shot based data for European Tokamaks
    (
    ppt
    ), by J. Signoret et al.
@@ -23,7 +23,7 @@ Posters
    (
    ppt
    ), by J. Signoret et al.
--  Feedback control Simulation under the ITM platform
+-  Feedback control Simulation under the EU-IM platform
    (
    pdf
    ), by O. Barana et al.
@@ -31,7 +31,7 @@ Posters
    (
    ppt
    ), by N. Signoret and G. Manduchi
--  The ITM-TF Simulation Catalogue
+-  The EU-IM-TF Simulation Catalogue
    (
    ppt
    ), by F. Imbeaux et al.

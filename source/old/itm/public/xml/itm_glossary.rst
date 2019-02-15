@@ -12,10 +12,10 @@ Collaborative Development Environment (CDE)
 
 Consistent Physical Object (CPO)
    A Consistent Physical Object (CPO) is a physics based, hierarchical
-   data structure employed by the ITM-TF for a complete description of a
-   physics area, e.g. equilibrium. All ITM-TF code modules interact
+   data structure employed by the EU-IM-TF for a complete description of a
+   physics area, e.g. equilibrium. All EU-IM-TF code modules interact
    through the exchange of CPOs. The CPOs also form the basic block of
-   data written to the ITM database.
+   data written to the EU-IM database.
 
 Content Management System (CMS)
    A content management system (CMS) is the collection of procedures
@@ -40,36 +40,36 @@ Content Management System (CMS)
 FC2K
    FC2K is a tool for wrapping a Fortran or C++ source code into a
    Kepler actor. Before using it, your physics code should be
-   ITM-compliant (i.e. use CPOs as input/output).
+   EU-IM-compliant (i.e. use CPOs as input/output).
 
 Gforge
-   `Gforge <https://gforge.efda-itm.eu>`__ hosts all projects (software
-   and infrastructure) under the ITM-TF.
+   `Gforge <https://gforge.eufus.eu>`__ hosts all projects (software
+   and infrastructure) under the EU-IM-TF.
 
-ITM Gateway
-   The ITM Gateway is a compute cluster located at Portici (near Napoli
+EU-IM Gateway
+   The EU-IM Gateway is a compute cluster located at Portici (near Napoli
    in Italy). It is uses for development and fusion simulations in the
-   ITM-TF.
+   EU-IM-TF.
 
-ITM Portal
-   The `ITM Portal <https://portal.efda-itm.eu>`__ is the web portal for
-   the ITM-TF, i.e. it hosts the ITM-TF web pages and projects under
+EU-IM Portal
+   The `EU-IM Portal <https://portal.eufus.eu>`__ is the web portal for
+   the EU-IM-TF, i.e. it hosts the EU-IM-TF web pages and projects under
    Gforge.
 
 Integrated Simulation Editor (ISE)
    The Integrated Simulation Editor ISE allows you to visualize and edit
-   data from an ITM database entry. It also allows running a Kepler
+   data from an EU-IM database entry. It also allows running a Kepler
    workflow based on the opened data entry.
 
 Universal Access Layer (UAL)
    The UAL (Universal Access Layer) is a multi-language library that
    allows exchanging Consistent Physical Objects (CPOs) between various
-   modules, and to write to an ITM database.
+   modules, and to write to an EU-IM database.
 
 actor
    Actors take execution instructions from a director. In other words,
    actors specify what processing occurs while the director specifies
-   when it occurs. In the ITM-TF, actors are usually modules which
+   when it occurs. In the EU-IM-TF, actors are usually modules which
    contain physics codes like EQUAL or HELENA.
 
 calibration
@@ -79,14 +79,14 @@ calibration
 
 data mapping
    An XML file containing all the mapping essentials for mapping from a
-   local experimental database for a specific tokamak device to the ITM
+   local experimental database for a specific tokamak device to the EU-IM
    database. The mapping essentials include for instance the download
    method, local signal names, gains and offsets, time base, and
    eventual interpolation option to ensure that only one time base is
    set for each CPO that is built from multiple local signals. A java
-   code (exp2ITM developed under ISIP), with the MD and DM files as
+   code (exp2EU-IM developed under ISIP), with the MD and DM files as
    inputs, is then run to connect to the local device database, retrieve
-   the required experimental data and populate the ITM database instance
+   the required experimental data and populate the EU-IM database instance
    for that shot/device and dataversion.
 
 director
@@ -111,7 +111,7 @@ machine description
    the PF coils and circuiting and lines of sight of diagnostics. In
    practice, all MD information is encapsulated in an XML file that
    emanates from the MD tagged datastructure schemas. An MD instance of
-   a given device is then stored into the ITM database as shot 0 for
+   a given device is then stored into the EU-IM database as shot 0 for
    that device database.
 
 model

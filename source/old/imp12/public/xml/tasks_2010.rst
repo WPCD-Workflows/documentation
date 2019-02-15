@@ -4,7 +4,7 @@ Tasks in 2010
 =============
 
 The list of IMP12 related tasks for 2010 is given below:
-WP10-ITM-IMP12-ACT1: Maintenance of Equilibrium and linear MHD Stability
+WP10-EU-IM-IMP12-ACT1: Maintenance of Equilibrium and linear MHD Stability
 ------------------------------------------------------------------------
 
 .. table:: Members
@@ -21,7 +21,7 @@ WP10-ITM-IMP12-ACT1: Maintenance of Equilibrium and linear MHD Stability
    | Sergei Medvedev | Swiss Confederation    | medvedev@crppsun.epfl.ch  |
    +-----------------+------------------------+---------------------------+
 
-WP10-ITM-IMP12-ACT2: Free Boundary Equilibrium Codes and Feedback Control
+WP10-EU-IM-IMP12-ACT2: Free Boundary Equilibrium Codes and Feedback Control
 -------------------------------------------------------------------------
 
 .. table:: Members
@@ -65,10 +65,10 @@ WP10-ITM-IMP12-ACT2: Free Boundary Equilibrium Codes and Feedback Control
    +-----------------+------------------------+---------------------------+
 
 `Minutes of the meeting on control in March
-2010 <../imports/imp12_ITM_meeting_on_control_23_03_2010.pdf>`__ `Gantt
+2010 <../imports/imp12_EU-IM_meeting_on_control_23_03_2010.pdf>`__ `Gantt
 Chart <../imports/imp12_Control_gantt_chart.pdf>`__
 
-WP10-ITM-IMP12-ACT3: Development of Equilibrium Reconstruction Codes
+WP10-EU-IM-IMP12-ACT3: Development of Equilibrium Reconstruction Codes
 --------------------------------------------------------------------
 
 .. table:: Members
@@ -98,7 +98,7 @@ WP10-ITM-IMP12-ACT3: Development of Equilibrium Reconstruction Codes
    | HavlíCCARONek   |                        |                           |
    +-----------------+------------------------+---------------------------+
 
-WP10-ITM-IMP12-ACT4: Flow Extension of Equilibrium and MHD Stability Codes
+WP10-EU-IM-IMP12-ACT4: Flow Extension of Equilibrium and MHD Stability Codes
 --------------------------------------------------------------------------
 
 .. table:: Members
@@ -110,7 +110,7 @@ WP10-ITM-IMP12-ACT4: Flow Extension of Equilibrium and MHD Stability Codes
    | Paccagnella     |                        | nr.it                     |
    +-----------------+------------------------+---------------------------+
 
-WP10-ITM-IMP12-ACT5: Validation of the Equilibrium Reconstruction Codes in Kepler
+WP10-EU-IM-IMP12-ACT5: Validation of the Equilibrium Reconstruction Codes in Kepler
 ---------------------------------------------------------------------------------
 
 .. table:: Members
@@ -131,7 +131,7 @@ WP10-ITM-IMP12-ACT5: Validation of the Equilibrium Reconstruction Codes in Keple
    | Mathias Brix    | CCFE                   | mathias.brix@ccfe.ac.uk   |
    +-----------------+------------------------+---------------------------+
 
-WP10-ITM-IMP12-ACT6: Definition of 3D Data Structures for the Equilibrium and Implementation in 3D Equilibrium Codes
+WP10-EU-IM-IMP12-ACT6: Definition of 3D Data Structures for the Equilibrium and Implementation in 3D Equilibrium Codes
 --------------------------------------------------------------------------------------------------------------------
 
 .. table:: Members
@@ -144,7 +144,7 @@ WP10-ITM-IMP12-ACT6: Definition of 3D Data Structures for the Equilibrium and Im
    | Tony Cooper     | Swiss Confederation    | wilfred.cooper@epfl.ch    |
    +-----------------+------------------------+---------------------------+
 
-WP10-ITM-IMP12-ACT7: Sawtooth Crash Module
+WP10-EU-IM-IMP12-ACT7: Sawtooth Crash Module
 ------------------------------------------
 
 .. table:: Members
@@ -155,7 +155,7 @@ WP10-ITM-IMP12-ACT7: Sawtooth Crash Module
    | Olivier Sauter  | Swiss Confederation    | olivier.sauter@epfl.ch    |
    +-----------------+------------------------+---------------------------+
 
-WP10-ITM-IMP12-ACT8: ELM Module
+WP10-EU-IM-IMP12-ACT8: ELM Module
 -------------------------------
 
 .. table:: Members
@@ -165,7 +165,7 @@ WP10-ITM-IMP12-ACT8: ELM Module
    +=================+========================+===========================+
    +-----------------+------------------------+---------------------------+
 
-WP10-ITM-IMP12-ACT9: Resistive Wall Modes
+WP10-EU-IM-IMP12-ACT9: Resistive Wall Modes
 -----------------------------------------
 
 .. table:: Members
@@ -197,7 +197,7 @@ WP10-ITM-IMP12-ACT9: Resistive Wall Modes
    | Atanasiu        |                        |                           |
    +-----------------+------------------------+---------------------------+
 
-WP10-ITM-IMP12-ACT10: NTM Module
+WP10-EU-IM-IMP12-ACT10: NTM Module
 --------------------------------
 
 .. table:: Members
@@ -220,7 +220,7 @@ WP10-ITM-IMP12-ACT10: NTM Module
    | Olivier Sauter  | Swiss Confederation    | olivier.sauter@epfl.ch    |
    +-----------------+------------------------+---------------------------+
 
-WP10-ITM-IMP12-ACT11: 3D MHD Code
+WP10-EU-IM-IMP12-ACT11: 3D MHD Code
 ---------------------------------
 
 .. table:: Members
@@ -231,7 +231,7 @@ WP10-ITM-IMP12-ACT11: 3D MHD Code
    | Joan Decker     | CEA                    | joan.decker@cea.fr        |
    +-----------------+------------------------+---------------------------+
 
-WP10-ITM-IMP12-ACT12: Error Field Module
+WP10-EU-IM-IMP12-ACT12: Error Field Module
 ----------------------------------------
 
 .. table:: Members
@@ -242,7 +242,7 @@ WP10-ITM-IMP12-ACT12: Error Field Module
    | Christopher Ham | CCFE                   | chris.ham@ccfe.ac.uk      |
    +-----------------+------------------------+---------------------------+
 
-WP10-ITM-IMP12-ACT13: 2D MHD Code
+WP10-EU-IM-IMP12-ACT13: 2D MHD Code
 ---------------------------------
 
 .. table:: Members
@@ -276,7 +276,7 @@ WP10-ITM-IMP12-ACT13: 2D MHD Code
    | Marchetto       |                        |                           |
    +-----------------+------------------------+---------------------------+
 
-WP10-ITM-IMP12-ACT14: Disruption Workbench
+WP10-EU-IM-IMP12-ACT14: Disruption Workbench
 ------------------------------------------
 
 .. table:: Members
@@ -307,7 +307,7 @@ WP10-ITM-IMP12-ACT14: Disruption Workbench
 
 .. _wp10_itm_imp12_act15:
 
-WP10-ITM-IMP12-ACT15: Numerical Tools
+WP10-EU-IM-IMP12-ACT15: Numerical Tools
 -------------------------------------
 
 .. table:: Members

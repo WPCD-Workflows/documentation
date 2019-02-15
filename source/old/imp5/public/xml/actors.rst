@@ -7,7 +7,7 @@ IMP5 are providing a number of
 Kepler
 actors
 for testing and use on the
-ITM Gateway
+EU-IM Gateway
 . The list is constantly expanding and will be updated regularly.
 The actors should later be uploaded under the
 KeplerActors
@@ -245,7 +245,7 @@ f(v, \\rho ) \\) during NBI.
 MARS is the prototype of the MHD solver of HYMAGYC, the hybrid
 MHD-Gyrokinetic Code to study Alfven modes driven by energetic
 particles. A provisional actor for 4.08b CPOs release can be downloaded
-by /afs/efda-itm.eu/imp5/user/wwwimp5/public/ITM_test/actors/4.08b/.
+by /afs.eufus.eu/imp5/user/wwwimp5/public/EU-IM_test/actors/4.08b/.
 
 +-------------+-------------+--------------------+--------------------+
 | Type        | Input CPOs  | Output CPOs        | Kepler parameters  |
@@ -310,7 +310,7 @@ The imp5coresource actor can be imported from
 
 ::
 
-   /afs/efda-itm.eu/imp5/user/wwwimp5/public/ITM_test/actors/imp5_hcd_module/
+   /afs.eufus.eu/imp5/user/wwwimp5/public/EU-IM_test/actors/imp5_hcd_module/
 
 To export a local copy of the source code from the svn repository
 
@@ -350,7 +350,7 @@ The passthroughdj4distribution actor can be imported from
 
 ::
 
-   /afs/efda-itm.eu/imp5/user/wwwimp5/public/ITM_test/actors/imp5_hcd_module/
+   /afs.eufus.eu/imp5/user/wwwimp5/public/EU-IM_test/actors/imp5_hcd_module/
 
 The passthroughdj4distribution is part of the "empty_imp5_cpos" package
 of simple CPO generators. To export a local copy of the source code,
@@ -385,7 +385,7 @@ The passthroughdj4distsource actor can be imported from
 
 ::
 
-   /afs/efda-itm.eu/imp5/user/wwwimp5/public/ITM_test/actors/imp5_hcd_module/
+   /afs.eufus.eu/imp5/user/wwwimp5/public/EU-IM_test/actors/imp5_hcd_module/
 
 The passthroughdj4distsource is part of the "empty_imp5_cpos" package of
 simple CPO generators. To export a local copy of the source code,
@@ -420,7 +420,7 @@ The passthroughdj4waves actor can be imported from
 
 ::
 
-   /afs/efda-itm.eu/imp5/user/wwwimp5/public/ITM_test/actors/imp5_hcd_module/
+   /afs.eufus.eu/imp5/user/wwwimp5/public/EU-IM_test/actors/imp5_hcd_module/
 
 The passthroughdj4waves is part of the "empty_imp5_cpos" package of
 simple CPO generators. To export a local copy of the source code,
@@ -486,7 +486,7 @@ icantmu
 Mock-up ICRF antenna.
 
 tar-file containing exported actor stored in
-/afs/efda-itm.eu/imp5/user/wwwimp5/public/ITM_test/actors/.
+/afs.eufus.eu/imp5/user/wwwimp5/public/EU-IM_test/actors/.
 
 +-------------+-------------+--------------------+--------------------+
 | Type        | Input CPOs  | Output CPOs        | Kepler parameters  |
@@ -519,7 +519,7 @@ easyic
 Mock-up Fokker-Planck solver for ICRF. Only for testing.
 
 tar-file containing exported actor stored in
-/afs/efda-itm.eu/imp5/user/wwwimp5/public/ITM_test/actors/.
+/afs.eufus.eu/imp5/user/wwwimp5/public/EU-IM_test/actors/.
 
 +-------------+-------------+--------------------+--------------------+
 | Type        | Input CPOs  | Output CPOs        | Kepler parameters  |
@@ -545,7 +545,7 @@ icdepmu
 Mock-up of ICRF wave codes which writes the waves CPO.
 
 tar-file containing exported actor stored in
-/afs/efda-itm.eu/imp5/user/wwwimp5/public/ITM_test/actors/.
+/afs.eufus.eu/imp5/user/wwwimp5/public/EU-IM_test/actors/.
 
 +-------------+-------------+--------------------+--------------------+
 | Type        | Input CPOs  | Output CPOs        | Kepler parameters  |

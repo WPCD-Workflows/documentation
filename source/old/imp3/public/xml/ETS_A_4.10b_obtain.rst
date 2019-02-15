@@ -11,7 +11,7 @@ Installing the ETS
 ------------------
 
 The default ETS release is the `tag
-4.10b10.3 <https://www.eufus.eu/documentation/ITM/html/ETS_A_4.10a_obtain.html#ETS_A_4.10a_obtain_3>`__
+4.10b10.3 <https://www.eufus.eu/documentation/EU-IM/html/ETS_A_4.10a_obtain.html#ETS_A_4.10a_obtain_3>`__
 
 *\*Before installation make sure that:*
 
@@ -27,7 +27,7 @@ The default ETS release is the `tag
    command:
    ::
 
-          >source $ITMSCRIPTDIR/ITMv1 Kepler_Version Data_Base_Name UAL_Version
+          >source $EU-IMSCRIPTDIR/EU-IMv1 Kepler_Version Data_Base_Name UAL_Version
             
 
    is executed.
@@ -58,18 +58,18 @@ ways tio execute it:
 -  For execution in none GUI mode:
    ::
 
-      >kepler.sh -runwf -nogui -redirectgui $ITMHOME/some_dir_name workflow_path/workflow_name.xml
+      >kepler.sh -runwf -nogui -redirectgui $EU-IMHOME/some_dir_name workflow_path/workflow_name.xml
           
 
 -  For execution in batch mode:
-   it is essential to keep the workflow inside your $ITMWORK area
+   it is essential to keep the workflow inside your $EU-IMWORK area
 
    it is essential to switch to scripts/R2.2 module
 
    ::
 
       >module switch scripts/R2.2
-      >submit_batch_kepler.sh run_dircetory 1 $ITMWORK/workflow_path/workflow_name.xml $ITMSCRIPTDIR/batch_submission/ParallelKepler.bsub
+      >submit_batch_kepler.sh run_dircetory 1 $EU-IMWORK/workflow_path/workflow_name.xml $EU-IMSCRIPTDIR/batch_submission/ParallelKepler.bsub
           
 
 ETS revisions

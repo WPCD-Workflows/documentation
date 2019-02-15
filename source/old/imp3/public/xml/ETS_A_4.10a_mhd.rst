@@ -14,7 +14,7 @@ LOOP composite actor. Therefore please do:
 -  Commit
 
 At the moment ETS allows only for NTM to be activated. The sawtooth
-module is expected to be deployed before ITM Code Camp in Slovenia.
+module is expected to be deployed before EU-IM Code Camp in Slovenia.
 
 User can ajust the following NTM settings:
 

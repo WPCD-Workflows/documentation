@@ -48,9 +48,9 @@ Tokamak Magnetic Field Representation
 The axisymmetric magnetic field is given by \\( \\vec B =
 I\vec\nabla\varphi + \\vec\nabla\psi\times\vec\nabla\varphi \\) where
 \\( I \\) and \\( \\psi \\) are scalar fields in the poloidal plane (see
-ITM Conventions). The equilibrium constraint is \\( I=I(\psi) \\) which
+EU-IM Conventions). The equilibrium constraint is \\( I=I(\psi) \\) which
 assumes the shear Alfven balances are in quasistatic equilibrium. The
-relation to ITM quantities is \\( I=F_{{\rm dia}} \\) and \\(
+relation to EU-IM quantities is \\( I=F_{{\rm dia}} \\) and \\(
 \\psi=\Psi/2\pi \\) in the equilibrium CPO.
 
 Toroidal Flux and Flux Diffusion
@@ -72,7 +72,7 @@ constant \\( \\psi \\) is turned around to get \\(
 \\partial\Psi/\partial t \\) at constant \\( \\Phi \\). The result is
 \\( \\left.{\partial\Psi\over\partial t}\right\vert_\Phi = V_{{\rm
 loop}} - {\left\langle E_\parallel B\right\rangle \\over \\left\langle
-F_{{\rm dia}}/2\pi R^2\right\rangle} \\) given in terms of the ITM
+F_{{\rm dia}}/2\pi R^2\right\rangle} \\) given in terms of the EU-IM
 quantities. The angle brackets denote the flux surface average.
 Additional effects consider the equation at constant toroidal flux
 radius \\( \\rho_{{\rm tor}} \\) allowing for possible time dependence
@@ -85,7 +85,7 @@ noninductive effects including the possibility of anomalous resistivity
 due to magnetic turbulence please see `this
 write-up. <http://www.rzg.mpg.de/~bds/cyclone/induction.pdf>`__
 
-Most ITM workflows use a model for \\( E_\parallel \\) with neoclassical
+Most EU-IM workflows use a model for \\( E_\parallel \\) with neoclassical
 condictivity (inverse resistivity) governing diffusion and a
 non-inductive current comprising all other effects (these are sigma_par
 and jni in the coretransp CPO, which are loaded from sigma and jboot in

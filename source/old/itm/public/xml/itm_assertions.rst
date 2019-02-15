@@ -6,7 +6,7 @@ Fortran Assertion Module
 Overview: Assertions as a software development tool
 ---------------------------------------------------
 
-The motivation for the ITM Fortran 90 assertion module is to enable and
+The motivation for the EU-IM Fortran 90 assertion module is to enable and
 promote `defensive
 programming <http://en.wikipedia.org/wiki/Defensive_programming>`__ in
 Fortran codes and ultimately help to reduce development time and improve
@@ -41,13 +41,13 @@ still execute as intended. Assertions are in fact often automatically
 removed from production code to avoid any performance penalties they
 introduce.
 
-The ITM Fortran assertion module
+The EU-IM Fortran assertion module
 --------------------------------
 
 Many languages (e.g. Java, C, Python, Matlab,...) provide standard ways
 to test assertions. For Fortran this is not the case, but this can
 easily be fixed by substituting an implementation of the required
-functions. The ITM assertions module contained in itm_assert module
+functions. The EU-IM assertions module contained in itm_assert module
 provides such an implementation. The source code can be found
 `here <https://gforge6.eufus.eu/svn/itmshared/branches/itm_assert/>`__,
 or just do

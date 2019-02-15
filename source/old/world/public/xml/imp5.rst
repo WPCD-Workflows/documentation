@@ -26,12 +26,12 @@ computations of the distribution functions of electrons and ions during
 heating and current drive, ultimately incorporating non-linear effects
 of instabilities and their redistribution fast ions.
 
-In 2010, the work on adapting code modules to ITM requirements will be
+In 2010, the work on adapting code modules to EU-IM requirements will be
 consolidated such that essential modules are available for providing the
 necessary input to the transport solver ETS
 (`IMP3 <imp3_public.html>`__). The data structures relating to the
 physics of Heating & Current drive and fast particle physics will be
-improved further. New modules will be considered and adapted to the ITM
+improved further. New modules will be considered and adapted to the EU-IM
 standards. When more than one module of a certain type is available,
 work on cross verification will start.
 
@@ -40,4 +40,4 @@ Public IMP5 pages
 
 To access the
 public IMP5 pages
-, an ITM password is needed.
+, an EU-IM password is needed.

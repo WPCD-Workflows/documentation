@@ -62,7 +62,7 @@ distsource
    and name of the injectors and reactions that provide the source,
    along with an index separating sources with the same name and type.
    Possible content for type: NBI or reaction names (see specifications
-   on the ITM webpages); the field name should either be taken from
+   on the EU-IM webpages); the field name should either be taken from
    nbi(*)%nbi_unit(*)%name, or describe the populations involved in the
    reaction, e.g. fast-thermal; the field index should separate
    different sources generated from a single injector or reaction.

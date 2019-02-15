@@ -38,7 +38,7 @@ Arter
 Asunta
 ------
 
--  Modelling NBI in ITM environment with ASCOT:
+-  Modelling NBI in EU-IM environment with ASCOT:
    pdf
    (480K)
 
@@ -83,7 +83,7 @@ Baiocchi
 Barana
 ------
 
--  Feedback control Simulation under the ITM platform:
+-  Feedback control Simulation under the EU-IM platform:
    pdf
    (640K)
 
@@ -275,7 +275,7 @@ Blum
 Bolzonella
 ----------
 
--  ITM-TF plasma control working session and code camp:
+-  EU-IM-TF plasma control working session and code camp:
    Welcome and Agenda (T. Bolzonella)
    (4.5M)
 -  Implementation of the JT-60SA NBI configuration in EU transport
@@ -322,9 +322,9 @@ Brémond
 -------
 
 -  Free boundary equilibrium feedback control simulations under
-   Kepler/ITM:
+   Kepler/EU-IM:
    Free boundary equilibrium feedback control simulations under
-   Kepler/ITM (S. Brémond)
+   Kepler/EU-IM (S. Brémond)
    (736K)
 
 Bucalossi
@@ -435,38 +435,38 @@ Coelho
    Meeting:
    Overview of EDRG for 2009 (R.Coelho)
    (3.3M)
--  Summary of the ITM-TF kick-off meeting of the EDRG group:
+-  Summary of the EU-IM-TF kick-off meeting of the EDRG group:
    Minutes (R. Coelho)
    (224K)
--  Summary of the first ITM-TF meeting on 3D machine descriptions:
+-  Summary of the first EU-IM-TF meeting on 3D machine descriptions:
    Minutes of the Meeting (R.Coelho)
    (352K)
 -  Experimentalists and Diagnosticians Resource Group (EDRG):
    Agenda and 3D related tasks (R.Coelho)
    (3.6M)
--  Minutes of the first ITM working session on control issues:
+-  Minutes of the first EU-IM working session on control issues:
    Minutes of the working session (R.Coelho/T.Bolzonella)
    (64K)
--  ITM-TF plasma control working session:
+-  EU-IM-TF plasma control working session:
    Welcome (R.Coelho)
    (3.5M)
--  ITM-TF plasma control working session - Control related activities in
+-  EU-IM-TF plasma control working session - Control related activities in
    WP-2009:
-   General ITM overview (R.Coelho)
+   General EU-IM overview (R.Coelho)
    (3.3M)
 -  Summary of the 3D machine descriptions WS in Garching:
    Minutes (R. Coelho)
    (192K)
--  Overview of ITM-TF datastructure, machine description, and 3D related
+-  Overview of EU-IM-TF datastructure, machine description, and 3D related
    activities:
-   Overview of ITM datastructure heading to 3D (R. Coelho)
+   Overview of EU-IM datastructure heading to 3D (R. Coelho)
    (4.5M)
--  ITM-TF Plasma control working session - EDRG control related
+-  EU-IM-TF Plasma control working session - EDRG control related
    activities in WP-2010:
    EDRG Control related activities in the WP-2010 (R. Coelho)
    (3.3M)
--  ITM datastructure and tools:
-   ITM datastructure and tools (R. Coelho)
+-  EU-IM datastructure and tools:
+   EU-IM datastructure and tools (R. Coelho)
    (4.3M)
 -  Summary discussion on ERC3D integration:
    Summary discussion (R. Coelho)
@@ -486,7 +486,7 @@ Coelho
 -  New angles for the line integrated signals.:
    report
    (128K)
--  Definition of flux loops in EU-ITM datastructure:
+-  Definition of flux loops in EU-EU-IM datastructure:
    Flux loop position
    (576K)
 -  PF connections:
@@ -498,7 +498,7 @@ Coelho
 -  Fusion CPO:
    Fusion CPO
    (256K)
--  ITM Software License and rights:
+-  EU-IM Software License and rights:
    model licence
    (32K)
 -  Overview of EDRG results:
@@ -536,13 +536,13 @@ Cooper
 Coster
 ------
 
--  EU ITM-TF experience with CPOs:
-   EU ITM-TF experience with CPOs, D. Coster (20+10)
+-  EU EU-IM-TF experience with CPOs:
+   EU EU-IM-TF experience with CPOs, D. Coster (20+10)
    (3.1M)
--  Atomic, Molecular, Surface and Nuclear (AMSN) data for theITM-TF:
+-  Atomic, Molecular, Surface and Nuclear (AMSN) data for theEU-IM-TF:
    pdf
    (352K)
--  ITM AMNS Interface:
+-  EU-IM AMNS Interface:
    pdf
    (288K)
 -  Simulations of theedge plasma: the role of atomic, molecular and
@@ -613,7 +613,7 @@ Coster
 -  Current status of the ETS (present at the JET TFT meeting):
    pdf
    (768K)
--  ITM plans with respect to Integrated Modelling, in particular with
+-  EU-IM plans with respect to Integrated Modelling, in particular with
    respect to “Burn and Particle Control” (presented at EFDA meeting on
    Fuelling and Particle Control, Session: Burn and Particle Control,
    March 2009):
@@ -637,7 +637,7 @@ Coster
 -  AMNS + IMP3:
    ppt
    (5.9M)
--  ITM Workflows:
+-  EU-IM Workflows:
    ppt
    (7.9M)
 -  Coordination and Provision of AMNS data:
@@ -649,7 +649,7 @@ Coster
 -  IMP3: Transport Code and Discharge Evolution:
    ppt
    (4.1M)
--  Present ITM capabilities:
+-  Present EU-IM capabilities:
    ppt
    (3.0M)
 -  AMNS:
@@ -658,7 +658,7 @@ Coster
 -  IMP3:
    ppt
    (5.5M)
--  Visualization Tools in the ITM:
+-  Visualization Tools in the EU-IM:
    ppt
    (32K)
 -  Overview of IMP3 activities during 2010:
@@ -809,25 +809,25 @@ Fable
 Falchetto
 ---------
 
--  EU ITM-TF experience with Kepler:
-   EU ITM-TF experience with Kepler, G. Falchetto (CEA) (20+10)
+-  EU EU-IM-TF experience with Kepler:
+   EU EU-IM-TF experience with Kepler, G. Falchetto (CEA) (20+10)
    (1.2M)
--  The EU ITM-TF effort - Achievements and First Physics Results:
+-  The EU EU-IM-TF effort - Achievements and First Physics Results:
    pdf
    (1.1M)
--  ITM-TF Status and Achievements:
+-  EU-IM-TF Status and Achievements:
    ppt
    (4.8M)
 -  Euro-Fusion “Code Development for Integrated Modelling” Work Package:
    pdf
    (608K)
--  ITM-TF Status and 2013 WorkPlan:
+-  EU-IM-TF Status and 2013 WorkPlan:
    ppt
    (3.3M)
 -  Opening:
    ppt
    (224K)
--  ITM Overview:
+-  EU-IM Overview:
    ppt
    (2.4M)
 -  Overview of the European Integrated Tokamak Modelling Task Force:
@@ -1180,7 +1180,7 @@ Guillerminet
    directors
    (B. Guillerminet)
    (3.1M)
--  ITM gateway user's guide:
+-  EU-IM gateway user's guide:
    Gateway User'sGuide:
    (3.9M)
 -  ISIP tools training:
@@ -1195,7 +1195,7 @@ Guillerminet
 -  HPC2K - GRID and HPC Actor Generator:
    ppt
    (1.5M)
--  ITM gateway users's guid:
+-  EU-IM gateway users's guid:
    pdf
    (3.9M)
 -  Code Interface - FC2K, WS2K & HPC2K Tools:
@@ -1397,14 +1397,14 @@ IMT
    Agenda
    (1.0M)
 
-ITM
+EU-IM
 ---
 
--  ITM:
-   ITM
+-  EU-IM:
+   EU-IM
    (2.3M)
--  ITM Code Camps:
-   ITM Code Camps
+-  EU-IM Code Camps:
+   EU-IM Code Camps
    (25M)
 -  ISIP:
    ISIP
@@ -1454,11 +1454,11 @@ Imbeaux
    Introduction: IMAS requirements towards Data Structures, Data
    Descriptions & Code/Component Interfaces, F. Imbeaux (20+20)
    (992K)
--  Brief overview of experimental data in the ITM framework:
+-  Brief overview of experimental data in the EU-IM framework:
    Experimental data retrieval (F.Imbeaux)
    (320K)
--  ITM control workflow concepts:
-   ITM control workflow concepts (F.Imbeaux)
+-  EU-IM control workflow concepts:
+   EU-IM control workflow concepts (F.Imbeaux)
    (1.2M)
 -  ISIP - Status of control toolbox task:
    ISIP - Status of Control Toolbox Task "Task 12" (F. Imbeaux, G.
@@ -1470,10 +1470,10 @@ Imbeaux
 -  Data structures in practice:
    Data Structures inPractice
    (1.0M)
--  Contents of the ITM public database:
-   ITM PublicDatabase
+-  Contents of the EU-IM public database:
+   EU-IM PublicDatabase
    (32K)
--  Brief overview of experimental data in the ITM framework:
+-  Brief overview of experimental data in the EU-IM framework:
    Experimental Data Overview
    (320K)
 -  UAL Tutorial:
@@ -1485,7 +1485,7 @@ Imbeaux
 -  Exercises:
    Exercises:
    (320K)
--  The ITM-TF Simulation Catalogue:
+-  The EU-IM-TF Simulation Catalogue:
    ppt
    (1.2M)
 -  Introduction to ISIP tools:
@@ -1617,7 +1617,7 @@ Johnson
 -  Quick introduction to documentation with Doxygen:
    pdf
    (2.9M)
--  IMP5: ITM tools – a quick start:
+-  IMP5: EU-IM tools – a quick start:
    pdf
    (1.8M)
 -  IMP5 tools in 4.09a:
@@ -1699,14 +1699,14 @@ Klasky
 Klingshirn
 ----------
 
--  The ITM general grid description: A tutorial:
+-  The EU-IM general grid description: A tutorial:
    pdf
    (1.3M)
 -  Present status of the General Grid Description and related software
    (IMP3):
    ppt
    (3.5M)
--  The ITM General Grid Description:
+-  The EU-IM General Grid Description:
    ppt
    (2.7M)
 
@@ -1772,8 +1772,8 @@ Koechl
 Konz
 ----
 
--  Potential 3D codes for ITM:
-   Potential 3D codes for the ITM (C.Konz)
+-  Potential 3D codes for EU-IM:
+   Potential 3D codes for the EU-IM (C.Konz)
    (32K)
 -  Free boundary equilibrium reconstruction and feedback control in
    IMP12:
@@ -1786,14 +1786,14 @@ Konz
 -  Using XML for code specific parameters:
    Fortran XML Parser:
    (768K)
--  Minutes of the ITM meeting on the implementation of controllers
-   within the ITM simulation platform:
+-  Minutes of the EU-IM meeting on the implementation of controllers
+   within the EU-IM simulation platform:
    Minutes ofthe meeting on control in March 2010
    (96K)
 -  Control Gantt Chart:
    Gantt Chart
    (32K)
--  The New ITM Website:
+-  The New EU-IM Website:
    pdf
    (1.5M)
 -  Minutes of the meeting on free boundary equilibrium and transport
@@ -2050,7 +2050,7 @@ Lunt
    pdf
    (4.1M)
 -  3D wall description of fusion devices:
-   3D defeaturing tool effort under the ITM (T.Lunt/S.Jämsä)
+   3D defeaturing tool effort under the EU-IM (T.Lunt/S.Jämsä)
    (6.1M)
 
 MAPPER
@@ -2134,8 +2134,8 @@ Marushchenko
 Mattei
 ------
 
--  CREATE-NL adaptation to ITM needs:
-   CREATE-NL adaptation to ITM need (M. Mattei)
+-  CREATE-NL adaptation to EU-IM needs:
+   CREATE-NL adaptation to EU-IM need (M. Mattei)
    (736K)
 
 Mazon
@@ -2225,7 +2225,7 @@ Nave
 Nielsen
 -------
 
--  ITM-IMP4 Status & Achievements:
+-  EU-IM-IMP4 Status & Achievements:
    ppt
    (2.1M)
 
@@ -2310,7 +2310,7 @@ Pereverzev
 Petruczynik
 -----------
 
--  ITM scenarios using IPS:
+-  EU-IM scenarios using IPS:
    ppt
    (1.8M)
 
@@ -2355,7 +2355,7 @@ Plociennik
 Pokol
 -----
 
--  ARENA+ in ITM:
+-  ARENA+ in EU-IM:
    pdf
    (416K)
 
@@ -2379,7 +2379,7 @@ Polevoi
 Poli
 ----
 
--  TORBEAM for ITM:
+-  TORBEAM for EU-IM:
    ppt
    (320K)
 
@@ -2442,10 +2442,10 @@ Sauter
 Schneider
 ---------
 
--  Neutral Beam Injection in ITM:
+-  Neutral Beam Injection in EU-IM:
    pdf
    (480K)
--  Present status of NBI codes for ITM:
+-  Present status of NBI codes for EU-IM:
    pdf
    (480K)
 -  Report on 2014 NBI benchmarks:
@@ -2474,19 +2474,19 @@ Signoret
 -  Data Mapping User Guide:
    User Guide
    (1.4M)
--  Basics on exp2ITM usage.:
+-  Basics on exp2EU-IM usage.:
    presentation
    (2.3M)
 -  Tutorial/Demonstration: Kepler for Beginners:
    Kepler tutorial
    (480K)
--  Exp2ITM - a generic access to shot based data for European Tokamaks:
+-  Exp2EU-IM - a generic access to shot based data for European Tokamaks:
    ppt
    (704K)
 -  Integrated Simulation Editor:
    ppt
    (960K)
--  Exp2ITM : populate ITM database with experimental data:
+-  Exp2EU-IM : populate EU-IM database with experimental data:
    ppt
    (1.6M)
 -  Introduction to ISE:
@@ -2564,10 +2564,10 @@ Strand
    Introduction: IMAS requirements towards Multi-scale physics and
    integration of large scale computing, P. Strand (20+20)
    (896K)
--  ITM software policies and gateway user agreement:
+-  EU-IM software policies and gateway user agreement:
    (doc)
    (96K)
--  ITM software policies and gateway user agreement:
+-  EU-IM software policies and gateway user agreement:
    (pdf)
    (128K)
 -  Gateway user agreement - invite:
@@ -2754,7 +2754,7 @@ Voitsekhovitch
    model: effect of toroidal rotation on fusion performance:
    pdf
    (160K)
--  Welcome and Agenda of 3rd ISM working session, news from 5th ITM code
+-  Welcome and Agenda of 3rd ISM working session, news from 5th EU-IM code
    camp:
    ppt
    (2.3M)
@@ -2769,7 +2769,7 @@ Voitsekhovitch
    comparison with JET:
    pdf
    (1.5M)
--  Report from ITM/IMP3 Code Camp: ETS V&V:
+-  Report from EU-IM/IMP3 Code Camp: ETS V&V:
    pdf
    (320K)
 -  Proposals for ETS validation on JET Hybrid discharges:
@@ -2785,7 +2785,7 @@ Voitsekhovitch
    CRONOS, FASTRAN, JETTO and ONETWO:
    pdf
    (832K)
--  Report from ITM General Meeting and discussion on 2012 activities:
+-  Report from EU-IM General Meeting and discussion on 2012 activities:
    pdf
    (4.5M)
 -  Update on current ramp up modelling (T&C ITPA meeting):
@@ -2887,10 +2887,10 @@ Yadikin
 Yadykin
 -------
 
--  MARS-F on ITM:
-   MARS-F on ITM (D. Yadykin)
+-  MARS-F on EU-IM:
+   MARS-F on EU-IM (D. Yadykin)
    (96K)
--  Status of MARS-F and CarMa codes on ITM:
+-  Status of MARS-F and CarMa codes on EU-IM:
    ppt
    (1.1M)
 

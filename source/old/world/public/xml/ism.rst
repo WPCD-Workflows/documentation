@@ -12,4 +12,4 @@ Public ISM pages
 
 To access the
 public ISM pages
-, an ITM password is needed.
+, an EU-IM password is needed.

@@ -71,7 +71,7 @@ Fortran interface example:
 | 13  | COCOS_13          | Coordinate specifications: (R,phi,Z) ;    |
 |     |                   | (rho,phi,theta); Bp = - grad(phi) x       |
 |     |                   | grad(psi). Used by e.g. CLISTE, EQUAL,    |
-|     |                   | GEC, HELENA, EFDA-ITM                     |
+|     |                   | GEC, HELENA, EFDA-EU-IM                     |
 +-----+-------------------+-------------------------------------------+
 | 14  | COCOS_14          | Coordinate specifications: (R,Z,phi) ;    |
 |     |                   | (rho,phi,theta); Bp = - grad(phi) x       |

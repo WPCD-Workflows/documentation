@@ -3,10 +3,10 @@
 Working Sessions
 ================
 
-With the consolidation of the ITM-TF infrastructure and maturing tools,
+With the consolidation of the EU-IM-TF infrastructure and maturing tools,
 there are inevitably some interdependencies in the workprogramme of the
 integrated modelling projects. A new feature of the 2010 implementation
-of the ITM-TF work programme is the focused use of coordinated joint
+of the EU-IM-TF work programme is the focused use of coordinated joint
 activities as integral part of the work. These joint activities will be
 organised in working sessions and code camps (working sessions supported
 by the integration team) and supported under mobility.
@@ -18,7 +18,7 @@ Control Meeting at Cadarache, 22-23 June
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The meeting was a kick-off meeting on the overall activities of the
-ITM-TF focusing on plasma control. A particular emphasis on free
+EU-IM-TF focusing on plasma control. A particular emphasis on free
 boundary equilibrium codes and position+shape control was given. The
 need for multiplexer/de-multiplexer
 actors
@@ -33,13 +33,13 @@ learning curve from the DINA-CH+CRONOS package.
 
 -  Minutes of the working session (R.Coelho/T.Bolzonella)
 -  Welcome (R.Coelho)
--  General ITM overview (R.Coelho)
+-  General EU-IM overview (R.Coelho)
 -  Controller schemes from experiments (T.Bolzonella)
 -  IMP1 control related activities (G.Huysmans)
 -  EFDA Feedback Control Goup summary (A.Pironti)
 -  Flight Simulator for controlling plasma discharges (N.Ravenel)
 -  DINA-CH + CRONOS overview (K.Besseghir)
--  ITM control workflow concepts (F.Imbeaux)
+-  EU-IM control workflow concepts (F.Imbeaux)
 -  CREATE-NL closed loop runs and integration with transport codes
    (A.Pironti)
 
@@ -54,8 +54,8 @@ defeaturing tool, challenges on targeting real device CAD
 representations of some devices and interfacing with the GRID CPO.
 
 -  Minutes (R. Coelho)
--  Overview of ITM datastructure heading to 3D (R. Coelho)
--  3D defeaturing tool effort under the ITM (T.Lunt/S.Jämsä)
+-  Overview of EU-IM datastructure heading to 3D (R. Coelho)
+-  3D defeaturing tool effort under the EU-IM (T.Lunt/S.Jämsä)
 -  3D Meshing strategies guidelines in RWM codes (M. Palumbo)
 -  Edge CPO and grid structuring (F. Subba)
 
@@ -63,7 +63,7 @@ Control Activities at Cadarache, 28 June - 1 July
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A joint working session and Code camp to discuss the ongoing activities
-related to control on the ITM-TF (at both project and task level) and to
+related to control on the EU-IM-TF (at both project and task level) and to
 provide training with the first test cases of the Control Toolbox, for
 SCICOS and SIMULINK born control diagrams. Simple PID cases suited
 perfectly the training purpose and evidenced the valuable ongoing
@@ -82,30 +82,30 @@ discussed.
 -  ISIP - Status of Control Toolbox Task "Task 12" (F. Imbeaux, G.
    Manduchi)
 -  Free boundary equilibrium feedback control simulations under
-   Kepler/ITM (S. Brémond)
+   Kepler/EU-IM (S. Brémond)
 -  Free boundary equilibrium reconstruction and feedback control in
    IMP12 (C. Konz)
--  CREATE-NL adaptation to ITM need (M. Mattei)
+-  CREATE-NL adaptation to EU-IM need (M. Mattei)
 -  Approach on parallel I/O (A. Galonska)
 -  KEPLER Actor Generation from Simulink Components (G. Manduchi)
--  MARS-F on ITM (D. Yadykin)
+-  MARS-F on EU-IM (D. Yadykin)
 -  Multiplexer/De-multiplexer (O. Hoenon)
 -  Kepler workflow design and
    directors
    (B. Guillerminet)
 -  Feedback Control WG ongoing effort (D. Mazon)
 
-ERC3D integration on the ITM infrastructure, 5-6 July
+ERC3D integration on the EU-IM infrastructure, 5-6 July
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A working session promoted to discuss the integration of the ERC3D
-reflectometer package on the ITM infrastructure. The discussion focused
+reflectometer package on the EU-IM infrastructure. The discussion focused
 on particular aspects of the datastructure that need to be developed, in
 particular the Antenna and Output CPOs to be plugged to the code.
 Meshing interfacing, code parameters and C interface were also
 discussed.
 
--  ITM datastructure and tools (R. Coelho)
+-  EU-IM datastructure and tools (R. Coelho)
 -  Code integration in IMP12 (C. Konz)
 -  The European 3D Reflectometry code ERC3D - overview of structure (C.
    Lechte)

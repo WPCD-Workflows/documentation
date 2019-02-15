@@ -64,6 +64,6 @@ Private IMP5 pages
 ------------------
 
 To access the `private IMP5
-pages <https://www.efda-itm.eu/IMP5/html/index.html>`__, an IMP5
+pages <https://www.eufus.eu/IMP5/html/index.html>`__, an IMP5
 password is needed.
 

@@ -20,7 +20,7 @@ system. To display the available package names do
    pkg-config --list-all | grep amns
 
 Doxygen information about the user interface can be found
-`here <https://portal.eufus.eu/documentation/ITM/doxygen/amns/amnsproto/User/4.10b/>`__.
+`here <https://portal.eufus.eu/documentation/EU-IM/doxygen/amns/amnsproto/User/4.10b/>`__.
 
 The AMNS library can be called from
 
@@ -65,7 +65,7 @@ The non-opaque types are:
 
 The definitions of these data types can be found at the `doxygen
 documentation for the AMNS User
-routines <https://portal.eufus.eu/documentation/ITM/doxygen/amns/amnsproto/User/4.10b/>`__
+routines <https://portal.eufus.eu/documentation/EU-IM/doxygen/amns/amnsproto/User/4.10b/>`__
 
 .. _amns_user_interface_reactions:
 
@@ -73,7 +73,7 @@ AMNS User Interface Data Reactions
 ----------------------------------
 
 The currently available reactions specified in reaction_typex%string in
-the call to ITM_AMNS_SETUP_TABLE are
+the call to EU-IM_AMNS_SETUP_TABLE are
 
 1.  RC: Recombination (acd)
 2.  EI: Electron Impact Ionisation (scd)
@@ -94,11 +94,11 @@ AMNS User Interface Data Queries
 --------------------------------
 
 The currently available queries for query%string in the call to
-ITM_AMNS_QUERY is
+EU-IM_AMNS_QUERY is
 
 
 The currently available queries for query%string in the call to
-ITM_AMNS_QUERY_TABLE are
+EU-IM_AMNS_QUERY_TABLE are
 
 1.  source: source (origin) of the data
 2.  no_of_reactants: number of tractants involved
@@ -115,13 +115,13 @@ ITM_AMNS_QUERY_TABLE are
 AMNS User Interface Data Setting Options
 ----------------------------------------
 
-The currently setting options for set%string in the call to ITM_AMNS_SET
+The currently setting options for set%string in the call to EU-IM_AMNS_SET
 is
 
 1. NONE
 
 The currently available setting options for set%string in the call to
-ITM_AMNS_SET_TABLE is
+EU-IM_AMNS_SET_TABLE is
 
 1. nowarn: deactivate warning when extrapolating
 
@@ -145,46 +145,46 @@ AMNS User Interface: Fortran Calls
 
 The 9 calls to the AMNS system are:
 
-1. ITM_AMNS_SETUP, initialization call for the AMNS package
+1. EU-IM_AMNS_SETUP, initialization call for the AMNS package
    ::
 
-        subroutine ITM_AMNS_SETUP(handle, version, error_status)
+        subroutine EU-IM_AMNS_SETUP(handle, version, error_status)
           optional version, error_status
           type(amns_handle_type), intent(out) :: handle
           type(amns_version_type), intent(in) :: version
           type(amns_error_type), intent(out) :: error_status
 
-2. ITM_AMNS_QUERY, query routine for the AMNS package
+2. EU-IM_AMNS_QUERY, query routine for the AMNS package
    ::
 
-        subroutine ITM_AMNS_QUERY(handle,query,answer,error_status)
+        subroutine EU-IM_AMNS_QUERY(handle,query,answer,error_status)
           optional error_status
           type(amns_handle_type), intent(in) :: handle
           type(amns_query_type), intent(in) :: query
           type(amns_answer_type), intent(out) :: answer
           type(amns_error_type), intent(out) :: error_status
 
-3. ITM_AMNS_SET, set a parameter for the AMNS package
+3. EU-IM_AMNS_SET, set a parameter for the AMNS package
    ::
 
-        subroutine ITM_AMNS_SET(handle,set,error_status)
+        subroutine EU-IM_AMNS_SET(handle,set,error_status)
           optional error_status
           type(amns_handle_type), intent(in) :: handle
           type(amns_set_type), intent(in) :: set
           type(amns_error_type), intent(out) :: error_status
 
-4. ITM_AMNS_FINISH, finalization call for the AMNS package
+4. EU-IM_AMNS_FINISH, finalization call for the AMNS package
    ::
 
-        subroutine ITM_AMNS_FINISH(handle, error_status)
+        subroutine EU-IM_AMNS_FINISH(handle, error_status)
           optional error_status
           type(amns_handle_type), intent(inout) :: handle
           type(amns_error_type), intent(out) :: error_status
 
-5. ITM_AMNS_SETUP_TABLE, initialization call for a particular reaction
+5. EU-IM_AMNS_SETUP_TABLE, initialization call for a particular reaction
    ::
 
-        subroutine ITM_AMNS_SETUP_TABLE(handle, reaction_type, reactant, handle_rx, error_status)
+        subroutine EU-IM_AMNS_SETUP_TABLE(handle, reaction_type, reactant, handle_rx, error_status)
           optional error_status
           type(amns_handle_type), intent(in) :: handle
           type(amns_reaction_type), intent(in) :: reaction_type
@@ -192,56 +192,56 @@ The 9 calls to the AMNS system are:
           type(amns_handle_rx_type), intent(out) :: handle_rx
           type(amns_error_type), intent(out) :: error_status
 
-6. ITM_AMNS_QUERY_TABLE, query routine for a particular reaction
+6. EU-IM_AMNS_QUERY_TABLE, query routine for a particular reaction
    ::
 
-        subroutine ITM_AMNS_QUERY_TABLE(handle_rx,query,answer,error_status)
+        subroutine EU-IM_AMNS_QUERY_TABLE(handle_rx,query,answer,error_status)
           optional error_status
           type(amns_handle_rx_type), intent(in) :: handle_rx
           type(amns_query_type), intent(in) :: query
           type(amns_answer_type), intent(out) :: answer
           type(amns_error_type), intent(out) :: error_status
 
-7. ITM_AMNS_SET_TABLE, set a parameter for a particular reaction
+7. EU-IM_AMNS_SET_TABLE, set a parameter for a particular reaction
    ::
 
-        subroutine ITM_AMNS_SET_TABLE(handle_rx,set,error_status)
+        subroutine EU-IM_AMNS_SET_TABLE(handle_rx,set,error_status)
           optional error_status
           type(amns_handle_rx_type), intent(in) :: handle_rx
           type(amns_set_type), intent(in) :: set
           type(amns_error_type), intent(out) :: error_status
 
-8. ITM_AMNS_FINISH_TABLE, finalization call for a particular reaction
+8. EU-IM_AMNS_FINISH_TABLE, finalization call for a particular reaction
    ::
 
-        subroutine ITM_AMNS_FINISH_TABLE(handle_rx, error_status)
+        subroutine EU-IM_AMNS_FINISH_TABLE(handle_rx, error_status)
           optional error_status
           type(amns_handle_rx_type), intent(inout) :: handle_rx
           type(amns_error_type), intent(out) :: error_status
 
-9. ITM_AMNS_RX, get the rates associated with the input args for a
+9. EU-IM_AMNS_RX, get the rates associated with the input args for a
    particular reaction
    ::
 
-        interface ITM_AMNS_RX
-          module procedure ITM_AMNS_RX_1, ITM_AMNS_RX_2, ITM_AMNS_RX_3
+        interface EU-IM_AMNS_RX
+          module procedure EU-IM_AMNS_RX_1, EU-IM_AMNS_RX_2, EU-IM_AMNS_RX_3
         end interface
 
-        subroutine ITM_AMNS_RX_1(handle_rx,out,arg1,arg2,arg3,error_status)
+        subroutine EU-IM_AMNS_RX_1(handle_rx,out,arg1,arg2,arg3,error_status)
           optional arg2,arg3,error_status
           type(amns_handle_rx_type), intent(inout) :: handle_rx
           real (kind=R8), intent(out) :: out(:)
           real (kind=R8), intent(in) :: arg1(:),arg2(:),arg3(:)
           type(amns_error_type), intent(out) :: error_status
 
-        subroutine ITM_AMNS_RX_2(handle_rx,out,arg1,arg2,arg3,error_status)
+        subroutine EU-IM_AMNS_RX_2(handle_rx,out,arg1,arg2,arg3,error_status)
           optional arg2,arg3,error_status
           type(amns_handle_rx_type), intent(inout) :: handle_rx
           real (kind=R8), intent(out) :: out(:,:)
           real (kind=R8), intent(in) :: arg1(:,:),arg2(:,:),arg3(:,:)
           type(amns_error_type), intent(out) :: error_status
 
-        subroutine ITM_AMNS_RX_3(handle_rx,out,arg1,arg2,arg3,error_status)
+        subroutine EU-IM_AMNS_RX_3(handle_rx,out,arg1,arg2,arg3,error_status)
           optional arg2,arg3,error_status
           type(amns_handle_rx_type), intent(inout) :: handle_rx
           real (kind=R8), intent(out) :: out(:,:,:)
@@ -271,18 +271,18 @@ example <https://gforge6.eufus.eu/svn/amnsproto/tags/examples/fortran/>`__):
      type (amns_reactants_type) :: species
      real (kind=R8) :: te=100.0_R8, ne=1e20_R8, rate
 
-     call ITM_AMNS_SETUP(amns)                                  ! set up the AMNS system
+     call EU-IM_AMNS_SETUP(amns)                                  ! set up the AMNS system
      allocate(species%components(4))                            ! set up reactants
      species%components = (/ amns_reactant_type(6, 1, 12, 0), &
                              amns_reactant_type(1, 0, 2, 0), &
                              amns_reactant_type(6, 0, 12, 1), &
                              amns_reactant_type(1, 1, 2, 1) /)
      xx_rx%string='CX'                                          ! set up reaction
-     call ITM_AMNS_SETUP_TABLE(amns, xx_rx, species, amns_rx)   ! set up table
-     call ITM_AMNS_RX(amns_rx, rate, te, ne)                    ! get results
+     call EU-IM_AMNS_SETUP_TABLE(amns, xx_rx, species, amns_rx)   ! set up table
+     call EU-IM_AMNS_RX(amns_rx, rate, te, ne)                    ! get results
      write(*,*) 'Rate = ', rate
-     call ITM_AMNS_FINISH_TABLE(amns_rx)                        ! finish with table
-     call ITM_AMNS_FINISH(amns)                                 ! finish with amns
+     call EU-IM_AMNS_FINISH_TABLE(amns_rx)                        ! finish with table
+     call EU-IM_AMNS_FINISH(amns)                                 ! finish with amns
 
    end program minimal
 
@@ -322,95 +322,95 @@ AMNS User Interface: C Calls
 
 The 9 calls to the AMNS system are:
 
-1. ITM_AMNS_SETUP, initialization call for the AMNS package
+1. EU-IM_AMNS_SETUP, initialization call for the AMNS package
    ::
 
-      void ITM_AMNS_C_SETUP(void **handle_out, amns_error_type *error_status);
+      void EU-IM_AMNS_C_SETUP(void **handle_out, amns_error_type *error_status);
 
-2. ITM_AMNS_QUERY, query routine for the AMNS package
+2. EU-IM_AMNS_QUERY, query routine for the AMNS package
    ::
 
-      void ITM_AMNS_C_QUERY(void *handle_in, amns_query_type *query, 
+      void EU-IM_AMNS_C_QUERY(void *handle_in, amns_query_type *query, 
                             amns_answer_type *answer, amns_error_type *error_status)
 
-3. ITM_AMNS_SET, set a parameter for the AMNS package
+3. EU-IM_AMNS_SET, set a parameter for the AMNS package
    ::
 
-      void ITM_AMNS_C_SET(void *handle_in, amns_set_type *set, amns_error_type *error_status);
+      void EU-IM_AMNS_C_SET(void *handle_in, amns_set_type *set, amns_error_type *error_status);
 
-4. ITM_AMNS_FINISH, finalization call for the AMNS package
+4. EU-IM_AMNS_FINISH, finalization call for the AMNS package
    ::
 
-      void ITM_AMNS_C_FINISH(void **handle_inout, amns_error_type *error_status);
+      void EU-IM_AMNS_C_FINISH(void **handle_inout, amns_error_type *error_status);
 
-5. ITM_AMNS_SETUP_TABLE, initialization call for a particular reaction
+5. EU-IM_AMNS_SETUP_TABLE, initialization call for a particular reaction
    ::
 
-      void ITM_AMNS_C_SETUP_TABLE(void *handle_in, amns_reaction_type *reaction_type, 
+      void EU-IM_AMNS_C_SETUP_TABLE(void *handle_in, amns_reaction_type *reaction_type, 
                                   void *reactant_handle_in, void **handle_rx_out, 
                                   amns_error_type *error_status);
 
-6. ITM_AMNS_QUERY_TABLE, query routine for a particular reaction
+6. EU-IM_AMNS_QUERY_TABLE, query routine for a particular reaction
    ::
 
-      void ITM_AMNS_C_QUERY_TABLE(void *handle_rx_in, amns_query_type *query, 
+      void EU-IM_AMNS_C_QUERY_TABLE(void *handle_rx_in, amns_query_type *query, 
                                   amns_answer_type *answer, amns_error_type *error_status);
 
-7. ITM_AMNS_SET_TABLE, set a parameter for a particular reaction
+7. EU-IM_AMNS_SET_TABLE, set a parameter for a particular reaction
    ::
 
-      void ITM_AMNS_C_SET_TABLE(void *handle_rx_in, amns_set_type *set, 
+      void EU-IM_AMNS_C_SET_TABLE(void *handle_rx_in, amns_set_type *set, 
                                 amns_error_type *error_status);
 
-8. ITM_AMNS_FINISH_TABLE, finalization call for a particular reaction
+8. EU-IM_AMNS_FINISH_TABLE, finalization call for a particular reaction
    ::
 
-      void ITM_AMNS_C_FINISH_TABLE(void **handle_rx_inout, amns_error_type *error_status);
+      void EU-IM_AMNS_C_FINISH_TABLE(void **handle_rx_inout, amns_error_type *error_status);
 
-9. ITM_AMNS_RX, get the rates associated with the input args for a
+9. EU-IM_AMNS_RX, get the rates associated with the input args for a
    particular reaction
    ::
 
-      void ITM_AMNS_C_RX_0_A(void *handle_rx_in, double *out, 
+      void EU-IM_AMNS_C_RX_0_A(void *handle_rx_in, double *out, 
                              double arg1, amns_error_type *error_status);
-      void ITM_AMNS_C_RX_0_B(void *handle_rx_in, double *out, 
+      void EU-IM_AMNS_C_RX_0_B(void *handle_rx_in, double *out, 
                              double arg1, double arg2, amns_error_type *error_status);
-      void ITM_AMNS_C_RX_0_C(void *handle_rx_in, double *out, 
+      void EU-IM_AMNS_C_RX_0_C(void *handle_rx_in, double *out, 
                              double arg1, double arg2, double arg3, amns_error_type *error_s
       tatus);
 
-      void ITM_AMNS_C_RX_1_A(void *handle_rx_in, int nx, double *out, 
+      void EU-IM_AMNS_C_RX_1_A(void *handle_rx_in, int nx, double *out, 
                              double *arg1, amns_error_type *error_status);
-      void ITM_AMNS_C_RX_1_B(void *handle_rx_in, int nx, double *out, 
+      void EU-IM_AMNS_C_RX_1_B(void *handle_rx_in, int nx, double *out, 
                              double *arg1, double *arg2, amns_error_type *error_status);
-      void ITM_AMNS_C_RX_1_C(void *handle_rx_in, int nx, double *out, 
+      void EU-IM_AMNS_C_RX_1_C(void *handle_rx_in, int nx, double *out, 
                              double *arg1, double *arg2, double *arg3, amns_error_ty
       pe *error_status);
 
-      void ITM_AMNS_C_RX_2_A(void *handle_rx_in, int nx, int ny, 
+      void EU-IM_AMNS_C_RX_2_A(void *handle_rx_in, int nx, int ny, 
                              double *out, double *arg1, amns_error_type *error_status);
-      void ITM_AMNS_C_RX_2_B(void *handle_rx_in, int nx, int ny, 
+      void EU-IM_AMNS_C_RX_2_B(void *handle_rx_in, int nx, int ny, 
                              double *out, double *arg1, double *arg2, amns_error_type *error_status);
-      void ITM_AMNS_C_RX_2_C(void *handle_rx_in, int nx, int ny, 
+      void EU-IM_AMNS_C_RX_2_C(void *handle_rx_in, int nx, int ny, 
                              double *out, double *arg1, double *arg2, double *arg3, amns_error_type *error_status);
 
-      void ITM_AMNS_C_RX_3_A(void *handle_rx_in, int nx, int ny, int nz, 
+      void EU-IM_AMNS_C_RX_3_A(void *handle_rx_in, int nx, int ny, int nz, 
                              double *out, double *arg1, amns_error_type *error_status);
-      void ITM_AMNS_C_RX_3_B(void *handle_rx_in, int nx, int ny, int nz, 
+      void EU-IM_AMNS_C_RX_3_B(void *handle_rx_in, int nx, int ny, int nz, 
                              double *out, double *arg1, double *arg2, amns_error_type *error_status);
-      void ITM_AMNS_C_RX_3_C(void *handle_rx_in, int nx, int ny, int nz, 
+      void EU-IM_AMNS_C_RX_3_C(void *handle_rx_in, int nx, int ny, int nz, 
                              double *out, double *arg1, double *arg2, double *arg3, amns_error_type *error_status);
 
 In addition, service routines are provided for dealing with reactants:
 
 ::
 
-   void ITM_AMNS_C_SETUP_REACTANTS(void **reactants_handle_out, char string_in[reaction_length], 
+   void EU-IM_AMNS_C_SETUP_REACTANTS(void **reactants_handle_out, char string_in[reaction_length], 
                                    int index_in, int n_react
    ants);
-   void ITM_AMNS_C_SET_REACTANT(void *reactants_handle_in, int reactant_index, amns_reactant_type *reactant_in);
-   void ITM_AMNS_C_GET_REACTANT(void *reactants_handle_in, int reactant_index, amns_reactant_type *reactant_out);
-   void ITM_AMNS_C_FINISH_REACTANTS(void **reactants_handle_inout);
+   void EU-IM_AMNS_C_SET_REACTANT(void *reactants_handle_in, int reactant_index, amns_reactant_type *reactant_in);
+   void EU-IM_AMNS_C_GET_REACTANT(void *reactants_handle_in, int reactant_index, amns_reactant_type *reactant_out);
+   void EU-IM_AMNS_C_FINISH_REACTANTS(void **reactants_handle_inout);
 
 .. _amns_user_interface_example_c:
 
@@ -437,22 +437,22 @@ example <https://gforge6.eufus.eu/svn/amnsproto/tags/examples/c/>`__):
      void* amns_cx_handle;
      double rate;
 
-     ITM_AMNS_CC_SETUP(AMNS_HANDLE, &ERROR_STAT)
+     EU-IM_AMNS_CC_SETUP(AMNS_HANDLE, &ERROR_STAT)
      printf("error = %s: %s\n", error_stat.flag ? "true" : "false", error_stat.string);
-     ITM_AMNS_CC_SETUP_REACTANTS(REACTANTS_HANDLE, "", 0, 4)
-     ITM_AMNS_CC_SET_REACTANT(reactants_handle, 1, SPECIES1)
-     ITM_AMNS_CC_SET_REACTANT(reactants_handle, 2, SPECIES2)
-     ITM_AMNS_CC_SET_REACTANT(reactants_handle, 3, SPECIES3)
-     ITM_AMNS_CC_SET_REACTANT(reactants_handle, 4, SPECIES4)
-     ITM_AMNS_CC_SETUP_TABLE(amns_handle, XX_RX, REACTANTS_HANDLE, &AMNS_CX_HANDLE, &ERROR_STAT)
+     EU-IM_AMNS_CC_SETUP_REACTANTS(REACTANTS_HANDLE, "", 0, 4)
+     EU-IM_AMNS_CC_SET_REACTANT(reactants_handle, 1, SPECIES1)
+     EU-IM_AMNS_CC_SET_REACTANT(reactants_handle, 2, SPECIES2)
+     EU-IM_AMNS_CC_SET_REACTANT(reactants_handle, 3, SPECIES3)
+     EU-IM_AMNS_CC_SET_REACTANT(reactants_handle, 4, SPECIES4)
+     EU-IM_AMNS_CC_SETUP_TABLE(amns_handle, XX_RX, REACTANTS_HANDLE, &AMNS_CX_HANDLE, &ERROR_STAT)
      printf("error = %s: %s\n", error_stat.flag ? "true" : "false", error_stat.string);
-     ITM_AMNS_CC_RX_0_B(amns_cx_handle, RATE, 100.0, 1E20, &ERROR_STAT)
+     EU-IM_AMNS_CC_RX_0_B(amns_cx_handle, RATE, 100.0, 1E20, &ERROR_STAT)
      printf("error = %s: %s\n", error_stat.flag ? "true" : "false", error_stat.string);
      printf("rate=%e\n", rate);
-     ITM_AMNS_CC_FINISH_TABLE(AMNS_CX_HANDLE, &ERROR_STAT)
+     EU-IM_AMNS_CC_FINISH_TABLE(AMNS_CX_HANDLE, &ERROR_STAT)
      printf("error = %s: %s\n", error_stat.flag ? "true" : "false", error_stat.string);
-     ITM_AMNS_CC_FINISH_REACTANTS(REACTANTS_HANDLE)
-     ITM_AMNS_CC_FINISH(AMNS_HANDLE, &ERROR_STAT)
+     EU-IM_AMNS_CC_FINISH_REACTANTS(REACTANTS_HANDLE)
+     EU-IM_AMNS_CC_FINISH(AMNS_HANDLE, &ERROR_STAT)
      printf("error = %s: %s\n", error_stat.flag ? "true" : "false", error_stat.string);
      return 0;
    }

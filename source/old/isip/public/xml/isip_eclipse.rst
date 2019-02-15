@@ -1,6 +1,6 @@
 .. _isip_eclipse:
 
-Eclipse - useful features for ITM developers
+Eclipse - useful features for EU-IM developers
 ============================================
 
 Editing XSD schema files

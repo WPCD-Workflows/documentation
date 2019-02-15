@@ -150,7 +150,7 @@ Projects represented
 --------------------
 
 -  EUFORIA
--  ITM-TF
+-  EU-IM-TF
 -  CPES
 -  FACETS
 -  CSWIM

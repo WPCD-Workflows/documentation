@@ -55,6 +55,6 @@ Private EUFORIA pages
 ---------------------
 
 For accessing the `private EUFORIA
-pages <https://www.efda-itm.eu/EUFORIA/html/index.html>`__, an EUFORIA
+pages <https://www.eufus.eu/EUFORIA/html/index.html>`__, an EUFORIA
 password is needed.
 

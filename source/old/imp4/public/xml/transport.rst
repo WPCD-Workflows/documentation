@@ -9,7 +9,7 @@ Overview
 In conventional transport modelling, all quantities appearing in the
 equations are 1-D, in some radial coordinate (poloidal flux, normalised
 radius, etc). In general any monotonic radial coordinate is acceptable.
-In the TF-ITM, the toroidal flux radius is standard. All we need from
+In the TF-EU-IM, the toroidal flux radius is standard. All we need from
 the radial coordinate is the transformation to get to \\( V, \\) the
 volume enclosed by the flux surface, which is fundamental to the
 governing equations, which are conservation laws.

@@ -3,7 +3,7 @@
 The European Integrated Modelling (EU-IM) approach
 ==================================================
 
-The choice of Integrated Modelling made by the former EFDA ITM-TF and
+The choice of Integrated Modelling made by the former EFDA EU-IM-TF and
 pursued now under EUROfusion WPCD is unique and original: it entails the
 development of a comprehensive and completely generic tokamak simulator
 including both the physics and the machine, which can be applied for any

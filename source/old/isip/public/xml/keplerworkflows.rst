@@ -4,15 +4,15 @@ KeplerWorkflows
 ===============
 
 The keplerworflows project under GForge is used for exchanging Kepler
-workflows among ITM users. Under this project, ITM developers should
+workflows among EU-IM users. Under this project, EU-IM developers should
 store the XML file describing the Kepler workflow. The workflow should
-not be dependent on any other file. To be reproducible, public ITM
-workflows must use only ITM actors from the public
+not be dependent on any other file. To be reproducible, public EU-IM
+workflows must use only EU-IM actors from the public
 `kepleractors <#isip_kepleractors>`__ repository with a unique naming
 convention.
 
 Input datasets used by the workflow must be copied from the private to
-the public ITM database (email to `Fréderic
+the public EU-IM database (email to `Fréderic
 Imbeaux <mailto:Frederic.Imbeaux@cea.fr>`__ for the moment).
 
 Structure of the workflows repository
@@ -50,7 +50,7 @@ versions <#isip_data_structure_releases>`__:
    - 4.09a
        
 
-Each UAL release version hosts the following subdirectories for the ITM
+Each UAL release version hosts the following subdirectories for the EU-IM
 projects:
 
 ::
@@ -88,7 +88,7 @@ Pre-requisites
 
 -  Have a copy of Kepler installed in your environment
 -  Run the script
-   ITMv1
+   EU-IMv1
    to specify the working kepler directory (private) and set the
    environment variables (for the UAL)
 -  Go into a directory in which you have write permission
@@ -152,7 +152,7 @@ Pre-requisites
 
 -  Have a copy of Kepler installed in your environment
 -  Run the script
-   ITMv1
+   EU-IMv1
    to specify the working kepler directory (private) and set the
    environment variables (for the UAL)
 -  Go into a directory in which you have write permission

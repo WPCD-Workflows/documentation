@@ -5,12 +5,12 @@ Guidelines for Code Documentation
 
 UNDER CONSTRUCTION!
 
-All released ITM codes should have two types of documentation:
+All released EU-IM codes should have two types of documentation:
 
 -  Detailed documentation to be used during code development and
    maintainace.
    The code provider can choose how to generate this documentation, but
-   the ITM recommends to use Doxygen.
+   the EU-IM recommends to use Doxygen.
    For instructions on how to use Doxygen see
 
    -  webpages on

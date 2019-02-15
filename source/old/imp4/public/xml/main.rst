@@ -60,6 +60,6 @@ None exist (they may do in the future... for now I want IMP4 stuff open
 to the rest of the EU-IM).
 
 (For access to the `private IMP4
-pages <https://www.efda-itm.eu/IMP4/html/index.html>`__, an IMP4
+pages <https://www.eufus.eu/IMP4/html/index.html>`__, an IMP4
 password would have been needed)
 

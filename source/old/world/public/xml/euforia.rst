@@ -49,4 +49,4 @@ Public EUFORIA pages
 
 To access the
 public EUFORIA pages
-, an ITM password is needed.
+, an EU-IM password is needed.
