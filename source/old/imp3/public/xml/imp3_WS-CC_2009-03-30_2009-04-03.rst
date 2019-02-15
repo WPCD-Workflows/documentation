@@ -1,0 +1,61 @@
+.. _imp3_ws-cc_2010-03:
+
+Kick-Off Meeting, 2009-02-06
+----------------------------
+
+-  ETS Status and Standards (v1)
+   (
+   pdf
+   ), by D. P. Coster
+-  Requests to other projects
+   (
+   doc
+   ), by D. P. Coster
+-  The Universal Access Layer User Guide (2009-03-03)
+   (
+   pdf
+   ), by G. Manduchi, F. Imbeaux and M. Haefele
+-  Work plan and Resources for the ETS in 2009
+   (
+   doc
+   ), by D. P. Coster
+-  ITM gateway users's guide
+   (
+   pdf
+   ), by B. Guillerminet, F. Iannone, F. Imbeaux, G. Manduchi and L.
+   Eriksson
+-  Current status of the ETS (present at the JET TFT meeting)
+   (
+   pdf
+   ), by D. P. Coster, D. Kalupin, V. Basiuk, R. Stankiewicz, R.
+   Zagorski, J.F. Artaud, S. Gowacz, Ph. Huynh, S. Moradi, G.
+   Pereverzev, G. Ramogida, P. Strand M. Tokar and J. Weiland
+-  ITM plans with respect to Integrated Modelling, in particular with
+   respect to “Burn and Particle Control” (presented at EFDA meeting on
+   Fuelling and Particle Control, Session: Burn and Particle Control,
+   March 2009)
+   (
+   pdf
+   ), by D. P. Coster
+-  Closure of equilibrium–transport set / Data flow
+   (
+   pdf
+   ), by G. Pereverzev
+-  ETS transport equations and list of variables (2008-08-01)
+   (
+   pdf
+   ), by D.Kalupin, G.Pereversev, R.Stankiewicz
+-  EUFORIA Vision
+   (
+   pdf
+   ), by EUFORIA
+-  Data access for Fusion Simulation
+   (
+   pdf
+   ), by EUFORIA
+-  Benchmark comparison ASTRA – JETTO
+   (
+   pdf
+   ), by F. Koechl (?)
+
+04:52:36Z coster $

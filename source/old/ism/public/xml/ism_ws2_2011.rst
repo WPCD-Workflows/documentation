@@ -1,0 +1,97 @@
+.. _ism_ws2_2011:
+
+1.Monday
+--------
+
+-  Agenda
+   (
+   doc
+   ), by X.Litaudon
+-  Introduction
+   (
+   ppt
+   ), by X.Litaudon
+-  Validation ETS JET hybrid 77922: status and future work
+   (
+   ppt
+   ), by I.Voitsekhovitch
+-  Predictive transport analysis of JET and AUG hybrid scenarios
+   (
+   ppt
+   ), by J.Citrin
+-  Update on hybrid scenario
+   (
+   ppt
+   ), by J.Garcia
+
+2.Tuesday
+---------
+
+-  Controllability analysis of the magnetic flux distribution in ITER
+   hybrid scenarios
+   (
+   pdf
+   ), by M. de Baar
+-  RAPTOR: a lightweight transport model for open-loop optimization and
+   real-time simulation
+   (
+   pdf
+   ), by F.Felici
+
+3.Wednesday
+-----------
+
+-  Modeling development for control for ITER advanced scenarios
+   (
+   pdf
+   ), by T.Casper
+-  Current ramp up in JET hybrid scenarios
+   (
+   pdf
+   ), by I.Voitsekhovitch
+
+5.Friday
+--------
+
+-  Introduction
+   (
+   pdf
+   ), by X.Litaudon
+-  ASTRA, JETTO, ETS benchmarking for current drive case 2: NCLASS
+   (
+   pdf
+   ), by I.Voitsekhovitch
+-  Short update on the JET/AUG hybrid modelling activity
+   (
+   ppt
+   ), by J.Citrin
+-  Analysis of current diffusion on ASDEX-Upgrade
+   (
+   ppt
+   ), by J.Garcia
+-  Optimisation of the current ramp up phase for hybrid ITER discharges
+   (
+   ppt
+   ), by G.M.D.Hogeweij
+-  #77922: current ramp-down
+   (
+   ppt
+   ), by F.Koechl
+-  Update on hybrid scenario
+   (
+   ppt
+   ), by J.Garcia
+-  MHD stability analysis at ISM working session
+   (
+   ppt
+   ), by J.Lonnroth
+-  JT-60SA: report from working session 04-08 July 2011
+   (
+   ppt
+   ), by X.Litaudon
+-  Benchmarking of momentum equation and GLF23 model for momentum:
+   present status
+   (
+   doc
+   ), by I.Voitsekhovitch
+

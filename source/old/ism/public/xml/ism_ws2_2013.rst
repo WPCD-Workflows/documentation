@@ -1,0 +1,115 @@
+.. _ism_ws2_2013:
+
+1.Monday
+--------
+
+-  Agenda and working groups
+   (
+   pdf
+   ), by I.Voitsekhovitch
+-  STUDYING SCENARIOS FOR WEST WITH METIS
+   (
+   pptx
+   ), by C.Bourdelle
+-  Impact of W on current ramp-up phase in JET & ITER
+   (
+   pdf
+   ), by G.M.D.Hogeweij
+-  Real-time reconstruction, control and optimization of plasma profiles
+   using the RAPTOR code
+   (
+   pdf
+   ), by F.Felici
+-  Numerical optimization of the actuator trajectories in ITER hybrid
+   scenario
+   (
+   pdf
+   ), by J. van Dongen
+
+4.Thursday "Joint ISM-IO meeting on integrated scenario modelling for ITER"
+---------------------------------------------------------------------------
+
+-  Agenda
+   (
+   pdf
+   ), by I.Voitsekhovitch
+-  ITER Integrated Scenario Modelling needs
+   (
+   pptx
+   ), by A.Loarte
+-  PARTICLE TRANSPORT WITH THEORY-BASED MODELS
+   (
+   pptx
+   ), by J.Garcia
+-  Modelling pellet fuelling (but not only) for ITER
+   (
+   pptx
+   ), by L.Garzotti
+-  Core-SOL Modelling of ELM mitigation at JET
+   (
+   pdf
+   ), by F.Koechl
+-  Integrated core-SOL modelling including impurity: ITER H-mode plasma
+   (
+   pdf
+   ), by I.Voitsekhovitch
+-  Current ramp up in ITER: effects of impurity density
+   (
+   pdf
+   ), by G.M.D.Hogeweij
+-  RAPTOR capabilities for plasma simulation and control in ITER
+   (
+   pdf
+   ), by F.Felici
+-  ITER Integrated Modelling Tools: Status and Outlook
+   (
+   pptx
+   ), by S.Pinches
+
+5.Friday
+--------
+
+-  Agenda
+   (
+   pdf
+   ), by I.Voitsekhovitch
+-  Modelling of JET hybrid scenarios with European Transport Solver
+   (
+   pdf
+   ), by A.Figueiredo
+-  ISM ACT1: progress in simulation of NTM effect in JET discharge
+   (
+   pdf
+   ), by S.Nowak
+-  ACT1: Status of impurity modelling with ETS
+   (
+   ppt
+   ), by I.Ivanova-Stanik
+-  Transport analysis of JET H-MODE and hybrid plasmas using Qualikiz,
+   TGLF and GLF23
+   (
+   pptx
+   ), by B. Baiocchi
+-  Progress on simulations of density profiles in hybrid plasmas
+   (
+   pptx
+   ), by L. Garzotti
+-  Four-field simulations (ni, Te, Ti, Vtor, j) of ITER HS with GLF23
+   model: effect of toroidal rotation on fusion performance
+   (
+   pdf
+   ), by I. Voitsekhovitch
+-  ACT2: JET current ramp up/down modelling
+   (
+   pdf
+   ), by D. Hogeweij
+-  RAPTOR-based real-time observer: first ITER demonstration
+   (
+   pdf
+   ), by F. Felici
+-  Numerical optimization of the actuator trajectories in ITER hybrid
+   scenario
+   (
+   pdf
+   ), by J. van Dongen
+

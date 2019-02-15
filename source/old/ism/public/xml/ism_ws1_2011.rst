@@ -1,0 +1,140 @@
+.. _ism_ws1_2011:
+
+1.Monday
+--------
+
+-  Agenda
+   (
+   pdf
+   ), by X.Litaudon
+
+2.Tuesday
+---------
+
+ISM-IO core-SOL integrated modelling meeting
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  Agenda of joint meeting/discussion: integrated core-edge-SOL
+   modelling for ITER: present status & perspectives
+   (
+   ppt
+   ), by I.Voitsekhovitch
+-  ITER integrated modelling: Plasma Simulator(s) and Spatial Domain
+   Coupling
+   (
+   ppt
+   ), by W.A.Houlberg
+-  On core-SOL Integration in Scenario Modelling for ITER
+   (
+   pdf
+   ), by A.S.Kukushkin
+-  Integrated ITER scenario modelling and density evolution prospects
+   (
+   pdf
+   ), by S.Wiesen
+-  Fully predictive modelling of L-H and H-L transition
+   (
+   ppt
+   ), by V.Parail
+-  ETS
+   (
+   ppt
+   ), by D.Coster
+
+Reports from working session
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  Simulations of the H to L transition in JET plasmas
+   (
+   ppt
+   ), by P.Belo
+-  Current diffusion analysis on JET hybrid shots
+   (
+   pdf
+   ), by J.Garcia
+
+3.Wednesday
+-----------
+
+-  Current diffusion analysis on JET hybrid shots
+   (
+   pdf
+   ), by J.Garcia
+-  Draft of ISM talk on T&C ITPA for discussion/completion: ISM
+   modelling activity on current ramp up
+   (
+   ppt
+   ), by I.Voitsekhovitch
+
+4.Thursday
+----------
+
+-  JT-60SA: operational scenarios and assessment of the plasmas
+   (
+   ppt
+   ), by G.Giruzzi
+-  First CRONOS simulation of JT60-SA
+   (
+   pdf
+   ), by M.Schneider
+-  LHCD in JT60_SA: a preliminary study
+   (
+   pdf
+   ), by E.Barbato
+
+5.Friday
+--------
+
+-  Next ISM working session: a word from the LOC
+   (
+   pptx
+   ), by D.Hogeweij
+-  Status of edge modelling with EDGE2D for ITER Hybrid Scenaio
+   (
+   ppt
+   ), by D.Harting
+-  SOUL1D benchmark using EDGE2D models and JET reference shots
+   (
+   ppt
+   ), by C.Guillemaut
+-  Predictive modelling of H-L transition in JET
+   (
+   ppt
+   ), by V.Parail
+-  Report on AUG modelling
+   (
+   ppt
+   ), by J.Hobirk
+-  ETS validation
+   (
+   ppt
+   ), by V.Basiuk
+-  Report on ISM WS: ACT1
+   (
+   ppt
+   ), by I.Voitsekhovitch
+-  Optimizing ITER current ramp-up for hybrid scenario
+   (
+   ppt
+   ), byD.Hogeweij
+-  ITER hybrid density modelling: current status
+   (
+   ppt
+   ), byF.Koechl
+-  Optimisation of operational space for long pulse scenarios
+   (
+   doc
+   ), by A.Polevoi
+-  Optimisation of operational space for long pulse scenarios: xml table
+   (
+   xml
+   ), by A.Polevoi
+-  Residual fuelling by LFS hydrogen pellets in He plasmas
+   (
+   doc
+   ), by A.Polevoi
+-  First modelling of JT-60SA
+   (
+   ppt
+   ), by G.Giruzzi
+

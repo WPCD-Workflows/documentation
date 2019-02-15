@@ -1,0 +1,90 @@
+.. _ism_ws1_2013:
+
+1.Monday
+--------
+
+-  Agenda, news from the 1st week of code camp
+   (
+   pdf
+   ), by I.Voitsekhovitch
+-  Analysis and modelling of JET and JT-60U discharges
+   (
+   pptx
+   ), by J.Garcia
+-  COREDIV physicsl model
+   (
+   pdf
+   ), by R.Stankiewicz
+-  Modelling of the OH Ramp-Down Phase of JET Hybrid Pulses Using JETTO
+   with Bohm-gyro-Bohm (BgB) Transport
+   (
+   pdf
+   ), by J.Bizarro
+-  ASTRA-7 a state-of-the-art IPP transport code
+   (
+   pdf
+   ), by E.Fable
+
+2.Tuesday
+---------
+
+-  Benchmarking of new NBI version in ASTRA against NUBEAM/TRANSP
+   (
+   ppt
+   ), by I.Voitsekhovitch
+
+3.Friday
+--------
+
+-  Status of the NTM module on new Gateway 4.10a for ISM ACT1
+   (
+   ppt
+   ), by S.Nowak
+-  European Transport Solver Status
+   (
+   ppt
+   ), by V.Basiuk
+-  Code camp report
+   (
+   pdf
+   ), by A.Figueiredo
+-  Modelling of tungtsen accumulation in pulses with ILW in JET
+   (
+   ppt
+   ), by Yu.Baranov
+-  ACT1: status of impurity simulations for JET discharges (shot 82794,
+   t=46s) with ETS
+   (
+   ppt
+   ), by I.Ivanova-Stanik
+-  Linear Stability Chain in the new gateway
+   (
+   ppt
+   ), by F.Nabais
+-  Role of Fast Ions on JET Hybrid Scenarios
+   (
+   ppt
+   ), by J.Garcia
+-  ITER H-mode scenario with GLF23: impact of electromagnetic effects on
+   fusion performance, effect of radiation
+   (
+   ppt
+   ), by F.Koechl
+-  Integrated core-pedestal-SOL modelling for H-mode ITER scenario
+   including impurity
+   (
+   ppt
+   ), by I.Ivanova-Stanik
+-  Status of four field (Te, Ti, ni, Vtor) modelling for ITER
+   (
+   ppt
+   ), by I.Voitsekhovitch
+-  Activity within ISM
+   (
+   pptx
+   ), by E.Barbato
+-  Closing of working session
+   (
+   pdf
+   ), by I.Voitsekhovitch
+

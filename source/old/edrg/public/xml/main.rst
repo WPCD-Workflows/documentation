@@ -1,0 +1,57 @@
+.. toctree::
+   :maxdepth: 2
+
+   ../../../edrg/public/xml/meetings
+   ../../../edrg/public/xml/working_sessions
+   ../../../edrg/public/xml/cfp_and_report
+   ../../../edrg/public/xml/md_and_dm
+   ../../../edrg/public/xml/device_status
+   ../../../edrg/public/xml/Workflow_UalGetCpoBundle
+
+.. _edrg_public:
+
+EDRG
+====
+
+EDRG (EXPERIMENTALISTS AND DIAGNOSTICIANS RESOURCE GROUP) is one of the
+two projects falling under the coordination of the Leadership of the EU
+Task Force for Integrated Tokamak Modelling (EU-IM) and is the privileged
+contact of the EU-IM with the experimentalists and diagnosticians
+community.
+
+Scientific Rationale and Main Objectives
+----------------------------------------
+
+The consolidation of the validated suite of simulation tools that the
+EU-IM aims to provide for ITER and existing experiments requires a strong
+interaction with the experimentalists and diagnosticians fusion
+community. The former are promoted by the Experimentalist and
+Diagnosticians Resource Group (EDRG).
+Acting as a contact point within the EU-IM towards the full range of
+experiments and some of the EFDA Topical Groups and Working Group
+initiatives, the EDRG group promotes the provision of a machine
+independent approach to modelling, to encompass realistic operational
+conditions and to facilitate
+verification
+and
+validation
+of the modelling codes.
+The groups action comprises
+
+1. Developing a comprehensive set of Machine descriptions and
+experimental data mappings to access experimental databases from
+european devices.
+
+2. The coordination of the overall plasma control activities to be
+carried within the EU-IM-TF and in liaison with other EFDA initiatives.
+
+3. The integration of synthetic diagnostic modules to assist
+Verification and Validation of EU-IM modules and virtual PCS.
+
+Private EDRG pages
+------------------
+
+To access the `private EDRG
+pages <https://www.efda-itm.eu/EDRG/html/index.html>`__, an EDRG
+password is needed.
+

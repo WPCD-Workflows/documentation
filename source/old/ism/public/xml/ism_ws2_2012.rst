@@ -1,0 +1,82 @@
+.. _ism_ws2_2012:
+
+1.Monday
+--------
+
+-  Local information
+   (
+   ppt
+   ), by F.Koechl
+-  Agenda
+   (
+   pdf
+   ), by X.Litaudon
+-  Introduction
+   (
+   ppt
+   ), by X.Litaudon
+-  Modelling of JET Hybrid Scenarios
+   (
+   pdf
+   ), by I.Voitsekhovitch
+-  Optimizing the current ramp up phase for the hybrid ITER scenario
+   (
+   ppt
+   ), by G.M.D.Hogeweij
+-  Application of the parameterized EPED1 model to time-dependent
+   transport simulation
+   (
+   pdf
+   ), by S.H.Kim
+
+5.Friday
+--------
+
+-  NCLASS benchmark
+   (
+   ppt
+   ), by V.Basiuk
+-  Current diffusion in hybrid scenarios
+   (
+   ppt
+   ), by J.Garcia
+-  Density simulation in JET HS
+   (
+   ppt
+   ), by L.Garzotti
+-  Modelling of ELM mitigation at JET: study of density depletion at
+   high fELM
+   (
+   ppt
+   ), by F.Koechl
+-  ITER hybrid scenario GLF23 modelling with EPED1 pedestal prediction
+   (
+   ppt
+   ), by J.Citrin
+-  Free boundary equilibrium transport simulations of ITER scenarios
+   under control
+   (
+   ppt
+   ), by J.Urban
+-  Modelling of ITER hybrid scenario: sensitivity analysis with METIS
+   (
+   ppt
+   ), by X.Litaudon
+-  ARTAEMIS:Plasma response models and profile control in ITER
+   (
+   ppt
+   ), by F.Liu
+-  Implementation of the JT-60SA NBI configuration in EU transport codes
+   (
+   ppt
+   ), by T.Bolzonella
+-  Update on the collaboration project for the analysis of JT60U and JET
+   shots
+   (
+   ppt
+   ), by J.Garcia
+-  Predictive simulations of JT60-SA
+   (
+   ppt
+   ), by L.Garzotti
+

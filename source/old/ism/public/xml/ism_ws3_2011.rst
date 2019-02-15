@@ -1,0 +1,155 @@
+.. _ism_ws3_2011:
+
+1.Monday
+--------
+
+-  Agenda
+   (
+   pdf
+   ), by X.Litaudon
+-  Welcome
+   (
+   pdf
+   ), by I.Voitsekhovitch
+-  Introduction
+   (
+   ppt
+   ), by X.Litaudon
+-  Low activation phase on ITER
+   (
+   ppt
+   ), by T.Casper
+-  Corisca simulations of ITER hybrid mode operation
+   (
+   ppt
+   ), by T.Casper
+
+2.Tuesday
+---------
+
+-  Task Force meeting on scenario modelling: introduction
+   (
+   ppt
+   ), by E.Joffrin
+-  Introduction
+   (
+   ppt
+   ), by X.Litaudon
+-  Wall proximity and shape validation in H-mode
+   (
+   ppt
+   ), by C.Challis
+-  Characterization of L-mode domain
+   (
+   ppt
+   ), by D.Frigione
+-  H-mode baseline scenario at 2.5 MA
+   (
+   ppt
+   ), by B.Bucalossi
+-  L-H power threshold studies: Be/W vs C
+   (
+   ppt
+   ), by G.Calabro
+-  Modelling requirements for Ex-2.1.7 'Current profile access and
+   scenario overlap'
+   (
+   ppt
+   ), by J.Mailloux
+-  Ex-2.3.1 Hybrid scenario development with the ILW
+   (
+   ppt
+   ), by J.Hobirk
+-  Ex 1.1.7/2.2.1/2.2.2 Modelling needs
+   (
+   pdf
+   ), by J.Coenen
+-  Ex -2.2.3 Integration of seeding and ELM control techniques
+   (
+   ppt
+   ), by P.Monier-Garbet
+-  Ex -1.3.2 Fuelling and Seeding studies: Modelling aims
+   (
+   ppt
+   ), by G.Maddison
+-  Ex -2.2.5: Radiating type III ELMy H-mode
+   (
+   ppt
+   ), by A.Huber
+-  Edge modelling resources - November 2011
+   (
+   ppt
+   ), by M.Groth
+
+3.Wednesday
+-----------
+
+-  The EPED Pedestal Model: Tests on JET and Predictions for ISM ITER
+   Scenarios
+   (
+   pdf
+   ), by P.Snyder
+
+4.Thursday
+----------
+
+-  Update on the collaboration project for the analysis of JT60U and JET
+   shots
+   (
+   pdf
+   ), by J.Garcia
+-  First Analysis of Integrated Magnetic and Kinetic Control Experiments
+   for AT Scenarios on DIII-D
+   (
+   pdf
+   ), by D.Moreau
+
+5.Friday
+--------
+
+-  Introduction
+   (
+   ppt
+   ), by X.Litaudon
+-  Bootstrap comparison with NCLASS CRONOS/ASTRA
+   (
+   ppt
+   ), by V.Basiuk
+-  SANCO - ETS/impurity code benchmarking for Be
+   (
+   ppt
+   ), by I.Ivanova-Stanik
+-  Modelling of JET current ramp down discharges with Bohm-gyroBohm
+   model
+   (
+   doc
+   ), by J.Bizarro
+-  Update on AUG/JET modelling
+   (
+   ppt
+   ), by J.Citrin
+-  L-H and H-L transition
+   (
+   ppt
+   ), by P.Belo
+-  LHCD during JET current ramp up
+   (
+   pdf
+   ), by E.Barbato
+-  Particle transport in JET and ITER HS
+   (
+   ppt
+   ), by L.Garzotti
+-  Real time control
+   (
+   pptx
+   ), by F.Liu
+-  Self-consistent transport modelling with GLF23 model for JET HS 77922
+   (
+   ppt
+   ), by I.Voitsekhovitch
+-  JT-60SA scenario modelling
+   (
+   ppt
+   ), by X.Litaudon
+

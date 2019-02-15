@@ -1,0 +1,63 @@
+.. _ism_ws3_2013:
+
+1.Monday
+--------
+
+-  Welcome and Agenda of 3rd ISM working session, news from 5th ITM code
+   camp
+   (
+   ppt
+   ), by I.Voitsekhovitch
+
+2.Tuesday
+---------
+
+-  Heat transport study of H-MODE and hybrid plasmas using Qualikiz,
+   TGLF and GLF23
+   (
+   pdf
+   ), by B.Baiocchi
+
+4.Thursday
+----------
+
+-  PROCESS DEMO1 simulations with JETTO+SANCO
+   (
+   ppt
+   ), by F.Koechl
+
+5.Friday
+--------
+
+-  Agenda
+   (
+   ppt
+   ), by I.Voitsekhovitch
+-  JETTO Run to Benchmark ETS Neutrals Package
+   (
+   pdf
+   ), by F.Nave
+-  Key impact of energetic ions on the establishment of advanced tokamak
+   regimes
+   (
+   pdf
+   ), by J.Garcia
+-  Physics comparison and modelling of the JET and JT-60U core and edge:
+   towards JT-60SA predictions
+   (
+   docx
+   ), by J.Garcia
+-  ACT2: Summary of the task on ELM mitigation by kicks
+   (
+   ppt
+   ), by F.Koechl
+-  ASTRA-COREDIV simulations for ITER hybrid scenario
+   (
+   ppt
+   ), by I.Ivanova-Stanik
+-  Modelling of JET hybrid scenarios with GLF23 transport model: ExB
+   shear stabilisation of anomalous transport
+   (
+   ppt
+   ), by I. Voitsekhovitch
+

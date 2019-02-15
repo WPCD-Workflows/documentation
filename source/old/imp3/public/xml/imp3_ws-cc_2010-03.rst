@@ -1,0 +1,72 @@
+.. _imp3_ws-cc_2010-03:
+
+WS-CC March 2010, Garching
+--------------------------
+
+-  Agenda
+   (
+   pdf
+   ), by D. P. Coster
+-  Introduction
+   (
+   ppt
+   ), by D. P. Coster
+-  Talk given at the JET TF-T Meeting earlier in the year on the ETS
+   (
+   ppt
+   ), (
+   mpeg
+   ) (
+   mpeg
+   ) by D. P. Coster
+-  ETS Status and Standards (reduced)
+   (
+   ppt
+   ), by D. P. Coster
+-  ETS Numerics – Quality Assessment / Verification
+   (
+   pdf
+   ), by G. Pereverzev
+-  Accuracy tests
+   (
+   pdf
+   ), by G. Pereverzev
+-  ETS benchmarking and verification: Intermediate report (ASTRA
+   results)
+   (
+   pdf
+   ), by G. Pereverzev
+-  Proposal for ETS verification and benchmarking procedure
+   (
+   pdf
+   ), by G. Pereverzev
+-  Introduction to ISIP tools
+   (
+   ppt
+   ), by F. Imbeaux
+-  Exp2ITM : populate ITM database with experimental data
+   (
+   ppt
+   ), by J. Signoret and F. Imbeaux (presented by Rui Coelho)
+-  Introduction to ISE
+   (
+   ppt
+   ), by J. Signoret and P. Huynh
+-  Equilibrium Reconstruction with EQUAL
+   (
+   ppt
+   ), by W. Zwingmann
+-  AMNS work
+   (
+   ppt
+   ), by L-G Eriksson
+-  ITER Integrated Modelling Expert Group - a brief overview
+   (
+   pdf
+   ), by Par Strand
+-  EFDA Transport Topical Group: survey of research activities
+   (
+   ppt
+   ), presented by C. Angioni on behalf of C. Hidalgo (Chair), C.
+   Angioni, C. Bourdelle, P. de Vries (co-Chair)
+

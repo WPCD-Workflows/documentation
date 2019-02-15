@@ -1,0 +1,116 @@
+.. _ism_ws3_2010:
+
+1.Monday
+--------
+
+-  Welcome and agenda
+   (
+   pdf
+   ), by I.Voitsekhovitch
+-  Current rampdown at JET: experimental results and modelling tasks
+   (
+   pdf
+   ), by I.Nunes
+-  Hybrid experiments for ISM modelling
+   (
+   ppt
+   ), by E.Joffrin
+
+2.Tuesday
+---------
+
+DT discussion
+~~~~~~~~~~~~~
+
+-  Agenda
+   (
+   ppt
+   ), by I.Voitsekhovitch
+-  JET DT fusion yield projections
+   (
+   ppt
+   ), by C.Challis
+-  Heating of Thermal Ions by Alphas in DTE1: Heating or confinement
+   improvement
+   (
+   ppt
+   ), by H.Weisen
+-  JET high field/high current H-mode - extrapolation to DT operation
+   (
+   ppt
+   ), by I.Voitsekhovitch
+
+Reports from working session
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  Current diffusion analysis on JET hybrid shots
+   (
+   ppt
+   ), by J.Garcia
+-  New simulations of ITER hybrid scenario
+   (
+   ppt
+   ), by J.Garcia
+-  ITER baseline scenario ramp-up simulations with CREATE-NL + JINTRAC.
+   Comparison CoppiTang/Bohm-gyroBohm - preliminary results
+   (
+   ppt
+   ), by F.Koechl
+
+3.Wednesday
+-----------
+
+-  Parameters for EPED simulations
+   (
+   ppt
+   ), by X.Litaudon
+-  Integrated ITER scenario modelling and density evolution prospects
+   (
+   ppt
+   ), by S.Wiesen
+
+5.Friday
+--------
+
+-  Impurity concentration during the current ramp up
+   (
+   ppt
+   ), by P.Belo
+-  Predictive modelling of current ramp-down in JET discharges
+   (
+   pdf
+   ), by J.Lonnroth
+-  JET current ramp down with METIS code
+   (
+   ppt
+   ), by J.F.Artaud
+-  Update on ISM-P2-2010/11-08: ASDEX hybrid modelling
+   (
+   ppt
+   ), by J.Citrin
+-  #77922, #77914 Simulations with JETTO and comparison to CRONOS and
+   measurement data
+   (
+   ppt
+   ), by F.Koechl
+-  Optimising ITER current ramp up for hybrid scenario
+   (
+   ppt
+   ), by D.Hogeweij
+-  Parameter domain exploration with METIS for the ITER hybrid scenario
+   (
+   ppt
+   ), by E.Nardon
+-  Report on benchmarking of Coppi-Tang model in ASTRA and CORSICA
+   (
+   ppt
+   ), by I.Voitsekhovitch
+-  Very preliminary JT-60SA modelling with METIS code - Scenario #4
+   (
+   ppt
+   ), by X.Litaudon
+-  Conclusion working session Culham
+   (
+   ppt
+   ), by X.Litaudon
+
