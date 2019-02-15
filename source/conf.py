@@ -353,7 +353,7 @@ texinfo_documents = [
 # See https://stackoverflow.com/questions/30939867/how-to-properly-write-cross-references-to-external-documentation-with-intersphin
 intersphinx_mapping = {
     'viz': ('https://wpcd-workflows.github.io/IMASviz/', None),
-    'solps': ('https://static.iter.org/imas/assets/solps-iter/html/', None),
+    #'solps': ('https://static.iter.org/imas/assets/solps-iter/html/', None),
     'np': ('http://docs.scipy.org/doc/numpy/', None)
 }
 

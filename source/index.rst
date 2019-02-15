@@ -3,9 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-=======================================================================
- Welcome to EUROfusion Integrated Modelling workflows's documentation!
-=======================================================================
+Welcome to EUROfusion Integrated Modelling workflows's documentation!
+=====================================================================
 
 Contents:
 
@@ -13,13 +12,11 @@ Contents:
    :maxdepth: 3
 
    introduction
-              
-Codes
-=====
+   infrastructure
+   codes
 
-:doc:`IMASViz <viz:index>`
---------------------------
 
+             
 ====================
  Indices and tables
 ====================
