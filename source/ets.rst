@@ -1,9 +1,10 @@
-================================
+################################
  Core Transport Simulator (ETS)
-================================
+################################
 
+*********************
 ETS source in FORTRAN
-=====================
+*********************
 
 
 You can checkout the FORTRAN ETS workflow from gforge `/ project
@@ -40,8 +41,9 @@ also includes:
 -  `Mailing lists <https://gforge6.eufus.eu/gf/project/ets/mailman/>`__
 -  `The SVN repository (web interface) <https://gforge6.eufus.eu/gf/project/ets/scmsvn/>`__
 
+*************************
 Documentation for the ETS
-=========================
+*************************
 
 -  Current ETS Timeline (PDF)(MS Project)
 -  `Description of the ETS <https://portal.eufus.eu/documentation/ITM/imports/imp3/public/ETS_Documentation/ETS_TRANSPORT_EQUATIONS.pdf>`__ 
@@ -51,30 +53,35 @@ Documentation for the ETS
 -  ETS Doxygen Documentation (PDF)(HTML)
 -  `Pellets in ETS <https://portal.eufus.eu/documentation/ITM/html/pellet.html>`__
 
+**********************************
 Presentations that discuss the ETS
-==================================
+**********************************
 
 -  Presentation at ICNSP-2009 on the ETS
 -  Movie from the presentation showing the evolution of the flux
    surfaces
 -  Movie from the presentation showing the evolution of the plasma
 
+*****************************
 ETS Verification & Validation
-=============================
+*****************************
 
 .. _imp3_ets_vv:
 
+===============================================================================================
 Roadmap for the ETS verification and benchmarking procedure (based on G. Pereverzev's proposal)
------------------------------------------------------------------------------------------------
+===============================================================================================
 
 -  Proposal for ETS verification and benchmarking procedure (PDF)
 -  ETS verification and benchmarking (ASTRA results) (PDF)
 
+================================================
 Part I. Cylindrical geometry. Consistency check.
-------------------------------------------------
+================================================
 
+==============================================
 Results obtained in 2011 for UAL-version 4.08b
-----------------------------------------------
+==============================================
 
 NOTE: For the particle diffusion coefficient D and pinch velocity v, the
 values below correspond in fact to the individual coefficients for each of
@@ -122,9 +129,9 @@ equation and of 0+3/2+5/2=4 in the ion flux contributing to heat transport.
 |      |                 |         |   10   | Failed to initiate|                      |
 +------+-----------------+---------+--------+-------------------+----------------------+
 
-
+==============================================
 Results obtained in 2012 for UAL-version 4.09a
-----------------------------------------------
+==============================================
 
 NOTE: Solver 4 is the one with the best performance. Solvers 3, 7 and 10
 are to be disregarded in the future.
@@ -151,16 +158,18 @@ for convection v >= 1 m/s.
 |     |                 |         |   |                   | >`__        |
 +-----+-----------------+---------+---+-------------------+-------------+
 
+*****************************
 Other ETS related information
-=============================
+*****************************
 
 -  Visualization of the repository activity (x264)
 -  Visualization of the repository activity (wmv2)
 
 .. _ETS_in_KEPLER:
 
+***********************
 ETS workflows in KEPLER
-=======================
+***********************
 
 The ETS workflow is used for 1-D transport simulation of a tokamak core
 plasma.
@@ -178,25 +187,26 @@ plasma.
 
 There are currently 2 workflows being developed within EU-IM-IMP3 project:
 
--  ETS_A_4.10b Contact person: Denis Kalupin (Skype: dkalupin) (Status)
--  ETS_A_4.10a Contact person: Denis Kalupin (Skype: dkalupin) (Status)
--  ETS_C       Contact person: Vincent Basiuk, Philippe Huynh  (Status)
+-  ETS_A_4.10b Contact person: `Denis Kalupin <mailto:denis.kalupin@euro-fusion.org?subject=ETS%20in%20KEPLER>`__ *(Skype:dkalupin)* 
+-  ETS_A_4.10a Contact person: `Denis Kalupin <mailto:denis.kalupin@euro-fusion.org?subject=ETS%20in%20KEPLER>`__ *(Skype:dkalupin)*
+-  ETS_C Contact person: `Vincent Basiuk <mailto:vincent.basiuk@cea.fr?subject=ETS%20in%20KEPLER>`__, `Philippe Huynh <mailto:vincent.basiuk@cea.fr?subject=ETS%20in%20KEPLER>`__  (Status)
 
 .. _ETS_A_4.10B:
-   
+
+===========
 ETS_A 4.10b
------------
+===========
 .. _ETS_A_4.10a_obtain:
 
 Obtaining the ETS
-~~~~~~~~~~~~~~~~~
+=================
 
 *Contact person:*
 `Denis Kalupin <mailto:denis.kalupin@euro-fusion.org?subject=ETS%20in%20KEPLER>`__ *(Skype:
 dkalupin)*
 
 Installing the ETS
-++++++++++++++++++
+------------------
 
 The default ETS release is the tag4.10b10.3
 
@@ -264,7 +274,7 @@ ways tio execute it:
           
 
 ETS revisions
-+++++++++++++
+-------------
 
 +-----------------+-----------------+-----------+---------------------+---------------------+
 | *Revision Name:*| *UAL version:*  | *KEPLER:* | *Short Sumary:*     | *Comments:*         |
@@ -346,15 +356,15 @@ ETS revisions
 .. _ETS_A_4.10b_run_config:
 
 Configuring the ETS run
-~~~~~~~~~~~~~~~~~~~~~~~
+=======================
 
 .. _ETS_A_4.10b_workflow_parameters:
 
 Workflow parameters
-+++++++++++++++++++
+-------------------
 
 General Parameters
-""""""""""""""""""
+~~~~~~~~~~~~~~~~~~
 
 -  USER
    - your userid
@@ -373,7 +383,7 @@ General Parameters
    SELECTION: 3 or 4)
 
 Space resolution
-""""""""""""""""
+~~~~~~~~~~~~~~~~
 
 -  NRHO
    - number of radial points for transport equations
@@ -387,7 +397,7 @@ Space resolution
    - maximum number of points for equilibrium boundary
 
 Time resolution
-"""""""""""""""
+~~~~~~~~~~~~~~~
 
 **Start and End time:**
 
@@ -416,7 +426,7 @@ Time resolution
 .. _ETS_A_4.10b_composition:
 
 Ion, Impurity and Neutral Composition
-+++++++++++++++++++++++++++++++++++++
+-------------------------------------
 
 Before starting the run you need to define types of main ions, impurity
 (optional) and neutrals (optional) to be included in simulations.
@@ -450,10 +460,10 @@ To define plasma composition:
 .. _ETS_A_4.10b_equations:
 
 Equations to be solved and boundary conditions
-++++++++++++++++++++++++++++++++++++++++++++++
+----------------------------------------------
 
 Main Plasma
-"""""""""""
+~~~~~~~~~~~
 
 Before starting the run you need to select the type and value of the
 boundary conditions for all equations. Please note that the value should
@@ -505,7 +515,7 @@ specified *ni_bnd_value* or inversely proportional to their charge,
 *ni_from_quasineutrality*.
 
 Impurity
-""""""""
+~~~~~~~~
 
 You can set up the boundary conditions for impurity ions in a similar
 way as for main ions. !!! Note, that at the moment only types: *OFF*;
@@ -540,7 +550,7 @@ boundary value. The options are:
    with corona, using the first element from above as a total density
 
 Neutrals
-""""""""
+~~~~~~~~
 
 !!! AT THE MOMENT BOUNDARY CONDITIONS FOR NEUTRAL VELOCITIES ARE DISABLED,
 MIGHT BE ADDED ON REQUEST
@@ -559,7 +569,7 @@ To set up boundary conditions:
 .. Picture
 
 Input profiles interpolation
-""""""""""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You are going to start the ETS run from some input shot, which might
 contain some conflicting rho grids saved to different CPOs. Thus there is a
@@ -580,7 +590,7 @@ To define the interpolation grid select:
 .. _ETS_A_4.10b_convergence:
 
 Convergence loop
-++++++++++++++++
+----------------
 
 ETS updates input from different physics actors in a sequence, which is
 finished by solving the transport equations. Ther are possible
@@ -630,10 +640,10 @@ You also can activate the authomatic ajustment of this fraction by selecting:
 .. _ETS_A_4.10b_equilibrium:
 
 Equilibrium
-+++++++++++
+-----------
 
 Initialization Settings
-"""""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~~~
 
 Before starting the run you need to set up your initial equlibrium.
 There are several options to do it: if your input shot contains the
@@ -690,7 +700,7 @@ information inside input shot/run is enough to run selected equilibrium
 solver.
 
 Run Settings
-""""""""""""
+~~~~~~~~~~~~
 
 There are several equilibrium solvers connected to the ETS. You can
 select the one of them.Therefore please do:
@@ -715,10 +725,784 @@ of some signals.
 
 .. Picture
 
+.. _ETS_A_4.10b_transport:
+
+Transport
+---------
+
+The settings for TRANSPORT can be done inside the CONVERGENCE LOOP
+composite actor. Therefore please do:
+
+-  right click on the box CONVERGENCE LOOP
+-  select **Open actor**
+-  right click on the box TRANSPORT
+-  select **Configure actor** to edit settings
+-  choose your settings
+-  press **Commit**
+
+Transport models
+~~~~~~~~~~~~~~~~
+
+ETS constructs the total transport coefficients from the combination of
+Anomalous transport (model choice), Neoclassical transport (model
+choice), Database transport (transport coefficients be saved to the
+input shot) and Background transport (Transport coefficients defined
+through the GUI interface)
+
+D_tot = D_DB*M_DB + D_AN*M_AN + D_NC*M_NC + D_BG*M_BG
+
+You should choose from the list of evailable models in each cathegory or
+switch it **OFF**
+
+Individual multipliers for all channels shall be specified on the lower
+level through the code parameters of Transport Combiner
+
+The list of available transport models can be found
+`here <https://www.eufus.eu/documentation/EU-IM/html/ets_status.html>`__.
+
+.. Picture
+
+Background transport
+~~~~~~~~~~~~~~~~~~~~
+
+You can add the constant background level for each coefficient (ion and
+impurity coefficients are expected to be the strings of [1:NION] and
+[1:NIMP] elements respectively, separated by commas)
+
+.. Picture
+
+Edge transport barrier
+~~~~~~~~~~~~~~~~~~~~~~
+
+In this section you can artificially supress the transport outside of
+specified *RHO_TOR_NORM_ETB*. Total transport coefficients for all
+transport channels (ne, ni, nz, Te, Ti,...) will be reduced to constant
+values specified below (ion and impurity coefficients are expected to be
+the strings [1:NION] and [1:NIMP] respectively)
+
+.. Picture
+
+Total transport coefficients
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The fine tuning of of transport coefficients can be done through editing
+the XML code parameters of the **transport combiner** actor:
+
+-  In Outline browse for transportcombiner
+-  select **Configure actor**
+-  click **Edit Code Parameters**
+-  
+
+   -  If you select **OFF** contributions from all transport models to this channel will be
+      nullified;
+   -  If you select **Multipliers_for_contributions_from** the transport channel
+      will be activated, and the total transport coefficient will be
+      combined from active tranport models. You gust need to specify
+      multiplier against each channel;
+   -  For convective velocity there is an additional option
+      **V_over_D_ratio_for_contributions_from**.
+      With this option selected the combiner will ignore the
+      convective components provided by transport models. The convective
+      velocity will be determined from the diffusion coefficient by
+      applying fixed V/D ratio (
+      for inward pinch the values should be negative!
+      ).
+
+-  **Save and exit**
+-  **Commit**
+
+.. Picture
+.. _ETS_A_4.10b_mhd:
+
+MHD
+---
+
+The settings for MHD type of events can be done inside the CONVERGENCE
+LOOP composite actor. Therefore please do:
+
+-  right click on the box CONVERGENCE LOOP
+-  select **Open actor**
+-  right click on the box MHD
+-  select **Configure actor** to edit settings
+-  choose your settings
+-  **Commit**
+
+.. Picture   
+
+At the moment ETS allows only for NTM to be activated. The sawtooth
+module is expected to be deployed before EU-IM Code Camp in Slovenia.
+
+User can ajust the following NTM settings:
+
+-  NTM – **ON** means that ETS will add the NTM driven transport to the total
+   transport coefficient; **OFF** -ignored
+-  NTMTransportMultiplier – the transport contrinution from NTM will be multiplied with this
+   value
+-  Onset_NTM_time - activation time for the NTM mode
+-  Onset_NTM_width - starting width of the mode
+-  m_NTM_poloidal_number
+-  n_NTM_toroidal_number
+-  NTM_phase
+-  NTM_frequency
+
+.. Picture
+
+.. _ETS_A_4.10b_sources:
+
+Sources and impurity
+--------------------
+
+The settings for SOURCES AND IMPURITY can be done inside the CONVERGENCE
+LOOP composite actor. Therefore please do:
+
+-  right click on the box CONVERGENCE LOOP
+-  select **Open actor**
+-  right click on the box SOURCES AND IMPURITY
+-  select **Configure actor** to edit settings
+-  choose your settings
+-  **Commit**
+
+Analytical & Impurity sources
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+There is a number of sources developed by IMP3 project, which are actors
+or internal routines of the transport solver. You can activate them by
+selecting **ON / OFF** in front of corresponding source:
+
+-  Database Sources – **ON** - ETS will pick up the evolution of source profiles saved to your
+   input shot/run; **OFF** -ignored
+-  Ohmic Heating – **ON** - ETS will compute Ohmic heating internaly; **OFF** -ignored
+-  Gaussian Sources – **ON** - ETS will add sources from the Gaussian source actor (you can
+   configure heat and particle deposition profiles by editing the code
+   parameters of the actor); **OFF** -ignored
+-  Neutral Sources – **ON** - Fluid neutrals will be solved according to the boundary conditions
+   specified on ¨Before_time_evolution¨ composite actor interface; **OFF** -ignored
+-  Switch_IMPURITY – **ON** - Impurity density and radiative sources will be computed;
+   **OFF** -ignored; **INTERPRETATIVE** – profiles of impurity density will be read from input shot/run
+
+.. Picture
+
+HCD sources
+~~~~~~~~~~~
+
+There is a number of sources developed by HCD project, that are
+incorporated by the ETS workflow.
+
+For the HCD sources please activate the type of heating source, by
+ticking the box in front of it, and select the code to simulate it.
+
+.. Picture
+
+You also need to configure initial IMP5HCD settings. Therefore please:
+
+-  right click on the box BEFORE THE TIME EVOLUTION
+-  select **Open Actor**
+-  right click on the box SETTINGS FOR HEATING AND CURRENT DRIVE
+-  select **Configure actor**
+-  edit the stettings
+-  **Commit**
+
+.. Picture   
+
+The detailed information on initial IMP5HCD settings can be found
+`here <https://www.eufus.eu/documentation/EU-IM/html/imp5_imp5hcd.html>`__.
+Please note that settings for NBI are done independent for each PINI.
+Therefore, for NBI settings, please insert the values separated by
+commas. The number of the element in the array corresponds to the number
+of activated PINI. Maximum accepted number of PINIs = 16.
+
+.. Picture
+
+Power control
+~~~~~~~~~~~~~
+
+You also can activate the power control for the IMP5HCD sources.
+
+.. Picture
+
+If the POWER_CONTROL is not **OFF**, there are two modes of
+operation: **specific** and **frequency**
+
+For **specific** you should specify the time sequence separated by commas
+and the corresponding power sequence (where first power level
+corresponds to the first time, second to second and etc.). Linear
+interpolation will be done between the sequence points. For example: if
+you give the power **sequence** = 2e6,4e6,1e6 and **times** = 0.0, 0.7, 1.5 (s) the delivered power would be:
+
+.. Picture
+
+For **frequency** you should specify the power levels sequence separated
+by commas, start and end time of the power control and the frequency of
+switching between these levels. For example: if you give the power
+**sequence** = 2e6,4e6,1e6 and **frequency** = 10 (Hz) **tstart** = 0.0 (s)
+**tend** = 1.5 (s) the delivered power would be:
+
+.. Picture
+
+Total power
+~~~~~~~~~~~
+
+Profiles of the total source for each channel are obtained from the the
+individual contributions (Data Base, Gaussian, Neutrals, Impurity and
+HCD) as a summ of all activated sources multiplied with coefficients
+specified on the interface of the composite actor.
+
+S_tot = S_DS*DSM + S_GS*GSM + S_Neu*NeuSM + S_IMP*IMPSM + S_HCD*HCDSM
+
+The fine tuning of of sources can be done through editing the XML code
+parameters of the source combiner actor:
+
+-  In the Outline browse for source combiner
+-  select **Configure actor**
+-  click **Edit Code Parameters**
+-  If you like the sources to the particular equation being activated -
+   select **from_input_CPOs**, and then, put the multipliers against each
+   contribution; if you select **OFF** contributions from all sources to
+   this channel will be nullified.
+-  save and exit
+- **Commit**
+
+.. Picture
+
+   .. _ETS_A_4.10b_inst_events:
+
+Instantaneous events & Actuators
+--------------------------------
+
+At the moment, user can swith **ON** and **OFF** two types of events: PELLET
+and SAWTOOTH
+
+Pellet
+~~~~~~
+
+At the top level of the workflow you can configure times for pellet
+injection
+
+-  right click on the box INSTANTANEOUS EVENTS & ACTUATORS
+-  select **Configure actor** to edit settings
+-  Select Pellet_injection equal **ON** if you like to use pellet in your
+   simulation
+-  Select mode of operation:
+
+   -  Times_for_pellets equals **specific** – pellets will be shut at exact times specified in array times_pellet
+   -  Times_for_pellets equals **frequency** – pellets will be shut from
+      tstart_pellet until tend_pellet with a frequency_pellet
+
+-  **Commit**
+
+.. Picture
+
+Parameters of individual pellet need to be configured through the
+code_parameters of the PELLET actor. To access it go to **Outline** on the
+right upper corner and open the following:
+
+.. Picture
+
+-  right click on the actor PELLET
+-  select **Configure actor**
+-  click **Edit Code Parameters**
+-  edit parameters and click **save and exit**
+-  **Commit**
+
+.. Picture
+   
+amn – atomic mass number: array of elements separated by space
+(1:nelements) [-]
+
+zn – nuclear charge: array of elements separated by space (1:nelements)
+[-]
+
+fraction – fraction of each element in the pellet, based on the number
+of atoms: array of elements separated by space (1:nelements) [-]
+
+rpell – radius of the pellet [m]
+
+vpell – velocity of the pellet [m/s]
+
+rcloud – radius of the pellet cloud [m], radial extension of the cloud =
+2*rp0
+
+lcloud – length of the pellet cloud along the field line [m]
+
+Tcloud – temperature of the pellet cloud [eV]
+
+Pellet path is specified by two points, for which R and Z coordinated
+should be specified
+
+R – R coordinates of the pivot and second points of the pellet path,
+separated by space [m]
+
+Z – Z coordinates of the pivot and second points of the pellet path,
+separated by space [m]
+
+Control switches allow to activate:
+
+-  drifts - YES - will activate radial displacement of deposition profile, same
+   for all path points
+-  cooling - YES - will activate cooling of the other side of the plasma due to
+   parallel heat transport (essential for large pellets, which might
+   cross the same flux surface twice)
+-  JINTRAC - YES - will provide temperature reduction consistent with the model
+   used in JETTO
+
+Sawtooth
+~~~~~~~~
+
+At the top level of the workflow you can switch ON/OFF possible MHD
+events
+
+-  right click on the box INSTANTANEOUS EVENTS & ACTUATORS
+-  select **Configure actor** to edit settings
+-  Select SAWTOOTH **ON** if you like to use them in your simulation
+-  **Commit**
+
+Actuators
+~~~~~~~~~
+
+At the top level of the workflow you can switch ON/OFF actuator for
+runaways
+
+-  right click on the box INSTANTANEOUS EVENTS & ACTUATORS
+-  select **Configure actor** to edit settings
+-  Select actuator_runaways **ON** if you like to use them in your simulation
+-  **Commit**
+   
+.. _ETS_A_4.10b_scenario:
+
+Scenario output
+---------------
+
+You can summarize the ETS run by activating the output to SCENARIO CPO
+(as post-processing of the run).
+
+To activate the SCENARIO output:
+
+-  right click on the box AFTER THE TIME EVOLUTION
+-  select **Configure actor**
+-  select Generate_SCENARIO_output_from_ETS_run equal **YES**
+-  **Commit**
+
+.. Picture
+   
+.. _ETS_A_4.10b_visualization:
+
+Visualization
+--------------
+
+There is a number tools visualizing the ETS run.
+
+Multiple Tab Display
+--------------------
+
+The display appeares automaticaly when the ETS workflow is launched. It
+displays diagnostic text messages from the workflow on following topics:
+
+-  Input data statement
+-  Iterations to check the initial convergence between EQUILIBRIUM and
+   CURRENT
+-  Time evolution
+-  Convergence of iteratinos within the time step
+-  IMP5HCD settings
+-  Power used by IMP5HCD actors durung the run
+
+Also the error messages from execution of the workflow will be displayed
+here.
+
+.. Picture
+
+Python Visualization Display
+----------------------------
+
+Please note, if you plan to use python based vizualization **nomatlab**
+argument is essential by the opening of the workflow.
+
+.. code-block:: console
+
+   >kepler.sh nomatlab workflow_path/workflow_name.xml
+
+You can activate the graphical visualization of your run evolution:
+
+-  right click on the box Check Time & Save Slice
+-  select **Configure actor**
+-  select visualisation **YES** or **NO**
+-  **Commit**
+
+.. Picture   
+   
+Then evolution of main discharge parameters will be shown in this
+window:
+
+.. Picture
+
+.. _ETS_A_4.10b_list_actors:
+
+List of Actors
+==============
+
+UNDER DEVELOPMENT
+
+.. _ETS_A_4.10b_list_actors_Equilibrium:
+
+Equilibrium actors
+------------------
+
++------------+---------------+-----------------+------------------------+
+| Code name  | Code Category | Contact persons | Short description      |
++============+===============+=================+========================+
+|  chease    | Grad-Shafranov| Olivier Sauter  | Chease is a fixed      |  
+|            |   solver      |                 | boundary Grad-Shafranov| 
+|            |               |                 | solver based on cubic  | 
+|            |               |                 | hermitian finite       | 
+|            |               |                 | elements see           | 
+|            |               |                 | H. Lütjens, A.         | 
+|            |               |                 | Bondeson, O. Sauter,   | 
+|            |               |                 | Computer Physics       | 
+|            |               |                 | Communications 97      | 
+|            |               |                 | (1996) 219-260         | 
++------------+---------------+-----------------+------------------------+
+| emeq       | -             | -               |                        |
++------------+---------------+-----------------+------------------------+
+| spider     | -             | -               |                        |
++------------+---------------+-----------------+------------------------+
+
+.. _ETS_A_4.10b_list_actors_CoreTransport:
+
+Core transport actors
+---------------------
+
++-------+-------+---------+--------------------------------------------+
+| Code  | Code  | Contact | Short description                          |
+| name  | Categ | persons |                                            |
+|       | ory   |         |                                            |
++=======+=======+=========+============================================+
+| ETS   | Trans | Denis   |                                            |
+|       | port  | Kalupin |                                            |
+|       | solve |         |                                            |
+|       | r     |         |                                            |
++-------+-------+---------+--------------------------------------------+
+| BohmG | Bohm/ | -       |                                            |
+| B     | gyro- |         |                                            |
+|       | Bohm  |         |                                            |
+|       | trans |         |                                            |
+|       | port  |         |                                            |
+|       | coeff |         |                                            |
+|       | icien |         |                                            |
+|       | ts    |         |                                            |
++-------+-------+---------+--------------------------------------------+
+| TCI/W | Trans | Pär     |                                            |
+| eilan | port  | Strand  |                                            |
+| d     | coeff |         |                                            |
+|       | icien |         |                                            |
+|       | t     |         |                                            |
+|       | from  |         |                                            |
+|       | drift |         |                                            |
+|       | wave  |         |                                            |
+|       | turbu |         |                                            |
+|       | lence |         |                                            |
++-------+-------+---------+--------------------------------------------+
+| TCI/G | Trans | -       |                                            |
+| LF23  | port  |         |                                            |
+|       | coeff |         |                                            |
+|       | icien |         |                                            |
+|       | t     |         |                                            |
+|       | from  |         |                                            |
+|       | drift |         |                                            |
+|       | wave  |         |                                            |
+|       | turbu |         |                                            |
+|       | lence |         |                                            |
++-------+-------+---------+--------------------------------------------+
+| TCI/R | Trans | -       |                                            |
+| EU-IM | port  |         |                                            |
+|       | coeff |         |                                            |
+|       | icien |         |                                            |
+|       | t     |         |                                            |
+|       | from  |         |                                            |
+|       | drift |         |                                            |
+|       | wave  |         |                                            |
+|       | turbu |         |                                            |
+|       | lence |         |                                            |
++-------+-------+---------+--------------------------------------------+
+| TCI/M | Trans | -       |                                            |
+| MM    | port  |         |                                            |
+| (not  | coeff |         |                                            |
+| yet   | icien |         |                                            |
+| in    | t     |         |                                            |
+| ETS)  | from  |         |                                            |
+|       | drift |         |                                            |
+|       | wave  |         |                                            |
+|       | turbu |         |                                            |
+|       | lence |         |                                            |
++-------+-------+---------+--------------------------------------------+
+| TCI/E | Trans | -       |                                            |
+| DWM   | port  |         |                                            |
+| (not  | coeff |         |                                            |
+| yet   | icien |         |                                            |
+| in    | t     |         |                                            |
+| ETS)  | from  |         |                                            |
+|       | drift |         |                                            |
+|       | wave  |         |                                            |
+|       | turbu |         |                                            |
+|       | lence |         |                                            |
++-------+-------+---------+--------------------------------------------+
+| nclas | Neocl | Pär     |                                            |
+| s     | assic | Strand  |                                            |
+| (not  | al    |         |                                            |
+| yet   | trans |         |                                            |
+| in    | port  |         |                                            |
+| ETS)  | coeff |         |                                            |
+|       | icien |         |                                            |
+|       | ts    |         |                                            |
++-------+-------+---------+--------------------------------------------+
+| neos  | Neocl | Olivier |                                            |
+| (not  | assic | Sauter  |                                            |
+| yet   | al    |         |                                            |
+| in    | trans |         |                                            |
+| ETS)  | port  |         |                                            |
+|       | coeff |         |                                            |
+|       | icien |         |                                            |
+|       | ts    |         |                                            |
++-------+-------+---------+--------------------------------------------+
+| neowe | Neocl | Bruce   | Neoclassical transport coefficients based  |
+| sz    | assic | Scott   | on the expression in John Wesson's book    |
+|       | al    |         | Tokamaks.                                  |
+|       | trans |         |                                            |
+|       | port  |         |                                            |
+|       | coeff |         |                                            |
+|       | icien |         |                                            |
+|       | ts    |         |                                            |
++-------+-------+---------+--------------------------------------------+
+| neoar | Neocl | Bruce   |                                            |
+| tz    | assic | Scott   |                                            |
+|       | al    |         |                                            |
+|       | trans |         |                                            |
+|       | port  |         |                                            |
+|       | coeff |         |                                            |
+|       | icien |         |                                            |
+|       | ts    |         |                                            |
++-------+-------+---------+--------------------------------------------+
+| spitz |       |         |                                            |
+| er    |       |         |                                            |
++-------+-------+---------+--------------------------------------------+
+| ETBtr |       |         |                                            |
+| anspo |       |         |                                            |
+| rt    |       |         |                                            |
++-------+-------+---------+--------------------------------------------+
+| coron |       |         |                                            |
+| al    |       |         |                                            |
++-------+-------+---------+--------------------------------------------+
+| synch |       |         |                                            |
+| rotro |       |         |                                            |
+| nsour |       |         |                                            |
+| ces   |       |         |                                            |
++-------+-------+---------+--------------------------------------------+
+
+.. _ETS_A_4.10b_list_actors_Edge:
+
+Edge transport actors
+---------------------
+
+.. _ETS_A_4.10b_list_actors_HCD:
+
+Heating and current drive actors
+--------------------------------
+
+.. Table
+
++-------+-------+---------+--------------------------------------------+
+| Code  | Code  | Contact | Short description                          |
+| name  | Categ | persons |                                            |
+|       | ory   |         |                                            |
++=======+=======+=========+============================================+
+|  gray | EC/wa | Lorenzo | GRAY is a quasi-optical ray-tracing code   |
+|       | ves   | Figini  | for electron cyclotron heating & current   |
+|       |       |         | drive calculations in tokamaks.            |
+|       |       |         | Code-parameter documentation can be found  |
+|       |       |         |                                            |
++-------+-------+---------+--------------------------------------------+
+| travis| EC/wa | Nikolai | Travis is a ray-tracing code for electron  |
+|       | ves   | Marushc | cyclotron heating & current drive          |
+|       |       | henko   | calculations in tokamaks.                  |
+|       |       | and     |                                            |
+|       |       | Lorenzo |                                            |
+|       |       | Figini  |                                            |
+|       |       |         |                                            |
++-------+-------+---------+--------------------------------------------+
+|  Torr | EC/wa | Egbert  | Torray-FOM is a ray-tracing code for       |
+| ay-FO | ves   | Westerh | electron cyclotron heating & current drive |
+| M     |       | of      | calculations in tokamaks.                  |
++-------+-------+---------+--------------------------------------------+
+| bbnbi | NBI/s | Otto    | Calculate the deposition rates of neutrals |
+|       | ource | Asunta  | beam particles, i.e. the input source for  |
+|       |       |         | Fokker-Planck solvers (not the heating and |
+|       |       |         | current drive). Note that the number of    |
+|       |       |         | markers generated by BBNBI is described by |
+|       |       |         | the kepler variable number_nbi_markers_in. |
+|       |       |         |                                            |
++-------+-------+---------+--------------------------------------------+
+|  nemo | NBI/s | Mireill | Calculate the deposition rates of neutrals |
+|       | ource | e       | beam particles, i.e. the input source for  |
+|       |       | Schneid | Fokker-Planck solvers (not the heating and |
+|       |       | er      | current drive). Code-parameter             |
+|       |       |         | documentation can be found                 |
+|       |       |         |                                            |
++-------+-------+---------+--------------------------------------------+
+|  nucl | nucle | Thomas  | Simple code for nuclear sources from       |
+| earsi | ar/so | Johnson | thermal/thermal reactions. Code-parameter  |
+| m     | urce  |         | documentation can be found                 |
++-------+-------+---------+--------------------------------------------+
+|  nbis | NBI,  | Thomas  | Simple Fokker-Planck code calculating the  |
+| im    | alpha | Johnson | collisional ion and electron heating from  |
+|       | s     |         | a particle source, either NBI or nuclear.  |
+|       | /     |         | Code-parameter documentation can be found  |
++-------+-------+---------+--------------------------------------------+
+| risk  | NBI   | Mireill | Bounce averaged steady-state Fokker-Planck |
+|       | Fokke | e       | solver calculating the collisional ion and |
+|       |r-Pla  | Schneid | electron heating from a particle source    |
+|       | nck   | er      | and the NBI current drive. Code-parameter  |
+|       |       |         | documentation can be found                 |
+|       |       |         |                                            |
++-------+-------+---------+--------------------------------------------+
+| spot  | NBI,  | Mireill | Monte Carlo solver for the Fokker-Planck   |
+|       | alpha | e       | equation. Traces guiding centre orbits in  |
+|       | s     | Schneid | a steady state magnetic equilibrium under  |
+|       | and   | er      | the influence of Coloumb collisions and    |
+|       | ICRF  |         | interactions with ICRF waves (through the  |
+|       | Fokke |         | RFOF library). The code can also be used   |
+|       | r-Pla |         | for NBI and alpha particle modelling as it |
+|       | nck   |         | can handle source terms from the           |
+|       |       |         | distsource CPO.                            |
++-------+-------+---------+--------------------------------------------+
+|  asco | NBI,  | Otto    | Monte Carlo Fokker-Planck solver           |
+| t4ser | alpha | Asunta/ | calculating the collisional ion and        |
+| ial   | s,    | Seppo   | electron heating from a particle source    |
+|       | ICRF  | Sipila  | and the NBI current drive.                 |
+|       | /     |         |                                            |
+|       | Fokke |         |                                            |
+|       | r-Pla |         |                                            |
+|       | nck   |         |                                            |
++-------+-------+---------+--------------------------------------------+
+|  asco | NBI,  | Otto    | Monte Carlo Fokker-Planck solver           |
+| t4par | alpha | Asunta/ | calculating the collisional ion and        |
+| allel | s,    | Seppo   | electron heating from a particle source    |
+|       | ICRF  | Sipila  | and the NBI current drive.                 |
+|       | /     |         |                                            |
+|       |Fokke  |         |                                            |
+|       | r-Pla |         |                                            |
+|       | nck   |         |                                            |
++-------+-------+---------+--------------------------------------------+
+| Lion  | IC /  | Olivier | Global ICRF wave solver. Code-parameter    |
+|       | waves | Sauter  | documentation can be found                 |
+|       |       | and     |                                            |
+|       |       | Laurent |                                            |
+|       |       | Villard |                                            |
++-------+-------+---------+--------------------------------------------+
+| Cyran | IC /  | Ernesto | Global ICRF wave solver. Code-parameter    |
+| o     | waves | Lerche  | documentation can be found                 |
+|       |       | and     |                                            |
+|       |       | Dirk    |                                            |
+|       |       | Van     |                                            |
+|       |       | Eester  |                                            |
++-------+-------+---------+--------------------------------------------+
+| Eve   | IC /  | Remi    | Global ICRF wave solver                    |
+| (not  | waves | Dumont  |                                            |
+| yet   |       |         |                                            |
+| in    |       |         |                                            |
+| ETS)  |       |         |                                            |
++-------+-------+---------+--------------------------------------------+
+| StixR | IC /  | Dirk    | 1d Fokker-Planck solver for ICRF heating.  |
+| eDist | waves | Van     |                                            |
+|       |       | Eester  |                                            |
+|       |       | and     |                                            |
+|       |       | Ernesto |                                            |
+|       |       | Lerche  |                                            |
++-------+-------+---------+--------------------------------------------+
+| ICdep | IC /  | Thomas  | Generates Waves-cpo with an IC wave field  |
+|       | waves | Johnson | with Gaussian deposition profiles          |
+|       |       |         | described by a combination of antenna-cpo  |
+|       |       |         | input and through code parameters input.   |
+|       |       |         | Code-parameter documentation can be found  |
++-------+-------+---------+--------------------------------------------+
+| ICco  | IC /  | Thomas  | Simple model for the coupling waves from   |
+| up    | coupl | Johnson | ion cyclotron antennas to the plasma.      |
+|       | ing   |         | Code-parameter documentation can be found  |
++-------+-------+---------+--------------------------------------------+
+
+.. _ETS_A_4.10b_list_actors_events:
+
+Events actors
+-------------
+
+.. Table
+
++-------+-------+---------+--------------------------------------------+
+| Code  | Code  | Contact | Short description                          |
+| name  | Categ | persons |                                            |
+|       | ory   |         |                                            |
++=======+=======+=========+============================================+
+| pelle | pelle | Denis   |                                            |
+| tacto | t     | Kalupin |                                            |
+| r     |       |         |                                            |
++-------+-------+---------+--------------------------------------------+
+| pelle | pelle | Denis   |                                            |
+| ttrig | t     | Kalupin |                                            |
+| ger   |       |         |                                            |
++-------+-------+---------+--------------------------------------------+
+| sawcr | sawte | Olivier |                                            |
+| ash_s | eth   | Sauter  |                                            |
+| lice  |       |         |                                            |
++-------+-------+---------+--------------------------------------------+
+| sawcr | sawte | Olivier |                                            |
+| it    | eth   | Sauter  |                                            |
++-------+-------+---------+--------------------------------------------+
+| runa  | runaw | Roland  | Indicating the presence of runaway         |
+| way_i | ay    | Lohner  | electrons: 1) Indicate, whether electric   |
+| ndica |       | och     | field is below the critical level, thus    |
+| tor   |       | Gergo   | runaway generation is impossible. 2)       |
+|       |       | Pokol   | Indicate, whether runaway electron growth  |
+|       |       |         | rate exceeds a preset limit. This          |
+|       |       |         | calculation takes only the Dreicer runaway |
+|       |       |         | generation method in account and assumes a |
+|       |       |         | velocity distribution close to Maxwellian, |
+|       |       |         | therefore this result should be considered |
+|       |       |         | with caution. The growth rate limit can be |
+|       |       |         | set via an input of the actor. Limit value |
+|       |       |         | is set to $$10^12$$ particle per second by |
+|       |       |         | default. (This growth rate generates a     |
+|       |       |         | runaway current of approximately 1kA       |
+|       |       |         | considering a 10 seconds long discharge.)  |
+|       |       |         |                                            |
+|       |       |         |                                            |
+|       |       |         |                                            |
+|       |       |         |                                            |
++-------+-------+---------+--------------------------------------------+
+
+
+Non-physics actors
+------------------
+
+The ETS uses the following list of non-physics actors: addECant,
+addICant, backgroundtransport, calculateRHO, changeocc, changepsi,
+changeradii, checkconvergence, controlAMIX, coredelta2coreprof,
+correctcurrent, deltacombiner, emptydistribution, emptydistsource,
+emptywaves, eqinput, etsstart, fillcoreimpur, fillcoreneutrals,
+fillcoreprof, fillcoresource, fillcoretransp, fillequilibrium,
+fillneoclassic, filltoroidfield, gausiansources, geomfromcpo,
+hcd2coresource, ignoredelta, ignoreimpurity, ignoreneoclassic,
+ignoreneutrals, ignorepellet, ignoresources, ignoretransport, IMP4dv,
+IMP4imp, importimptransport, itmimpurity, itmneutrals,
+merger4distribution, merger4distsource, merger4waves, nbifiller,
+neoclassic2coresource, neoclassic2coretransp, parabolicprof,
+plasmacomposition, PowerFromArray, PowerModulation, profilesdatabase,
+readjustprof, sawupdate_slice, scaleprof, sourcecombiner,
+sourcedatabase, transportcombiner, transportdatabase, wallFiller and
+waves2sources.
+
+   
 .. _ETS_A_4.10A:
 
+===========
 ETS_A 4.10a
------------
+===========
 
 **ETS_A workflow in KEPLER**:
 
@@ -741,7 +1525,7 @@ dkalupin)*
 .. Picture
 
 Obtaining the ETS
-~~~~~~~~~~~~~~~~~
+=================
 
 Copy the ETS workflow to your space:
 
@@ -757,7 +1541,7 @@ Compile ETS actors:
    >make import_ets
 
 Updating the ETS
-~~~~~~~~~~~~~~~~
+================
 
 If you have already a copy of the ETS you do not need to check it out
 again!!!
@@ -795,7 +1579,7 @@ To update visualization scripts go inside your $KEPLER/kplots:
 This is ALL you need to do for updates!
 
 Executing the ETS
-~~~~~~~~~~~~~~~~~
+=================
 
 .. Picture
 
@@ -812,15 +1596,15 @@ You can run the workflow!!!
 .. _ETS_A_4.10a_configuring:
 
 Configuring the ETS run
-~~~~~~~~~~~~~~~~~~~~~~~
+=======================
 
 .. _ETS_A_4.10a_workflow_parameters:
 
 Workflow Parameters
-+++++++++++++++++++
+-------------------
 
 General Parameters
-""""""""""""""""""
+~~~~~~~~~~~~~~~~~~
 
 -  USER - your userid
 -  MACHINE - machine name (database name) for which comutations are done
@@ -832,7 +1616,7 @@ General Parameters
    (RECOMENDED SELECTION: 3 or 4)
 
 Space resolution
-""""""""""""""""
+~~~~~~~~~~~~~~~~
 
 -  NRHO - number of radial points for transport equations
 -  NPSI - number of points for equilibrium 1-D arrays
@@ -841,7 +1625,7 @@ Space resolution
 -  NEQ_MAX_NPOINTS - maximum number of points for equilibrium boundary
 
 Time resolution
-"""""""""""""""
+~~~~~~~~~~~~~~~
 
 Start and End time
 
@@ -863,7 +1647,7 @@ Time spep
 .. _ETS_A_4.10a_composition:
 
 Plasma, Impurity and Neutrals Composition
-+++++++++++++++++++++++++++++++++++++++++
+-----------------------------------------
 
 Before starting the run you need to define types of main and impurity
 ions and types of neutrals to be included in simulations.
@@ -889,10 +1673,10 @@ To set up the composition:
 .. _ETS_A_4.10a_equations:
 
 Equations to be solved and boundary conditions
-++++++++++++++++++++++++++++++++++++++++++++++
+----------------------------------------------
 
 Main plasma
-"""""""""""
+~~~~~~~~~~~
 
 Before starting the run you need to select the type and value of the
 boundary conditions for all equations. Please note that the value should
@@ -937,7 +1721,8 @@ specified *ni_bnd_value* or inversely proportional to their charge
 *ni_from_quasineutrality*.
 
 Impurity
-""""""""
+~~~~~~~~
+
 You can set up the boundary conditions for impurity ions in a similar
 way as for main ions. !!! Note, that at the moment only types: *OFF*;
 *value* and *value_from_input_CPO* are accepter by impurity solver.
@@ -971,7 +1756,7 @@ boundary value. The options are:
    with corona, using the first element from above as a total density
 
 Neutrals
-""""""""
+~~~~~~~~
 
 !!! AT THE MOMENT BOUNDARY CONDITIONS FOR NEUTRAL VELOCITIES ARE
 DISABLED, MIGHT BE ADDED ON REQUEST
@@ -992,7 +1777,7 @@ To set up boundary conditions:
 .. Picture
 
 Input Profiles Interpolation
-""""""""""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You are going to start the ETS run from some input shot, which might
 contain some conflicting rho grids. Thus there is a choice for the user
@@ -1011,7 +1796,7 @@ To define the interpolation grid select:
 .. _ETS_A_4.10a_convergence:
 
 Convergence loop
-++++++++++++++++
+----------------
 
 ETS updates input from different physics actors in a sequence, which is
 finished by solving the transport equations. Ther are possible none-linear
@@ -1060,10 +1845,10 @@ to *YES*
 .. _ETS_A_4.10a_equilibrium:
 
 Equilibrium
-+++++++++++
+-----------
 
 Starting Settings
-"""""""""""""""""
+~~~~~~~~~~~~~~~~~
 
 Before starting the run you need to set up your initial equlibrium. There
 are several options to do it: if your input shot contains the consistent
@@ -1124,7 +1909,7 @@ information inside input shot/run is enough to run selected equilibrium
 solver.
 
 Run Settings
-""""""""""""
+~~~~~~~~~~~~
 
 There are several equilibrium solvers connected to the ETS. You can
 select the one of them.Therefore please do:
@@ -1149,10 +1934,439 @@ of some signals.
 
 .. Picture
 
+.. _ETS_A_4.10a_transport:
+
+Transport
+---------
+
+The settings for TRANSPORT can be done inside the CONVERGENCE LOOP
+composite actor. Therefore please do:
+
+-  right click on the box ‘CONVERGENCE LOOP’
+-  select ‘Open actor’
+-  right click on the box ‘TRANSPORT’
+-  select ‘Configure actor’ to edit settings
+-  choose your settings
+-  Commit
+
+Choice of transport model
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ETS constructs the total transport coefficients from the combination of
+Anomalous transport (model choice), Neoclassical transport (model
+choice) and Database transport (transport coefficients be saved to the
+input shot)
+
+.. code-block:: console
+
+   D_tot = D_DB*M_DB + D_AN*M_AN + D_NC*M_NC 
+
+You should choose from the list of evailable models in each cathegory or
+switch it OFF
+
+The list of available transport models can be found
+`here <https://www.eufus.eu/documentation/EU-IM/html/ets_status.html>`__.
+
+Main plasma transport
+~~~~~~~~~~~~~~~~~~~~~
+
+In this section you define how total transport coefficients for main
+ions should be constructed from contributions provided by different
+models. You need to provide the multipliers for Anomalous, Neoclassical
+and Database contributions, which will determine their weights in total
+transport coefficient.
+
+You also can add the constant background level for each coefficient (ion
+coefficients are expected to be the string {1:NION}, separated by
+commas)
+
+Impurity transport
+~~~~~~~~~~~~~~~~~~
+
+In this section you define how total transport coefficients for impurity
+ions should be constructed from contributions provided by different
+models. You need to provide the multipliers for Anomalous, Neoclassical
+and Database contributions, which will determine their weights in total
+transport coefficient.
+
+You also can add the constant background level for each coefficient
+(coefficients are expected to be the string {1:NIMP}, separated by
+commas)
+
+In addition, there is an option to import the Anomalous component of
+transport coefficient *from_first_ion* or *from_electrons* (the same
+anomalous contribution will be added to all impurity components, all
+ionization states)
+
+Edge transport barrier
+~~~~~~~~~~~~~~~~~~~~~~
+
+In this section you can artificially supress the transport outside of
+specified *RHO_TOR_NORM_ETB*. Total transport coefficients for all
+transport channels (ne, ni, nz, Te, Ti,...) will be reduced to constant
+values specified below (ion and impurity coefficients are expected to be
+the strings {1:NION}) and {1:NIMP} respectively)
+
+Total transport coefficients
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Profiles of the total transport coefficient for each channel are
+obtained from the the individual contributions (Data Base, Anomalous,
+Neoclassical and Background) as a summ of all activated transport models
+multiplied with coefficients specified on the interface of the composite
+actor.
+
+.. code-block:: console
+
+   X_tot = X_DB*DBM + X_AN*ANM + X_NC*NCM + X_BG*BGM  
+
+!!! Note, that contributions to all transport equations will be
+multiplied with the same value. For example: if
+AnomalousTransportMultiplier=3.0, then contibutions from selected
+anomalous transport model to each transport equation will be multiplied
+with 3.0
+
+The fine tuning of of transport coefficients can be done through editing
+the XML code parameters of the transport combiner actor:
+
+-  right click on the box ‘TRANSPORT’
+-  select ‘Open actor’ to edit settings
+-  right click on the box ‘Transport Combiner’
+-  select ‘Open actor’ to edit settings
+-  right click on the box ‘transportcombiner’
+-  select ‘Configure actor’
+-  click ‘Edit Code Parameters’
+-  If you select *OFF* contributions from all transport models to this
+   channel will be nullified; If you select *from_input_CPOs* the
+   transport channel will be activated, and the total transport
+   coefficient will be combined from active tranport models; For
+   convective velocity there is an additional option
+   *fixed_V_over_D_ratio*, by selecting this the combiner will ignore
+   the convective components provided by transport nmodels. The
+   convective velocity will be determined from the total diffusion
+   coefficient by applying fixed V/D ratio (*for inward pinch the values
+   should be negative!*). For all active channels you can adjust
+   multipliers for combining contributions from different transport
+   models (array of four space separated values is expected):
+
+   -  first position - Data Base transport coefficients;
+   -  second position – Anomalous transport coefficients;
+   -  third position – Neoclassical transport coefficients;
+   -  fourth position – Background (constant level) transport
+      coefficients;
+
+-  save and exit
+-  Commit
+
+   .. _ETS_A_4.10a_mhd:
+
+MHD
+---
+
+The settings for MHD type of events can be done inside the CONVERGENCE
+LOOP composite actor. Therefore please do:
+
+-  right click on the box ‘CONVERGENCE LOOP’
+-  select ‘Open actor’
+-  right click on the box ‘MHD’
+-  select ‘Configure actor’ to edit settings
+-  choose your settings
+-  Commit
+
+At the moment ETS allows only for NTM to be activated. The sawtooth
+module is expected to be deployed before EU-IM Code Camp in Slovenia.
+
+User can ajust the following NTM settings:
+
+-  NTM –
+   ON
+   means that ETS will add the NTM driven transport to the total
+   transport coefficient;
+   OFF-ignored
+-  NTMTransportMultiplier – the transport contrinution from NTM will be
+   multiplied with this value
+-  Onset_NTM_time - activation time for the NTM mode
+-  Onset_NTM_width - starting width of the mode
+-  m_NTM_poloidal_number
+-  n_NTM_toroidal_number
+-  NTM_phase
+-  NTM_frequency
+
+   .. _ETS_A_4.10a_sources:
+
+Sources and impurity
+--------------------
+
+The settings for SOURCES AND IMPURITY can be done inside the CONVERGENCE
+LOOP composite actor. Therefore please do:
+
+-  right click on the box ‘CONVERGENCE LOOP’
+-  select ‘Open actor’
+-  right click on the box ‘SOURCES AND IMPURITY’
+-  select ‘Configure actor’ to edit settings
+-  choose your settings
+-  Commit
+
+IMP3 sources
+~~~~~~~~~~~~
+
+There is a number of sources developed by IMP3 project, which are actors
+or internal routines of the transport solver. You can activate them by
+selecting *ON / OFF* in front of corresponding source:
+
+-  Database Sources –
+   ON
+   - ETS will pick up the evolution of source profiles saved to your
+   input shot/run;
+   OFF -ignored
+-  Ohmic Heating –
+   ON
+   - ETS will compute Ohmic heating internaly;
+   OFF-ignored
+-  Gaussian Sources –
+   ON
+   - ETS will add sources from the Gaussian source actor (you can
+   configure heat and particle deposition profiles by editing the code
+   parameters of the actor);
+   OFF-ignored
+-  Neutral Sources–
+   ON
+   - Fluid neutrals will be solved according to the boundary conditions
+   specified on ¨Before_time_evolution¨ composite actor interface;
+   OFF -ignored
+-  Switch_IMPURITY–
+   ON
+   - Impurity density and radiative sources will be computed;
+   OFF
+   -ignored;
+   INTERPRETATIVE
+   – profiles of impurity density will be read from input shot/run
+
+IMP5HCD sources
+~~~~~~~~~~~~~~~
+
+There is a number of sources developed by IMP5 project, that are
+incorporated by the ETS workflow.
+
+For the IMP5HCD sources please activate the type of heating source, by
+ticking the box in front of it, and select the code to simulate it.
+
+You also need to configure initial IMP5HCD settings. Therefore please:
+
+-  right click on the box ‘BEFORE THE TIME EVOLUTION’
+-  select ‘Open Actor’
+-  right click on the box ‘SETTINGS FOR HEATING AND CURRENT DRIVE’
+-  select ‘Configure actor’
+-  edit the stettings
+-  Commit
+
+The detailed information on initial IMP5HCD settings can be found
+`here <https://www.eufus.eu/documentation/EU-IM/html/imp5_imp5hcd.html>`__.
+Please note that settings for NBI are done independent for each PINI.
+Therefore, for NBI settings, please insert the values separated by
+commas. The number of the element in the array corresponds to the number
+of activated PINI. Maximum accepted number of PINIs = 16.
+
+Power control
+~~~~~~~~~~~~~
+
+You also can activate the power control for the IMP5HCD sources.
+
+If the POWER_CONTROL is not *OFF*, there are two modes of
+operation:\ *specific* and *frequency*
+
+For *specific* you should specify the time sequence separated by commas
+and the corresponding power sequence (where first power level
+corresponds to the first time, second to second and etc.). Linear
+interpolation will be done between the sequence points. For example: if
+you give the power sequence = 2e6,4e6,1e6 and times = 0.0, 0.7, 1.5 (s)
+the delivered power would be:
+
+For *frequency* you should specify the power levels sequence separated
+by commas, start and end time of the power control and the frequency of
+switching between these levels. For example: if you give the power
+sequence = 2e6,4e6,1e6 and frequency = 10 (Hz) tstart =0.0 (s) tend =
+1.5 (s) the delivered power would be:
+
+Total power
+~~~~~~~~~~~
+
+Profiles of the total source for each channel are obtained from the the
+individual contributions (Data Base, Gaussian, Neutrals, Impurity and
+HCD) as a summ of all activated sources multiplied with coefficients
+specified on the interface of the composite actor.
+
+::
+
+   S_tot = S_DS*DSM + S_GS*GSM + S_Neu*NeuSM + S_IMP*IMPSM + S_HCD*HCDSM 
+
+!!! Note, that contributions to all transport equations will be
+multiplied with the same value. For example: if
+ImpuritySourceMultiplier=3.0, then contibutions from impurity to Se, Sz
+and Qe will be multiplied with 3.0
+
+The fine tuning of of sources can be done through editing the XML code
+parameters of the source combiner actor:
+
+-  right click on the box ‘SOURCES and IMPURITY’
+-  select ‘Open actor’ to edit settings
+-  right click on the box ‘Source Combiner’
+-  select ‘Open actor’ to edit settings
+-  right click on the box ‘sourcecombiner’
+-  select ‘Configure actor’
+-  click ‘Edit Code Parameters’
+-  If you like the sources to the particular equation being activated -
+   select *from_input_CPOs*; if you select *OFF* contributions from all
+   sources to this channel will be nullified. For active channels you
+   can adjust multipliers for combining contributions from different
+   source modules (array of five space separated values is expected):
+
+   -  first position - Data Base sources;
+   -  second position – Gaussian sources;
+   -  third position – HCD sources;
+   -  fourth position – Neutral sources;
+   -  fifth position – Impurity sources.
+
+-  save and exit
+-  Commit
+
+   . _ETS_A_4.10a_inst_events:
+
+Instantaneous events
+--------------------
+
+At the moment, user can swith ON and OFF two types of events: PELLET and
+SAWTOOTH
+
+Pellet
+~~~~~~
+
+At the top level of the workflow you can configure times for pellet
+injection
+
+-  right click on the box ‘INSTANTANEOUS EVENTS’
+-  select ‘Configure actor’ to edit settings
+-  Select Pellet_injection ‘ON’ if you like to use pellet in your
+   simulation
+-  Select mode of operation: ‘specific’ - pellets will be shut at
+   specific times, you also need to specify array ‘times_pellet’
+
+   -  ‘specific’ - pellets will be shut at exact times specified in
+      array ‘times_pellet’
+   -  ‘frequency’ – pellets will be shut from ‘tstart_pellet’ until
+      ‘tend_pellet’ with a ’frequency_pellet’
+
+-  ‘frequency’ – pellets will be shut from ‘tstart_pellet’ until
+   ‘tend_pellet’ with a ’frequency_pellet’
+-  Commit
+
+Parameters of individual pellet need to be configured through the
+icode_parameters of the PELLET actor. To access it go to 'Outline' on
+the right upper corner and open the following:
+
+-  right click on the actor ‘PELLET’
+-  select ‘Configure actor’
+-  click ‘Edit Code Parameters’
+-  edit parameters and click ‘save and exit’
+-  Commit
+
+*amn* – atomic mass number: array of elements separated by space
+(1:nelements) [-]
+
+*zn* – nuclear charge: array of elements separated by space
+(1:nelements) [-]
+
+*fraction* – fraction of each element in the pellet, based on the number
+of atoms: array of elements separated by space (1:nelements) [-]
+
+*rpell* – radius of the pellet [m]
+
+*vpell* – velocity of the pellet [m/s]
+
+*rcloud* – radius of the pellet cloud [m], radial extension of the cloud
+= 2*rp0
+
+*lcloud* – length of the pellet cloud along the field line [m]
+
+*Tcloud* – temperature of the pellet cloud [eV]
+
+Pellet path is specified by two points, for which R and Z coordinated
+should be specified
+
+*R* – R coordinates of the pivot and second points of the pellet path,
+separated by space [m]
+
+*Z* – Z coordinates of the pivot and second points of the pellet path,
+separated by space [m]
+
+Control switches allow to activate:
+
+-  drifts
+   - YES - will activate radial displacement of deposition profile, same
+   for all path points
+-  cooling
+   - YES - will activate cooling of the other side of the plasma due to
+   parallel heat transport (essential for large pellets, which might
+   cross the same flux surface twice)
+-  JINTRAC
+   - YES - will provide temperature reduction consistent with the model
+   used in JETTO
+
+MHD
+~~~
+
+At the top level of the workflow you can switch ON/OFF possible MHD
+events
+
+-  right click on the box ‘INSTANTANEOUS EVENTS’
+-  select ‘Configure actor’ to edit settings
+-  Select SAWTOOTH ‘ON’ if you like to use them in your simulation
+-  Commit
+
+   .. _ETS_A_4.10a_visualization:
+
+Visualization during the run
+----------------------------
+
+There is a number tools visualizing the ETS run.
+
+Multiple Tab Display
+~~~~~~~~~~~~~~~~~~~~
+
+The display appeares automaticaly when the ETS workflow is launched. It
+displays diagnostic text messages from the workflow on following topics:
+
+-  Input data statement
+-  Iterations to check the initial convergence between EQUILIBRIUM and
+   CURRENT
+-  Time evolution
+-  Convergence of iteratinos within the time step
+-  IMP5HCD settings
+-  Power used by IMP5HCD actors durung the run
+
+Also the error messages from execution of the workflow will be displayed
+here.
+
+Python Visualization Display
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can activate the graphical visualization of your run evolution:
+
+-  right click on the box ‘Check Time & Save Slice’
+-  select ‘Configure actor’
+-  select visualisation ‘YES’ or ‘NO’
+-  Commit
+
+Then evolution of main discharge parameters will be shown in this
+window:
+
+
+
 .. _ETS_C_KEPLER:
 
+=====
 ETS_C
------
+=====
 
 The ETS workflow (IMP3-ACT1) is used for 1-D transport simulation of a
 tokamak core plasma.
@@ -1175,8 +2389,10 @@ Contact persons: `Vincent Basiuk <mailto:vincent.basiuk@cea.fr?subject=ETS%20in%
 
 .. _ets_status:
 
+
+==========
 ETS Status
-----------
+==========
 
 +-----------------------+-----------------------+-----------------------+
 | *Package Name /       |       ETS-A           |       ETS-C           |

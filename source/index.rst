@@ -9,12 +9,17 @@ Welcome to EUROfusion Integrated Modelling workflows's documentation!
 Contents:
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 6
 
    introduction
    infrastructure
    ets
+   edge
+   transport
+   averages
    codes
+   edrg
+   amns
 
 
              
