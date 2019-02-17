@@ -1,6 +1,6 @@
 ## Welcome to WPCD documentation transition Pages
 
-See tutorial at https://daler.github.io/sphinxdoc-test for tutorial how ReSTructured text can be created.
+See tutorial at [https://daler.github.io/sphinxdoc-test](https://daler.github.io/sphinxdoc-test) for tutorial how ReSTructured text can be created.
 
 For large documentation is important that generated docs serverd by separate repository.
 
