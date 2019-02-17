@@ -1,12 +1,32 @@
-# Makefile for Sphinx documentation
+# Makefile for Sphinx documentation and Git Large File Support
 #
 
 # You can set these variables from the command line.
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
-PAPER         = a4
+PAPER         = 
 BUILDDIR      = ../WPCD-Workflows.github.io
 
+# External data support for large files
+ifeq ("$(wildcard /marconi_work/eufus_gw/scratch)",\
+		 "/marconi_work/eufus_gw/scratch")
+  ASSETDIR ?= /marconi_work/eufus_gw/scratch/g2kosl/shared/assets/MD5
+  ASSETDIR_GROUP ?= g2itmdev
+else
+  ASSETDIR ?= ${HOME}/assets/MD5
+endif
+
+
+GITHUB_ASSETS_REPOSITORY ?= WPCD-Workflows/assets
+EXTERNALDATA ?= https://github.com/$(GITHUB_ASSETS_REPOSITORY)/blob/master
+HASHES := $(wildcard source/static/*.md5)
+
+ASSETS = $(HASHES:%.md5=%)
+
+# The shell in which to execute make rules.
+SHELL = /bin/sh
+
+ASSET_LINK ?= ln -sf
 
 # Internal variables.
 PAPEROPT_a4     = -D latex_paper_size=a4
@@ -15,8 +35,8 @@ ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) sou
 # the i18n builder cannot share the environment and doctrees with the others
 I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 
-.PHONY: help
-help:
+.PHONY: help help_assets
+help: 
 	@echo "Please use \`make <target>' where <target> is one of"
 	@echo "  html       to make standalone HTML files"
 	@echo "  dirhtml    to make HTML files named index.html in directories"
@@ -44,13 +64,14 @@ help:
 	@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
 	@echo "  coverage   to run coverage check of the documentation (if enabled)"
 	@echo "  dummy      to check syntax errors of document sources"
+	@echo "  help_assets to get a list of files available externaly"
 
 .PHONY: clean
 clean:
 	rm -rf $(BUILDDIR)/*
 
 .PHONY: html
-html:
+html: $(ASSETS)
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)."
@@ -128,7 +149,7 @@ epub3:
 	@echo "Build finished. The epub3 file is in $(BUILDDIR)/epub3."
 
 .PHONY: latex
-latex:
+latex: $(ASSETS)
 	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(BUILDDIR)/latex
 	@echo
 	@echo "Build finished; the LaTeX files are in $(BUILDDIR)/latex."
@@ -136,7 +157,7 @@ latex:
 	      "(use \`make latexpdf' here to do that automatically)."
 
 .PHONY: latexpdf
-latexpdf:
+latexpdf: $(ASSETS)
 	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(BUILDDIR)/latex
 	@echo "Running LaTeX files through pdflatex..."
 	$(MAKE) -C $(BUILDDIR)/latex all-pdf
@@ -225,35 +246,11 @@ dummy:
 	@echo
 	@echo "Build finished. Dummy builder generates no files."
 
-# Exetrnal data fupport for large files
-
-ifeq ("$(wildcard /afs/eufus.eu/shared/assets/documentation)",\
-		"/afs/eufus.eu/shared/assets/documentation")
-	ASSETDIR ?= /afs/eufus.eu/shared/assets/documentation/MD5
-	ASSETDIR_GROUP ?= eufus
-else
-	ASSETDIR ?= ${HOME}/assets/MD5
-endif
-#EXTERNALDATA = https://static.iter.org/imas/assets/smiter/MD5
-#EXTERNALDIR = /work/imas/shared/external/assets/smiter/MD5
-EXTERNALDATA ?= https://login.hpc.fs.uni-lj.si/assets/smiter/MD5
-EXTERNALDIR ?= viz.hpc.fs.uni-lj.si:/usr/share/nginx/html/assets/smiter/MD5/
-
-HASHES := $(wildcard ARCHIVES/*.md5)
-
-ASSETS = $(HASHES:%.md5=%)
-
-# The shell in which to execute make rules.
-SHELL = /bin/sh
-
-ASSET_LINK ?= ln -sf
 
 .PRECIOUS: %.md5-stamp
 .PHONY: help help_assets clean realclean assets publish all doc
 
 -include depend
-
-
 
 # If the asset already exist the we don't want to change its timestamp as
 # this may impact other's (re)builds. Therefore MD5 and timestamps needs
@@ -270,13 +267,13 @@ ASSET_LINK ?= ln -sf
 
 
 $(ASSETDIR)/% :
-ifeq ($(ASSETDIR_GROUP),)
-	test -d $(ASSETDIR) || mkdir -m 3775 -p $(ASSETDIR)
-else
-	test -d $(ASSETDIR) || mkdir -m 3775 -g $(ASSETDIR_GROUP) \
-				-p $(ASSETDIR)
-endif
-	curl --fail --output $(ASSETDIR)/$(@F) $(EXTERNALDATA)/$(@F)
+	if ! test -d $(ASSETDIR); \
+	   then mkdir -m 3775 -p $(ASSETDIR); \
+	   if test "x$(ASSETDIR_GROUP)" != "x"; \
+	        then chgrp $(ASSETDIR_GROUP) $(ASSETDIR); \
+	   fi; \
+	fi
+	curl --fail --insecure --output $(ASSETDIR)/$(@F) $(EXTERNALDATA)/$(@F)
 	chmod g+w $(ASSETDIR)/$(@F)
 
 depend: $(HASHES)
@@ -294,3 +291,47 @@ clean-assets:
 # Do not use unless really necessary
 realclean: clean-assets
 	rm -rf $(ASSETDIR) SMITER/doc/_build
+
+# calls: PUT /repos/:owner/:repo/contents/:path
+# See http://developer.github.com/v3/repos/contents#create-a-file
+publish:
+	@for file in $(wildcard $(asset)); do if test -f "$${file}" ; then \
+	  md5=$$(md5sum $${file} | cut -c 1-32);\
+	  echo "$${md5}" > $${file}.md5; repo=$(GITHUB_ASSETS_REPOSITORY);\
+	  url="https://api.github.com/repos/$${repo}/contents/$${md5}";\
+	  base64content=$$(base64 --wrap=0 $${file});\
+	  message="{\"content\": \"$${base64content}\",\
+		    \"message\": \"$${file} uploaded by $${USER}\"}";\
+	  echo "Publishing asset $${file} to github $${repo} as $${md5}";\
+	  http_code=$$(echo "$${message}" | curl -X PUT --data @- "$${url}" \
+	   -o /dev/null -w "%{http_code}" -H "Content-Type: application/json" \
+	   -H "Authorization: token 774b49f66d95d3ea6629a62bd5c8c847b8389f3e");\
+	  if [ $$? != 0 -o $${http_code} != 201 ]; then \
+	     echo "Error: curl status=$$? http_code=$${http_code}"; \
+	  else \
+	     rm -f $${file};\
+	     git add $${file}.md5 ;\
+	  fi; \
+	else \
+	  echo "Missing argument asset='path.to.your.large.file(s)'";\
+	fi; done
+
+# The following target is for Makefile debugging
+# Example: make query-ASSETS
+query-%:
+	@echo $($(*))
+
+help_assets :
+	@echo
+	@echo "The following assets are available:"
+	@echo
+	@for f in $(ASSETS) ; do \
+		echo "    make $${f}"; \
+	done
+	@echo
+	@echo "You can publish file(s) with: "
+	@echo
+	@echo "    make publish asset=path.to.your.tar.gz"
+	@echo " or make publish asset='path/*.png'"
+	@echo
+
