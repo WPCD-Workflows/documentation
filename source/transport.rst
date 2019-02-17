@@ -50,54 +50,73 @@ Particle Flux as an Example
 ---------------------------
 
 The mean field equation governing particle balance is the transport
-equation for electrons, \\( {\partial\over\partial t}\langle n\rangle +
-\\langle \\vec\nabla\cdot\widetilde n\vec{\widetilde v}_E\rangle = S \\)
-in which the tilde symbol over the n and v denotes fluctuating
-quantities and we neglect all transport processes except ExB eddy
-diffusion. The ExB velocity is given by \\( \\vec v_E = {c\over B^2}\vec
-B\times\vec\nabla\phi \\) where \\( \\phi \\) is the electrostatic
-potential.
+equation for electrons,
+
+.. math::
+   
+   {\partial \over \partial t} \langle n \rangle + \langle \vec \nabla \cdot \widetilde n \vec {\widetilde v}_E \rangle = S
+  
+in which the tilde symbol over the n and v denotes fluctuating quantities
+and we neglect all transport processes except ExB eddy diffusion. The ExB
+velocity is given by
+
+.. math::
+   
+   \vec v_E = {c \over B^2} \vec B \times \vec \nabla \phi
+
+where \\( \\phi \\) is the electrostatic potential.
 
 The angle brackets denote the flux surface average, and we will use the
 property that the flux surface average of a divergence of a vector is
 the volume derivative of the flux surface average of a contravariant
-volume component of the vector, in this case \\(
-\\langle\vec\nabla\cdot\vec\Gamma\rangle = {\partial\over\partial V}
-\\langle\Gamma^V\rangle \\) where \\( \\Gamma \\) is the particle flux
-whose flux-surface averaged volume component is \\(
-\\langle\Gamma^V\rangle = \\langle\widetilde n\widetilde v_E^V\rangle
-\\)
+volume component of the vector, in this case
+
+.. math::
+
+   \langle \vec \nabla \cdot \vec \Gamma \rangle = {\partial \over \partial V} \langle \Gamma^V \rangle
+
+where \\( \\Gamma \\) is the particle flux whose flux-surface averaged volume component is
+
+.. math::
+
+   \langle \Gamma^V \rangle = \langle \widetilde n \widetilde v_E^V \rangle
 
 This is converted to expression in terms of the radial coordinate \\(
 \\rho \\) using the fact that both \\( V \\) and \\( \\rho \\) are flux
-quantities whose gradients are parallel to each other. We have \\(
-{\partial\over\partial V} = {1\over V'_\rho}{\partial\over\partial\rho}
-\\qquad \\Gamma^\rho = {1\over V'_\rho}\Gamma^V \\qquad V'_\rho =
-{\partial V\over\partial\rho} \\qquad g^{VV} = (V'_\rho)^2 g^{\rho\rho}
-\\) so we can write the transport equation as \\( {\partial
-n\over\partial t}+{1\over V'_\rho}{\partial\over\partial\rho}
-V'_\rho\langle\Gamma^\rho\rangle = S, \\) where we have replaced \\(
-\\langle n\rangle \\) with \\( n \\) following the assumptions of the
-1-D version of mean field transport theory.
+quantities whose gradients are parallel to each other. We have
+
+.. math::
+   {\partial \over \partial V} = {1 \over V'_\rho}{\partial \over \partial \rho}\qquad \Gamma^\rho = {1\over V'_\rho}\Gamma^V \qquad V'_\rho = {\partial V \over\partial \rho} \qquad g^{VV} = (V'_\rho)^2 g^{\rho\rho}
+
+so we can write the transport equation as
+
+.. math::
+   
+   {\partial n \over \partial t}+{1 \over V'_\rho}{\partial \over \partial \rho}V'_\rho \langle \Gamma^\rho \rangle = S,
+
+where we have replaced \\( \\langle n \\rangle \\) with \\( n \\) following the assumptions of the 1-D version of mean field transport theory.
 
 With all quantities now expressed in terms of flux quantities, we are
-free to characterise the transport flux \\( \\langle\Gamma^\rho\rangle
+free to characterise the transport flux \\( \\langle \\Gamma^\\rho \\rangle
 \\) in an arbitrary way, so long as only flux quantities appear. The
 flux expansion within the flux surface as well as expansion or
 contraction of surfaces of constant \\( \\rho \\) is treated using the
-metric coefficient \\( g^{\rho\rho} \\) which is dimensionless. This way
+metric coefficient \\( g^{ \\rho \\rho} \\) which is dimensionless. This way
 we can characterise transport in terms of an effective diffusivity and
 an effective frictional slip velocity which are given in SI units. By
-convention both of these are done solely via \\( g^{\rho\rho} \\) for
+convention both of these are done solely via \\( g^{ \\rho \\rho} \\) for
 convenience, also reflecting that the effective velocity is actually
 marking off-diagonal diffusive elements. Our convention for this follows
-the ETS code and is given by \\( \\langle\Gamma^\rho\rangle = \\langle
-g^{\rho\rho}\rangle \\left( n V_{{\rm eff}} - D_{{\rm eff}}{\partial
-n\over\partial\rho} \\right) \\) So despite the special spatial
-distribution of any particular transport process (ie, the underlying
-instability or nonlinear free energy access), the flux-surface averaged
-flux itself and its expression in terms of diffusion and frictional slip
-are identical characterisations.
+the ETS code and is given by
+
+.. math::
+   
+   \langle \Gamma^\rho \rangle = \langle g^{\rho \rho} \rangle \left( n V_{{\rm eff}} - D_{{\rm eff}}{\partial n\over \partial \rho} \right) 
+
+So despite the special spatial distribution of any particular transport
+process (ie, the underlying instability or nonlinear free energy access),
+the flux-surface averaged flux itself and its expression in terms of
+diffusion and frictional slip are identical characterisations.
 
 Metric Coefficients
 -------------------
@@ -105,14 +124,14 @@ Metric Coefficients
 Transport modellers want the Ds and Vs as physical quantities in SI
 units. In general the fluxes are (magnetic) flux surface averaged
 quantities, which implies the existence of metric elements in the
-conversion. In our case we need \\( \\langle g^{\rho\rho}\rangle \\)
+conversion. In our case we need \\( \\langle g^{\\rho \\rho} \\rangle \\)
 where \\( \\rho \\) is the toroidal flux radius in meters, so the metric
 elements are dimensionless. In the equilibrium CPO, this is gm3 under
 equilibrium%profiles_1d in the structure.
 
 Note this is different from the ASTRA code which casts the Vs as proper
 velocities, i.e., with one factor of grad-rho given by \\( \\langle
-\\sqrt{g^{\rho\rho}} \\rangle \\) which is gm7 under
+\\sqrt{g^{\\rho \\rho}} \\rangle \\) which is gm7 under
 equilibrium%profiles_1d in the structure. The units are the same and the
 informational content is the same, but this difference has to be taken
 into account in any transport modelling and benchmarking.
@@ -120,41 +139,59 @@ into account in any transport modelling and benchmarking.
 Heat Fluxes
 -----------
 
-The heat flux is treated in a similar way, with transport equation \\(
-{3\over 2}{\partial p_e\over\partial t} +{1\over
-V'_\rho}{\partial\over\partial\rho} V'_\rho\langle q_e^\rho\rangle = Q_e
-+ \\sum_{{\rm ions}}T_{ei}, \\) for electrons, with \\( T_{ei} \\)
-giving the species transfer and \\( Q_e \\) the source. For ExB
-transport the heat flux has a advective (also called convective) and a
-conductive piece given by \\( q_E = q_E{}_{{\rm cond}} + (3/2) T\Gamma_E
-\\) which appears with a 3/2 due to the Poynting cancellation. For
-magnetic flutter transport the advective piece appears with the usual
-factor, \\( q_m = q_m{}_{{\rm cond}} + (5/2) T\Gamma_m \\) Here the
-forms are given for each species and \\( E \\) and \\( m \\) refer to
-the ExB eddy and magnetic flutter channels, respectively. For reasons
-given below we are neglecting the magnetic flutter piece \\( \\Gamma_m
-\\) for the time being, and then the flutter piece merely adds to the
-heat diffusivity.
+The heat flux is treated in a similar way, with transport equation
 
-The forms of these due to the fluctuations are then \\( \\langle
-q^\rho\rangle = (3/2)\langle\widetilde p\widetilde v_E^\rho\rangle +
-\\langle\widetilde q_\parallel \\widetilde b^\rho\rangle \\) which
-breaks into advective and conductive pieces according to linearisation
-of the pressure fluctuations \\( \\langle q_{{\rm cond}}^\rho\rangle =
-(3/2) n\langle\widetilde T\widetilde v_E^\rho\rangle +
-\\langle\widetilde q_\parallel \\widetilde b^\rho\rangle \\qquad\qquad
-\\langle q_{{\rm adv}}^\rho\rangle = (3/2)T\Gamma = (3/2)
-T\langle\widetilde n\widetilde v_E^\rho\rangle \\) hence the density
-fluctuation piece is accounted for by the particle flux. Neglect of the
-magnetic flutter advective piece (and particle flux) is the same as
-neglect of the \\( \\widetilde u_\parallel \\widetilde b^\rho \\)
-nonlinearity (in the delivery of the results, not in the turbulence
+.. math::
+   
+   {3 \over 2}{\partial p_e \over \partial t} +{1 \over V'_\rho}{\partial \over \partial \rho} V'_\rho \langle q_e^\rho \rangle = Q_e + \sum_{{\rm ions}}T_{ei},
+
+for electrons, with \\( T_{ei} \\) giving the species transfer and \\( Q_e
+\\) the source. For ExB transport the heat flux has a advective (also
+called convective) and a conductive piece given by
+
+.. math::
+   
+   q_E = q_E{}_{{\rm cond}} + (3/2) T \Gamma_E
+
+which appears with a 3/2 due to the Poynting cancellation. For
+magnetic flutter transport the advective piece appears with the usual
+factor,
+
+.. math::
+   
+   q_m = q_m{}_{{\rm cond}} + (5/2) T \Gamma_m
+
+Here the forms are given for each species and \\( E \\) and \\( m \\) refer
+to the ExB eddy and magnetic flutter channels, respectively. For reasons
+given below we are neglecting the magnetic flutter piece \\( \\Gamma_m \\)
+for the time being, and then the flutter piece merely adds to the heat
+diffusivity.
+
+The forms of these due to the fluctuations are then
+
+.. math::
+   
+   \langle q^\rho \rangle = (3/2) \langle \widetilde p \widetilde v_E^\rho \rangle + \langle \widetilde q_\parallel \widetilde b^\rho \rangle
+
+which breaks into advective and conductive pieces according to linearisation
+of the pressure fluctuations
+
+.. math::
+
+   \langle q_{{\rm cond}}^\rho\rangle = (3/2) n \langle \widetilde T \widetilde v_E^\rho\rangle + \langle \widetilde q_\parallel \widetilde b^\rho\rangle \qquad\qquad \langle q_{{\rm adv}}^\rho \rangle = (3/2)T \Gamma = (3/2)T\langle\widetilde n \widetilde v_E^\rho \rangle
+
+hence the density fluctuation piece is accounted for by the particle flux.
+Neglect of the magnetic flutter advective piece (and particle flux) is the
+same as neglect of the \\( {\\widetilde \u_\\parallel} {\\widetilde \b^ \\rho} \\) nonlinearity (in the delivery of the results, not in the turbulence
 computations themselves).
 
-The total conductive flux is then represented by \\( \\langle q_{{\rm
-cond}}^\rho\rangle = \\langle g^{\rho\rho}\rangle \\left( nT Y_{{\rm
-eff}} - n\chi_{{\rm eff}}{\partial T\over\partial\rho} \\right) \\) with
-\\( \\chi \\) and \\( Y \\) giving the heat diffusion and frictional
+The total conductive flux is then represented by
+
+.. math::
+   
+   \langle q_{{\rm cond}}^\rho \rangle = \langle g^{\rho \rho} \rangle \left( nTY_{{\rm eff}} - n \chi_{{\rm eff}}{\partial T \over \partial \rho} \right)
+
+with \\( \\chi \\) and \\( Y \\) giving the heat diffusion and frictional
 slip pieces for each species, respectively (these are in diff_eff and
 vconv_eff in the CPO for each quantity).
 
@@ -185,13 +222,14 @@ set of rules to provide this.
 
 Considering the particle and heat transport fluxes for a given species,
 we convert the gradient in to a logarithmic derivative and express the
-flux in terms of a specific flux, which has units of velocity, \\( F =
-{1\over n} \\langle g^{\rho\rho}\rangle^{-1} \\langle\Gamma^\rho\rangle
-= V_{{\rm eff}} - D_{{\rm eff}}{\partial\log n\over\partial\rho} \\\\ G
-= {1\over nT} \\langle g^{\rho\rho}\rangle^{-1} \\langle q^\rho_{{\rm
-cond}}\rangle = Y_{{\rm eff}} - \\chi_{{\rm eff}}{\partial\log
-T\over\partial\rho} \\) wherein the conductive part of the heat flux
-(without the \\( 3\Gamma/2 \\)) enters.
+flux in terms of a specific flux, which has units of velocity,
+
+.. math::
+   
+   F &= {1 \over n} \langle g^{\rho\rho}\rangle^{-1} \langle \Gamma^\rho \rangle= V_{{\rm eff}} - D_{{\rm eff}}{\partial \log n \over \partial \rho}
+   \\G &= {1 \over nT} \langle g^{\rho \rho} \rangle^{-1} \langle q^\rho_{{\rm cond}}\rangle = Y_{{\rm eff}} - \chi_{{\rm eff}}{\partial \log T \over \partial \rho} 
+
+wherein the conductive part of the heat flux (without the \\( 3 \\Gamma / 2 \\) enters.
 
 The choice of what to do with the Ds and Vs is somewhat arbitrary. The
 needs of implicit transport solvers is for a positive D regardless of
@@ -222,20 +260,16 @@ the specific heat flux will be the larger, and hence the familiar
 situation is that of a D and V for the particle flux but a D (the chi)
 only for the conductive heat flux.
 
-The full algorithm starting with the specific fluxes appears as \\(
-L_n^{-1} = \\max\left( {1\over R}\\ ,\\ \\left\vert {\partial\log n\over
-\\partial\rho} \\right\vert \\right) \\qquad\qquad L_T^{-1} =
-\\max\left( {1\over R}\\ ,\\ \\left\vert {\partial\log T\over
-\\partial\rho} \\right\vert \\right) \\\\ D' = \\left\vert F\right\vert
-L_n \\qquad\qquad \\chi' = \\left\vert G\right\vert L_T \\\\ D =
-\\max\left( D'\, ,\\ {1\over 5}\chi' \\right) \\qquad\qquad \\chi =
-\\max\left( \\chi'\, ,\\ {1\over 5}D' \\right) \\\\ V = \\left( F + D
-{\partial\log n\over\partial\rho}\right) \\qquad\qquad Y = \\left( G +
-\\chi {\partial\log T\over\partial\rho}\right) \\) and all four elements
-are set. Note that the channels are done in parallel except for the
-Prandtl correction, in which the Max's are taken sequentially. For the
-provisional diffusivities, absolute values are used to ensure positive
-values which are needed by transport solvers.
+The full algorithm starting with the specific fluxes appears as
+
+.. math::
+   
+   L_n^{-1} = \max \left( {1 \over R}, \left \vert {\partial \log n \over \partial \rho} \right \vert \right) \qquad \qquad L_T^{-1} = \max \left( {1 \over R},\left \vert {\partial \log T \over \partial \rho} \right \vert \right) \\ \\ D' =\left \vert F \right \vert L_n \qquad \qquad \chi' = \left \vert G \right \vert L_T \\ \\ D = \max \left( D', {1\over 5} \chi' \right) \qquad \qquad \chi = \max\left ( \chi', {1 \over 5} D' \right) \\ \\ V = \left( F + D {\partial \log n \over \partial \rho} \right) \qquad \qquad Y = \left( G + \chi {\partial \log T \over \partial \rho} \right)
+
+and all four elements are set. Note that the channels are done in parallel
+except for the Prandtl correction, in which the Max's are taken
+sequentially. For the provisional diffusivities, absolute values are used
+to ensure positive values which are needed by transport solvers.
 
 Note how in the end the actual gradients are used. If the gradients are
 moderate then their actual values are used, and if the Prandtl
@@ -267,30 +301,32 @@ velocity advects all species equally. So we correct the particle fluxes
 by assuming the electrons determine the D according to the above
 procedure and then (1) the fluctuations in the flux-inducing part of the
 spectrum for the logarithmic densities are the same, and (2) the D's are
-the same. Then the V's are solved for again, by taking \\( D_z = D_e = D
-\\qquad\qquad V_z = V_e + D {\partial\log b_z\over\partial\rho}
-\\qquad\qquad b_z = n_z/n_e \\) This is better than the transport
-modelling convention but will give them the same information in a
-different way, and they will compute ambipolar particle fluxes (radial
-transport of charge is zero).
+the same. Then the V's are solved for again, by taking
+
+.. math::
+   
+   D_z = D_e = D \qquad \qquad V_z = V_e + D {\partial \log b_z \over \partial \rho} \qquad \qquad b_z = n_z/n_e
+
+This is better than the transport modelling convention but will give them
+the same information in a different way, and they will compute ambipolar
+particle fluxes (radial transport of charge is zero).
 
 Statistical Character
 ---------------------
 
 Turbulence has a statistical character, so convergence to a mean is not
 monotonic and when within one std dev of the mean there is no further
-convergence. The diffusivity for ExB turbulence is comparable to \\( D_E
-= \\left. \\langle (\widetilde v_E)^2 \\rangle \\right / \\langle
-(\varpi)^2 \\rangle^{1/2} \\qquad\qquad \\varpi_E = {c\over
-B}\nabla_\perp^2\widetilde\phi \\) where \\( \\varpi_E \\) is the ExB
-vorticity fluctuation, and these angle brackets denote the ensemble
-average. To get an ensemble average over a statistical quantity in
-practice, one must do some sort of finite-time running averaging.
+convergence. The diffusivity for ExB turbulence is comparable to
+
+.. math::
+   
+   D_E = \left. \langle (\widetilde v_E)^2 \rangle \right / \langle (\varpi)^2 \rangle^{1/2} \qquad \qquad \varpi_E = {c \over B} \nabla_\perp^2 \widetilde \phi
+
+where \\( \\varpi_E \\) is the ExB vorticity fluctuation, and these angle
+brackets denote the ensemble average. To get an ensemble average over a
+statistical quantity in practice, one must do some sort of finite-time
+running averaging.
 
 For transport modelling, the transport coefficients derived from a
 turbulence code should always be given in terms of `running exponential
 averages. <#imp4_averages>`__
-
-A HOWTO for loading the coretransp CPO is `given
-here. <#imp4_coretransp>`__
-

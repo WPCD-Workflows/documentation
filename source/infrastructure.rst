@@ -323,31 +323,36 @@ Module write_structures
 This Fortran90 module can be used to write EU-IM data structures including
 entire CPOs to disk.
 The corresponding file is opened with
-::
+
+.. code-block:: fortran
 
      call open_write_file(unit_no, file_name)
 
 where unit_no is the file handle (integer) and file_name a string with
 the file name (possibly including the path).
 The file is closed with
-::
+
+.. code-block:: fortran
 
      call close_write_file
 
 Add the following use statement to your code:
-::
+
+.. code-block:: fortran
 
      use write_structures
 
 The Fortran syntax for writing a cpo to disk is then:
-::
+
+.. code-block:: fortran
 
      call write_cpo(cpo, "name of cpo")
 
 where cpo is a single time slice or an array of a CPO (or other EU-IM data
 structure) and "name of cpo" is a string containing the name of the CPO.
 With
-::
+
+.. code-block:: fortran
 
       call set_write_verbosity(verbosity)
 
@@ -361,7 +366,8 @@ project
 itmshared
 .
 Check it out with
-::
+
+.. code-block:: console
 
    svn checkout https://gforge6.eufus.eu/svn/itmshared/branches/tools target_dir
 
@@ -374,24 +380,27 @@ Module read_structures
 This Fortran90 module can be used to read EU-IM data structures including
 entire CPOs from disk.
 The corresponding file is opened with
-::
+
+.. code-block:: fortran
 
      call open_read_file(unit_no, file_name)
 
 where unit_no is the file handle (integer) and file_name a string with
 the file name (possibly including the path).
 The file is closed with
-::
+
+.. code-block:: fortran
 
      call close_read_file
 
 Add the following use statement to your code:
-::
+
+.. code-block:: fortran
 
      use read_structures
 
 The Fortran syntax for reading a cpo from disk is then:
-::
+
 
      call read_cpo(cpo, "name of cpo")
 
@@ -402,7 +411,8 @@ and allocates all required fields automatically. It is absolutely
 essential that "name of cpo" is identical with the one chosen when the
 cpo was written.
 With
-::
+
+.. code-block:: fortran
 
       call set_read_verbosity(verbosity)
 
@@ -416,7 +426,8 @@ project
 itmshared
 .
 Check it out with
-::
+
+.. code-block:: console
 
    svn checkout https://gforge6.eufus.eu/svn/itmshared/branches/tools target_dir
 
@@ -440,14 +451,16 @@ for the analysis and evalutation of the differences between the two
 CPOs. A call to diff_cpo simply writes out the result of this user
 defined function.
 Add the following use statements to your code:
-::
+
+.. code-block:: fortran
 
    use diff_structures
    use error_analysis
 
 The Fortran syntax for calculating the differences between two cpos is
 then:
-::
+
+.. code-block:: fortran
 
      call diff_cpo(reference_cpo, test_cpo, name_root, func)
 
@@ -470,24 +483,29 @@ user defined function with the following constraints:
    because of Fortran90/95 limitations. The actual error analysis is
    carried out inside the overloaded functions. Two fields of these
    functions are intent(inout) variables:
-   ::
 
+   
+.. code-block:: fortran
+                
       diff_counter : to count the number of difference
       error_level  : to allow for sums or averages over entire CPOs (see examples)
 
    These two variables are private to the error_analysis module.
    To access them please use the functions
-   ::
-
+   
+.. code-block:: fortran
+   
         get_diff_counter()
 
    and
-   ::
+   
+   .. code-block:: fortran
 
         get_error_level()
 
    The function
-   ::
+   
+   .. code-block:: fortran
 
         set_error_level(err_level)
 
@@ -496,7 +514,8 @@ user defined function with the following constraints:
    .
 
 With
-::
+
+.. code-block:: fortran
 
       call set_diff_verbosity(verbosity)
 
@@ -507,7 +526,9 @@ two equilibrium CPOs one of which is used as a reference for test cases in
 code development. It clearly demonstrates the use of the diff_structures
 module. The module diff_structures.f90 and the auxiliary file
 error_analysis.f90 and check_equilibrium.f90 are hosted by the Gforge
-project itmshared . Check them out with ::
+project itmshared . Check them out with
+
+.. code-block:: console
 
    svn checkout https://gforge6.eufus.eu/svn/itmshared/branches/tools target_dir
 
