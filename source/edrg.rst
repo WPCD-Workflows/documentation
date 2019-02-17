@@ -73,19 +73,19 @@ MD content on dataversions
 +-----------------+-----------------+-----------------+-----------------+
 | 4.07b           | 4.08a           | 4.08b           | 4.09a           |
 +=================+=================+=================+=================+
-| antennas,       | antennas,       | antennas,       | antennas,       |
-| interfdiag,     | ecediag,        | ecediag,        | ecediag,        |
-| ironmodel,      | interfdiag,     | interfdiag,     | fusiondiag,     |
-| limiter,        | ironmodel,      | ironmodel,      | interfdiag,     |
-| magdiag,        | limiter,        | limiter,        | ironmodel,      |
-| msediag,        | magdiag,        | magdiag,        | langmuirdiag,   |
-| pfsystems,      | msediag,        | msediag, nbi,   | limiter,        |
-| polardiag,      | pfsystems,      | pfsystems,      | magdiag,        |
-| toroidfield,    | polardiag,      | polardiag,      | msediag, nbi,   |
-| vessel          | reference,      | toroidfield,    | pfsystems,      |
-|                 | toroidfield,    | tsdiag, vessel  | polardiag,      |
-|                 | tsdiag, vessel  |                 | toroidfield,    |
-|                 |                 |                 | tsdiag, vessel  |
+| | antennas,     | | antennas,     | | antennas,     | | antennas,     |
+|   interfdiag,   |   ecediag,      |   ecediag,      |   ecediag,      |
+| | ironmodel,    | | interfdiag,   | | interfdiag,   | | fusiondiag,   |
+|   limiter,      |   ironmodel,    |   ironmodel,    |   interfdiag,   |
+| | magdiag,      | | limiter,      | | limiter,      | | ironmodel,    |
+|   msediag,      |   magdiag,      |   magdiag,      |   langmuirdiag, |
+| | pfsystems,    | | msediag,      | | msediag, nbi, | | limiter,      |
+|   polardiag,    |   pfsystems,    |   pfsystems,    |   magdiag,      |
+| | toroidfield,  | | polardiag,    | | polardiag,    | | msediag, nbi, |
+|   vessel        |   reference,    |   toroidfield,  |   pfsystems,    |
+|                 | | toroidfield,  | | tsdiag,       | | polardiag,    |
+|                 |   tsdiag,       |   vessel        |   toroidfield,  |
+|                 | | vessel        |                 | | tsdiag, vessel|
 +-----------------+-----------------+-----------------+-----------------+
 
 Tutorial and specific information on some CPOs
@@ -149,30 +149,30 @@ DM content on dataversions
 +-----------------+-----------------+-----------------+-----------------+
 | 4.07b           | 4.08a           | 4.08b           | 4.09a           |
 +=================+=================+=================+=================+
-| antennas,       | antennas,       | antennas,       | antennas,       |
-| interfdiag,     | cxdiag,         | cxdiag,         | cxdiag,         |
-| ironmodel,      | ecediag,        | ecediag,        | ecediag,        |
-| magdiag,        | interfdiag,     | interfdiag,     | fusiondiag,     |
-| msediag,        | ironmodel,      | ironmodel,      | interfdiag,     |
-| pfsystems,      | magdiag,        | magdiag,        | ironmodel,      |
-| polardiag,      | msediag, nbi,   | msediag, nbi,   | langmuirdiag,   |
-| toroidfield     | pfsystems,      | pfsystems,      | magdiag,        |
-|                 | polardiag,      | polardiag,      | msediag, nbi,   |
-|                 | toroidfield,    | toroidfield,    | pfsystems,      |
-|                 | tsdiag,         | tsdiag,         | polardiag,      |
-|                 | coredelta,      | coredelta,      | toroidfield,    |
-|                 | coreprof,       | coreprof,       | tsdiag,         |
-|                 | coretransp,     | coretransp,     | coredelta,      |
-|                 | distribution,   | distribution,   | coreprof,       |
-|                 | distsource,     | distsource,     | coretransp,     |
-|                 | equilibrium,    | equilibrium,    | distribution,   |
-|                 | neoclassical,   | neoclassical,   | distsource,     |
-|                 | sawteeth,       | sawteeth,       | equilibrium,    |
-|                 | scenario, waves | scenario,       | neoclassical,   |
-|                 |                 | turbulence,     | sawteeth,       |
-|                 |                 | waves           | scenario,       |
-|                 |                 |                 | turbulence,     |
-|                 |                 |                 | waves           |
+| | antennas,     | | antennas,     | | antennas,     | | antennas,     |
+|   interfdiag,   |   cxdiag,       |   cxdiag,       |   cxdiag,       |
+| | ironmodel,    | | ecediag,      | | ecediag,      | | ecediag,      |
+|   magdiag,      |   interfdiag,   |   interfdiag,   |   fusiondiag,   |
+| | msediag,      | | ironmodel,    | | ironmodel,    | | interfdiag,   |
+|   pfsystems,    |   magdiag,      |   magdiag,      |   ironmodel,    |
+| | polardiag,    | | msediag, nbi, | | msediag, nbi, | | langmuirdiag, |
+|   toroidfield   |   pfsystems,    |   pfsystems,    |   magdiag,      |
+|                 | | polardiag,    | | polardiag,    | | msediag, nbi, |
+|                 |   toroidfield,  |   toroidfield,  |   pfsystems,    |
+|                 | | tsdiag,       | | tsdiag,       | | polardiag,    |
+|                 |   coredelta,    |   coredelta,    |   toroidfield,  |
+|                 | | coreprof,     | | coreprof,     | | tsdiag,       |
+|                 |   coretransp,   |   coretransp,   |   coredelta,    |
+|                 | | distribution, | | distribution, | | coreprof,     |
+|                 |   distsource,   |   distsource,   |   coretransp,   |
+|                 | | equilibrium,  | | equilibrium,  | | distribution, |
+|                 |   neoclassical, |   neoclassical, |   distsource,   |
+|                 | | sawteeth,     | | sawteeth,     | | equilibrium,  |
+|                 |   scenario,     |   scenario,     |   neoclassical, |
+|                 | | waves         | | turbulence,   | | sawteeth,     |
+|                 |                 |   waves         |   scenario,     |
+|                 |                 |                 | | turbulence,   |
+|                 |                 |                 |   waves         |
 +-----------------+-----------------+-----------------+-----------------+
 
 Tutorial on data mappings
