@@ -1703,10 +1703,11 @@ Events actors
 |                    |                   |                 | | therefore this result should be considered |
 |                    |                   |                 | | with caution. The growth rate limit can be |
 |                    |                   |                 | | set via an input of the actor. Limit value |
-|                    |                   |                 | | is set to $$10^12$$ particle per second by |
-|                    |                   |                 | | default. (This growth rate generates a     |
-|                    |                   |                 | | runaway current of approximately 1kA       |
-|                    |                   |                 | | considering a 10 seconds long discharge.)  |
+|                    |                   |                 | | is set to \\( 10^{12} \\) particle per     |
+|                    |                   |                 | | second by default. (This growth rate       |
+|                    |                   |                 | | generatesa runaway current of approximately|
+|                    |                   |                 | | 1kA considering a 10 seconds long          |
+|                    |                   |                 | | discharge.)                                | 
 +--------------------+-------------------+-----------------+----------------------------------------------+
 
 
