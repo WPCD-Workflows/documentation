@@ -194,30 +194,30 @@ Gforge
 
 .. _machineDescriptionDatabase_documentation:
 
-Machine Description Database
-----------------------------
+.. Machine Description Database
+.. ----------------------------
 
-UNDER CONSTRUCTION!
+.. UNDER CONSTRUCTION!
 
-ITER
-~~~~
+.. ITER
+.. ~~~~
 
-JT60SA
-~~~~~~
+.. JT60SA
+.. ~~~~~~
 
-JET
-~~~
+.. JET
+.. ~~~
 
-TS
-~~
+.. TS
+.. ~~
 
-AUG
-~~~
+.. AUG
+.. ~~~
 
-TCV
-~~~
+.. TCV
+.. ~~~
 
-FTU
-~~~
+.. FTU
+.. ~~~
 
 

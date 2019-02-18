@@ -832,20 +832,18 @@ the poloidal angle are listed below:
 | Integer     | String Value       | Description                         |
 | Values      |                    |                                     |
 +=============+====================+=====================================+
-| 1           | straight field     | | straight field line angle \\(     |
-|             | line               |   \\theta \\) as defined in         |
-|             |                    |   `Straight Field Line              |
-|             |                    | | Coordinates <#itm_straight_field_ |
-|             |                    |  line>`__                           |
+| 1           | straight field     |   straight field line angle         |
+|             | line               |   \\( \\theta \\) as defined in     |
+|             |                    |   Straight Field Line Coordinates   |
 +-------------+--------------------+-------------------------------------+
-| 2           | equal arc          | | Poloidal angle \\( \\theta \\)    |
-|             |                    | | defined by equal arc lengths      |
-|             |                    | | along flux surfaces               |
+| 2           | equal arc          |   Poloidal angle \\( \\theta \\)    |
+|             |                    |   defined by equal arc lengths      |
+|             |                    |   along flux surfaces               |
 +-------------+--------------------+-------------------------------------+
-| 3           | polar              | | Poloidal angle \\( \\theta \\) in |
-|             |                    | | toroidal coordinates as defined   |
-|             |                    | | in `Coordinate                    |
-|             |                    |   System <#itm_coordinate_system>`__|
+| 3           | polar              |   Poloidal angle \\( \\theta \\) in |
+|             |                    |   toroidal coordinates as defined   |
+|             |                    |   in  Coordinate                    |
+|             |                    |   System                            |
 +-------------+--------------------+-------------------------------------+
 
 .. _itm_conventions_plasma_bundle:
