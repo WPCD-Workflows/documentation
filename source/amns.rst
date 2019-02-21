@@ -666,6 +666,19 @@ view can be browsed here
 We are currently considering a revision of the AMNS data structure that
 makes use of arrays-of-structures (not available earlier)
 
-At the top level we would have with the definition of tables and the
-tables of coordinates
+At the top level we would have
 
+.. figure:: images/amns_1.png
+   :align: center         
+
+with the definition of tables
+
+.. figure:: images/amns_2.png
+   :align: center 
+
+
+
+and the tables of coordinates
+
+.. figure:: images/amns_3.png
+   :align: center 

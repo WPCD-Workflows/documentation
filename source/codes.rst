@@ -59,7 +59,7 @@ Adapt your C++ function
 
 You must include the header file UALClasses.h:
 
-::
+.. code-block:: console
 
    #include "UALClasses.h"
 
@@ -67,8 +67,8 @@ The function arguments that are arrays or strings must be declared as
 pointers, as usual. All other arguments must be passed by reference
 (i.e. they must be declared with an ampersand):
 
-::
-
+.. code-block:: console
+                
    void mycppfunction(double * vector, char * string, int & scalar)
 
 The function arguments that are CPOs must be declared with types
@@ -78,7 +78,7 @@ latter is for a complete time-dependent CPO. Note that in all cases, the
 CPO is considered as a single object, not an array, so it must be passed
 by reference as mentioned above:
 
-::
+.. code-block:: console
 
    void mycppfunction(
    ItmNs::Itm::limiter & lim,
@@ -89,7 +89,7 @@ The syntax is identical for input and output arguments. For output CPOs,
 do not forget to use the usual methods to assign strings and allocate
 arrays:
 
-::
+.. code-block:: console
 
    lim.datainfo.dataprovider.assign("test_limiter");
    iron.array.resize(3);
@@ -97,7 +97,7 @@ arrays:
 
 Otherwise, the content of CPOs is accessed as usual:
 
-::
+.. code-block:: console
 
    cout << lim.datainfo.dataprovider << endl;
    cout << iron.array(j).desc_iron.geom_iron.npoints(i);
@@ -108,7 +108,7 @@ How to use code parameters
 The code parameters are passed as the last argument with
 ItmNs::codeparam_t& type:
 
-::
+.. code-block:: console
 
    void mycppfunction(..., ItmNs::codeparam_t & codeparam)
 
@@ -121,14 +121,14 @@ Compile your function as a library
 
 You need to include the header directories for the UAL and Blitz:
 
-::
+.. code-block:: console
 
    -I$(UAL)/include -I$(UAL)/lowlevel -I$(UAL)/cppinterface/ -I/afs/efda-
    itm.eu/gf/project/switm/blitz/blitz-0.9/include/
 
 Same for linking:
 
-::
+.. code-block:: console
 
    -L$(UAL)/lib -lUALCPPInterface -lUALLowLevel -L/afs/efda-
    itm.eu/gf/project/switm/blitz/blitz-0.9/lib -lblitz
@@ -144,7 +144,7 @@ have an integer as input/output, a vector of doubles as output and a
 string as output. We also want to use code parameters. Content of
 mycppfunction.cpp:
 
-::
+.. code-block:: console
 
    #include "UALClasses.h"
 
@@ -218,7 +218,7 @@ mycppfunction.cpp:
 
 Content of Makefile:
 
-::
+.. code-block:: console
 
    CXXFLAGS=-g -fPIC -I$(UAL)/include -I$(UAL)/lowlevel -I$(UAL)/cppinterface/
    -I$SWEU-IMDIR/blitz/blitz-0.9/include/
@@ -246,9 +246,15 @@ First tab (Argument):
 The fields Kepler, Ptolemy, and UAL are automatically filled with the
 values which you set by running the ``EU-IMv1 script``.
 
+.. figure:: /images/codes_1.png
+   :align: center
+
 Second tab (HasReturn):
 
 -  specify return parameters (type, array, size)
+
+.. figure:: /images/codes_2.png
+   :align: center
 
 Third tab (HasParameters):
 
@@ -259,6 +265,9 @@ Third tab (HasParameters):
 
 For information on code specific parameters, please see `How to handle
 code specific parameters <#itm_code_parameters>`__.
+
+.. figure:: /images/codes_3.png
+   :align: center
 
 Fourth tab (Source):
 
@@ -274,6 +283,10 @@ Fourth tab (Source):
 -  specify (or browse for) library file containing the code module
 -  specify (or browse for) other libraries required by the code module
 
+.. figure:: /images/codes_4.png
+   :align: center
+
+   
 .. _imp12_listcodes:   
 
 Plasma equilibrium and MHD (IMP12) list of codes

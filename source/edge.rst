@@ -102,9 +102,18 @@ service library implementation, i.e. the automated testing framework.
 
 A 2d grid in (R,Z) constructed by combining two structured
 one-dimensional spaces. The spaces are defined as follows, they define
-nodes and edges as subobjects. The whole grid then looks like this
-(attention, slightly differing scales in R and Z): A couple of examples
-for object descriptor are given. Some explanations:
+nodes and edges as subobjects.
+
+.. figure:: images/edge_1.png
+   :align: center
+
+The whole grid then looks like this (attention, slightly differing scales
+in R and Z):
+
+.. figure:: images/edge_2.png
+   :align: center
+
+A couple of examples for object descriptor are given. Some explanations:
 
 ((1,1) (4,2)) = a 2d object (2d cell or face), implicitly created by
 combining the 1d object (edge) no. 4 from space 1 and the 1d object no.
@@ -123,12 +132,28 @@ over all subobjects defining the objects, lowest space first.
 
 Object class (1,1): 2d cells/faces. They have the following implicit
 numbering:
+
+.. figure:: images/edge_3.png
+   :align: center
+
 Object class (1,0): 1d edges, aligned along the R axis ("r-aligned").
 They have the following implicit numbering:
+
+.. figure:: images/edge_4.png
+   :align: center
+
 Object class (0,1): 1d edges, aligned along the Z axis ("z-aligned").
 They have the following implicit numbering:
+
+.. figure:: images/edge_5.png
+   :align: center
+
 Object class (0,0): 0d nodes. They have the following implicit
 numbering:
+
+.. figure:: images/edge_6.png
+   :align: center
+
 
 Example 2: B2 grid
 ``````````````````

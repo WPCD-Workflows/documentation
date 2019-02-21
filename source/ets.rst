@@ -608,7 +608,8 @@ is executed.
 
 Press the play button on the workflow.
 
-.. Picture
+.. figure:: images/ets_1.png
+   :align: center
 
 **The workflow shall run!** If it
 does not, please use the `contact <mailto:denis.kalupin@euro-fusion.org?subject=ETS%20in%20KEPLER>`__ from above.
@@ -737,7 +738,8 @@ Time resolution
 -  TEND
    - Computattions end time
 
-.. Picture
+.. figure:: images/ets_config1.png
+   :align: center
 
    
 **Time step:**
@@ -752,7 +754,8 @@ Time resolution
    : specify value of the output time interval in [s]
 -  Commit
 
-.. Picture
+.. figure:: images/ets_settings1.png
+   :align: center
 
 .. _ETS_A_4.10b_composition:
 
@@ -786,8 +789,9 @@ To define plasma composition:
    shall be followed by neutral solver
 -  press **Commit**
 
-.. Picture
-
+.. figure:: images/ets_plasma_composition.png
+   :align: center
+           
 .. _ETS_A_4.10b_equations:
 
 Equations to be solved and boundary conditions
@@ -823,7 +827,9 @@ boundary conditions:
 The particular equation will be activated if the boundary condition type
 for it is other than *OFF*
 
-.. Picture
+.. figure:: images/ets_run_settings3.png
+   :align: center
+           
 
 To set up boundary conditions:
 
@@ -862,7 +868,8 @@ To set up boundary conditions:
    [1:MAX_Z_IMP], separated by commas
 -  **Commit**
 
-.. Picture
+.. figure:: images/ets_run_settings4.png
+   :align: center
 
 Interface for impurity boundary condition has additional option,
 *coronal_distribution*, that allow to preset the edge values or entire
@@ -897,7 +904,8 @@ To set up boundary conditions:
    [1, 2, 3 ...NION, 1, 2, 3, ...NIMP], separated by commas
 - **Commit**
 
-.. Picture
+.. figure:: images/ets_run_settings5.png
+   :align: center
 
 Input profiles interpolation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -916,8 +924,9 @@ To define the interpolation grid select:
 -  on_RHO_TOR_NORM_grid
    - interpolate input profiles based on normalised rho grid [0:1]
 
-.. Picture
-   
+.. figure:: images/ets_run_settings6.png
+   :align: center
+           
 .. _ETS_A_4.10b_convergence:
 
 Convergence loop
@@ -937,7 +946,8 @@ used by the iterative scheme. To edit them do:
 -  choose your settings
 -  **Commit**
 
-.. Picture
+.. figure:: images/ets_convergence1.png
+   :align: center
 
 Switches in the field *FREQUENCY OF CALLING THE PHYSICS ACTORS* define
 how many times the the actors of a certain cathegory (equilibrium,
@@ -990,6 +1000,10 @@ select your starting equilibrium please do:
 -  Select your settings or specify values
 -  **Commit**
 
+.. figure:: images/ets_before_time.png
+   :align: center
+
+
 SETTINGS:
 
 -  Equilibrium_configuration
@@ -1023,7 +1037,8 @@ SETTINGS:
    if you trust your input data (in this case the check will be
    ignorred).
 
-.. Picture
+.. figure:: images/ets_run_settings7.png
+   :align: center
    
 Please note, that different equilibrium solvers might require slightly
 different input. Thus it is a user responsibility to check that the
@@ -1043,7 +1058,8 @@ select the one of them.Therefore please do:
 -  choose your equilibrium solver
 -  **Commit**
 
-.. Picture
+.. figure:: images/ets_convergence_loop_config.png
+   :align: center
 
 *INTERPRETATIVE* means that the ETS will not update the equilibrium,
 instead it will be using the initial equilibrium.
@@ -1054,7 +1070,8 @@ necessary done with the same resolution. Therefore the routine saving
 the information to the data base might brake due to uncompatible sizes
 of some signals.
 
-.. Picture
+.. figure:: images/ets_equilibrium1.png
+   :align: center
 
 .. _ETS_A_4.10b_transport:
 
@@ -1071,6 +1088,9 @@ composite actor. Therefore please do:
 -  choose your settings
 -  press **Commit**
 
+.. figure:: images/ets_transport1.png
+   :align: center
+   
 Transport models
 ~~~~~~~~~~~~~~~~
 
@@ -1091,8 +1111,9 @@ level through the code parameters of Transport Combiner
 The list of available transport models can be found
 `here <https://www.eufus.eu/documentation/EU-IM/html/ets_status.html>`__.
 
-.. Picture
-
+.. figure:: images/ets_transport2.png
+   :align: center
+           
 Background transport
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -1100,7 +1121,9 @@ You can add the constant background level for each coefficient (ion and
 impurity coefficients are expected to be the strings of [1:NION] and
 [1:NIMP] elements respectively, separated by commas)
 
-.. Picture
+.. figure:: images/ets_transport3.png
+   :align: center
+
 
 Edge transport barrier
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -1111,7 +1134,8 @@ transport channels (ne, ni, nz, Te, Ti,...) will be reduced to constant
 values specified below (ion and impurity coefficients are expected to be
 the strings [1:NION] and [1:NIMP] respectively)
 
-.. Picture
+.. figure:: images/ets_transport4.png
+   :align: center
 
 Total transport coefficients
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1142,7 +1166,9 @@ the XML code parameters of the **transport combiner** actor:
 -  **Save and exit**
 -  **Commit**
 
-.. Picture
+.. figure:: images/ets_transport_combiner.png
+   :align: center
+   
 .. _ETS_A_4.10b_mhd:
 
 MHD
@@ -1158,7 +1184,8 @@ LOOP composite actor. Therefore please do:
 -  choose your settings
 -  **Commit**
 
-.. Picture   
+.. figure:: images/ets_mhd.png
+   :align: center
 
 At the moment ETS allows only for NTM to be activated. The sawtooth
 module is expected to be deployed before EU-IM Code Camp in Slovenia.
@@ -1176,8 +1203,9 @@ User can ajust the following NTM settings:
 -  NTM_phase
 -  NTM_frequency
 
-.. Picture
-
+.. figure:: images/ets_mhd2.png
+   :align: center
+           
 .. _ETS_A_4.10b_sources:
 
 Sources and impurity
@@ -1192,6 +1220,9 @@ LOOP composite actor. Therefore please do:
 -  select **Configure actor** to edit settings
 -  choose your settings
 -  **Commit**
+
+.. figure:: images/ets_source1.png
+   :align: center
 
 Analytical & Impurity sources
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1211,7 +1242,8 @@ selecting **ON / OFF** in front of corresponding source:
 -  Switch_IMPURITY – **ON** - Impurity density and radiative sources will be computed;
    **OFF** -ignored; **INTERPRETATIVE** – profiles of impurity density will be read from input shot/run
 
-.. Picture
+.. figure:: images/ets_sources2.png
+   :align: center
 
 HCD sources
 ~~~~~~~~~~~
@@ -1222,7 +1254,9 @@ incorporated by the ETS workflow.
 For the HCD sources please activate the type of heating source, by
 ticking the box in front of it, and select the code to simulate it.
 
-.. Picture
+.. figure:: images/ets_sources3.png
+   :align: center
+
 
 You also need to configure initial IMP5HCD settings. Therefore please:
 
@@ -1233,7 +1267,8 @@ You also need to configure initial IMP5HCD settings. Therefore please:
 -  edit the stettings
 -  **Commit**
 
-.. Picture   
+.. figure:: images/ets_sources4.png
+   :align: center
 
 The detailed information on initial IMP5HCD settings can be found
 `here <https://www.eufus.eu/documentation/EU-IM/html/imp5_imp5hcd.html>`__.
@@ -1242,14 +1277,16 @@ Therefore, for NBI settings, please insert the values separated by
 commas. The number of the element in the array corresponds to the number
 of activated PINI. Maximum accepted number of PINIs = 16.
 
-.. Picture
+.. figure:: images/ets_sources5.png
+   :align: center
 
 Power control
 ~~~~~~~~~~~~~
 
 You also can activate the power control for the IMP5HCD sources.
 
-.. Picture
+.. figure:: images/ets_sources6.png
+   :align: center
 
 If the POWER_CONTROL is not **OFF**, there are two modes of
 operation: **specific** and **frequency**
@@ -1260,7 +1297,8 @@ corresponds to the first time, second to second and etc.). Linear
 interpolation will be done between the sequence points. For example: if
 you give the power **sequence** = 2e6,4e6,1e6 and **times** = 0.0, 0.7, 1.5 (s) the delivered power would be:
 
-.. Picture
+.. figure:: images/ets_sources7.png
+   :align: center
 
 For **frequency** you should specify the power levels sequence separated
 by commas, start and end time of the power control and the frequency of
@@ -1268,7 +1306,8 @@ switching between these levels. For example: if you give the power
 **sequence** = 2e6,4e6,1e6 and **frequency** = 10 (Hz) **tstart** = 0.0 (s)
 **tend** = 1.5 (s) the delivered power would be:
 
-.. Picture
+.. figure:: images/ets_sources8.png
+   :align: center
 
 Total power
 ~~~~~~~~~~~
@@ -1293,9 +1332,10 @@ parameters of the source combiner actor:
 -  save and exit
 - **Commit**
 
-.. Picture
+.. figure:: images/ets_sources9.png
+   :align: center
 
-   .. _ETS_A_4.10b_inst_events:
+.. _ETS_A_4.10b_inst_events:
 
 Instantaneous events & Actuators
 --------------------------------
@@ -1321,13 +1361,15 @@ injection
 
 -  **Commit**
 
-.. Picture
+.. figure:: images/ets_instantaneous_events1.png
+   :align: center
 
 Parameters of individual pellet need to be configured through the
 code_parameters of the PELLET actor. To access it go to **Outline** on the
 right upper corner and open the following:
 
-.. Picture
+.. figure:: images/ets_instantaneous_events2.png
+   :align: center
 
 -  right click on the actor PELLET
 -  select **Configure actor**
@@ -1335,7 +1377,8 @@ right upper corner and open the following:
 -  edit parameters and click **save and exit**
 -  **Commit**
 
-.. Picture
+.. figure:: images/ets_instantaneous_events3.png
+   :align: center
    
 amn – atomic mass number: array of elements separated by space
 (1:nelements) [-]
@@ -1412,8 +1455,10 @@ To activate the SCENARIO output:
 -  select **Configure actor**
 -  select Generate_SCENARIO_output_from_ETS_run equal **YES**
 -  **Commit**
+   
+.. figure:: images/ets_scenario.png
+   :align: center
 
-.. Picture
    
 .. _ETS_A_4.10b_visualization:
 
@@ -1439,7 +1484,8 @@ displays diagnostic text messages from the workflow on following topics:
 Also the error messages from execution of the workflow will be displayed
 here.
 
-.. Picture
+.. figure:: images/ets_visual1.png
+   :align: center
 
 Python Visualization Display
 ----------------------------
@@ -1458,12 +1504,14 @@ You can activate the graphical visualization of your run evolution:
 -  select visualisation **YES** or **NO**
 -  **Commit**
 
-.. Picture   
+.. figure:: images/ets_visual2.png
+   :align: center
    
 Then evolution of main discharge parameters will be shown in this
 window:
 
-.. Picture
+.. figure:: images/ets_visual3.png
+   :align: center
 
 .. _ETS_A_4.10b_list_actors:
 
@@ -1756,7 +1804,8 @@ found
 **Contact person:** `Denis Kalupin <mailto:denis.kalupin@euro-fusion.org?subject=ETS%20in%20KEPLER>`__ (Skype:
 dkalupin)*
 
-.. Picture
+.. figure:: images/ets_top_a.png
+   :align: center
 
 Obtaining the ETS
 =================
@@ -1815,7 +1864,8 @@ This is ALL you need to do for updates!
 Executing the ETS
 =================
 
-.. Picture
+.. figure:: images/ets_start_a.png
+   :align: center
 
 Open ETS workflow in Kepler:
 
@@ -1866,7 +1916,8 @@ Start and End time
 -  TBEGIN - Computations start time
 -  TEND - Computattions end time
 
-.. Picture
+.. figure:: images/ets_config1_a.png
+   :align: center
 
 Time spep
 
@@ -1876,7 +1927,8 @@ Time spep
 -  TAU_OUT: specify value of the output time interval in [s]
 -  Commit
 
-.. Picture
+.. figure:: images/ets_run_settings1_a.png
+   :align: center
    
 .. _ETS_A_4.10a_composition:
 
@@ -1902,7 +1954,8 @@ To set up the composition:
 -  choose the neutrals types, which should be switched "ON"
 -  Commit
 
-.. Picture
+.. figure:: images/ets_run_settings2_a.png
+   :align: center
 
 .. _ETS_A_4.10a_equations:
 
@@ -1937,7 +1990,8 @@ boundary conditions:
 The particular equation will be activated if the boundary condition type
 for it is other than *OFF*!
 
-.. Picture
+.. figure:: images/ets_run_boundary_a.png
+   :align: center 
 
 To set up boundary conditions:
 
@@ -1970,8 +2024,10 @@ To set up boundary conditions:
 -  specify values for boundary density of each impurity component
    [1:MAX_Z_IMP], separated by commas
 -  Commit
+   
+.. figure:: images/ets_run_boundary2_a.png
+   :align: center 
 
-.. Picture
    
 Interface for impurity boundary condition has additional option ,
 *coronal_distribution*, that allow to preset the edge values or entire
@@ -2008,7 +2064,8 @@ To set up boundary conditions:
    component [1, 2, 3 ...NION, 1, 2, 3, ...NIMP], separated by commas
 -  Commit
 
-.. Picture
+.. figure:: images/ets_run_boundary3_a.png
+   :align: center 
 
 Input Profiles Interpolation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -2025,7 +2082,8 @@ To define the interpolation grid select:
 -  on_RHO_TOR_NORM_grid
    - interpolate input profiles based on normalised rho grid [0:1]
 
-.. Picture
+.. figure:: images/ets_run_boundary5_a.png
+   :align: center 
 
 .. _ETS_A_4.10a_convergence:
 
@@ -2046,7 +2104,8 @@ To edit them do:
 -  choose your settings
 -  Commit
 
-.. Picture
+.. figure:: images/ets_convergence1_a.png
+   :align: center 
    
 Switches in the field *FREQUENCY OF CALLING THE PHYSICS ACTORS* define how
 many times the the actors of a certain cathegory (equilibrium, transport,
@@ -2097,9 +2156,10 @@ please do:
 -  select ‘Configure actor’ to edit settings
 -  Select your settings or specify values
 -  Commit
-
-.. Picture
-
+   
+.. figure:: images/ets_eq_a.png
+   :align: center 
+   
 SETTINGS:
 
 -  Equilibrium_configuration
@@ -2135,7 +2195,8 @@ SETTINGS:
    if you trust your input data (in this case the check will be
    ignorred).
 
-.. Picture
+.. figure:: images/ets_eq2_a.png
+   :align: center 
 
 Please note, that different equilibrium solvers might require slightly
 different input. Thus it is a user responsibility to check that the
@@ -2155,7 +2216,8 @@ select the one of them.Therefore please do:
 -  choose your equilibrium solver
 -  Commit
 
-.. Picture
+.. figure:: images/ets_eq3_a.png
+   :align: center 
    
 *INTERPRETATIVE* means that the ETS will not update the equilibrium,
 instead it will be using the initial equilibrium.
@@ -2166,7 +2228,8 @@ necessary done with the same resolution. Therefore the routine saving
 the information to the data base might brake due to uncompatible sizes
 of some signals.
 
-.. Picture
+.. figure:: images/ets_eq4_a.png
+   :align: center
 
 .. _ETS_A_4.10a_transport:
 
@@ -2182,7 +2245,11 @@ composite actor. Therefore please do:
 -  select ‘Configure actor’ to edit settings
 -  choose your settings
 -  Commit
+   
+.. figure:: images/ets_transport1_a.png
+   :align: center
 
+   
 Choice of transport model
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -2201,6 +2268,9 @@ switch it OFF
 The list of available transport models can be found
 `here <https://www.eufus.eu/documentation/EU-IM/html/ets_status.html>`__.
 
+.. figure:: images/ets_transport2_a.png
+   :align: center
+
 Main plasma transport
 ~~~~~~~~~~~~~~~~~~~~~
 
@@ -2213,6 +2283,9 @@ transport coefficient.
 You also can add the constant background level for each coefficient (ion
 coefficients are expected to be the string {1:NION}, separated by
 commas)
+
+.. figure:: images/ets_transport3_a.png
+   :align: center
 
 Impurity transport
 ~~~~~~~~~~~~~~~~~~
@@ -2232,6 +2305,9 @@ transport coefficient *from_first_ion* or *from_electrons* (the same
 anomalous contribution will be added to all impurity components, all
 ionization states)
 
+.. figure:: images/ets_transport4_a.png
+   :align: center
+
 Edge transport barrier
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -2240,6 +2316,9 @@ specified *RHO_TOR_NORM_ETB*. Total transport coefficients for all
 transport channels (ne, ni, nz, Te, Ti,...) will be reduced to constant
 values specified below (ion and impurity coefficients are expected to be
 the strings {1:NION}) and {1:NIMP} respectively)
+
+.. figure:: images/ets_transport5_a.png
+   :align: center
 
 Total transport coefficients
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -2291,8 +2370,11 @@ the XML code parameters of the transport combiner actor:
 
 -  save and exit
 -  Commit
-
-   .. _ETS_A_4.10a_mhd:
+   
+.. figure:: images/ets_transport5_a.png
+   :align: center
+   
+.. _ETS_A_4.10a_mhd:
 
 MHD
 ---
@@ -2307,8 +2389,10 @@ LOOP composite actor. Therefore please do:
 -  choose your settings
 -  Commit
 
-At the moment ETS allows only for NTM to be activated. The sawtooth
-module is expected to be deployed before EU-IM Code Camp in Slovenia.
+.. figure:: images/ets_mhd_a.png
+   :align: center
+
+At the moment ETS allows only for NTM to be activated. 
 
 User can ajust the following NTM settings:
 
@@ -2326,7 +2410,10 @@ User can ajust the following NTM settings:
 -  NTM_phase
 -  NTM_frequency
 
-   .. _ETS_A_4.10a_sources:
+.. figure:: images/ets_mhd2_a.png
+   :align: center   
+
+.. _ETS_A_4.10a_sources:
 
 Sources and impurity
 --------------------
@@ -2340,6 +2427,10 @@ LOOP composite actor. Therefore please do:
 -  select ‘Configure actor’ to edit settings
 -  choose your settings
 -  Commit
+   
+.. figure:: images/ets_sources1_a.png
+   :align: center
+
 
 IMP3 sources
 ~~~~~~~~~~~~
@@ -2375,6 +2466,10 @@ selecting *ON / OFF* in front of corresponding source:
    -ignored;
    INTERPRETATIVE
    – profiles of impurity density will be read from input shot/run
+   
+.. figure:: images/ets_sources2_a.png
+   :align: center
+   
 
 IMP5HCD sources
 ~~~~~~~~~~~~~~~
@@ -2385,6 +2480,9 @@ incorporated by the ETS workflow.
 For the IMP5HCD sources please activate the type of heating source, by
 ticking the box in front of it, and select the code to simulate it.
 
+.. figure:: images/ets_sources3_a.png
+   :align: center
+
 You also need to configure initial IMP5HCD settings. Therefore please:
 
 -  right click on the box ‘BEFORE THE TIME EVOLUTION’
@@ -2393,7 +2491,10 @@ You also need to configure initial IMP5HCD settings. Therefore please:
 -  select ‘Configure actor’
 -  edit the stettings
 -  Commit
-
+   
+.. figure:: images/ets_sources4_a.png
+   :align: center
+ 
 The detailed information on initial IMP5HCD settings can be found
 `here <https://www.eufus.eu/documentation/EU-IM/html/imp5_imp5hcd.html>`__.
 Please note that settings for NBI are done independent for each PINI.
@@ -2401,10 +2502,16 @@ Therefore, for NBI settings, please insert the values separated by
 commas. The number of the element in the array corresponds to the number
 of activated PINI. Maximum accepted number of PINIs = 16.
 
+.. figure:: images/ets_sources5_a.png
+   :align: center
+
 Power control
 ~~~~~~~~~~~~~
 
 You also can activate the power control for the IMP5HCD sources.
+
+.. figure:: images/ets_sources6_a.png
+   :align: center
 
 If the POWER_CONTROL is not *OFF*, there are two modes of
 operation:\ *specific* and *frequency*
@@ -2416,11 +2523,17 @@ interpolation will be done between the sequence points. For example: if
 you give the power sequence = 2e6,4e6,1e6 and times = 0.0, 0.7, 1.5 (s)
 the delivered power would be:
 
+.. figure:: images/ets_sources7_a.png
+   :align: center
+
 For *frequency* you should specify the power levels sequence separated
 by commas, start and end time of the power control and the frequency of
 switching between these levels. For example: if you give the power
 sequence = 2e6,4e6,1e6 and frequency = 10 (Hz) tstart =0.0 (s) tend =
 1.5 (s) the delivered power would be:
+
+.. figure:: images/ets_sources8_a.png
+   :align: center
 
 Total power
 ~~~~~~~~~~~
@@ -2463,8 +2576,11 @@ parameters of the source combiner actor:
 
 -  save and exit
 -  Commit
+   
+.. figure:: images/ets_sources9_a.png
+   :align: center
 
-   . _ETS_A_4.10a_inst_events:
+.. _ETS_A_4.10a_inst_events:
 
 Instantaneous events
 --------------------
@@ -2494,15 +2610,24 @@ injection
    ‘tend_pellet’ with a ’frequency_pellet’
 -  Commit
 
+.. figure:: images/eps_instantaneous_events_a.png
+   :align: center
+
 Parameters of individual pellet need to be configured through the
 icode_parameters of the PELLET actor. To access it go to 'Outline' on
 the right upper corner and open the following:
+
+.. figure:: images/eps_instantaneous_events2_a.png
+   :align: center
 
 -  right click on the actor ‘PELLET’
 -  select ‘Configure actor’
 -  click ‘Edit Code Parameters’
 -  edit parameters and click ‘save and exit’
 -  Commit
+
+.. figure:: images/eps_instantaneous_events3_a.png
+   :align: center
 
 *amn* – atomic mass number: array of elements separated by space
 (1:nelements) [-]
@@ -2557,7 +2682,7 @@ events
 -  Select SAWTOOTH ‘ON’ if you like to use them in your simulation
 -  Commit
 
-   .. _ETS_A_4.10a_visualization:
+.. _ETS_A_4.10a_visualization:
 
 Visualization during the run
 ----------------------------
@@ -2581,6 +2706,9 @@ displays diagnostic text messages from the workflow on following topics:
 Also the error messages from execution of the workflow will be displayed
 here.
 
+.. figure:: images/ets_visual1_a.png
+   :align: center
+
 Python Visualization Display
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -2591,10 +2719,14 @@ You can activate the graphical visualization of your run evolution:
 -  select visualisation ‘YES’ or ‘NO’
 -  Commit
 
+.. figure:: images/ets_visual2_a.png
+   :align: center
+
 Then evolution of main discharge parameters will be shown in this
 window:
 
-
+.. figure:: images/ets_visual3_a.png
+   :align: center
 
 .. _ETS_C_KEPLER:
 
@@ -2619,7 +2751,8 @@ tokamak core plasma.
 Contact persons: `Vincent Basiuk <mailto:vincent.basiuk@cea.fr?subject=ETS%20in%20KEPLER>`__ ,
 `Philippe Huynh <mailto:philippe.huynh@cea.fr?subject=ETS%20in%20KEPLER>`__
 
-.. Picture
+.. figure:: images/ets_c.png
+   :align: center
 
 .. _ets_status:
 

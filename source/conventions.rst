@@ -56,7 +56,15 @@ from above, the toroidal angle is counter-clockwise, i.e. mathematically
 positive.
 
 The following figures demonstrate the orientation of the toroidal angle
-\\( \\phi \\) and the poloidal angle \\( \\theta \\): source:
+\\( \\phi \\) and the poloidal angle \\( \\theta \\):
+
+.. figure:: images/conventions_1.png
+   :align: center
+           
+.. figure:: images/conventions_2.png
+   :align: center
+
+source:
 
 http://www-fusion.ciemat.es/fusionwiki/index.php/Toroidal_coordinates\
 
@@ -170,13 +178,21 @@ COCOS - toroidal coordinate conventions
 16 different fundamental coordinate conventions (COCOS) has been identified
 for toroidal systems. These are described by `O. Sauter and S. Yu. Medvedev, Computer Phys. Commun. 184 (2013) 293
 <http://www.sciencedirect.com/science/article/pii/S0010465512002962>`__,
-and summarized in the figure below. The current EU-IM convention (described
+and summarized in the figure below.
+
+.. figure:: images/conventions_3.png
+   :align: center
+
+The current EU-IM convention (described
 above) is number 13, while the ITER convention is 11.
 
 .. _itm_conventions_cocos_determine:
 
 Determining the COCOS number
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. figure:: images/conventions_4.png
+   :align: center
 
 .. _itm_conventions_cocos_conversions:
 

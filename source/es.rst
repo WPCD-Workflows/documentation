@@ -36,7 +36,8 @@ Workflow organization & design
 
 The top level layout of the workflow is shown below.
 
-.. Picture
+.. figure:: images/equstabil_1.png
+   :align: center
 
 The workflow is organised in four sequential steps :
 
@@ -72,7 +73,8 @@ Composite actor that prepares/calculates the equilibrium to be passed
 later to the MHD stability codes. This composite actor is composed of 3
 main steps:
 
-.. Picture
+.. figure:: images/equstabil_2.png
+   :align: center
 
 Redefining the plasma boundary (Cutoff)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -119,8 +121,10 @@ level accordingly Kepler variable.
 
 StabCode
 --------
-.. Picture
 
+.. figure:: images/equstabil_3.png
+   :align: center
+           
 Composite actor for the MHD stability calculation using 4 possible linear
 MHD stability codes (ILSA, KINX, MARS, MARS-F). After execution of the
 stability code is completed, plotting of the radial component of the

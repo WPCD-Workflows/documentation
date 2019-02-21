@@ -60,12 +60,20 @@ includes, for instance, the vessel/limiter description (for the moment
 in R-Z domain only), the PF coils and circuiting and lines of sight of
 diagnostics (an example for ITER is seen below evidencing the
 vessel+limiter+pfsystems and magdiad CPOs).
+
+.. figure:: images/edrg_1.png
+   :align: center
+
 In practice, all MD information is encapsulated in a XML file that
 emanates from the MD tagged datastructure schemas. A MD instance of a
 given device is then stored into the EU-IM db as shot 0 for that device
 database.
 At data structure version 4.09a, the list of CPOs with machine
 description tags is indicated in the Figure below
+
+.. figure:: images/edrg_2.png
+   :align: center
+
 
 MD content on dataversions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -142,6 +150,10 @@ tags is indicated in the Figure below (experimental signals are colored
 in orange; mappings to other CPOs, e.g. equilibrium or coreprof have
 been set in order to assist the retrieval of simulated data from other
 databases, e.g. JSP, JSPC)
+
+.. figure:: images/edrg_3.png
+   :align: center
+
 
 DM content on dataversions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
