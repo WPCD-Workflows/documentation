@@ -812,11 +812,12 @@ the grid type are listed below:
 | 2           | inverse            | Regular grid in \\((\\Psi,        |
 |             |                    | \\theta)\\).'flux surface grid'.  |
 +-------------+--------------------+-----------------------------------+
-| 3           | irregular          | Irregular grid. All fields in     |
-|             |                    | profiles_2d are given as (ndim1,  |
-|             |                    | 1) degenerate 2D matrices, i.e.   |
-|             |                    | as lists of vertices (for         |
-|             |                    | triangles or quadrilaterals).     |
+| 3           | irregular          | | Irregular grid. All fields in   |
+|             |                    |   profiles_2d are given as (ndim1,|
+|             |                    |   1)                              |
+|             |                    | | degenerate 2D matrices, i.e.    |
+|             |                    |   as lists of vertices (for       |
+|             |                    | | triangles or quadrilaterals).   |
 +-------------+--------------------+-----------------------------------+
 
 .. _itm_conventions_poloidal_angle_identifier:
@@ -827,26 +828,25 @@ Poloidal Angle Identifier
 The currently allowed values (integer and string) for the identifier of
 the poloidal angle are listed below:
 
-+-------------+--------------------+-----------------------------------+
-| Integer     | String Value       | Description                       |
-| Values      |                    |                                   |
-+=============+====================+===================================+
-| 1           | straight field     | straight field line angle \\(     |
-|             | line               | \\theta \\) as defined in         |
-|             |                    | `Straight Field Line              |
-|             |                    | Coordinates <#itm_straight_field_ |
-|             |                    | line>`__                          |
-+-------------+--------------------+-----------------------------------+
-| 2           | equal arc          | Poloidal angle \\( \\theta \\)    |
-|             |                    | defined by equal arc lengths      |
-|             |                    | along flux surfaces               |
-+-------------+--------------------+-----------------------------------+
-| 3           | polar              | Poloidal angle \\( \\theta \\) in |
-|             |                    | toroidal coordinates as defined   |
-|             |                    | in `Coordinate                    |
-|             |                    | System <#itm_coordinate_system>`_ |
-|             |                    | _                                 |
-+-------------+--------------------+-----------------------------------+
++-------------+--------------------+-------------------------------------+
+| Integer     | String Value       | Description                         |
+| Values      |                    |                                     |
++=============+====================+=====================================+
+| 1           | straight field     | | straight field line angle \\(     |
+|             | line               |   \\theta \\) as defined in         |
+|             |                    |   `Straight Field Line              |
+|             |                    | | Coordinates <#itm_straight_field_ |
+|             |                    |  line>`__                           |
++-------------+--------------------+-------------------------------------+
+| 2           | equal arc          | | Poloidal angle \\( \\theta \\)    |
+|             |                    | | defined by equal arc lengths      |
+|             |                    | | along flux surfaces               |
++-------------+--------------------+-------------------------------------+
+| 3           | polar              | | Poloidal angle \\( \\theta \\) in |
+|             |                    | | toroidal coordinates as defined   |
+|             |                    | | in `Coordinate                    |
+|             |                    |   System <#itm_coordinate_system>`__|
++-------------+--------------------+-------------------------------------+
 
 .. _itm_conventions_plasma_bundle:
 
