@@ -1679,36 +1679,36 @@ Events actors
 
 .. Table
 
-+--------------------+-------------------+-----------------+----------------------------------------------+
-| Code name          | Code Category     | Contact persons | Short description                            |
-+====================+===================+=================+==============================================+
-| pelletactor        | pellet            | Denis Kalupin   |                                              |
-+--------------------+-------------------+-----------------+----------------------------------------------+
-| pellettrigger      | pellet            | Denis Kalupin   |                                              |
-+--------------------+-------------------+-----------------+----------------------------------------------+
-| sawcrash_slice     | sawteeth          | Olivier Sauter  |                                              |
-+--------------------+-------------------+-----------------+----------------------------------------------+
-| sawcrit            | sawteeth          | Olivier Sauter  |                                              |
-+--------------------+-------------------+-----------------+----------------------------------------------+
-| runaway_indicator  | runaway           | Roland Lohneroch| | Indicating the presence of runaway         |
-|                    |                   | Gergo Pokol     | | electrons:                                 |
-|                    |                   |                 | | 1) Indicate, whether electric field is     |
-|                    |                   |                 | | below the critical level, thus runaway     |
-|                    |                   |                 | | generation is impossible.                  |
-|                    |                   |                 | | 2) Indicate, whether runaway electron      |
-|                    |                   |                 | | growth rate exceeds a preset limit. This   |
-|                    |                   |                 | | calculation takes only the Dreicer runaway |
-|                    |                   |                 | | generation method in account and assumes a |
-|                    |                   |                 | | velocity distribution close to Maxwellian, |
-|                    |                   |                 | | therefore this result should be considered |
-|                    |                   |                 | | with caution. The growth rate limit can be |
-|                    |                   |                 | | set via an input of the actor. Limit value |
-|                    |                   |                 | | is set to \\( 10^{12} \\) particle per     |
-|                    |                   |                 | | second by default. (This growth rate       |
-|                    |                   |                 | | generatesa runaway current of approximately|
-|                    |                   |                 | | 1kA considering a 10 seconds long          |
-|                    |                   |                 | | discharge.)                                | 
-+--------------------+-------------------+-----------------+----------------------------------------------+
++--------------------+-------------------+-----------------+-----------------------------------------------+
+| Code name          | Code Category     | Contact persons | Short description                             |
++====================+===================+=================+===============================================+
+| pelletactor        | pellet            | Denis Kalupin   |                                               |
++--------------------+-------------------+-----------------+-----------------------------------------------+
+| pellettrigger      | pellet            | Denis Kalupin   |                                               |
++--------------------+-------------------+-----------------+-----------------------------------------------+
+| sawcrash_slice     | sawteeth          | Olivier Sauter  |                                               |
++--------------------+-------------------+-----------------+-----------------------------------------------+
+| sawcrit            | sawteeth          | Olivier Sauter  |                                               |
++--------------------+-------------------+-----------------+-----------------------------------------------+
+| runaway_indicator  | runaway           | Roland Lohneroch| | Indicating the presence of runaway          |
+|                    |                   | Gergo Pokol     | | electrons:                                  |
+|                    |                   |                 | | 1) Indicate, whether electric field is      |
+|                    |                   |                 | | below the critical level, thus runaway      |
+|                    |                   |                 | | generation is impossible.                   |
+|                    |                   |                 | | 2) Indicate, whether runaway electron       |
+|                    |                   |                 | | growth rate exceeds a preset limit. This    |
+|                    |                   |                 | | calculation takes only the Dreicer runaway  |
+|                    |                   |                 | | generation method in account and assumes a  |
+|                    |                   |                 | | velocity distribution close to Maxwellian,  |
+|                    |                   |                 | | therefore this result should be considered  |
+|                    |                   |                 | | with caution. The growth rate limit can be  |
+|                    |                   |                 | | set via an input of the actor. Limit value  |
+|                    |                   |                 | | is set to \\( 10^{12} \\) particle per      |
+|                    |                   |                 |   second by default.                          |
+|                    |                   |                 | | (This growth rate generates a runaway       |
+|                    |                   |                 | | current of approximately 1kA considering a  |
+|                    |                   |                 | | 10 seconds long discharge.)                 | 
++--------------------+-------------------+-----------------+-----------------------------------------------+
 
 
 Non-physics actors
