@@ -1,3 +1,5 @@
 depend
 *.md5-stamp
-source/static
+source/static/*.pdf
+source/static/*.zip
+source/static/*.png

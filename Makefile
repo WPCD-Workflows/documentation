@@ -304,7 +304,7 @@ realclean: clean-assets
 # calls: PUT /repos/:owner/:repo/contents/:path
 # See http://developer.github.com/v3/repos/contents#create-a-file
 push:
-	@if test -z "$${TOKEN}" ; then \
+	@if test -z "$(TOKEN)" ; then \
 	  echo "Please see README.md for setting remote TOKEN!";\
 	  exit 1;\
 	fi

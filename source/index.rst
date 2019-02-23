@@ -28,7 +28,8 @@ Contents:
    kepler
    edrg
    amns
-
+   resources
+   
 Using the WPCD workflows
 ========================
 
