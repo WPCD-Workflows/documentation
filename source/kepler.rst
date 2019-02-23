@@ -49,118 +49,117 @@ Now you can start Kepler application and proceed to tutorial examples that can b
 Kepler IMAS actors
 ==================
 
-.. Picure
+.. Picture
 
-+------------------+------------------------------------------+
-| **Imas actor**   |      **Deacription**                     |
-+==================+==========================================+
-|UALSliceCollector |  Store one slice from input IDS into     |
-|                  |  different run. This way, it is possible |
-|                  |  to collect intermediate results during  |
-|                  |  workflow execution.                     |
-+------------------+------------------------------------------+
-| UALPython        | Allows to run external Python process and|
-|                  | pass input/output data between workflow  |
-|                  | and process itself. This actor is, most  |
-|                  | commonly, used for data visualization.   |
-|                  | User can pass Python script directly to  |
-|                  | the actor.                               |
-+------------------+------------------------------------------+
-| UALMuxParam      |  Provides similar behavior to            |
-|                  |  ualmux/UALMux, however, this actors has |
-|                  |  two additional ports:                   |
-|                  |    - fieldDescription - contains name of |
-|                  |      the filed that will be modified     |
-|                  |    - fieldValue - contains new value of  |
-|                  |      the field                           | 
-|                  |  Main difference between ualmux/         |      
-|                  |  ualmuxparam                             |           
-|                  |  actors lays in it's ability to be used  |               
-|                  |  in                                      |  
-|                  |  a loop that modify different field      |
-|                  |  inside                                  |
-|                  |  IDS.                                    |
-|                  |  You can simply provide different field  | 
-|                  |  name                                    |
-|                  |  for different loop's step.              |
-+------------------+------------------------------------------+
-| UALMux	   | Provides a method for putting data inside|
-|                  | IDS inputs                               |
-|                  |  - inputIds/inputCpo - cpo we are going  |
-|                  |    to modify                             |  
-|                  |  - inTime - time index at which data are |
-|                  |    supposed to be updated                |
-|                  |  - name of the field is specified as port|
-|                  |    name                                  |
-|                  |  - new value of the field is passed as   | 
-|                  |    value sent to the port                | 
-|                  | outputs:                                 |
-|                  |  - outputIds/outputCpo - modified IDS    |
-|                  |  - outTime - actual time index (depend   |
-|                  |    on approximation mode)                |
-+------------------+------------------------------------------+
-| UALInit          | Initializes input pulse file, creates    |
-|                  | run work and provides ID S description   |
-|                  | for other actors                         |
-|                  | inputs:                                  | 
-|                  |    - user - name of the user for input   |
-|                  |      data file (e.g. g2michal)           |
-|                  |    - machine - name of the machine for   |
-|                  |      input data file (e.g. test/jet)     |
-|                  |    - shot - shot number                  |
-|                  |    - run - run number                    |
-|                  |    - runwork - temporary run number      |
-|                  |      (place where output will be stored) | 
-|                  | outputs:                                 |
-|                  |    - error - description of error in case|
-|                  |      there are problems while accessing  |
-|                  |      input data                          |
-|                  |    - all IDSess requested by user (each  | 
-|                  |      IDS is specified as output port     |
-|                  |      name)	      	                      |
-+------------------+------------------------------------------+
-| UALDemux         |   Allows to read data from given IDS -   |
-|                  |   name of the field is specified as      |
-|                  |   output port.                           |
-+------------------+------------------------------------------+
-| UALCollector	   |   Stores input IDSess inside new run.    |
-|                  |   This way, it is possible to copy data  |
-|                  |   into different shot/run rather than    |
-|                  |   inside run work.                       |
-+------------------+------------------------------------------+
-| UALClose	   | Closes run work based on description     |
-|                  | passed via input IDS.                    |  
-+------------------+------------------------------------------+                 
-|SetBreakpoint     |  This actor allows to enforce "debug"    |
-|                  |  mode for IMAS based actors. It sets     |
-|                  |  global parameter "ITM_DEBUG" to either  |
-|                  |  true or false. In case true is a value  |
-|                  |  of "ITM_DEBUG" all FC2K generated actors|
-|                  |  will start in debug mode.               |
-+------------------+------------------------------------------+ 
-| RecordSet        |  Sets values inside record (take a look  |
-|                  |  for short tutorial: RecordGet/RecordSet)|          
-+------------------+------------------------------------------+
-| RecordGet        |  Gets values from the record (take a     |
-|                  |  look here for short tutorial: RecordGet |
-|                  |  /RecordSet)                             |
-+------------------+------------------------------------------+
-| IDSOccurence     | Provides a method to create duplicate    |
-|                  | of IDS with new occurrence number.       | 
-|                  | This way, it is possible to store data   |
-|                  | before they get modified by user code.   |	
-+------------------+------------------------------------------+
-| IDSFlush	   |   Flushes data from workflow. Data from  |
-|                  |   memory cache are stored inside database|
-+------------------+------------------------------------------+
-| IDSDiscard       |  Discards data inside workflow. Data will|
-|                  |  be re-read into memory cache.           |
-+------------------+------------------------------------------+    
-| IDSContentStd    |  Displays IDS data on console (better    |
-|                  |  for huge data sets)                     |
-+------------------+------------------------------------------+
-|IDSContent	   |  Displays IDS data                       |
-+------------------+------------------------------------------+
++------------------+--------------------------------------------+
+| **Imas actor**   |      **Deacription**                       |
++==================+============================================+
+|UALSliceCollector | | Store one slice from input IDS into      |
+|                  |   different run. This way, it is possible  |
+|                  | | to collect intermediate results during   |
+|                  |   workflow execution.                      |
++------------------+--------------------------------------------+
+| UALPython        | | Allows to run external Python process and|
+|                  |   pass input/output data between workflow  |
+|                  | | and process itself. This actor is, most  |
+|                  |   commonly, used for data visualization.   |
+|                  | | User can pass Python script directly to  |
+|                  |   the actor.                               |
++------------------+--------------------------------------------+
+| UALMuxParam      | | Provides similar behavior to             |
+|                  |   ualmux/UALMux, however, this actors has  |
+|                  | | two additional ports:                    |
+|                  | |  - fieldDescription - contains name of   |
+|                  |    the filed that will be modified         |
+|                  | |  - fieldValue - contains new value of    |
+|                  |    the field                               | 
+|                  | | Main difference between ualmux/          |      
+|                  |   ualmuxparam                              |           
+|                  |   actors lays in it's ability to be used   |               
+|                  |   in                                       |  
+|                  | | a loop that modify different field       |
+|                  |   inside IDS.                              |
+|                  | | You can simply provide different field   | 
+|                  |   name                                     |
+|                  |   for different loop's step.               |
++------------------+--------------------------------------------+
+| UALMux           | | Provides a method for putting data inside|
+|                  |   IDS inputs                               |
+|                  | |  - inputIds/inputCpo - cpo we are going  |
+|                  |    to modify                               |  
+|                  | |  - inTime - time index at which data are |
+|                  |    supposed to be updated                  |
+|                  | |  - name of the field is specified as port|
+|                  |    name                                    |
+|                  | |  - new value of the field is passed as   | 
+|                  |    value sent to the port                  | 
+|                  | | outputs:                                 |
+|                  | |  - outputIds/outputCpo - modified IDS    |
+|                  | |  - outTime - actual time index (depend   |
+|                  |    on approximation mode)                  |
++------------------+--------------------------------------------+
+| UALInit          | | Initializes input pulse file, creates    |
+|                  |   run work and provides ID S description   |
+|                  | | for other actors                         |
+|                  |   inputs:                                  | 
+|                  | |  - user - name of the user for input     |
+|                  |    data file (e.g. g2michal)               |
+|                  | |  - machine - name of the machine for     |
+|                  |    input data file (e.g. test/jet)         |
+|                  | |  - shot - shot number                    |
+|                  | |  - run - run number                      |
+|                  | |  - runwork - temporary run number        |
+|                  |    (place where output will be stored)     | 
+|                  | | outputs:                                 |
+|                  | |  - error - description of error in case  |
+|                  |    there are problems while accessing      |
+|                  |    input data                              |
+|                  | |  - all IDSess requested by user (each    | 
+|                  |    IDS is specified as output port         |
+|                  |    name)	      	                        |
++------------------+--------------------------------------------+
+| UALDemux         | | Allows to read data from given IDS -     |
+|                  |   name of the field is specified as        |
+|                  | | output port.                             |
++------------------+--------------------------------------------+
+| UALCollector	   | | Stores input IDSess inside new run.      |
+|                  |   This way, it is possible to copy data    |
+|                  | | into different shot/run rather than      |
+|                  |   inside run work.                         |
++------------------+--------------------------------------------+
+| UALClose         | | Closes run work based on description     |
+|                  |   passed via input IDS.                    |  
++------------------+--------------------------------------------+               
+| SetBreakpoint    | | This actor allows to enforce "debug"     |
+|                  |   mode for IMAS based actors. It sets      |
+|                  | | global parameter "ITM_DEBUG" to either   |
+|                  |   true or false. In case true is a value   |
+|                  | | of "ITM_DEBUG" all FC2K generated actors |
+|                  |   will start in debug mode.                |
++------------------+--------------------------------------------+
+| RecordSet        | | Sets values inside record (take a look   |
+|                  |   for short tutorial: RecordGet/RecordSet) |          
++------------------+--------------------------------------------+
+| RecordGet        | | Gets values from the record (take a      |
+|                  |   look here for short tutorial:            |
+|                  | | RecordGet/RecordSet)                     |
++------------------+--------------------------------------------+
+| IDSOccurence     | | Provides a method to create duplicate    |
+|                  |   of IDS with new occurrence number.       | 
+|                  | | This way, it is possible to store data   |
+|                  |   before they get modified by user code.   |	
++------------------+--------------------------------------------+
+| IDSFlush         | | Flushes data from workflow. Data from    |
+|                  |   memory cache are stored inside database  |
++------------------+--------------------------------------------+
+| IDSDiscard       | | Discards data inside workflow. Data will |
+|                  |   be re-read into memory cache.            |
++------------------+--------------------------------------------+    
+| IDSContentStd    | | Displays IDS data on console (better     |
+|                  |   for huge data sets)                      |
++------------------+--------------------------------------------+
+| IDSContent	   |  Displays IDS data                         |
++------------------+--------------------------------------------+
 
 IMAS Kepler based configuration
 ===============================
