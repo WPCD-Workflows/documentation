@@ -152,125 +152,127 @@ Actors involved
 |                       |                       |                         |
 +-----------------------+-----------------------+-------------------------+
 | Check_Device          | INITIALIZATION        | | Checks if the         |
-|                       |                       | | *device* Kepler       |
+|                       |                       |   *device* Kepler       |
 |                       |                       | | variable coincides    |
-|                       |                       | | with the environment  |
+|                       |                       |   with the environment  |
 |                       |                       | | variable TOKAMAKNAME. |
-|                       |                       | | If not the run stops. |
+|                       |                       |   If not the run stops. |
 +-----------------------+-----------------------+-------------------------+
 | SELECT_TIME_CORE/EQ   | INITIALIZATION        | | Selects time slice of |
-|                       |                       | | CPOs matching/closest |
+|                       |                       |   CPOs matching/closest |
 |                       |                       | | to the requested time |
-|                       |                       | | in *time* Kepler      |
-|                       |                       | | variable              |
+|                       |                       |   in *time* Kepler      |
+|                       |                       |   variable              |
 +-----------------------+-----------------------+-------------------------+
 | Check Coreprof/Equil  | INITIALIZATION        | | Checks the            |
-| Time and Flag         |                       | | output_flag of the    |
+| Time and Flag         |                       |   output_flag of the    |
 |                       |                       | | input CPOs to know if |
-|                       |                       | | they are valid and    |
+|                       |                       |   they are valid and    |
 |                       |                       | | prints the actual     |
-|                       |                       | | time stamp retrived   |
+|                       |                       |   time stamp retrived   |
 |                       |                       | | from both CPOs (if    |
-|                       |                       | | time = -1 and         |
+|                       |                       |   time = -1 and         |
 |                       |                       | | output_flag is        |
-|                       |                       | | negative then the CPO |
+|                       |                       |   negative then the CPO |
 |                       |                       | | is not valid). If the |
-|                       |                       | | equilibrium is        |
+|                       |                       |   equilibrium is        |
 |                       |                       | | considered invalid a  |
-|                       |                       | | message in displayed  |
+|                       |                       |   message in displayed  |
 |                       |                       | | on the Multi Tab      |
-|                       |                       | | Display window and    |
+|                       |                       |   Display window and    |
 |                       |                       | | workflow execution is |
-|                       |                       | | stopped. If the       |
+|                       |                       |   stopped. If the       |
 |                       |                       | | coreprof is           |
-|                       |                       | | considered invalid a  |
+|                       |                       |   considered invalid a  |
 |                       |                       | | message is displayed  |
-|                       |                       | | on the Multi Tab      |
+|                       |                       |   on the Multi Tab      |
 |                       |                       | | Display window but    |
-|                       |                       | | the workflow will     |
+|                       |                       |   the workflow will     |
 |                       |                       | | continue since some   |
-|                       |                       | | of the MHD codes      |
+|                       |                       |   of the MHD codes      |
 |                       |                       | | handle plasma density |
-|                       |                       | | internally as code    |
+|                       |                       |   internally as code    |
 |                       |                       | | parameter and their   |
-|                       |                       | | execution is not      |
-|                       |                       | | affected.             |
+|                       |                       |   execution is not      |
+|                       |                       |   affected.             |
 +-----------------------+-----------------------+-------------------------+
 | Cutoff                | FixedBndCode          | | Performs the          |
-|                       |                       | | cut-off of the input  |
+|                       |                       |   cut-off of the input  |
 |                       |                       | | equilibrium if        |
-|                       |                       | | requested and         |
+|                       |                       |   requested and         |
 |                       |                       | | provided the input    |
-|                       |                       | | CPO has a poloidal    |
+|                       |                       |   CPO has a poloidal    |
 |                       |                       | | flux (Psi) mapping    |
-|                       |                       | | i.e. Psi(R,Z). If not |
+|                       |                       |   i.e. Psi(R,Z). If not |
 |                       |                       | | present then workflow |
-|                       |                       | | execution stops and a |
+|                       |                       |   execution stops and a |
 |                       |                       | | message is displayed  |
-|                       |                       | | on the Multi Tab      |
+|                       |                       |   on the Multi Tab      |
 |                       |                       | | Display window. A     |
-|                       |                       | | plot with the         |
+|                       |                       |   plot with the         |
 |                       |                       | | original (in blue)    |
-|                       |                       | | and cut equilibrium   |
+|                       |                       |   and cut equilibrium   |
 |                       |                       | | (in green) is shown   |
-|                       |                       | | when cut_off: yes     |
+|                       |                       |   when cut_off: yes     |
 |                       |                       | | A plot with           |
-|                       |                       | | just the original (in |
+|                       |                       |   just the original (in |
 |                       |                       | | blue) equilibrium is  |
-|                       |                       | | shown when            |
-|                       |                       | | cut_off : no          |
+|                       |                       |   shown when            |
+|                       |                       |   cut_off : no          |
 |                       |                       |                         |
 |                       |                       | | **NOTE**: A           |
-|                       |                       | | useful trick to STOP  |
+|                       |                       |   useful trick to STOP  |
 |                       |                       | | the workflow          |
-|                       |                       | | execution*-> when a   |
+|                       |                       |   execution*-> when a   |
 |                       |                       | | Python plot window is |
-|                       |                       | | shown, Press the STOP |
+|                       |                       |   shown, Press the STOP |
 |                       |                       | | button on the Kepler  |
-|                       |                       | | GUI before closing    |
+|                       |                       |   GUI before closing    |
 |                       |                       | | the plot window. This |
-|                       |                       | | ensures workflow      |
+|                       |                       |   ensures workflow      |
 |                       |                       | | execution is stopped  |
-|                       |                       | | since Kepler is       |
+|                       |                       |   since Kepler is       |
 |                       |                       | | waiting for Python    |
-|                       |                       | | process to            |
-|                       |                       | | proceed.              |
+|                       |                       |   process to            |
+|                       |                       |   proceed.              |
 +-----------------------+-----------------------+-------------------------+
 | Fixbndequil           | FixedBndCode          | | Selects from a pool   |
-|                       |                       | | of 3 equilibrium      |
+|                       |                       |   of 3 equilibrium      |
 |                       |                       | | codes the one to      |
-|                       |                       | | launch according to   |
+|                       |                       |   launch according to   |
 |                       |                       | | the value of the      |
-|                       |                       | | Kepler variable       |
-|                       |                       | | *eqcode*              |
+|                       |                       |   Kepler variable       |
+|                       |                       |   *eqcode*              |
 +-----------------------+-----------------------+-------------------------+
 | Caxe                  | FixedBndCode          | | The CAXE code.        |
 |                       |                       | | It can operate        |
-|                       |                       | | jointly with KINX     |
-|                       |                       | | only.                 |
+|                       |                       |   jointly with KINX     |
+|                       |                       |   only.                 |
 +-----------------------+-----------------------+-------------------------+
 | Chease                | FixedBndCode          | | The CHEASE code.      |
 |                       |                       | | It can operate        |
-|                       |                       | | jointly with ILSA,    |
-|                       |                       | | MARS and MARS-F       |
+|                       |                       |   jointly with ILSA,    |
+|                       |                       |   MARS                  |
+|                       |                       | | and MARS-F            |
 +-----------------------+-----------------------+-------------------------+
 | Helena                | FixedBndCode          | | The HELENA code.      |
 |                       |                       | | It can operate        |
-|                       |                       | | jointly with ILSA,    |
-|                       |                       | | MARS and MARS-F       |
+|                       |                       |   jointly with ILSA,    |
+|                       |                       |   MARS                  |
+|                       |                       | | and MARS-F            |
 +-----------------------+-----------------------+-------------------------+
 | Visual                | FixedBndCode          | | Visualize the         |
-|                       |                       | | resulting equilibrium.|
+|                       |                       |   resulting equilibrium.|
 |                       |                       | | A Copy in EPS format  |
-|                       |                       | | is stored on the path |
+|                       |                       |   is stored on the path |
 |                       |                       | | defined by Kepler     |
-|                       |                       | | variable %BLUE%path   |
+|                       |                       |   variable %BLUE%path   |
 +-----------------------+-----------------------+-------------------------+
 | Ilsa                  | StabCode              | | The ILSA code suite.  |
 |                       |                       | | At the moment only    |
-|                       |                       | | the MISHKA1 kernel    |
+|                       |                       |   the MISHKA1 kernel    |
 |                       |                       | | (ideal incompressible |
-|                       |                       | | MHD) is active        |
+|                       |                       |   MHD) is active        |
 +-----------------------+-----------------------+-------------------------+
 | Kinx                  | StabCode              | The KINX code.          |
 +-----------------------+-----------------------+-------------------------+
@@ -279,19 +281,19 @@ Actors involved
 | Marsf                 | StabCode              | The MARS-F code         |
 +-----------------------+-----------------------+-------------------------+
 | PLOT_EIGENFUNCTION    | StabCode              | | Visualize the real    |
-|                       |                       | | and imaginary         |
+|                       |                       |   and imaginary         |
 |                       |                       | | eigenfunction         |
-|                       |                       | | components. In case   |
+|                       |                       |   components. In case   |
 |                       |                       | | multiple toroidal     |
-|                       |                       | | mode numbers are set  |
+|                       |                       |   mode numbers are set  |
 |                       |                       | | (ILSA or KINX), one   |
-|                       |                       | | plot window per each  |
+|                       |                       |   plot window per each  |
 |                       |                       | | toroidal eigenmode is |
-|                       |                       | | returned. A Copy in   |
+|                       |                       |   returned. A Copy in   |
 |                       |                       | | EPS format of each    |
-|                       |                       | | window is stored on   |
+|                       |                       |   window is stored on   |
 |                       |                       | | the path defined by   |
-|                       |                       | | Kepler variable *path*|
+|                       |                       |   Kepler variable *path*|
 +-----------------------+-----------------------+-------------------------+
 
 Installing the workflow
@@ -370,37 +372,37 @@ folder under */tutorial*
 | Case            | Path            | Original source   | Description       |
 +=================+=================+===================+===================+
 | 1               | /tutorial/case1 | | gvlad/test/180/ | | Test equilibrium|
-|                 |                 | | 300             | | of elongated    |
-|                 |                 |                   | | JET-like plasma,|
-|                 |                 |                   | | unstable to     |
-|                 |                 |                   | | internal n=1    |
-|                 |                 |                   | | mode            |
+|                 |                 | | 300             |   of elongated    |
+|                 |                 |                   |   JET-like        |
+|                 |                 |                   | | plasma, unstable|
+|                 |                 |                   |   to internal n=1 |
+|                 |                 |                   |   mode            |
 +-----------------+-----------------+-------------------+-------------------+
 | 2               | /tutorial/case2 | diy/test/1/2      | | Test equilibrium|
-|                 |                 |                   | | of circular     |
-|                 |                 |                   | | plasma, unstable|
-|                 |                 |                   | | to global n=1   |
-|                 |                 |                   | | mode            |
+|                 |                 |                   |   of circular     |
+|                 |                 |                   |   plasma,         |
+|                 |                 |                   | | unstable to     |
+|                 |                 |                   |   global n=1 mode |
 +-----------------+-----------------+-------------------+-------------------+
 | 3               | /tutorial/case3 | | rcoelho/aug/291 | | AUG equilibrium |
-|                 |                 | | 00/5            | | without         |
-|                 |                 |                   | | separatrix,     |
+|                 |                 | | 00/5            |   without         |
+|                 |                 |                   |   separatrix,     |
 |                 |                 |                   | | unstable to     |
-|                 |                 |                   | | internal/global |
-|                 |                 |                   | | n=1 mode        |
+|                 |                 |                   |   internal/global |
+|                 |                 |                   |   n=1 mode        |
 +-----------------+-----------------+-------------------+-------------------+
 | 4               | /tutorial/case4 | | rcoelho/jet/778 | | JET equilibrium |
-|                 |                 | | 77/2            | | without         |
-|                 |                 |                   | | separatrix,     |
+|                 |                 | | 77/2            |   without         |
+|                 |                 |                   |   separatrix,     |
 |                 |                 |                   | | unstable to     |
-|                 |                 |                   | | internal n=1    |
-|                 |                 |                   | | mode            |
+|                 |                 |                   |   internal n=1    |
+|                 |                 |                   |   mode            |
 +-----------------+-----------------+-------------------+-------------------+
 | 5               | /tutorial/case5 | | rcoelho/aug/291 | | Same equilibrium|
-|                 |                 | | 00/4            | | of Case 3 but   |
-|                 |                 |                   | | from full (R,Z) |
-|                 |                 |                   | | CLISTE          |
-|                 |                 |                   | | reconstruction. |
+|                 |                 | | 00/4            |   of Case 3 but   |
+|                 |                 |                   |   from full       |
+|                 |                 |                   | | (R,Z) CLISTE    |
+|                 |                 |                   |   reconstruction. |
 +-----------------+-----------------+-------------------+-------------------+
 
 `Guided Tutorial on EQSTABIL <%ATTACHURL%/Tutorial_EQSTABIL.pdf>`__
