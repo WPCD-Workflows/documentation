@@ -301,7 +301,7 @@ realclean: clean-assets
 
 # calls: PUT /repos/:owner/:repo/contents/:path
 # See http://developer.github.com/v3/repos/contents#create-a-file
-publish:
+push:
 	@if test -z "$${DOCUMENTATION_TOKEN}" ; then \
 	  echo "Please set DOCUMENTATION_TOKEN environment variable!";\
 	  exit 1;\
@@ -343,9 +343,9 @@ help-assets :
 		echo "    make $${f}"; \
 	done
 	@echo
-	@echo "You can publish file(s) with: "
+	@echo "You can push large file(s) with: "
 	@echo
-	@echo "    make publish asset=path.to.your.tar.gz"
-	@echo " or make publish asset='path/*.png'"
+	@echo "    make push asset=path.to.your.tar.gz"
+	@echo " or make push asset='path/*.png'"
 	@echo
 

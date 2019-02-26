@@ -361,7 +361,8 @@ intersphinx_mapping = {
 # Number the Figures, Tables and Listings
 numfig = True
 
-math_number_all = True
+math_number_all = False
+math_numfig = True
 
 from sphinx.highlighting import PygmentsBridge
 from pygments.formatters.latex import LatexFormatter
