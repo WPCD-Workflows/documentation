@@ -158,7 +158,7 @@ Kepler IMAS actors
 | IDSContentStd    | | Displays IDS data on console (better     |
 |                  |   for huge data sets)                      |
 +------------------+--------------------------------------------+
-| IDSContent	   |  Displays IDS data                         |
+| IDSContent	   | | Displays IDS data                        |
 +------------------+--------------------------------------------+
 
 IMAS Kepler based configuration
