@@ -17,6 +17,7 @@ else
 endif
 
 
+TOKEN ?= $(shell sed -ne '/url/s|.*https://\([^@]*\).*|\1|p' .git/config)
 GITHUB_ASSETS_REPOSITORY ?= WPCD-Workflows/assets
 EXTERNALDATA ?= https://github.com/$(GITHUB_ASSETS_REPOSITORY)/raw/master
 HASHES := $(wildcard source/static/*.md5)
@@ -35,7 +36,7 @@ ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) sou
 # the i18n builder cannot share the environment and doctrees with the others
 I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 
-.PHONY: help help_assets
+.PHONY: help help-assets
 help: 
 	@echo "Please use \`make <target>' where <target> is one of"
 	@echo "  html       to make standalone HTML files"
@@ -64,7 +65,7 @@ help:
 	@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
 	@echo "  coverage   to run coverage check of the documentation (if enabled)"
 	@echo "  dummy      to check syntax errors of document sources"
-	@echo "  help_assets to get a list of files available externaly"
+	@echo "  help-assets to get a list of files available externaly"
 
 .PHONY: clean
 clean:
@@ -248,7 +249,7 @@ dummy:
 
 
 .PRECIOUS: %.md5-stamp
-.PHONY: help help_assets clean realclean assets publish all doc token
+.PHONY: help help-assets clean realclean assets publish all doc token
 
 -include depend
 
@@ -302,10 +303,8 @@ realclean: clean-assets
 
 # calls: PUT /repos/:owner/:repo/contents/:path
 # See http://developer.github.com/v3/repos/contents#create-a-file
-DOCUMENTATION_TOKEN = $(shell sed -ne \
-	'/url/s|.*https://.*:\([^@]*\).*|\1|p' .git/config)
 push:
-	@if test -z "$${DOCUMENTATION_TOKEN}" ; then \
+	@if test -z "$${TOKEN}" ; then \
 	  echo "Please see README.md for setting remote TOKEN!";\
 	  exit 1;\
 	fi
@@ -319,7 +318,7 @@ push:
 	  echo "Pushing asset $${file} to github $${repo} as $${md5}";\
 	  http_code=$$(echo "$${message}" | curl -X PUT --data @- "$${url}" \
 	   -o /dev/null -w "%{http_code}" -H "Content-Type: application/json" \
-	   -H "Authorization: token $(DOCUMENTATION_TOKEN)");\
+	   -H "Authorization: token $(TOKEN)");\
 	  if [ $$? != 0 -o $${http_code} != 201 ]; then \
 	     echo "Error: curl status=$$? http_code=$${http_code}"; \
              [ $${http_code} == 404 ] && echo "No commit access to $${repo}";\
@@ -351,7 +350,3 @@ help-assets :
 	@echo "    make push asset=path.to.your.tar.gz"
 	@echo " or make push asset='path/*.png'"
 	@echo
-
-
-token:
-	echo $(DOCUMENTATION_TOKEN)
