@@ -17,6 +17,8 @@ To change the TOKEN or remote URL:
 To commit large files to the https://github.com/WPCD-Workflows/assets repository use 
 
     make push asset=your.file
+    make push asset=source/static/Phase4.10b.8_HTML.zip
+    make push asset='source/archive/*.zip'
     
 If using new location for large files then edit ASSETS wildcard in Makefile
 
