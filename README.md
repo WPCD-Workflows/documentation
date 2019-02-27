@@ -1,5 +1,6 @@
 # WPCD Workflows documentation
-Migrated eufus.eu documentation
+
+Migrated eufus.eu documentation available as http://wpcd-workflows.github.io/
 
 To commit to this repository user needs to become Collaborator 
 and to create "personal access token" with https://github.com/settings/tokens
@@ -28,10 +29,10 @@ If using new location for large files then edit ASSETS wildcard in Makefile
     
 ## Publishing documentation
 
-Unless the directory is cloned firstly local directory WPCD-Workflows.github.io will
-be created and the content of the local HTML documentation can be viewed with
+Unless the directory is cloned firstly a local directory WPCD-Workflows.github.io 
+will be created and the content of the HTML documentation can be viewed with
 
-    xdg-open WPCD-Workflows.github.io/index.html
+    xdg-open ../WPCD-Workflows.github.io/index.html
     
 To be able to push documentation remove WPCD-Workflows.github.io and 
 
