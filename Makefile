@@ -248,7 +248,7 @@ dummy:
 
 
 .PRECIOUS: %.md5-stamp
-.PHONY: help help_assets clean realclean assets publish all doc
+.PHONY: help help_assets clean realclean assets publish all doc token
 
 -include depend
 
@@ -299,11 +299,14 @@ clean-assets:
 realclean: clean-assets
 	rm -rf $(ASSETDIR)
 
+
 # calls: PUT /repos/:owner/:repo/contents/:path
 # See http://developer.github.com/v3/repos/contents#create-a-file
+DOCUMENTATION_TOKEN = $(shell sed -ne \
+	'/url/s|.*https://.*:\([^@]*\).*|\1|p' .git/config)
 push:
 	@if test -z "$${DOCUMENTATION_TOKEN}" ; then \
-	  echo "Please set DOCUMENTATION_TOKEN environment variable!";\
+	  echo "Please see README.md for setting remote TOKEN!";\
 	  exit 1;\
 	fi
 	@for file in $(wildcard $(asset)); do if test -f "$${file}" ; then \
@@ -313,7 +316,7 @@ push:
 	  base64content=$$(base64 --wrap=0 $${file});\
 	  message="{\"content\": \"$${base64content}\",\
 		    \"message\": \"$${file} uploaded by $${USER}\"}";\
-	  echo "Publishing asset $${file} to github $${repo} as $${md5}";\
+	  echo "Pushing asset $${file} to github $${repo} as $${md5}";\
 	  http_code=$$(echo "$${message}" | curl -X PUT --data @- "$${url}" \
 	   -o /dev/null -w "%{http_code}" -H "Content-Type: application/json" \
 	   -H "Authorization: token $(DOCUMENTATION_TOKEN)");\
@@ -349,3 +352,6 @@ help-assets :
 	@echo " or make push asset='path/*.png'"
 	@echo
 
+
+token:
+	echo $(DOCUMENTATION_TOKEN)
