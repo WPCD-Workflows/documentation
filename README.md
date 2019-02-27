@@ -3,8 +3,10 @@
 Migrated eufus.eu documentation available as http://wpcd-workflows.github.io/
 
 To commit to this repository user needs to become Collaborator 
-and to create "personal access token" with https://github.com/settings/tokens
-Created TOKEN is then used as a password for HTTPS access to the repository.
+and to create "personal access token" with *admin:repo_hook, public_repo, repo:status* 
+at your https://github.com/settings/tokens page.
+
+Created TOKEN is then used as a user/password for HTTPS access to the repository.
 
 To clone please use:
 
