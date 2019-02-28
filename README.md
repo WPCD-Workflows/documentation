@@ -42,6 +42,6 @@ To be able to push documentation remove WPCD-Workflows.github.io and
    
 at the same level as wpcd-doc. To push everything therein use:
 
-    git add .
+    git add --all .
     git commit -m "Updated public documentation"
     git push
