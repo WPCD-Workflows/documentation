@@ -38,7 +38,7 @@ will be created and the content of the HTML documentation can be viewed with
     
 To be able to push documentation remove WPCD-Workflows.github.io and 
 
-    git clone https://USER:TOKEN@github.com/WPCD-Workflows/WPCD-Workflows.github.io.git
+    git clone https://TOKEN@github.com/WPCD-Workflows/WPCD-Workflows.github.io.git
    
 at the same level as wpcd-doc. To push everything therein use:
 
