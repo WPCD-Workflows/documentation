@@ -1,6 +1,6 @@
 # WPCD Workflows documentation
 
-Migrated eufus.eu documentation available as http://wpcd-workflows.github.io/
+Migrated eufus.eu documentation available as http://wpcd-workflows.github.io/ and http://wpcd-workflows.readthedocs.io/ (autobuild without assets at this point)
 
 To commit to this repository user needs to become Collaborator 
 and to create "personal access token" with *admin:repo_hook, public_repo, repo:status* 
