@@ -556,9 +556,9 @@ plasma.
 
 There are currently 2 workflows being developed within EU-IM-IMP3 project:
 
--  ETS_A_4.10b Contact person: `Denis Kalupin <mailto:denis.kalupin@euro-fusion.org?subject=ETS%20in%20KEPLER>`__ *(Skype:dkalupin)* 
--  ETS_A_4.10a Contact person: `Denis Kalupin <mailto:denis.kalupin@euro-fusion.org?subject=ETS%20in%20KEPLER>`__ *(Skype:dkalupin)*
--  ETS_C Contact person: `Vincent Basiuk <mailto:vincent.basiuk@cea.fr?subject=ETS%20in%20KEPLER>`__, `Philippe Huynh <mailto:vincent.basiuk@cea.fr?subject=ETS%20in%20KEPLER>`__  (Status)
+-  ETS_A_4.10b Contact person: Denis Kalupin 
+-  ETS_A_4.10a Contact person: Denis Kalupin 
+
 
 .. _ETS_A_4.10B:
 
@@ -571,8 +571,7 @@ Obtaining the ETS
 =================
 
 *Contact person:*
-`Denis Kalupin <mailto:denis.kalupin@euro-fusion.org?subject=ETS%20in%20KEPLER>`__ *(Skype:
-dkalupin)*
+Denis Kalupin 
 
 Installing the ETS
 ------------------
@@ -612,7 +611,7 @@ Press the play button on the workflow.
    :align: center
 
 **The workflow shall run!** If it
-does not, please use the `contact <mailto:denis.kalupin@euro-fusion.org?subject=ETS%20in%20KEPLER>`__ from above.
+does not, please use the contact from above.
 
 **Starting the workflow:**
 If you have the workflow already installed, there are there are several
@@ -1801,8 +1800,7 @@ The list and status of available physics models for the ETS_A can be
 found
 `here <https://www.eufus.eu/documentation/EU-IM/html/ets_status.html>`__.
 
-**Contact person:** `Denis Kalupin <mailto:denis.kalupin@euro-fusion.org?subject=ETS%20in%20KEPLER>`__ (Skype:
-dkalupin)*
+**Contact person:** Denis Kalupin 
 
 .. figure:: images/ets_top_a.png
    :align: center
@@ -2748,8 +2746,7 @@ tokamak core plasma.
 -  provides users with all updates through the version control system
 -  still actively developing tool
 
-Contact persons: `Vincent Basiuk <mailto:vincent.basiuk@cea.fr?subject=ETS%20in%20KEPLER>`__ ,
-`Philippe Huynh <mailto:philippe.huynh@cea.fr?subject=ETS%20in%20KEPLER>`__
+
 
 .. figure:: images/ets_c.png
    :align: center
