@@ -53,15 +53,6 @@ Documentation for the ETS
 -  ETS Doxygen Documentation (PDF)(HTML)
 -  `Pellets in ETS <https://portal.eufus.eu/documentation/ITM/html/pellet.html>`__
 
-**********************************
-Presentations that discuss the ETS
-**********************************
-
--  Presentation at ICNSP-2009 on the ETS
--  Movie from the presentation showing the evolution of the flux
-   surfaces
--  Movie from the presentation showing the evolution of the plasma
-
 *****************************
 ETS Verification & Validation
 *****************************
