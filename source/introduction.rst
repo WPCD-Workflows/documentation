@@ -10,27 +10,49 @@ goals, via the development of existing modelling codes with a particular
 focus on integrated modelling. The primary objectives of WPCD are: 
 
 1. Provide a suite of codes that can be validated on existing Tokamaks and
-used for JT-60SA, ITER and DEMO predictions:
+   used for JT-60SA, ITER and DEMO predictions:
 
--  build on the existing modelling codes developed by the EUROfusion
-   Consortium members including the Integrated Modelling (EU-IM)
-   infrastructure, toolset and codes developed under the former EFDA ITM
-   Task Force,
--  add new physics to the existing models
--  couple codes into integrated workflows
--  optimize codes.
+   -  build on the existing modelling codes developed by the EUROfusion
+      Consortium members including the Integrated Modelling (EU-IM)
+      infrastructure, toolset and codes developed under the former EFDA ITM
+      Task Force,
+   -  add new physics to the existing models
+   -  couple codes into integrated workflows
+   -  optimize codes.
 
-2.  Specific ITER simulation work in support of ITER IO and F4E with specified deliverables.
+2. Specific ITER simulation work in support of ITER IO and F4E with
+   specified deliverables.
 
-WPCD operates under a work plan aiming to provide in the long term a full suite of integrated simulation workflows, incorporating core-edge-SOL/PFC coupling, first-principles models and control elements. A central task is the development of the modular European Transport Simulator, ETS, which is being deployed to JET and MST modelling infrastructures for validation and application to experimental analysis.
+WPCD operates under a work plan aiming to provide in the long term a full
+suite of integrated simulation workflows, incorporating core-edge-SOL/PFC
+coupling, first-principles models and control elements. A central task is
+the development of the modular European Transport Simulator, ETS, which is
+being deployed to JET and MST modelling infrastructures for validation and
+application to experimental analysis.
 
-In addition to code and workflow development, rigorous code verification is also performed under WPCD, within the EU-IM framework; whereas validation of the released integrated modelling workflows against the experiments is performed under WPJET1 and WPMST1.
+In addition to code and workflow development, rigorous code verification is
+also performed under WPCD, within the EU-IM framework; whereas validation
+of the released integrated modelling workflows against the experiments is
+performed under WPJET1 and WPMST1.
 
-The Work Package run as a project and managed by a project leader (M. Romanelli, UKAEA, michele.romanelli@ukaea.uk)
+The Work Package run as a project and managed by a project leader (M.
+Romanelli, UKAEA, michele.romanelli@ukaea.uk)
 
 In 2019 the structure of the project has been reviewed and changed.
 
-The project is now organised into three coordinated areas or subprojects reflecting the present priorities: Enabling Workflow Exploitation, Workflow Development, Workflow adaptation to IMAS. The Enabling Workflow Exploitation Area (EWE) will coordinate the development of pre-processing tools for the routine use of ETS and the equilibrium-MHD-stability workflow in EUROfusion facilities, the development of visualization tools, synthetic diagnostics and the provision of training to users. The Workflow Development Area or subproject will coordinate the continuous development of existing and new workflows in IMAS addressing specific modelling needs of the other EUROfusion work packages. The Workflow adaptation to IMAS Area will operate in strong collaboration with ITER IO and will ensure the complete adaptation of existing workflows to IMAS using the most updated Data Dictionary.
+The project is now organised into three coordinated areas or subprojects
+reflecting the present priorities: Enabling Workflow Exploitation, Workflow
+Development, Workflow adaptation to IMAS. The Enabling Workflow
+Exploitation Area (EWE) will coordinate the development of pre-processing
+tools for the routine use of ETS and the equilibrium-MHD-stability workflow
+in EUROfusion facilities, the development of visualization tools, synthetic
+diagnostics and the provision of training to users. The Workflow
+Development Area or subproject will coordinate the continuous development
+of existing and new workflows in IMAS addressing specific modelling needs
+of the other EUROfusion work packages. The Workflow adaptation to IMAS Area
+will operate in strong collaboration with ITER IO and will ensure the
+complete adaptation of existing workflows to IMAS using the most updated
+Data Dictionary.
 
 .. _world_wpcd_structure:
 
