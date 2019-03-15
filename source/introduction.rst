@@ -163,9 +163,7 @@ Gforge
   `Gforge <https://gforge6.eufus.eu>`__ hosts all projects (software and infrastructure) under the EU-IM.
 
 EU-IM Gateway
-   The EU-IM Gateway is a compute cluster located at Portici (near
-   Napoli in Italy). It is uses for development and fusion simulations in
-   the EU-IM.
+   The EU-IM Gateway is a computer cluster presently hosted at CINECA, Bologna, Italy. It is used for development and fusion simulations in the EU-IM.
 
 EU-IM Portal
    The `EU-IM Portal
@@ -270,67 +268,4 @@ verification
    accurately represents the developer's conceptual description of the model
    and the solution to the model. 
    
-
-Support
-=======
-
-Getting support for the EU-IM platform and Gateway
---------------------------------------------------
-
-The EU-IM provides several ways to get support when you run into problems.
-Which one to choose depends on the nature of your problem. This page
-tries to give an overview.
-
-Support for problems related to the EU-IM Gateway
--------------------------------------------------
-
-The official documentation of the ITM Gateway can be found at
-https://wiki.eufus.eu.
-
-
-Support for problems related to the EU-IM Platform and Software
----------------------------------------------------------------
-
-All ITM-specific software and the whole ITM platform is supported by the
-Core Programming Team (CPT). You can submit trouble tickets to them via
-the General Support Project in the GForge system. To get more effective
-help, have a look at the guidelines prepared here: `How to report an
-issue <http://portal.efda-itm.eu/twiki/bin/view/Main/HowToReportAnIssue>`__.
-
-To directly submit a trouble ticket, go to: `General Support Tracker
-(https://gforge6.eufus.eu/gf/project/generalsupport/tracker/) <https://gforge6.eufus.eu/gf/project/generalsupport/tracker/?action=TrackerItemBrowse&tracker_id=184>`__.
-
-Use this support tracker if your problem falls in the following
-categories:
-
--  Problems using the UAL, FC2K, HPC2K or similar tools
--  Problems running Kepler or Kepler workflows
--  Visualization tools: VisIt, Python
--  Integrated Simulation Editor (ISE)
--  Any software project that is hosted in GForge
--  Any kind of scientific software
-
-Feature requests for EU-IM Software
------------------------------------
-
-Feature requests for software developed within the ITM can be submitted
-to a separate tracker.
-
-To submit a feature request, please go to `General Feature Request
-Tracker <https://gforge6.eufus.eu/gf/project/generalsupport/tracker/?action=TrackerItemBrowse&tracker_id=702>`_.
-
-If you are unsure whether to file a bug report of feature request, have
-a look at these guidlines: `How to report an
-issue <https://portal.eufus.eu/twiki/bin/view/Main/HowToReportAnIssue>`_.
-
-
-.. _world_itm_external_links:
-
-Links to related external projects
-==================================
-
--  `EUFORIA Project <http://www.euforia-project.eu/EUFORIA/>`__
--  `MAPPER Project <http://www.mapper-project.eu/>`__
--  `EFDA High Level Support Team (HLST) <https://www.efda-hlst.eu/>`__
--  `EFDA Goal Oriented Training in Theory (GOTiT) <https://solps-mdsplus.aug.ipp.mpg.de/GOTiT/>`__
 
