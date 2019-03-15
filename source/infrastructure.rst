@@ -1,7 +1,7 @@
 Infrastructure
 ==============
 
-The part of the EU-IM documentation addresses infrastructure related
+This part of the EU-IM documentation addresses infrastructure related
 issues like the EU-IM Gateway, EU-IM database access, the Universal Access
 Layer (UAL), and useful tools for handling CPOs.
 
