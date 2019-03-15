@@ -7,8 +7,9 @@ Introduction to Code Development for integrated modelling
 The EUROfusion Project on Code Development for Integrated Modelling (WP-CD)
 supports the achievement of the European Fusion Roadmap at Horizon 2020
 goals, via the development of existing modelling codes with a particular
-focus on integrated modelling. The primary objectives of WPCD are: 1.
-Provide a suite of codes that can be validated on existing machines and
+focus on integrated modelling. The primary objectives of WPCD are: 
+
+1. Provide a suite of codes that can be validated on existing Tokamaks and
 used for JT-60SA, ITER and DEMO predictions:
 
 -  build on the existing modelling codes developed by the EUROfusion
@@ -20,11 +21,12 @@ used for JT-60SA, ITER and DEMO predictions:
 -  optimize codes.
 
 2.  Specific ITER simulation work in support of ITER IO and F4E with specified deliverables.
-WPCD operates under a work plan aiming to provide in the long term a full suite of integrated simulation workflows, incorporating core-edge-SOL/PFC coupling, first-principles models and control elements. A central task is the development of the new modular European Transport Simulator, ETS, which is being deployed to JET modelling infrastructure for validation and application to experimental analysis.
+
+WPCD operates under a work plan aiming to provide in the long term a full suite of integrated simulation workflows, incorporating core-edge-SOL/PFC coupling, first-principles models and control elements. A central task is the development of the modular European Transport Simulator, ETS, which is being deployed to JET and MST modelling infrastructures for validation and application to experimental analysis.
 
 In addition to code and workflow development, rigorous code verification is also performed under WPCD, within the EU-IM framework; whereas validation of the released integrated modelling workflows against the experiments is performed under WPJET1 and WPMST1.
 
-The Work Package run as a project and managed by a project leader see ->here.
+The Work Package run as a project and managed by a project leader (M. Romanelli, UKAEA, michele.romanelli@ukaea.uk)
 
 In 2019 the structure of the project has been reviewed and changed.
 
