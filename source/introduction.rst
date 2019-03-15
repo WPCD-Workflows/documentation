@@ -1,8 +1,8 @@
 .. _world_wpcd_structure:
 
-=========================================================
-Introduction to Code Development for integrated modelling
-=========================================================
+=====================================================================
+Introduction to the Project Code Development for integrated modelling
+=====================================================================
 
 The EUROfusion Project on Code Development for Integrated Modelling (WP-CD)
 supports the achievement of the European Fusion Roadmap at Horizon 2020
