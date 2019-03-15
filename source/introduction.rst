@@ -19,23 +19,18 @@ used for JT-60SA, ITER and DEMO predictions:
 -  couple codes into integrated workflows
 -  optimize codes.
 
-2. Specific ITER simulation work in support of ITER IO and F4E with
-specified deliverables. WPCD operates under a work plan aiming to provide
-in the long term a full suite of integrated simulation workflows,
-incorporating core-edge-SOL/PFC coupling, first-principles models and
-control elements. A central task is the development of the new modular
-European Transport Simulator, ETS, which is being deployed to JET modelling
-infrastructure for validation and application to experimental analysis. In
-addition to code and workflow development, rigorous code verification is
-also performed under WPCD, within the EU-IM framework; whereas validation
-of the released integrated modelling workflows against the experiments is
-performed under the rerelated Task Forces. `EUROfusion WPCD webpage
-<https://users.euro-fusion.org/iterphysicswiki/index.php/Main_Page/>`__.
-The EU-IM Team includes both EUROfusion WPCD and WPISA CPT contributors,
-see `EU-IM Team <http://www.euro-fusionscipub.org/eu-im/>`__. This list
-reproduces the status of members in 2015 and is possibly not exhaustive.
+2.  Specific ITER simulation work in support of ITER IO and F4E with specified deliverables.
+WPCD operates under a work plan aiming to provide in the long term a full suite of integrated simulation workflows, incorporating core-edge-SOL/PFC coupling, first-principles models and control elements. A central task is the development of the new modular European Transport Simulator, ETS, which is being deployed to JET modelling infrastructure for validation and application to experimental analysis.
 
-.. _world_itm_approach:
+In addition to code and workflow development, rigorous code verification is also performed under WPCD, within the EU-IM framework; whereas validation of the released integrated modelling workflows against the experiments is performed under WPJET1 and WPMST1.
+
+The Work Package run as a project and managed by a project leader see ->here.
+
+In 2019 the structure of the project has been reviewed and changed.
+
+The project is now organised into three coordinated areas or subprojects reflecting the present priorities: Enabling Workflow Exploitation, Workflow Development, Workflow adaptation to IMAS. The Enabling Workflow Exploitation Area (EWE) will coordinate the development of pre-processing tools for the routine use of ETS and the equilibrium-MHD-stability workflow in EUROfusion facilities, the development of visualization tools, synthetic diagnostics and the provision of training to users. The Workflow Development Area or subproject will coordinate the continuous development of existing and new workflows in IMAS addressing specific modelling needs of the other EUROfusion work packages. The Workflow adaptation to IMAS Area will operate in strong collaboration with ITER IO and will ensure the complete adaptation of existing workflows to IMAS using the most updated Data Dictionary.
+
+.. _world_wpcd_structure:
 
 The European Integrated Modelling (EU-IM) approach
 ==================================================
