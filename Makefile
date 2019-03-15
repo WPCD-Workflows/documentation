@@ -276,7 +276,7 @@ $(ASSETDIR)/% :
 	fi
 	curl --location --fail --insecure \
 		--output $(ASSETDIR)/$(@F) $(EXTERNALDATA)/$(@F)
-	if [ $$(md5sum $(ASSETDIR)/$(@F)|cut -c 1-32) == $(@F) ]; then\
+	if test $$(md5sum $(ASSETDIR)/$(@F)|cut -c 1-32) = $(@F) ; then \
 	  chmod g+rw $(ASSETDIR)/$(@F);\
 	else\
 	  rm -f $(ASSETDIR)/$(@F); \
