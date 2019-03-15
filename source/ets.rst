@@ -2,45 +2,6 @@
  Core Transport Simulator (ETS)
 ################################
 
-*********************
-ETS source in FORTRAN
-*********************
-
-
-You can checkout the FORTRAN ETS workflow from gforge `/ project
-ETS <https://gforge6.eufus.eu/gf/project/ets/>`__ following instructions
-from `ETS User
-Guide <../imports/ETS_Documentation/ETS_User_Guide.pdf>`__
-
-If you did not use ETS before, first you need to request access to the
-code via the `EFDA EU-IM Portal <https://gforge6.eufus.eu/>`__ by
-following the GForge tab, following the `project
-ETS <https://gforge6.eufus.eu/gf/project/ets/>`__ and requesting access.
-
-Once you have access to the code, it can be checked out of SVN using
-
-.. code-block:: console
-
-   svn co https://gforge6.eufus.eu/svn/ets
-
-to access the whole repository, or
-
-.. code-block:: console
-
-   svn co https://gforge6.eufus.eu/svn/ets/trunk/ETS
-
-to access just the trunk version of the ETS.
-
-The `ETS project on Gforge <https://gforge6.eufus.eu/gf/project/ets/>`__
-also includes:
-
--  `A wiki <https://gforge6.eufus.eu/gf/project/ets/wiki/>`__
--  `Some documentation <https://gforge6.eufus.eu/gf/project/ets/docman/>`__
--  `Trackers <https://gforge6.eufus.eu/gf/project/ets/tracker/>`__
--  `News <https://gforge6.eufus.eu/gf/project/ets/news/>`__
--  `Mailing lists <https://gforge6.eufus.eu/gf/project/ets/mailman/>`__
--  `The SVN repository (web interface) <https://gforge6.eufus.eu/gf/project/ets/scmsvn/>`__
-
 *************************
 Documentation for the ETS
 *************************
