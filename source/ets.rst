@@ -32,27 +32,6 @@ plasma.
 -  provide users with all updates through the version control system
 -  still in active development tool
 
-There are currently 2 workflows being developed within EU-IM-IMP3 project:
-
--  ETS_A_4.10b Contact person: Denis Kalupin 
--  ETS_A_4.10a Contact person: Denis Kalupin 
-
-
-.. _ETS_A_4.10B:
-
-===========
-ETS_A 4.10b
-===========
-.. _ETS_A_4.10a_obtain:
-
-Obtaining the ETS
-=================
-
-*Contact person:*
-Denis Kalupin 
-
-Installing the ETS
-------------------
 
 The default ETS release is the tag4.10b10.3
 
@@ -1219,10 +1198,10 @@ waves2sources.
 .. _ETS_A_4.10A:
 
 ===========
-ETS_A 4.10a
+ETS 4.10a
 ===========
 
-**ETS_A workflow in KEPLER**:
+**ETS workflow in KEPLER**:
 
 -  uses as actors and composite actors from other IMPs, thus for the
    most recent versions of them please check with relevant project
