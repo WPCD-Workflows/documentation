@@ -6,12 +6,10 @@
 Documentation for the ETS
 *************************
 
--  Current ETS Timeline (PDF)(MS Project)
 -  `Description of the ETS <https://portal.eufus.eu/documentation/ITM/imports/imp3/public/ETS_Documentation/ETS_TRANSPORT_EQUATIONS.pdf>`__ 
 -  `Form of the standardize equations <https://portal.eufus.eu/documentation/ITM/imports/imp3/public/ETS_Documentation/STANDARDISED_EQUATION.pdf>`__
 -  `ETS User Guide <https://portal.eufus.eu/documentation/ITM/imports/imp3/public/ETS_Documentation/ETS_User_Guide.pdf>`__
 -  `ETS Status <https://portal.eufus.eu/documentation/ITM/imports/imp3/public/ETS_Documentation/ETS_Status.pdf>`__
--  ETS Doxygen Documentation (PDF)(HTML)
 -  `Pellets in ETS <https://portal.eufus.eu/documentation/ITM/html/pellet.html>`__
 
 *****************************
