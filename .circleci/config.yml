@@ -38,6 +38,8 @@ jobs:
       - deploy:
           name: Push generated HTML to WPCD-Wokrflows.github.io
           command: |
+            ls -la ~/.ssh
+	    cat ~/.ssh/id_rsa
             cd ../WPCD-Workflows.github.io
             git config user.email "WPCD-Workflows@circleci.com"
             git config user.name "Circle CI"
@@ -46,9 +48,9 @@ jobs:
             git push
             
       # Tell Circle to store the documentation output in a folder that we can access later
-      - store_artifacts:
-          path: ../WPCD-Workflows.github.io
-          destination: html
+      #- store_artifacts:
+      #    path: ../WPCD-Workflows.github.io
+      #    destination: html
 
 # Tell CircleCI to use this workflow when it builds the site
 workflows:
