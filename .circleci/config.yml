@@ -6,6 +6,9 @@ jobs:
     docker:
       - image: circleci/python:3.6-stretch
     steps:
+      - add_ssh_keys: 
+	  fingerprints:
+	    - "43:9e:31:e0:51:d7:13:44:33:ae:94:91:b0:01:de:a8"
       # Get our data and merge with upstream
       - run: sudo apt-get update
       - checkout
@@ -24,11 +27,22 @@ jobs:
           key: cache-pip
           paths:
             - ~/.cache/pip
+      # Checkout latest HTML site repo for deploy later on
+      - run: git clone git@github.com:WPCD-Workflows/WPCD-Workflows.github.io.git ../WPCD-Workflows.github.io
       # Build the docs
       - run:
           name: Build docs to store
           command: |
             make html
+      # 
+      - deploy:
+          name: Push generated HTML to WPCD-Wokrflows.github.io
+	  command: |
+	    cd ../WPCD-Workflows.github.io
+	    git add --all .
+	    git commit -m "Circle CI updated public documentation"
+	    git push
+	    
       # Tell Circle to store the documentation output in a folder that we can access later
       - store_artifacts:
           path: ../WPCD-Workflows.github.io
