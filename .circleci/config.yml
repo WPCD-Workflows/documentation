@@ -1,7 +1,7 @@
 version: 2
 jobs:
   # Define a "build_docs" job to be run with Circle
-  build_docs:
+  build:
     # This is the base environment that Circle will use
     docker:
       - image: circleci/python:3.6-stretch
@@ -39,4 +39,4 @@ workflows:
   version: 2
   default:
     jobs:
-      - build_docs
+      - build
