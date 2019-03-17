@@ -28,7 +28,10 @@ jobs:
           paths:
             - ~/.cache/pip
       # Checkout latest HTML site repo for deploy later on
-      - run: git clone git@github.com:WPCD-Workflows/WPCD-Workflows.github.io.git ../WPCD-Workflows.github.io
+      - run: 
+          name: Clone WPCD-Workflows.github.io containig HTML pages
+          command: |
+             GIT_SSH_COMMAND='ssh -i ~/.ssh/id_rsa_439e31e051d7134433ae9491b001dea8' git clone git@github.com:WPCD-Workflows/WPCD-Workflows.github.io.git ../WPCD-Workflows.github.io
       # Build the docs
       - run:
           name: Build docs to store
