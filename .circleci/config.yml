@@ -18,7 +18,6 @@ jobs:
       - restore_cache:
           keys:
             - cache-pip
-            - assets
       # Install the packages needed to build our documentation
       # This will depend on your particular package!
       - run: pip install --user sphinx sphinx_rtd_theme
@@ -34,6 +33,9 @@ jobs:
           command: |
              git clone git@github.com:WPCD-Workflows/WPCD-Workflows.github.io.git ../WPCD-Workflows.github.io
       # Build the docs
+      - restore_cache:
+          keys:
+            - assets
       - run:
           name: Build docs to store
           command: |
