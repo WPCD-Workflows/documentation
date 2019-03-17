@@ -37,18 +37,19 @@ jobs:
           name: Build docs to store
           command: |
             make html
-      # 
+      # See https://github.com/docksal/ci-agent/issues/26 
       - deploy:
           name: Push generated HTML to WPCD-Wokrflows.github.io
           command: |
             ls -la ~/.ssh
+            cat ~/.ssh/config
             env
             cd ../WPCD-Workflows.github.io
-            pwd
             git config user.email "WPCD-Workflows@circleci.com"
             git config user.name "Circle CI"
             git add --all .
             git commit -m "Circle CI build ${CIRCLE_BUILD_URL}"
+            ssh-add -D
             env GIT_SSH_COMMAND='ssh -i ~/.ssh/id_rsa_439e31e051d7134433ae9491b001dea8' git push
             
       # Tell Circle to store the documentation output in a folder that we can access later
