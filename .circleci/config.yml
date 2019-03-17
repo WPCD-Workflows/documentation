@@ -18,6 +18,7 @@ jobs:
       - restore_cache:
           keys:
             - cache-pip
+            - assets
       # Install the packages needed to build our documentation
       # This will depend on your particular package!
       - run: pip install --user sphinx sphinx_rtd_theme
@@ -37,6 +38,10 @@ jobs:
           name: Build docs to store
           command: |
             make html
+      - save_cache:
+          key: assets
+          paths:
+            - ~/assets
       # See https://github.com/docksal/ci-agent/issues/26 
       - deploy:
           name: Push generated HTML to WPCD-Wokrflows.github.io
