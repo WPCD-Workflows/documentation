@@ -44,6 +44,7 @@ jobs:
             ls -la ~/.ssh
             env
             cd ../WPCD-Workflows.github.io
+            pwd
             git config user.email "WPCD-Workflows@circleci.com"
             git config user.name "Circle CI"
             git add --all .
