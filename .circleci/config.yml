@@ -39,6 +39,8 @@ jobs:
           name: Push generated HTML to WPCD-Wokrflows.github.io
           command: |
             cd ../WPCD-Workflows.github.io
+            git config user.email "WPCD-Workflows@circleci.com"
+            git config user.name "Circle CI"
             git add --all .
             git commit -m "Circle CI updated public documentation"
             git push
