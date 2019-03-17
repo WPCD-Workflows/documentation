@@ -57,7 +57,8 @@ jobs:
             git add --all .
             git commit -m "Circle CI build ${CIRCLE_BUILD_URL}"
             ssh-add -D # delete checkout key from ssh-agent
-            if git status | grep -q "nothing to commit" ; then git push ; fi
+            nothing_to_commit=$(git status | sed -ne "/nothing to commit/p")
+            if [ -z "${nothing_to_commit}" ]; then git push ; fi
             #env GIT_SSH_COMMAND='ssh -i ~/.ssh/id_rsa_439e31e051d7134433ae9491b001dea8' git push
             
       # Tell Circle to store the documentation output in a folder that we can access later
