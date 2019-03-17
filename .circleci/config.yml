@@ -39,7 +39,7 @@ jobs:
           name: Push generated HTML to WPCD-Wokrflows.github.io
           command: |
             ls -la ~/.ssh
-            cat ~/.ssh/id_rsa
+            env
             cd ../WPCD-Workflows.github.io
             git config user.email "WPCD-Workflows@circleci.com"
             git config user.name "Circle CI"
