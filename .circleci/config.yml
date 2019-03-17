@@ -44,8 +44,8 @@ jobs:
             git config user.email "WPCD-Workflows@circleci.com"
             git config user.name "Circle CI"
             git add --all .
-            git commit -m "Circle CI updated public documentation"
-            git push
+            git commit -m "Circle CI build ${CIRCLE_BUILD_URL}"
+            GIT_SSH_COMMAND='ssh -i ~/.ssh/id_rsa_439e31e051d7134433ae9491b001dea8' git push
             
       # Tell Circle to store the documentation output in a folder that we can access later
       #- store_artifacts:
