@@ -56,8 +56,8 @@ jobs:
             git config user.name "Circle CI"
             git add --all .
             git commit -m "Circle CI build ${CIRCLE_BUILD_URL}"
-            ssh-add -D
-            git push
+            ssh-add -D # delete checkout key from ssh-agent
+            git status | grep -q "nothing to commit" || git push
             #env GIT_SSH_COMMAND='ssh -i ~/.ssh/id_rsa_439e31e051d7134433ae9491b001dea8' git push
             
       # Tell Circle to store the documentation output in a folder that we can access later
@@ -65,7 +65,7 @@ jobs:
       #    path: ../WPCD-Workflows.github.io
       #    destination: html
 
-# Tell CircleCI to use this workflow when it builds the site
+# Tell CircleCI to use this workflow when it builds the documentation site
 workflows:
   version: 2
   default:
