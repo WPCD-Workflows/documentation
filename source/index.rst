@@ -8,7 +8,7 @@
 
 
 
-Welcome to EUROfusion Integrated Modelling workflows's documentation!
+Welcome to EUROfusion Integrated Modelling workflow's documentation!
 =====================================================================
 
 Contents:
