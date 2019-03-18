@@ -353,46 +353,12 @@ EC wave codes
 -  GRAY, L. Figini, ENEA-CNR 
 -  TRAVIS, N. B. Marushchenko, IPP-Greifswald 
 
-.. _imp5_listcodes_LH_wave_codes:
-
-LH wave codes
-^^^^^^^^^^^^^
-
--  RAYLH, A. Cardinali, EURATOM-ENEA 
-
-.. _imp5_listcodes_EC_LH_wave_codes:
-
-Combined EC and LH wave codes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
--  C3PO, Y. Peysson, CEA (Cadarache) 
-
 .. _imp5_listcodes_electron_fokker_planck:
 
 Combined electron Fokker-Planck codes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  RELAX, E. Westerhof, FOM 
--  LUKE, Y. Peysson 
-
-.. _imp5_listcodes_lh_coupling:
-
-LH coupling
-^^^^^^^^^^^
-
--  ALOHA, J. Hillairet, CEA (Cadarache) 
-
-.. _imp5_listcodes_time_domain_wave:
-
-Time domain wave codes
-^^^^^^^^^^^^^^^^^^^^^^
-
--  FWTOR, C. Tsironis, Hellenic Association 
-
-.. _imp5_listcodes_ion_heating_codes:
-
-Ion heating codes
-~~~~~~~~~~~~~~~~~
 
 .. _imp5_listcodes_IC_wave_codes:
 
@@ -411,20 +377,16 @@ Wave codes for ion cyclotron heating
 Fokker-Planck codes for ion cyclotron heating
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
--  FPSIM, L.-G. Eriksson, EC 
--  SSFPQL, R. Bilato, IPP-Garching 
 -  RFOF, T. Johnson, VR  
--  Stix_Redist, E. Lerche and D. Van Eester
--  Stix_Disp, E. Lerche and D. Van Eester
+-  StixRedist, E. Lerche and D. Van Eester
    
 .. _imp5_listcodes_NBI_sources:
 
 NBI sources for Fokker-Planck codes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
--  BBNBI (Beamlet-based NBI module of ASCOT), O. Asunta, TEKES 
+-  BBNBI (Beamlet-based NBI module of ASCOT), J. Varje, TEKES 
 -  NEMO, M. Schneider, CEA (Cadarache) 
--  SNBI (OAW NBI source), K. Schöpf, OAW 
 
 .. _imp5_listcodes_nuclear_sources:
 
@@ -432,15 +394,14 @@ Nuclear sources (input for Fokker-Planck codes)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  Nuclearsim, T.Johnson, VR
-   
+- AFSI Ascot Fusion Source Integrator, J. Varje, Aalto
 .. _imp5_listcodes_NBI_Fokker-Planck:
 
 NBI Fokker-Planck codes
 ^^^^^^^^^^^^^^^^^^^^^^^
 
--  RISK, M. Schneider, CEA (Cadarache) 
+-  RISK, M. Schneider, CEA (ITER) 
 -  NBISIM, T. Johnson, VR
--  FIDIT, K. Schöpf, OAW 
 
 .. _imp5_listcodes_Advanced_Fokker-Planck:
 
@@ -450,20 +411,11 @@ Advanced codes
 (The following codes include either the synergy between IC and NBI
 heating, or include both wave field and Fokker-Planck solver)
 
--  ASCOT, S. Sipila, TEKES 
+-  ASCOT, S. Sipila and J. Varje, Aalto 
 -  SPOT, M. Schneider, CEA (Cadarache) 
 -  SELFO-light, T. Hellsten, VR 
 
 .. _imp5_listcodes_orbit_codes:
-
-Orbit tracing codes
-^^^^^^^^^^^^^^^^^^^
-
--  SOFI, S. Sipila, TEKES 
--  OAW Orbit Following Monte Carlo, K. Schöpf, OAW 
-
-Fast particle codes
-~~~~~~~~~~~~~~~~~~~
 
 .. _imp5_listcodes_fast_ions_mhd:
 
@@ -481,7 +433,7 @@ Codes for fast ion-MHD interactions
 Runaway electrons
 ^^^^^^^^^^^^^^^^^
 
--  ARENA, G. Pokol and G. Csepany 
+-  Runafluid, G. Pokol
 
 Transport list of codes 
 -----------------------
