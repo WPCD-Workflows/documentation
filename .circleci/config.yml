@@ -36,6 +36,9 @@ jobs:
       - restore_cache:
           keys:
             - assets
+      - restore_cache:
+          keys:
+            - doctrees
       - run:
           name: Build docs to store
           command: |
@@ -44,6 +47,10 @@ jobs:
           key: assets
           paths:
             - ~/assets
+      - save_cache:
+          key: doctrees
+          paths:
+            - ../WPCD-Workflows.github.io/doctrees
       # See https://github.com/docksal/ci-agent/issues/26 
       - deploy:
           name: Push generated HTML to WPCD-Wokrflows.github.io
