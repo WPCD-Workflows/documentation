@@ -26,7 +26,7 @@ leadership and has the following scope:
 EU-IM contact person
 ====================
 
-David Coster email: David.Coster@ipp.mpg.de
+David Coster 
 
 AMNS tasks
 ==========
