@@ -56,11 +56,12 @@ jobs:
             git config user.name "Circle CI"
             set +e # allow next test to be nonzero in a pipe
             git add --all .
-            git commit -m "Circle CI build ${CIRCLE_BUILD_URL}"
-            ssh-add -D # delete checkout key from ssh-agent
-            is_empty=$(git status|sed -ne '/nothing to commit/p')
-            echo "Status = ${is_empty}"
-            #if ! git status | grep -q "nothing to commit" ; then git push ; fi
+            if ! git status | grep -q "nothing to commit" ; then \
+                set +e ; \
+                git commit -m "Circle CI build ${CIRCLE_BUILD_URL}" ; \
+                ssh-add -D ;\
+		git push ;\
+            fi
             
       # Tell Circle to store the documentation output in a folder that we can access later
       #- store_artifacts:
