@@ -10,7 +10,7 @@ Documentation for the ETS
 -  `Form of the standardize equations <https://portal.eufus.eu/documentation/ITM/imports/imp3/public/ETS_Documentation/STANDARDISED_EQUATION.pdf>`__
 -  `ETS User Guide <https://portal.eufus.eu/documentation/ITM/imports/imp3/public/ETS_Documentation/ETS_User_Guide.pdf>`__
 -  `ETS Status <https://portal.eufus.eu/documentation/ITM/imports/imp3/public/ETS_Documentation/ETS_Status.pdf>`__
-
+-  :download:`ETS Transport equations, variables and Fortran implementation<static/ETS_TRANSPORT_EQUATIONS_V1.0.pdf>`
 
 .. _ETS_in_KEPLER:
 
