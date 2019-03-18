@@ -380,13 +380,9 @@ Disruption Modules
 Numerical Tools
 ~~~~~~~~~~~~~~~
 
-PROGEN, C. Konz, IPP (`code
-status <http://solps-mdsplus.aug.ipp.mpg.de:8080/EU-IM/specific_code_report?specific_codename=PROGEN&SUBMIT=Submit+Query>`__,
-`actor <#imp12_progen_actor>`__ )
+PROGEN, C. Konz, IPP 
 
-JALPHA, C. Konz, IPP (`code
-status <http://solps-mdsplus.aug.ipp.mpg.de:8080/EU-IM/specific_code_report?specific_codename=JALPHA&SUBMIT=Submit+Query>`__,
-`actor <#imp12_jalpha_actor>`__ )
+JALPHA, C. Konz, IPP 
 
 .. _imp5_listcodes:
 
@@ -399,9 +395,6 @@ tasks and their responsible officers.
 A number of IMP5 codes have projects on
 `gforge <https://gforge6.eufus.eu/gf/project/?action=ProjectTroveBrowse&_trove_category_id=312>`__.
 
-Update the code status
-`here <http://solps-mdsplus.aug.ipp.mpg.de:8080/EU-IM>`__.
-
 .. _imp5_listcodes_electron_heating_codes:
 
 Electron heating codes
@@ -412,22 +405,10 @@ Electron heating codes
 EC wave codes
 ^^^^^^^^^^^^^
 
--  TORAY-FOM, E. Westerhof, FOM (`code
-   status <http://solps-mdsplus.aug.ipp.mpg.de:8080/EU-IM/specific_code_report?specific_codename=TORAY-FOM&SUBMIT=Submit+Query>`__,
-   `codeparam <imp5_code_parameter_documentation_torayfom.html>`__)
-
--  TORBEAM, E. Poli, IPP-Garching (`code
-   status <http://solps-mdsplus.aug.ipp.mpg.de:8080/EU-IM/specific_code_report?specific_codename=TORBEAM&SUBMIT=Submit+Query>`__)
-
--  GRAY, L. Figini, ENEA-CNR (`code
-   status <http://solps-mdsplus.aug.ipp.mpg.de:8080/EU-IM/specific_code_report?specific_codename=GRAY&SUBMIT=Submit+Query>`__,
-   `gforge <https://gforge6.eufus.eu/gf/project/gray/>`__,
-   `codeparam <imp5_code_parameter_documentation_gray.html>`__)
-
--  TRAVIS, N. B. Marushchenko, IPP-Greifswald (`code
-   status <http://solps-mdsplus.aug.ipp.mpg.de:8080/EU-IM/specific_code_report?specific_codename=TRAVIS&SUBMIT=Submit+Query>`__,
-   `gforge <https://gforge6.eufus.eu/gf/project/gray/>`__)
-
+-  TORAY-FOM, E. Westerhof, FOM 
+-  TORBEAM, E. Poli, IPP-Garching 
+-  GRAY, L. Figini, ENEA-CNR 
+-  TRAVIS, N. B. Marushchenko, IPP-Greifswald 
 .. _imp5_listcodes_LH_wave_codes:
 
 LH wave codes
