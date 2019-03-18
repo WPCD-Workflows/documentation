@@ -47,12 +47,12 @@ at the same level as wpcd-doc. To push everything therein use:
     git commit -m "Updated public documentation"
     git push
     
-<aside class="notice">
+
 Note that publishing documentation to http://wpcd-workflows.github.io is not 
-necessary anymore as Circle CI builds them at every commit autoatically.
+necessary anymore as Circle CI builds them at every commit automatically.
 See jobs https://circleci.com/gh/WPCD-Workflows/documentation and implementation
 notes at https://gist.github.com/WPCD-Workflows/9ca6f68284f03996df4771092086c6fc
-</aside>
+
 For convenience CircleCI Sphinx build logs are accessile through 
 http://wpcd-workflows.github.io/sphinx.log for spotting compilation errors
 when editing documentation directly at github.
