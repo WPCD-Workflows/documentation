@@ -11,11 +11,12 @@ Created TOKEN is then used as a user/password for HTTPS access to the repository
 To clone please use:
 
     git clone https://TOKEN@github.com/WPCD-Workflows/documentation.git wpcd-doc
-    
-    
+    chmod og-rw wpcd-doc/.git/config 
+
 To change the TOKEN or remote URL:
 
     git remote set-url origin https://TOKEN@github.com/WPCD-Workflows/documentation.git
+    chmod og-rw .git/config    
 
 To commit large files to the https://github.com/WPCD-Workflows/assets repository use 
 
@@ -31,7 +32,6 @@ If using new location for large files then edit ASSETS wildcard in Makefile
     
 ## Publishing documentation
 
-
 Unless the directory is cloned firstly a local directory WPCD-Workflows.github.io 
 will be created and the content of the HTML documentation can be viewed with
 
@@ -46,12 +46,13 @@ at the same level as wpcd-doc. To push everything therein use:
     git add --all .
     git commit -m "Updated public documentation"
     git push
-
+    
+<aside class="notice">
 Note that publishing documentation to http://wpcd-workflows.github.io is not 
 necessary anymore as Circle CI builds them at every commit autoatically.
 See jobs https://circleci.com/gh/WPCD-Workflows/documentation and implementation
 notes at https://gist.github.com/WPCD-Workflows/9ca6f68284f03996df4771092086c6fc
-
-For convenience Sphinx build logs are accessile through 
+</aside>
+For convenience CircleCI Sphinx build logs are accessile through 
 http://wpcd-workflows.github.io/sphinx.log for spotting compilation errors
 when editing documentation directly at github.
