@@ -177,11 +177,7 @@ COCOS - toroidal coordinate conventions
 
 16 different fundamental coordinate conventions (COCOS) has been identified
 for toroidal systems. These are described by `O. Sauter and S. Yu. Medvedev, Computer Phys. Commun. 184 (2013) 293
-<http://www.sciencedirect.com/science/article/pii/S0010465512002962>`__,
-and summarized in the figure below.
-
-.. figure:: images/conventions_3.png
-   :align: center
+<http://www.sciencedirect.com/science/article/pii/S0010465512002962>`__.
 
 The current EU-IM convention (described
 above) is number 13, while the ITER convention is 11.
@@ -535,23 +531,6 @@ your modules
      use itm_types
          
 
-Compiled versions of the module can be found in
-
-.. code-block:: console
-
-     $EU-IMLIBDIR/itmtypes/lib/$OBJECTCODE
-         
-
-where the following values of OBJECTCODE are supported
-
-.. code-block:: console
-
-   amd64_g95_0.92 
-   amd64_gfortran_4.7 
-   amd64_intel_12 
-   amd64_pgi_10
-         
-
 (More information about the EU-IM libraries.)
 
 .. _itm_conventions_standardized_physical_constants:
@@ -571,44 +550,6 @@ itmshared . To check out the relevant files please do
 
    svn checkout https://gforge6.eufus.eu/svn/itmshared/trunk/src/itm_constants target_dir
          
-
-Compiled versions of the module can be found in
-
-.. code-block:: console
-
-     $EU-IMLIBDIR/itmconstants/lib/$OBJECTCODE
-         
-
-where the following values of OBJECTCODE are supported
-
-.. code-block:: console
-
-   amd64_g95_0.92 
-   amd64_gfortran_4.7 
-   amd64_intel_12 
-   amd64_pgi_10
-         
-
-The C equivalent ("itm_constants.h") can be found in
-
-.. code-block:: console
-
-     $EU-IMLIBDIR/itmconstants/include/
-         
-
-and the Python in
-
-.. code-block:: console
-
-     $EU-IMLIBDIR/itmconstants/lib/python2.6/
-         
-
-A Java version is available but has not yet been released --- contact ISIP
-if you are interested.
-( More information about the EU-IM libraries .)
-Thefollowing constants are available: itm_constants.xml All constants are
-double precision floats ( R8 ).
-
 .. _itm_conventions_invalid_data_base_entries:
 
 Invalid Data Base Entries
@@ -676,41 +617,6 @@ following specifies the conventions of the allowed enumerated datatypes.
 -  species_reference_identifier.xml
 -  wall_identifier.xml
 -  wave_identifier.xml
-
-Compiled versions of the modules can be found in
-
-.. code-block:: console
-
-     $EU-IMLIBDIR/itmconstants/lib/$OBJECTCODE
-         
-
-where the following values of OBJECTCODE are supported
-
-.. code-block:: console
-
-   amd64_g95_0.92 
-   amd64_gfortran_4.7 
-   amd64_intel_12 
-   amd64_pgi_10
-         
-
-The C equivalent can be found in
-
-.. code-block:: console
-
-     $EU-IMLIBDIR/itmconstants/include/
-         
-
-and the Python in
-
-.. code-block:: console
-
-     $EU-IMLIBDIR/itmconstants/lib/python2.6/
-         
-
-A Java version is available but has not yet been released --- contact the
-CPT if you are interested.
-( More information about the EU-IM libraries .)
 
 Example: How to fill coresource/values/sourceid
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -949,107 +855,5 @@ parameters inside KEPLER.
 |         +--------+--------------+----------+-----------------------------------------+
 |         | EVENTS | pellets      | cpo      | see type and fortran descriptions       |
 +---------+--------+--------------+----------+-----------------------------------------+
-| PCS     | input                 | pcs_in   | | Diagnostics input signals to the      |
-|         |                       |          | | plasma control system (see comple-type|
-|         |                       |          | | definition below)                     |
-|         +-----------------------+----------+-----------------------------------------+
-|         | reference             | pcs_ref  | | Reference signals for the plasma      |
-|         |                       |          | | control system (see comple-type       |
-|         |                       |          | | definition below)                     |
-|         +-----------------------+----------+-----------------------------------------+
-|         | output                | pcs_out  | | Output signals from plasma control    |
-|         |                       |          | | system (see comple-type definition    |
-|         |                       |          | | below)                                |
-+---------+-----------------------+----------+-----------------------------------------+
-
-The complex-types used in the PCS.
-
-+----------------------------------------+---------------------------+---------------------------------------------------+
-| *Field names*                          | *Type*                    | *Description*                                     |
-+========================================+===========================+===================================================+
-| *pcs_in* (under development)                                       | *Diagnostics for plasma control*                  |
-+----------------------------------------+---------------------------+---------------------------------------------------+
-| pcs.inputs.plasma_variables            | \type_plasma_\ variables  | Plasma variables                                  |
-+----------------------------------------+---------------------------+---------------------------------------------------+
-| pcs.inputs.plant_variables             | \type_plant_\ variables   | Plant variables                                   |
-+----------------------------------------+---------------------------+---------------------------------------------------+
-| *pcs_ref* (under development)                                      | *Reference signals for plasma control*            |
-+----------------------------------------+---------------------------+---------------------------------------------------+
-| pcs.reference.plant_variables          | type_plant _variables     | Plant variables                                   |
-+----------------------------------------+---------------------------+---------------------------------------------------+
-| pcs.reference.plant_configuration      | type_plant _configuration | Plant configuration                               |
-+----------------------------------------+---------------------------+---------------------------------------------------+
-| *pcs_out* (under development)                                      | *Output signal for plasma control*                |
-+----------------------------------------+---------------------------+---------------------------------------------------+
-| pcs.output.plasma_variables            | type_plasma _variables    | Plasma variables                                  |
-+----------------------------------------+---------------------------+---------------------------------------------------+
-| pcs.output.plant_variables             | type_plant _variables     | | Plant variables. NOTE: only for                 |
-|                                        |                           | | artificial control.                             |
-+----------------------------------------+---------------------------+---------------------------------------------------+
-| *type_plasma_variables* (under development)                        | | *Plasma properties relevant for plasma*         |
-|                                                                    | | *control*                                       |
-+----------------------------------------+---------------------------+---------------------------------------------------+
-| plasma.shape.ZIP                       | float                     | | Z_centre*Ip (used for vertical control;         |
-|                                        |                           | | definition of Z_centre can vary) [Am]           |
-+----------------------------------------+---------------------------+---------------------------------------------------+
-| plasma.shape.gaps(:)                   | float                     | | Distance between the plasma and the             |
-|                                        |                           | | wall components [m]                             |
-+----------------------------------------+---------------------------+---------------------------------------------------+
-| plasma.magnetics.b_toroidal            | real                      | | Toroidal magnetic field at the magnetic         |
-|                                        |                           | | axis [T]                                        |
-+----------------------------------------+---------------------------+---------------------------------------------------+
-| plasma.magnetics.Ip                    | real                      | | Current (A)                                     |
-|                                        |                           | | CPO element:                                    |
-|                                        |                           | | equilibrium().global_param.current_tot          |
-+----------------------------------------+---------------------------+---------------------------------------------------+
-| plasma.magnetics.v_loop                | real                      | | Loop voltage (V)                                |
-|                                        |                           | | CPO element:                                    |
-|                                        |                           | | coreprof().profiles1d.vloop.value               |
-+----------------------------------------+---------------------------+---------------------------------------------------+
-| plasma.confinement.ne_line_integrated  | real                      | | Line integrated electron density                |
-|                                        |                           |   (\\( m^{-2} \\))                                |
-+----------------------------------------+---------------------------+---------------------------------------------------+
-| plasma.confinement.beta_toroidal       | real                      | | Toroidal beta                                   |
-|                                        |                           | | CPO element:                                    |
-|                                        |                           | | equilibrium().global_param.beta_tor             |
-+----------------------------------------+---------------------------+---------------------------------------------------+
-| *plant_variables* (under development)                              | | *Plant variabels*                               |
-+----------------------------------------+---------------------------+---------------------------------------------------+
-| pf_system...                           | /                         | /                                                 |
-+----------------------------------------+---------------------------+---------------------------------------------------+
-| plant_variables.fuelling.pellet.trigger| integer                   | | TRUE if pellet is being launched,               |
-|                                        |                           | | othervise FALSE                                 |
-+----------------------------------------+---------------------------+---------------------------------------------------+
-| plant_variables.fuelling.gas.puff_rate | real                      | Gas puffing rate (1/s)                            |
-+----------------------------------------+---------------------------+---------------------------------------------------+
-| plant_variables.hcd.nbi.power          | real                      | | NBI power (W)                                   |
-|                                        |                           | | CPO element:                                    |
-|                                        |                           | | nbi().nbi_unit().pow_unit.value                 |
-+----------------------------------------+---------------------------+---------------------------------------------------+
-| plant_variables.hcd.nbi.injection_angle| real                      | | NBI launching angle (rad)                       |
-|                                        |                           | | CPO element:                                    |
-|                                        |                           | | nbi().nbi_unit().pow_unit.value                 |
-+----------------------------------------+---------------------------+---------------------------------------------------+
-| plant_variables.hcd.ec.power           | real                      | | EC power (W)                                    |
-|                                        |                           | | CPO element:                                    |
-|                                        |                           | | antennas().antenna_unit().antenna_ec.power.value|
-+----------------------------------------+---------------------------+---------------------------------------------------+
-| plant_variables.hcd.ec.angle           | real                      | | EC launch angle (definition depend on the       |
-|                                        |                           | | machine) [rad]                                  |
-+----------------------------------------+---------------------------+---------------------------------------------------+
-| plant_variables.hcd.lh.power           | real                      | | LH power (W)                                    |
-|                                        |                           | | CPO element:                                    |
-|                                        |                           | | antennas().antenna_unit().antenna_lh.power.value|
-+----------------------------------------+---------------------------+---------------------------------------------------+
-| plant_variables.hcd.lh.n_parallel      | real                      | Parallel refractive index [1]                     |
-+----------------------------------------+---------------------------+---------------------------------------------------+
-| plant_variables.hcd.ic.power           | real                      | | IC power (W)                                    |
-|                                        |                           | | CPO element:                                    |
-|                                        |                           | | antennas().antenna_unit().antenna_ic.power.value|
-+----------------------------------------+---------------------------+---------------------------------------------------+
-| plant_variables.hcd.ic.frequency       | real                      | | RF wave frequency (Hz)                          |
-|                                        |                           | | CPO element:                                    |
-|                                        |                           | | antennas().antenna_unit().antenna_ic.freq       |
-+----------------------------------------+---------------------------+---------------------------------------------------+
 
 
