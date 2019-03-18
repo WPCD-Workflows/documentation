@@ -26,18 +26,16 @@ Contents:
    codes
    conventions
    kepler
-   edrg
    amns
    resources
    
 Using the WPCD workflows
 ========================
 
-Use of the WPCD workflows is available via the EUROfusion Gateway. In
-order to obtain an account on the Gateway, follow the instruction at
-https://wiki.eufus.eu/doku.php#how_to_get_a_user_account
+Use of the WPCD workflows is available via the EUROfusion Gateway
+on the JET computers and on the ITER computers
 
-The WPCD documentation and workflow concepts are copyright of
+The WPCD documentation and workflow concepts are copyright of the
 EUROfusion consortium.
 
              
