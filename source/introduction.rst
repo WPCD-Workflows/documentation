@@ -54,7 +54,7 @@ will operate in strong collaboration with ITER IO and will ensure the
 complete adaptation of existing workflows to IMAS using the most updated
 Data Dictionary.
 
-.. _world_wpcd_structure:
+.. _eu_im_approach:
 
 The European Integrated Modelling (EU-IM) approach
 ==================================================
