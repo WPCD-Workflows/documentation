@@ -409,7 +409,6 @@ folder under */tutorial*
 |                 |                 |                   |   reconstruction. |
 +-----------------+-----------------+-------------------+-------------------+
 
-`Guided Tutorial on EQSTABIL <%ATTACHURL%/Tutorial_EQSTABIL.pdf>`__
 
 News and Recent activity
 ========================
