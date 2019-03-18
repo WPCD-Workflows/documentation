@@ -39,13 +39,6 @@ The AMNS work is divided into two broad areas:
 -  The addition to the AMNS database of AMNS data needed by the codes
    within the Work Package
 
-Private AMNS pages
-==================
-
-For access to the `private AMNS
-pages <https://www.eufus.eu/AMNS/html/index.html>`__, an AMNS
-password is needed.
-
 .. _amns_documentation:
 
 AMNS Documentation
