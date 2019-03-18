@@ -39,7 +39,7 @@ jobs:
       - run:
           name: Build docs to store
           command: |
-            make html
+            make html | tee ../WPCD-Workflows.github.io/sphinx.log
       - save_cache:
           key: assets
           paths:
@@ -50,6 +50,7 @@ jobs:
           command: |
             ls -la ~/.ssh
             cat ~/.ssh/config
+            sed -i -e '/IdentitiesOnly/s/no/yes/' ~/.ssh/config
             env
             cd ../WPCD-Workflows.github.io
             git config user.email "WPCD-Workflows@circleci.com"
