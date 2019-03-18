@@ -188,12 +188,6 @@ above) is number 13, while the ITER convention is 11.
 
 .. _itm_conventions_cocos_determine:
 
-Determining the COCOS number
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. figure:: images/conventions_4.png
-   :align: center
-
 .. _itm_conventions_cocos_conversions:
 
 Equilibrium COCOS transformation library and actor
