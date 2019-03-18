@@ -288,14 +288,6 @@ Linear MHD stability codes
 - MARS, G. Vlad, ENEA Frascati 
 - MARS-F, D. Yadykin, Chalmers 
 
-Equilibrium codes with flow
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-- FLOW, R. Paccagnella, ENEA RFX 
-
-3D Equilibrium Codes
-~~~~~~~~~~~~~~~~~~~~
-
 Sawtooth Crash Modules
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -304,25 +296,10 @@ Sawtooth Crash Modules
 ELM Modules
 ~~~~~~~~~~~
 
-RWM Modules
-~~~~~~~~~~~
-
 NTM Modules
 ~~~~~~~~~~~
 
-3D MHD Codes
-~~~~~~~~~~~~
-
-- JOREK, G. Huysmans, CEA 
-
-Error Field Modules
-~~~~~~~~~~~~~~~~~~~
-
-2D MHD Codes
-~~~~~~~~~~~~
-
-Disruption Modules
-~~~~~~~~~~~~~~~~~~
+- NTMETS, S. Nowak
 
 Numerical Tools
 ~~~~~~~~~~~~~~~
@@ -370,7 +347,6 @@ Wave codes for ion cyclotron heating
 -  LION, O. Sauter, CRPP
 -  Cyrano, E. Lerche, ERM/KMS
 -  ICCOUP, T. Johnson, VR
-   
 
 .. _imp5_listcodes_IC_Fokker_Planck:
 
@@ -393,8 +369,9 @@ NBI sources for Fokker-Planck codes
 Nuclear sources (input for Fokker-Planck codes)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
--  Nuclearsim, T.Johnson, VR
+- Nuclearsim, T.Johnson, VR
 - AFSI Ascot Fusion Source Integrator, J. Varje, Aalto
+
 .. _imp5_listcodes_NBI_Fokker-Planck:
 
 NBI Fokker-Planck codes
@@ -402,6 +379,13 @@ NBI Fokker-Planck codes
 
 -  RISK, M. Schneider, CEA (ITER) 
 -  NBISIM, T. Johnson, VR
+
+.. _imp5_listcodes_runaways:
+
+Runaway electrons
+^^^^^^^^^^^^^^^^^
+
+-  Runafluid, G. Pokol
 
 .. _imp5_listcodes_Advanced_Fokker-Planck:
 
@@ -413,9 +397,6 @@ heating, or include both wave field and Fokker-Planck solver)
 
 -  ASCOT, S. Sipila and J. Varje, Aalto 
 -  SPOT, M. Schneider, CEA (Cadarache) 
--  SELFO-light, T. Hellsten, VR 
-
-.. _imp5_listcodes_orbit_codes:
 
 .. _imp5_listcodes_fast_ions_mhd:
 
@@ -427,13 +408,6 @@ Codes for fast ion-MHD interactions
 -  HYMAGYC, G. Vlad, ENEA-Frascati 
 -  HMGC, C. Di Troia, ENEA-Frascati 
 -  LEMAN, W.A. Cooper, EPFL-CRPP 
-
-.. _imp5_listcodes_runaways:
-
-Runaway electrons
-^^^^^^^^^^^^^^^^^
-
--  Runafluid, G. Pokol
 
 Transport list of codes 
 -----------------------
