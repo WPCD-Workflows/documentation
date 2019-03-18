@@ -265,33 +265,33 @@ tasks and their responsible officers.
 Free boundary equilibrium codes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--CEDRES++, S. Brémond, CEA 
--CLISTE, P. Mc Carthy, DCU 
--CREATE-NL, M. Mattei, ENEA Frascati 
--EFIT++, L. Appel, CCFE 
--EQUAL, W. Zwingmann, EC 
--EQUINOX, B. Faugeras, CEA 
--FIXFREE, E. Giovannozzi, ENEA Frascati 
+- CEDRES++, S. Brémond, CEA 
+- CLISTE, P. Mc Carthy, DCU 
+- CREATE-NL, M. Mattei, ENEA Frascati 
+- EFIT++, L. Appel, CCFE 
+- EQUAL, W. Zwingmann, EC 
+- EQUINOX, B. Faugeras, CEA 
+- FIXFREE, E. Giovannozzi, ENEA Frascati 
 
 Fixed boundary equilibrium codes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--CAXE, S. Medvedev, EPFL 
--CHEASE, O. Sauter, EPFL 
--HELENA, C. Konz, IPP
+- CAXE, S. Medvedev, EPFL 
+- CHEASE, O. Sauter, EPFL 
+- HELENA, C. Konz, IPP
 
 Linear MHD stability codes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--KINX, S. Medvedev, EPFL 
--ILSA, C. Konz, IPP 
--MARS, G. Vlad, ENEA Frascati 
--MARS-F, D. Yadykin, Chalmers 
+- KINX, S. Medvedev, EPFL 
+- ILSA, C. Konz, IPP 
+- MARS, G. Vlad, ENEA Frascati 
+- MARS-F, D. Yadykin, Chalmers 
 
 Equilibrium codes with flow
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--FLOW, R. Paccagnella, ENEA RFX 
+- FLOW, R. Paccagnella, ENEA RFX 
 
 3D Equilibrium Codes
 ~~~~~~~~~~~~~~~~~~~~
@@ -299,7 +299,7 @@ Equilibrium codes with flow
 Sawtooth Crash Modules
 ~~~~~~~~~~~~~~~~~~~~~~
 
--SAWTEETH, O. Sauter, CRPP 
+- SAWTEETH, O. Sauter, CRPP 
 
 ELM Modules
 ~~~~~~~~~~~
@@ -313,7 +313,7 @@ NTM Modules
 3D MHD Codes
 ~~~~~~~~~~~~
 
--JOREK, G. Huysmans, CEA 
+- JOREK, G. Huysmans, CEA 
 
 Error Field Modules
 ~~~~~~~~~~~~~~~~~~~
@@ -327,8 +327,8 @@ Disruption Modules
 Numerical Tools
 ~~~~~~~~~~~~~~~
 
--PROGEN, C. Konz, IPP 
--JALPHA, C. Konz, IPP 
+- PROGEN, C. Konz, IPP 
+- JALPHA, C. Konz, IPP 
 
 .. _imp5_listcodes:
 
