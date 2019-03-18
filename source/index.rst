@@ -32,8 +32,8 @@ Contents:
 Using the WPCD workflows
 ========================
 
-Use of the WPCD workflows is available via the EUROfusion Gateway
-on the JET computers and on the ITER computers
+Use of the WPCD workflows is available via the EUROfusion Gateway, 
+the JET analysis cluster (FREIA) and the ITER IO HPC
 
 The WPCD documentation and workflow concepts are copyright of the
 EUROfusion consortium.
