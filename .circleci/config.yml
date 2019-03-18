@@ -58,7 +58,7 @@ jobs:
             git commit -m "Circle CI build ${CIRCLE_BUILD_URL}"
             ssh-add -D # delete checkout key from ssh-agent
             set +e +o pipefail # allow next test to be nonzero in a pipe
-            is_empty=$(git status|ed -ne '/nothing to commit/p')
+            is_empty=$(git status|sed -ne '/nothing to commit/p')
             echo "Status = ${is_empty}"
             #if ! git status | grep -q "nothing to commit" ; then git push ; fi
             
