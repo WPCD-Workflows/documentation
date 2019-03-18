@@ -1197,9 +1197,9 @@ waves2sources.
    
 .. _ETS_A_4.10A:
 
-=========
+*********
 ETS 4.10a
-=========
+*********
 
 **ETS workflow in KEPLER**:
 
