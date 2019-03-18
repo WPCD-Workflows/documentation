@@ -60,7 +60,7 @@ jobs:
                 set +e ; \
                 git commit -m "Circle CI build ${CIRCLE_BUILD_URL}" ; \
                 ssh-add -D ;\
-		git push ;\
+                git push ;\
             fi
             
       # Tell Circle to store the documentation output in a folder that we can access later
