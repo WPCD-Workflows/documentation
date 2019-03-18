@@ -300,15 +300,6 @@ Actors involved
 |                       |                       |   Kepler variable *path*|
 +-----------------------+-----------------------+-------------------------+
 
-Installing the workflow
-=======================
-
-The following links detail all required information to get a local
-installation of the workflow on the Gateway
-
-`4.10a3 <https://portal.eufus.eu/twiki/bin/view/Main/EQSTABIL_install_410a3>`__
-
-`4.10b8 (work in progress) <https://portal.eufus.eu/twiki/bin/edit/Main/EQSTABIL_install_410b10?topicparent=Main.KeplerWorkflow_EQSTABIL;nowysiwyg=0>`__
 
 Setting up Workflow and Actor parameters
 ========================================
