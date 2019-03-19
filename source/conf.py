@@ -20,6 +20,10 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+import os
+import sys
+sys.path.insert(0, os.path.abspath('_ext'))
+
 # -- General configuration ------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
@@ -33,6 +37,7 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.mathjax',
     'sphinx.ext.ifconfig',
+    'edit_on_github'
 #    'sphinx.ext.githubpages',
 ]
 
@@ -373,3 +378,9 @@ class CustomLatexFormatter(LatexFormatter):
         self.verboptions = r"formatcom=\scriptsize"
 
 PygmentsBridge.latex_formatter = CustomLatexFormatter
+
+
+# Edit on GitHub links for Sphinx
+edit_on_github_project = 'WPCD-Workflows/documentation'
+edit_on_github_branch = 'master/source'
+
