@@ -2,9 +2,77 @@
  Core Transport Simulator (ETS)
 ################################
 
-*************************
-Documentation for the ETS
-*************************
+*****************
+ETS Documentation
+*****************
+This page contains useful information on the European Transport Simulator (ETS) including documentation, description of the pre and post-processing tools used with ETS as well as instructions on how to use ETS and tools at JET.
+
+Guide on using ETS with JET data
+================================
+
+ETS is a multi-machine modular transport simulator that can simulate different devices. This section provides a detailed guide on how to use ETS with JET data.
+
+The guide can be found `here <https://users.euro-fusion.org/tfwiki/index.php/Etsguide>`__
+
+Configuration of ETS workflow in Kepler
+=======================================
+Instructions on the ETS configuration options can be found `here <https://users.euro-fusion.org/tfwiki/images/5/56/Ets_config_v3.pdf>`__
+
+Instructions on HCD module in ETS can be found `here <https://users.euro-fusion.org/tfwiki/images/4/4a/Hcd_config_v1.pdf>`__
+
+Instructions on impurities in ETS (including example workflow and plotting tools) can be found `here <https://users.euro-fusion.org/pages/tfiospti/ETSmeetings/08Dec2017/Impurities_in_ETS_v5_dy.pdf>`__
+
+JET data to ETS
+===============
+ETS uses a standard format for input/output data. In order to get data from different machines (in different formats, using different units) a dedicated tool called "exp2itm" is provided. This section describes how this tool can be used to convert JET data to be used in ETS.
+
+Information about available data mappings is provided `here <https://users.euro-fusion.org/tfwiki/index.php/Mappings_jet_ets>`__.
+
+Guidelines to get JET data are provided `here <https://users.euro-fusion.org/tfwiki/index.php/Get_jet_data_gen>`__
+
+ETS releases
+============
+
+Information related to the ETS releases is given in this section.
+
+`changes, updates for ETS release 5.1.0 <https://users.euro-fusion.org/tfwiki/index.php/Changes_v510>`__
+
+`changes, updates for ETS release 5.0.3 <https://users.euro-fusion.org/tfwiki/index.php/Changes_v503>`__
+
+`changes, updates for ETS release 5.0.2 <https://users.euro-fusion.org/tfwiki/index.php/Changes_v502>`__
+
+ETS verification and validation
+===============================
+
+Activities to verify ETS against other codes and to validate ETS against experimental data are summarized here (including instructions for users)
+
+`ETS benchmark against TRANSP <https://users.euro-fusion.org/tfwiki/index.php/ETS_TRANSP_benchmark>`__
+
+Useful links
+============
+
+This section contains further links to documentation connected to ETS.
+
+The training material is available here: `ETS Training Tutorials <https://users.euro-fusion.org/iterphysicswiki/index.php/ETS_Training_Tutorials>`_
+
+- `set up environment <http://portal.eufus.eu/twiki/bin/view/Main/Accessing_EUIM_infrastructure_at_JET>`_, `EU-IM_set_up_at_JET <https://users.euro-fusion.org/iterphysicswiki/index.php/EU-IM_set_up_at_JET>`_
+- get ETS (see Running the ETS Workflow  in `set up environment <http://portal.eufus.eu/twiki/bin/view/Main/Accessing_EUIM_infrastructure_at_JET>`_)
+- `data structure to be used <http://www.eufus.eu/ITM/imports/isip/public/data_structure/4.10b.10/Phase4TOP.html>`_ (list of CPOs)
+- test pulses (in preparation)
+- `set up workflow parameters <http://www.eufus.eu/ITM/html/ETS_A_4.10b_run_config.html set up workflow parameters>`_
+- `run ETS in batch mode <http://portal.eufus.eu/twiki/bin/view/Main/RunningKeplerViaQueue>`_
+- Coordinate conventions, see `COCOS documentation <http://www.eufus.eu/ITM/html/itm_conventions.html#itm_conventions_9>`_, `COCOS paper <http://www.sciencedirect.com/science?_ob=ArticleListURL&_method=list&_ArticleListID=-950871037&_sort=r&_st=13&view=c&md5=a2e468420878e8d72cc5cabfc2f184ff&searchtype=a>`_
+- `Feedback <http://portal.eufus.eu/twiki/bin/view/Main/Feedback_on_ETS?sso_from=bin/view/Main/Feedback_on_ETS>`_ 
+- `Submit Report Request <http://gforge6.eufus.eu/gf/project/generalsupport/tracker/?action=TrackerItemAdd&tracker_id=184>`_
+
+
+`ETS Users Group <https://users.euro-fusion.org/tfwiki/index.php/ETS_Users_Group>`__ containing information related to the ETS User's meetings
+
+`ETS training 2018 <https://users.euro-fusion.org/iterphysicswiki/index.php/ETS_Training_2018>`__ web page for ETS training at JET 14-18 May 2018
+
+`EU IM Gateway <https://portal.eufus.eu/itm/portal/>`__ gateway portal web page (requires gateway account)
+
+`technical users meetings <https://users.euro-fusion.org/tfwiki/index.php/Committee_92436>`__ containing information related to the technical users meetings (aka committee 92436 meetings)
 
 -  `Description of the ETS <https://portal.eufus.eu/documentation/ITM/imports/imp3/public/ETS_Documentation/ETS_TRANSPORT_EQUATIONS.pdf>`__ 
 -  `Form of the standardize equations <https://portal.eufus.eu/documentation/ITM/imports/imp3/public/ETS_Documentation/STANDARDISED_EQUATION.pdf>`__

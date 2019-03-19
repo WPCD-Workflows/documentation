@@ -17,9 +17,9 @@ design facilitates the integration of a variety of plasma reconstruction
 equilibrium codes, all using the same input data from a user defined
 IMAS database. In addition, during all workflow stages (including
 initialization and finalization), the experimental and modeling data are
-cast under the same conceptual data bundling as used by the `ETS <https://portal.eufus.eu/twiki/bin/view/Main/ETS>`__,
-`HCD <https://portal.eufus.eu//documentation/ITM/html/imp5_workflow__imp5hcd.html>`__
-and `EQSTABIL <KeplerWorkflow_EQSTABIL>`__ workflow. This deliberate
+cast under the same conceptual data bundling as used by the `ETS <https://portal.eufus.eu/twiki/bin/view/Main/ETS>`_,
+`HCD <https://portal.eufus.eu//documentation/ITM/html/imp5_workflow__imp5hcd.html>`_
+and `EQSTABIL <KeplerWorkflow_EQSTABIL>`_ workflow. This deliberate
 choice greatly facilitates the interfacing to any of such workflows. In
 fact, elements of the EQSTABIL workflow can and were seamlessly
 integrated in the workflow namely the stage for high resolution
@@ -78,6 +78,8 @@ actor when double clicking on the actor (see Figure below).
 
 .. figure:: images/eqreconstruct_START_settings.png
    :align: center
+   :scale: 35
+           
             
 **II - CHECK_DATA**
 -------------------
