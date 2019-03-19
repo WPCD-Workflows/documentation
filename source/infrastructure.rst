@@ -14,5 +14,4 @@ interfaces for I/O.
 
 .. only:: html
 
-   `Data structure 4.10b.10 schemas
-          <_static/Phase4.10b.10_HTML/Phase4TOP.html>`_
+   `Data structure 4.10b.10 <_static/Phase4.10b.10_HTML/Phase4TOP.html>`_
