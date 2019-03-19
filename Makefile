@@ -23,6 +23,8 @@ EXTERNALDATA ?= https://github.com/$(GITHUB_ASSETS_REPOSITORY)/raw/master
 HASHES := $(wildcard source/static/*.md5)
 
 ASSETS = $(HASHES:%.md5=%)
+UNPACKED_HTML = $(patsubst %.zip,%,$(filter %.zip, $(ASSETS)))
+
 
 # The shell in which to execute make rules.
 SHELL = /bin/sh
@@ -72,7 +74,7 @@ clean:
 	rm -rf $(BUILDDIR)/*
 
 .PHONY: html
-html: $(ASSETS)
+html: $(ASSETS) $(UNPACKED_HTML)
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)."
@@ -266,6 +268,9 @@ dummy:
 %.md5-stamp : %.md5
 	cat $^ > $@
 
+% : %.zip
+	unzip -q -d $@ $^
+
 # Downloads asset and makes it available to the group for linking to it
 $(ASSETDIR)/% :
 	if ! test -d $(ASSETDIR); \
@@ -294,7 +299,7 @@ depend: $(HASHES)
 	echo "STAMPS =$${stamps}" >> $@
 
 clean-assets:
-	rm -f $(ASSETS) $(STAMPS) .*.md5-stamp depend
+	rm -fr $(ASSETS) $(STAMPS) $(UNPACKED_HTML) .*.md5-stamp depend
 
 # Do not use unless really necessary
 realclean: clean-assets
