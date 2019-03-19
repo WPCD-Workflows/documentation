@@ -401,7 +401,8 @@ folder under */tutorial*
 +-----------------+-----------------+-------------------+-------------------+
 
 
-News and Recent activity
-========================
+EQSTABIL Tutorial
+=================
 
-*under construction*
+Tutorial on using EQSTABIL workflow is available in :download:`PDF
+<static/EQSTABIL_tutorial_20151214.pdf>`.
