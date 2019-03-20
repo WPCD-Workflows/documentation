@@ -30,16 +30,16 @@ complex steps/actors. Actors can be reused to construct more complex
 actors enabling complex functionality to be encapsulated in easy to use
 packages. A wide range of actors are available for use and reuse.
 
-Installing Kepler with Serpens add-on
--------------------------------------
+Installing Kepler and tutorial workflows
+----------------------------------------
 
 You can download Kepler from the following page https://kepler-project.org/users/downloads
 
-In order to install Kepler and Serpens related workflows you have to follow the instruction at
+In order to install Kepler and tutorial related workflows you have to follow the instruction at
 
 https://confluence.man.poznan.pl/community/display/WFMS/5.3.+Kepler+Basics#id-5.3.KeplerBasics-1InstallingKepler
 
-Now you can start Kepler application and proceed to tutorial examples that can be find at the following page 
+Now you can start Kepler application and proceed to tutorial examples  
 
 Kepler IMAS actors
 ==================
