@@ -33,9 +33,11 @@ jobs:
           command: |
              git clone git@github.com:WPCD-Workflows/WPCD-Workflows.github.io.git ../WPCD-Workflows.github.io
       # Build the docs
+      - run: make depend
       - restore_cache:
           keys:
-            - assets
+            - assets-cache-{{ checksum "depend" }}
+            - assets-cache
       - restore_cache:
           keys:
             - doctrees
@@ -44,7 +46,7 @@ jobs:
           command: |
             make html | tee ../WPCD-Workflows.github.io/sphinx.log
       - save_cache:
-          key: assets
+          key: assets-cache-{{ checksum "depend" }}
           paths:
             - ~/assets
       - save_cache:
