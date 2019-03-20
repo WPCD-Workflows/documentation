@@ -34,17 +34,12 @@ Installing Kepler with Serpens add-on
 -------------------------------------
 
 You can download Kepler from the following page https://kepler-project.org/users/downloads
+basics
+In order to install Kepler and Serpens related workflows you have to follow the instruction at
 
-In order to install Kepler and Serpens related workflows you have to do
-following:
+https://confluence.man.poznan.pl/community/display/WFMS/5.3.+Kepler+Basics#id-5.3.KeplerBasics-1InstallingKepler
 
-.. code-block:: console
-                
-        cd ~
-        wget http://scilla.man.poznan.pl/euforia/install/serpens-demo-workflows.zip -O serpens-demo-workflows.zip
-        unzip serpens-demo-workflows.zip
-
-Now you can start Kepler application and proceed to tutorial examples that can be find at the following page http://scilla.man.poznan.pl/confluence/display/euforia/01.+Introduction+to+Kepler+-+basics
+Now you can start Kepler application and proceed to tutorial examples that can be find at the following page 
 
 Kepler IMAS actors
 ==================
