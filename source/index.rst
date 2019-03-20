@@ -21,6 +21,7 @@ Contents:
    ets
    edge
    es
+   eqreconstr
    transport
    averages
    codes
