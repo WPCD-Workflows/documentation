@@ -20,10 +20,6 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
-import os
-import sys
-sys.path.insert(0, os.path.abspath('_ext'))
-
 # -- General configuration ------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
@@ -37,7 +33,6 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.mathjax',
     'sphinx.ext.ifconfig',
-    'edit_on_github'
 #    'sphinx.ext.githubpages',
 ]
 
@@ -48,7 +43,7 @@ templates_path = ['_templates']
 # You can specify multiple suffix as a list of string:
 #
 # source_suffix = ['.rst', '.md']
-source_suffix = ['.rst']
+source_suffix = '.rst'
 
 # The encoding of source files.
 #
@@ -379,8 +374,11 @@ class CustomLatexFormatter(LatexFormatter):
 
 PygmentsBridge.latex_formatter = CustomLatexFormatter
 
-
-# Edit on GitHub links for Sphinx
-edit_on_github_project = 'WPCD-Workflows/documentation'
-edit_on_github_branch = 'master/source'
-
+# See https://docs.readthedocs.io/en/stable/vcs.html
+html_context = {
+    "display_github": True, # Integrate GitHub
+    "github_user": "WPCD-Workflows", # Username
+    "github_repo": "documentation", # Repo name
+    "github_version": "master", # Version
+    "conf_py_path": "/source/", # Path in the checkout to the docs root
+}
