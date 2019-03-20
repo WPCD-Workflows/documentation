@@ -147,7 +147,8 @@ Collaborative Development Environment (CDE)
 A **collaborative development
 environment (CDE)** is an online meeting space where a software development
 project's stakeholders can work together, no matter what timezone or region
-they are in, to discuss, document , and produce project deliverables. The name was coined by `Grady Booch <http://en.wikipedia.org/wiki/Grady_Booch>`__.
+they are in, to discuss, document , and produce project deliverables. 
+The name was coined by `Grady Booch <http://en.wikipedia.org/wiki/Grady_Booch>`_.
  
 Consistent Physical Object (CPO)
    A Consistent Physical Object (CPO) is a
@@ -185,7 +186,8 @@ Gforge
   `Gforge <https://gforge6.eufus.eu>`__ hosts all projects (software and infrastructure) under the EU-IM.
 
 EU-IM Gateway
-   The EU-IM Gateway is a computer cluster presently hosted at CINECA, Bologna, Italy. It is used for development and fusion simulations in the EU-IM.
+   The EU-IM Gateway is a computer cluster presently hosted at CINECA, Bologna, Italy. 
+   It is used for development and fusion simulations in the EU-IM.
 
 EU-IM Portal
    The `EU-IM Portal
