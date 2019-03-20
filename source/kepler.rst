@@ -34,7 +34,7 @@ Installing Kepler with Serpens add-on
 -------------------------------------
 
 You can download Kepler from the following page https://kepler-project.org/users/downloads
-basics
+
 In order to install Kepler and Serpens related workflows you have to follow the instruction at
 
 https://confluence.man.poznan.pl/community/display/WFMS/5.3.+Kepler+Basics#id-5.3.KeplerBasics-1InstallingKepler
