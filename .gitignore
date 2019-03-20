@@ -3,3 +3,5 @@ depend
 source/static/*.pdf
 source/static/*.zip
 source/static/*.png
+source/_ext/__pycache__
+source/_ext/*.pyc
