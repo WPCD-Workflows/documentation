@@ -39,7 +39,7 @@ jobs:
              if [ -e ../WPCD-Workflows.github.io/.git ]; then \
                 cd ../WPCD-Workflows.github.io; \
                 git pull; \
-             else;\            
+             else;\
                 git clone git@github.com:WPCD-Workflows/WPCD-Workflows.github.io.git ../WPCD-Workflows.github.io;\
              fi
       # Build the docs
