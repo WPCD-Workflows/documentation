@@ -16,6 +16,7 @@ jobs:
       - run: echo "export PATH=~/.local/bin:$PATH" >> $BASH_ENV
       # Restore cached files to speed things up
       - restore_cache:
+          name: pip
           keys:
             - cache-pip
       # Install the packages needed to build our documentation
@@ -24,33 +25,46 @@ jobs:
       #- run: pip install --user .
       # Cache some files for a speedup in subsequent builds
       - save_cache:
+          name: pip
           key: cache-pip
           paths:
             - ~/.cache/pip
+      - restore_cache:
+          name: Github HTML pages repository
+          key: gh-pages-v1
       # Checkout latest HTML site repo for deploy later on
       - run: 
           name: Clone WPCD-Workflows.github.io containing HTML pages
           command: |
-             git clone git@github.com:WPCD-Workflows/WPCD-Workflows.github.io.git ../WPCD-Workflows.github.io
+             if [ -e ../WPCD-Workflows.github.io/.git ]; then \
+                cd ../WPCD-Workflows.github.io; \
+                git pull; \
+             else;\            
+                git clone git@github.com:WPCD-Workflows/WPCD-Workflows.github.io.git ../WPCD-Workflows.github.io;\
+             fi
       # Build the docs
       - run: make depend
       - restore_cache:
+          name: assets
           keys:
             - assets-cache-{{ checksum "depend" }}
             - assets-cache
       - restore_cache:
+          name: doctrees
           keys:
             - doctrees-v1-{{ .BuildNum }}
             - doctrees-v1
       - run:
-          name: Build docs to store
+          name: Building docs with Sphinx
           command: |
             make html | tee ../WPCD-Workflows.github.io/sphinx.log
       - save_cache:
+          name: assets
           key: assets-cache-{{ checksum "depend" }}
           paths:
             - ~/assets
       - save_cache:
+          name: doctrees
           key: doctrees-v1-{{ .BuildNum }}
           paths:
             - ../WPCD-Workflows.github.io/doctrees
@@ -73,6 +87,11 @@ jobs:
                 ssh-add -D ;\
                 env GIT_SSH_COMMAND='ssh -i ~/.ssh/id_rsa_439e31e051d7134433ae9491b001dea8' git push ;\
             fi
+      - save_cache:
+          name: Github HTML pages repository
+          key: gh-pages-v1-{{ .BuildNum }}
+          paths:
+             - ../WPCD-Workflows.github.io             
             
       # Tell Circle to store the documentation output in a folder that we can access later
       #- store_artifacts:
