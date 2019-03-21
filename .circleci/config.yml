@@ -30,7 +30,7 @@ jobs:
           paths:
             - ~/.cache/pip
       - restore_cache:
-          name:Restoring Github HTML pages repository from cache
+          name: Restoring Github HTML pages repository from cache
           key: gh-pages-v1
       # Checkout latest HTML site repo for deploy later on
       - run: 
