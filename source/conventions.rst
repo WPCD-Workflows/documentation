@@ -241,8 +241,7 @@ given by
 
 where :math:`{\bf G} \cdot \nabla V` is the contravariant volume
 component of the vector :math:`{\bf G}`. It follows that the flux surface
-average is an angle average weighted by the volume element :math:`\sqrt{g}
-\)
+average is an angle average weighted by the volume element :math:`\sqrt{g}`
 
 .. math::
    \langle G \rangle = \oint d \phi \oint d \theta \sqrt{g} G \left / \oint d \phi \oint d \theta \sqrt{g} \right.
@@ -266,8 +265,7 @@ The EU-IM-TF has decided to use the toroidal flux radius :math:`\rho_{{ \rm tor}
 
 where :math:`B_0` is the reference (vacuum) magnetic field value. Note that
 :math:`\rho_{{ \rm tor}}` is a positive quantity which has units of
-meters. For several applications the volume radius :math:`\rho_{{ \rm vol}}
-\) is also used. It is a normalised radius going from 0 to 1 and is
+meters. For several applications the volume radius :math:`\rho_{{ \rm vol}}` is also used. It is a normalised radius going from 0 to 1 and is
 defined as
 
 .. math::

@@ -463,13 +463,13 @@ Embedding Fortran codes into Kepler
 
 In this exercise you will execute simple Fortran code (multiplying input value by two) within Kepler.
 
-Exercise no. 1
+Exercise1_
 
 **Fortran UAL example (CPO handling)**
 
 In this exercise you will create Kepler actor that uses UAL. 
 
-Exercise no. 2
+Exercise2_
 
 Embedding C++ codes
 ~~~~~~~~~~~~~~~~~~~
@@ -478,13 +478,13 @@ Embedding C++ codes
 
 Simple C++ code that will be incorporated into Kepler via FC2K tool - addition of one to the value passed into input port of the actor
 
-Exercise no. 3
+Exercise3_
 
 **C++ code within Kepler (CPO)**
 
 In this exercise you will create Kepler actor that uses UAL. 
 
-Exercise no. 4
+Exercise4_
 
 
 FC2K - developer guidelines
@@ -753,6 +753,7 @@ Please find examples of the simple "makefiles" below:
         clean:
              rm *.a *.o
 
+.. _Exercise1:            
 
 FC2K - Example 1 - Embedding Fortran codes into Kepler (no CPOs)
 ================================================================
@@ -896,7 +897,9 @@ After workflow finishes it's execution, you should see result similar to one bel
 .. image:: images/kepler_21.png
    :align: center
 
-Exercise no. 1 finishes here. 
+Exercise no. 1 finishes here.
+ 
+.. _Exercise2:   
 
 FC2K - Example 2 - Embedding Fortran code into Kepler (CPOs)
 ============================================================
@@ -1052,6 +1055,7 @@ After workflow finishes it's execution, you should see result similar to one bel
 
 Exercise no. 2 finishes here.
 
+.. _Exercise3:
 
 FC2K - Example 3 - Embedding C++ code within Kepler (no CPOs)
 ==============================================================
@@ -1202,6 +1206,8 @@ After workflow finishes it's execution, you should see result similar to one bel
    :align: center
 
 Exercise no. 3 finishes here.
+
+.. _Exercise4:
  
 FC2K - Example 4 - Embedding C++ code within Kepler (CPOs)
 ==========================================================

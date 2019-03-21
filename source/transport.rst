@@ -264,7 +264,10 @@ The full algorithm starting with the specific fluxes appears as
 
 .. math::
    
-   L_n^{-1} = \max \left( {1 \over R}, \left \vert {\partial \log n \over \partial \rho} \right \vert \right) \qquad \qquad L_T^{-1} = \max \left( {1 \over R},\left \vert {\partial \log T \over \partial \rho} \right \vert \right) \ \ D' =\left \vert F \right \vert L_n \qquad \qquad \chi' = \left \vert G \right \vert L_T \ \ D = \max \left( D', {1\over 5} \chi' \right) \qquad \qquad \chi = \max\left ( \chi', {1 \over 5} D' \right) \ \ V = \left( F + D {\partial \log n \over \partial \rho} \right) \qquad \qquad Y = \left( G + \chi {\partial \log T \over \partial \rho} \right)
+   L_n^{-1} &= \max \left( {1 \over R}, \left\vert {\partial \log n \over \partial \rho} \right\vert \right) \quad L_T^{-1} = \max \left( {1 \over R},\left\vert {\partial \log T \over \partial \rho} \right\vert \right)\\
+   D' &=\left \vert F \right \vert L_n \quad \chi' = \left \vert G \right \vert L_T \\
+   D &= \max \left( D', {1\over 5} \chi' \right) \quad \chi = \max\left( \chi', {1 \over 5} D' \right) \\
+   V &= \left( F + D {\partial \log n \over \partial \rho} \right) \quad Y = \left( G + \chi \frac{\partial \log T}{\partial \rho} \right)
 
 and all four elements are set. Note that the channels are done in parallel
 except for the Prandtl correction, in which the Max's are taken

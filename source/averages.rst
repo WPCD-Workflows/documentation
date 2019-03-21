@@ -119,7 +119,7 @@ main time-memory parameter:
    
   -  the integral with :math:`\alpha dt'` yields unity
   -  the :math:`\epsilon` and :math:`(1-\epsilon)` factors add to unity
-  -  therefore set the first value of :math:`A` to the first value of :math:`p     `
+  -  therefore set the first value of :math:`A` to the first value of :math:`p`
 
 -  in choosing the memory decay time :math:`\alpha^{-1} \dots`
    
