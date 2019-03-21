@@ -7,7 +7,7 @@ https://confluence.man.poznan.pl/community/display/WFMS
 
 
 In a workflow, physics modules exchange physics data in the form of
-standardised blocks of information : the Consistent Physical Objects
+standardised blocks of information: the Consistent Physical Objects
 (CPOs). The list of CPOs as well as their inner structure defines the EU-IM
 Data Structure. All physics modules should use these standardised
 interfaces for I/O.
