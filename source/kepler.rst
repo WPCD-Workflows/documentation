@@ -252,9 +252,15 @@ What FC2K actually does?
 FC2K main window
 ~~~~~~~~~~~~~~~~
 
+.. image:: images/kepler_1.png
+   :align: center
+
 
 Actor description
 ~~~~~~~~~~~~~~~~~
+
+.. image:: images/kepler_2.png
+   :align: center
 
 This group of graphical controls allows to set the description of the actor and its "place" in hierarchy of Kepler elements in Kepler "Component" browser
 
@@ -265,6 +271,11 @@ This group of graphical controls allows to set the description of the actor and 
   
 Environment
 ~~~~~~~~~~~
+
+.. image:: images/kepler_3.png
+   :align: center
+
+
 The Environment text fields shows UAL and Kepler locations.
 
 - **Kepler** - Kepler location (usually the same as $KEPLER)
@@ -275,6 +286,10 @@ The Environment text fields shows UAL and Kepler locations.
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Below you can find explanation of FC2K arguments tab.
+
+
+.. image:: images/kepler_4.png
+   :align: center
 
 
 - **Type** - Defines a type of an argument. It is possible to choose either IDS based type (e.g. equilibrium, topinfo, etc.) or primitive type (e.g. int, long, double, char)
@@ -292,7 +307,10 @@ Below you can find explanation of FC2K arguments tab.
 - **Input** - Defines argument as an input
 - **Output** - Defines argument as an output
 - **Label** - User defined name of an argument (and actor port)
- 
+
+.. image:: images/kepler_5.png
+   :align: center
+  
 Please take a look on a screenshot above:
 
 - *equilibrium* - an input parameter - one IDS (slice)
@@ -307,12 +325,20 @@ Please take a look on a screenshot above:
 
 Code specific parameters are all parameters which are specific to the code (like switches, scaling parameters, and parameters for built-in analytical models) as well as parameters to explicitly overrule fields in the ITM data structures.
 
+.. image:: images/kepler_6.png
+   :align: center
+
 - **Frequently Used XML** - Actual value of the code parameters
 - **Default XML** - Default values of the code parameters
 - **Schema** - A (XSD) XML schema
  
 "Source" tab explained
 ~~~~~~~~~~~~~~~~~~~~~~
+
+
+.. image:: images/kepler_7.png
+   :align: center
+
 
 The purpose of this tab is to define all code related issues:
 
@@ -327,6 +353,9 @@ Libraries
 
 A "Main library" field allows to define a path to library containing user subroutine/function.
 
+.. image:: images/kepler_8.png
+   :align: center
+
 *"Optional library"*
 
 A "Optional library" field allows to define a path to optional library containing user subroutine/function.
@@ -334,6 +363,10 @@ A "Optional library" field allows to define a path to optional library containin
 *"Custom libraries"*
 
 "Custom libraries" are non-standard static libraries required for building the user code.
+
+.. image:: images/kepler_9.png
+   :align: center
+
 
 Available operations on libraries list:
 
@@ -345,16 +378,26 @@ Available operations on libraries list:
 
 "System libraries" are system libraries handled by pkg-config mechanism and required for building the user code.
 
+.. image:: images/kepler_10.png
+   :align: center
+
 A user can:
 
 - add library from the list,
 - remove library
 - display detailed info (library definition returned by pkg-config mechanism)
 
+.. image:: images/kepler_11.png
+   :align: center
+  
 "Settings" tab explained
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 A user, using this tab, selects programming language of codes provided, compiler used to built library and type of code execution (sequential or parallel)
+
+.. image:: images/kepler_12.png
+   :align: center
+
 
 - **Programming languange:**
   
@@ -387,10 +430,18 @@ A user, using this tab, selects programming language of codes provided, compiler
 
 The "Documentation" tab specifies an user-defined Kepler actor description. It could be displayed from actor pop-up menu.
 
+
+.. image:: images/kepler_13.png
+   :align: center
+
 "Interface" tab explained
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The "Interface" tab specifies interface for Kepler actor.
+
+.. image:: images/kepler_14.png
+   :align: center
+
 
 Incorporating user codes into Kepler using FC2K - exercises
 -----------------------------------------------------------
@@ -774,17 +825,25 @@ Open a nocpo_example_1 project
 3. You should see new parameter settings loaded into FC2K.
 4. After loading parameters you can notice that parameters point to locations within your home directory.
 
+.. image:: images/kepler_15.png
+   :align: center
+   
 Project settings
 ----------------
 
 Please take a look at the project settings.
 
+.. image:: images/kepler_16.png
+   :align: center
 
 Subroutine arguments:
 
 - one input argument of type integer
 - one output argument of type integer
 
+.. image:: images/kepler_17.png
+   :align: center
+ 
 
 After all the settings are correct, you can generate actor
 ----------------------------------------------------------   
@@ -796,6 +855,9 @@ Confirm Kepler compilation
 --------------------------
 
 After actor is generated, FC2K offers to compile Kepler application. Make sure to compile it by pressing "Yes".
+
+.. image:: images/kepler_18.png
+   :align: center
 
 
 You can now start Kepler and use generated actor
@@ -817,13 +879,22 @@ After Kepler is started, open example workflow from the following location
         
 You should see similar workflow on screen.
 
+.. image:: images/kepler_19.png
+   :align: center
+
 Launch the workflow
 -------------------
 
 You can start the workflow execution, by pressing "Play" button
 
+.. image:: images/kepler_20.png
+   :align: center
+
 
 After workflow finishes it's execution, you should see result similar to one below:
+
+.. image:: images/kepler_21.png
+   :align: center
 
 Exercise no. 1 finishes here. 
 
@@ -907,18 +978,27 @@ Open project cposlice2cposlicef_fc2k
 3. Open file cposlice2cposlicef_fc2k.xml.
 4. You should see new project loaded into FC2K.
 
+.. image:: images/kepler_22.png
+   :align: center
 
+   
 Project settings
 ----------------
 
 Please take a look at the project settings.
 
+.. image:: images/kepler_23.png
+   :align: center
+           
 Subroutine arguments:
 
 - one input argument - CPO array
 - one output argument - CPO array
 
+.. image:: images/kepler_24.png
+   :align: center
 
+  
 After loading parameters you can notice that library location points to location within your itmwork directory **($ITMWORK)**.
 
 After all the settings are correct, you can generate actor
@@ -931,6 +1011,8 @@ Confirm Kepler compilation
 
 After actor is generated, FC2K offers to compile Kepler application. Make sure to compile it by pressing "Yes".
 
+.. image:: images/kepler_25.png
+   :align: center
 
 You can now start Kepler and use generated actor
 ------------------------------------------------
@@ -951,13 +1033,22 @@ After Kepler is started, open example workflow from the following location
 
 You should see similar workflow on screen.
 
+.. image:: images/kepler_26.png
+   :align: center
+
+
 Launch the workflow
 -------------------
 
 You can start the workflow execution, by pressing "Play" button
 
+.. image:: images/kepler_27.png
+   :align: center
+
 After workflow finishes it's execution, you should see result similar to one below:
 
+.. image:: images/kepler_28.png
+   :align: center
 
 Exercise no. 2 finishes here.
 
@@ -1038,15 +1129,25 @@ Open project simplecppactor_nocpo
 3. Open file simplecppactor_nocpo_fc2k.xml.
 4. You should see new project loaded into FC2K.
 
+.. image:: images/kepler_29.png
+   :align: center
+   
+
 Project settings
 ----------------
 
 Please take a look at the project settings.
 
+.. image:: images/kepler_30.png
+   :align: center
+
 Function arguments:
 
 - one input argument - double
 - one output argument - double
+
+.. image:: images/kepler_31.png
+   :align: center
 
 After loading parameters you can notice that library location points to location within your $TUTORIAL_DIR directory.
 
@@ -1061,6 +1162,9 @@ Confirm Kepler compilation
 --------------------------
 
 After actor is generated, FC2K offers to compile Kepler application. Make sure to compile it by pressing "Yes".
+
+.. image:: images/kepler_32.png
+   :align: center
 
 You can now start Kepler and use generated actor
 ------------------------------------------------
@@ -1080,12 +1184,22 @@ After Kepler is started, open example workflow from the following location
 
 You should see similar workflow on screen.
 
+.. image:: images/kepler_33.png
+   :align: center
+
+
 Launch the workflow
 -------------------
 
 You can start the workflow, by pressing "Play" button
 
+.. image:: images/kepler_34.png
+   :align: center
+           
 After workflow finishes it's execution, you should see result similar to one below:
+
+.. image:: images/kepler_35.png
+   :align: center
 
 Exercise no. 3 finishes here.
  
@@ -1161,16 +1275,26 @@ Open project simplecppactor
 3. Open file simplecppactor_fc2k.xml.
 4. You should see new parameter settings loaded into FC2K.
 
+.. image:: images/kepler_36.png
+   :align: center
+   
+
 Project settings
 ----------------
 
 Please take a look at the project settings.
+
+.. image:: images/kepler_37.png
+   :align: center
 
 Function arguments:
 
 - input argument - equilibrium
 - input argument - double
 - output argument - double
+
+.. image:: images/kepler_38.png
+   :align: center
 
 You should modify these setting, so they point to locations within you home directory. They will typically be as follows:
 
@@ -1184,6 +1308,9 @@ Confirm Kepler compilation
 --------------------------
 
 After actor is generated, FC2K offers to compile Kepler application. Make sure to compile it by pressing "Yes".
+
+.. image:: images/kepler_39.png
+   :align: center
 
 You can now start Kepler and use generated actor
 ------------------------------------------------
@@ -1203,14 +1330,20 @@ After Kepler is started, open example workflow from the following location
 
 You should see similar workflow on screen.
 
+.. image:: images/kepler_40.png
+   :align: center
 
 Launch the workflow
 
 You can start the workflow, by pressing "Play" button
 
+.. image:: images/kepler_41.png
+   :align: center
 
 After workflow finishes it's execution, you should see result similar to one below:
 
+.. image:: images/kepler_42.png
+   :align: center
 
 Exercise no. 4 finishes here.
 
@@ -1226,15 +1359,15 @@ In order to use most recent version of Kepler do following. First of all make su
 
 .. code-block:: console
 
-        # in case you already have imas-kepler inside $HOME
-        # you can move it to $ITMWORK/imas-kepler
+         in case you already have imas-kepler inside $HOME
+         you can move it to $ITMWORK/imas-kepler
         > mv $HOME/imas-kepler $ITMWORK/imas-kepler
  
-        # If you don't have $HOME/imas-kepler directory, create
-        # it inside $ITMWORK
+         If you don't have $HOME/imas-kepler directory, create
+         it inside $ITMWORK
         > mkdir $ITMWORK/imas-kepler
  
-        # create symbolic link inside $HOME
+         create symbolic link inside $HOME
         > cd $HOME
         > ln -s $ITMWORK/imas-kepler
         
