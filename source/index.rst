@@ -15,6 +15,7 @@ Contents:
 
 .. toctree::
    :maxdepth: 6
+   :numbered:
 
    introduction
    infrastructure
