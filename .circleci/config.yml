@@ -40,7 +40,8 @@ jobs:
             - assets-cache
       - restore_cache:
           keys:
-            - doctrees
+            - doctrees-v1-{{ .BuildNum }}
+            - doctrees-v1
       - run:
           name: Build docs to store
           command: |
@@ -50,7 +51,7 @@ jobs:
           paths:
             - ~/assets
       - save_cache:
-          key: doctrees
+          key: doctrees-v1-{{ .BuildNum }}
           paths:
             - ../WPCD-Workflows.github.io/doctrees
       # See https://github.com/docksal/ci-agent/issues/26 
