@@ -29,7 +29,7 @@ jobs:
             - ~/.cache/pip
       # Checkout latest HTML site repo for deploy later on
       - run: 
-          name: Clone WPCD-Workflows.github.io containig HTML pages
+          name: Clone WPCD-Workflows.github.io containing HTML pages
           command: |
              git clone git@github.com:WPCD-Workflows/WPCD-Workflows.github.io.git ../WPCD-Workflows.github.io
       # Build the docs
