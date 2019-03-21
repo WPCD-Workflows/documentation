@@ -36,12 +36,12 @@ jobs:
       - run: 
           name: Clone WPCD-Workflows.github.io containing HTML pages
           command: |
-             if [ -e ../WPCD-Workflows.github.io/.git ]; then \
-                cd ../WPCD-Workflows.github.io; \
-                git pull; \
-             else;\
-                git clone git@github.com:WPCD-Workflows/WPCD-Workflows.github.io.git ../WPCD-Workflows.github.io;\
-             fi
+              if [ -e ../WPCD-Workflows.github.io/.git ]; then \
+                 cd ../WPCD-Workflows.github.io;\
+                 git pull;\
+              else\
+                 git clone git@github.com:WPCD-Workflows/WPCD-Workflows.github.io.git ../WPCD-Workflows.github.io;\
+              fi
       # Build the docs
       - run: make depend
       - restore_cache:
