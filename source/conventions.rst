@@ -42,7 +42,7 @@ system in a toroidal geometry with the following coordinates:
 
 -  major radius R
 -  vertical heights Z
--  toroidal angle \\( \\phi \\)
+-  toroidal angle :math:`\phi`
 
 Remaining consistent with ITER, the EU-IM-TF has chosen to adopt the
 right-handed system
@@ -50,13 +50,13 @@ right-handed system
 .. math::
    (R, \phi, Z)
 
-i.e. R is to the right, Z is upwards, and \\( \\phi \\) points into the plane
+i.e. R is to the right, Z is upwards, and :math:`\phi` points into the plane
 on the right-hand side of the torus (i.e. mathematically positive). Looking
 from above, the toroidal angle is counter-clockwise, i.e. mathematically
 positive.
 
 The following figures demonstrate the orientation of the toroidal angle
-\\( \\phi \\) and the poloidal angle \\( \\theta \\):
+:math:`\phi` and the poloidal angle :math:`\theta`:
 
 .. figure:: images/conventions_1.png
    :align: center
@@ -78,13 +78,13 @@ Representation of the Magnetic Field and Current
 Generally, the magnetic field is described in terms of two scalar fields as
 it is divergence free. If the field is also axisymmetric then MHD
 equilibrium demands these are functions of each other. In the EU-IM-TF the
-relevant quantities are \\(F_{{\\rm dia}}\\) and \\( \\Psi \\) and the
+relevant quantities are :math:`F_{{\rm dia}}` and :math:`\Psi` and the
 representation is
 
 .. math::
    {\bf B} = F_{{\rm dia}} \nabla \phi +(2\pi)^{-1} \nabla \Psi \times \nabla \phi
 
-where the factor of \\(2 \\pi \\) is to have \\( \\Psi \\) one and the same with
+where the factor of :math:`2 \pi` is to have :math:`\Psi` one and the same with
 the poloidal flux in Webers (see below).
 
 The current given by Ampere's law is
@@ -98,16 +98,18 @@ The respective covariant toroidal components are useful forms:
    B_\phi =F_{{\rm dia}} \qquad \qquad \mu_0 J_\phi = - (2\pi)^{-1}(R^2 \nabla\cdot R^{-2} \nabla \Psi)
 
 where the latter is often expressed in terms of the "delta-star" operator,
-\\( \\Delta^* = R^2 \\nabla \\cdot R^{-2} \\nabla \\). These are not the
+:math:`\Delta^* = R^2 \nabla \cdot R^{-2} \nabla`. These are not the
 toroidal field and current but the toroidal field and current multiplied by
-\\( R \\) respectively. The total plasma current \\( I_p \\) is the integral of \\( J_{\\phi} / R \\) over the poloidal cross section (usually, but not always, over the closed flux surface region only).
+:math:`R` respectively. The total plasma current :math:`I_p` is the integral 
+of :math:`J_{\phi} / R` over the poloidal cross section (usually, but 
+not always, over the closed flux surface region only).
 
 .. _itm_conventions_poloidal_and_toroidal_fluxes:
 
 Poloidal and Toroidal Fluxes
 ----------------------------
 
-The toroidal flux \\( \\Phi \\) is the integral of \\( B_{\\phi} / R \\) over
+The toroidal flux :math:`\Phi` is the integral of :math:`B_{\phi} / R` over
 the region enclosed by the flux surface. Due to axisymmetry it is also a
 volume integral
 
@@ -116,14 +118,14 @@ volume integral
 
 All volume integrals are understood as integration over the region enclosed
 by the flux surface. They are therefore flux quantities (pure functions of
-\\( \\Psi \\)). The units of \\( \\Phi \\) are volt-seconds, or Webers (Wb).
+:math:`\Psi`). The units of :math:`\Phi` are volt-seconds, or Webers (Wb).
 
-The poloidal flux is \\( \\Psi \\) due to the construction of \\( \\bf B
-\\). The factor of \\( 2 \\pi \\) ensures this is not Wb per radian (the
-more usual quantity \\( \\psi \\) used as a covariant toroidal component
-of the magnetic potential is in Wb/radian; the factor of \\( 2 \\pi \\)
+The poloidal flux is :math:`\Psi` due to the construction of :math:`\bf B`.
+The factor of :math:`2 \pi` ensures this is not Wb per radian (the
+more usual quantity :math:`\psi` used as a covariant toroidal component
+of the magnetic potential is in Wb/radian; the factor of :math:`2 \pi`
 results from integration over one angular circuit). Note that the
-poloidal flux \\( \\Psi \\) and its equivalent per radian \\( \\psi \\)
+poloidal flux :math:`\Psi` and its equivalent per radian :math:`\psi`
 are often used equivalently in the literature.
 
 .. _itm_conventions_safety_factor:
@@ -157,9 +159,9 @@ on the outboard midplane):
 .. table:: Sign Relations
 
    +----------------+-------------+--------------+--------------+-------------+
-   | \\(B_{\tor}\\) | \\(I_{p}\\) | \\( \\Psi \\)| \\( \\Phi \\)| safety      |
+   |:math:`B_{tor}` |:math:`I_{p}`| :math:`\Psi` | :math:`\Phi` | safety      |
    |                |             |              |              | factor      |
-   |                |             |              |              | \\( q \\)   |
+   |                |             |              |              | :math:`q`   |
    +================+=============+==============+==============+=============+
    | positive       | positive    | decreasing   | increasing   | negative    |
    +----------------+-------------+--------------+--------------+-------------+
@@ -227,7 +229,7 @@ The Flux Surface Average
 ------------------------
 
 In general, the flux surface average is the operation which annihilates the
-magnetic derivative \\( {\\bf B} \\cdot \\nabla \\) and acts as an identity
+magnetic derivative :math:`{\bf B} \cdot \nabla` and acts as an identity
 operator on any flux quantity. It can be proved that this results in a
 volume derivative of a volume integral (alternatively one starts with the
 latter property and then proves the former, as the above Ciemat reference
@@ -237,17 +239,17 @@ given by
 .. math::
    \langle G \rangle = \frac {\partial} {\partial V} \oint d^3V G \qquad \qquad \langle \nabla \cdot {\bf G} \rangle = \frac {\partial} {\partial V} \langle {\bf G}\cdot\nabla V \rangle
 
-where \\( {\\bf G} \\cdot \\nabla V \\) is the contravariant volume
-component of the vector \\( {\\bf G} \\). It follows that the flux surface
-average is an angle average weighted by the volume element \\( \\sqrt{g}
-\\)
+where :math:`{\bf G} \cdot \nabla V` is the contravariant volume
+component of the vector :math:`{\bf G}`. It follows that the flux surface
+average is an angle average weighted by the volume element :math:`\sqrt{g}
+\)
 
 .. math::
    \langle G \rangle = \oint d \phi \oint d \theta \sqrt{g} G \left / \oint d \phi \oint d \theta \sqrt{g} \right.
 
 for any choice of toroidal and poloidal angle as well as radial
-coordinates, where \\( g \\) is the determinant of the covariant metric
-tensor components in those coordinates. Note in general \\( G \\) is not an
+coordinates, where :math:`g` is the determinant of the covariant metric
+tensor components in those coordinates. Note in general :math:`G` is not an
 axisymmetric quantity so the integration is actually over both angles.
 
 For more detail see the above references.
@@ -257,22 +259,22 @@ For more detail see the above references.
 The Toroidal Flux Radius as the Radial Coordinate
 -------------------------------------------------
 
-The EU-IM-TF has decided to use the toroidal flux radius \\( \\rho_{{ \\rm tor}} \\) defined by
+The EU-IM-TF has decided to use the toroidal flux radius :math:`\rho_{{ \rm tor}}` defined by
 
 .. math::
    \Phi = \pi B_0 \rho_{{ \rm tor}}^2
 
-where \\( B_0 \\) is the reference (vacuum) magnetic field value. Note that
-\\( \\rho_{{ \\rm tor}} \\) is a positive quantity which has units of
-meters. For several applications the volume radius \\( \\rho_{{ \\rm vol}}
-\\) is also used. It is a normalised radius going from 0 to 1 and is
+where :math:`B_0` is the reference (vacuum) magnetic field value. Note that
+:math:`\rho_{{ \rm tor}}` is a positive quantity which has units of
+meters. For several applications the volume radius :math:`\rho_{{ \rm vol}}
+\) is also used. It is a normalised radius going from 0 to 1 and is
 defined as
 
 .. math::
    V = V_{{\rm LCFS}} \rho_{{ \rm vol}}^2 
 
 where LCFS refers to the last closed flux surface. Both should be defined
-in the equilibrium CPO (as well as \\( { \\tt volume} \\equiv V \\) itself).
+in the equilibrium CPO (as well as :math:`{ \tt volume} \equiv V` itself).
 
 .. _itm_conventions_toroidal_and_parallel_current:
 
@@ -281,44 +283,44 @@ Toroidal and Parallel Current
 
 These are not equivalent, despite the often-seen experimental practice of
 considering them so. The toroidal current given in Amperes depends on some
-convention applied to \\( J_{\\phi} \\) given above, which is not a flux
+convention applied to :math:`J_{\phi}` given above, which is not a flux
 quantity. The EU-IM-TF has decided on this definition of the toroidal
 current as a flux quantity:
 
 .. math::
    {\tt jphi} \equiv \langle J^ \phi \rangle / \langle 1/R \rangle
 
-This uses the contravariant toroidal component of \\( \\bf J \\) which is a
+This uses the contravariant toroidal component of :math:`\bf J` which is a
 pure divergence
 
 .. math::
    J^\phi = {\bf J} \cdot \nabla \phi = J_ \phi / R^2 = - \nabla \cdot (2 \pi \mu_0 R^2)^{-1} \nabla \Psi
 
-Hence the flux surface average invokes the often-used quantity \\( \\langle
-g^{\\rho \\rho}/R^2 \\rangle \\) in the form
+Hence the flux surface average invokes the often-used quantity :math:`\langle
+g^{\rho \rho}/R^2 \rangle` in the form
 
 .. math::
    \langle J^\phi \rangle = - (2 \pi \mu_0)^{-1} \frac{1}{V'_\rho} \frac{ \partial}{ \partial \rho} V'_\rho \langle g^{ \rho \rho} / R^2 \rangle \frac{ \partial\Psi}{ \partial \rho}
 
-Here,  \\(V'_\\rho \\equiv \\partial V / \\partial \\rho_{{\\rm tor}}\\)
+Here,  :math:`V'_\rho \equiv \partial V / \partial \rho_{{\rm tor}}`
 explicitly using the toroidal flux radius as the radial coordinate.
 
 The parallel current is different from this due to the finiteness of the
-poloidal current and magnetic field. Generally the correction is \\(O( \\epsilon^2 / q^2) \\) which is usually a few percent (but not in a 
-spherical tokamak). Using the representations for \\( \\bf B \\) and \\( \\bf J \\) given above we find
+poloidal current and magnetic field. Generally the correction is :math:`O( \epsilon^2 / q^2)` which is usually a few percent (but not in a 
+spherical tokamak). Using the representations for :math:`\bf B` and :math:`\bf J` given above we find
 
 .. math::
    {\bf J} \cdot{ \bf B} =-(2 \pi \mu_0)^{-1}\,F_{{ \rm dia}}^2 \nabla \cdot \frac{1}{F_{{\rm dia}} R^2} \nabla \Psi
 
-Since \\( F_{{\\rm dia}} \\) is a flux quantity the flux surface average
-behaves as for \\( {\\tt jphi} \\) and we use a factor of \\( B_0 \\) to
+Since :math:`F_{{\rm dia}}` is a flux quantity the flux surface average
+behaves as for :math:`{\tt jphi}` and we use a factor of :math:`B_0` to
 provide the correct units, yielding
 
 .. math::
    {\tt jparallel} \equiv -(2 \pi \mu_0 B_0)^{-1} \frac{F_{{ \rm dia}}^2}{V'_\rho} \frac{ \partial}{ \partial \rho} \frac{V'_\rho}{F_{{\rm dia}}} \langle g^{\rho\rho}/R^2 \rangle \frac{\partial\Psi}{\partial\rho}
 
 This form has been chosen due to the natural use of the flux surface
-average \\( \\langle{\\bf J} \\cdot{ \\bf B} \\rangle \\) in neoclassical theory
+average :math:`\langle{\bf J} \cdot{ \bf B} \rangle` in neoclassical theory
 and the magnetic flux diffusion equation (see the Hinton and Hazeltine
 reference above).
 
@@ -334,18 +336,18 @@ representation given above, a standard definition of the coordinate volume
 element follows. This is the same sense as the usage of the term "Jacobian"
 in the CPOs (note many papers use the inverse volume element as the
 "Jacobian" by contrast). Here, "straight field line coordinates" refers to
-the use of the right-handed coordinate system \\(( \\Psi, \\theta, \\zeta) \\)
-with the poloidal flux \\( \\Psi \\), the straight field line angle \\(
-\\theta \\), and the toroidal angle \\( \\zeta = - \\phi \\). Therefore,
-\\( \\theta \\) has the same orientation as the poloidal angle \\( \\theta
-\\) in toroidal coordinates, while the toroidal angle \\( \\zeta \\) is in
-the opposite direction of \\( \\phi \\). This is standard usage generally
+the use of the right-handed coordinate system :math:`(\Psi, \theta, \zeta)`
+with the poloidal flux :math:`\Psi`, the straight field line angle 
+:math:`\theta`, and the toroidal angle :math:`\zeta = - \phi`. Therefore,
+:math:`\theta` has the same orientation as the poloidal angle :math:`\theta`
+in toroidal coordinates, while the toroidal angle :math:`\zeta` is in
+the opposite direction of :math:`\phi`. This is standard usage generally
 in terms of "flux coordinates" (see Hazeltine and Meiss, above).
 
 Note here that while the toroidal angle is the geometric one in the
 orientation sense of flux coordinates, the poloidal angle is not
 geometric. This results from the demand that the field lines be straight
-in the coordinate plane \\(( \\theta, \\zeta) \\). The definition of this
+in the coordinate plane :math:`(\theta, \zeta)`. The definition of this
 property is given by the specification of the ratio of contravariant
 components of the magnetic field as a flux quantity, which is one and
 the same with the pitch parameter ("local safety factor"):
@@ -360,12 +362,12 @@ differential equation for the poloidal angle:
 .. math::
    B^ \theta = B^ \phi / q  = F_{{\rm dia}}/qR^2 
 
-Due to the choice of "natural" coordinates (with \\( \\Psi \\), not \\( \\rho_{{\\rm tor}} \\)) this relation is close to the definition of the volume element \\( \\sqrt{g} \\) and, equivalently, the Jacobian \\( J \\)
+Due to the choice of "natural" coordinates (with :math:`\Psi`, not :math:`\rho_{{\rm tor}}`) this relation is close to the definition of the volume element :math:`\sqrt{g}` and, equivalently, the Jacobian :math:`J`
 
 .. math::
    J \equiv \sqrt{g} \qquad \qquad J^{-1} = {\bf \nabla} \Psi \cdot {\bf \nabla} \theta \times {\bf \nabla} \zeta = {\bf \nabla} \Psi \times {\bf \nabla} \phi \cdot {\bf \nabla}\theta 
 
-Note the ordering of \\( {\\bf \\nabla} \\Psi \\) and \\( {\\bf \\nabla} \\phi \\).
+Note the ordering of :math:`{\bf \nabla} \Psi` and :math:`{\bf \nabla} \phi`.
 
 The components of the magnetic field are then
 
@@ -380,7 +382,7 @@ With these relations the following relationship between the Jacobian and pitch p
    J = (2\pi)^{-1}q R^{2}/F_{{\rm dia}}
 
 
-This is the quantity labelled \\( {\\tt jacobian} \\) in the equilibrium
+This is the quantity labelled :math:`{\tt jacobian}` in the equilibrium
 CPO.
 
 .. _itm_conventions_plasma_betas:
@@ -395,16 +397,16 @@ poloidal beta is defined as an integral over the poloidal cross section
 .. math::
    \beta_{\rm p} = \frac{2 \mu_{0}} {B_{ \rm a}^{2}} \frac{ \int_{A} p \rm{d}S}{ \int_{A} \rm{d}S}
 
-where \\( A = A (\\Psi) \\) is the poloidal cross section enclosed by the
-flux surface \\( \\Psi \\), \\( B_{\rm a} = \\frac{ \\mu_{0} I}{l} \\) is
-the flux surface averaged poloidal magnetic field, \\( I = I( \\Psi ) \\) the toroidal plasma current inside the flux surface \\( \\Psi \\) and \\( l = \\oint \\rm{d} l \\) the length of the poloidal perimeter of flux surface \\( \\Psi \\). This definition yields a one-dimensional profile \\( \\beta_{\\rm p} = \\beta_{\\rm p} ( \\Psi ) \\) stored in profiles_1d%beta_pol in the equilibrium CPO. The overall poloidal beta \\( \\beta_{\rm p} (\\Psi = \\Psi_{\\rm bd}) \\) is stored in global_param%beta_pol.
+where :math:`A = A (\Psi)` is the poloidal cross section enclosed by the
+flux surface :math:`\Psi`, :math:`B_{\rm a} = \frac{ \mu_{0} I}{l}` is
+the flux surface averaged poloidal magnetic field, :math:`I = I( \Psi )` the toroidal plasma current inside the flux surface :math:`\Psi` and :math:`l = \oint \rm{d} l` the length of the poloidal perimeter of flux surface :math:`\Psi`. This definition yields a one-dimensional profile :math:`\beta_{\rm p} = \beta_{\rm p} ( \Psi )` stored in profiles_1d%beta_pol in the equilibrium CPO. The overall poloidal beta :math:`\beta_{\rm p} (\Psi = \Psi_{\rm bd})` is stored in global_param%beta_pol.
 
 The toroidal beta is defined as
 
 .. math::
    \beta_{\rm tor} = \frac{2 \mu_{0}}{B_{0}^{2}} \frac {\int_{\Omega} p \rm{d}V}{\int_{\Omega} \rm{d}V}
 
-with \\( B_{0} \\) the vacuum magnetic field as stored in global_param%toroid_field%b0. The integral is carried out over the entire plasma volume and the result stored in global_param%beta_tor.
+with :math:`B_{0}` the vacuum magnetic field as stored in global_param%toroid_field%b0. The integral is carried out over the entire plasma volume and the result stored in global_param%beta_tor.
 
 The normalized plasma beta is defined as
 
@@ -412,7 +414,7 @@ The normalized plasma beta is defined as
    \beta_{\rm N} = 100 \frac{a B_{0}}{10^{-6}I_{\rm p}} \beta_{\rm tor}
 
 
-with \\( I_{\\rm p} \\) the total plasma current (following Y.-S. Na et al.,
+with :math:`I_{\rm p}` the total plasma current (following Y.-S. Na et al.,
 PPCF 44 (2002), 1285) and a is the minor radius. It is stored in
 global_param%beta_normal.
 
@@ -422,19 +424,19 @@ Internal Inductance
 -------------------
 
 The definition of the internal inductance follows J.A. Romero et al., NF 50
-(2010), 115002. The magnetic energy contained inside the flux surface \\(
-\\Psi \\) is
+(2010), 115002. The magnetic energy contained inside the flux surface 
+:math:`\Psi` is
 
 .. math::
    W_{\rm mag} = \frac{1}{2 \mu_{0}} \int_{\Omega} B_{\rm p}^{2} \rm{d}V
 
-where \\( B_{\\rm p} \\) is the poloidal component of the magnetic field. The (unnormalized) internal inductance is then defined as
+where :math:`B_{\rm p}` is the poloidal component of the magnetic field. The (unnormalized) internal inductance is then defined as
 
 .. math::
    L_{\rm i} = \frac{2 W_{\rm mag}}{I^{2}}
 
-where \\( I = I(\\Psi) \\) is the toroidal plasma current enclosed by the
-flux surface \\( \\Psi \\). The normalized internal inductance, as
+where :math:`I = I(\Psi)` is the toroidal plasma current enclosed by the
+flux surface :math:`\Psi`. The normalized internal inductance, as
 stored in profiles_1d%li is defined as
 
 .. math::
@@ -445,7 +447,7 @@ with the surface averaged major radius
 .. math::
    bar{R} = \frac{\int_{A} R \rm{d} S}{\int_{A} \rm{d}S} = \frac{V(\Psi)}{2 \pi A(\Psi)}
    
-The overall internal inductance \\(l_{\\rm i} (\\Psi = \\Psi_{\\rm bd}) \\) is stored in global_param%li.
+The overall internal inductance :math:`l_{\rm i} (\Psi = \Psi_{\rm bd})` is stored in global_param%li.
 
 .. _itm_conventions_poloidal_angle_dimension_in_equilibrium_cpo:
 
@@ -476,11 +478,11 @@ i.e. radial coordinate psi in dim1 and poloidal angle in dim2):
        
 
 The EU-IM-TF has decided not to repeat the first poloidal point (with
-poloidal angle \\(\\theta = 0\\)), which is identical to \\(\\theta = 2
-\\pi\\). This option was chosen to facilitate Fourier transforms along the
+poloidal angle :math:`\theta = 0`, which is identical to 
+:math:`\theta = 2 \pi`. This option was chosen to facilitate Fourier transforms along the
 poloidal direction. To that purpose it is required that the dimension dim2
-be equidistant in the poloidal angle \\( \\theta \\) (going from \\( \\theta =
-0 \\) to \\( \\theta = (ndim2-1)/ndim2*2 \\pi \\) where ndim2 is the number of
+be equidistant in the poloidal angle :math:`\theta` (going from :math:`\theta =
+0` to :math:`\theta = (ndim2-1)/ndim2*2 \pi` where ndim2 is the number of
 poloidal grid points), whatever the choice of this angle is.
 
 .. _numerical_and_computational_conventions:
@@ -718,23 +720,23 @@ Grid Type Identifier
 The currently allowed values (integer and string) for the identifier of
 the grid type are listed below:
 
-+-------------+--------------------+-----------------------------------+
-| Integer     | String Value       | Description                       |
-| Values      |                    |                                   |
-+=============+====================+===================================+
-| 1           | rectangular        | Regular grid in \\((R,            |
-|             |                    | Z) \\).'EFIT-like grid'           |
-+-------------+--------------------+-----------------------------------+
-| 2           | inverse            | Regular grid in \\((\\Psi,        |
-|             |                    | \\theta)\\).'flux surface grid'.  |
-+-------------+--------------------+-----------------------------------+
-| 3           | irregular          | | Irregular grid. All fields in   |
-|             |                    |   profiles_2d are given as (ndim1,|
-|             |                    |   1)                              |
-|             |                    | | degenerate 2D matrices, i.e.    |
-|             |                    |   as lists of vertices (for       |
-|             |                    | | triangles or quadrilaterals).   |
-+-------------+--------------------+-----------------------------------+
++-------------+--------------------+-------------------------------------+
+| Integer     | String Value       | Description                         |
+| Values      |                    |                                     |
++=============+====================+=====================================+
+| 1           | rectangular        | Regular grid in :math:`(R,Z)`.      |
+|             |                    | 'EFIT-like grid'                    |
++-------------+--------------------+-------------------------------------+
+| 2           | inverse            | Regular grid in :math:`\Psi,\theta`.|
+|             |                    | 'flux surface grid'.                |
++-------------+--------------------+-------------------------------------+
+| 3           | irregular          | | Irregular grid. All fields in     |
+|             |                    |   profiles_2d are given as (ndim1,  |
+|             |                    |   1)                                |
+|             |                    | | degenerate 2D matrices, i.e.      |
+|             |                    |   as lists of vertices (for         |
+|             |                    | | triangles or quadrilaterals).     |
++-------------+--------------------+-------------------------------------+
 
 .. _itm_conventions_poloidal_angle_identifier:
 
@@ -749,14 +751,14 @@ the poloidal angle are listed below:
 | Values      |                    |                                     |
 +=============+====================+=====================================+
 | 1           | straight field     |   straight field line angle         |
-|             | line               |   \\( \\theta \\) as defined in     |
+|             | line               |   :math:`\theta` as defined in      |
 |             |                    |   Straight Field Line Coordinates   |
 +-------------+--------------------+-------------------------------------+
-| 2           | equal arc          |   Poloidal angle \\( \\theta \\)    |
+| 2           | equal arc          |   Poloidal angle :math:`\theta`     |
 |             |                    |   defined by equal arc lengths      |
 |             |                    |   along flux surfaces               |
 +-------------+--------------------+-------------------------------------+
-| 3           | polar              |   Poloidal angle \\( \\theta \\) in |
+| 3           | polar              |   Poloidal angle :math:`\theta` in  |
 |             |                    |   toroidal coordinates as defined   |
 |             |                    |   in  Coordinate                    |
 |             |                    |   System                            |

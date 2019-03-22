@@ -39,21 +39,21 @@ page on Moving Averages and the NIST Statistical Handbook online.
 Definition
 ----------
 
-Consider a process \\( p ( \\vec u ) \\) which is a functional of dependent
-variables \\( \\vec u \\). Measure \\( p \\) at discrete time intervals
-\\( t_n, \\) with values \\( p_n=p(t_n) \\) and interval length \\(
-\\tau=t_n-t_{n-1} \\). The moving exponential average \\( A_n=A(p_n) \\)
-on the \\( n \\hbox{-th} \\) interval is defined as
+Consider a process :math:`p ( \vec u )` which is a functional of dependent
+variables :math:`\vec u`. Measure :math:`p` at discrete time intervals
+:math:`t_n,` with values :math:`p_n=p(t_n)` and interval length 
+:math:`\tau=t_n-t_{n-1}`. The moving exponential average :math:`A_n=A(p_n)`
+on the :math:`n \hbox{-th}` interval is defined as
 
 .. math::
    
    A_n = \epsilon p_n + (1-\epsilon)A_{n-1} \qquad \qquad \hbox{with} \qquad \epsilon=\alpha \tau
 
-in which the small parameter \\( \\epsilon \\) is given in terms of the interval \\( \\tau \\) and an inverse time constant \\( \\alpha. \\)
+in which the small parameter :math:`\epsilon` is given in terms of the interval :math:`\tau` and an inverse time constant :math:`\alpha.`
 
-In the first instance \\( p \\) is measured there is no \\( A \\) so the
-first value of \\( A \\) is simply set to \\( p \\) since it can be
-assumed that the initial state for \\( p \\) has persisted for infinite
+In the first instance :math:`p` is measured there is no :math:`A` so the
+first value of :math:`A` is simply set to :math:`p` since it can be
+assumed that the initial state for :math:`p` has persisted for infinite
 previous time up to the initial time point.
 
 Differential Equation
@@ -72,7 +72,7 @@ which we can also cast as
    
    (1-\epsilon)(A_n - A_{n-1}) = \epsilon (p_n - A_n)
 
-Taking the limit \\( \\tau \\to 0 \\) is the same as taking \\( \\epsilon \\to 0 \\) so both of these expressions become equivalent to
+Taking the limit :math:`\tau \to 0` is the same as taking :math:`\epsilon \to 0` so both of these expressions become equivalent to
 
 .. math::
    
@@ -88,7 +88,7 @@ of undetermined coefficients,
 
 .. math::
 
-   {\partial A \over \partial t} +\alpha A = \alpha p \\ \\ e^{-\alpha t}{\partial \over \partial t} \left( e^{ \alpha t} A \right) = \alpha p \\ \\ {\partial \over \partial t} \left( e^{\alpha t} A \right) = \alpha p e^{\alpha t}
+   {\partial A \over \partial t} +\alpha A = \alpha p \ \ e^{-\alpha t}{\partial \over \partial t} \left( e^{ \alpha t} A \right) = \alpha p \ \ {\partial \over \partial t} \left( e^{\alpha t} A \right) = \alpha p e^{\alpha t}
 
 We may integrate this over all past time, to find
 
@@ -96,17 +96,17 @@ We may integrate this over all past time, to find
    
    A(t) = \int_{-\infty}^t \alpha dt' p(t') e^{-\alpha (t-t') }
 
-This is a convolution integral over the kernel \\( e^{-\\alpha(t-t')} \\)
-and the signal \\( p(t') \\). The time constant \\( \\alpha^{-1} \\) is
-just the memory decay time, while if \\( p \\) is constant then the
-integral yields unity times \\( p \\). This is the same as the
-normalisation with the \\( (1-\\epsilon) \\) factor in the average formula
+This is a convolution integral over the kernel :math:`e^{-\alpha(t-t')}`
+and the signal :math:`p(t')`. The time constant :math:`\alpha^{-1}` is
+just the memory decay time, while if :math:`p` is constant then the
+integral yields unity times :math:`p`. This is the same as the
+normalisation with the :math:`(1-\epsilon)` factor in the average formula
 above, which is needed since the interval is of finite size.
 
 Hence the running exponential average is operationally the same as a memory
 decay integral over past time. The elegant feature is the need to keep only
-the current value of \\( A \\), as it already contains all that is needed
-of the past time evolution of \\( p \\).
+the current value of :math:`A`, as it already contains all that is needed
+of the past time evolution of :math:`p`.
 
 notes
 -----
@@ -114,19 +114,19 @@ notes
 Some properties of the running exponential average and how to choose its
 main time-memory parameter:
 
--  The \\( (1-\\epsilon) \\) factor is needed for normalisation
--  if \\( p=\\hbox{constant} \\) then \\( A=p \\) for all \\( t \\)
+-  The :math:`(1-\epsilon)` factor is needed for normalisation
+-  if :math:`p=\hbox{constant}` then :math:`A=p` for all :math:`t`
    
-  -  the integral with \\( \\alpha dt' \\) yields unity
-  -  the \\( \\epsilon \\) and \\( (1-\\epsilon) \\) factors add to unity
-  -  therefore set the first value of \\( A \\) to the first value of \\( p      \\)
+  -  the integral with :math:`\alpha dt'` yields unity
+  -  the :math:`\epsilon` and :math:`(1-\epsilon)` factors add to unity
+  -  therefore set the first value of :math:`A` to the first value of :math:`p     `
 
--  in choosing the memory decay time \\( \\alpha^{-1} \\dots \\)
+-  in choosing the memory decay time :math:`\alpha^{-1} \dots`
    
-  -  one should have \\( \\alpha \\tau_{cor} \\ll 1 \\)
-  -  best results are for \\( \\alpha \\tau_{sat} \\sim 1 \\)
-  -  some trial/error required; edge turbulence likes \\( \\alpha^{-1}=200 \L_ \\parallel / \c_s \\)
+  -  one should have :math:`\alpha \tau_{cor} \ll 1`
+  -  best results are for :math:`\alpha \tau_{sat} \sim 1`
+  -  some trial/error required; edge turbulence likes :math:`\alpha^{-1}=200 L_\parallel / c_s`
 
-In these expressions \\( \\tau_{{cor}} \\) and \\( \\tau_{{sat}} \\) are
+In these expressions :math:`\tau_{{cor}}` and :math:`\tau_{{sat}}` are
 the correlation and saturation times of the turbulence, respectively.
 

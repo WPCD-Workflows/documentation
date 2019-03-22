@@ -11,7 +11,7 @@ In conventional transport modelling, all quantities appearing in the
 equations are 1-D, in some radial coordinate (poloidal flux, normalised
 radius, etc). In general any monotonic radial coordinate is acceptable.
 In the TF-EU-IM, the toroidal flux radius is standard. All we need from
-the radial coordinate is the transformation to get to \\( V, \\) the
+the radial coordinate is the transformation to get to :math:`V,` the
 volume enclosed by the flux surface, which is fundamental to the
 governing equations, which are conservation laws.
 
@@ -64,7 +64,7 @@ velocity is given by
    
    \vec v_E = {c \over B^2} \vec B \times \vec \nabla \phi
 
-where \\( \\phi \\) is the electrostatic potential.
+where :math:`\phi` is the electrostatic potential.
 
 The angle brackets denote the flux surface average, and we will use the
 property that the flux surface average of a divergence of a vector is
@@ -75,14 +75,14 @@ volume component of the vector, in this case
 
    \langle \vec \nabla \cdot \vec \Gamma \rangle = {\partial \over \partial V} \langle \Gamma^V \rangle
 
-where \\( \\Gamma \\) is the particle flux whose flux-surface averaged volume component is
+where :math:`\Gamma` is the particle flux whose flux-surface averaged volume component is
 
 .. math::
 
    \langle \Gamma^V \rangle = \langle \widetilde n \widetilde v_E^V \rangle
 
-This is converted to expression in terms of the radial coordinate \\(
-\\rho \\) using the fact that both \\( V \\) and \\( \\rho \\) are flux
+This is converted to expression in terms of the radial coordinate \(
+\rho` using the fact that both :math:`V` and :math:`\rho` are flux
 quantities whose gradients are parallel to each other. We have
 
 .. math::
@@ -94,17 +94,17 @@ so we can write the transport equation as
    
    {\partial n \over \partial t}+{1 \over V'_\rho}{\partial \over \partial \rho}V'_\rho \langle \Gamma^\rho \rangle = S,
 
-where we have replaced \\( \\langle n \\rangle \\) with \\( n \\) following the assumptions of the 1-D version of mean field transport theory.
+where we have replaced :math:`\langle n \rangle` with :math:`n` following the assumptions of the 1-D version of mean field transport theory.
 
 With all quantities now expressed in terms of flux quantities, we are
-free to characterise the transport flux \\( \\langle \\Gamma^\\rho \\rangle
-\\) in an arbitrary way, so long as only flux quantities appear. The
+free to characterise the transport flux :math:`\langle \Gamma^\rho \rangle`
+in an arbitrary way, so long as only flux quantities appear. The
 flux expansion within the flux surface as well as expansion or
-contraction of surfaces of constant \\( \\rho \\) is treated using the
-metric coefficient \\( g^{ \\rho \\rho} \\) which is dimensionless. This way
+contraction of surfaces of constant :math:`\rho` is treated using the
+metric coefficient :math:`g^{ \rho \rho}` which is dimensionless. This way
 we can characterise transport in terms of an effective diffusivity and
 an effective frictional slip velocity which are given in SI units. By
-convention both of these are done solely via \\( g^{ \\rho \\rho} \\) for
+convention both of these are done solely via :math:`g^{ \rho \rho}` for
 convenience, also reflecting that the effective velocity is actually
 marking off-diagonal diffusive elements. Our convention for this follows
 the ETS code and is given by
@@ -124,14 +124,14 @@ Metric Coefficients
 Transport modellers want the Ds and Vs as physical quantities in SI
 units. In general the fluxes are (magnetic) flux surface averaged
 quantities, which implies the existence of metric elements in the
-conversion. In our case we need \\( \\langle g^{\\rho \\rho} \\rangle \\)
-where \\( \\rho \\) is the toroidal flux radius in meters, so the metric
+conversion. In our case we need :math:`\langle g^{\rho \rho} \rangle`
+where :math:`\rho` is the toroidal flux radius in meters, so the metric
 elements are dimensionless. In the equilibrium CPO, this is gm3 under
 equilibrium%profiles_1d in the structure.
 
 Note this is different from the ASTRA code which casts the Vs as proper
-velocities, i.e., with one factor of grad-rho given by \\( \\langle
-\\sqrt{g^{\\rho \\rho}} \\rangle \\) which is gm7 under
+velocities, i.e., with one factor of grad-rho given by :math:`\langle
+\sqrt{g^{\rho \rho}} \rangle` which is gm7 under
 equilibrium%profiles_1d in the structure. The units are the same and the
 informational content is the same, but this difference has to be taken
 into account in any transport modelling and benchmarking.
@@ -145,8 +145,8 @@ The heat flux is treated in a similar way, with transport equation
    
    {3 \over 2}{\partial p_e \over \partial t} +{1 \over V'_\rho}{\partial \over \partial \rho} V'_\rho \langle q_e^\rho \rangle = Q_e + \sum_{{\rm ions}}T_{ei},
 
-for electrons, with \\( T_{ei} \\) giving the species transfer and \\( Q_e
-\\) the source. For ExB transport the heat flux has a advective (also
+for electrons, with :math:`T_{ei}` giving the species transfer and :math:`Q_e`
+the source. For ExB transport the heat flux has a advective (also
 called convective) and a conductive piece given by
 
 .. math::
@@ -161,9 +161,9 @@ factor,
    
    q_m = q_m{}_{{\rm cond}} + (5/2) T \Gamma_m
 
-Here the forms are given for each species and \\( E \\) and \\( m \\) refer
+Here the forms are given for each species and :math:`E` and :math:`m` refer
 to the ExB eddy and magnetic flutter channels, respectively. For reasons
-given below we are neglecting the magnetic flutter piece \\( \\Gamma_m \\)
+given below we are neglecting the magnetic flutter piece :math:`\Gamma_m`
 for the time being, and then the flutter piece merely adds to the heat
 diffusivity.
 
@@ -182,7 +182,7 @@ of the pressure fluctuations
 
 hence the density fluctuation piece is accounted for by the particle flux.
 Neglect of the magnetic flutter advective piece (and particle flux) is the
-same as neglect of the \\( {\\widetilde \u_\\parallel} {\\widetilde \b^ \\rho} \\) nonlinearity (in the delivery of the results, not in the turbulence
+same as neglect of the :math:`{\widetilde u_\parallel} {\widetilde b^ \rho}` nonlinearity (in the delivery of the results, not in the turbulence
 computations themselves).
 
 The total conductive flux is then represented by
@@ -191,7 +191,7 @@ The total conductive flux is then represented by
    
    \langle q_{{\rm cond}}^\rho \rangle = \langle g^{\rho \rho} \rangle \left( nTY_{{\rm eff}} - n \chi_{{\rm eff}}{\partial T \over \partial \rho} \right)
 
-with \\( \\chi \\) and \\( Y \\) giving the heat diffusion and frictional
+with :math:`\chi` and :math:`Y` giving the heat diffusion and frictional
 slip pieces for each species, respectively (these are in diff_eff and
 vconv_eff in the CPO for each quantity).
 
@@ -226,10 +226,10 @@ flux in terms of a specific flux, which has units of velocity,
 
 .. math::
    
-   F &= {1 \over n} \langle g^{\rho\rho}\rangle^{-1} \langle \Gamma^\rho \rangle= V_{{\rm eff}} - D_{{\rm eff}}{\partial \log n \over \partial \rho}
-   \\G &= {1 \over nT} \langle g^{\rho \rho} \rangle^{-1} \langle q^\rho_{{\rm cond}}\rangle = Y_{{\rm eff}} - \chi_{{\rm eff}}{\partial \log T \over \partial \rho} 
+   F &= \frac{1}{n} \langle g^{\rho\rho}\rangle^{-1} \langle \Gamma^\rho \rangle= V_{{\rm eff}} - D_{{\rm eff}}\frac{\partial \log n}{\partial \rho}\\
+   G &= \frac{1}{nT} \langle g^{\rho \rho} \rangle^{-1} \langle q^\rho_{{\rm cond}}\rangle = Y_{{\rm eff}} - \chi_{{\rm eff}}\frac{\partial \log T}{\partial \rho} 
 
-wherein the conductive part of the heat flux (without the \\( 3 \\Gamma / 2 \\) enters.
+wherein the conductive part of the heat flux (without the :math:`3 \Gamma / 2` enters.
 
 The choice of what to do with the Ds and Vs is somewhat arbitrary. The
 needs of implicit transport solvers is for a positive D regardless of
@@ -264,7 +264,7 @@ The full algorithm starting with the specific fluxes appears as
 
 .. math::
    
-   L_n^{-1} = \max \left( {1 \over R}, \left \vert {\partial \log n \over \partial \rho} \right \vert \right) \qquad \qquad L_T^{-1} = \max \left( {1 \over R},\left \vert {\partial \log T \over \partial \rho} \right \vert \right) \\ \\ D' =\left \vert F \right \vert L_n \qquad \qquad \chi' = \left \vert G \right \vert L_T \\ \\ D = \max \left( D', {1\over 5} \chi' \right) \qquad \qquad \chi = \max\left ( \chi', {1 \over 5} D' \right) \\ \\ V = \left( F + D {\partial \log n \over \partial \rho} \right) \qquad \qquad Y = \left( G + \chi {\partial \log T \over \partial \rho} \right)
+   L_n^{-1} = \max \left( {1 \over R}, \left \vert {\partial \log n \over \partial \rho} \right \vert \right) \qquad \qquad L_T^{-1} = \max \left( {1 \over R},\left \vert {\partial \log T \over \partial \rho} \right \vert \right) \ \ D' =\left \vert F \right \vert L_n \qquad \qquad \chi' = \left \vert G \right \vert L_T \ \ D = \max \left( D', {1\over 5} \chi' \right) \qquad \qquad \chi = \max\left ( \chi', {1 \over 5} D' \right) \ \ V = \left( F + D {\partial \log n \over \partial \rho} \right) \qquad \qquad Y = \left( G + \chi {\partial \log T \over \partial \rho} \right)
 
 and all four elements are set. Note that the channels are done in parallel
 except for the Prandtl correction, in which the Max's are taken
@@ -322,7 +322,7 @@ convergence. The diffusivity for ExB turbulence is comparable to
    
    D_E = \left. \langle (\widetilde v_E)^2 \rangle \right / \langle (\varpi)^2 \rangle^{1/2} \qquad \qquad \varpi_E = {c \over B} \nabla_\perp^2 \widetilde \phi
 
-where \\( \\varpi_E \\) is the ExB vorticity fluctuation, and these angle
+where :math:`\varpi_E` is the ExB vorticity fluctuation, and these angle
 brackets denote the ensemble average. To get an ensemble average over a
 statistical quantity in practice, one must do some sort of finite-time
 running averaging.
