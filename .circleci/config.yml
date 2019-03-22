@@ -90,7 +90,7 @@ jobs:
             git add --all .
             if ! git status | grep -q "nothing to commit" ; then \
                 set +e ; \
-                git commit -m "CircleCI build ${CIRCLE_BUILD_URL}: ${gitlog}";\
+                git commit -m "Build #${CIRCLE_BUILD_NUM}: ${gitlog}, See ${CIRCLE_BUILD_URL} for details";\
                 ssh-add -D ;\
                 env GIT_SSH_COMMAND='ssh -i ~/.ssh/id_rsa_439e31e051d7134433ae9491b001dea8' git push ;\
             fi

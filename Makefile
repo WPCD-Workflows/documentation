@@ -345,6 +345,16 @@ push:
 query-%:
 	@echo $($(*))
 
+PDFNAME=EUROfusionIntegratedModellingworkflows.pdf
+PDFDOC=../WPCD-Workflows.github.io/latex/$(PDFNAME)
+$(PDFDOC):
+	make latexpdf
+
+publish-pdf: $(PDFDOC)
+	rm -f source/static/$(PDFNAME)
+	cp $(PDFDOC) source/static/
+	make push asset=source/static/$(PDFNAME)
+
 help-assets :
 	@echo
 	@echo "The following assets are available:"
