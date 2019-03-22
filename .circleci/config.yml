@@ -11,7 +11,14 @@ jobs:
             - "43:9e:31:e0:51:d7:13:44:33:ae:94:91:b0:01:de:a8"
       # Get our data and merge with upstream
       - run: sudo apt-get update
+      - restore_cache:
+         keys:
+            - documentation
       - checkout
+      - save_cache:
+         key: documentation-{{ .BuildNum }}
+         paths:
+            - ~/project
       # Update our path
       - run: echo "export PATH=~/.local/bin:$PATH" >> $BASH_ENV
       # Restore cached files to speed things up
@@ -32,7 +39,7 @@ jobs:
       - restore_cache:
           name: Restoring Github HTML pages repository from cache
           key: gh-pages-v1
-      # Checkout latest HTML site repo for deploy later on
+      # Checkout latest HTML site repo for deployment later on
       - run: 
           name: Clone WPCD-Workflows.github.io containing HTML pages
           command: |
