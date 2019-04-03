@@ -185,9 +185,9 @@ FC2K
 Gforge
   `Gforge <https://gforge6.eufus.eu>`__ hosts all projects (software and infrastructure) under the EU-IM.
 
-EU-IM Gateway
-   The EU-IM Gateway is a computer cluster presently hosted at CINECA, Bologna, Italy. 
-   It is used for development and fusion simulations in the EU-IM.
+EUROfusion Gateway
+   The EUROfusion Gateway is a computer cluster presently hosted at CINECA, Bologna, Italy. 
+   It is used as central repository of WPCD software, for development and fusion simulations.
 
 EU-IM Portal
    The `EU-IM Portal
