@@ -158,7 +158,7 @@ Publications
 
 -M. Baelmans, P. Borner, K. Ghoos, G. Samaey, “Efficient code simulation strategies for B2-EIRENE”, Nuclear Materials and Energy 12, 858-863 (2017) https://doi.org/10.1016/j.nme.2016.10.028
 
-- D.P. Coster, "Exploring the edge operating space of fusion reactors using reduced physics models", Nuclear Materials and Energy 12, 1055-1060 (2017)  https://doi.org/10.1016/j.nme.2016.12.033
+-D.P. Coster, "Exploring the edge operating space of fusion reactors using reduced physics models", Nuclear Materials and Energy 12, 1055-1060 (2017)  https://doi.org/10.1016/j.nme.2016.12.033
 
 -P. Strand, et al., "Towards a predictive modelling capacity for DT plasmas: European Transport Simulator (ETS) verification and validation“, Proc. 27th IAEA Fusion Energy Conference (FEC 2018).
 
@@ -168,9 +168,9 @@ Publications
 
 -R. Coelho, et al., “Plasma equilibrium reconstruction of JET discharges using the IMAS modelling infrastructure“, Proc. 27th IAEA Fusion Energy Conference (FEC 2018).
 
-- R. Bilato, N. Bertelli, M. Brambilla, R. Dumont, E.F. Jaeger, T. Johnson, E. Lerche, O. Sauter, D. Van Eester and L. Villard, “Status of the benchmark activity of ICRF full-wave codes within EUROfusion WPCD and beyond”, 21st Topical Conference on Radiofrequency Power in Plasmas, 2015.
+-R. Bilato, N. Bertelli, M. Brambilla, R. Dumont, E.F. Jaeger, T. Johnson, E. Lerche, O. Sauter, D. Van Eester and L. Villard, “Status of the benchmark activity of ICRF full-wave codes within EUROfusion WPCD and beyond”, 21st Topical Conference on Radiofrequency Power in Plasmas, 2015.
 
-- O. Asunta, R. Coelho, D. Kalupin, T. Johnson, T. Franke and EU-IM Team,  “Predictions of neutral beam current drive in DEMO using BBNBI and ASCOT within the European Transport Simulator”, 42nd EPS 2015, P2.156 ECA Vol. 39E ISBN 2-914771-98-3 
+-O. Asunta, R. Coelho, D. Kalupin, T. Johnson, T. Franke and EU-IM Team,  “Predictions of neutral beam current drive in DEMO using BBNBI and ASCOT within the European Transport Simulator”, 42nd EPS 2015, P2.156 ECA Vol. 39E ISBN 2-914771-98-3 
 
 
 Some posters describing the ITM-TF achievements were presented in an "ITM EXPO" at the 2011 EPS fusion conference in Strasbourg.
