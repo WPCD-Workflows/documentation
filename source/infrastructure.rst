@@ -1,7 +1,7 @@
 Infrastructure
 ==============
 
-This part of the EU-IM documentation is hosted at the link below
+The infrastructure documentation is hosted at the link below
 
 https://confluence.man.poznan.pl/community/display/WFMS
 
@@ -13,5 +13,7 @@ Data Structure. All physics modules should use these standardised
 interfaces for I/O.
 
 .. only:: html
+
+The most recent datastructure for EU-IM workflows can be browsed at the link below
 
    `Data structure 4.10b.10 <_static/Phase4.10b.10_HTML/Phase4TOP.html>`_
