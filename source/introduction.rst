@@ -170,10 +170,11 @@ Publications
 
 -R. Coelho, et al., “Plasma equilibrium reconstruction of JET discharges using the IMAS modelling infrastructure“, Proc. 27th IAEA Fusion Energy Conference (FEC 2018).
 
--R. Bilato, N. Bertelli, M. Brambilla, R. Dumont, E.F. Jaeger, T. Johnson, E. Lerche, O. Sauter, D. Van Eester and L. Villard, “Status of the benchmark activity of ICRF full-wave codes within EUROfusion WPCD and beyond”, 21st Topical Conference on Radiofrequency Power in Plasmas, 2015.
+-A.H. Nielsen, et al.  “Synthetic edge and SOL diagnostics - a bridge between experiments and theory” Proc. 27th IAEA Fusion Energy Conference (FEC 2018), submitted to Nuclear Fusion
 
 -O. Asunta, R. Coelho, D. Kalupin, T. Johnson, T. Franke and EU-IM Team,  “Predictions of neutral beam current drive in DEMO using BBNBI and ASCOT within the European Transport Simulator”, 42nd EPS 2015, P2.156 ECA Vol. 39E ISBN 2-914771-98-3 
 
+-R. Bilato, N. Bertelli, M. Brambilla, R. Dumont, E.F. Jaeger, T. Johnson, E. Lerche, O. Sauter, D. Van Eester and L. Villard, “Status of the benchmark activity of ICRF full-wave codes within EUROfusion WPCD and beyond”, 21st Topical Conference on Radiofrequency Power in Plasmas, 2015.
 
 Some posters describing the ITM-TF achievements were presented in an "ITM EXPO" at the 2011 EPS fusion conference in Strasbourg.
 
