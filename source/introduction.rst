@@ -131,8 +131,32 @@ modelling of the device.
 Publications
 ============
 
-Some posters that describe the ITM-TF achievements were presented
-at an ITM EXPO at the 2011 EPS fusion conference in Strasbourg.
+Some posters that describe the ITM-TF achievements were presented at an ITM EXPO at the 2011 EPS fusion conference in Strasbourg.
+
+D. Kalupin et al, "Numerical analysis of JET discharges with the European Transport Simulator", Nucl. Fusion 53, 123007 (2013) 
+
+G.L. Falchetto et al., “The European Integrated Tokamak Modelling (ITM) effort: achievements and first physics results”, Nuclear Fusion 54,043018, 2014.
+
+G.L. Falchetto and EUROfusion-IM Team, "EUROfusion Integrated Modelling (EU-IM) capabilities and selected physics applications", Proc. 26th IAEA Fusion Energy Conference, Kyoto, Japan, IAEA CN-234,  TH/ P2-13, 2016
+
+Y.-S. Na at al., "On Benchmarking of Simulations of Particle Transport in ITER", Proc. 26th IAEA Fusion Energy Conference,  Kyoto, Japan, IAEA CN-234, TH/P2-24, 2016
+
+V. Basiuk, P. Huynh, A. Merle, S. Nowak, O. Sauter, “Towards self-consistent plasma modelisation in presence of neoclassical tearing mode and sawteeth: effects on transport coefficients”, Plasma Phys. Control. Fusion 59 (12), 125012 (2017) https://doi.org/10.1088/1361-6587/aa8c8c
+
+D. Samaddar, D.P. Coster, X. Bonnin, C. Bergmeister, E. Havlickova, L.A. Berry, W.R. Elwasif, D.B. Batchelor, “Temporal parallelization of edge plasma simulations using the parareal algorithm and the SOLPS code”, Computer Physics Communications 221, 19-27 (2017). https://doi.org/10.1016/j.cpc.2017.07.012
+
+M. Baelmans, P. Borner, K. Ghoos, G. Samaey, “Efficient code simulation strategies for B2-EIRENE”, Nuclear Materials and Energy 12, 858-863 (2017) https://doi.org/10.1016/j.nme.2016.10.028
+
+P. Strand, et al. "Towards a predictive modelling capacity for DT plasmas: European Transport Simulator (ETS) verification and validation“, Proc. 27th IAEA Fusion Energy Conference (FEC 2018).
+
+S. Nowak, et al. "Analysis and modelling of NTMs dynamics in JET discharges using the European Transport Simulator (ETS) and integrated modelling tools", Proc. 27th IAEA Fusion Energy Conference (FEC 2018)
+
+G. Pokol, et al. "Runaway electron modelling in the ETS self-consistent core transport simulator", Proc. 27th IAEA Fusion Energy Conference (FEC 2018), accepted for publication into Nuclear Fusion 
+
+R Coelho, et al. “Plasma equilibrium reconstruction of JET discharges using the IMAS modelling infrastructure“, Proc. 27th IAEA Fusion Energy Conference (FEC 2018).
+
+
+
 
 .. _world_itm_structure:
 
