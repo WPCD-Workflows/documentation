@@ -20,14 +20,10 @@ Contents:
    introduction
    infrastructure
    ets
-   edge
    es
    eqreconstr
-   transport
-   averages
    codes
    conventions
-   kepler
    amns
    resources
    
