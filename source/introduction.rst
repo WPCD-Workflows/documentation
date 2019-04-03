@@ -99,6 +99,9 @@ formulated to support this goal, structuring the EU modelling effort
 around existing experiments and ITER scenario prediction while
 maintaining a long term strategic aim to provide a validated set of
 European modelling tools for ITER exploitation.
+The EU-IM effort was then pursued under the EUROfusion project WPCD, 
+progressing towards the achievement of a main milestone, “Extended Core Transport simulator used for analysis of JET1 
+and MST1 campaigns and developing facilities”.
 
 .. _world_itm_achievements:
 
@@ -127,8 +130,7 @@ experimental data with the available modules, the integration of more
 quantitative physics models ("ab-initio") and the integration of the whole
 modelling of the device. 
 
-The EU-IM effort was pursued under the EUROfusion project WPCD, progressing towards the achievement of a main milestone, “Extended Core Transport simulator used for analysis of JET1 and MST1 campaigns and developing facilities”.
-The other achievements are listed below:
+The main WPCD achievements are listed below:
 1.	An high-resolution equilibrium and linear MHD stability chain, for core and pedestal, applicable to  peeling-ballooning type instabilities has been released for the analysis of equilibria from any tokamak integrated in the EU-IM platform, including ITER and DEMO. A predictive J-alpha MHD pedestal stability analysis workflow has also been developed and is in test release stage. 
 2.	The fixed boundary core European Transport Simulator ETS, with various equilibrium modules and a full hierarchy of transport models, impurities, pellets, neutrals, sawteeth, Neoclassical Tearing Modes (NTM) modules, and full integration of Heating and Current Drive  sources (Electron Cyclotron, Neutral Beam Injection, Ion Cyclotron, alpha), including synergies has been released.The released ETS workflow has been implemented in JET modelling infrastructure and went through validation. 
 3.	A feedback controlled free boundary transport simulator prototype is operational and under verification. 
