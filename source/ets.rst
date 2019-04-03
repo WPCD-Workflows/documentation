@@ -70,10 +70,6 @@ The training material is available here: `ETS Training Tutorials <https://users.
 
 `ETS training 2018 <https://users.euro-fusion.org/iterphysicswiki/index.php/ETS_Training_2018>`__ web page for ETS training at JET 14-18 May 2018
 
-`EU IM Gateway <https://portal.eufus.eu/itm/portal/>`__ gateway portal web page (requires gateway account)
-
-`technical users meetings <https://users.euro-fusion.org/tfwiki/index.php/Committee_92436>`__ containing information related to the technical users meetings (aka committee 92436 meetings)
-
 -  `Description of the ETS <https://portal.eufus.eu/documentation/ITM/imports/imp3/public/ETS_Documentation/ETS_TRANSPORT_EQUATIONS.pdf>`__ 
 -  `Form of the standardize equations <https://portal.eufus.eu/documentation/ITM/imports/imp3/public/ETS_Documentation/STANDARDISED_EQUATION.pdf>`__
 -  `ETS User Guide <https://portal.eufus.eu/documentation/ITM/imports/imp3/public/ETS_Documentation/ETS_User_Guide.pdf>`__
