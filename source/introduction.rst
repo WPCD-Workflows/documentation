@@ -110,7 +110,7 @@ available European models and numerical codes were performed within the
 individual integrated modelling projects and the data-structure was extensively discussed and
 defined. Equilibrium, linear MHD stability, core transport and RF wave
 propagation, as well as the poloidal field systems and a few diagnostics
-were the first topics addressed. Data structures have been finalised for
+were the first topics addressed. Data structures were finalised for
 these and then expanded to address, among others, non-linear MHD, edge
 physics, turbulence and neutral beam propagation. In parallel to the
 development of the physics concepts, the EU-IM effort developed the tools to
@@ -118,20 +118,31 @@ manipulate the data structure and use it in fully flexible and modular
 simulation workflows. The EU-IM database contains machine descriptions from
 JET, Tore Supra, MAST, (as well as FTU, FAST), AUG, ITER, JT-60SA as well as some experimental
 data from Tore Supra (WEST) and JET. 
-The EU-IM futher achieved the development of
-the first release version of a fully modular and versatile simulator, the
+The EU-IM futher achieved the development of the first release version of a fully modular and versatile transport simulator, the
 ETS, with all the essential functionalities. The validation of the ETS
-simualtor started in 2010 against the state-of-the-art transport codes and
-ETS now starts to be used for the first physics applications. Next steps
-are the validation of the simulator for a complete discharge on existing
+simulator first started in 2010 against the state-of-the-art transport codes and
+ETS recently started to be used for the first physics applications. 
+Next steps are the validation of the simulator for a complete discharge on existing
 experimental data with the available modules, the integration of more
 quantitative physics models ("ab-initio") and the integration of the whole
 modelling of the device. 
 
+The EU-IM effort was pursued under the EUROfusion project WPCD, progressing towards the achievement of a main milestone, “Extended Core Transport simulator used for analysis of JET1 and MST1 campaigns and developing facilities”.
+The other achievements are listed below:
+1.	An high-resolution equilibrium and linear MHD stability chain, for core and pedestal, applicable to  peeling-ballooning type instabilities has been released for the analysis of equilibria from any tokamak integrated in the EU-IM platform, including ITER and DEMO. A predictive J-alpha MHD pedestal stability analysis workflow has also been developed and is in test release stage. 
+2.	The fixed boundary core European Transport Simulator ETS, with various equilibrium modules and a full hierarchy of transport models, impurities, pellets, neutrals, sawteeth, Neoclassical Tearing Modes (NTM) modules, and full integration of Heating and Current Drive  sources (Electron Cyclotron, Neutral Beam Injection, Ion Cyclotron, alpha), including synergies has been released.The released ETS workflow has been implemented in JET modelling infrastructure and went through validation. 
+3.	A feedback controlled free boundary transport simulator prototype is operational and under verification. 
+4.	A Scrape-Off-Layer (SOL) turbulence workflow including a synthetic probe, directly reading from experimental database has been developed and applied to analyse ASDEX-Upgrade divertor power deposition.
+5.	Benchmarks of EC, IC  and NBI codes within the EU-IM infrastructure were carried out on identified test cases and presented in conference (Topical Conference on Radiofrequency Power in Plasmas, EPS, IAEA Technical Meeting on Energetic Particles (EP)).
+7.	Prototypes of self-consistent coupling between core and edge transport codes were demonstrated, in particular automated direct coupling of the ETS core transport code to the 2D edge transport code SOLPS.
+8.	SOLPS technical optimization studies (parareal algorithm, speed-up techniques, reduced physics models) provided an assessment of speed-up techniques to be possibly integrated in SOLPS-ITER. 
+9.	A prototype acyclic workflow for modelling the SOL and interaction with Plasma Facing Components (PFC) was demonstrated by coupling the 2D transport code SOPLS to the 3D Monte Carlo PWI and impurity transport code ERO.
+
+
+
+
 Publications
 ============
-
-Some posters that describe the ITM-TF achievements were presented at an ITM EXPO at the 2011 EPS fusion conference in Strasbourg.
 
 -D. Kalupin et al, "Numerical analysis of JET discharges with the European Transport Simulator", Nucl. Fusion 53, 123007, 2013.
 
@@ -147,6 +158,8 @@ Some posters that describe the ITM-TF achievements were presented at an ITM EXPO
 
 -M. Baelmans, P. Borner, K. Ghoos, G. Samaey, “Efficient code simulation strategies for B2-EIRENE”, Nuclear Materials and Energy 12, 858-863 (2017) https://doi.org/10.1016/j.nme.2016.10.028
 
+- D.P. Coster, "Exploring the edge operating space of fusion reactors using reduced physics models", Nuclear Materials and Energy 12, 1055-1060 (2017)  https://doi.org/10.1016/j.nme.2016.12.033
+
 -P. Strand, et al., "Towards a predictive modelling capacity for DT plasmas: European Transport Simulator (ETS) verification and validation“, Proc. 27th IAEA Fusion Energy Conference (FEC 2018).
 
 -S. Nowak, et al., "Analysis and modelling of NTMs dynamics in JET discharges using the European Transport Simulator (ETS) and integrated modelling tools", Proc. 27th IAEA Fusion Energy Conference (FEC 2018)
@@ -156,7 +169,10 @@ Some posters that describe the ITM-TF achievements were presented at an ITM EXPO
 -R. Coelho, et al., “Plasma equilibrium reconstruction of JET discharges using the IMAS modelling infrastructure“, Proc. 27th IAEA Fusion Energy Conference (FEC 2018).
 
 
+- R. Bilato, N. Bertelli, M. Brambilla, R. Dumont, E.F. Jaeger, T. Johnson, E. Lerche, O. Sauter, D. Van Eester and L. Villard, “Status of the benchmark activity of ICRF full-wave codes within EUROfusion WPCD and beyond”, 21st Topical Conference on Radiofrequency Power in Plasmas, 2015.
+- O. Asunta, R. Coelho, D. Kalupin, T. Johnson, T. Franke and EU-IM Team,  “Predictions of neutral beam current drive in DEMO using BBNBI and ASCOT within the European Transport Simulator”, 42nd EPS 2015, P2.156 ECA Vol. 39E ISBN 2-914771-98-3 
 
+Some posters describing the ITM-TF achievements were presented in an "ITM EXPO" at the 2011 EPS fusion conference in Strasbourg.
 
 
 
