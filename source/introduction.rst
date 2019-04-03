@@ -128,6 +128,9 @@ experimental data with the available modules, the integration of more
 quantitative physics models ("ab-initio") and the integration of the whole
 modelling of the device. 
 
+Publications
+============
+
 Some posters that describe the ITM-TF achievements were presented
 at an ITM EXPO at the 2011 EPS fusion conference in Strasbourg.
 
