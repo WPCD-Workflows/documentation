@@ -7,7 +7,8 @@ Introduction to the EUROfusion Project Code Development for integrated modelling
 The EUROfusion Project on Code Development for Integrated Modelling (WP-CD)
 supports the achievement of the European Fusion Roadmap at Horizon 2020
 goals, via the development of existing modelling codes with a particular
-focus on integrated modelling. The primary objectives of WPCD are: 
+focus on integrated modelling. 
+The primary objectives of WPCD are: 
 
 1. Provide a suite of codes that can be validated on existing Tokamaks and
    used for JT-60SA, ITER and DEMO predictions:
@@ -35,7 +36,7 @@ also performed under WPCD, within the EU-IM framework; whereas validation
 of the released integrated modelling workflows against the experiments is
 performed under WPJET1 and WPMST1.
 
-The Work Package run as a project and managed by a project leader (M.
+The Work Package is run as a project and managed by a project leader (M.
 Romanelli, UKAEA, michele.romanelli@ukaea.uk)
 
 In 2019 the structure of the project has been reviewed and changed.
@@ -89,11 +90,11 @@ simulation.
 Mission
 ========
 
-The EU-IM operated under EFDA from 2004 until 2013. The main mission of
-EU-IM was to provide a software infrastructure framework for EU
-integrated modelling activities as well as a validated suite of
+The European Integrated Tokamak Modelling Task Force (ITM-TF) operated under EFDA from 2004 until 2013. 
+The main mission of the ITM TF was to provide a software infrastructure framework for EU
+integrated modelling activities (EU-IM) as well as a validated suite of
 simulation codes for the modelling of present experiments, ITER and DEMO
-plasmas. The EU-IM operated until 2013 under a work programme
+plasmas. The ITM TF operated until 2013 under a work programme
 formulated to support this goal, structuring the EU modelling effort
 around existing experiments and ITER scenario prediction while
 maintaining a long term strategic aim to provide a validated set of
@@ -104,19 +105,20 @@ European modelling tools for ITER exploitation.
 Achievements
 ============
 
-During the first phase of the EU-IM, surveys and cross-verification of the
+During the first phase of the EU-IM effort, surveys and cross-verification of the
 available European models and numerical codes were performed within the
-individual IMPs and the data-structure was extensively discussed and
+individual integrated modelling projects and the data-structure was extensively discussed and
 defined. Equilibrium, linear MHD stability, core transport and RF wave
 propagation, as well as the poloidal field systems and a few diagnostics
 were the first topics addressed. Data structures have been finalised for
 these and then expanded to address, among others, non-linear MHD, edge
 physics, turbulence and neutral beam propagation. In parallel to the
-development of the physics concepts, EU-IM developed the tools to
+development of the physics concepts, the EU-IM effort developed the tools to
 manipulate the data structure and use it in fully flexible and modular
 simulation workflows. The EU-IM database contains machine descriptions from
-JET, Tore Supra, MAST, FTU, FAST, AUG, ITER as well as some experimental
-data from Tore Supra and JET. The EU-IM futher achieved the development of
+JET, Tore Supra, MAST, (as well as FTU, FAST), AUG, ITER, JT-60SA as well as some experimental
+data from Tore Supra (WEST) and JET. 
+The EU-IM futher achieved the development of
 the first release version of a fully modular and versatile simulator, the
 ETS, with all the essential functionalities. The validation of the ETS
 simualtor started in 2010 against the state-of-the-art transport codes and
@@ -124,7 +126,9 @@ ETS now starts to be used for the first physics applications. Next steps
 are the validation of the simulator for a complete discharge on existing
 experimental data with the available modules, the integration of more
 quantitative physics models ("ab-initio") and the integration of the whole
-modelling of the device. Some posters that describe the EU-IM were presented
+modelling of the device. 
+
+Some posters that describe the ITM-TF achievements were presented
 at an ITM EXPO at the 2011 EPS fusion conference in Strasbourg.
 
 .. _world_itm_structure:
@@ -132,10 +136,13 @@ at an ITM EXPO at the 2011 EPS fusion conference in Strasbourg.
 Contributors
 ============
 
-EU-IM contributors are defined in the Appendix of G.L. Falchetto et
+The EUROfusion-IM Team members are defined in the link: 
+http://euro-fusionscipub.org/eu-im
+
+ITM-TF contributors were defined in the Appendix of G.L. Falchetto et
 al., Nuclear Fusion 54,043018, 2014. This list reproduces the status of
-EU-IM members in 2012 and is not exhaustive. A grateful thank you to
-all those who contributed and promoted EU-IM since its beginnigs.
+of members in 2012 and is not exhaustive. 
+A grateful thank you to all those who contributed and promoted EU-IM since its beginnigs.
 
 
 .. _itm_glossary:
@@ -187,7 +194,7 @@ Gforge
 
 EUROfusion Gateway
    The EUROfusion Gateway is a computer cluster presently hosted at CINECA, Bologna, Italy. 
-   It is used as central repository of WPCD software, for development and fusion simulations.
+   It is used as central repository of the EU-IM software,  as well as platfrom for developments and fusion simulations.
 
 EU-IM Portal
    The `EU-IM Portal
@@ -195,21 +202,16 @@ EU-IM Portal
    portal for the EU-IM, i.e. it hosts the EU-IM web pages and projects
    under Gforge.
 
-Integrated Simulation Editor (ISE)
-   The Integrated Simulation Editor ISE allows you to visualize and edit
-   data from an EU-IM database entry. It also allows running a Kepler
-   workflow based on the opened data entry.
-
 Universal Access Layer (UAL)
    The UAL (Universal Access Layer) is a multi-language library that
    allows exchanging Consistent Physical Objects (CPOs) between various
    modules, and to write to an EU-IM database.
 
 actor
-   Actors take execution instructions from a director. In other words,
+   Modular element within a Kepler scientific workflow. Actors take execution instructions from a director. In other words,
    actors specify what processing occurs while the director specifies
-   when it occurs. In the EU-IM, actors are usually modules which
-   contain physics codes like EQUAL or HELENA.
+   when it occurs. In the EU-IM Kepler workflows, most actors are modules which
+   contain physics codes.
 
 calibration
    The process of adjusting numerical or physical modelling parameters
@@ -244,7 +246,7 @@ kepler
    the flow of data among discrete analysis and modeling components.
 
 machine description
-   The machine description (MD) of a device basically builds on the set
+   The machine description (MD) of a device builds on the set
    of engineering and diagnostic settings characterising a tokamak
    device. This includes, for instance, the vessel/limiter description,
    the PF coils and circuiting and lines of sight of diagnostics. In
