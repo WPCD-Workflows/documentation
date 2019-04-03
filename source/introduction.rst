@@ -7,7 +7,8 @@ Introduction to the EUROfusion Project Code Development for integrated modelling
 The EUROfusion Project on Code Development for Integrated Modelling (WP-CD)
 supports the achievement of the European Fusion Roadmap at Horizon 2020
 goals, via the development of existing modelling codes with a particular
-focus on integrated modelling. The primary objectives of WPCD are: 
+focus on integrated modelling. 
+The primary objectives of WPCD are: 
 
 1. Provide a suite of codes that can be validated on existing Tokamaks and
    used for JT-60SA, ITER and DEMO predictions:
@@ -35,7 +36,7 @@ also performed under WPCD, within the EU-IM framework; whereas validation
 of the released integrated modelling workflows against the experiments is
 performed under WPJET1 and WPMST1.
 
-The Work Package run as a project and managed by a project leader (M.
+The Work Package is run as a project and managed by a project leader (M.
 Romanelli, UKAEA, michele.romanelli@ukaea.uk)
 
 In 2019 the structure of the project has been reviewed and changed.
@@ -89,11 +90,11 @@ simulation.
 Mission
 ========
 
-The EU-IM operated under EFDA from 2004 until 2013. The main mission of
-EU-IM was to provide a software infrastructure framework for EU
-integrated modelling activities as well as a validated suite of
+The European Integrated Tokamak Modelling Task Force (ITM-TF) operated under EFDA from 2004 until 2013. 
+The main mission of the ITM TF was to provide a software infrastructure framework for EU
+integrated modelling activities (EU-IM) as well as a validated suite of
 simulation codes for the modelling of present experiments, ITER and DEMO
-plasmas. The EU-IM operated until 2013 under a work programme
+plasmas. The ITM TF operated until 2013 under a work programme
 formulated to support this goal, structuring the EU modelling effort
 around existing experiments and ITER scenario prediction while
 maintaining a long term strategic aim to provide a validated set of
@@ -104,38 +105,90 @@ European modelling tools for ITER exploitation.
 Achievements
 ============
 
-During the first phase of the EU-IM, surveys and cross-verification of the
+During the first phase of the EU-IM effort, surveys and cross-verification of the
 available European models and numerical codes were performed within the
-individual IMPs and the data-structure was extensively discussed and
+individual integrated modelling projects and the data-structure was extensively discussed and
 defined. Equilibrium, linear MHD stability, core transport and RF wave
 propagation, as well as the poloidal field systems and a few diagnostics
-were the first topics addressed. Data structures have been finalised for
+were the first topics addressed. Data structures were finalised for
 these and then expanded to address, among others, non-linear MHD, edge
 physics, turbulence and neutral beam propagation. In parallel to the
-development of the physics concepts, EU-IM developed the tools to
+development of the physics concepts, the EU-IM effort developed the tools to
 manipulate the data structure and use it in fully flexible and modular
 simulation workflows. The EU-IM database contains machine descriptions from
-JET, Tore Supra, MAST, FTU, FAST, AUG, ITER as well as some experimental
-data from Tore Supra and JET. The EU-IM futher achieved the development of
-the first release version of a fully modular and versatile simulator, the
+JET, Tore Supra, MAST, (as well as FTU, FAST), AUG, ITER, JT-60SA as well as some experimental
+data from Tore Supra (WEST) and JET. 
+The EU-IM futher achieved the development of the first release version of a fully modular and versatile transport simulator, the
 ETS, with all the essential functionalities. The validation of the ETS
-simualtor started in 2010 against the state-of-the-art transport codes and
-ETS now starts to be used for the first physics applications. Next steps
-are the validation of the simulator for a complete discharge on existing
+simulator first started in 2010 against the state-of-the-art transport codes and
+ETS recently started to be used for the first physics applications. 
+Next steps are the validation of the simulator for a complete discharge on existing
 experimental data with the available modules, the integration of more
 quantitative physics models ("ab-initio") and the integration of the whole
-modelling of the device. Some posters that describe the EU-IM were presented
-at an ITM EXPO at the 2011 EPS fusion conference in Strasbourg.
+modelling of the device. 
+
+The EU-IM effort was pursued under the EUROfusion project WPCD, progressing towards the achievement of a main milestone, “Extended Core Transport simulator used for analysis of JET1 and MST1 campaigns and developing facilities”.
+The other achievements are listed below:
+1.	An high-resolution equilibrium and linear MHD stability chain, for core and pedestal, applicable to  peeling-ballooning type instabilities has been released for the analysis of equilibria from any tokamak integrated in the EU-IM platform, including ITER and DEMO. A predictive J-alpha MHD pedestal stability analysis workflow has also been developed and is in test release stage. 
+2.	The fixed boundary core European Transport Simulator ETS, with various equilibrium modules and a full hierarchy of transport models, impurities, pellets, neutrals, sawteeth, Neoclassical Tearing Modes (NTM) modules, and full integration of Heating and Current Drive  sources (Electron Cyclotron, Neutral Beam Injection, Ion Cyclotron, alpha), including synergies has been released.The released ETS workflow has been implemented in JET modelling infrastructure and went through validation. 
+3.	A feedback controlled free boundary transport simulator prototype is operational and under verification. 
+4.	A Scrape-Off-Layer (SOL) turbulence workflow including a synthetic probe, directly reading from experimental database has been developed and applied to analyse ASDEX-Upgrade divertor power deposition.
+5.	Benchmarks of EC, IC  and NBI codes within the EU-IM infrastructure were carried out on identified test cases and presented in conference (Topical Conference on Radiofrequency Power in Plasmas, EPS, IAEA Technical Meeting on Energetic Particles (EP)).
+7.	Prototypes of self-consistent coupling between core and edge transport codes were demonstrated, in particular automated direct coupling of the ETS core transport code to the 2D edge transport code SOLPS.
+8.	SOLPS technical optimization studies (parareal algorithm, speed-up techniques, reduced physics models) provided an assessment of speed-up techniques to be possibly integrated in SOLPS-ITER. 
+9.	A prototype acyclic workflow for modelling the SOL and interaction with Plasma Facing Components (PFC) was demonstrated by coupling the 2D transport code SOPLS to the 3D Monte Carlo PWI and impurity transport code ERO.
+
+
+
+
+Publications
+============
+
+-D. Kalupin et al, "Numerical analysis of JET discharges with the European Transport Simulator", Nucl. Fusion 53, 123007, 2013.
+
+-G.L. Falchetto, et al.,and ITM-TF contributors, “The European Integrated Tokamak Modelling (ITM) effort: achievements and first physics results”, Nuclear Fusion 54,043018, 2014.
+
+-G.L. Falchetto, et al., and the EUROfusion-IM Team, "EUROfusion Integrated Modelling (EU-IM) capabilities and selected physics applications", Proc. 26th IAEA Fusion Energy Conference, Kyoto, Japan, IAEA CN-234,  TH/ P2-13, 2016.
+
+-Y.-S. Na et al., "On Benchmarking of Simulations of Particle Transport in ITER", Proc. 26th IAEA Fusion Energy Conference,  Kyoto, Japan, IAEA CN-234, TH/P2-24, 2016.
+
+-V. Basiuk, P. Huynh, A. Merle, S. Nowak, O. Sauter, “Towards self-consistent plasma modelisation in presence of neoclassical tearing mode and sawteeth: effects on transport coefficients”, Plasma Phys. Control. Fusion 59 (12), 125012 (2017) https://doi.org/10.1088/1361-6587/aa8c8c
+
+-D. Samaddar, D.P. Coster, X. Bonnin, C. Bergmeister, E. Havlickova, L.A. Berry, W.R. Elwasif, D.B. Batchelor, “Temporal parallelization of edge plasma simulations using the parareal algorithm and the SOLPS code”, Computer Physics Communications 221, 19-27 (2017). https://doi.org/10.1016/j.cpc.2017.07.012
+
+-M. Baelmans, P. Borner, K. Ghoos, G. Samaey, “Efficient code simulation strategies for B2-EIRENE”, Nuclear Materials and Energy 12, 858-863 (2017) https://doi.org/10.1016/j.nme.2016.10.028
+
+-D.P. Coster, "Exploring the edge operating space of fusion reactors using reduced physics models", Nuclear Materials and Energy 12, 1055-1060 (2017)  https://doi.org/10.1016/j.nme.2016.12.033
+
+-P. Strand, et al., "Towards a predictive modelling capacity for DT plasmas: European Transport Simulator (ETS) verification and validation“, Proc. 27th IAEA Fusion Energy Conference (FEC 2018).
+
+-S. Nowak, et al., "Analysis and modelling of NTMs dynamics in JET discharges using the European Transport Simulator (ETS) and integrated modelling tools", Proc. 27th IAEA Fusion Energy Conference (FEC 2018)
+
+-G. Pokol, et al., "Runaway electron modelling in the ETS self-consistent core transport simulator", Proc. 27th IAEA Fusion Energy Conference (FEC 2018), accepted for publication into Nuclear Fusion 
+
+-R. Coelho, et al., “Plasma equilibrium reconstruction of JET discharges using the IMAS modelling infrastructure“, Proc. 27th IAEA Fusion Energy Conference (FEC 2018).
+
+-R. Bilato, N. Bertelli, M. Brambilla, R. Dumont, E.F. Jaeger, T. Johnson, E. Lerche, O. Sauter, D. Van Eester and L. Villard, “Status of the benchmark activity of ICRF full-wave codes within EUROfusion WPCD and beyond”, 21st Topical Conference on Radiofrequency Power in Plasmas, 2015.
+
+-O. Asunta, R. Coelho, D. Kalupin, T. Johnson, T. Franke and EU-IM Team,  “Predictions of neutral beam current drive in DEMO using BBNBI and ASCOT within the European Transport Simulator”, 42nd EPS 2015, P2.156 ECA Vol. 39E ISBN 2-914771-98-3 
+
+
+Some posters describing the ITM-TF achievements were presented in an "ITM EXPO" at the 2011 EPS fusion conference in Strasbourg.
+
+
 
 .. _world_itm_structure:
 
 Contributors
 ============
 
-EU-IM contributors are defined in the Appendix of G.L. Falchetto et
+The EUROfusion-IM Team members are defined in the link: 
+http://euro-fusionscipub.org/eu-im
+
+ITM-TF contributors were defined in the Appendix of G.L. Falchetto et
 al., Nuclear Fusion 54,043018, 2014. This list reproduces the status of
-EU-IM members in 2012 and is not exhaustive. A grateful thank you to
-all those who contributed and promoted EU-IM since its beginnigs.
+of members in 2012 and is not exhaustive. 
+A grateful thank you to all those who contributed and promoted EU-IM since its beginnigs.
 
 
 .. _itm_glossary:
@@ -185,9 +238,9 @@ FC2K
 Gforge
   `Gforge <https://gforge6.eufus.eu>`__ hosts all projects (software and infrastructure) under the EU-IM.
 
-EU-IM Gateway
-   The EU-IM Gateway is a computer cluster presently hosted at CINECA, Bologna, Italy. 
-   It is used for development and fusion simulations in the EU-IM.
+EUROfusion Gateway
+   The EUROfusion Gateway is a computer cluster presently hosted at CINECA, Bologna, Italy. 
+   It is used as central repository of the EU-IM software,  as well as platfrom for developments and fusion simulations.
 
 EU-IM Portal
    The `EU-IM Portal
@@ -195,21 +248,16 @@ EU-IM Portal
    portal for the EU-IM, i.e. it hosts the EU-IM web pages and projects
    under Gforge.
 
-Integrated Simulation Editor (ISE)
-   The Integrated Simulation Editor ISE allows you to visualize and edit
-   data from an EU-IM database entry. It also allows running a Kepler
-   workflow based on the opened data entry.
-
 Universal Access Layer (UAL)
    The UAL (Universal Access Layer) is a multi-language library that
    allows exchanging Consistent Physical Objects (CPOs) between various
    modules, and to write to an EU-IM database.
 
 actor
-   Actors take execution instructions from a director. In other words,
+   Modular element within a Kepler scientific workflow. Actors take execution instructions from a director. In other words,
    actors specify what processing occurs while the director specifies
-   when it occurs. In the EU-IM, actors are usually modules which
-   contain physics codes like EQUAL or HELENA.
+   when it occurs. In the EU-IM Kepler workflows, most actors are modules which
+   contain physics codes.
 
 calibration
    The process of adjusting numerical or physical modelling parameters
@@ -244,7 +292,7 @@ kepler
    the flow of data among discrete analysis and modeling components.
 
 machine description
-   The machine description (MD) of a device basically builds on the set
+   The machine description (MD) of a device builds on the set
    of engineering and diagnostic settings characterising a tokamak
    device. This includes, for instance, the vessel/limiter description,
    the PF coils and circuiting and lines of sight of diagnostics. In
