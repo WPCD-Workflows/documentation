@@ -19,10 +19,10 @@ The workflow is meant for straightforward stability calculations of any
 plasma scenario, reading from a pre-existent WPCD database shot/run/time
 entry. Therefore,
 
--  It does not read from experimental databases storing locally
-   processed plasma equilibrium e.g. PPFs (JET) or shotfiles (AUG).
-   These can be fetched using `exp2itm <https://portal.eufus.eu/twiki/bin/view/Main/Exp2ITM>`__ (ask the workflow
-   developer for assistance).
+-  Equilibrium data need to be read from experimental databases and stored locally 
+   on the platform where EQSTABIL is run. 
+   Alternatively the equilibrium IDS could be the output of another workflow (e.g. 
+   EQRECONSTRUCT or ETS)
 -  It is not meant for parametric studies in a single workflow execution
    e.g. process several time slices or scan over resistive wall position
    or number of poloidal harmonics. Dedicated runs for such cases are
