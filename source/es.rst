@@ -44,7 +44,7 @@ The workflow is organised in four sequential steps :
 Initialization
 --------------
 
-Composite actor used to initialize the workflow. It reads from the ITM
+Composite actor used to initialize the workflow. It reads from the IMAS 
 database that is specified by local variables (user, device, shot,
 run_in) and for the closest time sample to local variable *time* .
 If the user reads the input data from some other user database, the
@@ -52,19 +52,19 @@ output data will however be written on his/her own database with shot/run_out id
 
 -> The workflow local variable *device* **must** be the same as the
 environment variable TOKAMAKNAME. In case the two do not match the
-workflow stops execution. The user must close the workflow, ITMv1 with
+workflow stops execution. The user must close the workflow, set imasdb with
 the correct device name and run the workflow.
 
 -> Validity checks (void/not void) are made on the input equilibrium and
-coreprof CPOs (MARSGW actor can use coreprof for density profile). If
-the equilibrium CPO is not considered valid the workflow stops. If the
-coreprof CPO is not considered valid, the workflow continues to run but
+core_profile IDSs (MARSGW actor can use core_profile for density profile). If
+the equilibrium IDS is not considered valid the workflow stops. If the
+core_profile IDS is not considered valid, the workflow continues to run but
 the user can still have the option to stop it before executing the
 chosen MHD code.
 
 At the exit of the Composite actor, a Plasma_reference bundle (list of
-Kepler variables, mimicking the `ETS <https://portal.eufus.eu/twiki/bin/view/Main/ETS>`_ bundle) is returned. This
-facilitates the future coupling of the workflow to the `ETS <https://portal.eufus.eu/twiki/bin/view/Main/ETS>`_.
+Kepler variables, mimicking the ETS bundle is returned. This
+facilitates the future coupling of the workflow to the ETS.
 
 FixedBndCode
 ------------
@@ -143,10 +143,10 @@ Finalize
 --------
 
 Composite actor to wrap up the final plasma bundle, with the equilibrium
-CPO containing 3 occurrences and one occurrence of the MHD CPO.
+IDS containing 3 occurrences and one occurrence of the MHD IDS.
 
-N.B. Only a single time slice of equilibrium and MHD CPOs is written, the
-remaining plasma bundle CPOs are written "as is" (whatever time slices).
+N.B. Only a single time slice of equilibrium and MHD IDSs is written, the
+remaining plasma bundle IDSs are written "as is" (whatever time slices).
 
 Actors involved
 ===============
@@ -163,21 +163,21 @@ Actors involved
 |                       |                       |   If not the run stops. |
 +-----------------------+-----------------------+-------------------------+
 | SELECT_TIME_CORE/EQ   | INITIALIZATION        | | Selects time slice of |
-|                       |                       |   CPOs matching/closest |
+|                       |                       |   IDSs matching/closest |
 |                       |                       | | to the requested time |
 |                       |                       |   in *time* Kepler      |
 |                       |                       |   variable              |
 +-----------------------+-----------------------+-------------------------+
 | Check Coreprof/Equil  | INITIALIZATION        | | Checks the            |
 | Time and Flag         |                       |   output_flag of the    |
-|                       |                       | | input CPOs to know if |
+|                       |                       | | input IDSs to know if |
 |                       |                       |   they are valid and    |
 |                       |                       | | prints the actual     |
 |                       |                       |   time stamp retrived   |
-|                       |                       | | from both CPOs (if    |
+|                       |                       | | from both IDSs (if    |
 |                       |                       |   time = -1 and         |
 |                       |                       | | output_flag is        |
-|                       |                       |   negative then the CPO |
+|                       |                       |   negative then the IDS |
 |                       |                       | | is not valid). If the |
 |                       |                       |   equilibrium is        |
 |                       |                       | | considered invalid a  |
@@ -186,7 +186,7 @@ Actors involved
 |                       |                       |   Display window and    |
 |                       |                       | | workflow execution is |
 |                       |                       |   stopped. If the       |
-|                       |                       | | coreprof is           |
+|                       |                       | | core_profile is           |
 |                       |                       |   considered invalid a  |
 |                       |                       | | message is displayed  |
 |                       |                       |   on the Multi Tab      |
@@ -313,7 +313,7 @@ The workflow has basic settings in order to work.
    where to read the reference equilibrium from (shot/run_in pair)
 -  **run_in** : the run number where the reference equilibrium is
    (shot/run_in pair)
--   **run_work** : placeholder run for the temporary Kepler CPOs
+-   **run_work** : placeholder run for the temporary Kepler IDSs
 -  **run_out** : run number where the final results of the run will be
    stored (user running the workflow/shot/run_out). Since the input
    equilibrium can be a reconstruction that goes beyond the separatrix, 3
@@ -323,7 +323,7 @@ The workflow has basic settings in order to work.
    the run_out will naturally be written to personal database only.
 -  **device** : device database where the input reference data is. MUST BE
    the same as env variable TOKAMAKNAME
--  **time** : time slice (in equilibrium CPO) to be analysed in case the
+-  **time** : time slice (in equilibrium IDS) to be analysed in case the
    input shot/run_in contains many time slices.
 -  **path** : temporary folder where to dump the plots generated. Also used
    to store output files (used by HELENA/ILSA only)
@@ -355,50 +355,6 @@ workflow). To access the actors codeparam the easiest route is to :
 4. Click on "Edit Code Parameters" and a new window appears
 5. Edit the code parameters and Press "Save & Exit"
 6. Press "Commit" and setting is completed
-
-Test cases and self-oriented training
-=====================================
-
-Several test cases are available for testing, corresponding to different
-applications/examples. The itmdb files are found on the software release
-folder under */tutorial*
-
-+-----------------+-----------------+-------------------+-------------------+
-| Case            | Path            | Original source   | Description       |
-+=================+=================+===================+===================+
-| 1               | /tutorial/case1 | | gvlad/test/180/ | | Test equilibrium|
-|                 |                 | | 300             |   of elongated    |
-|                 |                 |                   |   JET-like        |
-|                 |                 |                   | | plasma, unstable|
-|                 |                 |                   |   to internal n=1 |
-|                 |                 |                   |   mode            |
-+-----------------+-----------------+-------------------+-------------------+
-| 2               | /tutorial/case2 | diy/test/1/2      | | Test equilibrium|
-|                 |                 |                   |   of circular     |
-|                 |                 |                   |   plasma,         |
-|                 |                 |                   | | unstable to     |
-|                 |                 |                   |   global n=1 mode |
-+-----------------+-----------------+-------------------+-------------------+
-| 3               | /tutorial/case3 | | rcoelho/aug/291 | | AUG equilibrium |
-|                 |                 | | 00/5            |   without         |
-|                 |                 |                   |   separatrix,     |
-|                 |                 |                   | | unstable to     |
-|                 |                 |                   |   internal/global |
-|                 |                 |                   |   n=1 mode        |
-+-----------------+-----------------+-------------------+-------------------+
-| 4               | /tutorial/case4 | | rcoelho/jet/778 | | JET equilibrium |
-|                 |                 | | 77/2            |   without         |
-|                 |                 |                   |   separatrix,     |
-|                 |                 |                   | | unstable to     |
-|                 |                 |                   |   internal n=1    |
-|                 |                 |                   |   mode            |
-+-----------------+-----------------+-------------------+-------------------+
-| 5               | /tutorial/case5 | | rcoelho/aug/291 | | Same equilibrium|
-|                 |                 | | 00/4            |   of Case 3 but   |
-|                 |                 |                   |   from full       |
-|                 |                 |                   | | (R,Z) CLISTE    |
-|                 |                 |                   |   reconstruction. |
-+-----------------+-----------------+-------------------+-------------------+
 
 
 EQSTABIL Tutorial
