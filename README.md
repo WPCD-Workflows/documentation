@@ -6,12 +6,11 @@ To commit to this repository user needs to become Collaborator
 and to create "personal access token" with *admin:repo_hook, public_repo, repo:status* 
 at your https://github.com/settings/tokens page.
 
+Created TOKEN is then used as a user/password for HTTPS access to the repository.
+
 If there are small edits without adding figures and sectioning then editing on Github directly is OK too. 
 Just make sure that you follow reStructuredText conventions and check 
 updated page at https://wpcd-workflows.github.io after automatic build finishes in few minutes.
-
-
-Created TOKEN is then used as a user/password for HTTPS access to the repository.
 
 To clone please use:
 
