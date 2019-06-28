@@ -146,7 +146,7 @@ Publications
 
 -G.L. Falchetto, et al., and the EUROfusion-IM Team, MULTI-MACHINE ANALYSIS OF EU EXPERIMENTS USING THE EUROFUSION INTEGRATED MODELLING (EU-IM) FRAMEWORK, P1.1081, 46th EPS conference, Milan, 2019.
 
-- G.I. Pokol, et al., "Runaway electron modelling in the ETS self-consistent core transport simulator", Nuclear Fusion 59, 076024 (2019). https://doi.org/10.1088/1741-4326/ab13da
+-G.I. Pokol, et al., "Runaway electron modelling in the ETS self-consistent core transport simulator", Nuclear Fusion 59, 076024 (2019). https://doi.org/10.1088/1741-4326/ab13da
 
 -Y.-S. Na et al.,"On Benchmarking of Simulations of Particle Transport in ITER", Nuclear Fusion 59 (7), 076026, 2019.
 
@@ -158,7 +158,7 @@ Publications
 
 -S. Nowak, et al., "Analysis and modelling of NTMs dynamics in JET discharges using the European Transport Simulator (ETS) and integrated modelling tools", TH/P6-26, IAEA CN-258 2018. https://conferences.iaea.org/indico/event/151/papers/6039/files/4878-64930_snowak_iaea2018_paper_final_rev.pdf
 
-- G. Pokol, et al., "Runaway electron modelling in the ETS self-consistent core transport simulator", TH/P8-15, IAEA CN-258, 2018. https://conferences.iaea.org/indico/event/151/papers/6162/files/4621-Pokol_IAEA-FEC_2018-paper.pdf  
+-G.I. Pokol, et al., "Runaway electron modelling in the ETS self-consistent core transport simulator", TH/P8-15, IAEA CN-258, 2018. https://conferences.iaea.org/indico/event/151/papers/6162/files/4621-Pokol_IAEA-FEC_2018-paper.pdf  
 
 -V. Basiuk, P. Huynh, A. Merle, S. Nowak, O. Sauter, “Towards self-consistent plasma modelisation in presence of neoclassical tearing mode and sawteeth: effects on transport coefficients”, Plasma Phys. Control. Fusion 59 (12), 125012 (2017) https://doi.org/10.1088/1361-6587/aa8c8c
 
