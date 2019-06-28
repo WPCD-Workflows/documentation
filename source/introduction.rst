@@ -141,20 +141,34 @@ The main WPCD achievements are listed below:
 9.	A prototype acyclic workflow for modelling the SOL and interaction with Plasma Facing Components (PFC) was demonstrated by coupling the 2D transport code SOPLS to the 3D Monte Carlo PWI and impurity transport code ERO.
 
 
-
-
 Publications
 ============
 
--D. Kalupin et al, "Numerical analysis of JET discharges with the European Transport Simulator", Nucl. Fusion 53, 123007, 2013.
+-G.L. Falchetto, et al., and the EUROfusion-IM Team, MULTI-MACHINE ANALYSIS OF EU EXPERIMENTS USING THE EUROFUSION INTEGRATED MODELLING (EU-IM) FRAMEWORK, P1.1081, 46th EPS conference, Milan, 2019.
 
--G.L. Falchetto, et al.,and ITM-TF contributors, “The European Integrated Tokamak Modelling (ITM) effort: achievements and first physics results”, Nuclear Fusion 54,043018, 2014.
+- G.I. Pokol, et al., "Runaway electron modelling in the ETS self-consistent core transport simulator", Nuclear Fusion 59, 076024 (2019). https://doi.org/10.1088/1741-4326/ab13da
 
--G.L. Falchetto, et al., and the EUROfusion-IM Team, "EUROfusion Integrated Modelling (EU-IM) capabilities and selected physics applications", Proc. 26th IAEA Fusion Energy Conference, Kyoto, Japan, IAEA CN-234,  TH/ P2-13, 2016.
+-Y.-S. Na et al.,"On Benchmarking of Simulations of Particle Transport in ITER", Nuclear Fusion 59 (7), 076026, 2019.
 
--Y.-S. Na et al., "On Benchmarking of Simulations of Particle Transport in ITER", Proc. 26th IAEA Fusion Energy Conference,  Kyoto, Japan, IAEA CN-234, TH/P2-24, 2016.
+-A.H. Nielsen, et al.  “Synthetic edge and SOL diagnostics - a bridge between experiments and theory”, THD/P7-4 IAEA CN-258 2018. https://conferences.iaea.org/indico/event/151/papers/5806/files/4686-Nielsen-THD-P7-4.pdf,  Nuclear Fusion accepted
+
+-R. Coelho, et al., “Plasma equilibrium reconstruction of JET discharges using the IMAS modelling infrastructure“, TH/P5-27, IAEA CN-258, 2018. https://conferences.iaea.org/indico/event/151/papers/6136/files/4812-Paper_IAEA_Coelho_v7.pdf
+
+-P. Strand, et al., "Towards a predictive modelling capacity for DT plasmas: European Transport Simulator (ETS) verification and validation“, TH/P6-14, IAEA CN-258, 2018. https://conferences.iaea.org/indico/event/151/papers/5943/files/4801-IAEA_FEC18_THP6_14_Strand.pdf
+
+-S. Nowak, et al., "Analysis and modelling of NTMs dynamics in JET discharges using the European Transport Simulator (ETS) and integrated modelling tools", TH/P6-26, IAEA CN-258 2018. https://conferences.iaea.org/indico/event/151/papers/6039/files/4878-64930_snowak_iaea2018_paper_final_rev.pdf
+
+- G. Pokol, et al., "Runaway electron modelling in the ETS self-consistent core transport simulator", TH/P8-15, IAEA CN-258, 2018. https://conferences.iaea.org/indico/event/151/papers/6162/files/4621-Pokol_IAEA-FEC_2018-paper.pdf  
 
 -V. Basiuk, P. Huynh, A. Merle, S. Nowak, O. Sauter, “Towards self-consistent plasma modelisation in presence of neoclassical tearing mode and sawteeth: effects on transport coefficients”, Plasma Phys. Control. Fusion 59 (12), 125012 (2017) https://doi.org/10.1088/1361-6587/aa8c8c
+
+-G.L. Falchetto, et al., and the EUROfusion-IM Team, "EUROfusion Integrated Modelling (EU-IM) capabilities and selected physics applications", Proc. 26th IAEA Fusion Energy Conference, Kyoto, Japan, IAEA CN-234,  TH/ P2-13, 2016. https://nucleus.iaea.org/sites/fusionportal/Shared%20Documents/FEC%202016/fec2016-preprints/preprint0362.pdf
+
+-Y.-S. Na et al., "On Benchmarking of Simulations of Particle Transport in ITER", Proc. 26th IAEA Fusion Energy Conference,  Kyoto, Japan, TH/P2-24, IAEA CN-234, 2016. 
+
+-G.L. Falchetto, et al.,and ITM-TF contributors, “The European Integrated Tokamak Modelling (ITM) effort: achievements and first physics results”, Nuclear Fusion 54, 043018, 2014.
+
+-D. Kalupin et al, "Numerical analysis of JET discharges with the European Transport Simulator", Nucl. Fusion 53, 123007, 2013.
 
 -D. Samaddar, D.P. Coster, X. Bonnin, C. Bergmeister, E. Havlickova, L.A. Berry, W.R. Elwasif, D.B. Batchelor, “Temporal parallelization of edge plasma simulations using the parareal algorithm and the SOLPS code”, Computer Physics Communications 221, 19-27 (2017). https://doi.org/10.1016/j.cpc.2017.07.012
 
@@ -162,17 +176,7 @@ Publications
 
 -D.P. Coster, "Exploring the edge operating space of fusion reactors using reduced physics models", Nuclear Materials and Energy 12, 1055-1060 (2017)  https://doi.org/10.1016/j.nme.2016.12.033
 
--P. Strand, et al., "Towards a predictive modelling capacity for DT plasmas: European Transport Simulator (ETS) verification and validation“, Proc. 27th IAEA Fusion Energy Conference (FEC 2018).
-
--S. Nowak, et al., "Analysis and modelling of NTMs dynamics in JET discharges using the European Transport Simulator (ETS) and integrated modelling tools", Proc. 27th IAEA Fusion Energy Conference (FEC 2018)
-
--G. Pokol, et al., "Runaway electron modelling in the ETS self-consistent core transport simulator", Proc. 27th IAEA Fusion Energy Conference (FEC 2018), accepted for publication into Nuclear Fusion 
-
--R. Coelho, et al., “Plasma equilibrium reconstruction of JET discharges using the IMAS modelling infrastructure“, Proc. 27th IAEA Fusion Energy Conference (FEC 2018).
-
--A.H. Nielsen, et al.  “Synthetic edge and SOL diagnostics - a bridge between experiments and theory” Proc. 27th IAEA Fusion Energy Conference (FEC 2018), submitted to Nuclear Fusion
-
--O. Asunta, R. Coelho, D. Kalupin, T. Johnson, T. Franke and EU-IM Team,  “Predictions of neutral beam current drive in DEMO using BBNBI and ASCOT within the European Transport Simulator”, 42nd EPS 2015, P2.156 ECA Vol. 39E ISBN 2-914771-98-3 
+-O. Asunta, R. Coelho, D. Kalupin, T. Johnson, T. Franke and EU-IM Team,  “Predictions of neutral beam current drive in DEMO using BBNBI and ASCOT within the European Transport Simulator”, 42nd EPS 2015, P2.156 ECA Vol. 39E ISBN 2-914771-98-3. 
 
 -R. Bilato, N. Bertelli, M. Brambilla, R. Dumont, E.F. Jaeger, T. Johnson, E. Lerche, O. Sauter, D. Van Eester and L. Villard, “Status of the benchmark activity of ICRF full-wave codes within EUROfusion WPCD and beyond”, 21st Topical Conference on Radiofrequency Power in Plasmas, 2015.
 
