@@ -3,13 +3,13 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. image: static/wpcd_banner.png
+.. image:: images/wpcd_banner_new.png
    :width: 100%
-
 
 
 Welcome to EUROfusion Integrated Modelling workflow's documentation!
 =====================================================================
+
 
 Contents:
 
