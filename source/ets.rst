@@ -13,6 +13,16 @@ Configuration of the ETS-5 workflow in Kepler
 ETS-5 uses CPO for actor integration in Kepler and as input data to the workflow. This means that the user environment
 needs to be set up as ITM environment. To do so login on the EUROfusion Gateway and type the following commands
 
+**To install your local copy of the ETS workflow please do:**
+
+.. code-block:: console
+
+   >svn co https://gforge6.eufus.eu/svn/keplerworkflows/tags/ets_4.10b10.3/ETS
+   >cd ETS
+   >make import_ets
+
+Press the play button on the workflow.
+
 .. code-block:: console
 >module purge
 >module load cineca
