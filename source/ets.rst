@@ -76,19 +76,7 @@ or
 
 if you like to see the the log messages printed on the scree while ETS runs
 
-Instructions on the ETS configuration options can be found `here <https://users.euro-fusion.org/tfwiki/images/5/56/Ets_config_v3.pdf>`__
-
-Instructions on HCD module in ETS can be found `here <https://users.euro-fusion.org/tfwiki/images/4/4a/Hcd_config_v1.pdf>`__
-
-Instructions on impurities in ETS (including example workflow and plotting tools) can be found `here <https://users.euro-fusion.org/pages/tfiospti/ETSmeetings/08Dec2017/Impurities_in_ETS_v5_dy.pdf>`__
-
-JET data to ETS
-===============
-ETS uses a standard format for input/output data. In order to get data from different machines (in different formats, using different units) a dedicated tool called "exp2itm" is provided. This section describes how this tool can be used to convert JET data to be used in ETS.
-
-Information about available data mappings is provided `here <https://users.euro-fusion.org/tfwiki/index.php/Mappings_jet_ets>`__.
-
-Guidelines to get JET data are provided `here <https://users.euro-fusion.org/tfwiki/index.php/Get_jet_data_gen>`__
+Once the Kepler canvas is open you'll need to load the ETS workflow. Click on File,
 
 ETS releases
 ============
@@ -97,15 +85,15 @@ ETS release 5.5.0 is installed on the Gateway.
 
  Quick installation instructions (to update your environment) are available here:
 
-<https://portal.eufus.eu/twiki/bin/view/Main/Installation_of_latest_kepler_release>
+ https://portal.eufus.eu/twiki/bin/view/Main/Installation_of_latest_kepler_release
 
   Detailed instructions are available here:
 
-<https://portal.eufus.eu/twiki/bin/view/Main/User_Guide_accessing_JET_data>
+ https://portal.eufus.eu/twiki/bin/view/Main/User_Guide_accessing_JET_data
 
  List of modifications (as compared to the previous release) is available here:
 
-<https://portal.eufus.eu/twiki/bin/view/Main/Updates_550>
+ https://portal.eufus.eu/twiki/bin/view/Main/Updates_550
 
 
 ETS verification and validation
