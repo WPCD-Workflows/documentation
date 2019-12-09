@@ -76,7 +76,6 @@ or
 
 if you like to see the the log messages printed on the scree while ETS runs
 
-Once the Kepler canvas is open you'll need to load the ETS workflow. Click on File,
 
 ETS releases
 ============
@@ -106,49 +105,15 @@ plasma.
 
 **ETS workflows in KEPLER**:
 
--  use actors and composite actors from other IMPs, thus for the most
-   recent versions of them please check with relevant project
+-  use actors and composite actors from the WPCD / IMAS fusion library
 -  complex, but clearly structured workflow, which offers user friendly
    interface for configuring the simulation
 -  allow for easy modifications (connecting new modules, or reconnecting
    parts of the workflow) through an easy graphical interface
 -  provide users with all updates through the version control system
--  still in active development tool
+-  still in active development tool (ETS-6)
 
 
-The default ETS release is the tag4.10b10.3
-
-**Before installation make sure that:**
-
--  you have your private data base for the version of the
-   UAL
-   required by the workflow
--  you have the version of
-   KEPLER
-   required by the workflow installed. Quick start on kepler required
-   for the ETS can be found
-   here
--  inside the window, where you will be downloading the ETS the source
-   command:
-
-.. code-block:: console
-
-   >source $EU-IMSCRIPTDIR/EU-IMv1 Kepler_Version Data_Base_Name UAL_Version
-            
-is executed.
-
-**To install your local copy of the ETS workflow please do:**
-
-.. code-block:: console
-
-   >svn co https://gforge6.eufus.eu/svn/keplerworkflows/tags/ets_4.10b10.3/ETS
-   >cd ETS
-   >make import_ets
-
-Press the play button on the workflow.
-
-.. figure:: images/ets_1.png
-   :align: center
 
 **The workflow shall run!** If it
 does not, please use the contact from above.
