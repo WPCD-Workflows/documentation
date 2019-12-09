@@ -14,7 +14,6 @@ ETS-5 uses CPO for actor integration in Kepler and as input data to the workflow
 needs to be set up as ITM environment. To do so login on the EUROfusion Gateway and type the following commands
 
 .. code-block:: console
-
 >module purge
 >module load cineca
 >module load itmenv/ETS_4.10b.10_v5.4.0
@@ -23,6 +22,7 @@ needs to be set up as ITM environment. To do so login on the EUROfusion Gateway 
 >export _JAVA_OPTIONS=-Dsun.java2d.xrender=false
 >export I_MPI_FABRICS=shm
 >export _JAVA_OPTIONS="-Xss20m -Xms4g -Xmx8g -Dsun.java2d.xrender=false"
+
 
 The command 'module load itmenv/ETS...' loads the itmenv environment and in particula the ETS / Kepler version 5.4.0
 To load a different version just change the number e.g. v5.5.0
