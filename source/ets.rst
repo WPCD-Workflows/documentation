@@ -5,17 +5,49 @@
 *****************
 ETS Documentation
 *****************
-This page contains useful information on the European Transport Simulator (ETS) including documentation, description of the pre and post-processing tools used with ETS as well as instructions on how to use ETS and tools at JET.
+This page contains useful information on the European Transport Simulator (ETS) including documentation, description of the pre and post-processing tools used with ETS as well as instructions on how to use ETS and tools on the EUROfusion Gateway.
 
-Guide on using ETS with JET data
-================================
+Configuration of the ETS-5 workflow in Kepler 
+=============================================
 
-ETS is a multi-machine modular transport simulator that can simulate different devices. This section provides a detailed guide on how to use ETS with JET data.
+ETS-5 uses CPO for actor integration in Kepler and as input data to the workflow. This means that the user environment
+needs to be set up as ITM environment. To do so login on the EUROfusion Gateway and type the following commands
 
-The guide can be found `here <https://users.euro-fusion.org/tfwiki/index.php/Etsguide>`__
+module purge
+module load cineca
+module load itmenv/ETS_4.10b.10_v5.4.0
+source $ITMSCRIPTDIR/ITMv2.sh JET
+export ITM_KEPLER_DIR=$ITMWORK/my_keplers
+export _JAVA_OPTIONS=-Dsun.java2d.xrender=false
+export I_MPI_FABRICS=shm
+export _JAVA_OPTIONS="-Xss20m -Xms4g -Xmx8g -Dsun.java2d.xrender=false"
 
-Configuration of ETS workflow in Kepler
-=======================================
+The command 'module load itmenv/ETS...' loads the itmenv environment and in particula the ETS / Kepler version 5.4.0
+To load a different version just change the number e.g. v5.5.0
+
+The $ITMSCRIPTDIR/ITMv2.sh JET command will set up the local database to JET. This menas that any simulation done with ETS
+will be saved under the JET database (even if you are simulating TCV!!). 
+
+The remaining commands are JAVA options for running Kepler and setting of MPI useful for running parallel actors.
+
+If it is the first time you run ETS then you will need to install your first 'dressed' kepler version which corresponds
+to Kepler with all the WPCD actors embedded in it.
+
+This can be done by executing the following command
+
+install_kepler.sh ets_v550 trunk/ETS_4.10b.10_v5.5.0/central "dressed central kepler v5.5.0"
+switch_to_kepler.sh ets_v550
+
+For loading the Workflow+tools(import data, postprocessing):
+svn co https://gforge6.eufus.eu/svn/keplerworkflows/tags/ETS_4.10b.10_v5.5.0
+
+The above commands requires enabled access to GFORGE.
+Plotting routines such as kplots can be found under 
+
+cd $KEPLER 
+
+You are now ready to start ETS!!
+
 Instructions on the ETS configuration options can be found `here <https://users.euro-fusion.org/tfwiki/images/5/56/Ets_config_v3.pdf>`__
 
 Instructions on HCD module in ETS can be found `here <https://users.euro-fusion.org/tfwiki/images/4/4a/Hcd_config_v1.pdf>`__
