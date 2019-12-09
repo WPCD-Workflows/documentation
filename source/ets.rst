@@ -70,8 +70,11 @@ To launch ETS-5 just type
   
 or 
 
+.. code-block:: console
+
   >kepler.sh -nolog
 
+if you like to see the the log messages printed on the scree while ETS runs
 
 Instructions on the ETS configuration options can be found `here <https://users.euro-fusion.org/tfwiki/images/5/56/Ets_config_v3.pdf>`__
 
@@ -90,13 +93,20 @@ Guidelines to get JET data are provided `here <https://users.euro-fusion.org/tfw
 ETS releases
 ============
 
-Information related to the ETS releases is given in this section.
+ETS release 5.5.0 is installed on the Gateway. 
 
-`changes, updates for ETS release 5.1.0 <https://users.euro-fusion.org/tfwiki/index.php/Changes_v510>`__
+ Quick installation instructions (to update your environment) are available here:
 
-`changes, updates for ETS release 5.0.3 <https://users.euro-fusion.org/tfwiki/index.php/Changes_v503>`__
+<https://portal.eufus.eu/twiki/bin/view/Main/Installation_of_latest_kepler_release>
 
-`changes, updates for ETS release 5.0.2 <https://users.euro-fusion.org/tfwiki/index.php/Changes_v502>`__
+  Detailed instructions are available here:
+
+<https://portal.eufus.eu/twiki/bin/view/Main/User_Guide_accessing_JET_data>
+
+ List of modifications (as compared to the previous release) is available here:
+
+<https://portal.eufus.eu/twiki/bin/view/Main/Updates_550>
+
 
 ETS verification and validation
 ===============================
