@@ -62,6 +62,17 @@ You are now ready to start ETS!!
 
 **The latest version of ETS-5 is v5.5.0 (09/12/2019)**
 
+To launch ETS-5 just type
+
+.. code-block:: console
+
+  >kepler.sh 
+  
+or 
+
+  >kepler.sh -nolog
+
+
 Instructions on the ETS configuration options can be found `here <https://users.euro-fusion.org/tfwiki/images/5/56/Ets_config_v3.pdf>`__
 
 Instructions on HCD module in ETS can be found `here <https://users.euro-fusion.org/tfwiki/images/4/4a/Hcd_config_v1.pdf>`__
