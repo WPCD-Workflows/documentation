@@ -44,11 +44,14 @@ to Kepler with all the WPCD actors embedded in it.
   >switch_to_kepler.sh ets_v550
 
 **For loading the Workflow+tools(import data, postprocessing):**
+
 .. code-block:: console
   >svn co https://gforge6.eufus.eu/svn/keplerworkflows/tags/ETS_4.10b.10_v5.5.0
 
 The above commands requires enabled access to GFORGE (if you are a simple user you need to get access to GFORGE enabled).
+
 **Plotting routines such as kplots can be found under** 
+
 .. code-block:: console
   >cd $KEPLER 
 
