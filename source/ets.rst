@@ -338,9 +338,6 @@ boundary value. The options are:
 Neutrals
 ~~~~~~~~
 
-!!! AT THE MOMENT BOUNDARY CONDITIONS FOR NEUTRAL VELOCITIES ARE DISABLED,
-MIGHT BE ADDED ON REQUEST
-
 Note, that ALL values should be specified in the order: {*1, 2, 3 ...NION, 1, 2, 3, ...NIMP*}
 
 To set up boundary conditions:
@@ -374,8 +371,7 @@ To define the interpolation grid select:
 
 .. figure:: images/ets_run_settings6.png
    :align: center
-           
-.. _ETS_A_4.10b_convergence:
+         
 
 Convergence loop
 ----------------
@@ -383,10 +379,10 @@ Convergence loop
 ETS updates input from different physics actors in a sequence, which is
 finished by solving the transport equations. Ther are possible
 none-linear couplings between different parts of the system. These
-nonelinearities are trited by the ETS using iterations. The decision to
+nonelinearities are treated by the ETS using iterations. The decision to
 step in time is made by the ETS based on the criteria that the maximum
 relative deviation of main plasma profiles is lower than some predefined
-tolerance. There is a number of settings and sitches in the ETS that are
+tolerance. There is a number of settings and switches in the ETS that are
 used by the iterative scheme. To edit them do:
 
 -  right click on the box CONVERGENCE LOOP
@@ -675,7 +671,7 @@ LOOP composite actor. Therefore please do:
 Analytical & Impurity sources
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-There is a number of sources developed by IMP3 project, which are actors
+There is a number of sources developed by WPCD, which are actors
 or internal routines of the transport solver. You can activate them by
 selecting **ON / OFF** in front of corresponding source:
 
@@ -696,7 +692,7 @@ selecting **ON / OFF** in front of corresponding source:
 HCD sources
 ~~~~~~~~~~~
 
-There is a number of sources developed by HCD project, that are
+There is a number of sources developed by WPCD, that are
 incorporated by the ETS workflow.
 
 For the HCD sources please activate the type of heating source, by
@@ -718,8 +714,6 @@ You also need to configure initial IMP5HCD settings. Therefore please:
 .. figure:: images/ets_sources4.png
    :align: center
 
-The detailed information on initial IMP5HCD settings can be found
-`here <https://www.eufus.eu/documentation/EU-IM/html/imp5_imp5hcd.html>`__.
 Please note that settings for NBI are done independent for each PINI.
 Therefore, for NBI settings, please insert the values separated by
 commas. The number of the element in the array corresponds to the number
@@ -915,8 +909,8 @@ Visualization
 
 There is a number tools visualizing the ETS run.
 
-Multiple Tab Display
---------------------
+Multiple Tab Display (ETSviz.py)
+--------------------------------
 
 The display appeares automaticaly when the ETS workflow is launched. It
 displays diagnostic text messages from the workflow on following topics:
@@ -926,40 +920,9 @@ displays diagnostic text messages from the workflow on following topics:
    CURRENT
 -  Time evolution
 -  Convergence of iteratinos within the time step
--  IMP5HCD settings
+-  HCD settings
 -  Power used by IMP5HCD actors durung the run
 
-Also the error messages from execution of the workflow will be displayed
-here.
-
-.. figure:: images/ets_visual1.png
-   :align: center
-
-Python Visualization Display
-----------------------------
-
-Please note, if you plan to use python based vizualization **nomatlab**
-argument is essential by the opening of the workflow.
-
-.. code-block:: console
-
-   >kepler.sh nomatlab workflow_path/workflow_name.xml
-
-You can activate the graphical visualization of your run evolution:
-
--  right click on the box Check Time & Save Slice
--  select **Configure actor**
--  select visualisation **YES** or **NO**
--  **Commit**
-
-.. figure:: images/ets_visual2.png
-   :align: center
-   
-Then evolution of main discharge parameters will be shown in this
-window:
-
-.. figure:: images/ets_visual3.png
-   :align: center
 
 .. _ETS_A_4.10b_list_actors:
 
@@ -970,8 +933,8 @@ UNDER DEVELOPMENT
 
 .. _ETS_A_4.10b_list_actors_Equilibrium:
 
-Equilibrium actors
-------------------
+Some Equilibrium actors
+-----------------------
 
 +------------+-----------------+-----------------+--------------------------+
 | Code name  | Code Category   | Contact persons | Short description        |
@@ -1021,22 +984,22 @@ Core transport actors
 |                    | | turbulence      |                 |                          |
 +--------------------+-------------------+-----------------+--------------------------+
 | | TCI/MMM          | | Transport       | /               |                          |
-| | (not yet         | | coefficient from|                 |                          |
-| | in ETS)          | | drift wave      |                 |                          |
+| |                  | | coefficient from|                 |                          |
+| |                  | | drift wave      |                 |                          |
 |                    | | turbulence      |                 |                          |
 +--------------------+-------------------+-----------------+--------------------------+
 | | TCI/EDWM         | | Transport       | /               |                          |
-| | (not yet         | | coefficient from|                 |                          |
-| | in ETS)          | | drift wave      |                 |                          |
+| |                  | | coefficient from|                 |                          |
+| |                  | | drift wave      |                 |                          |
 |                    | | turbulence      |                 |                          |
 +--------------------+-------------------+-----------------+--------------------------+
 | | nclass           | | Neoclassical    | Pär Strand      |                          |
-| | (not yet         | | transport       |                 |                          |
-| | in ETS)          | | coefficients    |                 |                          |
+| |                  | | transport       |                 |                          |
+| |                  | | coefficients    |                 |                          |
 +--------------------+-------------------+-----------------+--------------------------+
 | | neos             | | Neoclassical    | Olivier Sauter  |                          |
-| | (not yet         | | transport       |                 |                          |
-| | in ETS)          | | coefficients    |                 |                          |
+| |                  | | transport       |                 |                          |
+| |                  | | coefficients    |                 |                          |
 +--------------------+-------------------+-----------------+--------------------------+
 | neowesz            | | Neoclassical    | Bruce Scott     | | Neoclassical transport |
 |                    | | transport       |                 | | coefficients based on  |
@@ -1054,6 +1017,12 @@ Core transport actors
 | coronal            |                   |                 |                          |
 +--------------------+-------------------+-----------------+--------------------------+
 | synchrotronsources |                   |                 |                          |
++--------------------+-------------------+-----------------+--------------------------+
+| TGLF               |                   | G. Stabler      |                          |
++--------------------+-------------------+-----------------+--------------------------+
+| NEO               |                    | E. Belli        |                          |
++--------------------+-------------------+-----------------+--------------------------+
+| QualiKiz           |                   | J. Citrin.      |                          |
 +--------------------+-------------------+-----------------+--------------------------+
 
 .. _ETS_A_4.10b_list_actors_Edge:
@@ -1148,8 +1117,8 @@ Heating and current drive actors
 |               |                 | | Van Eester    |                                              |
 +---------------+-----------------+-----------------+----------------------------------------------+
 | | Eve         | IC / waves      | Remi Dumont     | | Global ICRF wave solver                    |
-| | (not yet in |                 |                 |                                              |
-| | ETS)        |                 |                 |                                              |
+|               |                 |                 |                                              |
+|               |                 |                 |                                              |
 +---------------+-----------------+-----------------+----------------------------------------------+
 | StixReDist    | IC / waves      | | Dirk          | | 1d Fokker-Planck solver for ICRF heating.  |
 |               |                 | | Van Eester    |                                              |
@@ -1274,9 +1243,6 @@ input shot)
 
 You should choose from the list of evailable models in each cathegory or
 switch it OFF
-
-The list of available transport models can be found
-`here <https://www.eufus.eu/documentation/EU-IM/html/ets_status.html>`__.
 
 .. figure:: images/ets_transport2_a.png
    :align: center
@@ -1442,7 +1408,7 @@ LOOP composite actor. Therefore please do:
    :align: center
 
 
-IMP3 sources
+Heat and Particle sources
 ~~~~~~~~~~~~
 
 There is a number of sources developed by IMP3 project, which are actors
@@ -1481,19 +1447,19 @@ selecting *ON / OFF* in front of corresponding source:
    :align: center
    
 
-IMP5HCD sources
+Heating sources
 ~~~~~~~~~~~~~~~
 
-There is a number of sources developed by IMP5 project, that are
+There is a number of sources developed by WPCD, that are
 incorporated by the ETS workflow.
 
-For the IMP5HCD sources please activate the type of heating source, by
+For the WPCD sources please activate the type of heating source, by
 ticking the box in front of it, and select the code to simulate it.
 
 .. figure:: images/ets_sources3_a.png
    :align: center
 
-You also need to configure initial IMP5HCD settings. Therefore please:
+You also need to configure initial  settings. Therefore please:
 
 -  right click on the box ‘BEFORE THE TIME EVOLUTION’
 -  select ‘Open Actor’
@@ -1505,8 +1471,6 @@ You also need to configure initial IMP5HCD settings. Therefore please:
 .. figure:: images/ets_sources4_a.png
    :align: center
  
-The detailed information on initial IMP5HCD settings can be found
-`here <https://www.eufus.eu/documentation/EU-IM/html/imp5_imp5hcd.html>`__.
 Please note that settings for NBI are done independent for each PINI.
 Therefore, for NBI settings, please insert the values separated by
 commas. The number of the element in the array corresponds to the number
@@ -1518,7 +1482,7 @@ of activated PINI. Maximum accepted number of PINIs = 16.
 Power control
 ~~~~~~~~~~~~~
 
-You also can activate the power control for the IMP5HCD sources.
+You also can activate the power control for the sources.
 
 .. figure:: images/ets_sources6_a.png
    :align: center
@@ -1719,299 +1683,7 @@ here.
 .. figure:: images/ets_visual1_a.png
    :align: center
 
-Python Visualization Display
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can activate the graphical visualization of your run evolution:
-
--  right click on the box ‘Check Time & Save Slice’
--  select ‘Configure actor’
--  select visualisation ‘YES’ or ‘NO’
--  Commit
-
-.. figure:: images/ets_visual2_a.png
-   :align: center
-
-Then evolution of main discharge parameters will be shown in this
-window:
-
-.. figure:: images/ets_visual3_a.png
-   :align: center
-
-.. _ETS_C_KEPLER:
-
-=====
-ETS_C
-=====
-
-The ETS workflow (IMP3-ACT1) is used for 1-D transport simulation of a
-tokamak core plasma.
-
-**ETS workflow in KEPLER**:
-
--  uses as actors and composite actors from other IMPs, thus for the
-   most recent versions of them please check with relevant project
--  complex, but clearly structured workflow, which offers user friendly
-   interface for configuring the simulation
-- allows for easy modifications (connecting new modules, or reconnecting
-   the parts of the workflow) through the easy graphical interface
--  provides users with all updates through the version control system
--  still actively developing tool
-
-
-
-.. figure:: images/ets_c.png
-   :align: center
-
-.. _ets_status:
-
-
-==========
-ETS Status
-==========
-
-+-----------------------+-----------------------+------------------------+
-| | *Package Name* /    |       ETS-A           |       ETS-C            |
-| | *Physics Module*    |                       |                        |
-+=======================+=======================+========================+
-| *EQUILIBRIUM*         |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| *fixed boundary:*     |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| BDSEQ                 | Ready for use         |                        |
-+-----------------------+-----------------------+------------------------+
-| EMEQ                  | Ready for use         |                        |
-+-----------------------+-----------------------+------------------------+
-| SPIDER                | Ready for use         |                        |
-+-----------------------+-----------------------+------------------------+
-| SPIDER_IMP12          | Ready for use         |                        |
-+-----------------------+-----------------------+------------------------+
-| CHEASE                | Ready for use         | validate               |
-+-----------------------+-----------------------+------------------------+
-| HELENA                | Ready for use         |                        |
-+-----------------------+-----------------------+------------------------+
-| HELENA21              |                       | | work in 4.09a problem|
-|                       |                       | | when it doesn't find |
-|                       |                       | | any equilibrium crash|
-+-----------------------+-----------------------+------------------------+
-|                       |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| *free boundary:*      |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| CEDRES++              | | In progress/tests   | | validate (static     |
-|                       | | are planned for     | | mode, TBD evolution  |
-|                       | | Nov.2014            | | mode)                |
-+-----------------------+-----------------------+------------------------+
-| CREATE-NL             |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| FIXFREE               |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| EQFAST                |                       | work in 4.09a          |
-+-----------------------+-----------------------+------------------------+
-| FREEBIE               |                       | validate               |
-+-----------------------+-----------------------+------------------------+
-|                       |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| *MHD*                 |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| NTM                   | Ready for use         | validate               |
-+-----------------------+-----------------------+------------------------+
-| SAWTEETH              | | Implemented/Tested/ |                        |
-|                       | | release             |                        |
-|                       | | date:Nov.2014       |                        |
-+-----------------------+-----------------------+------------------------+
-| | Linear Stability    | | Stand alone         |                        |
-| | Chain               | | tests/implementation|                        |
-|                       | | in ETS and          |                        |
-|                       | | release:2015        |                        |
-+-----------------------+-----------------------+------------------------+
-|                       |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| *TRANSPORT*           |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| | *analytical &*      |                       |                        |
-| | *interpretative:*   |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| | From DATA BASE      | Ready for use         |                        |
-| | (interpretative)    |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| | Edge Transport      | Ready for use         |                        |
-| | Barried (analytical)|                       |                        |
-+-----------------------+-----------------------+------------------------+
-|                       |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| *anomalous:*          |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| ETAIGB                | Ready for use         |                        |
-+-----------------------+-----------------------+------------------------+
-| BOHM-GYROBOHM         | Ready for use         | | validate, + effect of|
-|                       |                       | | rotation             |
-+-----------------------+-----------------------+------------------------+
-| GLF23                 | | Implemented/Tested/ | | to be tested (GLF23  |
-|                       | | release             | | installed in previous|
-|                       | | date:Nov.2014       | | gateway not          |
-|                       |                       | | validated)           |
-+-----------------------+-----------------------+------------------------+
-| WEILAND               | | Implemented/Tested/ |                        |
-|                       | | release             |                        |
-|                       | | date:Nov.2014       |                        |
-+-----------------------+-----------------------+------------------------+
-| REU-IM                | | Implemented/Tested/ |                        |
-|                       | | release             |                        |
-|                       | | date:Nov.2014       |                        |
-+-----------------------+-----------------------+------------------------+
-| EWDM                  | | Implemented/Tested/ |                        |
-|                       | | release             |                        |
-|                       | | date:Nov.2014       |                        |
-+-----------------------+-----------------------+------------------------+
-| TGLF                  | | In progress/Some    |                        |
-|                       | | initial tests       |                        |
-+-----------------------+-----------------------+------------------------+
-| KIAUTO                |                       | | installed (transport |
-|                       |                       | | model based on       |
-|                       |                       | | scaling law)         |
-+-----------------------+-----------------------+------------------------+
-|                       |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| *neoclassical:*       |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| NEOS                  | Ready for use         |                        |
-+-----------------------+-----------------------+------------------------+
-| NEOWES                | Ready for use         |                        |
-+-----------------------+-----------------------+------------------------+
-| NEOART                | | Ready for use       |                        |
-|                       | | (probably not       |                        |
-|                       | | suggested as being  |                        |
-|                       | | too oscilatory)     |                        |
-+-----------------------+-----------------------+------------------------+
-| NCLASS                | In progress           | | validate with        |
-|                       |                       | | composition (to be   |
-|                       |                       | | upgrade with         |
-|                       |                       | | compositions         |
-+-----------------------+-----------------------+------------------------+
-| NCLASS/FORCEBALL      |                       | | installed (gives the |
-|                       |                       | | radial electric      |
-|                       |                       | | field)               |
-+-----------------------+-----------------------+------------------------+
-|                       |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| | *HEAT,PARTICLE*     |                       |                        |
-| | *SOURCES & CURRENT* |                       |                        |
-| | *DRIVE*             |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| | *analytical &*      |                       |                        |
-| | *interpretative:*   |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| | From DATA BASE      | Ready for use         |                        |
-| | (interpretative)    |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| Gaussian              | Ready for use         |                        |
-+-----------------------+-----------------------+------------------------+
-|                       |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| | *impurity and*      |                       |                        |
-| | *particles:*        |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| IMPURITY              | Ready for use         |                        |
-+-----------------------+-----------------------+------------------------+
-| NEUTRALS              | Ready for use         |                        |
-+-----------------------+-----------------------+------------------------+
-| PELLET                | Ready for use         |                        |
-+-----------------------+-----------------------+------------------------+
-| ZNEUTRES              |                       | | installed (simple    |
-|                       |                       | | module of CRONOS for |
-|                       |                       | | neutral source terms)|
-+-----------------------+-----------------------+------------------------+
-| ZRECYCLE              |                       | | edge boundary for    |
-|                       |                       | | electron density     |
-+-----------------------+-----------------------+------------------------+
-|                       |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| *ECRH*                |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| GRAY                  | Ready for use         | Installed              |
-+-----------------------+-----------------------+------------------------+
-| TORAY-FOM             |                       | In preparation         |
-+-----------------------+-----------------------+------------------------+
-| TRAVIS                | Tested                | In preparation         |
-+-----------------------+-----------------------+------------------------+
-| TORBEAM               |                       | In preparation         |
-+-----------------------+-----------------------+------------------------+
-|                       |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| *ICRH*                |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| TORIC                 | In progress           | In preparation         |
-+-----------------------+-----------------------+------------------------+
-| ICDEP                 |                       | Installed              |
-+-----------------------+-----------------------+------------------------+
-| FPSIM                 |                       | Installed              |
-+-----------------------+-----------------------+------------------------+
-|                       |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| *NBI*                 |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| NEMO                  | Ready for use         | Installed              |
-+-----------------------+-----------------------+------------------------+
-| BBNBI                 | Ready for use         | In preparation         |
-+-----------------------+-----------------------+------------------------+
-| NBISIM                | Ready for use         | Installed              |
-+-----------------------+-----------------------+------------------------+
-| ASCOT                 | Ready for use         |                        |
-+-----------------------+-----------------------+------------------------+
-| RISK                  | Ready for use         | In preparation         |
-+-----------------------+-----------------------+------------------------+
-|                       |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| *LH*                  |                       |                        |
-+-----------------------+-----------------------+------------------------+
-|                       |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| *nuclear sources*     |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| nuclearsim            | Ready for use         | Installed              |
-+-----------------------+-----------------------+------------------------+
-|                       |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| *CONTROLS*            |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| NBI power control     | Ready for use         |                        |
-+-----------------------+-----------------------+------------------------+
-| ECRH power control    | Ready for use         |                        |
-+-----------------------+-----------------------+------------------------+
-| ICRH power control    | Ready for use         |                        |
-+-----------------------+-----------------------+------------------------+
-| | Pellet frequency    | Ready for use         |                        |
-| | control             |                       |                        |
-+-----------------------+-----------------------+------------------------+
-|                       |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| *COUPLING TO EDGE*    |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| SOLPS                 | | Tested at Fortran   |                        |
-|                       | | level               |                        |
-+-----------------------+-----------------------+------------------------+
-|                       |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| | *DOCUMENTATION and* |                       |                        |
-| | *MANUALS*           |                       |                        |
-+-----------------------+-----------------------+------------------------+
-| Physics Description   | | Description of the  |                        |
-|                       | | ETS                 |                        |
-+-----------------------+-----------------------+------------------------+
-| Numerics Description  | | Form of the         |                        |
-|                       | | standardize         |                        |
-|                       | | equations           |                        |
-+-----------------------+-----------------------+------------------------+
-| Manuals               | | -  ETS workflows in |                        |
-|                       | |    KEPLER           |                        |
-|                       | | -  ETS source in    |                        |
-|                       | |    Fortran          |                        |
-+-----------------------+-----------------------+------------------------+
-
-
-
-.. _imp4_transport:
 
 *********************************************
 Turbulent Flux Quantities in Transport Models
