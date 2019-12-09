@@ -55,11 +55,12 @@ The above commands requires enabled access to GFORGE (if you are a simple user y
 **Plotting routines such as kplots can be found under** 
 
 .. code-block:: console
+
   >cd $KEPLER 
 
 You are now ready to start ETS!!
 
-The latest version of ETS-5 is v5.5.0 (09/12/2019)
+**The latest version of ETS-5 is v5.5.0 (09/12/2019)**
 
 Instructions on the ETS configuration options can be found `here <https://users.euro-fusion.org/tfwiki/images/5/56/Ets_config_v3.pdf>`__
 
