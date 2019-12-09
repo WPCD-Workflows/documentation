@@ -11,7 +11,7 @@ Configuration of the ETS-5 workflow in Kepler
 =============================================
 
 ETS-5 uses CPO for actor integration in Kepler and as input data to the workflow. This means that the user environment
-needs to be set up as ITM environment. To do so login on the EUROfusion Gateway and type the following commands
+needs to be set up as ITM environment. 
 
 **To do so login on the EUROfusion Gateway and type the following commands:**
 
