@@ -114,10 +114,6 @@ plasma.
 -  still in active development tool (ETS-6)
 
 
-
-**The workflow shall run!** If it
-does not, please use the contact from above.
-
 **Starting the workflow:**
 If you have the workflow already installed, there are there are several
 ways tio execute it:
@@ -146,9 +142,16 @@ ways tio execute it:
       >module switch scripts/R2.2
       >submit_batch_kepler.sh run_dircetory 1 $EU-IMWORK/workflow_path/workflow_name.xml $EU-IMSCRIPTDIR/batch_submission/ParallelKepler.bsub
           
+- for executution via autoGui
 
+.. code-block:: console
 
-.. _ETS_A_4.10b_run_config:
+  >autoGui
+  
+once the GUI opens select load workflow or load parameter file. You can create a parameter file by loading the standard 
+workflow released with the kepler version and the n chosing the option from the top menu 'save parameter file'.
+The use of autoGui is strongly suggested as worklows are large xml files while parameter files are small and do not take all your disk space. Moreover parameter files can be loaded in any version of ETS-5 by opening the standard worklow included in the released.
+
 
 Configuring the ETS run
 =======================
