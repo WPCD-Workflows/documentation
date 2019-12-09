@@ -50,7 +50,7 @@ to Kepler with all the WPCD actors embedded in it.
 
   >svn co https://gforge6.eufus.eu/svn/keplerworkflows/tags/ETS_4.10b.10_v5.5.0
 
-The above commands requires enabled access to GFORGE (if you are a simple user you need to get access to GFORGE enabled).
+The above commands requires enabled access to GFORGE (if you are a user you might need to apply for access to GFORGE).
 
 **Plotting routines such as kplots can be found under** 
 
