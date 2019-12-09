@@ -40,12 +40,14 @@ to Kepler with all the WPCD actors embedded in it.
 **This can be done by executing the following command**
 
 .. code-block:: console
+
   >install_kepler.sh ets_v550 trunk/ETS_4.10b.10_v5.5.0/central "dressed central kepler v5.5.0"
   >switch_to_kepler.sh ets_v550
 
 **For loading the Workflow+tools(import data, postprocessing):**
 
 .. code-block:: console
+
   >svn co https://gforge6.eufus.eu/svn/keplerworkflows/tags/ETS_4.10b.10_v5.5.0
 
 The above commands requires enabled access to GFORGE (if you are a simple user you need to get access to GFORGE enabled).
