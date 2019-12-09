@@ -83,17 +83,17 @@ ETS releases
 
 ETS release 5.5.0 is installed on the Gateway. 
 
- Quick installation instructions (to update your environment) are available here:
+Quick installation instructions (to update your environment) are available here:
 
- https://portal.eufus.eu/twiki/bin/view/Main/Installation_of_latest_kepler_release
+https://portal.eufus.eu/twiki/bin/view/Main/Installation_of_latest_kepler_release
 
-  Detailed instructions are available here:
+Detailed instructions are available here:
 
- https://portal.eufus.eu/twiki/bin/view/Main/User_Guide_accessing_JET_data
+https://portal.eufus.eu/twiki/bin/view/Main/User_Guide_accessing_JET_data
 
- List of modifications (as compared to the previous release) is available here:
+List of modifications (as compared to the previous release) is available here:
 
- https://portal.eufus.eu/twiki/bin/view/Main/Updates_550
+https://portal.eufus.eu/twiki/bin/view/Main/Updates_550
 
 
 ETS verification and validation
