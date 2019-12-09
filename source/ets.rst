@@ -34,21 +34,23 @@ will be saved under the JET database (even if you are simulating TCV!!).
 
 The remaining commands are JAVA options for running Kepler and setting of MPI useful for running parallel actors.
 
-If it is the first time you run ETS then you will need to install your first 'dressed' kepler version which corresponds
+If it is the first time you run ETS then you will need to install your first 'dressed' Kepler version which corresponds
 to Kepler with all the WPCD actors embedded in it.
 
-This can be done by executing the following command
+**This can be done by executing the following command**
 
-install_kepler.sh ets_v550 trunk/ETS_4.10b.10_v5.5.0/central "dressed central kepler v5.5.0"
-switch_to_kepler.sh ets_v550
+.. code-block:: console
+  >install_kepler.sh ets_v550 trunk/ETS_4.10b.10_v5.5.0/central "dressed central kepler v5.5.0"
+  >switch_to_kepler.sh ets_v550
 
-For loading the Workflow+tools(import data, postprocessing):
-svn co https://gforge6.eufus.eu/svn/keplerworkflows/tags/ETS_4.10b.10_v5.5.0
+**For loading the Workflow+tools(import data, postprocessing):**
+.. code-block:: console
+  >svn co https://gforge6.eufus.eu/svn/keplerworkflows/tags/ETS_4.10b.10_v5.5.0
 
-The above commands requires enabled access to GFORGE.
-Plotting routines such as kplots can be found under 
-
-cd $KEPLER 
+The above commands requires enabled access to GFORGE (if you are a simple user you need to get access to GFORGE enabled).
+**Plotting routines such as kplots can be found under** 
+.. code-block:: console
+  >cd $KEPLER 
 
 You are now ready to start ETS!!
 
