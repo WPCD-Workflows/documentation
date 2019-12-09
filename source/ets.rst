@@ -124,24 +124,6 @@ ways tio execute it:
                 
       >kepler.sh workflow_path/workflow_name.xml
           
-
--  For execution in none GUI mode:
-
-.. code-block:: console
-
-      >kepler.sh -runwf -nogui -redirectgui $EU-IMHOME/some_dir_name workflow_path/workflow_name.xml
-          
-
--  For execution in batch mode:
-   it is essential to keep the workflow inside your $EU-IMWORK area
-
-   it is essential to switch to scripts/R2.2 module
-
-.. code-block:: console
-
-      >module switch scripts/R2.2
-      >submit_batch_kepler.sh run_dircetory 1 $EU-IMWORK/workflow_path/workflow_name.xml $EU-IMSCRIPTDIR/batch_submission/ParallelKepler.bsub
-          
 - for executution via autoGui
 
 .. code-block:: console
