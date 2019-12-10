@@ -62,7 +62,7 @@ You are now ready to start ETS!!
 
 **The latest version of ETS-5 is v5.5.0 (09/12/2019)**
 
-To launch ETS-5 just type
+To launch Kepler and load the ETS-5 workflow just type
 
 .. code-block:: console
 
@@ -74,6 +74,7 @@ or if you like to see the the log messages printed on the scree while ETS runs
 
   >kepler.sh -nolog
 
+Once the Kepler canvas opens, chose the option 'load workflow' from the File menu
 A video showing how to run and set up ETS-5 can be viewed here
 
 https://www.youtube.com/watch?v=dv427_XOFf4&t=87s
