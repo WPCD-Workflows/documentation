@@ -74,7 +74,9 @@ or if you like to see the the log messages printed on the scree while ETS runs
 
   >kepler.sh -nolog
 
-Once the Kepler canvas opens, chose the option 'load workflow' from the File menu
+Once the Kepler canvas opens, chose the option 'load workflow' from the File menu and select the workflow 
+you would like to load. The recommendation is to use the ETS workflow released with the version release procedure and then upload your parameter settings via the parameter file. See the option - running ETS with autoGui
+
 A video showing how to run and set up ETS-5 can be viewed here
 
 https://www.youtube.com/watch?v=dv427_XOFf4&t=87s
