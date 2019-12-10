@@ -84,7 +84,7 @@ ETS releases
 
 ETS release 5.5.0 is installed on the Gateway. 
 
-Quick installation instructions (to update your environment) are available here:
+Quick installation instructions (to update your environment) are available here (password protected areas):
 
 https://portal.eufus.eu/twiki/bin/view/Main/Installation_of_latest_kepler_release
 
