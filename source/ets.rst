@@ -19,15 +19,15 @@ needs to be set up as ITM environment.
 
   >module purge
   >module load cineca
-  >module load itmenv/ETS_4.10b.10_v5.4.0
+  >module load itmenv/ETS_4.10b.10_v5.5.0
   >source $ITMSCRIPTDIR/ITMv2.sh JET
   >export ITM_KEPLER_DIR=$ITMWORK/my_keplers
   >export _JAVA_OPTIONS=-Dsun.java2d.xrender=false
   >export I_MPI_FABRICS=shm
   >export _JAVA_OPTIONS="-Xss20m -Xms4g -Xmx8g -Dsun.java2d.xrender=false"
 
-The command 'module load itmenv/ETS...' loads the itmenv environment and in particular in the case above the ETS / Kepler version 5.4.0
-To load a different version just change the number e.g. v5.5.0
+The command 'module load itmenv/ETS...' loads the itmenv environment and in particular in the case above the ETS / Kepler version 5.5.0
+To load a different version just change the number e.g. v5.4.0
 
 The $ITMSCRIPTDIR/ITMv2.sh JET command will set up your local database folder to 'JET'. This means that any simulation done with ETS
 will be saved in the JET folder (even if you are simulating TCV!!). If you would like to simulate any other Tokamak, type again the command and change JET with e.g. AUG.
