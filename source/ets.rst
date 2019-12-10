@@ -904,16 +904,16 @@ To activate the SCENARIO output:
 .. figure:: images/ets_scenario.png
    :align: center
 
-   
-.. _ETS_A_4.10b_visualization:
 
-Visualization
---------------
+.. _ETS_A_4.10a_visualization:
+
+Visualization during the run
+----------------------------
 
 There is a number tools visualizing the ETS run.
 
-Multiple Tab Display (ETSviz.py)
---------------------------------
+Multiple Tab Display
+~~~~~~~~~~~~~~~~~~~~
 
 The display appeares automaticaly when the ETS workflow is launched. It
 displays diagnostic text messages from the workflow on following topics:
@@ -923,8 +923,21 @@ displays diagnostic text messages from the workflow on following topics:
    CURRENT
 -  Time evolution
 -  Convergence of iteratinos within the time step
--  HCD settings
+-  IMP5HCD settings
 -  Power used by IMP5HCD actors durung the run
+
+Also the error messages from execution of the workflow will be displayed
+here.
+
+.. figure:: images/ets_visual1_a.png
+   :align: center
+   
+ETSviz
+~~~~~~
+
+ETSviz is a python visualization tool with a graphical interphase that shows during the run the calculated kinetic 
+profiles evolution, particle energy sources and sinks, equilibrium evolution and other useful infoirmnation.
+ETSviz appears automatically during the ETS run. If you would like to launch ETSviz you can find the script in $KEPLER/kplots
 
 
 .. _ETS_A_4.10b_list_actors:
@@ -1198,36 +1211,6 @@ plasmacomposition, PowerFromArray, PowerModulation, profilesdatabase,
 readjustprof, sawupdate_slice, scaleprof, sourcecombiner,
 sourcedatabase, transportcombiner, transportdatabase, wallFiller and
 waves2sources. 
-
-   
-
-.. _ETS_A_4.10a_visualization:
-
-Visualization during the run
-----------------------------
-
-There is a number tools visualizing the ETS run.
-
-Multiple Tab Display
-~~~~~~~~~~~~~~~~~~~~
-
-The display appeares automaticaly when the ETS workflow is launched. It
-displays diagnostic text messages from the workflow on following topics:
-
--  Input data statement
--  Iterations to check the initial convergence between EQUILIBRIUM and
-   CURRENT
--  Time evolution
--  Convergence of iteratinos within the time step
--  IMP5HCD settings
--  Power used by IMP5HCD actors durung the run
-
-Also the error messages from execution of the workflow will be displayed
-here.
-
-.. figure:: images/ets_visual1_a.png
-   :align: center
-
 
 
 *********************************************
