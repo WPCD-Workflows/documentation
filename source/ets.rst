@@ -30,7 +30,7 @@ The command 'module load itmenv/ETS...' loads the itmenv environment and in part
 To load a different version just change the number e.g. v5.5.0
 
 The $ITMSCRIPTDIR/ITMv2.sh JET command will set up the local database to JET. This means that any simulation done with ETS
-will be saved under the JET database (even if you are simulating TCV!!). 
+will be saved under the JET database (even if you are simulating TCV!!). If you would like to simulate any other Tokamak, type again the command and change JET with e.g. AUG.
 
 The remaining commands are JAVA options for running Kepler and setting of MPI useful for running parallel actors.
 
