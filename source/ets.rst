@@ -121,7 +121,7 @@ plasma.
 
 **Starting the workflow:**
 If you have the workflow already installed, there are several
-ways tio execute it:
+ways to execute it:
 
 -  For execution via kepler GUI:
    
