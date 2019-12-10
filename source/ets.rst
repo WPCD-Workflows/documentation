@@ -1264,8 +1264,7 @@ the set of main ion and impurity species. The IMP4DV actor should be
 invoked directly after the transport model actor in the workflow chain,
 if the model produces only fluxes or if the coefficients have to be
 modified with the flux given. Ambipolarity is done using IMP4imp if the
-coreimpurity CPO is used in the workflow. These auxiliary actors are
-described on the `auxiliary actors page. <#imp4_aux_actors>`__
+coreimpurity CPO is used in the workflow. 
 
 Particle Flux as an Example
 ===========================
