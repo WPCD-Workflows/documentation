@@ -8,6 +8,49 @@ IMASviz
 The :doc:`IMASViz <viz:index>` code is used for IMAS visualisation.
 
 
+IMASgo!
+-------
+
+IMASgo! is an OMFIT module for the mapping of experimental data and machine descriptions into an IMAS database. IMASgo! builds upon the OMFITprofiles, KineticEFIT and TRANSP modules. Any tokamak for which the above modules have been configured can use IMASgo! to map its data into IMAS. At present IMASgo! can write IDSs on the ITER server and on the WPCD Gateway. An account on one of these servers is necessary to complete the workflow in IMASgo! IMASgo! workflow starts with reading the equilibrium from the Tokamak database; kinetic measurements such as Thomson Scattering, ECE, Charge Exchange will be then mapped on the equilibrium and fitted with a variety of available methods. The last step is to export the experimental data, the fitted profiles and the machine description of NBI and RF antennas in the IMAS database.
+Below are the step by step instructions on how to launch the IMASgo! module and perform the mapping for JET. Some of the files used by IMASgo! for the mapping of the NBI / ICRH machine data are only accessible from inside the JET network hence this example has been run on Heimdall
+
+On an Heimdall terminal type
+
+.. code-block:: console
+
+   >module purge
+   >module load omfit
+   >omfit
+
+The OMFIT framework will be launched
+Click on continue to OMFIT. From the ‘File’ drop menu select ‘Import module …’  
+
+Select the IMASgo module from the list of available modules. Double click on IMASgo. The module will be loaded in OMFIT and ready to be launched
+
+Double click on IMASgo in the View1 list of loaded modules
+
+A GUI will be displayed. In this case the device choses is JET and the pulse and Times to be mapped appear in the next two fields at the top of the GUI.
+From the drop menu Operation chose equilibrium from PPF
+It is possible to choose amongst different EFIT++ option: run EFIT++, load the chain 1 magnetics only EFIT, load the pressure constraint equilibrium in the ‘Equilibrium Source DDA’ drop menu and selecting the PPF UID and sequence number
+Click on Generate equilibrium. 
+Once the step is completed
+Click on the tab ‘Profiles’ and select 1D fits from the drop menu Workflow
+ Click  the Fetch tab and select which diagnostics you would like to upload data from. Click on the fetch and map all data button
+In the Slice tab select the time averaging and click slice all data
+In the select tab you can visualise the sliced profiles and deselect profiles in advance of the the fitting step. Once the selected profiles are ok move to the fit tab and select the fitting method for all the data that need fitting. Chose the default fitting parameters or modify them. Then click on fit 1D and plot.
+Once all the data are fitted move to the postfit tab and calculate the derived quantities.
+The postfit tab allows also for manipulation of the profile in order to meet certain constraints e.g. separatrix values.
+The plot tab allows to have a final look at the data before they are saved in the database
+Click on the Machine tab and click on ‘Generate Machine Description’. This step will provide the data for the NBI and ICRH IDSs.
+
+The final step is to export the data.
+Click on the Export tab and on Generate OMAS.
+This will save the data in memory into the OMAS datastructure. Then set up the server, shot number, run number and
+Hit save ODS to IMAS.
+An entry will be created in the user’s IMAS database on the Gateway for JET/92436/107 as well as the same entry for the ITM database (CPOs).
+Two videos showing an example of use of IMASgo! to fetch and map data of JET pulse 92054 (NBI only) and run ETS with the same data are available on YouTube at
+
+
 
 
 .. _isip_fc2k:
