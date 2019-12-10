@@ -948,8 +948,8 @@ List of Actors
 
 .. _ETS_A_4.10b_list_actors_Equilibrium:
 
-Some Equilibrium actors
------------------------
+Equilibrium actors
+------------------
 
 +--------------+-----------------+-----------------+--------------------------+
 | Code name    | Code Category   | Contact persons | Short description        |
@@ -965,13 +965,13 @@ Some Equilibrium actors
 |              |                 |                 | | Communications 97      | 
 |              |                 |                 | | (1996) 219-260         | 
 +--------------+-----------------+-----------------+--------------------------+
-| emeq         | | G-S dolver    | Rui Coelho      |                          |
+| emeq         | | G-S dolver    | Rui Coelho      |   fix-b equilibrium      |
 +--------------+-----------------+-----------------+--------------------------+
-| spider       | | G-S dolver    | E. Fable        |                          |
+| spider       | | G-S dolver    | E. Fable        | ASTRA fix-B equilibrium  |
 +--------------+-----------------+-----------------+--------------------------+
-| helena       | | G-S dolver    | G. Huijsmans    |                          |
+| helena       | | G-S dolver    | G. Huijsmans    |     fix-B equilibrium    |
 +--------------+-----------------+-----------------+--------------------------+
-| spider_imp12 | | G-S dolver    | R. Coelho       |                          |
+| spider_imp12 | | G-S dolver    | R. Coelho       | ASTRA fix-b equilibrium  |
 +--------------+-----------------+-----------------+--------------------------+
 
 .. _ETS_A_4.10b_list_actors_CoreTransport:
@@ -982,43 +982,45 @@ Core transport actors
 +--------------------+-------------------+-----------------+--------------------------+
 | Code name          | Code Category     | Contact persons | Short description        |
 +====================+===================+=================+==========================+
-| ETS                | Transport solver  | Denis Kalupin   |                          |
-+--------------------+-------------------+-----------------+--------------------------+
-| BohmGB             | | Bohm/gyro-Bohm  | /               |                          |
+| BohmGB             | | Bohm/gyro-Bohm  | A. Taroni       |    Analytical model      |
 |                    | | transport       |                 |                          |
 |                    | | coefficients    |                 |                          |
 +--------------------+-------------------+-----------------+--------------------------+
-| TCI/Weiland        | | Transport       | Pär Strand      |                          |
-|                    | | coefficient from|                 |                          |
+| CDBM               | | CDBM            | M. Honda        |    Analytical model      |
+|                    | | transport       |                 |                          |
 |                    | | coefficients    |                 |                          |
 +--------------------+-------------------+-----------------+--------------------------+
-| TCI/GLF23          | | Transport       | /               |                          |
-|                    | | coefficient from|                 |                          |
+| Weiland            | | Transport       | Pär Strand      |                          |
+|                    | | coefficient from|                 |       Fluid model        |
+|                    | | fluid turbulence|                 |                          |
++--------------------+-------------------+-----------------+--------------------------+
+| GLF23              | | Transport       |                 |                          |
+|                    | | coefficient from| G. Stabler (GA) |     Gyrokinetic model    |
 |                    | | drift wave      |                 |                          |
 |                    | | turbulence      |                 |                          |
 +--------------------+-------------------+-----------------+--------------------------+
-| TCI/RITM           | | Transport       | /               |                          |
-|                    | | coefficient from|                 |                          |
+| RITM               | | Transport       |  Pär Strand     |                          |
+|                    | | coefficient from|                 |   Gyrokinetic model      |
 |                    | | drift wave      |                 |                          |
 |                    | | turbulence      |                 |                          |
 +--------------------+-------------------+-----------------+--------------------------+
-| | TCI/MMM          | | Transport       | /               |                          |
-| |                  | | coefficient from|                 |                          |
-| |                  | | drift wave      |                 |                          |
+| MMM                | | Transport       | PPPL            |                          |
+|                    | | coefficient from|                 |   Gyrokinetic model      |
+|                    | | drift wave      |                 |                          |
 |                    | | turbulence      |                 |                          |
 +--------------------+-------------------+-----------------+--------------------------+
-| | TCI/EDWM         | | Transport       | /               |                          |
-| |                  | | coefficient from|                 |                          |
-| |                  | | drift wave      |                 |                          |
+| EDWM/EDWMZ         | | Transport       | Pär Strand      |                          |
+|                    | | coefficient from|                 |       multi-ion model    |
+|                    | | drift wave      |                 |                          |
 |                    | | turbulence      |                 |                          |
 +--------------------+-------------------+-----------------+--------------------------+
-| | nclass           | | Neoclassical    | Pär Strand      |                          |
-| |                  | | transport       |                 |                          |
-| |                  | | coefficients    |                 |                          |
+| nclass             | | Neoclassical    | Pär Strand      |   Neoclassical model     |
+|                    | | transport       |                 |                          |
+|                    | | coefficients    |                 |                          |
 +--------------------+-------------------+-----------------+--------------------------+
-| | neos             | | Neoclassical    | Olivier Sauter  |                          |
-| |                  | | transport       |                 |                          |
-| |                  | | coefficients    |                 |                          |
+| neos               | | Neoclassical    | Olivier Sauter  |                          |
+|                    | | transport       |                 |   Neoclassical model     |
+|                    | | coefficients    |                 |                          |
 +--------------------+-------------------+-----------------+--------------------------+
 | neowesz            | | Neoclassical    | Bruce Scott     | | Neoclassical transport |
 |                    | | transport       |                 | | coefficients based on  |
@@ -1029,25 +1031,24 @@ Core transport actors
 |                    | | transport       |                 |                          |
 |                    | | coefficients    |                 |                          |
 +--------------------+-------------------+-----------------+--------------------------+
-| spitzer            |                   |                 |                          |
+| spitzer            | |Resistivity      | Spitzer         | Resistivity model        |
 +--------------------+-------------------+-----------------+--------------------------+
-| ETBtransport       |                   |                 |                          |
+| TGLF               | | Transport       | G. Stabler      |                          |
+|                    | | coefficient from|                 |   Gyrokinetic model      |
+|                    | | drift wave      |                 |                          |
+|                    | | turbulence      |                 |                          |
 +--------------------+-------------------+-----------------+--------------------------+
-| coronal            |                   |                 |                          |
+| NEO                | | Transport       | E. Belli        |                          |
+|                    | | coefficient from|                 |   Gyrokinetic model      |
+|                    | | drift kinetic   |                 |                          |
+|                    | | equations       |                 |                          |
 +--------------------+-------------------+-----------------+--------------------------+
-| synchrotronsources |                   |                 |                          |
-+--------------------+-------------------+-----------------+--------------------------+
-| TGLF               |                   | G. Stabler      |                          |
-+--------------------+-------------------+-----------------+--------------------------+
-| NEO               |                    | E. Belli        |                          |
-+--------------------+-------------------+-----------------+--------------------------+
-| QualiKiz           |                   | J. Citrin.      |                          |
+| QualiKiz           | | Transport       | J. Citrin       |                          |
+|                    | | coefficient from|                 |   Gyrokinetic model      |
+|                    | | drift wave      |                 |                          |
+|                    | | turbulence      |                 |                          |
 +--------------------+-------------------+-----------------+--------------------------+
 
-.. _ETS_A_4.10b_list_actors_Edge:
-
-Edge transport actors
----------------------
 
 .. _ETS_A_4.10b_list_actors_HCD:
 
@@ -1075,7 +1076,7 @@ Heating and current drive actors
 |               |                 |                 | | electron cyclotron heating & current       |
 |               |                 |                 | | drive calculations in tokamaks.            |
 +---------------+-----------------+-----------------+----------------------------------------------+
-| bbnbi         | NBI/source      | Otto Asunta     | | Calculate the deposition rates of neutrals |
+| bbnbi         | NBI/source      | Seppo Sipila    | | Calculate the deposition rates of neutrals |
 |               |                 |                 | | beam particles, i.e. the input source for  |
 |               |                 |                 | | Fokker-Planck solvers (not the heating and |
 |               |                 |                 | | current drive). Note that the number of    |
@@ -1092,6 +1093,10 @@ Heating and current drive actors
 +---------------+-----------------+-----------------+----------------------------------------------+
 | nuclearsim    | nuclear/source  | Thomas Johnson  | | Simple code for nuclear sources from       |
 |               |                 |                 | | thermal/thermal reactions. Code-parameter  |
+|               |                 |                 | | documentation can be found                 |
++---------------+-----------------+-----------------+----------------------------------------------+
+| afsi          | nuclear/source  | Thomas Johnson  | | Complete code for nuclear sources from     |
+|               |                 |                 | | all reactions. Code-parameter              |
 |               |                 |                 | | documentation can be found                 |
 +---------------+-----------------+-----------------+----------------------------------------------+
 | nbisim        | | NBI, alphas/  | Thomas Johnson  | | Simple Fokker-Planck code calculating the  |
