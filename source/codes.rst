@@ -50,7 +50,9 @@ Hit save ODS to IMAS.
 An entry will be created in the user’s IMAS database on the Gateway for JET/92436/107 as well as the same entry for the ITM database (CPOs).
 Two videos showing an example of use of IMASgo! to fetch and map data of JET pulse 92054 (NBI only) and run ETS with the same data are available on YouTube at
 
+https://www.youtube.com/watch?v=8bPSjEy2dNk&t=8s
 
+https://www.youtube.com/watch?v=dv427_XOFf4&t=287s
 
 
 .. _isip_fc2k:
