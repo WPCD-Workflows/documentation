@@ -923,8 +923,8 @@ displays diagnostic text messages from the workflow on following topics:
    CURRENT
 -  Time evolution
 -  Convergence of iteratinos within the time step
--  IMP5HCD settings
--  Power used by IMP5HCD actors durung the run
+-  HCD settings
+-  Power used by HCD actors durung the run
 
 Also the error messages from execution of the workflow will be displayed
 here.
