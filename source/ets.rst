@@ -965,11 +965,11 @@ Equilibrium actors
 |              |                 |                 | | Communications 97      | 
 |              |                 |                 | | (1996) 219-260         | 
 +--------------+-----------------+-----------------+--------------------------+
-| emeq         | | G-S dolver    | Rui Coelho      |   fix-b equilibrium      |
+| emeq         | | G-S solver    | Rui Coelho      |   fix-b equilibrium      |
 +--------------+-----------------+-----------------+--------------------------+
-| spider       | | G-S dolver    | E. Fable        | ASTRA fix-B equilibrium  |
+| spider       | | G-S solver    | E. Fable        | ASTRA fix-B equilibrium  |
 +--------------+-----------------+-----------------+--------------------------+
-| helena       | | G-S dolver    | G. Huijsmans    |     fix-B equilibrium    |
+| helena       | | G-S solver    | G. Huijsmans    |     fix-B equilibrium    |
 +--------------+-----------------+-----------------+--------------------------+
 | spider_imp12 | | G-S dolver    | R. Coelho       | ASTRA fix-b equilibrium  |
 +--------------+-----------------+-----------------+--------------------------+
