@@ -557,8 +557,6 @@ switch it **OFF**
 Individual multipliers for all channels shall be specified on the lower
 level through the code parameters of Transport Combiner
 
-The list of available transport models can be found
-`here <https://www.eufus.eu/documentation/EU-IM/html/ets_status.html>`__.
 
 .. figure:: images/ets_transport2.png
    :align: center
