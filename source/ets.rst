@@ -945,31 +945,34 @@ ETSviz appears automatically during the ETS run. If you would like to launch ETS
 List of Actors
 ==============
 
-UNDER DEVELOPMENT
 
 .. _ETS_A_4.10b_list_actors_Equilibrium:
 
 Some Equilibrium actors
 -----------------------
 
-+------------+-----------------+-----------------+--------------------------+
-| Code name  | Code Category   | Contact persons | Short description        |
-+============+=================+=================+==========================+
-|  chease    | | Grad-Shafranov| Olivier Sauter  | | Chease is a fixed      |  
-|            | | solver        |                 | | boundary Grad-Shafranov| 
-|            |                 |                 | | solver based on cubic  | 
-|            |                 |                 | | hermitian finite       | 
-|            |                 |                 | | elements see           | 
-|            |                 |                 | | H. Lütjens, A.         | 
-|            |                 |                 | | Bondeson, O. Sauter,   | 
-|            |                 |                 | | Computer Physics       | 
-|            |                 |                 | | Communications 97      | 
-|            |                 |                 | | (1996) 219-260         | 
-+------------+-----------------+-----------------+--------------------------+
-| emeq       | /               | /               |                          |
-+------------+-----------------+-----------------+--------------------------+
-| spider     | /               | /               |                          |
-+------------+-----------------+-----------------+--------------------------+
++--------------+-----------------+-----------------+--------------------------+
+| Code name    | Code Category   | Contact persons | Short description        |
++==============+=================+=================+==========================+
+|  chease      | | Grad-Shafranov| Olivier Sauter  | | Chease is a fixed      |  
+|              | | solver        |                 | | boundary Grad-Shafranov| 
+|              |                 |                 | | solver based on cubic  | 
+|              |                 |                 | | hermitian finite       | 
+|              |                 |                 | | elements see           | 
+|              |                 |                 | | H. Lütjens, A.         | 
+|              |                 |                 | | Bondeson, O. Sauter,   | 
+|              |                 |                 | | Computer Physics       | 
+|              |                 |                 | | Communications 97      | 
+|              |                 |                 | | (1996) 219-260         | 
++--------------+-----------------+-----------------+--------------------------+
+| emeq         | | G-S dolver    | Rui Coelho      |                          |
++--------------+-----------------+-----------------+--------------------------+
+| spider       | | G-S dolver    | E. Fable        |                          |
++--------------+-----------------+-----------------+--------------------------+
+| helena       | | G-S dolver    | G. Huijsmans    |                          |
++--------------+-----------------+-----------------+--------------------------+
+| spider_imp12 | | G-S dolver    | R. Coelho       |                          |
++--------------+-----------------+-----------------+--------------------------+
 
 .. _ETS_A_4.10b_list_actors_CoreTransport:
 
