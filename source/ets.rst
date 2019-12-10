@@ -1031,7 +1031,7 @@ Core transport actors
 |                    | | transport       |                 |                          |
 |                    | | coefficients    |                 |                          |
 +--------------------+-------------------+-----------------+--------------------------+
-| spitzer            | |Resistivity      | Spitzer         | Resistivity model        |
+| spitzer            | | Resistivity     | Spitzer         | Resistivity model        |
 +--------------------+-------------------+-----------------+--------------------------+
 | TGLF               | | Transport       | G. Stabler      |                          |
 |                    | | coefficient from|                 |   Gyrokinetic model      |
