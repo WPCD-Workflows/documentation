@@ -44,7 +44,7 @@ to Kepler with all the WPCD actors embedded in it.
   >install_kepler.sh ets_v550 trunk/ETS_4.10b.10_v5.5.0/central "dressed central kepler v5.5.0"
   >switch_to_kepler.sh ets_v550
 
-**For loading the Workflow+tools(import data, postprocessing):**
+**For loading the Workflow+tools (import data, postprocessing):**
 
 .. code-block:: console
 
@@ -68,13 +68,14 @@ To launch ETS-5 just type
 
   >kepler.sh 
   
-or 
+or if you like to see the the log messages printed on the scree while ETS runs
 
 .. code-block:: console
 
   >kepler.sh -nolog
 
-if you like to see the the log messages printed on the scree while ETS runs
+A video showing how to run and set up ETS-5 can be viewed here
+https://www.youtube.com/watch?v=dv427_XOFf4&t=87s
 
 
 ETS releases
