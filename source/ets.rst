@@ -161,23 +161,8 @@ General Parameters
    - input run number
 -  RUN_OUT
    - output run number
--  NUMERICAL_SOLVER
-   - choice of the numerics solving transport equations (RECOMENDED
-   SELECTION: 3 or 4)
-
-Space resolution
-~~~~~~~~~~~~~~~~
-
--  NRHO
-   - number of radial points for transport equations
--  NPSI
-   - number of points for equilibrium 1-D arrays
--  NEQ_DIM1
-   - number of points for equilibrium 2-D arrays, first index
--  NEQ_DIM2
-   - number of points for equilibrium 2-D arrays, second index
--  NEQ_MAX_NPOINTS
-   - maximum number of points for equilibrium boundary
+-  RUNWORK
+   - work directory number (tipically 800)
 
 Time resolution
 ~~~~~~~~~~~~~~~
@@ -188,6 +173,56 @@ Time resolution
    - Computations start time
 -  TEND
    - Computattions end time
+   
+Transport
+~~~~~~~~~
+
+-  NRHO
+   - number of radial points for transport equations
+
+
+Equilibrium
+~~~~~~~~~~~
+
+-  NPSI
+   - number of points for equilibrium 1-D arrays
+-  NEQ_DIM1
+   - number of points for equilibrium 2-D arrays, first index
+-  NEQ_DIM2
+   - number of points for equilibrium 2-D arrays, second index
+-  NEQ_MAX_NPOINTS
+   - maximum number of points for equilibrium boundary
+   
+   
+Numerics
+~~~~~~~~
+
+-  NUMERICAL_SOLVER
+   - choice of the numerics solving transport equations (RECOMENDED
+   SELECTION: 3 or 4)
+-  EXPLICIT HYPER DIFFUSIVITY 
+   - used in the solution of the transport equations
+- IMPLICIT HYPER DIFFUSIVITY
+   - used in the solution of the transport equations
+- MINIMUM TIME STEP
+   -  Time step used in the transport solver
+- MAXIMUMX TIME STEP
+  - Time step used in the transport solver 
+
+
+Equilibrium
+~~~~~~~~~~~
+
+-  NPSI
+   - number of points for equilibrium 1-D arrays
+-  NEQ_DIM1
+   - number of points for equilibrium 2-D arrays, first index
+-  NEQ_DIM2
+   - number of points for equilibrium 2-D arrays, second index
+-  NEQ_MAX_NPOINTS
+   - maximum number of points for equilibrium boundary
+
+
 
 .. figure:: images/ETS_Main_Param.png
    :align: center
