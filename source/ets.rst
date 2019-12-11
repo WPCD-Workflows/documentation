@@ -428,7 +428,7 @@ used by the iterative scheme. To edit them do:
 -  choose your settings
 -  **Commit**
 
-.. figure:: images/ets_convergence1.png
+.. figure:: images/Convergence_Loop.png
    :align: center
 
 Switches in the field *FREQUENCY OF CALLING THE PHYSICS ACTORS* define
