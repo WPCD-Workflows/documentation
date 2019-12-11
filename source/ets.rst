@@ -137,7 +137,7 @@ ways to execute it:
   
 once the GUI opens select load workflow or load parameter file. You can create a parameter file by loading the standard 
 workflow released with the Kepler version and then chosing the option from the top menu 'save parameter file'.
-The use of autoGui is strongly recommanded as worklows are large xml files while parameter files are small and do not take all your disk space. Moreover parameter files can be loaded in any version of ETS-5 by opening the standard worklow included in the release.
+The use of autoGui is strongly recommanded as worklows are large xml files while parameter files are small and do not take all your disk space. Moreover parameter files can be loaded in any version of ETS-5 by opening the standard workflow included in the release.
 
 
 Configuring the ETS run
