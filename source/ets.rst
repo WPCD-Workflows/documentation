@@ -432,11 +432,9 @@ used by the iterative scheme. To edit them do:
    :align: center
 
 Switches in the field *FREQUENCY OF CALLING THE PHYSICS ACTORS* define
-how many times the the actors of a certain cathegory (equilibrium,
-transport, etc.) should be called in a single time step.
-By selecting *YES* all actors of this cathegory will be called every iteration
-By selecting *NO* all actors of this cathegory will be called only ones in
-a time step
+how many times the actors of a certain cathegory (equilibrium,
+transport, etc.) should be called.
+
 
 Switches and parameters in the field *CONTROL PARAMETERS* define how
 iterations are done
