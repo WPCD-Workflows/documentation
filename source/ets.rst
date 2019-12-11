@@ -203,7 +203,7 @@ Numerics
 -  EXPLICIT HYPER DIFFUSIVITY 
    - Constant diffusivity used in the stabilization scheme needed to deal with stiff transport models
 -  IMPLICIT HYPER DIFFUSIVITY
-   - Same as above but in the implicit part of the solver 
+   - Same as above used in the implicit part of the solver 
 -  MINIMUM TIME STEP
    -  Time step used in the transport solver
 -  MAXIMUMX TIME STEP
