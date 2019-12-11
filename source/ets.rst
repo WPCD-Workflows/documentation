@@ -735,7 +735,7 @@ ticking the box in front of it, and select the code to simulate it.
    :align: center
 
 
-You also need to configure initial IMP5HCD settings. Therefore please:
+You also need to configure initial HCD settings. Therefore please:
 
 -  right click on the box BEFORE THE TIME EVOLUTION
 -  select **Open Actor**
