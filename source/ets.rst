@@ -665,8 +665,7 @@ LOOP composite actor. Therefore please do:
 .. figure:: images/ets_mhd.png
    :align: center
 
-At the moment ETS allows only for NTM to be activated. The sawtooth
-module is expected to be deployed before EU-IM Code Camp in Slovenia.
+At the moment ETS allows only for NTM to be activated. 
 
 User can ajust the following NTM settings:
 
