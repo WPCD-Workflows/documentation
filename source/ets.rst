@@ -205,9 +205,9 @@ Numerics
 -  IMPLICIT HYPER DIFFUSIVITY
    - Same as above used in the implicit part of the solver 
 -  MINIMUM TIME STEP
-   -  Time step used in the transport solver
+   -  Minimum time step allowed in the transport solver
 -  MAXIMUMX TIME STEP
-   - Time step used in the transport solver 
+   - Maximum time step allowed in the transport solver 
 
 
 Equilibrium
