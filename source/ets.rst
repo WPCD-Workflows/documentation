@@ -969,7 +969,10 @@ ETSviz is a python visualization tool with a graphical interphase that shows dur
 profiles evolution, particle energy sources and sinks, equilibrium evolution and other useful infoirmnation.
 ETSviz appears automatically during the ETS run. If you would like to launch ETSviz you can find the script in $KEPLER/kplots
 
-
+.. figure:: images/ETSviz.png
+   :align: center
+   
+   
 .. _ETS_A_4.10b_list_actors:
 
 List of Actors
