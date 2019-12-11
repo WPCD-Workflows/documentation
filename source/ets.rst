@@ -189,7 +189,7 @@ Time resolution
 -  TEND
    - Computattions end time
 
-.. figure:: images/ets_config1.png
+.. figure:: images/ETSlogo.png
    :align: center
 
    
