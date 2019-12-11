@@ -201,9 +201,9 @@ Numerics
    - choice of the numerics solving transport equations (RECOMENDED
    SELECTION: 3 or 4)
 -  EXPLICIT HYPER DIFFUSIVITY 
-   - used in the solution of the transport equations
+   - Constant diffusivity used in the stabilization scheme needed to deal with stiff transport models
 -  IMPLICIT HYPER DIFFUSIVITY
-   - used in the solution of the transport equations
+   - Same as above but in the implicit part of the solver 
 -  MINIMUM TIME STEP
    -  Time step used in the transport solver
 -  MAXIMUMX TIME STEP
