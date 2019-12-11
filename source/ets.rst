@@ -140,6 +140,11 @@ workflow released with the Kepler version and then chosing the option from the t
 The use of autoGui is strongly recommanded as worklows are large xml files while parameter files are small and do not take all your disk space. Moreover parameter files can be loaded in any version of ETS-5 by opening the standard workflow included in the release.
 
 
+.. figure:: images/autoGui.png
+   :align: center
+   
+   
+
 Configuring the ETS run
 =======================
 
