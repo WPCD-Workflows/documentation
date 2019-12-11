@@ -202,12 +202,12 @@ Numerics
    SELECTION: 3 or 4)
 -  EXPLICIT HYPER DIFFUSIVITY 
    - used in the solution of the transport equations
-- IMPLICIT HYPER DIFFUSIVITY
+-  IMPLICIT HYPER DIFFUSIVITY
    - used in the solution of the transport equations
-- MINIMUM TIME STEP
+-  MINIMUM TIME STEP
    -  Time step used in the transport solver
-- MAXIMUMX TIME STEP
-  - Time step used in the transport solver 
+-  MAXIMUMX TIME STEP
+   - Time step used in the transport solver 
 
 
 Equilibrium
