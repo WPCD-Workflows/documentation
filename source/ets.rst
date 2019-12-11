@@ -1,5 +1,5 @@
 ################################
- Core Transport Simulator (ETS)
+ European Transport Simulator (ETS)
 ################################
 
 *****************
@@ -159,8 +159,6 @@ General Parameters
    - input shot number
 -  RUN_IN
    - input run number
--  SHOT_OUT
-   - output shot number
 -  RUN_OUT
    - output run number
 -  NUMERICAL_SOLVER
