@@ -914,11 +914,11 @@ Actuators
 ~~~~~~~~~
 
 At the top level of the workflow you can switch ON/OFF actuator for
-runaways
+Runaway Indicator (Runin) - this is **ON** by default. It only gives warning messages, and has no effect on the simulation results.
 
 -  right click on the box INSTANTANEOUS EVENTS & ACTUATORS
 -  select **Configure actor** to edit settings
--  Select actuator_runaways **ON** if you like to use them in your simulation
+-  Select actuator_runaways **OFF** if you'd like **not** to use Runaway Indicator in your simulation
 -  **Commit**
    
 .. _ETS_A_4.10b_scenario:
