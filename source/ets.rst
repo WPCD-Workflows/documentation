@@ -135,7 +135,7 @@ ways to execute it:
 
   >autoGui
   
-once the GUI opens select load workflow or load parameter file. You can create a parameter file by loading the standard 
+once the GUI opens select load workflow after which a parameter file can be loaded. You can create a parameter file by loading the standard 
 workflow released with the Kepler version and then chosing the option from the top menu 'save parameter file'.
 The use of autoGui is strongly recommanded as worklows are large xml files while parameter files are small and do not take all your disk space. Moreover parameter files can be loaded in any version of ETS-5 by opening the standard workflow included in the release.
 
@@ -167,7 +167,7 @@ General Parameters
 -  RUN_OUT
    - output run number
 -  RUNWORK
-   - work directory number (tipically 800)
+   - work directory number (typically 800)
 
 Time resolution
 ~~~~~~~~~~~~~~~
@@ -177,7 +177,7 @@ Time resolution
 -  TBEGIN
    - Computations start time
 -  TEND
-   - Computattions end time
+   - Computations end time
    
 Transport
 ~~~~~~~~~
@@ -211,7 +211,7 @@ Numerics
    - Same as above used in the implicit part of the solver 
 -  MINIMUM TIME STEP
    -  Minimum time step allowed in the transport solver
--  MAXIMUMX TIME STEP
+-  MAXIMUM TIME STEP
    - Maximum time step allowed in the transport solver 
 
 
