@@ -430,7 +430,9 @@ NBI Fokker-Planck codes
 Runaway electrons
 ^^^^^^^^^^^^^^^^^
 
--  Runafluid, G. Pokol
+-  Runaway Indicator (Runin), G. Pokol, et al (BME): Runin has been developed to provide an indication for when to expect runaway tail formation. The source code is stored in the `OSREP project <https://github.com/osrep>`. 
+
+-  Runaway Fluid (Runafluid), G. Pokol, et al (BME): Porpose of Runafluid is to provide a non-inductive current due to runaway electrons using computationaly cheap analytical estimates of ruraway electron growth rates and transport. The source code is stored in the `OSREP project <https://github.com/osrep>`. 
 
 .. _imp5_listcodes_Advanced_Fokker-Planck:
 
