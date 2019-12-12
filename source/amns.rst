@@ -79,6 +79,8 @@ Some papers:
    physics (pdf), by D.P. Coster, X. Bonnin, D. Reiter, A. Kukushkin, S.
    Gori, P. Krstic, P. Strand, L.-G. Eriksson and Contributors to the
    EFDA-TF-EU-IM
+   
+ - D. Tskhakaya, D. Coster and ITM-TF contributors, Contrib. Plasma Phys., 54 (4-6), 399–403 (2014)
 
 The present coding for the AMNS project is done in the gforge `amnsproto
 project <https://gforge6.eufus.eu/gf/project/amnsproto/>`__.
@@ -171,7 +173,8 @@ the call to EU-IM_AMNS_SETUP_TABLE are
 7.  ZE2: Effective Square Charge (ycd)
 8.  EIP: Effective Ionisation Potential (ecd)
 9.  some nuclear reactions
-10. ...
+10. Cross-sections of different processes
+11. ...
 
 The actual reactions are listed in the AMNS section.
 
