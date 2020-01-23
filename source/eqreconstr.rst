@@ -193,7 +193,7 @@ if it is the first time you go through this process you will need to create the 
 
    mkdir $ITMWORK/imas_kepler
 
-(the one below is the latest version of the dressed kepler containing all the actors for EQreconstruct, EQstabil and ETS-6)
+(the one below is the latest version of the dressed kepler containing all the actors for EQRECONSTRUCT, EQSTABIL and ETS-6)
 
 .. code-block:: console
 
