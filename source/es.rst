@@ -186,7 +186,7 @@ Actors involved
 |                       |                       |   Display window and    |
 |                       |                       | | workflow execution is |
 |                       |                       |   stopped. If the       |
-|                       |                       | | core_profile is           |
+|                       |                       | | core_profile is       |
 |                       |                       |   considered invalid a  |
 |                       |                       | | message is displayed  |
 |                       |                       |   on the Multi Tab      |
