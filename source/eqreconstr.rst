@@ -234,8 +234,8 @@ You are now ready to launch Kepler by typing
 load the EQRECONSTRUCT workflow from your eqstabil_workflow directory
 
 
-4. Setting up the Workflow and Actor parameters (under construction)
-====================================================================
+4. Setting up the Workflow and Actor parameters
+===============================================
 
 **I - Setting the workflow parameters**
 ---------------------------------------
@@ -297,8 +297,8 @@ actors please check their documentation `here
 
 .. _training:
 
-5. Test cases and self-oriented training (under construction)
-=============================================================
+5. Test cases and self-oriented training
+========================================
 
 Several test cases are available for testing, corresponding to different
 applications/examples. The itmdb files are found on the software release
