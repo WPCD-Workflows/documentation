@@ -36,11 +36,11 @@ The WPCD documentation and workflow concepts are copyright of the
 EUROfusion consortium.
 
              
-====================
- Indices and tables
-====================
+.. ====================
+   Indices and tables
+   ====================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   * :ref:`genindex`
+   * :ref:`modindex`
+   * :ref:`search`
 
