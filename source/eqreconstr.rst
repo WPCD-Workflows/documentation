@@ -324,8 +324,6 @@ folder under */tutorial*
 |  5   |           |       |       |     |                                     |
 +------+-----------+-------+-------+-----+-------------------------------------+
 
-`Guided Tutorial on EQRECONSTRUCT (under construction) <%ATTACHURL%/Tutorial_EQRECONSTRUCT.pdf>`__
-
 .. _activity:
 
 6. News and Recent activity
