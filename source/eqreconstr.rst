@@ -175,7 +175,7 @@ please refer to the SAVE SLICE parameter details.
 .. _installing:
 
 3. Installing and running the workflow
-==========================
+======================================
 
 Establish the IMAS environment by typing
 
