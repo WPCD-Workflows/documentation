@@ -206,12 +206,16 @@ execute the kepler_load instruction.
 
 Now you need to check out the workflow by typing (only for first time users)
 
-svn co --username g2mroma https://gforge6.eufus.eu/svn/eqstabil/tags/imas_3.25.0_4.4.0/workflows eqstabil_workflow
+.. code-block:: console
+
+   svn co --username g2mroma https://gforge6.eufus.eu/svn/eqstabil/tags/imas_3.25.0_4.4.0/workflows eqstabil_workflow
 
 
 Create the database folder with the name of the device you wish to run the equilibrium for
 
-imasdb JET
+.. code-block:: console
+
+   imasdb JET
 
 
 Retrieve the data for magnetic-only equilibrium by launching IMASviz or TCV2IDS
@@ -223,7 +227,9 @@ magnetics, pf_active, (pf_passive), (iron_core), wall
 
 You are now ready to launch Kepler by typing
 
-kepler
+.. code-block:: console
+
+   kepler
 
 load the EQRECONSTRUCT workflow from your eqstabil_workflow directory
 
