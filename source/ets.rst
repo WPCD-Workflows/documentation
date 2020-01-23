@@ -1,6 +1,6 @@
-################################
+###################################
  European Transport Simulator (ETS)
-################################
+###################################
 
 *****************
 ETS Documentation
@@ -1590,11 +1590,11 @@ running averaging.
 
 For transport modelling, the transport coefficients derived from a
 turbulence code should always be given in terms of `running exponential
-averages. <#imp4_averages>`__
+averages. <#imp4_exponential_averages>`__
 
 
 
-.. _imp4_averages:
+.. _imp4_exponential_averages:
 
 ****************************
  Running Exponential Average
