@@ -226,6 +226,7 @@ Import the following IDSs
 magnetics, pf_active, (pf_passive), (iron_core), wall, tf
 
 Note that iron_core is only needed for JET and WEST and pf_passive is only desirable (not supported by all equilibrium reconstruction actors)
+
 You are now ready to launch Kepler by typing
 
 .. code-block:: console
