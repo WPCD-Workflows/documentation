@@ -201,7 +201,7 @@ if it is the first time you go through this process you will need to create the 
    kepler_install my_2.5p4-3.0.6_dressed_3.25
    kepler_load my_2.5p4-3.0.6_dressed_3.25
 
-Once you have installed kepler you do not need to repeat this operation and it will be enought to 
+Once you have installed kepler you do not need to repeat this operation and it will be enough to 
 execute the kepler_load instruction.
 
 Now you need to check out the workflow by typing (only for first time users)
@@ -223,8 +223,9 @@ Retrieve the data for magnetic-only equilibrium by launching IMASviz or TCV2IDS
 
 Import the following IDSs  
 
-magnetics, pf_active, (pf_passive), (iron_core), wall
+magnetics, pf_active, (pf_passive), (iron_core), wall, tf
 
+Note that iron_core is only needed for JET and WEST and pf_passive is only desirable (not supported by all equilibrium reconstruction actors)
 You are now ready to launch Kepler by typing
 
 .. code-block:: console
@@ -294,35 +295,6 @@ To have detailed information on how to configure each one of the available
 actors please check their documentation `here
 <EquilibriumAndStabilityChain#Equilibrium_reconstruction_actor>`__ or `here
 <EquilibriumAndStabilityChain#High_resolution_equilibrium_acto>`__.
-
-.. _training:
-
-5. Test cases and self-oriented training
-========================================
-
-Several test cases are available for testing, corresponding to different
-applications/examples. The itmdb files are found on the software release
-folder under */tutorial*
-
-+------+-----------+-------+-------+-----+-------------------------------------+
-| Case |  User     | Device| Shot  | Run |              Description            |
-+------+-----------+-------+-------+-----+-------------------------------------+
-|  1   | g2rcoelh  |  test | 84600 |  28 | | JET shot using exp2imas UDA plugin|
-|      |           |       |       |     |   using 3.20.0 DD, 3.8.3 UAL and    |
-|      |           |       |       |     | | 2.2.2 UDA ("old" low level UAL).  |
-|      |           |       |       |     |   Contains the following IDSs:      |
-|      |           |       |       |     | | IRON_CORE, MAGNETICS, PF_ACTIVE,  |
-|      |           |       |       |     |   WALL, TF, THOMSON_SCATTERING.     |
-|      |           |       |       |     | |                                   |
-+------+-----------+-------+-------+-----+-------------------------------------+
-|  2   |           |       |       |     |                                     |
-+------+-----------+-------+-------+-----+-------------------------------------+
-|  3   |           |       |       |     |                                     |
-+------+-----------+-------+-------+-----+-------------------------------------+
-|  4   |           |       |       |     |                                     |
-+------+-----------+-------+-------+-----+-------------------------------------+
-|  5   |           |       |       |     |                                     |
-+------+-----------+-------+-------+-----+-------------------------------------+
 
 .. _activity:
 
