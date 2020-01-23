@@ -109,7 +109,7 @@ how to make your C++ code EU-IM compliant and how to turn it into a Kepler
 actor.
 
 Adapt your C++ function
-^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~
 
 You must include the header file UALClasses.h:
 
@@ -157,7 +157,7 @@ Otherwise, the content of CPOs is accessed as usual:
    cout << iron.array(j).desc_iron.geom_iron.npoints(i);
 
 How to use code parameters
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The code parameters are passed as the last argument with
 ItmNs::codeparam_t& type:
@@ -171,7 +171,7 @@ necessarily terminated by 0-character! (This does not follow C/C++
 standards and should be changed in the future.)
 
 Compile your function as a library
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You need to include the header directories for the UAL and Blitz:
 
@@ -190,7 +190,7 @@ Same for linking:
 Additionally, you must compile with the -fPIC option.
 
 Full example
-^^^^^^^^^^^^
+~~~~~~~~~~~~
 
 We want to generate an actor that has three different types of actors as
 inputs and three different types of actors as output. Additionally, we
@@ -285,7 +285,7 @@ Content of Makefile:
          rm mycppfunction.o libmycppfunction.a
 
 How to fill the FC2K window
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 First tab (Argument):
 
@@ -344,7 +344,7 @@ Fourth tab (Source):
 .. _imp12_listcodes:   
 
 Plasma equilibrium and MHD list of codes
-------------------------------------------------
+----------------------------------------
 
 The following list lists the codes and modules which are part of WPCD
 tasks and their responsible officers. 
