@@ -1,17 +1,16 @@
-.. EUROfusion Integrated Modelling workflows documentation master file, created by
-   sphinx-quickstart on Thu Feb 14 21:02:58 2019.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. EUROfusion Integrated Modelling workflows documentation master
+   file, created by sphinx-quickstart on Thu Feb 14 21:02:58 2019.
+   You can adapt this file completely to your liking, but it should at
+   least contain the root `toctree` directive.
 
-.. image:: images/wpcd_banner_new.png
-   :width: 100%
-
+.. The sections markup in files included should be  ===, ---, ~~~, ^^^ 
 
 Welcome to EUROfusion Integrated Modelling workflow's documentation!
-=====================================================================
+====================================================================
 
+.. only:: html
 
-Contents:
+   **Contents**
 
 .. toctree::
    :maxdepth: 6
