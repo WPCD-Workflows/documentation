@@ -179,21 +179,27 @@ please refer to the SAVE SLICE parameter details.
 
 Establish the IMAS environment by typing
 
-module purge
-module load cineca
-module load imasenv
+.. code-block:: console
 
-export KEPLER_DIR=$ITMWORK/imas_kepler
+   module purge
+   module load cineca
+   module load imasenv
+
+   export KEPLER_DIR=$ITMWORK/imas_kepler
 
 if it is the first time you go through this process you will need to create the imas_kepler directory
 
-mkdir $ITMWORK/imas_kepler
+.. code-block:: console
+
+   mkdir $ITMWORK/imas_kepler
 
 (the one below is the latest version of the dressed kepler containing all the actors for EQreconstruct, EQstabil and ETS-6)
 
-module switch kepler/2.5p4-3.0.6_dressed_3.25
-kepler_install my_2.5p4-3.0.6_dressed_3.25
-kepler_load my_2.5p4-3.0.6_dressed_3.25
+.. code-block:: console
+
+   module switch kepler/2.5p4-3.0.6_dressed_3.25
+   kepler_install my_2.5p4-3.0.6_dressed_3.25
+   kepler_load my_2.5p4-3.0.6_dressed_3.25
 
 Once you have installed kepler you do not need to repeat this operation and it will be enought to 
 execute the kepler_load instruction.
