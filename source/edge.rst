@@ -7,7 +7,7 @@
 The goal of this work is to adopt the edge code like SOLPS-B2 to be used
 within the EU-IM platform.
 
-.. _grid:
+.. _edge_grid:
 
 General Grid Description and Grid Service Library
 =================================================
@@ -83,7 +83,7 @@ general grid description.
 
 Some examples are included in the Grid Service Library distribution.
 
-.. _imp3_gridexamples:
+.. _edge_imp3_gridexamples:
 
 Example grids
 ~~~~~~~~~~~~~
@@ -338,7 +338,7 @@ The number at the beginning of each line is the *local index* of the
 object, where local means locally in the subgrid. Note that, again,
 counting starts at 1.
 
-.. _imp3_gridservicelibrary:
+.. _grid_imp3_gridservicelibrary:
 
 Grid service library
 ~~~~~~~~~~~~~~~~~~~~
@@ -529,7 +529,7 @@ made available at
 
    ~klingshi/bin/itm-grid/ualconnector -s 15,1,1.0 -c edge -u klingshi -t test -v 4.09a
 
-.. _imp3_grid_tutorial:
+.. _grid_imp3_grid_tutorial:
 
 IMP3 General Grid Description and Grid Service Library - Tutorial
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
