@@ -292,11 +292,6 @@ workflow). To access the actors codeparam the easiest route is to :
  5. Edit the code parameters and Press "Save & Exit"
  6. Press "Commit" and setting is completed
 
-To have detailed information on how to configure each one of the available
-actors please check their documentation `here
-<EquilibriumAndStabilityChain#Equilibrium_reconstruction_actor>`__ or `here
-<EquilibriumAndStabilityChain#High_resolution_equilibrium_acto>`__.
-
 .. _activity:
 
 6. News and Recent activity
