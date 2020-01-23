@@ -174,19 +174,68 @@ please refer to the SAVE SLICE parameter details.
 
 .. _installing:
 
-3. Installing the workflow (under construction)
+3. Installing and running the workflow
+==========================
+
+Establish the IMAS environment by typing
+
+.. code-block:: console
+
+   module purge
+   module load cineca
+   module load imasenv
+
+   export KEPLER_DIR=$ITMWORK/imas_kepler
+
+if it is the first time you go through this process you will need to create the imas_kepler directory
+
+.. code-block:: console
+
+   mkdir $ITMWORK/imas_kepler
+
+(the one below is the latest version of the dressed kepler containing all the actors for EQRECONSTRUCT, EQSTABIL and ETS-6)
+
+.. code-block:: console
+
+   module switch kepler/2.5p4-3.0.6_dressed_3.25
+   kepler_install my_2.5p4-3.0.6_dressed_3.25
+   kepler_load my_2.5p4-3.0.6_dressed_3.25
+
+Once you have installed kepler you do not need to repeat this operation and it will be enought to 
+execute the kepler_load instruction.
+
+Now you need to check out the workflow by typing (only for first time users)
+
+.. code-block:: console
+
+   svn co --username g2mroma https://gforge6.eufus.eu/svn/eqstabil/tags/imas_3.25.0_4.4.0/workflows eqstabil_workflow
+
+
+Create the database folder with the name of the device you wish to run the equilibrium for
+
+.. code-block:: console
+
+   imasdb JET
+
+
+Retrieve the data for magnetic-only equilibrium by launching IMASviz or TCV2IDS
+
+
+Import the following IDSs  
+
+magnetics, pf_active, (pf_passive), (iron_core), wall
+
+You are now ready to launch Kepler by typing
+
+.. code-block:: console
+
+   kepler
+
+load the EQRECONSTRUCT workflow from your eqstabil_workflow directory
+
+
+4. Setting up the Workflow and Actor parameters
 ===============================================
-
-To obtain the workflow and included actors a dressed release of KEPLER
-is recommended. To get such dressed releases please proceed as follows:
-
--  CPT indication 1
--  CPT indication 2
-
-.. _actor:
-
-4. Setting up the Workflow and Actor parameters (under construction)
-====================================================================
 
 **I - Setting the workflow parameters**
 ---------------------------------------
@@ -248,8 +297,8 @@ actors please check their documentation `here
 
 .. _training:
 
-5. Test cases and self-oriented training (under construction)
-=============================================================
+5. Test cases and self-oriented training
+========================================
 
 Several test cases are available for testing, corresponding to different
 applications/examples. The itmdb files are found on the software release
@@ -274,8 +323,6 @@ folder under */tutorial*
 +------+-----------+-------+-------+-----+-------------------------------------+
 |  5   |           |       |       |     |                                     |
 +------+-----------+-------+-------+-----+-------------------------------------+
-
-`Guided Tutorial on EQRECONSTRUCT (under construction) <%ATTACHURL%/Tutorial_EQRECONSTRUCT.pdf>`__
 
 .. _activity:
 
