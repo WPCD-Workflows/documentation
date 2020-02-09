@@ -235,6 +235,10 @@ You are now ready to launch Kepler by typing
 
 load the EQRECONSTRUCT workflow from your eqstabil_workflow directory
 
+For a demonstration video on how to install, setu and run the workflow click the link below
+
+   https://www.youtube.com/watch?v=zjX4jJBT1q4&t=242s
+
 
 4. Setting up the Workflow and Actor parameters
 ===============================================
