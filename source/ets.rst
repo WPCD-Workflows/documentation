@@ -17,17 +17,15 @@ needs to be set up as ITM environment.
 
 .. code-block:: console
 
-  >module purge
-  >module load cineca
-  >module load itmenv/ETS_4.10b.10_v5.5.0
-  >source $ITMSCRIPTDIR/ITMv2.sh JET
-  >export ITM_KEPLER_DIR=$ITMWORK/my_keplers
-  >export _JAVA_OPTIONS=-Dsun.java2d.xrender=false
-  >export I_MPI_FABRICS=shm
-  >export _JAVA_OPTIONS="-Xss20m -Xms4g -Xmx8g -Dsun.java2d.xrender=false"
+module purge
+module load cineca
+module load itmenv/ETS_4.10b.10_v5.6.0
+source $ITMSCRIPTDIR/ITMv2 jet
+setenv ITM_KEPLER_DIR $ITMWORK/my_keplers/
+setenv _JAVA_OPTIONS "-Xss20m -Xms4g -Xmx8g -Dsun.java2d.xrender=false"
 
-The command 'module load itmenv/ETS...' loads the itmenv environment and in particular in the case above the ETS / Kepler version 5.5.0
-To load a different version just change the number e.g. v5.4.0
+The command 'module load itmenv/ETS...' loads the itmenv environment and in particular in the case above the ETS / Kepler version 5.6.0
+To load a different version just change the number e.g. v5.5.0
 
 The $ITMSCRIPTDIR/ITMv2.sh JET command will set up your local database folder to 'JET'. This means that any simulation done with ETS
 will be saved in the JET folder (even if you are simulating TCV!!). If you would like to simulate any other Tokamak, type again the command and change JET with e.g. AUG.
@@ -40,9 +38,9 @@ to Kepler with all the WPCD actors embedded in it.
 **This can be done by executing the following command**
 
 .. code-block:: console
-
-  >install_kepler.sh ets_v550 trunk/ETS_4.10b.10_v5.5.0/central "dressed central kepler v5.5.0"
-  >switch_to_kepler.sh ets_v550
+  
+install_kepler.sh ets_v561 trunk/ETS_4.10b.10_v5.6.1/central "dressed central kepler v5.6.1"
+switch_to_kepler.sh ets_v561
 
 **For loading the Workflow+tools (import data, postprocessing):**
 
