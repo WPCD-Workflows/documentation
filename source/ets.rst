@@ -46,7 +46,7 @@ to Kepler with all the WPCD actors embedded in it.
 
 .. code-block:: console
 
-  >svn co https://gforge6.eufus.eu/svn/keplerworkflows/tags/ETS_4.10b.10_v5.5.0
+  svn co https://gforge6.eufus.eu/svn/keplerworkflows/tags/ETS_4.10b.10_v5.6.0
 
 The above command requires enabled access to GFORGE  (if you are a 'simple' user you might need to apply for access to GFORGE). Typing the command above will check out and store the ETS_worflow.xml and useful python scripts in the directory from where it is issued. 
 
