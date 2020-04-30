@@ -11,17 +11,6 @@ and surface data (AMNS). In particular, AMNS data are needed in several
 of the EU-IM modelling projects. A consistent approach, taking into
 account the specific requirements of the EU-IM while maintaining the work
 aligned with other European efforts in this area, is therefore required.
-As a consequence the AMNS tasks are implemented as Tasks under the TF
-leadership and has the following scope:
-
-- Coordination of the work in the four different sub areas.
-
-- Supply of data not presently residing in easily accessible data bases.
-
-- Identify any Intellectual Property Rights (IPR) protection needs in view
-  of a broader collaboration with ITER partners.
-
-- Provide software for delivery of AMNS data to EU-IM-TF codes.
 
 EU-IM contact person
 ====================
@@ -57,30 +46,21 @@ The actual AMNS data is provided by CPOs stored under the "amns" tokamak
 and will first be searched for in the user's database, and if not found
 there, the system will default to obtaining the data from the public
 AMNS database. Multiple versions of the AMNS data are possible: in 4.09a
-and 4.09b this was done via a mysql database; in 4.10a and later this is
+and 4.09b this was done via a mysql database; in 4.10a and 4.10b this is
 done by having an index block stored in shot 0, run 1 of the AMNS CPO.
 
-Some presentations:
-
--  Nuclear reactions (pdf), by V. Kiptily
--  Simulations of the edge plasma: the role of atomic, molecular and surface
-   physics (pdf), by D. P. Coster, S. Gori, X. Bonnin, D.Reiter,
-   A.Kukushkin, P. Krstic, P. Strand, L.-G. Eriksson, Contributors to the
-   EFDA TF EU-IM
--  Atomic, Molecular, Surface and Nuclear (AMSN) data for the EU-IM-TF ( pdf
-   ), presented by D.P. Coster (IMP3 Leader) at the ADAS workshop, based on
-   the talk given by Lars-Goran Eriksson at the EU-IM General Meeting,
-   2008-09
--  EU-IM AMNS Interface (pdf), by D.P. Coster
+The implementation in IMAS IDS's has followed the example of the CPO 
+implementation using shot 0, run 1 to store an index of available data.
 
 Some papers:
 
-- Simulations of the edge plasma: the role of atomic, molecular and surface
-   physics (pdf), by D.P. Coster, X. Bonnin, D. Reiter, A. Kukushkin, S.
-   Gori, P. Krstic, P. Strand, L.-G. Eriksson and Contributors to the
-   EFDA-TF-EU-IM
-   
- - D. Tskhakaya, D. Coster and ITM-TF contributors, Contrib. Plasma Phys., 54 (4-6), 399–403 (2014)
+-  "Simulations of the edge plasma: the role of atomic, molecular and surface physics",
+   AIP Conference Proceedings 1125, 113 (2009); https://doi.org/10.1063/1.3141685,
+   D. P. Coster, X. Bonnin, D. Reiter, A. Kukushkin, S. Gori, P. Krstic, P. Strand, 
+   L.‐G. Eriksson, and Contributors to the EFDA‐TF‐ITM
+-  "Implementation of PIC/MC Code BIT1 in ITM Platform", Contrib. Plasma Phys., 
+   54 (4-6), 399–403 (2014), https://doi.org/10.1002/ctpp.201410029,
+   D. Tskhakaya, D. Coster and ITM-TF contributors
 
 The present coding for the AMNS project is done in the gforge `amnsproto
 project <https://gforge6.eufus.eu/gf/project/amnsproto/>`__.
@@ -100,24 +80,22 @@ be found by executing
 .. code-block:: console
 
    module avail amns
+   module avail AMNS
 
 The include and library locations are specified via the "pkg-config"
 system. To display the available package names do
 
 .. code-block:: console
 
-   pkg-config --list-all | grep amns
-
-Doxygen information about the user interface can be found
-`here <https://portal.eufus.eu/documentation/EU-IM/doxygen/amns/amnsproto/User/4.10b/>`__.
+   pkg-config --list-all | grep -i amns
 
 The AMNS library can be called from
 
 1. Fortran
-2. C
+2. C /C++
 3. Python
-4. Java (in development)
-5. Matlab (in development)
+4. Java 
+5. Matlab
 
 The various bindings for the different languages are given below, but
 make use of a set of standard concepts which are described first.
@@ -649,32 +627,4 @@ example <https://gforge6.eufus.eu/svn/amnsproto/tags/examples/python/>`__):
    print table.data(np.array([100.0]), np.array([1e20]))
    amnsdb.finalize()
 
-Other examples can be found
-(`here <https://gforge6.eufus.eu/svn/amnsproto/tags/examples/>`__):
 
-AMNS CPO
---------
-
-The current (4.08b) data structure for AMNS data in the standard tree
-view can be browsed here
-`(Browse) <../../../isip/public/imports/data_structure/4.08b/Phase4top.html#Link00000003>`__
-
-We are currently considering a revision of the AMNS data structure that
-makes use of arrays-of-structures (not available earlier)
-
-At the top level we would have
-
-.. figure:: images/amns_1.png
-   :align: center         
-
-with the definition of tables
-
-.. figure:: images/amns_2.png
-   :align: center 
-
-
-
-and the tables of coordinates
-
-.. figure:: images/amns_3.png
-   :align: center 
