@@ -21,6 +21,7 @@ Welcome to EUROfusion Integrated Modelling workflow's documentation!
    ets
    es
    eqreconstr
+   turbulence
    codes
    conventions
    amns
