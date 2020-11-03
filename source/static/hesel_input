@@ -1,0 +1,88 @@
+# Simulation identifiers 
+codenametype    = test     ;           Machine identifier 1:JET 2:ASDEX 3:EAST 4:COMPASS 5:TEXTOR otherwise:test
+shot_no         = 0        ;           Experiment shot number
+run_no          = 0        ;           Simulation run number
+
+# Numerical and domain parameters
+nx              = 1536     ;           Number of spatial grid points in x direction
+ny              = 1024     ;           Number of spatial grid points in y direction
+xmin            = 0.0      ; [rhos]    Minimum x-axis limit
+xmax            = 120.0    ; [rhos]    Maximum x-axis limit
+ymin            = 0.0      ; [rhos]    Minimum y-axis limit
+ymax            = 90.0     ; [rhos]    Maximum y-axis limit
+dt              = 0.05     ; [oci^-1]  Value of discrete timestep
+end_time        = 250000   ; [oci^-1]  Duration of simulation
+out_time        = 200      ; [oci^-1]  Time between small outputs
+outmult         = 10       ;           Number of small outputs before full fields are written out
+edge            = 50.0     ; [rhos]    Width of edge region
+SOL             = 50.0     ; [rhos]    Width of SOL region
+wall            = 20.0     ; [rhos]    Width of wall region
+
+# Plasma and machine parameters
+n0              = 1e19     ; [m^-3]    Electron density at last closed flux surface
+te0             = 30       ; [eV]      Electron temperature at last closed flux surface
+ti0             = 30       ; [eV]      Ion temperature at last closed flux surface
+Mp              = 0.5      ; [eV]      Parallel Mach number
+A               = 2        ;           Mass number
+Z               = 1        ;           Charge number
+Zeff            = 4        ;           Effective charge
+q               = 5        ;           Safety factor at last closed flux surface
+B0              = 2.0      ; [T]       Magnetic field on axis
+r0              = 0.5      ; [m]       Minor radius
+R0              = 1.5      ; [m]       Major radius
+Lp              = 10.0     ; [m]       Parallel connection length in the SOL region
+Lpwall          = 1.0      ; [m]       Parallel connection length in the wall shadow region
+
+# Parameters that are either fixed, deprecated or rarely changed
+coordsys        = 0        ;           
+gamma           = 0.00     ;           
+sigma           = 0.00     ;           
+bprof           = 1.0      ;           
+damping_nt      = 1        ;           
+dissipation_nt  = 0.       ;           
+beta            = 0        ;           
+mue_n_fac       = 1.0      ;           
+mue_p_fac       = 1.0      ;           
+mue_P_fac       = 1.0      ;           
+mue_w_fac       = 1.0      ;           
+ballooning      = 2        ;           
+visc_layer_size = 0.25     ;           
+drift_wave_term = 2        ;           
+drift_wave_Te   = 1        ;           
+radial_electric_field = 0        ;           
+MP              = 0        ;           
+MP_NS           = 100000   ;           
+MP_SR           = 0.0000005 ;           
+hyper_factor    = 0.00000  ;           
+sheath          = 2        ;           
+background      = 1        ;           
+background_n    = 0.025    ;           
+background_t    = 1.0      ;           
+background_time = 20       ;           
+ramb_up         = 1        ;           
+ramb_up_time    = 5000     ;           
+fp              = 10       ;           
+fixed_time      = 50       ;           
+init            = 999      ;           
+init_ds         = 1        ;           
+mean_flow       = 5        ;           
+mean_flow_time  = 0.025    ;           
+mean_flow_radial = 1.0      ;           
+mean_dissipation = 0        ;           
+randbedingung0  = 2        ;           
+bdvala0         = 0.000000 ;           
+bdvalb0         = 0.000000 ;           
+amp_random0     = 0.0001   ;           
+randbedingung1  = 2        ;           
+bdvala1         = 1        ;           
+bdvalb1         = 0.00     ;           
+amp_random1     = 0.0001   ;           
+randbedingung2  = 2        ;           
+bdvala2         = 1        ;           
+bdvalb2         = 0.00     ;           
+amp_random2     = 0.0001   ;           
+randbedingung3  = 2        ;           
+bdvala3         = 1        ;           
+bdvalb3         = 0.00     ;           
+amp_random3     = 0.0001   ;           
+
