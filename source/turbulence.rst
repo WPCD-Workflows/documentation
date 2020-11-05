@@ -1,12 +1,43 @@
 ###############################################
 Turbulence with synthetic diagnostics workflows
 ###############################################
-The turbulence with synthetic diagnostics workflows consist of the HESEL and RENATE actors for turbulence simulation and synthetic diagnostics. 
+The turbulence with synthetic diagnostics workflows consist of the HESEL and RENATE actors for turbulence simulation and synthetic diagnostics.
 
 *******************
 HESEL Documentation
 *******************
-*Brief description of HESEL.*
+The HESEL code is a numerical solver for the set of equations that describe the HESEL model. The HESEL model is a drift-reduced Braginskii type of two-fluid model for electron density, electron and ion pressures, and E-cross-B vorticity of a quasi-neutral plasma. The domain is a 2D slab perpendicular to the magnetic field line located at the outboard-midplane of a tokamak. The slab domain covers parts of the turbulent edge and SOL regions.
+
+.. table:: 
+   :align: center
+
+   +-----------------------------------------+------------------------------------------------+
+   | .. figure:: images/hesel_location.png   |  .. figure:: images/hesel_domain.png           |
+   +-----------------------------------------+------------------------------------------------+
+   |The HESEL 2D slab domain. Images from A.H. Nielsen *et al 2019 Nucl. Fusion* **59** 086059|
+   +------------------------------------------------------------------------------------------+
+    
+The solutions typically show the development of filaments (blobs) near the last-closed-flux-surface. The filaments propagate radially outwards through the SOL region, and carry heat and paticles away from the confined edge region.
+
+.. table:: 
+   :align: center
+   
+   +--------------------------------------------------+
+   | .. figure:: images/hesel_simulation.png          |
+   +--------------------------------------------------+
+   |Snapshot of solution fields for HESEL simulation  |
+   +--------------------------------------------------+
+
+There are plenty of publications in scientific journals based on HESEL (and its precessor ESEL) simulation data, in which the model equations are also described in detail. Below is listed a selected set of publications:
+
+* `Study of power width scaling in scrape-off layer with 2D electrostatic turbulence code based on EAST L-mode discharges <https://doi.org/10.1063/1.5083063>`_
+* `Synthetic Edge and SOL Diagnostics: A Bridge between Experiments and Theory <https://doi.org/10.1088/1741-4326/ab1954>`_
+* `ExB mean flows in finite ion temperature plasmas <https://doi.org/10.1063/1.4985329>`_
+* `Numerical simulations of blobs with ion dynamics <https://doi.org/10.1088/1361-6587/59/2/025012>`_
+
+The HESEL code structure and how to run it as a stand alone code is described in :ref:`HESEL as stand-alone`, the workflow wrapper documentation is described in :ref:`HESEL as workflow actor`, and a guide on how to include HESEL in the KEPLER workflow is given in :ref:`HESEL in the KEPLER workflow`.
+
+.. _HESEL as stand-alone:
 
 ====================
 HESEL as stand-alone
@@ -36,11 +67,11 @@ Navigate to your Gateway public directory :code:`cd ~/public` and clone the C-HE
 
     git clone https://github.com/PPFE-Turbulence/C-HESEL.git
 
-Navigate into the C-HESEL directory :code:`cd C-HESEL` and checkout the `develop` branch to work with the most recent updates 
+Navigate into the C-HESEL directory :code:`cd C-HESEL` and checkout the `develop` branch to work with the most recent updates
 ::
 
     git checkout develop
-    
+
 Navigate into the FUTILS source directory :code:`cd FUTILS_version2.2/src` and return
 ::
 
@@ -50,16 +81,16 @@ Navigate back to C-HESEL :code:`cd ../..` and return
 ::
 
     make clean && make esel
-    
+
 Everything is now set up for you to run HESEL, which is located in `C-HESEL/bin/esel.marconi.A3`.
 
-.. _HESEL input file:
+.. _HESEL input:
 
-HESEL input file
+HESEL input
 ================
 The stand-alone version of HESEL can be run either entirely from an input file, or in a setup where the initial density and temperature fields are read from an additional datafile. The probe positions for synthetic diagnogstics probes are provided in a separate datafile. All input files must be  located in the same directory.
 
-HESEL input file
+HESEL input
 ----------------
 The HESEL input is read from a plain text file, with the input variables separated by line breaks. An example of an input file is given  :download:`here <static/hesel_input>`. The main variables are
 
@@ -99,6 +130,62 @@ Lpwall         m        Parallel connection length in the wall shadow region
 
 The remaining variables in the input file are better left unchanged.
 
+=====================  =================
+  Variable               Default value
+=====================  =================
+coordsys               0
+gamma                  0.00
+sigma                  0.00
+bprof                  1.0
+damping_nt             1
+dissipation_nt         0.
+beta                   0
+mue_n_fac              1.0
+mue_p_fac              1.0
+mue_P_fac              1.0
+mue_w_fac              1.0
+ballooning             2
+visc_layer_size        0.25
+drift_wave_term        2
+drift_wave_Te          1
+radial_electric_field  0
+MP                     0
+MP_NS                  100000
+MP_SR                  0.0000005
+hyper_factor           0.00000
+sheath                 2
+background             1
+background_n           0.025
+background_t           1.0
+background_time        20
+ramb_up                1
+ramb_up_time           5000
+fp                     10
+fixed_time             50
+init                   999
+init_ds                1
+mean_flow              5
+mean_flow_time         0.025
+mean_flow_radial       1.0
+mean_dissipation       0
+randbedingung0         2
+bdvala0                0.000000
+bdvalb0                0.000000
+amp_random0            0.0001
+randbedingung1         2
+bdvala1                1
+bdvalb1                0.00
+amp_random1            0.0001
+randbedingung2         2
+bdvala2                1
+bdvalb2                0.00
+amp_random2            0.0001
+randbedingung3         2
+bdvala3                1
+bdvalb3                0.00
+amp_random3            0.0001
+=====================  =================
+
 Profile datafile
 ----------------
 The profile datafile provide the initial density and temperature field profiles, which also serve as reference profiles towards which the solution is relaxed in the innermost edge region of the HESEL domain. The datafile must have the filename `exp_profiles.dat` and an example can be found :download:`here <static/exp_profiles.dat>`.
@@ -106,10 +193,10 @@ The profile datafile provide the initial density and temperature field profiles,
 The datafile consists of four space-separated columns of data, so that each row constitute a datapoint. In each datapoint is the following data
 
 ==========  ==============================  ==========
-Column      Variable                        Unit  
+Column      Variable                        Unit
 ==========  ==============================  ==========
-1           Radial position with LCFS at 0  m           
-2           Electron density                10^19 m^-3  
+1           Radial position with LCFS at 0  m
+2           Electron density                10^19 m^-3
 3           Electron temperature            eV
 4           Ion temperature                 eV
 ==========  ==============================  ==========
@@ -118,7 +205,7 @@ Column      Variable                        Unit
 
 Probe positions
 ---------------
-The HESEL code will produce a set of default output data described in :ref:`HESEL output files`. Additional temporally highly resolved 1D data can be added from synthetic probes located in a row througout the domain. They are poloidally centered in the domain and located with a radial distance of 1 rhos. In the probe datafile, which must be named `myprobe.dat`, is specified the number of tips and their relative location, and the fields measured. An example of a probe datafile is found :download:`here <static/myprobe.dat>`.
+The HESEL code will produce a set of default output data described in :ref:`HESEL output`. Additional temporally highly resolved 1D data can be added from synthetic probes located in a row througout the domain. They are poloidally centered in the domain and located with a radial distance of 1 rhos. In the probe datafile, which must be named `myprobe.dat`, is specified the number of tips and their relative location, and the fields measured. An example of a probe datafile is found :download:`here <static/myprobe.dat>`.
 
 The format must follow that of the provided example. Each tip has a specified relative position to the probe position in units of grid point spacing. I.e., the block
 ::
@@ -134,7 +221,7 @@ The format must follow that of the provided example. Each tip has a specified re
 	velocity_radial
 	velocity_poloidal
 
-adds a probe-tip at 10 grid point radially outwards and at the same poloidal position as that of the probe. It outputs the electron density (density), E-cross-B vorticity (vorticity), electron temperature (temperature), the electrostatic potential (potential), radial velocity (volocity_radial), and poloidal velocity (velocity_poloidal) at the specified gridpoint. All output are in Bohm-normalized units.
+adds a probe-tip at 10 grid points radially outwards and at the same poloidal position as that of the probe. It outputs the electron density (density), E-cross-B vorticity (vorticity), electron temperature (temperature), the electrostatic potential (potential), radial velocity (volocity_radial), and poloidal velocity (velocity_poloidal) at the specified gridpoint. All output are in Bohm-normalized units.
 
 HESEL code structure
 ====================
@@ -146,18 +233,101 @@ HESEL is run in from the data directory, containing the input file (and optional
 
 	mpirun -np=<number_of_processors> <path_to_esel> -I <input_file_name>
 
-Here :code:`<number_of_processors>` is the number of processors to run the code and must be a power of 2, :code:`<path_to_esel>` is the path to the compiled HESEL code conventionally located in `C-HESEL/bin/esel.marconi.A3` for a MARCONI install, and :code:`<input_file_name>` is the name of the input file described in :ref:`HESEL input file`.
+Here :code:`<number_of_processors>` is the number of processors to run the code and must be a power of 2, :code:`<path_to_esel>` is the path to the compiled HESEL code conventionally located in `C-HESEL/bin/esel.marconi.A3` for a MARCONI install, and :code:`<input_file_name>` is the name of the input file described in :ref:`HESEL input`.
 
-.. _HESEL output files:
+.. _HESEL output:
 
-HESEL output files
+HESEL output
 ==================
+For a run with an input file `filename` HESEL produces two output files; `filename.erh` and `filename.h5`. The .erh file reviews the run settings and displays key parameters for the simulation. The full simulation data output is stored in the hdf5 file.
 
+The structure of the output datafile `filename.h5` is
+::
+
+/data
+/data/var0d
+/data/var1d
+/data/var1d/fixed-probes
+/data/var2d
+/data/var2d/grid
+/data/var3d
+/data/xanimation
+/documentation
+/equil
+/params
+/params/structure_data
+/params/structure_param
+
+The content of the groups are described in detail below.
+
+* **data**
+
+  The `data` group stores the subgroups with the solution data and derived data that are of interest. The data are grouped into the number of spatial dimensions of the data, e.g., the `var1d` group contains data of one spatial dimension (e.g., temporal evolution of profiles). The `data` subgroups are 
+
+  * **var0d**
+  
+    `Description`
+
+  * **var1d**
+  
+    `Description`
+
+    * **fixed-probes**
+	  
+      `Description`
+
+    
+  * **var2d**
+    
+    `Description`
+	
+	* **grid**
+      
+	  `Description`
+      
+  
+  * **var3d**
+
+    Currently no data are stored in this group.
+
+  * **xanimation**
+
+    `Description`
+
+* **documentation**
+  
+  The `documentation` group contains two datafiles, which are merely copies of the input files.
+  
+  ============  =====================================================================
+    Filename      Description  
+  ============  =====================================================================
+  myprobe.dat   Copy of `myprobe.dat` datafile described in :ref:`Probe positions`.
+  run.ini 		Copy of input file described in :ref:`HESEL input`.
+  ============  =====================================================================
+
+* **equil**
+  
+  Currently no data are stored in this group.
+
+* **params**
+  
+  This group contains two subgroups with parameter data that are either defined in, or derived directly from, the input file. 
+  
+  * **structure_data**
+	
+  * **structure_param**
+  
+  
+    
+
+.. _HESEL as workflow actor:
 
 =======================
 HESEL as workflow actor
 =======================
 *The HESEL wrapper, input/output, ...*
+
+.. _HESEL in the KEPLER workflow:
 
 ============================
 HESEL in the KEPLER workflow
