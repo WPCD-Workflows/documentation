@@ -11,11 +11,11 @@ The HESEL code is a numerical solver for the set of equations that describe the 
 .. table:: 
    :align: center
 
-   +-----------------------------------------+------------------------------------------------+
-   | .. figure:: images/hesel_location.png   |  .. figure:: images/hesel_domain.png           |
-   +-----------------------------------------+------------------------------------------------+
-   |The HESEL 2D slab domain. Images from A.H. Nielsen *et al 2019 Nucl. Fusion* **59** 086059|
-   +------------------------------------------------------------------------------------------+
+   +-----------------------------------------+-------------------------------------------------+
+   | .. figure:: images/hesel_location.png   |  .. figure:: images/hesel_domain.png            |
+   +-----------------------------------------+-------------------------------------------------+
+   |The HESEL 2D slab domain. Images from A.H. Nielsen *et al 2019 Nucl. Fusion* **59** 086059.|
+   +-------------------------------------------------------------------------------------------+
     
 The solutions typically show the development of filaments (blobs) near the last-closed-flux-surface. The filaments propagate radially outwards through the SOL region, and carry heat and paticles away from the confined edge region.
 
@@ -225,6 +225,126 @@ adds a probe-tip at 10 grid points radially outwards and at the same poloidal po
 
 HESEL code structure
 ====================
+The HESEL stand-alone code structure is graphed below
+
+.. table:: 
+   :align: center
+   
+   +--------------------------------------------------+
+   | .. figure:: images/hesel_esel_c_GRAPH.png        |
+   +--------------------------------------------------+
+   |HESEL structure graph                             |
+   +--------------------------------------------------+
+
+The workflow of the top level functions are described in the following. The function description is meant to give an high-lelvel overview of the workflow and supplement the in-code comments.
+
+* main(int argc, char \*argv[]) 
+
+  The `main` function is a wrapper for passing the programme arguments argc and argv to the `esel_start_from_c` function. The variable argv is a character list of programme arguments and argc is an integer that denote the number of items in argv.
+  
+  * esel_start_from_c(itype argc, ctype \*\*argv) 
+    
+	The `esel_start_from_c` function contains the core workflow of the solver. It creates the two structures, data and para, that, together with argc and argv, are passed through the HESEL workflow.
+	
+	Everything up to the `run_esel` function is initialization of data, MPI, etc. 
+	
+	The programme arguments are interpreted and applied in `func_passing_argv`
+	
+	* func_passing_argv(argc, argv, \&data, \&para)
+	  
+	  The function determine if the simulation is starting from previous simulation data or not, by checking, if the flag `-restart` is in the programme arguments. It iterates through the other arguments; if `-I` the input data are to be loaded from an ini-file, if `-H` the input data are to beloaded from an HDF5 file, and if `-wrapper` the data are to passed from a programme wrapper. The input file option is stored in the para structure and applied after the `set_default_parameters` function.
+	
+	and the `set_default_parameters` function is called.
+	
+	* set_default_parameters(&data,&para)
+	  
+	  This function is deprecated and does not alter the data and para structures.
+	
+	Depending on where the input parameters are stored, one of three functions are called. The information of input file type is set in the para structure by the `func_passing_argv` function. If the input are stored in a c-file `func_wrapper` is called, in an ini-file `func_inifile` is called, and in a HDF5 file `func_hdf5file` is called.
+	
+	* func_wrapper(argc, argv, &data, &para)
+	  
+	  Checks if the restart option is set to true in the para structure; if so, the code exits, as that option is not compatible with the wrapper setup.
+	  
+	  The function calls a number of subfuntions to initialize the para and data structures from the input given by the wrapper, that would otherwise be read from an ini-file as described in :ref:`HESEL input`. All data are appended to the para and data structures.
+	
+	* func_inifile(argc, argv, &data, &para)
+	  
+	  Checks if the restart option is set to true in the para structure; if so, the code exits, as that option is not compatible with the inifile setup.
+	  
+	  The function calls a number of subfuntions to initialize the para and data structures from the input file described in :ref:`HESEL input`. All data are appended to the para and data structures.
+	
+	* func_hdf5file(argc, argv, &data, &para)
+	  
+	  The function calls a number of subfuntions to initialize the para and data structures from the input given by a HDF5 file, that would otherwise be read from an ini-file as described in :ref:`HESEL input`. The data are stored in the `/params/structure_data` and `/params/structure_param` groups described in :ref:`HESEL output`. All data are appended to the para and data structures.
+	
+	The data and para structures are initialized further in `func_common_init`
+	
+	* func_common_init(&data, &para)
+	  
+	  The current time variables are stored in the para structure, and the data attribute `range` is set from the domain limits stored in para. The function checks the para attribute `coordsys` to determine the labels on the data attributes `coordsys` and `dim_label`.
+	
+	and settings defined in `esel_settings`.
+	
+	* esel_settings(&data, &para)
+	  
+	  Derived parameters are stored in the para and data structures. This includes grid spacings, output switches, datafile name (based on the para attributes `codename`, `shot_no` and `run_no`), and computer specific attributes.
+	
+	The MPI communicaters and parameters are set up in `PH_MPI_Prepare`
+	
+	* PH_MPI_Prepare(&data,&para)
+	  
+	  The geometry is specified for the MPI. Periodic boundaries are set and neighbouring coordinates are defined for parallelization in the x-direction. 
+	
+	and fields are initialized in `func_common_init_fields`.
+	
+	* func_common_init_fields(&data, &para)
+	  
+	  The solution fields are initialized with random noise. If no input files are provided the solution fields are assigned default initial profiles. 
+	
+	The probe configuration, for obtaining high temporally resolved data at probe positions, are loaded in the function `read_probe_configuration`.
+	
+	* read_probe_configuration()
+	  
+	  The probe configuration is obtained from the probe configuration file :ref:`Probe positions`. A structure array of pype probe_t is created to store the probe information. 
+	
+	Everything is now initialized and the system of differential equations is solved in `run_esel`
+	
+	* run_esel(&data, &para)
+	
+	  The first half of the `run_esel` function finalizes the initialization; variables and fields are allocated and some loaded from the data and para structures. The logarithm of boundary values and fields is calculated for the solution fields. The field background values are derived. The ion temperature ramp-up scheme is initialized, and boundary values are applied.
+	  
+	  The HDF5 output file is created and initial data stored in the para and data structures are written to this. 
+	  
+	  The second half of the `run_esel` function consists of a loop which iterates through the time range in steps of dt. The time loop has the following steps:
+	  
+	  * Print datasets to the HDF5 output file
+	    
+	    At specified time intervals the soulution fields and derived fields (w.g. profiles and integrated values) are written to the output file.
+	  
+	  * The fields are testet for nan values
+	  
+	  * The ion temperature is ramped up
+	  
+	    If a ramp-up scheme is chosen for the ion temperature the increase in ion edge pressure profile is executed at this stage, and the inner boundary condition updated accordingly.
+	    
+	  * The forward time step values of the (logarithmic) solution fields are calculated
+	    
+	    In the order; generalized vorticity, density, electron temperature, ion temperature. After each time step is calculated the step is made and dissipation applied. 
+	  
+	  * The solution fields are derived 
+	    
+	    From their log values, and the vorticity and electrostatic potential is calculated from the generalized forticity. 
+	  
+	  * The higly resolved probe data is written
+	    
+	    
+	  * Running avarages, turbulent energy, particle flux are calculated
+	    
+	    And the energies are written to the output file
+	
+	The program is terminated by an exit() command after the time loop termination condition is reached.
+    
 
 Running a HESEL simulation
 ==========================
@@ -265,25 +385,141 @@ The content of the groups are described in detail below.
   The `data` group stores the subgroups with the solution data and derived data that are of interest. The data are grouped into the number of spatial dimensions of the data, e.g., the `var1d` group contains data of one spatial dimension (e.g., temporal evolution of profiles). The `data` subgroups are 
 
   * **var0d**
+    This group contains derived data of zero spatial dimension.
   
-    `Description`
+    ========================= ================= ==============
+	Variable                  Dimensions        Description
+    ========================= ================= ==============
+    SOL_density               end_time/out_time Spatially iend_time/out_timeegrated SOL density
+    SOL_energy_elec           end_time/out_time Spatially iend_time/out_timeegrated SOL electron energy
+    SOL_energy_ion            end_time/out_time Spatially iend_time/out_timeegrated SOL ion energy
+    Te0                       end_time/out_time Electron reference temperature at LCFS
+    Ti0                       end_time/out_time Ion reference temperature at LCFS
+    cflp                      end_time/out_time
+    cflr                      end_time/out_time
+    dEdt                      end_time/out_time
+    energy_elec               end_time/out_time Spatially iend_time/out_timeegrated electron energy for the domain
+    energy_gkin               end_time/out_time
+    energy_ion                end_time/out_time Spatially iend_time/out_timeegrated ion energy for the domain
+    energy_kin                end_time/out_time
+    energy_kin_0              end_time/out_time
+    energy_kin_f              end_time/out_time
+    energy_out_P              end_time/out_time
+    energy_out_p              end_time/out_time
+    pe_curv_f                 end_time/out_time
+    pe_curv_pi                end_time/out_time
+    pi_curv_f                 end_time/out_time
+    shear                     end_time/out_time
+    total_density             end_time/out_time Spatially iend_time/out_timeegrated density for the domain
+    total_energy              end_time/out_time Spatially integrated total energy for the domain
+    ========================= ================= ==============
 
   * **var1d**
+    This group contains derived data of one spatial dimension.
   
-    `Description`
+    ============================== =============================== ==============
+	Variable                       Dimensions                      Description
+    ============================== =============================== ==============
+    CLSOED field line              Nx                              Array with 1 in edge region, 0 in SOL region 
+    Density-Prof                   end_time/(out_time*otmult) x Nx Low temporally resolved density profile
+    Density-inst                   end_time/out_time x Nx          High temporally resolved density profile
+    Diff-Ion-Flux-Tgrad(n)-inst    end_time/out_time x Nx          Ti*grad(n) profile
+    Diff-Ion-Flux-grad(P)-inst     end_time/out_time x Nx          grad(Pi) profile
+    Diff-Ion-Flux-ngrad(T)-inst    end_time/out_time x Nx          n*grad(Ti) profile 
+    Diff-den-Flux-grad(n)-inst     end_time/out_time x Nx          grad(n) profile 
+    Diff-ele-Flux-grad(p)-inst     end_time/out_time x Nx          grad(Pe) profile 
+    Ele-Pres-Prof                  end_time/(out_time*otmult) x Nx Low temporally resolved electron pressure profile
+    Ele-Pres-inst                  end_time/out_time x Nx          High temporally resolved electron pressure profile
+    Ele-Temp-Prof                  end_time/(out_time*otmult) x Nx Low temporally resolved electron temperature profile
+    Ele-Temp-inst                  end_time/out_time x Nx          High temporally resolved electron temperature profile
+    Flux-P-tur                     end_time/(out_time*otmult) x Nx 
+    Flux-P-tur-inst                end_time/(out_time*otmult) x Nx 
+    Flux-T-tur                     end_time/(out_time*otmult) x Nx 
+    Flux-heat-P-tur                end_time/(out_time*otmult) x Nx 
+    Flux-heat-p-tur                end_time/(out_time*otmult) x Nx 
+    Flux-p-tur                     end_time/(out_time*otmult) x Nx 
+    Flux-p-tur-inst                end_time/(out_time*otmult) x Nx 
+    Flux-pres_tur                  end_time/(out_time*otmult) x Nx 
+    Flux-t-tur                     end_time/(out_time*otmult) x Nx 
+    Gen-Vort-Prof                  end_time/(out_time*otmult) x Nx Low temporally resolved generalized vorticity profile
+    Gen-Vort-inst                  end_time/out_time x Nx          High temporally resolved generalized vorticity profile
+    Ion-Pres-Prof                  end_time/(out_time*otmult) x Nx Low temporally resolved ion pressure profile
+    Ion-Pres-inst                  end_time/out_time x Nx          High temporally resolved ion pressure profile
+    Ion-Temp-Prof                  end_time/(out_time*otmult) x Nx Low temporally resolved ion temperature profile
+    Ion-Temp-inst                  end_time/out_time x Nx          High temporally resolved ion temperature profile
+    OPEN field line                Nx                              Array with 0 in edge region, 1 in SOL region 
+    Pot-Prof                       end_time/(out_time*otmult) x Nx Low temporally resolved electrostatic potential profile
+    Pot-inst                       end_time/out_time x Nx          High temporally resolved electrostatic potential profile
+    Pressure-stress1-inst          end_time/out_time x Nx
+    Pressure-stress2-inst          end_time/out_time x Nx
+    Pressure-stress3-inst          end_time/out_time x Nx
+    Pressure-work1-inst            end_time/out_time x Nx
+    Pressure-work2-inst            end_time/out_time x Nx
+    Pressure-work3-inst            end_time/out_time x Nx
+    Reynolds-stress-inst           end_time/out_time x Nx
+    Reynolds-work-inst             end_time/out_time x Nx
+    Tur-par-Flux                   end_time/(out_time*otmult) x Nx 
+    Tur-par-Flux-inst              end_time/out_time x Nx
+    fp_P                           Nx
+    fp_fluc                        Nx
+    fp_mean                        Nx
+    fp_n                           Nx
+    fp_p                           Nx
+    fp_w                           Nx
+    gf-inst                        end_time/out_time x Nx
+    mean_vp                        end_time/(out_time*otmult) x Nx
+    mean_w                         end_time/(out_time*otmult) x Nx
+    rcor                           Nx
+    sheath_profile                 end_time/(out_time*otmult) x Nx *Redundant*
+    visc_P                         end_time/(out_time*otmult) x Nx
+    visc_n                         end_time/(out_time*otmult) x Nx
+    visc_p                         end_time/(out_time*otmult) x Nx
+    visc_w                         end_time/(out_time*otmult) x Nx
+    ============================== =============================== ==============
 
     * **fixed-probes**
-	  
-      `Description`
+	  This group contains temporally higly resolved spatial data at probe postions. Below is given an example for probes with only one probe tip (TIP0). For multiple probe tips the output data list expands accordingly.
+
+      ========================= ================== ==============
+	  Variable                  Dimensions         Description
+      ========================= ================== ==============
+      TIP0_density              end_time/10 x xmax Density at probe position at very high temporal resolution
+      TIP0_potential            end_time/10 x xmax Electrostatic potential at probe position at very high temporal resolution
+      TIP0_temperature          end_time/10 x xmax Electron temperature at probe position at very high temporal resolution
+      TIP0_temperature_i        end_time/10 x xmax Ion temperature at probe position at very high temporal resolution
+      TIP0_velocity_poloidal    end_time/10 x xmax Poloidal velocity at probe position at very high temporal resolution
+      TIP0_velocity_radial      end_time/10 x xmax Radial velocity at probe position at very high temporal resolution
+      TIP0_vorticity            end_time/10 x xmax Vorticity at probe position at very high temporal resolution
+      ========================= ================== ==============
 
     
   * **var2d**
+	This group contains the solution data (Density, Gen_Vorticity, Ion_Pressure, Pressure) and derived data of (mostly) two spatial dimensions.
     
-    `Description`
+    ========================= ==================================== ==============
+	Variable                  Dimensions                           Description
+    ========================= ==================================== ==============
+    Density                   end_time/(out_time*otmult) x Nx x Ny Density 
+    Gen_Potential             end_time/(out_time*otmult) x Nx x Ny Generalized potential 
+    Gen_Vorticity             end_time/(out_time*otmult) x Nx x Ny Generalized vorticity 
+    Ion_Pressure              end_time/(out_time*otmult) x Nx x Ny Ion pressure
+    Ion_temp                  end_time/(out_time*otmult) x Nx x Ny Ion temperature
+    Magnetic Field (b_0)      Nx                                   Magnetic field
+    Potential                 end_time/(out_time*otmult) x Nx x Ny Electrostatic potential
+    Pressure                  end_time/(out_time*otmult) x Nx x Ny Electron pressure
+    Temperature               end_time/(out_time*otmult) x Nx x Ny Electron temperature
+    Vorticity                 end_time/(out_time*otmult) x Nx x Ny Vorticity
+    ========================= ==================================== ==============
 	
 	* **grid**
+	  This group contains the two dimensional spatial grid.
       
-	  `Description`
+      ========================= ============== ==============
+	  Variable                  Dimensions     Description
+      ========================= ============== ==============
+      x                         Nx x Ny        x-grid
+	  y                         Nx x Ny        y-grid
+      ========================= ============== ==============
       
   
   * **var3d**
@@ -291,8 +527,17 @@ The content of the groups are described in detail below.
     Currently no data are stored in this group.
 
   * **xanimation**
+    This group contains the solution data (and the electric potential) at high spatial, low temporal resolution, aimed for visual representation of the data.
 
-    `Description`
+    ========================= ================================= ==============
+	Variable                  Dimensions                        Description
+    ========================= ================================= ==============
+    density                   end_time/out_time x Nx/4 x Ny/4   High temporal, low spatial resolved density (for animations)
+    electron_pressure         end_time/out_time x Nx/4 x Ny/4   High temporal, low spatial resolved electron pressure (for animations)
+    ion_pressure              end_time/out_time x Nx/4 x Ny/4   High temporal, low spatial resolved ion pressure (for animations)
+    potential                 end_time/out_time x Nx/4 x Ny/4   High temporal, low spatial resolved electrostatic potential (for animations)
+    vorticity                 end_time/out_time x Nx/4 x Ny/4   High temporal, low spatial resolved vorticity (for animations)
+    ========================= ================================= ==============
 
 * **documentation**
   
@@ -311,14 +556,157 @@ The content of the groups are described in detail below.
 
 * **params**
   
-  This group contains two subgroups with parameter data that are either defined in, or derived directly from, the input file. 
+  This group contains two subgroups with parameter data that are either defined in, or derived directly from, the input file. These data are mainly for the purpose of restarting a simulation from an existing HDF5 output file. 
   
   * **structure_data**
+  
+    ========================= ============== ==============
+	Variable                  Dimensions     Description
+    ========================= ============== ==============
+    cwd                       1              Current working directory
+    desc                      1              *Redundant*
+    dims0                     1              Same as ny
+    dims1                     1              Number of x gridpoints
+    dims2                     1              *Redundant*
+    elements0                 1              Same as ny              
+    elements1                 1              Same as nx
+    elements2                 1              *Redundant*
+    lnx                       1              Same as nx
+    lny                       1              Same as ny
+    lnz                       1              *Redundant*
+    maschine                  1              Operating system
+    number                    1              *Redundant*
+    nx                        1              Number of x gridpoints per processor
+    ny                        1              Number of y gridpoints
+    nz                        1              *Redundant*
+    offx                      1
+    offy                      1
+    offz                      1
+    range00                   1              Lower y boundary [rhos]
+    range01                   1              Upper y boundary [rhos]
+    range10                   1              Lower x boundary [rhos]
+    range11                   1              Upper x boundary [rhos]
+    range20                   1              *Redundant*
+    range21                   1              *Redundant*
+    rank                      1              2 for 2D code (only option)
+    ========================= ============== ==============
 	
   * **structure_param**
   
-  
-    
+    ========================= ============== ==============
+	Variable                  Dimensions     Description
+    ========================= ============== ==============
+    A                         1              Given in :ref:`HESEL input` 
+    B0                        1              Given in :ref:`HESEL input`
+    Lp                        1              Given in :ref:`HESEL input`
+    Lpwall                    1              Given in :ref:`HESEL input`
+    MP                        1              Given in :ref:`HESEL input`
+    MP_NS                     1              Given in :ref:`HESEL input`
+    MP_SR                     1              Given in :ref:`HESEL input`
+    Mp                        1
+    R0                        1              Given in :ref:`HESEL input`
+    SOL                       1              Given in :ref:`HESEL input`
+    Te0                       1              Given in :ref:`HESEL input`
+    Ti0                       1              Given in :ref:`HESEL input`
+    Z                         1              Given in :ref:`HESEL input`
+    Zeff                      1              Given in :ref:`HESEL input`
+    adv_P                     1
+    adv_n                     1
+    adv_p                     1
+    adv_w                     1
+    amp_random0               1              Given in :ref:`HESEL input`
+    amp_random1               1              Given in :ref:`HESEL input`
+    amp_random2               1              Given in :ref:`HESEL input`
+    amp_random3               1              Given in :ref:`HESEL input`
+    background                1              Given in :ref:`HESEL input`
+    background_n              1              Given in :ref:`HESEL input`
+    background_t              1              Given in :ref:`HESEL input`
+    background_time           1              Given in :ref:`HESEL input`
+    bdval00                   1 
+    bdval01                   1
+    bdval10                   1
+    bdval11                   1
+    bdval20                   1
+    bdval21                   1
+    bdval30                   1
+    bdval31                   1
+    bdval40                   1
+    bdval41                   1
+    beta                      1              Given in :ref:`HESEL input`
+    boundary0                 1
+    boundary1                 1
+    boundary2                 1
+    boundary3                 1
+    bprof                     1              Given in :ref:`HESEL input`
+    con_P                     1
+    con_p                     1
+    coordsys                  1              Given in :ref:`HESEL input`
+    cs                        1              Ion sound speed [rhos w_ci]
+    damping_nt                1              Given in :ref:`HESEL input`
+    dissipation_nt            1              Given in :ref:`HESEL input`
+    dkx                       1
+    dky                       1
+    dkz                       1
+    drift_wave_Te             1              Given in :ref:`HESEL input`
+    drift_wave_term           1              Given in :ref:`HESEL input`
+    dt                        1              Given in :ref:`HESEL input`
+    dx                        1              x grid point spacing [rhos]
+    dy                        1              y grid point spacing [rhos]
+    dz                        1              *Redundant*
+    edge                      1              Given in :ref:`HESEL input`
+    end_time                  1              Given in :ref:`HESEL input`
+    energy                    1
+    fixed_time                1
+    fp                        1              Given in :ref:`HESEL input`
+    gamma                     1              Given in :ref:`HESEL input`
+    gradB                     1
+    hyper_factor              1              Given in :ref:`HESEL input`
+    init                      1              Given in :ref:`HESEL input`
+    init_ds                   1              Given in :ref:`HESEL input`
+    lamda                     1
+    limiter                   1
+    mean_dissipation          1
+    mean_flow                 1
+    mean_flow_radial          1
+    mean_flow_time            1
+    mue_P                     1
+    mue_P_fac                 1              Given in :ref:`HESEL input`
+    mue_n                     1
+    mue_n_fac                 1              Given in :ref:`HESEL input`
+    mue_p                     1
+    mue_p_coupling            1
+    mue_p_fac                 1              Given in :ref:`HESEL input`
+    mue_t                     1
+    mue_t_fac                 1
+    mue_w                     1
+    mue_w_fac                 1              Given in :ref:`HESEL input`
+    ne0                       1
+    nprof                     1
+    offset                    1
+    otmult                    1              Given in :ref:`HESEL input`
+    out_time                  1              Given in :ref:`HESEL input`
+    phiprof                   1
+    q                         1              Given in :ref:`HESEL input`
+    r0                        1              Given in :ref:`HESEL input`
+    ramb_up                   1              Given in :ref:`HESEL input`
+    ramb_up_time              1              Given in :ref:`HESEL input`
+    rho_e                     1              Electron thermal gyro-radius [m]
+    rho_i                     1              Ion thermal gyro-radius [m]
+    rho_s                     1              Cold-ion hybrid thermal gyro-radius [m]
+    run_no                    1              Given in :ref:`HESEL input`
+    sheath                    1
+    shot_no                   1              Given in :ref:`HESEL input`
+    sigma                     1              Given in :ref:`HESEL input`
+    time                      1
+    tprof                     1
+    w_ce                      1              Electron cyclotron frequency [s^-1]
+    w_ci                      1              Ion cyclotron frequency [s^-1]
+    wall                      1              Given in :ref:`HESEL input`
+    xmax                      1              Given in :ref:`HESEL input`
+    xmin                      1              Given in :ref:`HESEL input`
+    ymax                      1              Given in :ref:`HESEL input`
+    ymin                      1              Given in :ref:`HESEL input`
+    ========================= ============== ==============
 
 .. _HESEL as workflow actor:
 
