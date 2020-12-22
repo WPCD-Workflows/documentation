@@ -1,0 +1,51 @@
+# ------------------------------------------------------------------
+#  TIP0 
+# -------------------------------------------------------------------
+@TIP0	0.0	0.0	hdf5
+density
+vorticity
+temperature
+potential
+velocity_radial
+velocity_poloidal
+# -------------------------------------------------------------------
+#  TIP1
+# -------------------------------------------------------------------
+@TIP1	10.0	0.0	hdf5
+density
+vorticity
+temperature
+potential
+velocity_radial
+velocity_poloidal
+# -------------------------------------------------------------------
+#  TIP2
+# -------------------------------------------------------------------
+@TIP2	-10.0	0.0	hdf5
+density
+vorticity
+temperature
+potential
+velocity_radial
+velocity_poloidal
+# -------------------------------------------------------------------
+#  TIP3
+# -------------------------------------------------------------------
+@TIP3	0.0	10.0	hdf5
+density
+vorticity
+temperature
+potential
+velocity_radial
+velocity_poloidal
+# -------------------------------------------------------------------
+#  TIP4
+# -------------------------------------------------------------------
+@TIP4	0.0	-10.0	hdf5
+density
+vorticity
+temperature
+potential
+velocity_radial
+velocity_poloidal
+# last line should be a comment
