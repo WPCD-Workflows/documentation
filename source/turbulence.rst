@@ -35,7 +35,7 @@ There are plenty of publications in scientific journals based on HESEL (and its 
 * `ExB mean flows in finite ion temperature plasmas <https://doi.org/10.1063/1.4985329>`_
 * `Numerical simulations of blobs with ion dynamics <https://doi.org/10.1088/1361-6587/59/2/025012>`_
 
-The HESEL code structure and how to run it as a stand alone code is described in :ref:`HESEL as stand-alone`, the workflow wrapper documentation is described in :ref:`HESEL as workflow actor`, and a guide on how to include HESEL in the KEPLER workflow is given in :ref:`HESEL in the KEPLER workflow`.
+The HESEL code structure and how to run it as a stand alone code is described in :ref:`HESEL as stand-alone`, the workflow wrapper documentation is described in :ref:`HESEL as an actor`, and a guide on how to include HESEL in the KEPLER workflow is given in :ref:`HESEL in the KEPLER workflow`.
 
 .. _HESEL as stand-alone:
 
@@ -708,19 +708,227 @@ The content of the groups are described in detail below.
     ymin                      1              Given in :ref:`HESEL input`
     ========================= ============== ==============
 
-.. _HESEL as workflow actor:
+.. _HESEL as an actor:
 
 =======================
-HESEL as workflow actor
+HESEL as an actor
 =======================
-*The HESEL wrapper, input/output, ...*
+In this part HESEL is build as a library. First ensure that you have access to the cpo_interface SVN repository. In a browser load
+::
+
+    https://gforge-next.eufus.eu/
+
+and ask for a new password if you cannot login. If you do not have access contact ahnie@fysik.dtu.dk. On the EUROfusion Gateway open a terminal, change directory to (suggested) your `public` folder. Download the C-HESEL repository by following the guide in :ref:`HESEL as stand-alone`. In the `C-HESEL` repository check out the branch called `WPCD-workflow-dev`
+::
+
+	git checkout WPCD-workflow-dev
+
+
+and make sure that the commit 40da0f4dcb9aa6063d500f6c4fa824071042b77e made on 23.6.2021 is included. Now, in the `C_HESEL` directory return
+::
+	
+	cd FUTILS_version2.2/src
+	make -f Makefile.gateway clean
+	make -f Makefile.gateway
+	cd ../..
+	make clean
+	make esel
+	make libhesel
+	
+After that, and still in you `public` folder, return the following
+::
+
+    svn co https://gforge-next.eufus.eu/svn/cpo_interface
+
+to checkout the wrapper repository. Now enter the directory 
+::
+
+    cd cpo_interface/tags/3.31.0/ids
+
+and edit the file `Makefile.gateway`. In this file you will find four lines that contain a reference to a path belonging to the user `g2ahnie`. Those lines are line no. 11, 13, 20 and 23. Change the path in those lines to that which points to the corresponding files in the `C-HESEL` repository in your `public` directory. Save the edit, quit the editor and in the terminal return
+::
+  
+	make -f Makefile.gateway clean
+	make -f Makefile.gateway libhesel
+
+to make the HESEL library `libheselwrapper.a`.
+	
 
 .. _HESEL in the KEPLER workflow:
 
 ============================
 HESEL in the KEPLER workflow
 ============================
-*End-user documentation, installing and running HESEL in the workflow, ...*
+On the EUROfusion Gateway build the HESEL library as described in :ref:`HESEL as an actor`. Open a terminal and return the following to load the required modules
+::
+
+	module purge
+	module load cineca
+	module load imasenv/3.31.0/rc
+	module unload itm-hdf5 hdf5
+	module load  itm-hdf5/1.8.17/intel/17.0/mpi
+	module switch kepler/2.5p5-3.1.1_3.31.0_rc
+	module switch imas-fc2k/4.13.0
+
+If not installed already, install Kepler by returning
+:: 
+
+    kepler_install <username>
+
+where <username> is your usename for the Gateway and allow for the directory to be created if prompted for this. After installing Kepler load it by
+::
+
+	kepler_load <username>
+
+A number of directories have to be moved to other partitions and replaced by symbolic links. In the terminal return the following
+::
+
+	cd ~
+	mkdir work (if it does not already exist)
+	mkdir work/KEPLEREXECUTION (if it does not already exist)
+	cd public
+	mv imasdb ../work/
+	ln -s ../work/imasdb imasdb
+	ln -s ../work/KEPLEREXECUTION KEPLEREXECUTION
+
+And an IMAS database initiated
+::
+	
+	imasdbs -u <username>
+
+In the terminal return
+::
+    
+	fc2k
+
+This will open a new window to generate a Kepler actor. 
+
+.. table:: 
+   :align: center
+   
+   +--------------------------------------------------+
+   | .. figure:: images/hesel_generate_actor.png      |
+   +--------------------------------------------------+
+   | Kepler actor generator window                    |
+   +--------------------------------------------------+
+
+In the `file` menu click `open` and navigate to the file (most likely located in) `public/cpo_interface/tags/3.31.0/scripts/Actors/HESEL_1.0.0.xml` and click `open`. In the tabs `Environment`, `Parameters`, and `Source`, if applicable, change the paths that belong to the user `g2ahnie` to the corresponding paths in your system. Click `Generate` to generate the actor from the wrapper that calls the HESEL code.
+
+In the terminal run KEPLER by returning
+::
+
+	kepler
+	
+this will open a new window. In KEPLER open the HESEL actor that was just generated in `file` -> `open` to load the workflow.
+
+.. table:: 
+   :align: center
+   
+   +--------------------------------------------------+
+   | .. figure:: images/hesel_kepler_workflow.png     |
+   +--------------------------------------------------+
+   | HESEL workflow in KEPLER                         |
+   +--------------------------------------------------+
+
+In the first actor, `START`, constrols the workflow input. By double clicking the box a window pops up which allows for the user to edit the workflow input parameters
+
+.. table:: 
+   :align: center
+   
+   +--------------------------------------------------+
+   | .. figure:: images/hesel_kepler_START.png        |
+   +--------------------------------------------------+
+   | Edit HESEL workflow input parameters             |
+   +--------------------------------------------------+
+
+The input have the following descriptions
+      
+      ========================= ============== 
+	  Variable                  Description     
+      ========================= ============== 
+      user_name                 Name of user from which experiment imas database are loaded        
+	  machine_name              Short name of device        
+	  shot_number               Machine shot number        
+	  input_run                 Input run number for HESEL realisation
+	  output_run                Output run number for HESEL        
+	  time                      Time at which experimental data are pulled 
+      ========================= ============== 
+
+The second actor, `MAP_EXP_DATA`, maps the input profiles that HESEL will use as initial conditions and reference profiles in the forcing region. If you double click the box the following editing window is opened
+
+.. table:: 
+   :align: center
+   
+   +--------------------------------------------------+
+   | .. figure:: images/hesel_kepler_MAP.png          |
+   +--------------------------------------------------+
+   | Edit HESEL workflow data mapping parameters      |
+   +--------------------------------------------------+
+
+The input have the following descriptions
+
+      ========================= ==============
+	  Variable                  Description     
+      ========================= ============== 
+      R_start                   Radial profile coordinate starting position        
+	  R_end                     Radial profile coordinate ending position
+	  Z_start                   Longitudinal profile coordinate starting position  
+	  Z_end                     Longitudinal profile coordinate ending position
+	  Npoints                   Grid resolution        
+	  Visualize_data            Whether to visualize the profile data or not 
+      ========================= ============== 
+
+Note that if `yes` is selected for `Visualize_data`, the data will be displayed as below and the workflow stops. 
+
+.. table:: 
+   :align: center
+   
+   +-------------------------------------------------------------------+
+   | .. figure:: images/hesel_kepler_profiles.png                      |
+   +-------------------------------------------------------------------+
+   | Example of resulting window when Visualize_data is selected       |
+   +-------------------------------------------------------------------+
+
+To run the workflow beyond the `MAP_EXP_DATA` actor the value for `Visualize_data` has to be `no` when the workflow is initiated.
+
+The third, and last editable, actor is the `HESEL` actor. Right-click this box and select `Open Actor` to edit the submission script and non-predetermined HESEL input parameters. The following window appears when the actor is opened. 
+
+.. table:: 
+   :align: center
+   
+   +-------------------------------------------------------------------+
+   | .. figure:: images/hesel_kepler_HESEL.png                         |
+   +-------------------------------------------------------------------+
+   | Workflow within the HESEL actor                                   |
+   +-------------------------------------------------------------------+
+
+The only relevant actor within this sub-workflow is that called `HESEL`. When this box is double clicked the following window appears
+
+.. table:: 
+   :align: center
+   
+   +-------------------------------------------------------------------+
+   | .. figure:: images/hesel_kepler_HESEL__edit.png                   |
+   +-------------------------------------------------------------------+
+   | The HESEL actor where submission data can be edited               |
+   +-------------------------------------------------------------------+
+
+The batch file appears in this window and it is possible to adjust this to alter submission data. If the button `Edit Code Parameters` is clicked the following option to edit the (mainly numerical) HESEL input parameters that cannot be determined from experimental data appears
+
+.. table:: 
+   :align: center
+   
+   +-------------------------------------------------------------------+
+   | .. figure:: images/hesel_kepler_HESEL__para.png                   |
+   +-------------------------------------------------------------------+
+   | The non-predetermined HESEL input parameters can be edited        |
+   +-------------------------------------------------------------------+
+
+Where the descriptions of the parameters is given in :ref:`HESEL input`. 
+
+When the input parameters for all actors of the workflow are set the HESEL EDGE TURBULENCE WORKFLOW is initated by pressing the green triangle button in the outermost workflow. 
+
+The output data are stored in the ~/work/imasdb folder according to the structure described in :ref:`HESEL output`.
 
 .. ********************
 .. RENATE Documentation
