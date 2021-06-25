@@ -12,7 +12,7 @@ The HESEL code is a numerical solver for the set of equations that describe the 
    :align: center
 
    +-----------------------------------------+-------------------------------------------------+
-   | .. figure:: images/hesel_location.png   |  .. figure:: images/hesel_domain.png            |
+   | .. image:: images/hesel_location.png    |  .. image:: images/hesel_domain.png             |
    +-----------------------------------------+-------------------------------------------------+
    |The HESEL 2D slab domain. Images from A.H. Nielsen *et al 2019 Nucl. Fusion* **59** 086059.|
    +-------------------------------------------------------------------------------------------+
@@ -23,7 +23,7 @@ The solutions typically show the development of filaments (blobs) near the last-
    :align: center
    
    +--------------------------------------------------+
-   | .. figure:: images/hesel_simulation.png          |
+   | .. image:: images/hesel_simulation.png           |
    +--------------------------------------------------+
    |Snapshot of solution fields for HESEL simulation  |
    +--------------------------------------------------+
@@ -231,7 +231,7 @@ The HESEL stand-alone code structure is graphed below
    :align: center
    
    +--------------------------------------------------+
-   | .. figure:: images/hesel_esel_c_GRAPH.png        |
+   | .. image:: images/hesel_esel_c_GRAPH.png         |
    +--------------------------------------------------+
    |HESEL structure graph                             |
    +--------------------------------------------------+
@@ -807,7 +807,7 @@ This will open a new window to generate a Kepler actor.
    :align: center
    
    +--------------------------------------------------+
-   | .. figure:: images/hesel_generate_actor.png      |
+   | .. image:: images/hesel_generate_actor.png       |
    +--------------------------------------------------+
    | Kepler actor generator window                    |
    +--------------------------------------------------+
@@ -825,7 +825,7 @@ this will open a new window. In KEPLER open the HESEL actor that was just genera
    :align: center
    
    +--------------------------------------------------+
-   | .. figure:: images/hesel_kepler_workflow.png     |
+   | .. image:: images/hesel_kepler_workflow.png      |
    +--------------------------------------------------+
    | HESEL workflow in KEPLER                         |
    +--------------------------------------------------+
@@ -836,7 +836,7 @@ In the first actor, `START`, constrols the workflow input. By double clicking th
    :align: center
    
    +--------------------------------------------------+
-   | .. figure:: images/hesel_kepler_START.png        |
+   | .. image:: images/hesel_kepler_START.png         |
    +--------------------------------------------------+
    | Edit HESEL workflow input parameters             |
    +--------------------------------------------------+
@@ -860,7 +860,7 @@ The second actor, `MAP_EXP_DATA`, maps the input profiles that HESEL will use as
    :align: center
    
    +--------------------------------------------------+
-   | .. figure:: images/hesel_kepler_MAP.png          |
+   | .. image:: images/hesel_kepler_MAP.png           |
    +--------------------------------------------------+
    | Edit HESEL workflow data mapping parameters      |
    +--------------------------------------------------+
@@ -884,7 +884,7 @@ Note that if `yes` is selected for `Visualize_data`, the data will be displayed 
    :align: center
    
    +-------------------------------------------------------------------+
-   | .. figure:: images/hesel_kepler_profiles.png                      |
+   | .. image:: images/hesel_kepler_profiles.png                       |
    +-------------------------------------------------------------------+
    | Example of resulting window when Visualize_data is selected       |
    +-------------------------------------------------------------------+
@@ -897,7 +897,7 @@ The third, and last editable, actor is the `HESEL` actor. Right-click this box a
    :align: center
    
    +-------------------------------------------------------------------+
-   | .. figure:: images/hesel_kepler_HESEL.png                         |
+   | .. image:: images/hesel_kepler_HESEL.png                          |
    +-------------------------------------------------------------------+
    | Workflow within the HESEL actor                                   |
    +-------------------------------------------------------------------+
@@ -908,7 +908,7 @@ The only relevant actor within this sub-workflow is that called `HESEL`. When th
    :align: center
    
    +-------------------------------------------------------------------+
-   | .. figure:: images/hesel_kepler_HESEL__edit.png                   |
+   | .. image:: images/hesel_kepler_HESEL__edit.png                    |
    +-------------------------------------------------------------------+
    | The HESEL actor where submission data can be edited               |
    +-------------------------------------------------------------------+
@@ -919,7 +919,7 @@ The batch file appears in this window and it is possible to adjust this to alter
    :align: center
    
    +-------------------------------------------------------------------+
-   | .. figure:: images/hesel_kepler_HESEL__para.png                   |
+   | .. image:: images/hesel_kepler_HESEL__para.png                    |
    +-------------------------------------------------------------------+
    | The non-predetermined HESEL input parameters can be edited        |
    +-------------------------------------------------------------------+

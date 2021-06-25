@@ -245,7 +245,7 @@ FC2K
    use CPOs as input/output).
 
 Gforge
-  `Gforge <https://gforge6.eufus.eu>`__ hosts all projects (software and infrastructure) under the EU-IM.
+  `Gforge <https://gforge-next.eufus.eu>`__ hosts all projects (software and infrastructure) under the EU-IM.
 
 EUROfusion Gateway
    The EUROfusion Gateway is a computer cluster presently hosted at CINECA, Bologna, Italy. 

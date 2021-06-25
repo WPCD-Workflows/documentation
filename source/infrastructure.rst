@@ -1635,9 +1635,9 @@ Documentation
 
 -  4.09a
    Resources:
-   `Sources <https://gforge6.eufus.eu/svn/itmggd/branches/4.09a/>`__,
+   `Sources <https://gforge-next.eufus.eu/svn/itmggd/branches/4.09a/>`__,
    `Fortran
-   Examples <https://gforge6.eufus.eu/svn/itmggd/branches/4.09a/f90/src/examples/>`__
+   Examples <https://gforge-next.eufus.eu/svn/itmggd/branches/4.09a/f90/src/examples/>`__
 
    Documentation:
 
@@ -1651,9 +1651,9 @@ Documentation
 
 -  4.10a
    Resources:
-   `Sources <https://gforge6.eufus.eu/svn/itmggd/branches/4.10a/>`__,
+   `Sources <https://gforge-next.eufus.eu/svn/itmggd/branches/4.10a/>`__,
    `Fortran
-   Examples <https://gforge6.eufus.eu/svn/itmggd/branches/4.10a/f90/src/examples/>`__
+   Examples <https://gforge-next.eufus.eu/svn/itmggd/branches/4.10a/f90/src/examples/>`__
 
    Documentation:
 
@@ -2014,13 +2014,13 @@ Checking out and testing the grid service library
 
 To be able to get the code of the grid service library, you have to be a
 member of the EU-IM General Grid description (itmggd) project (you can
-apply for this `here <https://gforge6.eufus.eu/gf/project/itmggd/>`__).
+apply for this `here <https://gforge-next.eufus.eu/gf/project/itmggd/>`__).
 
 Once you are a member, you can check out the code by
 
 .. code-block:: console
 
-   svn co https://gforge6.eufus.eu/svn/itmggd itm-grid
+   svn co https://gforge-next.eufus.eu/svn/itmggd itm-grid
 
 Then you can run the unit tests for the grid service library by
 
