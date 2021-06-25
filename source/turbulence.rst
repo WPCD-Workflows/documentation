@@ -928,7 +928,7 @@ Where the descriptions of the parameters is given in :ref:`HESEL input`.
 
 When the input parameters for all actors of the workflow are set the HESEL EDGE TURBULENCE WORKFLOW is initated by pressing the green triangle button in the outermost workflow. 
 
-The output data are stored in the ~/work/imasdb folder according to the structure described in :ref:`HESEL output`.
+The output data are stored in the `~/work/imasdb` folder according to the structure described in :ref:`HESEL output`.
 
 .. ********************
 .. RENATE Documentation

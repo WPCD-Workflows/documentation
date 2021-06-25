@@ -256,8 +256,8 @@ latex_elements = {
      # Additional stuff for the LaTeX preamble.
      #
      # 'preamble': '',
-#'preamble': '\usepackage{graphicx}\setkeys{Gin}{width=.60\csname Gin@nat@width\endcsname,keepaspectratio}',
-
+'preamble': r'\usepackage{graphicx}\setkeys{Gin}{width=.60\csname Gin@nat@width\endcsname,keepaspectratio}',
+  
      # Latex figure (float) alignment
      #
      # 'figure_align': 'htbp',
