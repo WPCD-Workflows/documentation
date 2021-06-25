@@ -208,7 +208,7 @@ Now you need to check out the workflow by typing (only for first time users)
 
 .. code-block:: console
 
-   svn co --username g2mroma https://gforge6.eufus.eu/svn/eqstabil/tags/imas_3.25.0_4.4.0/workflows eqstabil_workflow
+   svn co --username g2mroma https://gforge-next.eufus.eu/svn/eqstabil/tags/imas_3.25.0_4.4.0/workflows eqstabil_workflow
 
 
 Create the database folder with the name of the device you wish to run the equilibrium for

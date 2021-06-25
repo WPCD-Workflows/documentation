@@ -196,14 +196,14 @@ cpo between different COCOS. The source is found in
 
 .. code-block:: console
 
-           https://gforge6.eufus.eu/svn/numerical_tools/tags/COCOStransform_v1_1 
+           https://gforge-next.eufus.eu/svn/numerical_tools/tags/COCOStransform_v1_1 
          
 
 and the actor is
 
 .. code-block:: console
 
-           https://gforge6.eufus.eu/svn/kepleractors/tags/4.09a/imp12/COCOStransformequil.tar 
+           https://gforge-next.eufus.eu/svn/kepleractors/tags/4.09a/imp12/COCOStransformequil.tar 
          
 
 (also available from: ~sauter/public/ACTORS/4.09a)
@@ -508,7 +508,7 @@ To check out the relevant files please do
 
 .. code-block:: console
 
-   svn checkout https://gforge6.eufus.eu/svn/itmshared/trunk/src/itm_types target_dir
+   svn checkout https://gforge-next.eufus.eu/svn/itmshared/trunk/src/itm_types target_dir
          
 
 For Fortran90, the following standard types have been defined
@@ -548,7 +548,7 @@ itmshared . To check out the relevant files please do
 
 .. code-block:: console
 
-   svn checkout https://gforge6.eufus.eu/svn/itmshared/trunk/src/itm_constants target_dir
+   svn checkout https://gforge-next.eufus.eu/svn/itmshared/trunk/src/itm_constants target_dir
          
 .. _itm_conventions_invalid_data_base_entries:
 
@@ -579,7 +579,7 @@ by the project itmshared . To check out the relevant files please do
 
 .. code-block:: console
 
-       svn checkout https://gforge6.eufus.eu/svn/itmshared/trunk/src/itm_types target_dir
+       svn checkout https://gforge-next.eufus.eu/svn/itmshared/trunk/src/itm_types target_dir
          
 
 The module also includes three functions of type boolean itm_is_valid_int4
@@ -682,7 +682,7 @@ datatypes, are available in:
 
 .. code-block:: console
 
-      https://gforge6.eufus.eu/svn/itmshared/trunk/src/itm_constants/examples
+      https://gforge-next.eufus.eu/svn/itmshared/trunk/src/itm_constants/examples
        
 
 .. _itm_conventions_grid_types_in_equilibrium_cpo:

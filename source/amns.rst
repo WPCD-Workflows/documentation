@@ -63,7 +63,7 @@ Some papers:
    D. Tskhakaya, D. Coster and ITM-TF contributors
 
 The present coding for the AMNS project is done in the gforge `amnsproto
-project <https://gforge6.eufus.eu/gf/project/amnsproto/>`__.
+project <https://gforge-next.eufus.eu/gf/project/amnsproto/>`__.
 
 
 
@@ -206,7 +206,7 @@ calls is the responsibility of the AMNS data providers and does not need
 to be understood by the users of the AMNS data.
 
 The code modules devloped for the AMNS project are hosted in gforge as
-the `project amnsproto <https://gforge6.eufus.eu/gf/project/amnsproto/>`__.
+the `project amnsproto <https://gforge-next.eufus.eu/gf/project/amnsproto/>`__.
 
 .. _amns_user_interface_calls_f:
 
@@ -332,7 +332,7 @@ AMNS User Interface Example (Fortran)
 +++++++++++++++++++++++++++++++++++++
 
 An example of the use of the code can be found in the (`fortran minimal
-example <https://gforge6.eufus.eu/svn/amnsproto/tags/examples/fortran/>`__):
+example <https://gforge-next.eufus.eu/svn/amnsproto/tags/examples/fortran/>`__):
 
 .. code-block:: console 
 
@@ -378,7 +378,7 @@ An example Makefile demonstrating the use of the AMNS routines:
          amns-amd64_intel_12 itmtypes-amd64_intel_12 ual-amd64_intel_12}
 
 Other examples can be found
-(`here <https://gforge6.eufus.eu/svn/amnsproto/tags/examples/>`__):
+(`here <https://gforge-next.eufus.eu/svn/amnsproto/tags/examples/>`__):
 
 .. _amns_user_interface_c:
 
@@ -391,7 +391,7 @@ is the responsibility of the AMNS data providers and does not need to be
 understood by the users of the AMNS data.
 
 The code modules devloped for the AMNS project are hosted in gforge as
-the `project amnsproto <https://gforge6.eufus.eu/gf/project/amnsproto/>`__.
+the `project amnsproto <https://gforge-next.eufus.eu/gf/project/amnsproto/>`__.
 
 .. _amns_user_interface_calls_c:
 
@@ -505,7 +505,7 @@ AMNS User Interface Example (C)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 An example of the use of the code can be found in the (`c minimal
-example <https://gforge6.eufus.eu/svn/amnsproto/tags/examples/c/>`__):
+example <https://gforge-next.eufus.eu/svn/amnsproto/tags/examples/c/>`__):
 
 
 .. code-block:: console 
@@ -559,7 +559,7 @@ An example Makefile demonstrating the use of the AMNS routines:
              amns-ifort itmconstants ual-amd64_intel_12}
 
 Other examples can be found
-(`here <https://gforge6.eufus.eu/svn/amnsproto/tags/examples/>`__):
+(`here <https://gforge-next.eufus.eu/svn/amnsproto/tags/examples/>`__):
 
 .. _amns_user_interface_python:
 
@@ -572,7 +572,7 @@ calls is the responsibility of the AMNS data providers and does not need
 to be understood by the users of the AMNS data.
 
 The code modules devloped for the AMNS project are hosted in gforge as
-the `project amnsproto <https://gforge6.eufus.eu/gf/project/amnsproto/>`__.
+the `project amnsproto <https://gforge-next.eufus.eu/gf/project/amnsproto/>`__.
 
 .. _amns_user_interface_calls_python:
 
@@ -607,7 +607,7 @@ AMNS User Interface Example (Python)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 An example of the use of the code can be found in the (`python minimal
-example <https://gforge6.eufus.eu/svn/amnsproto/tags/examples/python/>`__):
+example <https://gforge-next.eufus.eu/svn/amnsproto/tags/examples/python/>`__):
 
 .. code-block:: console 
 
