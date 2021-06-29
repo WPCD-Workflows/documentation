@@ -930,6 +930,6 @@ When the input parameters for all actors of the workflow are set the HESEL EDGE 
 
 The output data are stored in the `~/work/imasdb` folder according to the structure described in :ref:`HESEL output`.
 
-.. ********************
-.. RENATE Documentation
-.. ********************
+********************
+RENATE Documentation
+********************
