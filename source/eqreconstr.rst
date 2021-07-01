@@ -109,6 +109,7 @@ clicking on the actor (see Figure below).
 Among the several options the user can choose :
 
 -  To perform plasma equilibrium reconstruction only (FBE_only = yes/no)
+-  To use thermal plasma pressure in the plasma equilibrium reconstruction (FBEkinetics = yes/no)
 -  Which code to use to perform the equilibrium reconstruction (FBEcode)
 
    -  `EQUAL <https://portal.eufus.eu/twiki/bin/view/Main/EquilibriumCode_EQUAL>`__
