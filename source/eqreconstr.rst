@@ -219,9 +219,9 @@ Create the database folder with the name of the device you wish to run the equil
 
 
 Retrieve the data for needed to reconstruct the plasma equilibrium by launching :
--  IMASviz
--  TCV2IDS
--  ReadAUG
+   -  IMASviz
+   -  TCV2IDS
+   -  ReadAUG
 
 
 Import the following IDSs  
