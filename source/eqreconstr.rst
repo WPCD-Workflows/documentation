@@ -220,11 +220,11 @@ Create the database folder with the name of the device you wish to run the equil
 
 Retrieve the data for needed to reconstruct the plasma equilibrium by launching :
 
-`ReadAUG <https://iterphysicswiki.euro-fusion.org/index.php?title=AUG_to_ids>`__
-`TCV2IDS <https://iterphysicswiki.euro-fusion.org/index.php?title=TCV_to_ids>`__
-`TCV2IDS <https://iterphysicswiki.euro-fusion.org/index.php?title=TCV_to_ids>`__
-`MAST2IDS <https://iterphysicswiki.euro-fusion.org/index.php?title=MAST_to_IDS>`__
-`UDA <https://iterphysicswiki.euro-fusion.org/index.php?title=EWE-1_Data_access,_interfaces_and_data_preparation_routines_for_the_initialization_of_WPCD_workflows_to_enable_MST/JET/WPs_exploitation#UDA_mapping_using_EXP2ITM_mapping_files_.28JET.2C_TCV.2C_AUG.2C_MAST.29>`__
+-  `ReadAUG <https://iterphysicswiki.euro-fusion.org/index.php?title=AUG_to_ids>`__
+-  `TCV2IDS <https://iterphysicswiki.euro-fusion.org/index.php?title=TCV_to_ids>`__
+-  `TCV2IDS <https://iterphysicswiki.euro-fusion.org/index.php?title=TCV_to_ids>`__
+-  `MAST2IDS <https://iterphysicswiki.euro-fusion.org/index.php?title=MAST_to_IDS>`__
+-  `UDA <https://iterphysicswiki.euro-fusion.org/index.php?title=EWE-1_Data_access,_interfaces_and_data_preparation_routines_for_the_initialization_of_WPCD_workflows_to_enable_MST/JET/WPs_exploitation#UDA_mapping_using_EXP2ITM_mapping_files_.28JET.2C_TCV.2C_AUG.2C_MAST.29>`__
 
 
 Import the following IDSs  
