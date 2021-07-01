@@ -33,12 +33,12 @@ results. Some fundamental data verification is performed on the input
 and processed data to ensure a “safe landing” of the workflow in case
 any problems are identified.
 
-The workflow is presently targeting primarily straightforward magnetics
-only plasma reconstruction calculations in any plasma scenario.
+The workflow is now able to target both straightforward magnetics
+only plasma reconstruction calculations in any plasma scenario but also 
+incorporate kinetic data (thermal or thermal+fast pressure).
 Interferometry, polarimetry and Motional Stark Effect assisted
 reconstructions are also possible since no workflow changes are
-necessary. Future versions of the workflow will incorporate kinetic data
-(thermal/fast pressure).
+necessary.
 
 The workflow is not meant for running use cases that require strong user
 intervention during the run execution e.g. setting different code
@@ -53,7 +53,7 @@ given diagnostic channels or changing regularization coefficients.
 
 The top level layout of the workflow is shown below.
 
-.. figure:: images/eqreconstruct_JET_timeloop_records.png
+.. figure:: images/eqreconstruct_JET_timeloop_records_62.png
    :align: center
 
 As shown in the workflow layout, the workflow execution typically
@@ -197,9 +197,9 @@ if it is the first time you go through this process you will need to create the 
 
 .. code-block:: console
 
-   module switch kepler/2.5p4-3.0.6_dressed_3.25
-   kepler_install my_2.5p4-3.0.6_dressed_3.25
-   kepler_load my_2.5p4-3.0.6_dressed_3.25
+   module switch kepler/2.5p5-3.1.1_dressed_3.28.1
+   kepler_install my_2.5p5-3.1.1_dressed_3.28.1
+   kepler_load my_2.5p5-3.1.1_dressed_3.28.1
 
 Once you have installed kepler you do not need to repeat this operation and it will be enough to 
 execute the kepler_load instruction.
@@ -208,7 +208,7 @@ Now you need to check out the workflow by typing (only for first time users)
 
 .. code-block:: console
 
-   svn co --username g2mroma https://gforge-next.eufus.eu/svn/eqstabil/tags/imas_3.25.0_4.4.0/workflows eqstabil_workflow
+   svn co --username g2rcoelh https://gforge-next.eufus.eu/svn/eqstabil/tags/imas_3.28.1_4.7.2/workflows eqreconstruct_workflow
 
 
 Create the database folder with the name of the device you wish to run the equilibrium for
@@ -218,12 +218,18 @@ Create the database folder with the name of the device you wish to run the equil
    imasdb JET
 
 
-Retrieve the data for magnetic-only equilibrium by launching IMASviz or TCV2IDS
+Retrieve the data for needed to reconstruct the plasma equilibrium by launching :
+
+-  `ReadAUG <https://iterphysicswiki.euro-fusion.org/index.php?title=AUG_to_ids>`__
+-  `TCV2IDS <https://iterphysicswiki.euro-fusion.org/index.php?title=TCV_to_ids>`__
+-  `TCV2IDS <https://iterphysicswiki.euro-fusion.org/index.php?title=TCV_to_ids>`__
+-  `MAST2IDS <https://iterphysicswiki.euro-fusion.org/index.php?title=MAST_to_IDS>`__
+-  `UDA <https://iterphysicswiki.euro-fusion.org/index.php?title=EWE-1_Data_access,_interfaces_and_data_preparation_routines_for_the_initialization_of_WPCD_workflows_to_enable_MST/JET/WPs_exploitation#UDA_mapping_using_EXP2ITM_mapping_files_.28JET.2C_TCV.2C_AUG.2C_MAST.29>`__
 
 
 Import the following IDSs  
 
-magnetics, pf_active, (pf_passive), (iron_core), wall, tf
+magnetics, pf_active, (pf_passive), iron_core, wall, tf, thomson_scattering
 
 Note that iron_core is only needed for JET and WEST and pf_passive is only desirable (not supported by all equilibrium reconstruction actors)
 
@@ -301,6 +307,10 @@ workflow). To access the actors codeparam the easiest route is to :
 6. News and Recent activity
 ===========================
 
+*30th June 2021: Time loop version available using both magnetics and
+pressure constraints. EQUAL and NICE codes included and verified for
+IMAS DD 3.29.0. HELENA, CHEASE and CAXE codes embedded in the high
+resolution stage*
 *8th March 2019: JET version of the workflow tested successfully on
 test/84600/28 database. Only EQUAL + HELENA codes included. Successful
 run from t=49s to 53s with both EQUAL and HELENA being executed and the
