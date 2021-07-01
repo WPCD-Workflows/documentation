@@ -31,7 +31,7 @@ entry. Therefore,
    database entry. The workflow may be subject to upgrades/revisions to
    accomodate new features that facilitate/enhance user experience so
    stay tuned for News and Recent activity.
- - The workflow design facilitates the integration of a variety of plasma 
+-  The workflow design facilitates the integration of a variety of plasma 
    equilibrium and stability codes, all using the same input data from a user
    defined IMAS database. In addition, during all workflow stages (including 
    initialization and finalization), the modeling data are cast under the same
