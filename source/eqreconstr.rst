@@ -268,6 +268,7 @@ The workflow parameters in the **START** actor are as follows:
 The workflow parameters in the **Reconstruct** actor are as follows:
 
 - **FBE_only**: Set to "*yes*" if addressing only the plasma equilibrium reconstruction. If set to "*no*" the high resolution equilibrium is also calculated.
+- **FBEkinetics**: Set to "*no*" to perform magnetics only reconstruction (Farady+MSE usage is set in the actors). If set to "*yes*" thermal plasma pressure is also considered.
 - **FBEcode**: Choice for equilibrium reconstruction code to be used.
 - **Visualise_FBE**: Set to "*yes*" to get a plot of the reconstructed equilibrium at every step.
 - **Visualise_HRE**: Set to *yes* to get a plot of the high resolution equilibrium derived from the reconstructed equilibrium at every step.
