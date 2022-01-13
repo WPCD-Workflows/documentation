@@ -80,28 +80,37 @@ In this composite actor the actual calculation of the high resolution equilibriu
    :align: center
 
 Among the several options the user can choose :
+
 -  To run plasma equilibrium code (Run_equilibrium = yes/no)
 -  To run plasma stability code (Run_stability = yes/no)
 -  Which code to use to perform the equilibrium calculation (HREcode)
+ 
    -  HELENA (tested)
    -  CHEASE (tested)
    -  CAXE (tested)
+
 -  Which code to use for MHD stability (STABILITY_CODE_CHOICE)
+
    -  ILSA
    -  MARS
    -  KINX
+
 -  To visualise the high resolution results and MHD stability during workflow execution (Visualise_HRE, Visualise_MHD=yes/no)
 -  If cutting the equilibrium to be piped to the high resultuion calculation is necessary (cut_eq = yes/no) and if so at what percentage of the normalised separatrix flux (0<cut_off<1). When the user chooses to cut the boundary to perform the high resolution equilibrium calculations:
+
    -  A new plasma boundary is determined from the calculated 2D flux map
    -  The plasma profiles are also cut accordingly (the plasma is not artifically "scaled down" in volume)
    -  The total toroidal plasma current is not recalculated (equilibrium code should be set to use the boundary poloidal magnetic flux as boundary condition)
    -  A plot of the original + cut_off equilibrium summary is shown if Visualise_HRE=yes .
 
 When the user chooses to visualise any of the calculated equilibria or MHD eigenfunctions ( Visualise_HRE=yes or Visualise_MHD=yes):
+
 -  Three windows showing
+
    -  The 2D poloidal flux map and radial profiles of Pressure, Toroidal averaged current density and q-profile on the rcoord grid.
    -  The profiles of P, P', F and FF' on the rcoord grid.
    -  The rho_pol_norm "radial" grid in terms of grid index.
+
 -  The 1D profile of the eigenfunctions for the mode(s) selected in the code parameters of the MHD code.
 -  Corresponding image files are saved at the filesystem path indicated by the user selected path variable.
 
@@ -120,10 +129,11 @@ High resolution equilibrium is stored as occurrence=0, the cut boundary "precurs
 Installing the workflow
 ========================================
 To obtain the workflow and included actors a dressed release of KEPLER is recommended. To get such dressed releases please proceed as follows:
+
 -  Get the dressed KEPLER
 -  Get the Workflow
 
-WARNING: Don't forget to set your imasdb device environment before running the workflow (run the "imasdb MACHINE_NAME" command !)
+**WARNING: Don't forget to set your imasdb device environment before running the workflow (run the "imasdb MACHINE_NAME" command !)**
 
 
 Setting up Workflow and Actor parameters
@@ -150,8 +160,10 @@ The workflow parameters in the **MHD_EQ_STABILITY** actor are as follows:
 -  **HREcode** : Choice for equilibrium code to be used.
 -  **Visualise_HRE** : Set to "yes" to get a plot of the high resolution equilibrium.
 -  **cut_eq** :
+
    -  **yes** : cut the input equilibrium (necessary if high resolution equilibrium code cannot handle separatrix plasma equilibria)
    -  **no** : input equilibrium is used "as is".
+
 -  **cut_off** : float ]0,1], specifies the percentage of the separatrix flux that will define the poloidal flux of the new plasma boundary.
 -  **rcoord: choose either "rho_pol_norm" or "rho_vol" as radial coordinate for the plots to be displayed.
 -  **STABILITY_CODE_CHOICE**: Choice for MHD stability code to be used.
@@ -159,11 +171,13 @@ The workflow parameters in the **MHD_EQ_STABILITY** actor are as follows:
 -  **path** : temporary folder where to dump the plots generated. Also used to store output files (used by HELENA)
 
 The workflow parameters in the **SAVE SLICE** actor are as follows:
+
 -  **Save_HRE_only**:
+
    -  **yes** : only occurrence=0 of equilibrium i.e. the output of the high resolution code is saved.
    -  **no : occurrences = 0,1,2 are saved. High resolution equilibrium is stored as occurrence=0, the cut boundary "precursor equilibrium" as occurrence=1 and the equilibrium input (e.g. from equilibrium reconstruction) as occurrence=2. If "cut_eq"=""no" then occurrence=1 and occurrence=2 are copies of the input equilibrium.
 
-***The user can always stop the workflow by Pressing the STOP button in Kepler canvas.***
+**The user can always stop the workflow by Pressing the STOP button in Kepler canvas.**
 
 Setting actor parameters
 ------------------------
