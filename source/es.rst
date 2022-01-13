@@ -51,6 +51,8 @@ The top level layout of the workflow is shown below.
    :align: center
 
 
+
+
 As shown in the workflow layout, the workflow execution typically follows the following steps (further detailed below):
 
 -  START (set up input imasdb database and requested simulation time instant)
