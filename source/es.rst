@@ -52,11 +52,12 @@ The top level layout of the workflow is shown below.
 
 
 As shown in the workflow layout, the workflow execution typically follows the following steps (further detailed below):
-* START (set up input imasdb database and requested simulation time instant)
-* CHECK_DATA (verify data consistency)
-* MHD_EQ_STABILITY (high resolution equilibrium and MHD stability calculation for a given time step)
-* SAVE SLICE (save time slice on database)
-* STOP THE RUN (end the simulation and stop)
+
+-  START (set up input imasdb database and requested simulation time instant)
+-  CHECK_DATA (verify data consistency)
+-  MHD_EQ_STABILITY (high resolution equilibrium and MHD stability calculation for a given time step)
+-  SAVE SLICE (save time slice on database)
+-  STOP THE RUN (end the simulation and stop)
 
 
 
