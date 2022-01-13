@@ -40,12 +40,14 @@ entry. Therefore,
    and `EQRECONSTRUCT <https://wpcd-workflows.github.io/eqreconstr.html>`_ workflow.
    This deliberate choice greatly facilitates the interfacing to any of such workflows.
 
+The workflow includes built-in visualization plugin options to visualize the equilibrium during the run execution. This allow for an immediate inspection of the results. Some fundamental data verification is performed on the input and processed data to ensure a “safe landing” of the workflow in case any problems are identified.
+
 Workflow organization & design
 ===============================
 
 The top level layout of the workflow is shown below.
 
-.. figure:: images/equstabil_1.png
+.. figure:: images/EQSTABIL_tags_3.28.1.png
    :align: center
 
 The workflow is organised in four sequential steps :
