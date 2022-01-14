@@ -155,6 +155,7 @@ The workflow parameters in the **START** actor are as follows:
 -  **time_dt** : not in use.
 
 The workflow parameters in the **MHD_EQ_STABILITY** actor are as follows:
+
 -  **Run_equilibrium** : Set to "yes"/"no" to perform plasma equilibrium calculation.
 -  **Run_stability** : Set to "yes"/"no" to perform plasma stability calculation.
 -  **HREcode** : Choice for equilibrium code to be used.
