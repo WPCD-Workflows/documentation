@@ -169,7 +169,7 @@ Now you need to check out the workflow by typing (only for first time users)
 
    Example:  imasdb JET
 
-To get more details on IMAS and KEPLER installations check this `Confleunce site   <https://docs.psnc.pl/display/WFMS/Scientific+Worfklows+Home>`
+To get more details on IMAS and KEPLER installations check this `Confluence site <https://docs.psnc.pl/display/WFMS/Scientific+Worfklows+Home>`
 
 
 
