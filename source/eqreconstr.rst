@@ -6,7 +6,7 @@ The EQRECONSTRUCT workflow
 
 .. _rationale:
 
-1. Workflow rationale
+Workflow rationale
 =====================
 
 The EQRECONSTRUCT workflow is a Kepler workflow aimed at performing the
@@ -48,7 +48,7 @@ given diagnostic channels or changing regularization coefficients.
 
 .. _organization:
 
-2. Workflow organization & design
+Workflow organization & design
 =================================
 
 The top level layout of the workflow is shown below.
@@ -175,7 +175,7 @@ please refer to the SAVE SLICE parameter details.
 
 .. _installing:
 
-3. Installing and running the workflow
+Installing and running the workflow
 ======================================
 
 Establish the IMAS environment by typing
@@ -247,7 +247,7 @@ For a demonstration video on how to install, setup and run the workflow click th
 https://www.youtube.com/watch?v=zjX4jJBT1q4&t=242s
 
 
-4. Setting up the Workflow and Actor parameters
+Setting up the Workflow and Actor parameters
 ===============================================
 
 **I - Setting the workflow parameters**
