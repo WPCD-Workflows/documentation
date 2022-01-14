@@ -166,7 +166,7 @@ The workflow parameters in the **MHD_EQ_STABILITY** actor are as follows:
    -  **no** : input equilibrium is used "as is".
 
 -  **cut_off** : float ]0,1], specifies the percentage of the separatrix flux that will define the poloidal flux of the new plasma boundary.
--  **rcoord: choose either "rho_pol_norm" or "rho_vol" as radial coordinate for the plots to be displayed.
+-  **rcoord** : choose either "rho_pol_norm" or "rho_vol" as radial coordinate for the plots to be displayed.
 -  **STABILITY_CODE_CHOICE**: Choice for MHD stability code to be used.
 -  **Visualise_MHD** : Set to "yes" to get plots of the linear MHD eigenfunctions.
 -  **path** : temporary folder where to dump the plots generated. Also used to store output files (used by HELENA)
@@ -176,7 +176,7 @@ The workflow parameters in the **SAVE SLICE** actor are as follows:
 -  **Save_HRE_only**:
 
    -  **yes** : only occurrence=0 of equilibrium i.e. the output of the high resolution code is saved.
-   -  **no : occurrences = 0,1,2 are saved. High resolution equilibrium is stored as occurrence=0, the cut boundary "precursor equilibrium" as occurrence=1 and the equilibrium input (e.g. from equilibrium reconstruction) as occurrence=2. If "cut_eq"=""no" then occurrence=1 and occurrence=2 are copies of the input equilibrium.
+   -  **no** : occurrences = 0,1,2 are saved. High resolution equilibrium is stored as occurrence=0, the cut boundary "precursor equilibrium" as occurrence=1 and the equilibrium input (e.g. from equilibrium reconstruction) as occurrence=2. If "cut_eq"=""no" then occurrence=1 and occurrence=2 are copies of the input equilibrium.
 
 **The user can always stop the workflow by Pressing the STOP button in Kepler canvas.**
 
