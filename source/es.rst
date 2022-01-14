@@ -130,10 +130,47 @@ Installing the workflow
 ========================================
 To obtain the workflow and included actors a dressed release of KEPLER is recommended. To get such dressed releases please proceed as follows:
 
--  Get the dressed KEPLER
--  Get the Workflow
+Establish the IMAS environment by typing
+
+.. code-block:: console
+
+   module purge
+   module load cineca
+   module load imasenv
+
+   export KEPLER_DIR=$ITMWORK/imas_kepler
+
+if it is the first time you go through this process you will need to create the imas_kepler directory
+
+.. code-block:: console
+
+   mkdir $ITMWORK/imas_kepler
+
+(the one below is the one version of the dressed kepler containing all the actors for EQRECONSTRUCT, EQSTABIL and ETS-6, most recent versions will have a different module name)
+
+.. code-block:: console
+
+   module switch kepler/2.5p5-3.1.1_dressed_3.28.1
+   kepler_install my_2.5p5-3.1.1_dressed_3.28.1
+   kepler_load my_2.5p5-3.1.1_dressed_3.28.1
+
+Once you have installed kepler you do not need to repeat this operation and it will be enough to 
+execute the kepler_load instruction.
+
+Now you need to check out the workflow by typing (only for first time users)
+
+.. code-block:: console
+
+   svn co --username g2rcoelh https://gforge-next.eufus.eu/svn/eqstabil/tags/imas_3.28.1_4.7.2/workflows eqstabil_workflow
 
 **WARNING: Don't forget to set your imasdb device environment before running the workflow (run the "imasdb MACHINE_NAME" command !)**
+
+.. code-block:: console
+
+   Example:  imasdb JET
+
+To get more details on IMAS and KEPLER installations check this `Confleunce site   <https://docs.psnc.pl/display/WFMS/Scientific+Worfklows+Home>`
+
 
 
 Setting up Workflow and Actor parameters
