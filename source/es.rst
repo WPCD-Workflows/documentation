@@ -234,5 +234,4 @@ workflow). To access the actors codeparam the easiest route is to :
 EQSTABIL Tutorial
 =================
 
-Tutorial on using EQSTABIL workflow is available in :download:`PDF
-<static/EQSTABIL_tutorial_20151214.pdf>`.
+*to be provided*
