@@ -150,9 +150,9 @@ if it is the first time you go through this process you will need to create the 
 
 .. code-block:: console
 
-   module switch kepler/2.5p5-3.1.1_dressed_3.28.1
-   kepler_install my_2.5p5-3.1.1_dressed_3.28.1
-   kepler_load my_2.5p5-3.1.1_dressed_3.28.1
+   module switch kepler/2.5p5-3.1.1_dressed_3.29.0
+   kepler_install my_2.5p5-3.1.1_dressed_3.29.0
+   kepler_load my_2.5p5-3.1.1_dressed_3.29.0
 
 Once you have installed kepler you do not need to repeat this operation and it will be enough to 
 execute the kepler_load instruction.
