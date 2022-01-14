@@ -85,15 +85,15 @@ Among the several options the user can choose :
 -  To run plasma stability code (Run_stability = yes/no)
 -  Which code to use to perform the equilibrium calculation (HREcode)
  
-   -  HELENA (tested)
-   -  CHEASE (tested)
-   -  CAXE (tested)
+   -  `HELENA <https://portal.eufus.eu/twiki/bin/view/Main/EquilibriumCode_HELENA>`_
+   -  `CHEASE <https://portal.eufus.eu/twiki/bin/view/Main/EquilibriumCode_CHEASE>`_
+   -  `CAXE <https://portal.eufus.eu/twiki/bin/view/Main/EquilibriumCode_CAXE>`_
 
 -  Which code to use for MHD stability (STABILITY_CODE_CHOICE)
 
-   -  ILSA
-   -  MARS
-   -  KINX
+   -  `ILSA <https://portal.eufus.eu/twiki/bin/view/Main/StabilityCode_ILSA>`_
+   -  `MARS <https://portal.eufus.eu/twiki/bin/view/Main/StabilityCode_MARS>`_
+   -  `KINX <https://portal.eufus.eu/twiki/bin/view/Main/StabilityCode_KINX>`_
 
 -  To visualise the high resolution results and MHD stability during workflow execution (Visualise_HRE, Visualise_MHD=yes/no)
 -  If cutting the equilibrium to be piped to the high resultuion calculation is necessary (cut_eq = yes/no) and if so at what percentage of the normalised separatrix flux (0<cut_off<1). When the user chooses to cut the boundary to perform the high resolution equilibrium calculations:
