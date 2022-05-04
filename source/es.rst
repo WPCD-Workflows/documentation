@@ -130,13 +130,12 @@ Installing the workflow
 ========================================
 To obtain the workflow and included actors a dressed release of KEPLER is recommended. To get such dressed releases please proceed as follows:
 
-Establish the IMAS environment by typing
+Establish the IMAS environment (in the current workflow release 3.29.0) by typing
 
 .. code-block:: console
 
    module purge
-   module load cineca
-   module load imasenv
+   module load cineca imasenv/3.29.0
 
    export KEPLER_DIR=$ITMWORK/imas_kepler
 
@@ -150,9 +149,9 @@ if it is the first time you go through this process you will need to create the 
 
 .. code-block:: console
 
-   module switch kepler/2.5p5-3.1.1_dressed_3.29.0
-   kepler_install my_2.5p5-3.1.1_dressed_3.29.0
-   kepler_load my_2.5p5-3.1.1_dressed_3.29.0
+   module switch kepler/2.5p5-3.1.1_ETS_6.4.1_3.29.0
+   kepler_install my_2.5p5-3.1.1_ETS_6.4.1_3.29.0
+   kepler_load my_2.5p5-3.1.1_ETS_6.4.1_3.29.0
 
 Once you have installed kepler you do not need to repeat this operation and it will be enough to 
 execute the kepler_load instruction.
@@ -161,7 +160,7 @@ Now you need to check out the workflow by typing (only for first time users)
 
 .. code-block:: console
 
-   svn co --username g2rcoelh https://gforge-next.eufus.eu/svn/eqstabil/tags/imas_3.28.1_4.7.2/workflows eqstabil_workflow
+   svn co --username YOUR_GW_USERNAME https://gforge-next.eufus.eu/svn/keplerworkflows/tags/EQMHD_6.4.1_3.29.0 eqstabil_workflow
 
 **WARNING: Don't forget to set your imasdb device environment before running the workflow (run the "imasdb MACHINE_NAME" command !)**
 
